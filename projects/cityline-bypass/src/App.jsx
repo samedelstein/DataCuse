@@ -11,7 +11,6 @@ import {
   Search,
   Zap
 } from 'lucide-react';
-const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 const SYRACUSE_LAT = 43.0481;
 const SYRACUSE_LNG = -76.1474;
 
