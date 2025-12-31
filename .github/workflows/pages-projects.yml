@@ -1,0 +1,64 @@
+name: Build + Deploy datacuse (site + projects)
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # 1) Build the main site (root) as-is (static files already in repo)
+      - name: Prepare Pages folder
+        run: |
+          mkdir -p _pages
+          rsync -av --exclude='.git' --exclude='node_modules' --exclude='_pages' ./ _pages/
+          # We will overwrite the Vite project output into the right subfolder next
+
+      # 2) Build the Vite project
+      - name: Install deps (cityline-bypass)
+        working-directory: projects/cityline-bypass
+        run: npm ci
+
+      - name: Build (cityline-bypass)
+        working-directory: projects/cityline-bypass
+        run: npm run build
+        env:
+          VITE_GEMINI_API_KEY: ${{ secrets.VITE_GEMINI_API_KEY }}
+
+      - name: Copy cityline-bypass dist into Pages path
+        run: |
+          rm -rf _pages/projects/cityline-bypass
+          mkdir -p _pages/projects/cityline-bypass
+          cp -r projects/cityline-bypass/dist/* _pages/projects/cityline-bypass/
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _pages
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to Pages
+        uses: actions/deploy-pages@v4
