@@ -3,5 +3,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "/datacuse/projects/cityline-bypass/",
+  base: "/projects/cityline-bypass/",
 });
