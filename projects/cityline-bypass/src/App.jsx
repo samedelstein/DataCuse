@@ -86,15 +86,16 @@ export default function App() {
     `;
 
     try {
-      const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${API_KEY}`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+      const response = await fetch("https://api.datacuse.com/api/gemini", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           contents: [{ parts: [{ text: `User Issue: ${userInput}` }] }],
           systemInstruction: { parts: [{ text: systemPrompt }] },
           generationConfig: { responseMimeType: "application/json" }
         })
       });
+
 
       const data = await response.json();
       const content = JSON.parse(data.candidates[0].content.parts[0].text);
