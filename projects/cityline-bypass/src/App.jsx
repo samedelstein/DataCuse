@@ -129,15 +129,25 @@ export default function App() {
     <div className="min-h-screen bg-slate-50 text-slate-900 font-sans pb-12">
       <header className="bg-white border-b border-slate-200 px-6 py-4 sticky top-0 z-50">
         <div className="max-w-2xl mx-auto flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <a
+            href="https://www.datacuse.com"
+            className="flex items-center gap-2 hover:opacity-90 hover:underline underline-offset-4 transition-all"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Back to DataCuse"
+          >
             <div className="bg-[#002D62] p-1.5 rounded-md">
               <Zap size={18} className="text-[#F76900]" />
             </div>
             <div>
-              <h1 className="text-lg font-black tracking-tight uppercase leading-none text-[#002D62]">Cityline Bypass</h1>
-              <span className="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">Syracuse API Workaround Tool</span>
+              <h1 className="text-lg font-black tracking-tight uppercase leading-none text-[#002D62]">
+                Cityline Bypass
+              </h1>
+              <span className="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">
+                Syracuse API Workaround Tool
+              </span>
             </div>
-          </div>
+          </a>
           
           <div className={`px-3 py-1 rounded-full border text-[10px] font-bold uppercase tracking-wider flex items-center gap-2 ${
             apiState === 'ready' ? 'bg-green-50 border-green-200 text-green-700' : 'bg-slate-100 border-slate-200 text-slate-500'
