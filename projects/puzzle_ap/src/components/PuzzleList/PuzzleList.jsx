@@ -12,6 +12,7 @@ import {
 import SearchIcon from '@mui/icons-material/Search';
 import ExtensionIcon from '@mui/icons-material/Extension';
 import PuzzleCard from './PuzzleCard';
+import PuzzleTimeline from './PuzzleTimeline';
 
 const PuzzleList = ({ puzzles, loading, error, onPuzzleClick, onSearch }) => {
   if (loading) {
@@ -97,13 +98,18 @@ const PuzzleList = ({ puzzles, loading, error, onPuzzleClick, onSearch }) => {
           </Typography>
         </Box>
       ) : (
-        <Grid container spacing={3}>
-          {puzzles.map((puzzle) => (
-            <Grid item xs={12} sm={6} md={4} key={puzzle.id}>
-              <PuzzleCard puzzle={puzzle} onClick={onPuzzleClick} />
-            </Grid>
-          ))}
-        </Grid>
+        <>
+          <Grid container spacing={3}>
+            {puzzles.map((puzzle) => (
+              <Grid item xs={12} sm={6} md={4} key={puzzle.id}>
+                <PuzzleCard puzzle={puzzle} onClick={onPuzzleClick} />
+              </Grid>
+            ))}
+          </Grid>
+          <Box sx={{ mt: 4 }}>
+            <PuzzleTimeline puzzles={puzzles} />
+          </Box>
+        </>
       )}
     </Container>
   );

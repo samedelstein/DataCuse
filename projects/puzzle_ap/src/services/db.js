@@ -1,4 +1,5 @@
 import { openDB } from 'idb';
+import { getPuzzleDateSortValue } from './dateUtils';
 
 const DB_NAME = 'puzzle-tracker-db';
 const DB_VERSION = 1;
@@ -52,7 +53,7 @@ export const getAllPuzzles = async () => {
   const puzzles = await db.getAll('puzzles');
   // Sort by date completed (most recent first)
   return puzzles.sort((a, b) =>
-    new Date(b.dateCompleted) - new Date(a.dateCompleted)
+    getPuzzleDateSortValue(b.dateCompleted) - getPuzzleDateSortValue(a.dateCompleted)
   );
 };
 
