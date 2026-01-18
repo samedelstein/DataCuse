@@ -1,8 +1,8 @@
-# Getting Started with Puzzle Tracker PWA
+# Getting Started with Sunday Night Puzzles PWA
 
 ## Quick Start
 
-The Puzzle Tracker PWA is now fully implemented and ready to use!
+Sunday Night Puzzles PWA is now fully implemented and ready to use!
 
 ### 1. Run the Development Server
 
