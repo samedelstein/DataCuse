@@ -4,6 +4,30 @@
  * @param {string} imageDataUrl - Data URL of the puzzle image
  * @returns {Promise<Blob>} - The generated share graphic as a blob
  */
+import { formatPuzzleDate } from './dateUtils';
+
+const wrapCanvasText = (ctx, text, maxWidth) => {
+  const words = text.split(' ');
+  const lines = [];
+  let currentLine = '';
+
+  words.forEach((word) => {
+    const testLine = currentLine ? `${currentLine} ${word}` : word;
+    if (ctx.measureText(testLine).width > maxWidth && currentLine) {
+      lines.push(currentLine);
+      currentLine = word;
+    } else {
+      currentLine = testLine;
+    }
+  });
+
+  if (currentLine) {
+    lines.push(currentLine);
+  }
+
+  return lines;
+};
+
 export const generateShareGraphic = async (puzzle, imageDataUrl) => {
   return new Promise((resolve, reject) => {
     try {
@@ -71,12 +95,20 @@ export const generateShareGraphic = async (puzzle, imageDataUrl) => {
 
         ctx.fillText(puzzle.name, canvas.width / 2, 60);
 
+        const notesText = puzzle.notes?.trim();
+        if (notesText) {
+          ctx.font = '28px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
+          const maxWidth = canvas.width - 160;
+          const noteLines = wrapCanvasText(ctx, `Notes: ${notesText}`, maxWidth).slice(0, 3);
+          const lineHeight = 36;
+          const startY = canvas.height - 220 - (noteLines.length - 1) * lineHeight;
+          noteLines.forEach((line, index) => {
+            ctx.fillText(line, canvas.width / 2, startY + index * lineHeight);
+          });
+        }
+
         // Draw completion date
-        const dateStr = new Date(puzzle.dateCompleted).toLocaleDateString('en-US', {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric'
-        });
+        const dateStr = formatPuzzleDate(puzzle.dateCompleted, 'MMMM d, yyyy');
         ctx.font = '32px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
         ctx.fillText(`Completed: ${dateStr}`, canvas.width / 2, canvas.height - 120);
 
@@ -116,9 +148,12 @@ export const generateShareGraphic = async (puzzle, imageDataUrl) => {
  * @returns {Promise<boolean>} - Whether the share was successful
  */
 export const sharePuzzle = async (puzzle, imageBlob) => {
+  const notesText = puzzle.notes?.trim();
   const shareData = {
     title: 'Sunday Night Puzzles',
-    text: `Just completed: ${puzzle.name}!`,
+    text: notesText
+      ? `Just completed: ${puzzle.name}! Notes: ${notesText}`
+      : `Just completed: ${puzzle.name}!`,
   };
 
   // Check if Web Share API is available and supports files

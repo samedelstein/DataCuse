@@ -15,10 +15,10 @@ import CloseIcon from '@mui/icons-material/Close';
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
 import ShareIcon from '@mui/icons-material/Share';
-import { format } from 'date-fns';
 import { getImage } from '../../services/db';
 import { blobToDataURL } from '../../services/imageService';
 import ShareButton from './ShareButton';
+import { formatPuzzleDate } from '../../services/dateUtils';
 
 const PuzzleDetail = ({ puzzle, open, onClose, onEdit, onDelete }) => {
   const [imageUrl, setImageUrl] = useState(null);
@@ -50,7 +50,7 @@ const PuzzleDetail = ({ puzzle, open, onClose, onEdit, onDelete }) => {
 
   if (!puzzle) return null;
 
-  const formattedDate = format(new Date(puzzle.dateCompleted), 'MMMM d, yyyy');
+  const formattedDate = formatPuzzleDate(puzzle.dateCompleted, 'MMMM d, yyyy');
 
   return (
     <Dialog
