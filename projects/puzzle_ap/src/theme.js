@@ -3,33 +3,38 @@ import { createTheme } from '@mui/material/styles';
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#1976d2',
-      light: '#42a5f5',
-      dark: '#1565c0',
+      main: '#2f3c7e',
+      light: '#5867a8',
+      dark: '#202b5c',
       contrastText: '#fff',
     },
     secondary: {
-      main: '#9c27b0',
-      light: '#ba68c8',
-      dark: '#7b1fa2',
-      contrastText: '#fff',
+      main: '#f2c14e',
+      light: '#f6d27e',
+      dark: '#d9a63f',
+      contrastText: '#1f2937',
     },
     error: {
       main: '#d32f2f',
     },
     warning: {
-      main: '#ed6c02',
+      main: '#e07a1f',
     },
     success: {
-      main: '#2e7d32',
+      main: '#2f855a',
     },
     background: {
-      default: '#f5f5f5',
+      default: '#f7f5f2',
       paper: '#ffffff',
+    },
+    text: {
+      primary: '#1f2937',
+      secondary: '#5f6b7a',
     },
   },
   typography: {
     fontFamily: [
+      '"Poppins"',
       '-apple-system',
       'BlinkMacSystemFont',
       '"Segoe UI"',
@@ -47,16 +52,34 @@ const theme = createTheme({
     h6: {
       fontWeight: 600,
     },
+    subtitle1: {
+      fontWeight: 500,
+    },
   },
   shape: {
-    borderRadius: 8,
+    borderRadius: 16,
   },
   components: {
+    MuiAppBar: {
+      styleOverrides: {
+        root: {
+          background: 'linear-gradient(135deg, #2f3c7e 0%, #4252a1 100%)',
+        },
+      },
+    },
+    MuiToolbar: {
+      styleOverrides: {
+        root: {
+          minHeight: 72,
+        },
+      },
+    },
     MuiButton: {
       styleOverrides: {
         root: {
           textTransform: 'none',
           fontWeight: 600,
+          borderRadius: 12,
         },
         contained: {
           boxShadow: 'none',
@@ -69,9 +92,10 @@ const theme = createTheme({
     MuiCard: {
       styleOverrides: {
         root: {
-          boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
+          border: '1px solid rgba(47, 60, 126, 0.08)',
+          boxShadow: '0 8px 24px rgba(31, 41, 55, 0.08)',
           '&:hover': {
-            boxShadow: '0 4px 16px rgba(0,0,0,0.15)',
+            boxShadow: '0 12px 28px rgba(31, 41, 55, 0.12)',
           },
         },
       },
@@ -85,7 +109,14 @@ const theme = createTheme({
     MuiFab: {
       styleOverrides: {
         root: {
-          boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
+          boxShadow: '0 12px 24px rgba(47, 60, 126, 0.25)',
+        },
+      },
+    },
+    MuiPaper: {
+      styleOverrides: {
+        root: {
+          borderRadius: 16,
         },
       },
     },

@@ -152,15 +152,50 @@ function App() {
         {/* App Bar */}
         <AppBar position="static" elevation={0}>
           <Toolbar>
-            <ExtensionIcon sx={{ mr: 2 }} />
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1, fontWeight: 600 }}>
-              Puzzle Tracker
-            </Typography>
+            <Container
+              maxWidth="lg"
+              sx={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: 2,
+                py: 1.5
+              }}
+            >
+              <Box
+                sx={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  width: 44,
+                  height: 44,
+                  borderRadius: '14px',
+                  bgcolor: 'rgba(255, 255, 255, 0.18)'
+                }}
+              >
+                <ExtensionIcon sx={{ fontSize: 26, color: 'common.white' }} />
+              </Box>
+              <Box sx={{ flexGrow: 1 }}>
+                <Typography variant="h5" component="div" sx={{ fontWeight: 700 }}>
+                  Sunday Night Puzzles
+                </Typography>
+                <Typography variant="subtitle2" sx={{ opacity: 0.85 }}>
+                  Capture cozy puzzle nights and track your finished builds.
+                </Typography>
+              </Box>
+            </Container>
           </Toolbar>
         </AppBar>
 
         {/* Main Content */}
-        <Box component="main" sx={{ flexGrow: 1, bgcolor: 'background.default' }}>
+        <Box
+          component="main"
+          sx={{
+            flexGrow: 1,
+            bgcolor: 'background.default',
+            backgroundImage:
+              'radial-gradient(circle at top, rgba(47, 60, 126, 0.08), transparent 45%)'
+          }}
+        >
           <PuzzleList
             puzzles={puzzles}
             loading={loading}

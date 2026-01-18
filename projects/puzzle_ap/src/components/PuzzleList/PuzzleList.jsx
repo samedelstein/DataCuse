@@ -6,7 +6,8 @@ import {
   CircularProgress,
   TextField,
   InputAdornment,
-  Alert
+  Alert,
+  Paper
 } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import ExtensionIcon from '@mui/icons-material/Extension';
@@ -35,20 +36,47 @@ const PuzzleList = ({ puzzles, loading, error, onPuzzleClick, onSearch }) => {
   }
 
   return (
-    <Container maxWidth="lg" sx={{ py: 3 }}>
-      <Box sx={{ mb: 3 }}>
-        <TextField
-          placeholder="Search puzzles..."
-          onChange={(e) => onSearch(e.target.value)}
-          InputProps={{
-            startAdornment: (
-              <InputAdornment position="start">
-                <SearchIcon />
-              </InputAdornment>
-            ),
+    <Container maxWidth="lg" sx={{ py: { xs: 3, md: 5 } }}>
+      <Box
+        sx={{
+          display: 'flex',
+          flexDirection: { xs: 'column', md: 'row' },
+          justifyContent: 'space-between',
+          gap: 3,
+          mb: 4
+        }}
+      >
+        <Box>
+          <Typography variant="h4" sx={{ fontWeight: 700, mb: 1 }}>
+            Your puzzle gallery
+          </Typography>
+          <Typography variant="body1" color="text.secondary">
+            Keep every finished puzzle with a photo, date, and story.
+          </Typography>
+        </Box>
+        <Paper
+          elevation={0}
+          sx={{
+            p: 2,
+            alignSelf: { md: 'center' },
+            bgcolor: 'rgba(255,255,255,0.8)',
+            border: '1px solid rgba(47, 60, 126, 0.12)',
+            minWidth: { xs: '100%', md: 320 }
           }}
-          sx={{ maxWidth: 500 }}
-        />
+        >
+          <TextField
+            placeholder="Search puzzles..."
+            onChange={(e) => onSearch(e.target.value)}
+            InputProps={{
+              startAdornment: (
+                <InputAdornment position="start">
+                  <SearchIcon />
+                </InputAdornment>
+              ),
+            }}
+            sx={{ bgcolor: 'common.white' }}
+          />
+        </Paper>
       </Box>
 
       {puzzles.length === 0 ? (

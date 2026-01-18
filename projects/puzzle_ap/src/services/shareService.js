@@ -16,8 +16,8 @@ export const generateShareGraphic = async (puzzle, imageDataUrl) => {
 
       // Draw gradient background
       const gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-      gradient.addColorStop(0, '#1976d2');
-      gradient.addColorStop(1, '#42a5f5');
+      gradient.addColorStop(0, '#2f3c7e');
+      gradient.addColorStop(1, '#f2c14e');
       ctx.fillStyle = gradient;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
 
@@ -82,7 +82,7 @@ export const generateShareGraphic = async (puzzle, imageDataUrl) => {
 
         // Draw app branding
         ctx.font = '24px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
-        ctx.fillText('Puzzle Tracker', canvas.width / 2, canvas.height - 60);
+        ctx.fillText('Sunday Night Puzzles', canvas.width / 2, canvas.height - 60);
 
         // Convert canvas to blob
         canvas.toBlob(
@@ -117,7 +117,7 @@ export const generateShareGraphic = async (puzzle, imageDataUrl) => {
  */
 export const sharePuzzle = async (puzzle, imageBlob) => {
   const shareData = {
-    title: 'Puzzle Tracker',
+    title: 'Sunday Night Puzzles',
     text: `Just completed: ${puzzle.name}!`,
   };
 

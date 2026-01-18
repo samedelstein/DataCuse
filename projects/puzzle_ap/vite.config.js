@@ -4,34 +4,35 @@ import { VitePWA } from 'vite-plugin-pwa'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/projects/puzzle_ap/',
   plugins: [
     react(),
     VitePWA({
       registerType: 'prompt',
       includeAssets: ['icons/*.png'],
       manifest: {
-        name: 'Puzzle Tracker',
-        short_name: 'Puzzle Tracker',
+        name: 'Sunday Night Puzzles',
+        short_name: 'Sunday Night Puzzles',
         description: 'Track your completed jigsaw puzzles with photos and notes',
-        theme_color: '#1976d2',
+        theme_color: '#2f3c7e',
         background_color: '#ffffff',
         display: 'standalone',
         orientation: 'portrait',
-        start_url: '/',
-        scope: '/',
+        start_url: '/projects/puzzle_ap/',
+        scope: '/projects/puzzle_ap/',
         icons: [
           {
-            src: '/icons/icon-192x192.png',
+            src: '/projects/puzzle_ap/icons/icon-192x192.png',
             sizes: '192x192',
             type: 'image/png'
           },
           {
-            src: '/icons/icon-512x512.png',
+            src: '/projects/puzzle_ap/icons/icon-512x512.png',
             sizes: '512x512',
             type: 'image/png'
           },
           {
-            src: '/icons/icon-512x512-maskable.png',
+            src: '/projects/puzzle_ap/icons/icon-512x512-maskable.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'maskable'
