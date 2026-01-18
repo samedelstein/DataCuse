@@ -18,6 +18,7 @@ import { v4 as uuidv4 } from 'uuid';
 import PhotoCapture from './PhotoCapture';
 import { processAndStoreImage, blobToDataURL } from '../../services/imageService';
 import { getImage } from '../../services/db';
+import { getDateInputValue, getTodayInputValue } from '../../services/dateUtils';
 
 const PuzzleForm = ({ open, onClose, onSave, editPuzzle = null }) => {
   const theme = useTheme();
@@ -25,7 +26,7 @@ const PuzzleForm = ({ open, onClose, onSave, editPuzzle = null }) => {
 
   const [formData, setFormData] = useState({
     name: '',
-    dateCompleted: new Date().toISOString().split('T')[0],
+    dateCompleted: getTodayInputValue(),
     notes: ''
   });
   const [imageFile, setImageFile] = useState(null);
@@ -37,7 +38,7 @@ const PuzzleForm = ({ open, onClose, onSave, editPuzzle = null }) => {
     if (editPuzzle) {
       setFormData({
         name: editPuzzle.name,
-        dateCompleted: editPuzzle.dateCompleted.split('T')[0],
+        dateCompleted: getDateInputValue(editPuzzle.dateCompleted),
         notes: editPuzzle.notes || ''
       });
 
@@ -65,7 +66,7 @@ const PuzzleForm = ({ open, onClose, onSave, editPuzzle = null }) => {
   const resetForm = () => {
     setFormData({
       name: '',
-      dateCompleted: new Date().toISOString().split('T')[0],
+      dateCompleted: getTodayInputValue(),
       notes: ''
     });
     setImageFile(null);
@@ -130,7 +131,7 @@ const PuzzleForm = ({ open, onClose, onSave, editPuzzle = null }) => {
       const puzzleData = {
         id: editPuzzle?.id || uuidv4(),
         name: formData.name.trim(),
-        dateCompleted: new Date(formData.dateCompleted).toISOString(),
+        dateCompleted: formData.dateCompleted,
         notes: formData.notes.trim(),
         imageId,
         createdAt: editPuzzle?.createdAt || new Date().toISOString(),
