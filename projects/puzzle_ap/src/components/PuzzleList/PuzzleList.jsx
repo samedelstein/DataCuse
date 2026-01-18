@@ -7,14 +7,27 @@ import {
   TextField,
   InputAdornment,
   Alert,
-  Paper
+  Paper,
+  Button,
+  Stack,
+  Chip
 } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import ExtensionIcon from '@mui/icons-material/Extension';
 import PuzzleCard from './PuzzleCard';
 import PuzzleTimeline from './PuzzleTimeline';
 
-const PuzzleList = ({ puzzles, loading, error, onPuzzleClick, onSearch }) => {
+const PuzzleList = ({
+  puzzles,
+  loading,
+  error,
+  onPuzzleClick,
+  onSearch,
+  onSyncSettings,
+  onPullFromRepo,
+  onPushToRepo,
+  syncing
+}) => {
   if (loading) {
     return (
       <Box
@@ -77,6 +90,23 @@ const PuzzleList = ({ puzzles, loading, error, onPuzzleClick, onSearch }) => {
             }}
             sx={{ bgcolor: 'common.white' }}
           />
+          <Stack spacing={1.5} sx={{ mt: 2 }}>
+            <Stack direction="row" spacing={1} flexWrap="wrap" alignItems="center">
+              <Button variant="outlined" size="small" onClick={onSyncSettings}>
+                Sync settings
+              </Button>
+              <Button variant="outlined" size="small" onClick={onPullFromRepo} disabled={syncing}>
+                Pull from repo
+              </Button>
+              <Button variant="outlined" size="small" onClick={onPushToRepo} disabled={syncing}>
+                Push to repo
+              </Button>
+              {syncing && <Chip size="small" label="Syncing..." color="primary" />}
+            </Stack>
+            <Typography variant="caption" color="text.secondary">
+              Connect a GitHub repo to keep puzzles in sync across browsers.
+            </Typography>
+          </Stack>
         </Paper>
       </Box>
 
