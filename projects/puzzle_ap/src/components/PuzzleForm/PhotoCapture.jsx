@@ -47,6 +47,7 @@ const PhotoCapture = ({ onImageCapture, initialImage }) => {
 
       if (videoRef.current) {
         videoRef.current.srcObject = mediaStream;
+        await videoRef.current.play();
       }
     } catch (err) {
       setError(err.message);
@@ -213,7 +214,6 @@ const PhotoCapture = ({ onImageCapture, initialImage }) => {
           ref={fileInputRef}
           type="file"
           accept="image/*"
-          capture="environment"
           onChange={handleFileUpload}
           style={{ display: 'none' }}
         />
