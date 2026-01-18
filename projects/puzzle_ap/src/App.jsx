@@ -15,7 +15,11 @@ import {
   DialogContent,
   DialogContentText,
   DialogActions,
-  Button
+  Button,
+  TextField,
+  Stack,
+  FormControlLabel,
+  Switch
 } from '@mui/material';
 import AddIcon from '@mui/icons-material/Add';
 import ExtensionIcon from '@mui/icons-material/Extension';
@@ -24,6 +28,13 @@ import PuzzleList from './components/PuzzleList/PuzzleList';
 import PuzzleForm from './components/PuzzleForm/PuzzleForm';
 import PuzzleDetail from './components/PuzzleDetail/PuzzleDetail';
 import { useIndexedDB } from './hooks/useIndexedDB';
+import { exportData, importData } from './services/db';
+import {
+  loadSyncSettings,
+  saveSyncSettings,
+  fetchGitHubSnapshot,
+  pushGitHubSnapshot
+} from './services/githubSyncService';
 
 function App() {
   const {
@@ -34,6 +45,7 @@ function App() {
     createPuzzle,
     modifyPuzzle,
     removePuzzle,
+    loadPuzzles,
     search,
     updateStorageInfo
   } = useIndexedDB();
@@ -44,22 +56,59 @@ function App() {
   const [editPuzzle, setEditPuzzle] = useState(null);
   const [deleteConfirmOpen, setDeleteConfirmOpen] = useState(false);
   const [puzzleToDelete, setPuzzleToDelete] = useState(null);
+  const [syncDialogOpen, setSyncDialogOpen] = useState(false);
+  const [syncSettings, setSyncSettings] = useState(loadSyncSettings());
+  const [syncing, setSyncing] = useState(false);
   const [notification, setNotification] = useState({
     open: false,
     message: '',
     severity: 'success'
   });
 
+  const isSyncConfigured = Boolean(
+    syncSettings?.owner && syncSettings?.repo && syncSettings?.path
+  );
+
   // Check storage usage on mount and show warning if high
   useEffect(() => {
     if (storageInfo && parseFloat(storageInfo.percentUsed) > 80) {
       setNotification({
         open: true,
-        message: `Storage is ${storageInfo.percentUsed}% full. Consider exporting your data.`,
+        message: `Storage is ${storageInfo.percentUsed}% full. Consider syncing your data.`,
         severity: 'warning'
       });
     }
   }, [storageInfo]);
+
+  useEffect(() => {
+    const hydrateFromRepo = async () => {
+      if (!syncSettings?.autoSync || !isSyncConfigured) return;
+      setSyncing(true);
+      try {
+        const result = await fetchGitHubSnapshot(syncSettings);
+        if (result?.snapshot) {
+          await importData(result.snapshot);
+          await loadPuzzles();
+          setNotification({
+            open: true,
+            message: 'Pulled puzzles from your repo.',
+            severity: 'success'
+          });
+        }
+      } catch (error) {
+        console.error('Sync pull failed:', error);
+        setNotification({
+          open: true,
+          message: 'Failed to pull puzzles from repo.',
+          severity: 'error'
+        });
+      } finally {
+        setSyncing(false);
+      }
+    };
+
+    hydrateFromRepo();
+  }, [loadPuzzles, syncSettings]);
 
   const handleOpenForm = () => {
     setEditPuzzle(null);
@@ -84,6 +133,9 @@ function App() {
       });
       setDetailOpen(false);
       updateStorageInfo();
+      if (syncSettings?.autoSync && isSyncConfigured) {
+        handlePushToRepo();
+      }
     } else {
       setNotification({
         open: true,
@@ -138,6 +190,97 @@ function App() {
 
   const handleSearch = (searchTerm) => {
     search(searchTerm);
+  };
+
+  const handleSyncDialogOpen = () => setSyncDialogOpen(true);
+
+  const handleSyncDialogClose = () => setSyncDialogOpen(false);
+
+  const handleSyncSettingsChange = (field) => (event) => {
+    const value = field === 'autoSync' ? event.target.checked : event.target.value;
+    setSyncSettings((prev) => ({
+      ...prev,
+      [field]: value
+    }));
+  };
+
+  const handleSaveSyncSettings = () => {
+    saveSyncSettings(syncSettings);
+    setSyncDialogOpen(false);
+    setNotification({
+      open: true,
+      message: 'Sync settings saved.',
+      severity: 'success'
+    });
+  };
+
+  const handlePullFromRepo = async () => {
+    if (!isSyncConfigured) {
+      setNotification({
+        open: true,
+        message: 'Add your repo settings before syncing.',
+        severity: 'warning'
+      });
+      return;
+    }
+    setSyncing(true);
+    try {
+      const result = await fetchGitHubSnapshot(syncSettings);
+      if (result?.snapshot) {
+        await importData(result.snapshot);
+        await loadPuzzles();
+        setNotification({
+          open: true,
+          message: 'Pulled puzzles from your repo.',
+          severity: 'success'
+        });
+      } else {
+        setNotification({
+          open: true,
+          message: 'No snapshot found in the repo yet.',
+          severity: 'info'
+        });
+      }
+    } catch (error) {
+      console.error('Sync pull failed:', error);
+      setNotification({
+        open: true,
+        message: 'Failed to pull puzzles from repo.',
+        severity: 'error'
+      });
+    } finally {
+      setSyncing(false);
+    }
+  };
+
+  const handlePushToRepo = async () => {
+    if (!isSyncConfigured) {
+      setNotification({
+        open: true,
+        message: 'Add your repo settings before syncing.',
+        severity: 'warning'
+      });
+      return;
+    }
+    setSyncing(true);
+    try {
+      const snapshot = await exportData();
+      await pushGitHubSnapshot(syncSettings, snapshot);
+      setNotification({
+        open: true,
+        message: 'Pushed puzzles to your repo.',
+        severity: 'success'
+      });
+    } catch (error) {
+      console.error('Sync push failed:', error);
+      setNotification({
+        open: true,
+        message: 'Failed to push puzzles to repo.',
+        severity: 'error'
+      });
+    } finally {
+      setSyncing(false);
+    }
   };
 
   const handleCloseNotification = () => {
@@ -202,6 +345,10 @@ function App() {
             error={error}
             onPuzzleClick={handlePuzzleClick}
             onSearch={handleSearch}
+            onSyncSettings={handleSyncDialogOpen}
+            onPullFromRepo={handlePullFromRepo}
+            onPushToRepo={handlePushToRepo}
+            syncing={syncing}
           />
         </Box>
 
@@ -251,6 +398,62 @@ function App() {
             <Button onClick={handleDeleteCancel}>Cancel</Button>
             <Button onClick={handleDeleteConfirm} color="error" autoFocus>
               Delete
+            </Button>
+          </DialogActions>
+        </Dialog>
+
+        <Dialog open={syncDialogOpen} onClose={handleSyncDialogClose} maxWidth="sm" fullWidth>
+          <DialogTitle>Sync across browsers</DialogTitle>
+          <DialogContent>
+            <Stack spacing={2} sx={{ mt: 1 }}>
+              <TextField
+                label="GitHub Owner"
+                value={syncSettings?.owner || ''}
+                onChange={handleSyncSettingsChange('owner')}
+                placeholder="your-org-or-username"
+              />
+              <TextField
+                label="Repository"
+                value={syncSettings?.repo || ''}
+                onChange={handleSyncSettingsChange('repo')}
+                placeholder="puzzle-data-repo"
+              />
+              <TextField
+                label="File path"
+                value={syncSettings?.path || ''}
+                onChange={handleSyncSettingsChange('path')}
+                placeholder="data/puzzles.json"
+                helperText="This file will be created/updated in your repo."
+              />
+              <TextField
+                label="Branch"
+                value={syncSettings?.branch || 'main'}
+                onChange={handleSyncSettingsChange('branch')}
+                placeholder="main"
+              />
+              <TextField
+                label="GitHub token"
+                type="password"
+                value={syncSettings?.token || ''}
+                onChange={handleSyncSettingsChange('token')}
+                placeholder="ghp_..."
+                helperText="Stored locally in this browser to push updates."
+              />
+              <FormControlLabel
+                control={
+                  <Switch
+                    checked={!!syncSettings?.autoSync}
+                    onChange={handleSyncSettingsChange('autoSync')}
+                  />
+                }
+                label="Auto-sync on save"
+              />
+            </Stack>
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={handleSyncDialogClose}>Cancel</Button>
+            <Button onClick={handleSaveSyncSettings} variant="contained">
+              Save settings
             </Button>
           </DialogActions>
         </Dialog>

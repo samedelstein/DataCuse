@@ -8,9 +8,9 @@ import {
   Box,
   Skeleton
 } from '@mui/material';
-import { format } from 'date-fns';
 import { getImage } from '../../services/db';
 import { blobToDataURL } from '../../services/imageService';
+import { formatPuzzleDate } from '../../services/dateUtils';
 
 const PuzzleCard = ({ puzzle, onClick }) => {
   const [thumbnailUrl, setThumbnailUrl] = useState(null);
@@ -36,7 +36,7 @@ const PuzzleCard = ({ puzzle, onClick }) => {
     loadThumbnail();
   }, [puzzle.imageId]);
 
-  const formattedDate = format(new Date(puzzle.dateCompleted), 'MMM d, yyyy');
+  const formattedDate = formatPuzzleDate(puzzle.dateCompleted, 'MMM d, yyyy');
 
   return (
     <Card sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
