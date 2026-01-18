@@ -51,6 +51,20 @@ jobs:
           mkdir -p _pages/projects/cityline-bypass
           cp -r projects/cityline-bypass/dist/* _pages/projects/cityline-bypass/
 
+      - name: Install deps (puzzle_ap)
+        working-directory: projects/puzzle_ap
+        run: npm ci
+
+      - name: Build (puzzle_ap)
+        working-directory: projects/puzzle_ap
+        run: npm run build
+
+      - name: Copy puzzle_ap dist into Pages path
+        run: |
+          rm -rf _pages/projects/puzzle_ap
+          mkdir -p _pages/projects/puzzle_ap
+          cp -r projects/puzzle_ap/dist/* _pages/projects/puzzle_ap/
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

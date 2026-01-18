@@ -1,4 +1,4 @@
-# Puzzle Tracker PWA
+# Sunday Night Puzzles PWA
 
 A Progressive Web App for tracking completed jigsaw puzzles with offline support, camera integration, and social media sharing capabilities.
 
