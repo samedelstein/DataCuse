@@ -10,7 +10,8 @@ import {
   Paper,
   Button,
   Stack,
-  Chip
+  Chip,
+  Divider
 } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import ExtensionIcon from '@mui/icons-material/Extension';
@@ -137,6 +138,7 @@ const PuzzleList = ({
             ))}
           </Grid>
           <Box sx={{ mt: 4 }}>
+            <Divider sx={{ mb: 3 }} />
             <PuzzleTimeline puzzles={puzzles} />
           </Box>
         </>
