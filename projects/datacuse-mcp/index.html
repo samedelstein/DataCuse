@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducing Datacuse MCP | DataCuse</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --orange-primary: #F76900;
+            --navy-deep: #050a18;
+            --navy-panel: rgba(255, 255, 255, 0.04);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background:
+                radial-gradient(circle at top, rgba(247, 105, 0, 0.12), transparent 30%),
+                linear-gradient(180deg, #040816 0%, #030711 100%);
+            color: #e2e8f0;
+        }
+        .heading-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        .glass-card {
+            background: var(--navy-panel);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        .prose-copy p {
+            margin-bottom: 1.25rem;
+            line-height: 1.85;
+            color: #cbd5e1;
+        }
+        .prose-copy h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+        .prose-copy h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+            color: #ffffff;
+        }
+        .prose-copy ul,
+        .prose-copy ol {
+            margin-bottom: 1.25rem;
+            padding-left: 1.25rem;
+            color: #cbd5e1;
+        }
+        .prose-copy li {
+            margin-bottom: 0.5rem;
+        }
+        .accent {
+            color: var(--orange-primary);
+        }
+    </style>
+</head>
+<body>
+    <main class="px-6 py-12 md:py-20">
+        <div class="max-w-4xl mx-auto">
+            <a href="../../index.html#blog" class="inline-flex items-center text-sm font-semibold text-slate-300 hover:text-white transition mb-8">
+                &larr; Back to DataCuse
+            </a>
+            <header class="mb-12">
+                <div class="inline-flex items-center gap-3 mb-5">
+                    <span class="text-xs font-bold uppercase tracking-[0.25em] text-[#F76900]">Launch Essay</span>
+                    <span class="text-sm text-slate-500">March 2026</span>
+                </div>
+                <h1 class="heading-font text-4xl md:text-6xl font-extrabold leading-tight mb-6">
+                    Syracuse data is fragmented. <span class="accent">Datacuse MCP</span> makes it usable.
+                </h1>
+                <p class="text-lg md:text-xl text-slate-400 max-w-3xl leading-relaxed">
+                    One MCP server for Syracuse open data, Onondaga County Public Libraries, and selected county, state, and federal sources, built so ChatGPT can search, analyze, and act on real local systems instead of treating them like disconnected portals.
+                </p>
+                <div class="glass-card rounded-3xl overflow-hidden mt-10">
+                    <img src="../ocplbooksearch.png" alt="Datacuse MCP book search and library availability workflow" class="w-full h-[320px] md:h-[420px] object-cover" />
+                </div>
+            </header>
+            <section class="glass-card rounded-3xl p-8 md:p-12 prose-copy">
+                <p>Public data is usually available in theory and painful in practice.</p>
+                <p>Cities publish dashboards, ArcGIS services, CSV downloads, PDFs, portals, and one-off department pages. Libraries run separate catalogs, events systems, and reporting sites. State and federal agencies expose their own APIs and portals. The data is real, but using it across systems still takes too much manual work.</p>
+                                <p>That is the problem <strong>Datacuse MCP</strong> is trying to solve.</p>
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin:2rem 0 2.5rem 0;">
+                    <figure class="glass-card" style="padding:0.75rem;border-radius:1rem;">
+                        <img src="../onondagacountydatascreenshot.png" alt="Onondaga County data search in Datacuse MCP" style="width:100%;height:200px;object-fit:cover;border-radius:0.75rem;margin-bottom:0.75rem;" />
+                        <figcaption style="font-size:0.9rem;line-height:1.5;color:#cbd5e1;">Official county-level source discovery for Onondaga County datasets and reporting sources.</figcaption>
+                    </figure>
+                    <figure class="glass-card" style="padding:0.75rem;border-radius:1rem;">
+                        <img src="../syracuseroaddata.png" alt="Syracuse road data analysis in Datacuse MCP" style="width:100%;height:200px;object-fit:cover;border-radius:0.75rem;margin-bottom:0.75rem;" />
+                        <figcaption style="font-size:0.9rem;line-height:1.5;color:#cbd5e1;">A Syracuse-specific analysis workflow using public street and pavement data.</figcaption>
+                    </figure>
+                    <figure class="glass-card" style="padding:0.75rem;border-radius:1rem;">
+                        <img src="../ocplbooksearch.png" alt="OCPL book search through Datacuse MCP" style="width:100%;height:200px;object-fit:cover;border-radius:0.75rem;margin-bottom:0.75rem;" />
+                        <figcaption style="font-size:0.9rem;line-height:1.5;color:#cbd5e1;">Library catalog search and branch-level book availability through the OCPL connector flow.</figcaption>
+                    </figure>
+                </div>
+                <h2>What Datacuse MCP Is</h2>
+                <p>Datacuse MCP is a Model Context Protocol server focused on Syracuse, Onondaga County, and closely related public data sources.</p>
+                <p>It gives ChatGPT and other MCP clients a single tool surface for:</p>
+                <ul>
+                    <li>Syracuse open data discovery from <code>data.syr.gov</code></li>
+                    <li>raw Syracuse ArcGIS REST access for Syracuse datasets</li>
+                    <li>Onondaga County Public Libraries branch, event, catalog, and account workflows</li>
+                    <li>curated county, state, and federal datasets relevant to Syracuse and Onondaga County</li>
+                    <li>live access to selected official APIs like Census, BLS, and Health Data NY</li>
+                </ul>
+                <p>The practical goal is simple: make local public data and local civic workflows usable through natural language.</p>
+                <h2>Why Build This</h2>
+                <p>If you have ever tried to answer basic civic questions with public data, you have probably run into versions of the same problems:</p>
+                <ul>
+                    <li>the official data lives in multiple systems</li>
+                    <li>one portal lists a curated subset while raw services expose much more</li>
+                    <li>metadata is inconsistent</li>
+                    <li>different sources use different identifiers and schemas</li>
+                    <li>some high-value workflows are not datasets at all</li>
+                </ul>
+                <p>Library usage is a good example. A city data portal may expose geography and service context, but that has nothing to do with whether a specific book is in the catalog, whether a branch has an event this week, or whether a hold can actually be placed from an AI-driven workflow.</p>
+                <p>Datacuse MCP is opinionated about that. It treats the local data ecosystem as a set of connected but different systems, then exposes them through one MCP server instead of pretending everything is a flat dataset.</p>
+                <h2>What It Can Do Today</h2>
+                <h3>Syracuse open data</h3>
+                <p>Datacuse MCP can search and inspect the Syracuse open data ecosystem across both the ArcGIS Hub layer and the raw ArcGIS REST layer. That means it can find datasets by topic, compare curated Hub items to raw REST services, inspect layers and metadata, and query records from public ArcGIS services.</p>
+                <h3>Onondaga County Public Libraries</h3>
+                <p>This is where the project gets more interesting. Datacuse MCP includes OCPL branch metadata, LibCal-backed event discovery, annual library stats, Polaris catalog search and item availability, and browser-assisted account workflows for holds and verification.</p>
+                <p>That last part is the key distinction. A lot of public data work stops at search and read-only browsing. Datacuse MCP goes further and supports an actual resident workflow: find a book, authenticate through a live browser session, place a hold, and confirm it appears in the account.</p>
+                <h3>County, state, and federal context</h3>
+                <p>Local questions often need non-local sources. A Syracuse or Onondaga County workflow may also need Census demographic context, BLS unemployment trends, or Health Data NY county-level indicators. Datacuse MCP adds a curated geographic source layer and a few live adapters so those sources can sit alongside city and library tools instead of living in a separate research process.</p>
+                <h2>What Makes It Different</h2>
+                <h3>1. It treats source systems honestly</h3>
+                <p>Not everything is the same shape. ArcGIS layers, catalog search results, branch pages, library events, annual stats, and account actions are different things. Datacuse MCP does not force them into one fake abstraction. It shares a discovery layer where that helps, then adds domain-specific tools where that is the better design.</p>
+                <h3>2. It is local and practical</h3>
+                <p>This is not a smart city platform pitch deck. It is a working MCP server built around concrete Syracuse and Onondaga workflows: find the right dataset, compare what is public versus what is raw, inspect records, find the right library item, place the hold, and verify the result.</p>
+                <h3>3. It is built for plain-English use</h3>
+                <p>One of the lessons from building this was that tool quality is not enough. If the MCP surface is too low-level, users have to think like implementers instead of users. That is why the project now includes higher-level library workflow tools, so prompts can sound more like:</p>
+                <p><strong>"Use Syracuse Data to place a hold on this book for pickup at Petit Branch Library."</strong></p>
+                <p>instead of:</p>
+                <p><strong>"Search the catalog, resolve the item ref, open the browser login, place the hold, and verify the request table."</strong></p>
+                <h2>What It Is Not</h2>
+                <p>Datacuse MCP is not an official city or library product, a full hosted SaaS, a substitute for secure multi-user auth design, or a production-grade civic data warehouse.</p>
+                <p>It also depends on upstream systems that can change. Public pages drift. Portal metadata is messy. Browser-backed library flows are inherently more fragile than stable APIs. That is the tradeoff: it is useful now because it works against the systems that already exist, not because those systems were designed for clean machine interoperability.</p>
+                <h2>Why MCP Is the Right Interface</h2>
+                <p>The value of MCP here is not just that AI can call tools. The real advantage is that it gives a structured way for a model to discover capabilities, use the right tool at the right time, preserve context across a workflow, and mix search, data access, and action.</p>
+                <p>For local public-data work, that is a big deal. The problem is rarely just one API call. It is usually a chain:</p>
+                <ol>
+                    <li>find the right source</li>
+                    <li>understand what it contains</li>
+                    <li>resolve the right record or item</li>
+                    <li>take the right next action</li>
+                    <li>confirm the outcome</li>
+                </ol>
+                <p>Datacuse MCP is built around that chain.</p>
+                <h2>Where This Could Go</h2>
+                <p>There are obvious next steps: more Syracuse and Onondaga adapters, more state and federal live integrations, better ranking and source preference logic, safer auth and hosting patterns, and a cleaner public-facing app on top of the MCP.</p>
+                <p>The larger opportunity is not limited to Syracuse. The same pattern could work for any city where the real public-data ecosystem is fragmented across portals, services, dashboards, and operational tools.</p>
+                <h2>Closing Thought</h2>
+                <p>Public data becomes much more useful when it stops being a scavenger hunt.</p>
+                <p>Datacuse MCP is an attempt to make local civic data and local civic workflows feel coherent, usable, and actionable through one interface.</p>
+                <p>That is the core idea: not just more data access, but better access to the systems people actually need.</p>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
+
+
