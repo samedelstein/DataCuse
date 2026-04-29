@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { 
-  AlertTriangle, 
-  CheckCircle2, 
-  Copy, 
-  ExternalLink, 
+import {
+  AlertTriangle,
+  CheckCircle2,
+  Copy,
+  ExternalLink,
   Info,
   ShieldAlert,
   Loader2,
@@ -11,16 +11,18 @@ import {
   Search,
   Zap
 } from 'lucide-react';
+
 const SYRACUSE_LAT = 43.0481;
 const SYRACUSE_LNG = -76.1474;
 
 export default function App() {
   const [userInput, setUserInput] = useState('');
   const [loading, setLoading] = useState(false);
-  const [apiState, setApiState] = useState('idle'); 
+  const [apiState, setApiState] = useState('idle');
   const [submittableCategories, setSubmittableCategories] = useState([]);
   const [blockedCategories, setBlockedCategories] = useState([]);
   const [result, setResult] = useState(null);
+  const [errorMessage, setErrorMessage] = useState('');
   const [copyFeedback, setCopyFeedback] = useState(false);
 
   useEffect(() => {
@@ -29,50 +31,62 @@ export default function App() {
 
   const fetchSyracuseCategories = async () => {
     setApiState('fetching');
+    setErrorMessage('');
+
     try {
       const url = `https://seeclickfix.com/api/v2/issues/new?lat=${SYRACUSE_LAT}&lng=${SYRACUSE_LNG}`;
       const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`SeeClickFix returned ${response.status}`);
+      }
+
       const data = await response.json();
-      
-      const rawTypes = data.request_types || [];
-      
-      // Filter exactly by the 'title' field based on the block_submission flag
+      const rawTypes = Array.isArray(data.request_types) ? data.request_types : [];
+      if (rawTypes.length === 0) {
+        throw new Error('No request categories were returned for Syracuse.');
+      }
+
       const submittable = rawTypes
-        .filter(t => t.block_submission === false)
-        .map(t => t.title);
-      
+        .filter((type) => type.block_submission === false)
+        .map((type) => type.title)
+        .filter(Boolean);
+
       const blocked = rawTypes
-        .filter(t => t.block_submission === true)
-        .map(t => t.title);
+        .filter((type) => type.block_submission === true)
+        .map((type) => type.title)
+        .filter(Boolean);
 
       setSubmittableCategories(submittable);
       setBlockedCategories(blocked);
       setApiState('ready');
     } catch (err) {
-      console.error("API Audit failed", err);
+      console.error('API Audit failed', err);
+      setErrorMessage('Could not load live Syracuse request categories. Try refreshing in a minute.');
       setApiState('error');
     }
   };
 
   const handleTranslate = async () => {
     if (!userInput.trim()) return;
+
     setLoading(true);
     setResult(null);
+    setErrorMessage('');
 
     const systemPrompt = `
-      You are the "Syracuse Civic Strategist". 
+      You are the "Syracuse Civic Strategist".
       Your mission is to find an AVAILABLE category from the list below to bypass blocked paths.
-      
+
       STRICT REQUIREMENTS:
       1. You MUST pick a "workaround_category" that exists EXACTLY as written in the SUBMITTABLE list.
       2. The user's intent might match a BLOCKED category. You must find the most effective SUBMITTABLE alternative.
       3. Use the 'title' field provided in the list.
 
       SUBMITTABLE 'TITLE' LIST (VERIFIED AVAILABLE):
-      ${submittableCategories.join(" | ")}
+      ${submittableCategories.join(' | ')}
 
       BLOCKED 'TITLE' LIST (DO NOT USE THESE):
-      ${blockedCategories.join(" | ")}
+      ${blockedCategories.join(' | ')}
 
       Respond in JSON:
       {
@@ -85,42 +99,57 @@ export default function App() {
     `;
 
     try {
-      const response = await fetch("https://api.datacuse.com/api/gemini", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
+      const response = await fetch('https://api.datacuse.com/api/gemini', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           contents: [{ parts: [{ text: `User Issue: ${userInput}` }] }],
           systemInstruction: { parts: [{ text: systemPrompt }] },
-          generationConfig: { responseMimeType: "application/json" }
+          generationConfig: { responseMimeType: 'application/json' }
         })
       });
 
+      if (!response.ok) {
+        throw new Error(`Datacuse API returned ${response.status}`);
+      }
 
       const data = await response.json();
-      const content = JSON.parse(data.candidates[0].content.parts[0].text);
-      
-      // Final JS Validation: Ensure the AI didn't hallucinate a category name
+      const responseText = data?.candidates?.[0]?.content?.parts?.[0]?.text;
+      if (!responseText) {
+        throw new Error('The Datacuse API returned an empty response.');
+      }
+
+      const content = JSON.parse(responseText);
+      if (!content.workaround_category || !content.strategy_reasoning || !content.draft_text) {
+        throw new Error('The Datacuse API response was missing required fields.');
+      }
+
       if (!submittableCategories.includes(content.workaround_category)) {
-        // Fallback to "Other" or similar if match fails
-        const closest = submittableCategories.find(c => c.toLowerCase().includes("other")) || submittableCategories[0];
+        const closest = submittableCategories.find((category) => category.toLowerCase().includes('other')) || submittableCategories[0];
         content.workaround_category = closest;
       }
 
       setResult(content);
     } catch (err) {
-      console.error("Translation error", err);
+      console.error('Translation error', err);
+      setErrorMessage('Could not map that request right now. Please try again or use Cityline directly.');
     } finally {
       setLoading(false);
     }
   };
 
-  const copyToClipboard = (text) => {
-    const el = document.createElement('textarea');
-    el.value = text;
-    document.body.appendChild(el);
-    el.select();
-    document.execCommand('copy');
-    document.body.removeChild(el);
+  const copyToClipboard = async (text) => {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(text);
+    } else {
+      const el = document.createElement('textarea');
+      el.value = text;
+      document.body.appendChild(el);
+      el.select();
+      document.execCommand('copy');
+      document.body.removeChild(el);
+    }
+
     setCopyFeedback(true);
     setTimeout(() => setCopyFeedback(false), 2000);
   };
@@ -148,12 +177,14 @@ export default function App() {
               </span>
             </div>
           </a>
-          
+
           <div className={`px-3 py-1 rounded-full border text-[10px] font-bold uppercase tracking-wider flex items-center gap-2 ${
             apiState === 'ready' ? 'bg-green-50 border-green-200 text-green-700' : 'bg-slate-100 border-slate-200 text-slate-500'
           }`}>
             {apiState === 'fetching' && <Loader2 size={10} className="animate-spin" />}
-            {apiState === 'ready' ? `${submittableCategories.length} Categories Live` : 'Connecting...'}
+            {apiState === 'ready' && `${submittableCategories.length} Categories Live`}
+            {apiState === 'error' && 'Connection Error'}
+            {(apiState === 'idle' || apiState === 'fetching') && 'Connecting...'}
           </div>
         </div>
       </header>
@@ -191,6 +222,12 @@ export default function App() {
           </div>
         </section>
 
+        {errorMessage && (
+          <div className="mt-4 rounded-xl border border-red-200 bg-red-50 p-4 text-sm font-bold text-red-800">
+            {errorMessage}
+          </div>
+        )}
+
         {result && (
           <div className="mt-8 space-y-4 animate-in fade-in slide-in-from-bottom-4 duration-300">
             <div className="bg-white rounded-2xl shadow-2xl border-2 border-[#002D62] overflow-hidden">
@@ -200,7 +237,7 @@ export default function App() {
                   Select this verified title in Cityline
                 </span>
               </div>
-              
+
               <div className="p-8 text-center bg-white border-b border-slate-100">
                 <div className="text-sm font-bold text-slate-400 uppercase mb-2">Available Category:</div>
                 <div className="text-3xl font-black text-[#002D62] leading-tight">
@@ -224,7 +261,7 @@ export default function App() {
                   <div className="bg-white border-2 border-dashed border-slate-300 rounded-xl p-5 text-slate-700 text-sm leading-relaxed min-h-[100px] pt-6 italic relative shadow-inner">
                     {result.draft_text}
                   </div>
-                  <button 
+                  <button
                     onClick={() => copyToClipboard(result.draft_text)}
                     className="absolute top-4 right-2 p-2 bg-slate-100 hover:bg-[#F76900] hover:text-white rounded-lg transition-all flex items-center gap-2 border border-slate-200 group"
                   >
@@ -238,10 +275,10 @@ export default function App() {
               </div>
 
               <div className="p-4 bg-white flex gap-3">
-                <a 
-                  href="https://seeclickfix.com/syracuse" 
-                  target="_blank" 
-                  rel="noreferrer"
+                <a
+                  href="https://seeclickfix.com/syracuse"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex-1 py-4 bg-[#F76900] hover:bg-[#E05E00] text-white rounded-xl font-black flex items-center justify-center gap-2 transition-all shadow-lg uppercase tracking-tighter"
                 >
                   Go to Syracuse Cityline <ExternalLink size={18} />
@@ -278,7 +315,7 @@ export default function App() {
       </main>
 
       <footer className="mt-12 text-center text-slate-400 text-[10px] font-medium px-6 py-8">
-        <p>© {new Date().getFullYear()} CITYLINE BYPASS SYRACUSE</p>
+        <p>&copy; {new Date().getFullYear()} CITYLINE BYPASS SYRACUSE</p>
         <p className="mt-1 opacity-60">Real-time audit of Syracuse Cityline request_types via SeeClickFix API.</p>
       </footer>
     </div>

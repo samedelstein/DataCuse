@@ -4,319 +4,206 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DataCuse | Syracuse Data Projects</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --orange-primary: #F76900;
-            --navy-deep: #000E3F;
-            --navy-light: #001C7F;
-        }
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #050a18;
-            color: #e2e8f0;
-        }
-        .heading-font {
-            font-family: 'Space Grotesk', sans-serif;
-        }
-        .orange-glow {
-            box-shadow: 0 0 20px rgba(247, 105, 0, 0.2);
-        }
-        .glass-card {
-            background: rgba(255, 255, 255, 0.03);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.05);
-            transition: all 0.3s ease;
-        }
-        .glass-card:hover {
-            background: rgba(255, 255, 255, 0.07);
-            border-color: var(--orange-primary);
-            transform: translateY(-5px);
-        }
-        .cuse-gradient {
-            background: linear-gradient(135deg, var(--orange-primary) 0%, #ff9d00 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        .bg-pattern {
-            background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0);
-            background-size: 40px 40px;
-        }
-    </style>
+    <meta name="description" content="Interactive tools, maps, and civic data stories about Syracuse, Onondaga County, and the systems residents use every day.">
+    <link rel="canonical" href="https://www.datacuse.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="DataCuse">
+    <meta property="og:title" content="DataCuse | Syracuse, Explained Through Data">
+    <meta property="og:description" content="Interactive tools, maps, and civic data stories about Syracuse, Onondaga County, and the systems residents use every day.">
+    <meta property="og:url" content="https://www.datacuse.com/">
+    <meta property="og:image" content="https://www.datacuse.com/public/below_the_line_2026_preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DataCuse | Syracuse, Explained Through Data">
+    <meta name="twitter:description" content="Interactive tools, maps, and civic data stories about Syracuse, Onondaga County, and the systems residents use every day.">
+    <meta name="twitter:image" content="https://www.datacuse.com/public/below_the_line_2026_preview.png">
+    <meta name="theme-color" content="#f76900">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/site.css">
 </head>
-<body class="bg-pattern">
-
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 px-6 py-4 bg-[#050a18]/80 backdrop-blur-md border-b border-white/5">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="flex items-center space-x-2">
-                <div class="w-8 h-8 bg-[#F76900] rounded-lg flex items-center justify-center font-bold text-white">D</div>
-                <span class="heading-font text-xl font-bold tracking-tight">DATA<span class="text-[#F76900]">CUSE</span></span>
-            </div>
-            <div class="hidden md:flex space-x-8 text-sm font-medium">
-                <a href="#projects" class="hover:text-[#F76900] transition">Projects</a>
-                <a href="#blog" class="hover:text-[#F76900] transition">Insights</a>
-                <a href="#about" class="hover:text-[#F76900] transition">About</a>
-                <a href="mailto:sam.i.edelstein@gmail.com" class="text-[#F76900] border border-[#F76900]/30 px-4 py-1 rounded-full hover:bg-[#F76900] hover:text-white transition">Contact</a>
-            </div>
+<body>
+    <nav class="site-nav" aria-label="Primary">
+        <a class="brand" href="/">
+            <span class="brand-mark">D</span>
+            <span>Data<span>Cuse</span></span>
+        </a>
+        <div class="nav-links">
+            <a href="#projects">Projects</a>
+            <a href="#insights">Insights</a>
+            <a href="#about">About</a>
+            <a class="nav-pill" href="mailto:sam.i.edelstein@gmail.com">Contact</a>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="relative pt-32 pb-20 px-6 overflow-hidden">
-        <div class="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-[#F76900]/10 rounded-full blur-[120px] -z-10"></div>
-        <div class="max-w-4xl mx-auto text-center">
-            <h1 class="heading-font text-5xl md:text-7xl font-extrabold mb-6 leading-tight">
-                Visualizing the Heart of <span class="cuse-gradient">Central NY</span>
-            </h1>
-            <p class="text-lg md:text-xl text-slate-400 mb-10 leading-relaxed max-w-2xl mx-auto">
-                A collection of data science projects, interactive maps, and urban analyses focused on the Salt City. From snow removal to economic trends.
-            </p>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a href="#projects" class="bg-[#F76900] text-white px-8 py-4 rounded-xl font-bold hover:scale-105 transition-transform orange-glow">
-                    Explore Apps
-                </a>
-                <a href="#blog" class="glass-card px-8 py-4 rounded-xl font-bold hover:bg-white/10 transition">
-                    Read the Blog
-                </a>
-            </div>
+    <header class="hero">
+        <div class="hero-media" aria-hidden="true">
+            <img src="public/syracuse_clinton_square_1909.jpg" alt="">
+        </div>
+        <div class="hero-grid">
+            <section class="hero-copy">
+                <p class="eyebrow">Built for the 315</p>
+                <h1>Syracuse, explained through data.</h1>
+                <p class="hero-lede">
+                    Interactive tools, maps, and civic data stories about Syracuse, Onondaga County,
+                    and the systems residents use every day.
+                </p>
+                <div class="hero-actions">
+                    <a class="button primary" href="#projects">Explore projects</a>
+                    <a class="button secondary" href="#insights">Read insights</a>
+                </div>
+                <p class="hero-credit">
+                    Hero image: public-domain Clinton Square / Erie Canal postcard via Wikimedia Commons.
+                </p>
+            </section>
+            <aside class="hero-panel" aria-label="Featured DataCuse coverage">
+                <div class="signal-card">
+                    <span class="signal-label">Latest analysis</span>
+                    <strong>Below the Line 2026</strong>
+                    <p>Poverty, housing, education, transportation, broadband, and peer-city change.</p>
+                </div>
+                <div class="mini-grid">
+                    <div>
+                        <span>4</span>
+                        <p>Featured tools</p>
+                    </div>
+                    <div>
+                        <span>315</span>
+                        <p>Local focus</p>
+                    </div>
+                </div>
+            </aside>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="max-w-7xl mx-auto px-6 py-20">
-        
-        <!-- Apps/Projects Section -->
-        <section id="projects" class="mb-32">
-            <div class="flex items-end justify-between mb-12">
-                <div>
-                    <h2 class="heading-font text-3xl font-bold mb-2">Interactive Tools</h2>
-                    <p class="text-slate-500">Live Streamlit applications and dashboards.</p>
-                </div>
-                <div class="h-[1px] flex-grow mx-8 bg-white/10 hidden md:block mb-4"></div>
+    <main>
+        <section class="section projects-section" id="projects">
+            <div class="section-heading">
+                <p class="eyebrow">Project desk</p>
+                <h2>Interactive tools and civic data products</h2>
+                <p>Maps, dashboards, and local workflows built around real Syracuse questions.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1: Snow Map -->
-                <a href="https://cusesnowplowcoverage.streamlit.app/" target="_blank" class="glass-card p-6 rounded-2xl group">
-                  <div class="relative overflow-hidden rounded-xl mb-6 aspect-video bg-navy-light group">
-                    
-                    <!-- Screenshot -->
-                    <img
-                      src="public/snow_map.png"
-                      alt="Syracuse Snow Map"
-                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                      loading="lazy"
-                    />
-
-                    <!-- Subtle overlay for contrast -->
-                    <div class="absolute inset-0 bg-gradient-to-br from-black/30 to-black/10"></div>
-
-                    <!-- Badge -->
-                    <div class="absolute bottom-3 left-3 bg-white/10 backdrop-blur-md px-3 py-1 rounded-md text-xs font-semibold text-white uppercase tracking-wider">
-                      Streamlit App
+            <div class="project-grid">
+                <a class="project-card feature-card" href="projects/below-the-line/">
+                    <div class="project-image">
+                        <img src="public/below_the_line_2026_preview.png" alt="Below the Line 2026 report preview" loading="lazy">
+                        <span>Interactive Report</span>
                     </div>
-                  </div>
-                    <h3 class="heading-font text-xl font-bold mb-2 group-hover:text-[#F76900] transition">Syracuse Snow Map</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                        Real-time visualization of snow removal progress and plow locations across the city's residential streets.
-                    </p>
-                    <div class="flex items-center text-[#F76900] font-semibold text-sm">
-                        Launch Project
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    <div class="project-copy">
+                        <p class="card-kicker">Poverty Data</p>
+                        <h3>Below the Line 2026</h3>
+                        <p>An updated look at Syracuse poverty, housing, education, work, transportation, broadband access, and peer-city change since the original report.</p>
+                        <strong>Launch project &rarr;</strong>
                     </div>
                 </a>
 
-                <!-- Library Census App -->
-                <a href="https://ocpllibrarycensus.streamlit.app/" target="_blank" class="glass-card p-6 rounded-2xl group">
-                  <div class="relative overflow-hidden rounded-xl mb-6 aspect-video bg-navy-light group">
-                    
-                    <!-- Screenshot -->
-                    <img
-                      src="public/library_census.png"
-                      alt="Library Census Dashboard"
-                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                      loading="lazy"
-                    />
-
-                    <!-- Subtle overlay for contrast -->
-                    <div class="absolute inset-0 bg-gradient-to-br from-black/30 to-black/10"></div>
-
-                    <!-- Badge -->
-                    <div class="absolute bottom-3 left-3 bg-white/10 backdrop-blur-md px-3 py-1 rounded-md text-xs font-semibold text-white uppercase tracking-wider">
-                      Streamlit App
+                <a class="project-card" href="https://cusesnowplowcoverage.streamlit.app/" target="_blank" rel="noopener noreferrer">
+                    <div class="project-image">
+                        <img src="public/snow_map.png" alt="Syracuse Snow Map" loading="lazy">
+                        <span>Streamlit App</span>
                     </div>
-                  </div>
-
-                    <h3 class="heading-font text-xl font-bold mb-2 group-hover:text-[#F76900] transition">Census Data in Onondaga County by Library Location</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                        Explore demographic insights and library usage patterns across Onondaga County through this interactive Streamlit app.
-                    </p>
-                    <div class="flex items-center text-[#F76900] font-semibold text-sm">
-                        Launch Project
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    <div class="project-copy">
+                        <p class="card-kicker">Snow</p>
+                        <h3>Syracuse Snow Map</h3>
+                        <p>Real-time visualization of snow removal progress and plow locations across the city's residential streets.</p>
+                        <strong>Launch project &rarr;</strong>
                     </div>
                 </a>
 
-                <!-- Cityline Workaround App -->
-                <a href="https://www.datacuse.com/projects/cityline-bypass/" target="_blank" class="glass-card p-6 rounded-2xl group">
-                   <div class="relative overflow-hidden rounded-xl mb-6 aspect-video bg-navy-light group">
-                    
-                    <!-- Screenshot -->
-                    <img
-                      src="public/cityline_bypass.png"
-                      alt="Cityline Workaround Dashboard"
-                      class="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                      loading="lazy"
-                    />
-
-                    <!-- Subtle overlay for contrast -->
-                    <div class="absolute inset-0 bg-gradient-to-br from-black/30 to-black/10"></div>
-
-                    <!-- Badge -->
-                    <div class="absolute bottom-3 left-3 bg-white/10 backdrop-blur-md px-3 py-1 rounded-md text-xs font-semibold text-white uppercase tracking-wider">
-                      AI Web App
+                <a class="project-card" href="https://ocpllibrarycensus.streamlit.app/" target="_blank" rel="noopener noreferrer">
+                    <div class="project-image">
+                        <img src="public/library_census.png" alt="Library Census Dashboard" loading="lazy">
+                        <span>Streamlit App</span>
                     </div>
-                  </div>
-
-                    <h3 class="heading-font text-xl font-bold mb-2 group-hover:text-[#F76900] transition">Cityline Workaround App</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                        An alternative interface to help you decide how to best submit a service request to the City of Syracuse using their Cityline system.
-                    </p>
-                    <div class="flex items-center text-[#F76900] font-semibold text-sm">
-                        Launch Project
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    <div class="project-copy">
+                        <p class="card-kicker">Libraries</p>
+                        <h3>Census Data by Library Location</h3>
+                        <p>Explore demographic insights and library usage patterns across Onondaga County through an interactive dashboard.</p>
+                        <strong>Launch project &rarr;</strong>
                     </div>
                 </a>
-                <!-- Below the Line 2026 -->
-                <a href="projects/below-the-line/" class="glass-card p-6 rounded-2xl group">
-                  <div class="relative overflow-hidden rounded-xl mb-6 aspect-video bg-navy-light group">
-                    <img
-                      src="public/below_the_line_2026_preview.png"
-                      alt="Below the Line 2026 report preview"
-                      class="absolute inset-0 w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
-                      loading="lazy"
-                    />
-                    <div class="absolute inset-0 bg-gradient-to-br from-black/35 to-black/10"></div>
-                    <div class="absolute bottom-3 left-3 bg-white/10 backdrop-blur-md px-3 py-1 rounded-md text-xs font-semibold text-white uppercase tracking-wider">
-                      Interactive Report
-                    </div>
-                  </div>
 
-                    <h3 class="heading-font text-xl font-bold mb-2 group-hover:text-[#F76900] transition">Below the Line 2026</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                        An updated look at Syracuse poverty, housing, education, work, transportation, broadband access, and peer-city change since the original report.
-                    </p>
-                    <div class="flex items-center text-[#F76900] font-semibold text-sm">
-                        Launch Project
-                        <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                <a class="project-card" href="https://www.datacuse.com/projects/cityline-bypass/" target="_blank" rel="noopener noreferrer">
+                    <div class="project-image">
+                        <img src="public/cityline_bypass.png" alt="Cityline Workaround Dashboard" loading="lazy">
+                        <span>AI Web App</span>
+                    </div>
+                    <div class="project-copy">
+                        <p class="card-kicker">Civic Services</p>
+                        <h3>Cityline Workaround App</h3>
+                        <p>An alternative interface to help residents decide how to submit a service request through Syracuse's Cityline system.</p>
+                        <strong>Launch project &rarr;</strong>
                     </div>
                 </a>
             </div>
         </section>
 
-        <!-- Blog Section -->
-        <section id="blog">
-            <div class="flex items-end justify-between mb-12">
-                <div>
-                    <h2 class="heading-font text-3xl font-bold mb-2">Deep Dives</h2>
-                    <p class="text-slate-500">Long-form data analyses and urban stories.</p>
-                </div>
-                <div class="h-[1px] flex-grow mx-8 bg-white/10 hidden md:block mb-4"></div>
+        <section class="section insights-section" id="insights">
+            <div class="section-heading">
+                <p class="eyebrow">Field notes</p>
+                <h2>Deep dives</h2>
+                <p>Long-form analyses and build notes from the local data stack.</p>
             </div>
 
-            <div class="space-y-6">
-                <!-- Below the Line Deep Dive -->
-                <article class="glass-card p-8 rounded-2xl flex flex-col md:flex-row gap-8 items-start hover:border-[#F76900]/40">
-                    <div class="w-full md:w-48 h-32 rounded-xl flex-shrink-0 overflow-hidden relative">
-                        <img src="public/below_the_line_2026_preview.png" alt="Below the Line 2026 analysis preview" class="absolute inset-0 w-full h-full object-cover object-top" loading="lazy" />
-                        <div class="absolute inset-0 bg-gradient-to-br from-black/35 to-black/10"></div>
-                        <div class="absolute bottom-3 left-3 bg-white/10 backdrop-blur-md px-3 py-1 rounded-md text-xs font-semibold text-white uppercase tracking-wider">Poverty Data</div>
-                    </div>
+            <div class="article-list">
+                <article class="article-card">
+                    <img src="public/below_the_line_2026_preview.png" alt="Below the Line 2026 analysis preview" loading="lazy">
                     <div>
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="text-xs font-bold text-[#F76900] uppercase tracking-widest">Interactive Analysis</span>
-                            <span class="text-xs text-slate-500">April 29, 2026</span>
+                        <p class="card-kicker">Interactive Analysis <span>April 29, 2026</span></p>
+                        <h3>Below the Line 2026</h3>
+                        <p>Rebuilding the original poverty analysis with expanded metrics, peer-city baselines, and careful notes on COVID-era data quality.</p>
+                        <div class="article-links">
+                            <a href="projects/below-the-line/">Open report</a>
+                            <a href="projects/below-the-line/report/below_the_line_2026_report.pdf">2026 PDF</a>
+                            <a href="projects/below-the-line/report/below_the_line_2018_original.pdf">Original PDF</a>
+                            <a href="https://www.innovatesyracuse.com/blog/povertydata" target="_blank" rel="noopener noreferrer">Original blog post</a>
                         </div>
-                        <h3 class="heading-font text-2xl font-bold mb-3">Below the Line 2026</h3>
-                        <p class="text-slate-400 leading-relaxed mb-4">
-                            We revisited the original Below the Line poverty analysis, rebuilt the Census pulls, expanded the metrics, added peer-city and national baselines, and documented where COVID-era data quality limits interpretation.
-                        </p>
-                        <div class="flex flex-wrap gap-x-5 gap-y-2 text-sm font-bold">
-                            <a href="projects/below-the-line/" class="text-white hover:underline">Open interactive report</a>
-                            <a href="projects/below-the-line/report/below_the_line_2026_report.pdf" class="text-white hover:underline">2026 PDF</a>
-                            <a href="projects/below-the-line/report/below_the_line_2018_original.pdf" class="text-white hover:underline">Original PDF</a>
-                            <a href="https://www.innovatesyracuse.com/blog/povertydata" target="_blank" rel="noreferrer" class="text-white hover:underline">Original blog post</a>
-                        </div>
-                    </div>
-                </article>
-                <!-- Blog Post 0 -->
-                <article class="glass-card p-8 rounded-2xl flex flex-col md:flex-row gap-8 items-start hover:border-[#F76900]/40 cursor-pointer">
-                    <div class="w-full md:w-48 h-32 rounded-xl flex-shrink-0 overflow-hidden relative">
-                        <img src="projects/ocplbooksearch.png" alt="Datacuse MCP launch article" class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
-                        <div class="absolute inset-0 bg-gradient-to-br from-black/35 to-black/10"></div>
-                        <div class="absolute bottom-3 left-3 bg-white/10 backdrop-blur-md px-3 py-1 rounded-md text-xs font-semibold text-white uppercase tracking-wider">MCP Launch</div>
-                    </div>
-                    <div>
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="text-xs font-bold text-[#F76900] uppercase tracking-widest">Launch Essay</span>
-                            <span class="text-xs text-slate-500">March 21, 2026</span>
-                        </div>
-                        <h3 class="heading-font text-2xl font-bold mb-3">Introducing Datacuse MCP</h3>
-                        <p class="text-slate-400 leading-relaxed mb-4">
-                            How Syracuse open data, OCPL library workflows, and county, state, and federal sources came together in one MCP server for local analysis and action.
-                        </p>
-                        <a href="https://www.datacuse.com/projects/datacuse-mcp/" class="text-sm font-bold text-white hover:underline">Read full story ?</a>
                     </div>
                 </article>
 
-                <!-- Blog Post 1 -->
-                <article class="glass-card p-8 rounded-2xl flex flex-col md:flex-row gap-8 items-start hover:border-[#F76900]/40 cursor-pointer">
-                    <div class="w-full md:w-48 h-32 bg-slate-800 rounded-xl flex-shrink-0 flex items-center justify-center text-3xl">🍊</div>
+                <article class="article-card">
+                    <img src="projects/ocplbooksearch.png" alt="Datacuse MCP launch article" loading="lazy">
                     <div>
-                        <div class="flex items-center gap-3 mb-3">
-                            <span class="text-xs font-bold text-[#F76900] uppercase tracking-widest">Data Analysis</span>
-                            <span class="text-xs text-slate-500">December 31, 2025</span>
+                        <p class="card-kicker">Launch Essay <span>March 21, 2026</span></p>
+                        <h3>Introducing Datacuse MCP</h3>
+                        <p>How Syracuse open data, OCPL library workflows, and county, state, and federal sources came together in one MCP server.</p>
+                        <div class="article-links">
+                            <a href="https://www.datacuse.com/projects/datacuse-mcp/">Read full story</a>
                         </div>
-                        <h3 class="heading-font text-2xl font-bold mb-3">Cityline Snow Request Analysis</h3>
-                        <p class="text-slate-400 leading-relaxed mb-4">
-                            A look at how residents make snow plow service requests to Cityline, even when there is no official option to do so.
-                        </p>
-                        <a href="https://www.datacuse.com/projects/cityline-snow-analysis/Plow_Requests.html" class="text-sm font-bold text-white hover:underline">Read full story →</a>
                     </div>
                 </article>
 
+                <article class="article-card">
+                    <div class="article-placeholder">CITYLINE</div>
+                    <div>
+                        <p class="card-kicker">Data Analysis <span>December 31, 2025</span></p>
+                        <h3>Cityline Snow Request Analysis</h3>
+                        <p>A look at how residents make snow plow service requests to Cityline, even when there is no official option to do so.</p>
+                        <div class="article-links">
+                            <a href="https://www.datacuse.com/projects/cityline-snow-analysis/Plow_Requests.html">Read full story</a>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
-
     </main>
 
-    <!-- Footer -->
-    <footer id="about" class="bg-[#030711] py-20 px-6 border-t border-white/5">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
-            <div class="max-w-md">
-                <div class="flex items-center space-x-2 mb-6">
-                    <div class="w-6 h-6 bg-[#F76900] rounded flex items-center justify-center font-bold text-white text-xs">D</div>
-                    <span class="heading-font text-lg font-bold">DATA<span class="text-[#F76900]">CUSE</span></span>
-                </div>
-                <p class="text-slate-500 text-sm leading-relaxed">
-                    DataCuse let's me build fun data projects and explore insights about Syracuse. 
-                </p>
-            </div>
-            <div class="flex flex-col items-center md:items-end">
-                <p class="text-white font-bold mb-4 italic">Built for the 315.</p>
-                <div class="flex space-x-6">
-                    <a href="https://samedelstein.com" class="text-slate-400 hover:text-white transition">Personal website</a>
-                    <a href="https://github.com/samedelstein" class="text-slate-400 hover:text-white transition">GitHub</a>
-                    <a href="https://www.linkedin.com/in/samedelstein/" class="text-slate-400 hover:text-white transition">LinkedIn</a>
-                </div>
-            </div>
+    <footer class="site-footer" id="about">
+        <div>
+            <a class="brand" href="/">
+                <span class="brand-mark">D</span>
+                <span>Data<span>Cuse</span></span>
+            </a>
+            <p>DataCuse is an independent Syracuse data lab building civic tools, maps, and explainers for the 315.</p>
         </div>
-        <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/5 text-center text-slate-600 text-xs">
-            © 2026 DataCuse. All rights reserved.
+        <div class="footer-links">
+            <p>Built for the 315.</p>
+            <a href="https://samedelstein.com" rel="noopener noreferrer">Personal website</a>
+            <a href="https://github.com/samedelstein" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/samedelstein/" rel="noopener noreferrer">LinkedIn</a>
         </div>
+        <small>&copy; 2026 DataCuse. All rights reserved.</small>
     </footer>
-
 </body>
 </html>
