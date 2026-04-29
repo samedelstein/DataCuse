@@ -1,0 +1,1489 @@
+{
+  "generated_at": "2026-04-28T12:09:12.294145+00:00",
+  "current_year": 2024,
+  "baseline_year": 2019,
+  "syracuse_summary": [
+    {
+      "metric_id": "population",
+      "label": "Population",
+      "section": "Context",
+      "unit": "count",
+      "current": 146384.0,
+      "baseline": 142874.0,
+      "change": 3510.0
+    },
+    {
+      "metric_id": "poverty_rate",
+      "label": "People below poverty line",
+      "section": "Economic Opportunity",
+      "unit": "percent",
+      "current": 0.2878481442598654,
+      "baseline": 0.3104173783422875,
+      "change": -0.022569234082422118
+    },
+    {
+      "metric_id": "black_poverty_rate",
+      "label": "Black residents below poverty line",
+      "section": "Economic Opportunity",
+      "unit": "percent",
+      "current": 0.37290342744035837,
+      "baseline": 0.3932455498658864,
+      "change": -0.02034212242552802
+    },
+    {
+      "metric_id": "hispanic_poverty_rate",
+      "label": "Hispanic/Latino residents below poverty line",
+      "section": "Economic Opportunity",
+      "unit": "percent",
+      "current": 0.44674190025482347,
+      "baseline": 0.4066508701691315,
+      "change": 0.04009103008569198
+    },
+    {
+      "metric_id": "white_nonhispanic_poverty_rate",
+      "label": "White non-Hispanic residents below poverty line",
+      "section": "Economic Opportunity",
+      "unit": "percent",
+      "current": 0.20545749041385694,
+      "baseline": 0.22906290278949126,
+      "change": -0.02360541237563432
+    },
+    {
+      "metric_id": "child_poverty_rate",
+      "label": "Children below poverty line",
+      "section": "Economic Opportunity",
+      "unit": "percent",
+      "current": 0.45034226011768946,
+      "baseline": 0.4685603205458801,
+      "change": -0.01821806042819063
+    },
+    {
+      "metric_id": "median_income",
+      "label": "Median household income",
+      "section": "Economic Opportunity",
+      "unit": "dollars",
+      "current": 47819.0,
+      "baseline": 38276.0,
+      "change": 9543.0
+    },
+    {
+      "metric_id": "black_median_income",
+      "label": "Black median household income",
+      "section": "Economic Opportunity",
+      "unit": "dollars",
+      "current": 36159.0,
+      "baseline": 29865.0,
+      "change": 6294.0
+    },
+    {
+      "metric_id": "hispanic_median_income",
+      "label": "Hispanic/Latino median household income",
+      "section": "Economic Opportunity",
+      "unit": "dollars",
+      "current": 29909.0,
+      "baseline": 30384.0,
+      "change": -475.0
+    },
+    {
+      "metric_id": "white_nonhispanic_median_income",
+      "label": "White non-Hispanic median household income",
+      "section": "Economic Opportunity",
+      "unit": "dollars",
+      "current": 57209.0,
+      "baseline": 45957.0,
+      "change": 11252.0
+    },
+    {
+      "metric_id": "public_assistance_child_households",
+      "label": "Households with children receiving SSI, cash assistance, or SNAP",
+      "section": "Economic Opportunity",
+      "unit": "percent",
+      "current": 0.61161463578382,
+      "baseline": 0.5974764236190977,
+      "change": 0.01413821216472233
+    },
+    {
+      "metric_id": "snap_rate",
+      "label": "Households receiving SNAP",
+      "section": "Economic Opportunity",
+      "unit": "percent",
+      "current": 0.27967433462618696,
+      "baseline": 0.2951062867480778,
+      "change": -0.015431952121890857
+    },
+    {
+      "metric_id": "per_capita_income",
+      "label": "Per capita income",
+      "section": "Economic Opportunity",
+      "unit": "dollars",
+      "current": 28393.0,
+      "baseline": 23090.0,
+      "change": 5303.0
+    },
+    {
+      "metric_id": "public_assistance_or_snap_households",
+      "label": "Households receiving cash public assistance or SNAP",
+      "section": "Economic Opportunity",
+      "unit": "percent",
+      "current": 0.290624582051625,
+      "baseline": 0.30454997738579825,
+      "change": -0.013925395334173252
+    },
+    {
+      "metric_id": "female_householder_with_children_rate",
+      "label": "Households that are female householder families with children",
+      "section": "Economic Opportunity",
+      "unit": "percent",
+      "current": 0.21847375067652897,
+      "baseline": 0.2428967300942176,
+      "change": -0.024422979417688645
+    },
+    {
+      "metric_id": "living_alone_households_rate",
+      "label": "Households where householder lives alone",
+      "section": "Economic Opportunity",
+      "unit": "percent",
+      "current": 0.4260398555570416,
+      "baseline": 0.388493894165536,
+      "change": 0.03754596139150562
+    },
+    {
+      "metric_id": "severe_rent_burden",
+      "label": "Renter households paying 50%+ of income",
+      "section": "Housing Stability",
+      "unit": "percent",
+      "current": 0.31972399576259053,
+      "baseline": 0.29702031870149875,
+      "change": 0.022703677061091776
+    },
+    {
+      "metric_id": "rent_burden",
+      "label": "Renter households paying 30%+ of income",
+      "section": "Housing Stability",
+      "unit": "percent",
+      "current": 0.5182237237667134,
+      "baseline": 0.5041170546768556,
+      "change": 0.014106669089857804
+    },
+    {
+      "metric_id": "same_house_children",
+      "label": "Children living in same house as one year ago",
+      "section": "Housing Stability",
+      "unit": "percent",
+      "current": 0.8682914733075915,
+      "baseline": 0.8168821396812368,
+      "change": 0.05140933362635469
+    },
+    {
+      "metric_id": "vacancy_rate",
+      "label": "Housing unit vacancy rate",
+      "section": "Housing Stability",
+      "unit": "percent",
+      "current": 0.11516101832813123,
+      "baseline": 0.18487878251636877,
+      "change": -0.06971776418823754
+    },
+    {
+      "metric_id": "renter_household_share",
+      "label": "Occupied housing units that are renter occupied",
+      "section": "Housing Stability",
+      "unit": "percent",
+      "current": 0.5839073157683563,
+      "baseline": 0.6108005427408413,
+      "change": -0.026893226972484974
+    },
+    {
+      "metric_id": "homeownership_rate",
+      "label": "Occupied housing units that are owner occupied",
+      "section": "Housing Stability",
+      "unit": "percent",
+      "current": 0.4160926842316437,
+      "baseline": 0.3891994572591588,
+      "change": 0.026893226972484918
+    },
+    {
+      "metric_id": "overcrowded_housing_rate",
+      "label": "Occupied housing units with more than 1 occupant per room",
+      "section": "Housing Stability",
+      "unit": "percent",
+      "current": 0.029406847666176274,
+      "baseline": 0.02939846223428313,
+      "change": 8.38543189314242e-06
+    },
+    {
+      "metric_id": "pre_1940_housing_rate",
+      "label": "Housing units built in 1939 or earlier",
+      "section": "Housing Stability",
+      "unit": "percent",
+      "current": 0.43123622431620834,
+      "baseline": 0.4451866926207751,
+      "change": -0.013950468304566754
+    },
+    {
+      "metric_id": "owner_cost_burden_rate",
+      "label": "Owner households paying 30%+ of income for housing",
+      "section": "Housing Stability",
+      "unit": "percent",
+      "current": 0.2091925971120602,
+      "baseline": 0.1842303349642454,
+      "change": 0.0249622621478148
+    },
+    {
+      "metric_id": "median_gross_rent",
+      "label": "Median gross rent",
+      "section": "Housing Stability",
+      "unit": "dollars",
+      "current": 1039.0,
+      "baseline": 814.0,
+      "change": 225.0
+    },
+    {
+      "metric_id": "no_vehicle_rate",
+      "label": "Households with no vehicle",
+      "section": "Transportation",
+      "unit": "percent",
+      "current": 0.25738932727029556,
+      "baseline": 0.27169606512890093,
+      "change": -0.014306737858605367
+    },
+    {
+      "metric_id": "public_transit_commute",
+      "label": "Workers commuting by public transportation",
+      "section": "Transportation",
+      "unit": "percent",
+      "current": 0.06337010769634883,
+      "baseline": 0.0894503005488283,
+      "change": -0.026080192852479464
+    },
+    {
+      "metric_id": "drive_alone_commute",
+      "label": "Workers commuting by driving alone",
+      "section": "Transportation",
+      "unit": "percent",
+      "current": 0.585073548726031,
+      "baseline": 0.6530708249847548,
+      "change": -0.06799727625872376
+    },
+    {
+      "metric_id": "work_from_home_commute",
+      "label": "Workers working from home",
+      "section": "Transportation",
+      "unit": "percent",
+      "current": 0.12040320462306278,
+      "baseline": 0.04144960362400906,
+      "change": 0.07895360099905371
+    },
+    {
+      "metric_id": "long_commute_rate",
+      "label": "Workers with commute of 45 minutes or more",
+      "section": "Transportation",
+      "unit": "percent",
+      "current": 0.07243644779573706,
+      "baseline": 0.07654136978333576,
+      "change": -0.004104921987598695
+    },
+    {
+      "metric_id": "renter_no_vehicle_rate",
+      "label": "Renter households with no vehicle",
+      "section": "Transportation",
+      "unit": "percent",
+      "current": 0.38975577633349556,
+      "baseline": 0.4069071737456312,
+      "change": -0.017151397412135616
+    },
+    {
+      "metric_id": "labor_force_participation",
+      "label": "Labor force participation",
+      "section": "Workforce Participation",
+      "unit": "percent",
+      "current": 0.5691347906805599,
+      "baseline": 0.5590601588317733,
+      "change": 0.010074631848786653
+    },
+    {
+      "metric_id": "unemployment_rate",
+      "label": "Unemployment rate",
+      "section": "Workforce Participation",
+      "unit": "percent",
+      "current": 0.0771338902886443,
+      "baseline": 0.09331929259454269,
+      "change": -0.01618540230589839
+    },
+    {
+      "metric_id": "full_time_year_round_work_rate",
+      "label": "Population 16+ working full-time, year-round",
+      "section": "Workforce Participation",
+      "unit": "percent",
+      "current": 0.3813023397452165,
+      "baseline": 0.3612067905031369,
+      "change": 0.02009554924207957
+    },
+    {
+      "metric_id": "did_not_work_past_year_rate",
+      "label": "Population 16+ who did not work in the past 12 months",
+      "section": "Workforce Participation",
+      "unit": "percent",
+      "current": 0.27821143988225144,
+      "baseline": 0.318725140443679,
+      "change": -0.04051370056142756
+    },
+    {
+      "metric_id": "youth_not_working_rate",
+      "label": "People age 16-24 who did not work in the past 12 months",
+      "section": "Workforce Participation",
+      "unit": "percent",
+      "current": 0.35780067787325825,
+      "baseline": 0.369514529319645,
+      "change": -0.011713851446386758
+    },
+    {
+      "metric_id": "no_high_school",
+      "label": "Adults 25+ without high school diploma",
+      "section": "Educational Attainment",
+      "unit": "percent",
+      "current": 0.14747313791233718,
+      "baseline": 0.17255552101682037,
+      "change": -0.025082383104483186
+    },
+    {
+      "metric_id": "bachelor_plus",
+      "label": "Adults 25+ with bachelor's degree or higher",
+      "section": "Educational Attainment",
+      "unit": "percent",
+      "current": 0.3124854762141885,
+      "baseline": 0.2841271485971517,
+      "change": 0.02835832761703677
+    },
+    {
+      "metric_id": "school_enrollment_rate",
+      "label": "Population age 3+ enrolled in school",
+      "section": "Educational Attainment",
+      "unit": "percent",
+      "current": 0.33385660846998594,
+      "baseline": 0.34595609830383106,
+      "change": -0.012099489833845123
+    },
+    {
+      "metric_id": "college_or_grad_enrollment_rate",
+      "label": "Population age 3+ enrolled in college or graduate school",
+      "section": "Educational Attainment",
+      "unit": "percent",
+      "current": 0.1741516225064879,
+      "baseline": 0.1731122053096832,
+      "change": 0.001039417196804726
+    },
+    {
+      "metric_id": "no_internet_rate",
+      "label": "Households without internet subscription",
+      "section": "Internet Access",
+      "unit": "percent",
+      "current": 0.08196803530827872,
+      "baseline": 0.2460425146992311,
+      "change": -0.16407447939095238
+    },
+    {
+      "metric_id": "broadband_any_rate",
+      "label": "Households with broadband of any type",
+      "section": "Internet Access",
+      "unit": "percent",
+      "current": 0.8810017386652401,
+      "baseline": 0.689298959746721,
+      "change": 0.19170277891851917
+    },
+    {
+      "metric_id": "broadband_cable_fiber_dsl_rate",
+      "label": "Households with cable, fiber optic, or DSL broadband",
+      "section": "Internet Access",
+      "unit": "percent",
+      "current": 0.7377624715795105,
+      "baseline": 0.5800995024875621,
+      "change": 0.15766296909194832
+    },
+    {
+      "metric_id": "no_computer_rate",
+      "label": "Households without a computer",
+      "section": "Internet Access",
+      "unit": "percent",
+      "current": 0.07238865855289554,
+      "baseline": 0.18523744911804613,
+      "change": -0.11284879056515058
+    },
+    {
+      "metric_id": "no_computer_or_subscription",
+      "label": "Households with no computer or no internet subscription",
+      "section": "Internet Access",
+      "unit": "percent",
+      "current": 0.1316871740002675,
+      "baseline": 0.3228403437358661,
+      "change": -0.19115316973559862
+    },
+    {
+      "metric_id": "disability_rate",
+      "label": "Population with a disability",
+      "section": "Health, Disability, And Language Access",
+      "unit": "percent",
+      "current": 0.16832020942554185,
+      "baseline": 0.15809603851796983,
+      "change": 0.010224170907572022
+    },
+    {
+      "metric_id": "child_disability_rate",
+      "label": "Children under 18 with a disability",
+      "section": "Health, Disability, And Language Access",
+      "unit": "percent",
+      "current": 0.07028775299256444,
+      "baseline": 0.06682998530132288,
+      "change": 0.0034577676912415645
+    },
+    {
+      "metric_id": "uninsured_rate",
+      "label": "Population without health insurance",
+      "section": "Health, Disability, And Language Access",
+      "unit": "percent",
+      "current": 0.05025377529920421,
+      "baseline": 0.04991381889146878,
+      "change": 0.0003399564077354311
+    },
+    {
+      "metric_id": "child_uninsured_rate",
+      "label": "Children under 19 without health insurance",
+      "section": "Health, Disability, And Language Access",
+      "unit": "percent",
+      "current": 0.023252560299960826,
+      "baseline": 0.01774024428259699,
+      "change": 0.005512316017363836
+    },
+    {
+      "metric_id": "limited_english_rate",
+      "label": "Population age 5+ with limited English proficiency",
+      "section": "Health, Disability, And Language Access",
+      "unit": "percent",
+      "current": 0.07860978087360325,
+      "baseline": 0.071015899081884,
+      "change": 0.0075938817917192425
+    },
+    {
+      "metric_id": "youth_limited_english_rate",
+      "label": "Youth age 5-17 with limited English proficiency",
+      "section": "Health, Disability, And Language Access",
+      "unit": "percent",
+      "current": 0.09237078808780351,
+      "baseline": 0.07159226326886058,
+      "change": 0.020778524818942934
+    }
+  ],
+  "peer_rankings": {
+    "original_ny": {
+      "population": {
+        "rank": 2,
+        "of": 4,
+        "higher_is_worse": false
+      },
+      "poverty_rate": {
+        "rank": 1,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "black_poverty_rate": {
+        "rank": 1,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "hispanic_poverty_rate": {
+        "rank": 1,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "white_nonhispanic_poverty_rate": {
+        "rank": 1,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "child_poverty_rate": {
+        "rank": 1,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "median_income": {
+        "rank": 2,
+        "of": 4,
+        "higher_is_worse": false
+      },
+      "black_median_income": {
+        "rank": 1,
+        "of": 4,
+        "higher_is_worse": false
+      },
+      "hispanic_median_income": {
+        "rank": 1,
+        "of": 4,
+        "higher_is_worse": false
+      },
+      "white_nonhispanic_median_income": {
+        "rank": 1,
+        "of": 4,
+        "higher_is_worse": false
+      },
+      "public_assistance_child_households": {
+        "rank": 2,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "snap_rate": {
+        "rank": 3,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "per_capita_income": {
+        "rank": 1,
+        "of": 4,
+        "higher_is_worse": false
+      },
+      "public_assistance_or_snap_households": {
+        "rank": 3,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "female_householder_with_children_rate": {
+        "rank": 2,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "living_alone_households_rate": {
+        "rank": 3,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "severe_rent_burden": {
+        "rank": 1,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "rent_burden": {
+        "rank": 1,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "same_house_children": {
+        "rank": 3,
+        "of": 4,
+        "higher_is_worse": false
+      },
+      "vacancy_rate": {
+        "rank": 3,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "renter_household_share": {
+        "rank": 3,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "homeownership_rate": {
+        "rank": 3,
+        "of": 4,
+        "higher_is_worse": false
+      },
+      "overcrowded_housing_rate": {
+        "rank": 1,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "pre_1940_housing_rate": {
+        "rank": 3,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "owner_cost_burden_rate": {
+        "rank": 2,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "median_gross_rent": {
+        "rank": 4,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "no_vehicle_rate": {
+        "rank": 1,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "public_transit_commute": {
+        "rank": 3,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "drive_alone_commute": {
+        "rank": 3,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "work_from_home_commute": {
+        "rank": 3,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "long_commute_rate": {
+        "rank": 3,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "renter_no_vehicle_rate": {
+        "rank": 1,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "labor_force_participation": {
+        "rank": 1,
+        "of": 4,
+        "higher_is_worse": false
+      },
+      "unemployment_rate": {
+        "rank": 3,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "full_time_year_round_work_rate": {
+        "rank": 1,
+        "of": 4,
+        "higher_is_worse": false
+      },
+      "did_not_work_past_year_rate": {
+        "rank": 1,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "youth_not_working_rate": {
+        "rank": 2,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "no_high_school": {
+        "rank": 2,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "bachelor_plus": {
+        "rank": 3,
+        "of": 4,
+        "higher_is_worse": false
+      },
+      "school_enrollment_rate": {
+        "rank": 4,
+        "of": 4,
+        "higher_is_worse": false
+      },
+      "college_or_grad_enrollment_rate": {
+        "rank": 3,
+        "of": 4,
+        "higher_is_worse": false
+      },
+      "no_internet_rate": {
+        "rank": 2,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "broadband_any_rate": {
+        "rank": 3,
+        "of": 4,
+        "higher_is_worse": false
+      },
+      "broadband_cable_fiber_dsl_rate": {
+        "rank": 3,
+        "of": 4,
+        "higher_is_worse": false
+      },
+      "no_computer_rate": {
+        "rank": 1,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "no_computer_or_subscription": {
+        "rank": 2,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "disability_rate": {
+        "rank": 2,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "child_disability_rate": {
+        "rank": 2,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "uninsured_rate": {
+        "rank": 2,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "child_uninsured_rate": {
+        "rank": 3,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "limited_english_rate": {
+        "rank": 3,
+        "of": 4,
+        "higher_is_worse": true
+      },
+      "youth_limited_english_rate": {
+        "rank": 1,
+        "of": 4,
+        "higher_is_worse": true
+      }
+    },
+    "expanded_ny": {
+      "population": {
+        "rank": 6,
+        "of": 9,
+        "higher_is_worse": false
+      },
+      "poverty_rate": {
+        "rank": 2,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "black_poverty_rate": {
+        "rank": 3,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "hispanic_poverty_rate": {
+        "rank": 2,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "white_nonhispanic_poverty_rate": {
+        "rank": 2,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "child_poverty_rate": {
+        "rank": 1,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "median_income": {
+        "rank": 3,
+        "of": 9,
+        "higher_is_worse": false
+      },
+      "black_median_income": {
+        "rank": 2,
+        "of": 9,
+        "higher_is_worse": false
+      },
+      "hispanic_median_income": {
+        "rank": 2,
+        "of": 9,
+        "higher_is_worse": false
+      },
+      "white_nonhispanic_median_income": {
+        "rank": 2,
+        "of": 9,
+        "higher_is_worse": false
+      },
+      "public_assistance_child_households": {
+        "rank": 2,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "snap_rate": {
+        "rank": 4,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "per_capita_income": {
+        "rank": 2,
+        "of": 9,
+        "higher_is_worse": false
+      },
+      "public_assistance_or_snap_households": {
+        "rank": 4,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "female_householder_with_children_rate": {
+        "rank": 3,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "living_alone_households_rate": {
+        "rank": 5,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "severe_rent_burden": {
+        "rank": 2,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "rent_burden": {
+        "rank": 3,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "same_house_children": {
+        "rank": 6,
+        "of": 9,
+        "higher_is_worse": false
+      },
+      "vacancy_rate": {
+        "rank": 5,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "renter_household_share": {
+        "rank": 4,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "homeownership_rate": {
+        "rank": 4,
+        "of": 9,
+        "higher_is_worse": false
+      },
+      "overcrowded_housing_rate": {
+        "rank": 4,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "pre_1940_housing_rate": {
+        "rank": 7,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "owner_cost_burden_rate": {
+        "rank": 4,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "median_gross_rent": {
+        "rank": 7,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "no_vehicle_rate": {
+        "rank": 2,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "public_transit_commute": {
+        "rank": 6,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "drive_alone_commute": {
+        "rank": 7,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "work_from_home_commute": {
+        "rank": 4,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "long_commute_rate": {
+        "rank": 8,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "renter_no_vehicle_rate": {
+        "rank": 2,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "labor_force_participation": {
+        "rank": 2,
+        "of": 9,
+        "higher_is_worse": false
+      },
+      "unemployment_rate": {
+        "rank": 7,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "full_time_year_round_work_rate": {
+        "rank": 2,
+        "of": 9,
+        "higher_is_worse": false
+      },
+      "did_not_work_past_year_rate": {
+        "rank": 3,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "youth_not_working_rate": {
+        "rank": 5,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "no_high_school": {
+        "rank": 4,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "bachelor_plus": {
+        "rank": 6,
+        "of": 9,
+        "higher_is_worse": false
+      },
+      "school_enrollment_rate": {
+        "rank": 9,
+        "of": 9,
+        "higher_is_worse": false
+      },
+      "college_or_grad_enrollment_rate": {
+        "rank": 8,
+        "of": 9,
+        "higher_is_worse": false
+      },
+      "no_internet_rate": {
+        "rank": 5,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "broadband_any_rate": {
+        "rank": 6,
+        "of": 9,
+        "higher_is_worse": false
+      },
+      "broadband_cable_fiber_dsl_rate": {
+        "rank": 4,
+        "of": 9,
+        "higher_is_worse": false
+      },
+      "no_computer_rate": {
+        "rank": 2,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "no_computer_or_subscription": {
+        "rank": 5,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "disability_rate": {
+        "rank": 4,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "child_disability_rate": {
+        "rank": 4,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "uninsured_rate": {
+        "rank": 3,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "child_uninsured_rate": {
+        "rank": 4,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "limited_english_rate": {
+        "rank": 5,
+        "of": 9,
+        "higher_is_worse": true
+      },
+      "youth_limited_english_rate": {
+        "rank": 1,
+        "of": 9,
+        "higher_is_worse": true
+      }
+    },
+    "national": {
+      "population": {
+        "rank": 10,
+        "of": 15,
+        "higher_is_worse": false
+      },
+      "poverty_rate": {
+        "rank": 3,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "black_poverty_rate": {
+        "rank": 3,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "hispanic_poverty_rate": {
+        "rank": 2,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "white_nonhispanic_poverty_rate": {
+        "rank": 4,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "child_poverty_rate": {
+        "rank": 3,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "median_income": {
+        "rank": 7,
+        "of": 15,
+        "higher_is_worse": false
+      },
+      "black_median_income": {
+        "rank": 9,
+        "of": 15,
+        "higher_is_worse": false
+      },
+      "hispanic_median_income": {
+        "rank": 2,
+        "of": 15,
+        "higher_is_worse": false
+      },
+      "white_nonhispanic_median_income": {
+        "rank": 7,
+        "of": 15,
+        "higher_is_worse": false
+      },
+      "public_assistance_child_households": {
+        "rank": 5,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "snap_rate": {
+        "rank": 7,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "per_capita_income": {
+        "rank": 9,
+        "of": 15,
+        "higher_is_worse": false
+      },
+      "public_assistance_or_snap_households": {
+        "rank": 9,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "female_householder_with_children_rate": {
+        "rank": 9,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "living_alone_households_rate": {
+        "rank": 2,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "severe_rent_burden": {
+        "rank": 1,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "rent_burden": {
+        "rank": 8,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "same_house_children": {
+        "rank": 10,
+        "of": 15,
+        "higher_is_worse": false
+      },
+      "vacancy_rate": {
+        "rank": 7,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "renter_household_share": {
+        "rank": 5,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "homeownership_rate": {
+        "rank": 5,
+        "of": 15,
+        "higher_is_worse": false
+      },
+      "overcrowded_housing_rate": {
+        "rank": 6,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "pre_1940_housing_rate": {
+        "rank": 4,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "owner_cost_burden_rate": {
+        "rank": 11,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "median_gross_rent": {
+        "rank": 8,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "no_vehicle_rate": {
+        "rank": 3,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "public_transit_commute": {
+        "rank": 3,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "drive_alone_commute": {
+        "rank": 13,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "work_from_home_commute": {
+        "rank": 3,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "long_commute_rate": {
+        "rank": 14,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "renter_no_vehicle_rate": {
+        "rank": 1,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "labor_force_participation": {
+        "rank": 4,
+        "of": 15,
+        "higher_is_worse": false
+      },
+      "unemployment_rate": {
+        "rank": 10,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "full_time_year_round_work_rate": {
+        "rank": 3,
+        "of": 15,
+        "higher_is_worse": false
+      },
+      "did_not_work_past_year_rate": {
+        "rank": 6,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "youth_not_working_rate": {
+        "rank": 8,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "no_high_school": {
+        "rank": 7,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "bachelor_plus": {
+        "rank": 12,
+        "of": 15,
+        "higher_is_worse": false
+      },
+      "school_enrollment_rate": {
+        "rank": 15,
+        "of": 15,
+        "higher_is_worse": false
+      },
+      "college_or_grad_enrollment_rate": {
+        "rank": 15,
+        "of": 15,
+        "higher_is_worse": false
+      },
+      "no_internet_rate": {
+        "rank": 11,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "broadband_any_rate": {
+        "rank": 9,
+        "of": 15,
+        "higher_is_worse": false
+      },
+      "broadband_cable_fiber_dsl_rate": {
+        "rank": 12,
+        "of": 15,
+        "higher_is_worse": false
+      },
+      "no_computer_rate": {
+        "rank": 8,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "no_computer_or_subscription": {
+        "rank": 9,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "disability_rate": {
+        "rank": 10,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "child_disability_rate": {
+        "rank": 10,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "uninsured_rate": {
+        "rank": 13,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "child_uninsured_rate": {
+        "rank": 12,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "limited_english_rate": {
+        "rank": 8,
+        "of": 15,
+        "higher_is_worse": true
+      },
+      "youth_limited_english_rate": {
+        "rank": 3,
+        "of": 15,
+        "higher_is_worse": true
+      }
+    }
+  },
+  "peer_groups": {
+    "original_ny": [
+      {
+        "name": "Albany, NY",
+        "state": "36",
+        "place": "01000"
+      },
+      {
+        "name": "Buffalo, NY",
+        "state": "36",
+        "place": "11000"
+      },
+      {
+        "name": "Rochester, NY",
+        "state": "36",
+        "place": "63000"
+      },
+      {
+        "name": "Syracuse, NY",
+        "state": "36",
+        "place": "73000"
+      }
+    ],
+    "expanded_ny": [
+      {
+        "name": "Albany, NY",
+        "state": "36",
+        "place": "01000"
+      },
+      {
+        "name": "Binghamton, NY",
+        "state": "36",
+        "place": "06607"
+      },
+      {
+        "name": "Buffalo, NY",
+        "state": "36",
+        "place": "11000"
+      },
+      {
+        "name": "Rochester, NY",
+        "state": "36",
+        "place": "63000"
+      },
+      {
+        "name": "Schenectady, NY",
+        "state": "36",
+        "place": "65508"
+      },
+      {
+        "name": "Syracuse, NY",
+        "state": "36",
+        "place": "73000"
+      },
+      {
+        "name": "Troy, NY",
+        "state": "36",
+        "place": "75484"
+      },
+      {
+        "name": "Utica, NY",
+        "state": "36",
+        "place": "76540"
+      },
+      {
+        "name": "Yonkers, NY",
+        "state": "36",
+        "place": "84000"
+      }
+    ],
+    "national": [
+      {
+        "name": "Akron, OH",
+        "state": "39",
+        "place": "01000"
+      },
+      {
+        "name": "Dayton, OH",
+        "state": "39",
+        "place": "21000"
+      },
+      {
+        "name": "Erie, PA",
+        "state": "42",
+        "place": "24000"
+      },
+      {
+        "name": "Flint, MI",
+        "state": "26",
+        "place": "29000"
+      },
+      {
+        "name": "Hartford, CT",
+        "state": "09",
+        "place": "37000"
+      },
+      {
+        "name": "New Haven, CT",
+        "state": "09",
+        "place": "52000"
+      },
+      {
+        "name": "Providence, RI",
+        "state": "44",
+        "place": "59000"
+      },
+      {
+        "name": "Reading, PA",
+        "state": "42",
+        "place": "63624"
+      },
+      {
+        "name": "Scranton, PA",
+        "state": "42",
+        "place": "69000"
+      },
+      {
+        "name": "South Bend, IN",
+        "state": "18",
+        "place": "71000"
+      },
+      {
+        "name": "Springfield, MA",
+        "state": "25",
+        "place": "67000"
+      },
+      {
+        "name": "Syracuse, NY",
+        "state": "36",
+        "place": "73000"
+      },
+      {
+        "name": "Toledo, OH",
+        "state": "39",
+        "place": "77000"
+      },
+      {
+        "name": "Worcester, MA",
+        "state": "25",
+        "place": "82000"
+      },
+      {
+        "name": "Youngstown, OH",
+        "state": "39",
+        "place": "88000"
+      }
+    ]
+  },
+  "programs": [
+    {
+      "name": "Syracuse Surge Workforce Training",
+      "domain": "Workforce",
+      "tier": 2,
+      "evidence": "Official city annual reporting describes enrollment and graduation outputs across advanced manufacturing, coding, cybersecurity, healthcare upskilling, and related programs.",
+      "source": "City of Syracuse 2023 Annual Report - Neighborhood Stability",
+      "url": "https://www.syr.gov/Government/City-Reports/2023-Annual-Report/2023-Neighborhoods"
+    },
+    {
+      "name": "Syracuse Build",
+      "domain": "Workforce",
+      "tier": 2,
+      "evidence": "Official city reporting lists 2023 participant and graduate counts for Pathways to Apprenticeship, Build Ready, and CDL programs.",
+      "source": "City of Syracuse 2023 Annual Report - Neighborhood Stability",
+      "url": "https://www.syr.gov/Government/City-Reports/2023-Annual-Report/2023-Neighborhoods"
+    },
+    {
+      "name": "Surge Link and Digital Empowerment Program",
+      "domain": "Internet Access",
+      "tier": 2,
+      "evidence": "Official city reporting states Surge Link served 400+ families and the Digital Empowerment Program served 500+ residents and distributed about 200 Chromebooks in 2023.",
+      "source": "City of Syracuse 2023 Annual Report - Neighborhood Stability",
+      "url": "https://www.syr.gov/Government/City-Reports/2023-Annual-Report/2023-Neighborhoods"
+    },
+    {
+      "name": "Resurgent Neighborhoods Initiative",
+      "domain": "Housing",
+      "tier": 2,
+      "evidence": "Official city page reports 100 affordable infill housing units completed or underway and 85 percent completion among selected demolition/stabilization properties.",
+      "source": "City of Syracuse Resurgent Neighborhoods Initiative",
+      "url": "https://www.syr.gov/Government/Mayors-of-Syracuse/54th-Mayor-Ben-Walsh/Mayor-Walsh-Major-Initiatives/Resurgent-Neighborhoods"
+    },
+    {
+      "name": "Syracuse Housing Strategy and SYRneighborhoods",
+      "domain": "Housing",
+      "tier": 3,
+      "evidence": "The strategy and neighborhood grant/loan programs are documented by the city, but public outcome data is still early or incomplete.",
+      "source": "City of Syracuse SYRneighborhoods",
+      "url": "https://www.syr.gov/Departments/NBD/Initiatives/SYRneighborhoods"
+    },
+    {
+      "name": "East Adams Neighborhood Transformation",
+      "domain": "Housing and Neighborhoods",
+      "tier": 3,
+      "evidence": "Official project pages document the long-term redevelopment scope and goals; outcome evidence will mature over the 2025-2035 project schedule.",
+      "source": "City of Syracuse East Adams Neighborhood Transformation",
+      "url": "https://www.syr.gov/Projects/NBD-Projects/Neighborhood-Projects/East-Adams-Neighborhood-Transformation"
+    }
+  ],
+  "sources": [
+    {
+      "name": "U.S. Census Bureau ACS 5-year API",
+      "url": "https://www.census.gov/data/developers/data-sets/acs-5year.html",
+      "note": "Used for city and tract-level social, economic, housing, transportation, and digital access estimates."
+    },
+    {
+      "name": "ACS 2024 release documentation",
+      "url": "https://www.census.gov/programs-surveys/acs/news/data-releases/2024/release.html",
+      "note": "2020-2024 ACS 5-year estimates were released January 29, 2026; 2024 ACS 1-year estimates were released September 11, 2025."
+    },
+    {
+      "name": "HUD CHAS",
+      "url": "https://www.huduser.gov/portal/datasets/cp.html",
+      "note": "Recommended official source for deeper housing needs analysis; latest public release cited by HUD was based on 2018-2022 ACS 5-year estimates."
+    },
+    {
+      "name": "NYS Department of Labor LAUS",
+      "url": "https://dol.ny.gov/local-area-unemployment-statistics",
+      "note": "Recommended official source for monthly/annual employment and unemployment validation beyond ACS."
+    }
+  ],
+  "caveats": [
+    "ACS 5-year estimates are period estimates, not point-in-time counts.",
+    "The 2020 ACS 1-year release was experimental and should not be used as a normal trend point.",
+    "Margins of error should be considered when interpreting small changes, especially for smaller peer cities and subgroup measures.",
+    "Program evidence is tiered; official outputs are not treated as causal impact unless an evaluation supports that claim."
+  ]
+}
