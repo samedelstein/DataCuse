@@ -31,7 +31,7 @@ jobs:
       - name: Prepare Pages folder
         run: |
           mkdir -p _pages
-          rsync -av --exclude='.git' --exclude='node_modules' --exclude='_pages' ./ _pages/
+          rsync -av --exclude='.git' --exclude='node_modules' --exclude='_pages' --exclude='projects/puzzle_ap' ./ _pages/
           # We will overwrite the Vite project output into the right subfolder next
 
       # 2) Build the Vite project
@@ -50,20 +50,6 @@ jobs:
           rm -rf _pages/projects/cityline-bypass
           mkdir -p _pages/projects/cityline-bypass
           cp -r projects/cityline-bypass/dist/* _pages/projects/cityline-bypass/
-
-      - name: Install deps (puzzle_ap)
-        working-directory: projects/puzzle_ap
-        run: npm ci
-
-      - name: Build (puzzle_ap)
-        working-directory: projects/puzzle_ap
-        run: npm run build
-
-      - name: Copy puzzle_ap dist into Pages path
-        run: |
-          rm -rf _pages/projects/puzzle_ap
-          mkdir -p _pages/projects/puzzle_ap
-          cp -r projects/puzzle_ap/dist/* _pages/projects/puzzle_ap/
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

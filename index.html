@@ -42,11 +42,11 @@
         </div>
         <div class="hero-grid">
             <section class="hero-copy">
-                <p class="eyebrow">Built for the 315</p>
+                <p class="eyebrow">Syracuse civic data lab</p>
                 <h1>Syracuse, explained through data.</h1>
                 <p class="hero-lede">
-                    Interactive tools, maps, and civic data stories about Syracuse, Onondaga County,
-                    and the systems residents use every day.
+                    Maps, dashboards, field notes, and data stories built around the real systems
+                    Syracuse residents touch: streets, snow, libraries, poverty, housing, and public service.
                 </p>
                 <div class="hero-actions">
                     <a class="button primary" href="#projects">Explore projects</a>
@@ -60,12 +60,12 @@
                 <div class="signal-card">
                     <span class="signal-label">Latest analysis</span>
                     <strong>Below the Line 2026</strong>
-                    <p>Poverty, housing, education, transportation, broadband, and peer-city change.</p>
+                    <p>A local poverty report rebuilt for today with peer cities, housing stress, broadband, transportation, and source notes.</p>
                 </div>
                 <div class="mini-grid">
                     <div>
-                        <span>4</span>
-                        <p>Featured tools</p>
+                        <span>7</span>
+                        <p>Public projects</p>
                     </div>
                     <div>
                         <span>315</span>
@@ -77,11 +77,30 @@
     </header>
 
     <main>
+        <section class="city-strip" aria-label="DataCuse coverage areas">
+            <div>
+                <span>Snow routes</span>
+                <strong>Winter operations</strong>
+            </div>
+            <div>
+                <span>Library access</span>
+                <strong>OCPL and branches</strong>
+            </div>
+            <div>
+                <span>Neighborhoods</span>
+                <strong>Block-level field notes</strong>
+            </div>
+            <div>
+                <span>City systems</span>
+                <strong>Services, OKRs, and open data</strong>
+            </div>
+        </section>
+
         <section class="section projects-section" id="projects">
             <div class="section-heading">
                 <p class="eyebrow">Project desk</p>
-                <h2>Interactive tools and civic data products</h2>
-                <p>Maps, dashboards, and local workflows built around real Syracuse questions.</p>
+                <h2>Built like civic infrastructure.</h2>
+                <p>Every project starts with a local question, points back to sources, and aims to be useful enough for residents, reporters, board members, and city staff.</p>
             </div>
 
             <div class="project-grid">
@@ -94,6 +113,11 @@
                         <p class="card-kicker">Poverty Data</p>
                         <h3>Below the Line 2026</h3>
                         <p>An updated look at Syracuse poverty, housing, education, work, transportation, broadband access, and peer-city change since the original report.</p>
+                        <div class="tag-row" aria-label="Project attributes">
+                            <span>Peer cities</span>
+                            <span>Source notes</span>
+                            <span>PDF report</span>
+                        </div>
                         <strong>Launch project &rarr;</strong>
                     </div>
                 </a>
@@ -107,6 +131,10 @@
                         <p class="card-kicker">Snow</p>
                         <h3>Syracuse Snow Map</h3>
                         <p>Real-time visualization of snow removal progress and plow locations across the city's residential streets.</p>
+                        <div class="tag-row" aria-label="Project attributes">
+                            <span>Map</span>
+                            <span>Operations</span>
+                        </div>
                         <strong>Launch project &rarr;</strong>
                     </div>
                 </a>
@@ -120,6 +148,10 @@
                         <p class="card-kicker">Libraries</p>
                         <h3>Census Data by Library Location</h3>
                         <p>Explore demographic insights and library usage patterns across Onondaga County through an interactive dashboard.</p>
+                        <div class="tag-row" aria-label="Project attributes">
+                            <span>OCPL</span>
+                            <span>Demographics</span>
+                        </div>
                         <strong>Launch project &rarr;</strong>
                     </div>
                 </a>
@@ -133,6 +165,10 @@
                         <p class="card-kicker">Libraries</p>
                         <h3>OCPL Library Use Story</h3>
                         <p>A public-facing look at city library visits, circulation, digital use, programming, and Central versus branch patterns.</p>
+                        <div class="tag-row" aria-label="Project attributes">
+                            <span>Story</span>
+                            <span>Branches</span>
+                        </div>
                         <strong>Read story &rarr;</strong>
                     </div>
                 </a>
@@ -146,6 +182,10 @@
                         <p class="card-kicker">Civic Services</p>
                         <h3>Cityline Workaround App</h3>
                         <p>An alternative interface to help residents decide how to submit a service request through Syracuse's Cityline system.</p>
+                        <div class="tag-row" aria-label="Project attributes">
+                            <span>AI app</span>
+                            <span>Service requests</span>
+                        </div>
                         <strong>Launch project &rarr;</strong>
                     </div>
                 </a>
@@ -159,17 +199,63 @@
                         <p class="card-kicker">City OKRs</p>
                         <h3>Syracuse Performance Dashboard</h3>
                         <p>A source-backed rebuild of the city performance dashboard using the original OKRs, current public data, and clearly labeled gaps.</p>
+                        <div class="tag-row" aria-label="Project attributes">
+                            <span>OKRs</span>
+                            <span>Public data</span>
+                        </div>
                         <strong>Launch project &rarr;</strong>
                     </div>
                 </a>
+
+                <a class="project-card wide-card" href="projects/cumberland-ave-atlas/">
+                    <div class="project-image">
+                        <img src="public/cumberland_ave_atlas.svg" alt="Cumberland Avenue one-street atlas preview" loading="lazy">
+                        <span>AI Field Notes</span>
+                    </div>
+                    <div class="project-copy">
+                        <p class="card-kicker">Street Scale</p>
+                        <h3>Cumberland Ave Atlas</h3>
+                        <p>A privacy-first one-street AI atlas for the 1300 block near Colvin: monthly photos, public records, and field observations.</p>
+                        <div class="tag-row" aria-label="Project attributes">
+                            <span>Field notes</span>
+                            <span>Privacy-first</span>
+                        </div>
+                        <strong>Open atlas &rarr;</strong>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="section method-section" aria-label="DataCuse method">
+            <div class="method-copy">
+                <p class="eyebrow">The DataCuse standard</p>
+                <h2>Local, sourced, and built to be used.</h2>
+                <p>DataCuse is not a folder of charts. It is a public workbench for Syracuse: direct links to evidence, clear caveats, strong visual storytelling, and tools that make city systems easier to understand.</p>
+            </div>
+            <div class="method-grid">
+                <article>
+                    <span>01</span>
+                    <h3>Start with Syracuse</h3>
+                    <p>Projects focus on the places and services residents recognize: blocks, branches, snow routes, dashboards, and public requests.</p>
+                </article>
+                <article>
+                    <span>02</span>
+                    <h3>Show the evidence</h3>
+                    <p>Reports and tools keep source links, dates, definitions, and gaps visible instead of hiding uncertainty.</p>
+                </article>
+                <article>
+                    <span>03</span>
+                    <h3>Make it interactive</h3>
+                    <p>Maps, filters, app flows, and narrative pages help people test a question instead of reading a static claim.</p>
+                </article>
             </div>
         </section>
 
         <section class="section insights-section" id="insights">
             <div class="section-heading">
                 <p class="eyebrow">Field notes</p>
-                <h2>Deep dives</h2>
-                <p>Long-form analyses and build notes from the local data stack.</p>
+                <h2>Deep dives and build notes.</h2>
+                <p>Long-form analyses from the local data stack, kept close to the project pages they explain.</p>
             </div>
 
             <div class="article-list">
@@ -219,7 +305,7 @@
                         <h3>Cityline Snow Request Analysis</h3>
                         <p>A look at how residents make snow plow service requests to Cityline, even when there is no official option to do so.</p>
                         <div class="article-links">
-                            <a href="https://www.datacuse.com/projects/cityline-snow-analysis/Plow_Requests.html">Read full story</a>
+                            <a href="projects/cityline-snow-analysis/">Read story</a>
                         </div>
                     </div>
                 </article>

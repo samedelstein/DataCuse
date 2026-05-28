@@ -155,24 +155,31 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 font-sans pb-12">
-      <header className="bg-white border-b border-slate-200 px-6 py-4 sticky top-0 z-50">
+    <div
+      className="min-h-screen text-slate-900 font-sans pb-12"
+      style={{
+        background:
+          'linear-gradient(90deg, rgba(21,59,103,.06) 1px, transparent 1px), linear-gradient(180deg, #f8f3ea, #fffaf2 54%, #eef3f4)',
+        backgroundSize: '72px 72px, auto'
+      }}
+    >
+      <header className="bg-[#08111f] border-b-4 border-[#F76900] px-6 py-4 sticky top-0 z-50 shadow-lg">
         <div className="max-w-2xl mx-auto flex items-center justify-between">
           <a
             href="https://www.datacuse.com"
-            className="flex items-center gap-2 hover:opacity-90 hover:underline underline-offset-4 transition-all"
+            className="flex items-center gap-3 hover:opacity-90 hover:underline underline-offset-4 transition-all"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Back to DataCuse"
           >
-            <div className="bg-[#002D62] p-1.5 rounded-md">
-              <Zap size={18} className="text-[#F76900]" />
+            <div className="bg-[#F76900] p-1.5 rounded-md shadow-[4px_4px_0_rgba(255,255,255,.18)]">
+              <Zap size={18} className="text-white" />
             </div>
             <div>
-              <h1 className="text-lg font-black tracking-tight uppercase leading-none text-[#002D62]">
+              <h1 className="text-lg font-black tracking-tight uppercase leading-none text-white">
                 Cityline Bypass
               </h1>
-              <span className="text-[10px] font-bold text-slate-400 uppercase tracking-tighter">
+              <span className="text-[10px] font-bold text-[#F76900] uppercase tracking-[.16em]">
                 Syracuse API Workaround Tool
               </span>
             </div>
@@ -189,10 +196,22 @@ export default function App() {
         </div>
       </header>
 
-      <main className="max-w-2xl mx-auto px-6 pt-8">
-        <section className="bg-white rounded-2xl shadow-sm border-2 border-slate-300 overflow-hidden focus-within:border-[#F76900] focus-within:shadow-lg transition-all">
-          <div className="bg-slate-100 px-4 py-2 border-b border-slate-200 flex items-center justify-between">
-            <span className="text-[10px] font-black text-slate-500 uppercase tracking-widest">Describe Your Problem</span>
+      <main className="max-w-2xl mx-auto px-6 pt-10">
+        <section className="mb-8">
+          <p className="text-[11px] font-black text-[#F76900] uppercase tracking-[.18em] mb-3">
+            Syracuse service request translator
+          </p>
+          <h2 className="text-4xl sm:text-5xl font-black leading-none tracking-tight text-[#08111f]">
+            Find the open Cityline path.
+          </h2>
+          <p className="mt-4 text-slate-600 leading-7">
+            Describe a local issue in plain language. The tool checks currently available Syracuse request categories and drafts text you can paste into Cityline.
+          </p>
+        </section>
+
+        <section className="bg-white rounded-2xl shadow-[10px_10px_0_rgba(247,105,0,.18)] border-2 border-[#153b67] overflow-hidden focus-within:border-[#F76900] focus-within:shadow-lg transition-all">
+          <div className="bg-[#153b67] px-4 py-2 border-b border-slate-200 flex items-center justify-between">
+            <span className="text-[10px] font-black text-white uppercase tracking-widest">Describe Your Problem</span>
             <Search size={14} className="text-slate-400" />
           </div>
           <textarea
@@ -201,7 +220,7 @@ export default function App() {
             placeholder="e.g., 'My trash was skipped' or 'Street wasn't plowed'"
             className="w-full h-32 p-4 text-xl font-medium text-slate-800 placeholder-slate-300 resize-none outline-none"
           />
-          <div className="p-3 bg-white">
+          <div className="p-3 bg-white border-t border-slate-100">
             <button
               onClick={handleTranslate}
               disabled={loading || apiState !== 'ready' || !userInput.trim()}
@@ -298,8 +317,8 @@ export default function App() {
         )}
 
         {blockedCategories.length > 0 && (
-          <div className="mt-12 p-6 bg-white rounded-2xl border border-slate-200">
-            <h3 className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-4 flex items-center gap-2">
+          <div className="mt-12 p-6 bg-white/92 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 className="text-[10px] font-black text-[#153b67] uppercase tracking-widest mb-4 flex items-center gap-2">
               <AlertTriangle size={12} className="text-orange-400" />
               API Restriction Log: Currently Blocked 'Titles'
             </h3>

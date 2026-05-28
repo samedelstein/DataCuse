@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cumberland Ave Atlas | DataCuse</title>
+    <meta name="description" content="A privacy-first one-street AI atlas for the 1300 block of Cumberland Avenue near Colvin Street in Syracuse.">
+    <link rel="canonical" href="https://www.datacuse.com/projects/cumberland-ave-atlas/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="DataCuse">
+    <meta property="og:title" content="Cumberland Ave Atlas">
+    <meta property="og:description" content="Monthly photos, field notes, public records, and AI-assisted observations for one Syracuse block.">
+    <meta property="og:image" content="https://www.datacuse.com/public/cumberland_ave_atlas.svg">
+    <meta name="theme-color" content="#f76900">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --orange: #f76900;
+            --orange-dark: #c84f00;
+            --ink: #08111f;
+            --blue: #153b67;
+            --green: #527a59;
+            --paper: #f7f0e5;
+            --white: #ffffff;
+            --muted: #586573;
+            --line: rgba(8, 17, 31, 0.14);
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            color: var(--ink);
+            background:
+                linear-gradient(90deg, rgba(21, 59, 103, 0.06) 1px, transparent 1px),
+                linear-gradient(180deg, var(--paper), #fffaf3 48%, #eef1ed);
+            background-size: 72px 72px, auto;
+        }
+
+        a { color: inherit; text-decoration: none; }
+        img { display: block; max-width: 100%; }
+
+        .site-nav {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 16px clamp(18px, 4vw, 56px);
+            background: rgba(247, 240, 229, 0.92);
+            border-bottom: 1px solid var(--line);
+            backdrop-filter: blur(16px);
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: "Space Grotesk", Inter, sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .brand-mark {
+            display: grid;
+            width: 34px;
+            height: 34px;
+            place-items: center;
+            color: var(--white);
+            background: var(--orange);
+            border-radius: 7px;
+            box-shadow: 5px 5px 0 var(--ink);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 24px;
+            color: #334255;
+            font-size: 0.92rem;
+            font-weight: 800;
+        }
+
+        .nav-links a:hover { color: var(--orange-dark); }
+
+        .hero {
+            position: relative;
+            min-height: 700px;
+            overflow: hidden;
+            color: var(--white);
+            background: var(--ink);
+        }
+
+        .hero::before {
+            position: absolute;
+            inset: 0;
+            content: "";
+            background:
+                linear-gradient(90deg, rgba(8, 17, 31, 0.98), rgba(8, 17, 31, 0.78) 48%, rgba(8, 17, 31, 0.24)),
+                url("../../public/cumberland_ave_atlas.svg") center / cover no-repeat;
+        }
+
+        .hero-inner {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(300px, 0.42fr);
+            gap: clamp(28px, 6vw, 76px);
+            align-items: end;
+            max-width: 1180px;
+            min-height: 700px;
+            margin: 0 auto;
+            padding: 88px clamp(20px, 5vw, 56px) 58px;
+        }
+
+        .eyebrow,
+        .kicker {
+            margin: 0 0 12px;
+            color: var(--orange);
+            font-size: 0.75rem;
+            font-weight: 900;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+            font-family: "Space Grotesk", Inter, sans-serif;
+            letter-spacing: 0;
+        }
+
+        h1 {
+            max-width: 840px;
+            font-size: clamp(3.1rem, 8vw, 7.4rem);
+            line-height: 0.9;
+        }
+
+        .lede {
+            max-width: 720px;
+            margin: 28px 0 0;
+            color: rgba(255, 255, 255, 0.84);
+            font-size: clamp(1.05rem, 2vw, 1.35rem);
+            line-height: 1.65;
+        }
+
+        .hero-panel,
+        .note-card,
+        .source-card,
+        .stop-card,
+        .record-card {
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.82);
+            box-shadow: 0 18px 45px rgba(8, 17, 31, 0.08);
+        }
+
+        .hero-panel {
+            color: var(--ink);
+            background: rgba(255, 255, 255, 0.92);
+            padding: 22px;
+        }
+
+        .hero-panel strong {
+            display: block;
+            font-family: "Space Grotesk", Inter, sans-serif;
+            font-size: 2.1rem;
+            line-height: 1;
+        }
+
+        .hero-panel p,
+        .note-card p,
+        .source-card p,
+        .stop-card p,
+        .record-card p {
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        .section {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 82px clamp(20px, 5vw, 56px);
+        }
+
+        .section-heading {
+            display: grid;
+            grid-template-columns: minmax(0, 0.8fr) minmax(260px, 0.46fr);
+            gap: 28px;
+            align-items: end;
+            margin-bottom: 34px;
+            padding-bottom: 24px;
+            border-bottom: 2px solid var(--ink);
+        }
+
+        .section-heading .eyebrow {
+            grid-column: 1 / -1;
+            margin-bottom: -18px;
+        }
+
+        .section-heading h2 {
+            font-size: clamp(2rem, 4vw, 3.6rem);
+            line-height: 0.98;
+        }
+
+        .section-heading p:not(.eyebrow) {
+            margin: 0;
+            color: #4c5968;
+            line-height: 1.6;
+        }
+
+        .atlas-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 0.92fr) minmax(300px, 0.55fr);
+            gap: 20px;
+        }
+
+        .route-map {
+            position: relative;
+            min-height: 520px;
+            overflow: hidden;
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background:
+                linear-gradient(90deg, rgba(21, 59, 103, 0.1) 1px, transparent 1px),
+                linear-gradient(180deg, rgba(21, 59, 103, 0.1) 1px, transparent 1px),
+                #fffaf2;
+            background-size: 76px 76px;
+        }
+
+        .street {
+            position: absolute;
+            border-radius: 999px;
+            background: #1d314a;
+            box-shadow: inset 0 0 0 14px #fff7eb;
+        }
+
+        .street.cumberland {
+            width: 92%;
+            height: 76px;
+            left: -8%;
+            top: 58%;
+            transform: rotate(-28deg);
+        }
+
+        .street.colvin {
+            width: 76px;
+            height: 92%;
+            right: 23%;
+            top: -12%;
+            transform: rotate(-18deg);
+            background: var(--orange);
+        }
+
+        .map-label {
+            position: absolute;
+            padding: 8px 10px;
+            color: var(--white);
+            background: rgba(8, 17, 31, 0.84);
+            border-radius: 6px;
+            font-size: 0.78rem;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        .label-cumberland { left: 18%; top: 50%; }
+        .label-colvin { right: 12%; top: 28%; }
+
+        .stop {
+            position: absolute;
+            display: grid;
+            width: 42px;
+            height: 42px;
+            place-items: center;
+            border: 3px solid var(--white);
+            border-radius: 999px;
+            color: var(--white);
+            background: var(--blue);
+            box-shadow: 0 10px 24px rgba(8, 17, 31, 0.24);
+            font-weight: 900;
+            cursor: pointer;
+        }
+
+        .stop.active,
+        .stop:hover {
+            background: var(--orange);
+        }
+
+        .stop[data-stop="west"] { left: 18%; top: 67%; }
+        .stop[data-stop="middle"] { left: 43%; top: 52%; }
+        .stop[data-stop="colvin"] { left: 67%; top: 34%; }
+
+        .map-caption {
+            position: absolute;
+            left: 18px;
+            right: 18px;
+            bottom: 18px;
+            padding: 16px;
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid var(--line);
+            border-radius: 8px;
+        }
+
+        .map-caption h3 { font-size: 1.35rem; }
+        .map-caption p { margin-bottom: 0; }
+
+        .note-stack {
+            display: grid;
+            gap: 14px;
+        }
+
+        .note-card,
+        .source-card,
+        .stop-card,
+        .record-card {
+            padding: 20px;
+        }
+
+        .status-row,
+        .filters {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .pill,
+        .filter-button {
+            display: inline-flex;
+            align-items: center;
+            min-height: 34px;
+            padding: 0 11px;
+            border: 1px solid var(--line);
+            border-radius: 999px;
+            background: var(--white);
+            color: #344255;
+            font-size: 0.78rem;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        .filter-button {
+            cursor: pointer;
+        }
+
+        .filter-button.active {
+            color: var(--white);
+            background: var(--ink);
+            border-color: var(--ink);
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .photo-placeholder {
+            display: grid;
+            min-height: 210px;
+            place-items: center;
+            margin-bottom: 18px;
+            color: var(--white);
+            background:
+                linear-gradient(135deg, rgba(21, 59, 103, 0.94), rgba(82, 122, 89, 0.9)),
+                repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255, 255, 255, 0.18) 10px, rgba(255, 255, 255, 0.18) 12px);
+            border-radius: 7px;
+            font-weight: 900;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .records-grid,
+        .source-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .record-card[data-layer].hidden {
+            display: none;
+        }
+
+        .record-card h3,
+        .source-card h3,
+        .stop-card h3,
+        .note-card h3 {
+            font-size: 1.35rem;
+        }
+
+        .record-card a,
+        .source-card a {
+            color: var(--orange-dark);
+            font-weight: 900;
+        }
+
+        .ai-label {
+            display: inline-flex;
+            margin-bottom: 12px;
+            padding: 6px 8px;
+            color: var(--ink);
+            background: #eaf0e8;
+            border-radius: 6px;
+            font-size: 0.72rem;
+            font-weight: 900;
+            text-transform: uppercase;
+        }
+
+        .timeline {
+            display: grid;
+            gap: 16px;
+            border-left: 3px solid var(--ink);
+            padding-left: 24px;
+        }
+
+        .timeline article {
+            position: relative;
+        }
+
+        .timeline article::before {
+            position: absolute;
+            left: -34px;
+            top: 4px;
+            width: 16px;
+            height: 16px;
+            content: "";
+            background: var(--orange);
+            border: 3px solid var(--paper);
+            border-radius: 999px;
+        }
+
+        .site-footer {
+            display: grid;
+            gap: 18px;
+            padding: 44px clamp(20px, 5vw, 56px);
+            color: rgba(255, 255, 255, 0.76);
+            background: var(--ink);
+        }
+
+        .site-footer a { color: var(--white); font-weight: 900; }
+
+        @media (max-width: 900px) {
+            .nav-links { display: none; }
+            .hero-inner,
+            .section-heading,
+            .atlas-grid,
+            .photo-grid,
+            .records-grid,
+            .source-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-inner { align-items: center; }
+        }
+
+        @media (max-width: 560px) {
+            .hero,
+            .hero-inner {
+                min-height: 720px;
+            }
+            h1 { font-size: clamp(2.65rem, 16vw, 4.6rem); }
+            .route-map { min-height: 460px; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="site-nav" aria-label="Primary">
+        <a class="brand" href="/">
+            <span class="brand-mark">D</span>
+            <span>Data<span style="color: var(--orange);">Cuse</span></span>
+        </a>
+        <div class="nav-links">
+            <a href="#walk">Walk</a>
+            <a href="#issues">Issues</a>
+            <a href="#sources">Sources</a>
+            <a href="/">All projects</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-inner">
+            <section>
+                <p class="eyebrow">One-Street AI Atlas</p>
+                <h1>Cumberland Ave, block by block.</h1>
+                <p class="lede">
+                    A monthly, privacy-first field notebook for the 1300 block of Cumberland Avenue near Colvin Street:
+                    repeat photos, public records, and AI-assisted observations focused on what changes at street scale.
+                </p>
+            </section>
+            <aside class="hero-panel" aria-label="Project status">
+                <p class="kicker">Pilot status</p>
+                <strong>Ready for first walk</strong>
+                <p>This page is the scaffold: add photos, field notes, and source records after each monthly walk.</p>
+                <div class="status-row" aria-label="Project attributes">
+                    <span class="pill">Privacy-first</span>
+                    <span class="pill">Monthly</span>
+                    <span class="pill">AI-assisted</span>
+                </div>
+            </aside>
+        </div>
+    </header>
+
+    <main>
+        <section class="section" id="walk">
+            <div class="section-heading">
+                <p class="eyebrow">The walk</p>
+                <h2>A repeatable route, not a one-off snapshot.</h2>
+                <p>Each monthly pass uses the same photo stops so small changes become visible over time.</p>
+            </div>
+
+            <div class="atlas-grid">
+                <div class="route-map" aria-label="Stylized route map of Cumberland Avenue near Colvin Street">
+                    <div class="street cumberland" aria-hidden="true"></div>
+                    <div class="street colvin" aria-hidden="true"></div>
+                    <span class="map-label label-cumberland">Cumberland Ave</span>
+                    <span class="map-label label-colvin">Colvin St</span>
+                    <button class="stop active" data-stop="west" aria-label="Select west end photo stop">1</button>
+                    <button class="stop" data-stop="middle" aria-label="Select middle block photo stop">2</button>
+                    <button class="stop" data-stop="colvin" aria-label="Select Colvin corner photo stop">3</button>
+                    <div class="map-caption" id="stop-detail">
+                        <p class="kicker">Photo stop 1</p>
+                        <h3>West approach</h3>
+                        <p>Capture the approach into the 1300 block, sidewalk condition, lighting, tree canopy, drainage, and signs.</p>
+                    </div>
+                </div>
+
+                <div class="note-stack">
+                    <article class="note-card">
+                        <span class="ai-label">AI workflow</span>
+                        <h3>What AI should do here</h3>
+                        <p>For each walk, AI drafts captions, extracts visible public-realm tags, compares repeat photos, and flags possible issues for human review.</p>
+                    </article>
+                    <article class="note-card">
+                        <h3>Privacy rules</h3>
+                        <p>Blur faces and license plates before publishing. Avoid house-by-house judgment. Treat public records as context, not as proof of current conditions.</p>
+                    </article>
+                <article class="note-card">
+                    <h3>Monthly checklist</h3>
+                    <p>Take the same three views, add weather and time of day, note changes, check nearby records, then publish a short narrative update in <code>data/atlas.json</code>.</p>
+                </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Photo log</p>
+                <h2>First walk slots.</h2>
+                <p>These placeholders become repeat-photo cards once field images are added to this project folder.</p>
+            </div>
+
+            <div class="photo-grid">
+                <article class="stop-card">
+                    <div class="photo-placeholder">Stop 1</div>
+                    <p class="kicker">West approach</p>
+                    <h3>Public realm baseline</h3>
+                    <p>Use this view for sidewalks, curb line, street lighting, signs, and the edge of the residential block.</p>
+                </article>
+                <article class="stop-card">
+                    <div class="photo-placeholder">Stop 2</div>
+                    <p class="kicker">Mid-block</p>
+                    <h3>Everyday conditions</h3>
+                    <p>Use this view for canopy, pavement, parking behavior, trash set-out, snow storage, and visible maintenance changes.</p>
+                </article>
+                <article class="stop-card">
+                    <div class="photo-placeholder">Stop 3</div>
+                    <p class="kicker">Colvin corner</p>
+                    <h3>Intersection context</h3>
+                    <p>Use this view for crossing comfort, traffic speed cues, drainage, bus or pedestrian activity, and corner visibility.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="issues">
+            <div class="section-heading">
+                <p class="eyebrow">Issues nearby</p>
+                <h2>Public records plus field review.</h2>
+                <p>Filters separate public-realm concerns from property-context records so the story stays careful and useful.</p>
+            </div>
+
+            <div class="filters" aria-label="Issue filters">
+                <button class="filter-button active" data-filter="all">All layers</button>
+                <button class="filter-button" data-filter="public-realm">Public realm</button>
+                <button class="filter-button" data-filter="property-context">Property context</button>
+                <button class="filter-button" data-filter="ai-review">AI review</button>
+            </div>
+
+            <div class="records-grid" style="margin-top: 18px;">
+                <article class="record-card" data-layer="public-realm">
+                    <p class="kicker">SYRCityline / 311</p>
+                    <h3>Service request scan</h3>
+                    <p>Look for recent requests near the block: potholes, sidewalk concerns, street lights, illegal dumping, snow, drainage, or traffic-control issues.</p>
+                    <a href="https://www.syr.gov/Departments/Public-Works/SYRCityline" target="_blank" rel="noopener noreferrer">Open SYRCityline source</a>
+                </article>
+                <article class="record-card" data-layer="property-context">
+                    <p class="kicker">Code Violations V2</p>
+                    <h3>Property records context</h3>
+                    <p>Query nearby records by address or buffer. Show status, date, and category only when it adds context to a visible block-level pattern.</p>
+                    <a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Code_Violations_v2/FeatureServer/0" target="_blank" rel="noopener noreferrer">Open feature layer</a>
+                </article>
+                <article class="record-card" data-layer="ai-review">
+                    <p class="kicker">Human-reviewed AI</p>
+                    <h3>Possible issue summary</h3>
+                    <p>AI may flag cracked pavement, blocked sightlines, poor lighting, missing curb ramps, water pooling, or repeated trash conditions for manual confirmation.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-heading">
+                <p class="eyebrow">Living narrative</p>
+                <h2>Updates should accumulate.</h2>
+                <p>The project becomes stronger as the same observations repeat across weather, seasons, and city-service cycles.</p>
+            </div>
+
+            <div class="timeline">
+                <article class="note-card">
+                    <p class="kicker">May 2026</p>
+                    <h3>Project scaffold published</h3>
+                    <p>The atlas is ready for the first Cumberland Avenue walk. Next update should add real photos, field notes, and an initial public-record scan.</p>
+                </article>
+                <article class="note-card">
+                    <p class="kicker">Next monthly walk</p>
+                    <h3>Baseline capture</h3>
+                    <p>Take three repeat photos, record weather and time, list observed public-realm conditions, then run an AI caption and issue-review pass.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="sources">
+            <div class="section-heading">
+                <p class="eyebrow">Sources</p>
+                <h2>Grounded, cited, and dated.</h2>
+                <p>Every public-data claim should keep a source link and a last-checked date.</p>
+            </div>
+
+            <div class="source-grid">
+                <article class="source-card">
+                    <h3>Open Data Syracuse</h3>
+                    <p>City portal for public datasets, maps, and visualizations.</p>
+                    <a href="https://www.syr.gov/Departments/API/API-Initiatives/Open-Data" target="_blank" rel="noopener noreferrer">View source</a>
+                </article>
+                <article class="source-card">
+                    <h3>311 Service Requests</h3>
+                    <p>ArcGIS item for service requests generated through QAlert. Use for nearby issue checks where available.</p>
+                    <a href="https://www.arcgis.com/home/item.html?id=8d38c0c8dda74696a1f07fac8aa9db5c" target="_blank" rel="noopener noreferrer">View source</a>
+                </article>
+                <article class="source-card">
+                    <h3>Code Violations V2</h3>
+                    <p>City code-enforcement records from 2017-present, described by the source as daily updated.</p>
+                    <a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Code_Violations_v2/FeatureServer/0" target="_blank" rel="noopener noreferrer">View source</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand" href="/">
+            <span class="brand-mark">D</span>
+            <span>Data<span style="color: var(--orange);">Cuse</span></span>
+        </a>
+        <p>Independent Syracuse data stories, tools, and field notes. Last checked for source links: May 2026.</p>
+    </footer>
+
+    <script>
+        const stopDetails = {
+            west: {
+                kicker: "Photo stop 1",
+                title: "West approach",
+                text: "Capture the approach into the 1300 block, sidewalk condition, lighting, tree canopy, drainage, and signs."
+            },
+            middle: {
+                kicker: "Photo stop 2",
+                title: "Mid-block baseline",
+                text: "Use the same framing each month to track small changes in pavement, curb edges, canopy, set-outs, and daily street use."
+            },
+            colvin: {
+                kicker: "Photo stop 3",
+                title: "Colvin corner",
+                text: "Document the intersection environment: crossing comfort, visibility, drainage, turning behavior, and nearby service-request patterns."
+            }
+        };
+
+        document.querySelectorAll(".stop").forEach((button) => {
+            button.addEventListener("click", () => {
+                document.querySelectorAll(".stop").forEach((item) => item.classList.remove("active"));
+                button.classList.add("active");
+                const detail = stopDetails[button.dataset.stop];
+                document.getElementById("stop-detail").innerHTML = `
+                    <p class="kicker">${detail.kicker}</p>
+                    <h3>${detail.title}</h3>
+                    <p>${detail.text}</p>
+                `;
+            });
+        });
+
+        document.querySelectorAll(".filter-button").forEach((button) => {
+            button.addEventListener("click", () => {
+                document.querySelectorAll(".filter-button").forEach((item) => item.classList.remove("active"));
+                button.classList.add("active");
+                const filter = button.dataset.filter;
+                document.querySelectorAll(".record-card[data-layer]").forEach((card) => {
+                    card.classList.toggle("hidden", filter !== "all" && card.dataset.layer !== filter);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

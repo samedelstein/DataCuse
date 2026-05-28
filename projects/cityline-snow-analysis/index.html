@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cityline Snow Request Analysis | DataCuse</title>
+    <meta name="description" content="A Syracuse data story about residents using Cityline to report snow plowing needs even when snow plowing is not an official online request category.">
+    <link rel="canonical" href="https://www.datacuse.com/projects/cityline-snow-analysis/">
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="DataCuse">
+    <meta property="og:title" content="Cityline Snow Request Analysis">
+    <meta property="og:description" content="What Syracuse snow-related service requests reveal about a gap between resident needs and the official online request categories.">
+    <meta property="og:image" content="https://www.datacuse.com/public/snow_map.png">
+    <meta name="theme-color" content="#f76900">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --orange: #f76900;
+            --orange-dark: #c84f00;
+            --ink: #08111f;
+            --blue: #153b67;
+            --paper: #f8f3ea;
+            --white: #ffffff;
+            --muted: #556273;
+            --line: rgba(8, 17, 31, 0.14);
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            color: var(--ink);
+            background:
+                linear-gradient(90deg, rgba(21, 59, 103, 0.06) 1px, transparent 1px),
+                linear-gradient(180deg, var(--paper), #fffaf2 54%, #eef3f4);
+            background-size: 72px 72px, auto;
+            overflow-x: hidden;
+        }
+
+        a { color: inherit; text-decoration: none; }
+        img { display: block; max-width: 100%; }
+
+        .site-nav {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 16px clamp(18px, 4vw, 56px);
+            background: rgba(248, 243, 234, 0.92);
+            border-bottom: 1px solid var(--line);
+            backdrop-filter: blur(16px);
+        }
+
+        .brand {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: "Space Grotesk", Inter, sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .brand-mark {
+            display: grid;
+            width: 34px;
+            height: 34px;
+            place-items: center;
+            color: var(--white);
+            background: var(--orange);
+            border-radius: 7px;
+            box-shadow: 5px 5px 0 var(--ink);
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 22px;
+            color: #334255;
+            font-size: 0.92rem;
+            font-weight: 800;
+        }
+
+        .hero {
+            position: relative;
+            overflow: hidden;
+            color: var(--white);
+            background: var(--ink);
+        }
+
+        .hero::before {
+            position: absolute;
+            inset: 0;
+            content: "";
+            background:
+                linear-gradient(90deg, rgba(8, 17, 31, 0.95), rgba(8, 17, 31, 0.78) 48%, rgba(8, 17, 31, 0.34)),
+                url("../../public/snow_map.png") center / cover no-repeat;
+            filter: saturate(0.9);
+        }
+
+        .hero-inner {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: minmax(0, 0.9fr) minmax(280px, 0.42fr);
+            gap: clamp(28px, 6vw, 80px);
+            align-items: end;
+            max-width: 1180px;
+            min-height: 680px;
+            margin: 0 auto;
+            padding: 88px clamp(20px, 5vw, 56px) 58px;
+        }
+
+        .hero-inner > *,
+        .hero-panel,
+        .story-card,
+        .finding-card,
+        .source-card {
+            min-width: 0;
+        }
+
+        .eyebrow {
+            margin: 0 0 12px;
+            color: var(--orange);
+            font-size: 0.75rem;
+            font-weight: 900;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        h1,
+        h2,
+        h3 {
+            margin: 0;
+            font-family: "Space Grotesk", Inter, sans-serif;
+            letter-spacing: 0;
+        }
+
+        h1 {
+            max-width: 840px;
+            font-size: clamp(3rem, 8vw, 7.2rem);
+            line-height: 0.9;
+            text-wrap: balance;
+            overflow-wrap: anywhere;
+        }
+
+        .lede {
+            max-width: 720px;
+            margin: 28px 0 0;
+            color: rgba(255, 255, 255, 0.84);
+            font-size: clamp(1.05rem, 2vw, 1.32rem);
+            line-height: 1.65;
+        }
+
+        .button-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-top: 30px;
+        }
+
+        .button {
+            display: inline-flex;
+            min-height: 46px;
+            align-items: center;
+            justify-content: center;
+            padding: 0 18px;
+            border-radius: 7px;
+            font-weight: 900;
+        }
+
+        .button.primary {
+            color: var(--white);
+            background: var(--orange);
+            box-shadow: 6px 6px 0 rgba(255, 255, 255, 0.18);
+        }
+
+        .button.secondary {
+            border: 1px solid rgba(255, 255, 255, 0.45);
+            color: var(--white);
+        }
+
+        .hero-panel,
+        .story-card,
+        .finding-card,
+        .source-card {
+            border: 1px solid var(--line);
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.86);
+            box-shadow: 0 18px 45px rgba(8, 17, 31, 0.08);
+        }
+
+        .hero-panel {
+            display: grid;
+            gap: 14px;
+            padding: 22px;
+            color: var(--ink);
+            background: rgba(255, 255, 255, 0.94);
+            box-shadow: 10px 10px 0 rgba(247, 105, 0, 0.24);
+        }
+
+        .hero-panel strong {
+            font-family: "Space Grotesk", Inter, sans-serif;
+            font-size: 2.8rem;
+            line-height: 1;
+        }
+
+        .hero-panel span {
+            color: var(--orange-dark);
+            font-size: 0.78rem;
+            font-weight: 900;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .hero-panel p,
+        .story-card p,
+        .finding-card p,
+        .source-card p,
+        .section-heading p {
+            color: var(--muted);
+            line-height: 1.65;
+        }
+
+        .section {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 82px clamp(20px, 5vw, 56px);
+        }
+
+        .section-heading {
+            display: grid;
+            grid-template-columns: minmax(0, 0.8fr) minmax(260px, 0.46fr);
+            gap: 28px;
+            align-items: end;
+            margin-bottom: 34px;
+            padding-bottom: 24px;
+            border-bottom: 2px solid var(--ink);
+        }
+
+        .section-heading .eyebrow {
+            grid-column: 1 / -1;
+            margin-bottom: -18px;
+        }
+
+        .section-heading h2 {
+            font-size: clamp(2rem, 4vw, 3.6rem);
+            line-height: 0.98;
+            text-wrap: balance;
+        }
+
+        .findings-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .finding-card,
+        .story-card,
+        .source-card {
+            padding: 22px;
+        }
+
+        .finding-card span {
+            color: var(--orange);
+            font-size: 0.78rem;
+            font-weight: 900;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .finding-card h3,
+        .story-card h3,
+        .source-card h3 {
+            margin-top: 12px;
+            font-size: 1.45rem;
+        }
+
+        .story-band {
+            color: var(--white);
+            background:
+                linear-gradient(135deg, rgba(8, 17, 31, 0.96), rgba(21, 59, 103, 0.92)),
+                repeating-linear-gradient(45deg, transparent, transparent 12px, rgba(255, 255, 255, 0.08) 12px, rgba(255, 255, 255, 0.08) 13px);
+        }
+
+        .story-band .section {
+            display: grid;
+            grid-template-columns: minmax(0, 0.68fr) minmax(320px, 1fr);
+            gap: clamp(28px, 6vw, 72px);
+        }
+
+        .story-band p {
+            color: rgba(255, 255, 255, 0.74);
+            line-height: 1.7;
+        }
+
+        .story-band .story-card p {
+            color: var(--muted);
+        }
+
+        .story-band h2 {
+            font-size: clamp(2.2rem, 5vw, 4.8rem);
+            line-height: 0.92;
+        }
+
+        .story-card {
+            color: var(--ink);
+        }
+
+        .source-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 16px;
+        }
+
+        .source-card a {
+            color: var(--orange-dark);
+            font-weight: 900;
+        }
+
+        .site-footer {
+            padding: 44px clamp(20px, 5vw, 56px);
+            color: rgba(255, 255, 255, 0.76);
+            background: var(--ink);
+        }
+
+        .site-footer a {
+            color: var(--white);
+            font-weight: 900;
+        }
+
+        @media (max-width: 900px) {
+            .nav-links { display: none; }
+            .hero-inner,
+            .section-heading,
+            .story-band .section,
+            .findings-grid,
+            .source-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 560px) {
+            .hero-inner { min-height: 720px; }
+            h1 {
+                font-size: clamp(2.35rem, 14vw, 3.9rem);
+                line-height: 0.96;
+                text-wrap: auto;
+            }
+            .lede {
+                font-size: 1rem;
+                line-height: 1.55;
+            }
+            .button { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <nav class="site-nav" aria-label="Primary">
+        <a class="brand" href="/">
+            <span class="brand-mark">D</span>
+            <span>Data<span style="color: var(--orange);">Cuse</span></span>
+        </a>
+        <div class="nav-links">
+            <a href="#findings">Findings</a>
+            <a href="#method">Method</a>
+            <a href="#sources">Sources</a>
+            <a href="/">All projects</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-inner">
+            <section>
+                <p class="eyebrow">Cityline snow requests</p>
+                <h1>Residents found a snow-plow workaround.</h1>
+                <p class="lede">
+                    Syracuse is one of the snowiest cities in the country, but residents do not have a clean online
+                    service-request category for snow plowing. This analysis looks at how people still try to report
+                    snow needs through Cityline.
+                </p>
+                <div class="button-row">
+                    <a class="button primary" href="#findings">Read findings</a>
+                    <a class="button secondary" href="Plow_Requests.html">Open raw notebook</a>
+                </div>
+            </section>
+            <aside class="hero-panel" aria-label="Notebook sample">
+                <span>Notebook pull</span>
+                <strong>381</strong>
+                <p>Issue rows pulled from the public SeeClickFix API in the exported notebook sample.</p>
+            </aside>
+        </div>
+    </header>
+
+    <main>
+        <section class="section" id="findings">
+            <div class="section-heading">
+                <p class="eyebrow">What this shows</p>
+                <h2>The official category and resident intent do not always match.</h2>
+                <p>The notebook compares the request type residents selected with the free-text descriptions they wrote.</p>
+            </div>
+
+            <div class="findings-grid">
+                <article class="finding-card">
+                    <span>01</span>
+                    <h3>Snow demand shows up sideways</h3>
+                    <p>Residents use available categories, free-text descriptions, and phone calls to describe snow plowing needs when the online form does not offer the exact thing they want.</p>
+                </article>
+                <article class="finding-card">
+                    <span>02</span>
+                    <h3>The description field matters</h3>
+                    <p>The official request type reflects the menu choice. The resident narrative often contains the real operational ask, especially for snow conditions.</p>
+                </article>
+                <article class="finding-card">
+                    <span>03</span>
+                    <h3>The workflow can be improved</h3>
+                    <p>A clearer online route for snow plowing requests would reduce misclassified issues and make winter operations easier to understand.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="story-band" id="method">
+            <div class="section">
+                <div>
+                    <p class="eyebrow">Method</p>
+                    <h2>Keep the notebook, lead with the story.</h2>
+                    <p>
+                        The original export is useful for reproducibility, but it is not the page most residents should land on first.
+                        This story page gives the public-facing interpretation while preserving the raw notebook as an appendix.
+                    </p>
+                </div>
+                <article class="story-card">
+                    <h3>How the analysis works</h3>
+                    <p>The notebook pulls Syracuse issues from the public SeeClickFix API, keeps fields such as summary, description, status, created date, location, and request URL, then compares selected categories with snow-related language in descriptions.</p>
+                    <p>That makes the core question visible: when residents need snow plowing help, where does their request go in the Cityline workflow?</p>
+                    <a class="button primary" href="Plow_Requests.html">View notebook appendix</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="sources">
+            <div class="section-heading">
+                <p class="eyebrow">Sources and next steps</p>
+                <h2>Make winter-service demand easier to see.</h2>
+                <p>This should eventually connect to plow coverage, complaint timing, storm events, and Cityline categories.</p>
+            </div>
+
+            <div class="source-grid">
+                <article class="source-card">
+                    <h3>SeeClickFix API</h3>
+                    <p>Public issue data used in the exported notebook sample.</p>
+                    <a href="https://seeclickfix.com/api/v2/issues" target="_blank" rel="noopener noreferrer">Open API endpoint</a>
+                </article>
+                <article class="source-card">
+                    <h3>SYRCityline</h3>
+                    <p>The city service-request channel residents use for many public-works issues.</p>
+                    <a href="https://www.syr.gov/Departments/Public-Works/SYRCityline" target="_blank" rel="noopener noreferrer">Open city page</a>
+                </article>
+                <article class="source-card">
+                    <h3>Syracuse Snow Map</h3>
+                    <p>A companion DataCuse project focused on snow removal progress and plow coverage.</p>
+                    <a href="https://cusesnowplowcoverage.streamlit.app/" target="_blank" rel="noopener noreferrer">Open snow map</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand" href="/">
+            <span class="brand-mark">D</span>
+            <span>Data<span style="color: var(--orange);">Cuse</span></span>
+        </a>
+        <p>Independent Syracuse data stories, tools, and field notes.</p>
+    </footer>
+</body>
+</html>

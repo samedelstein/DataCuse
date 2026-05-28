@@ -1,0 +1,57 @@
+{
+  "project": {
+    "title": "Cumberland Ave Atlas",
+    "location": "1300 block of Cumberland Avenue near Colvin Street, Syracuse, NY",
+    "privacy_mode": "privacy-first",
+    "update_rhythm": "monthly walk",
+    "last_updated": "2026-05-02"
+  },
+  "photo_stops": [
+    {
+      "id": "west",
+      "label": "West approach",
+      "prompt": "Capture the approach into the 1300 block, sidewalk condition, lighting, tree canopy, drainage, and signs."
+    },
+    {
+      "id": "middle",
+      "label": "Mid-block baseline",
+      "prompt": "Use the same framing each month to track pavement, curb edges, canopy, set-outs, and daily street use."
+    },
+    {
+      "id": "colvin",
+      "label": "Colvin corner",
+      "prompt": "Document crossing comfort, visibility, drainage, turning behavior, and nearby service-request patterns."
+    }
+  ],
+  "walks": [
+    {
+      "walk_date": "2026-05-02",
+      "status": "scaffold",
+      "summary": "Project page and data structure created. First field walk still needs real photos, notes, and public-record checks.",
+      "photos": [],
+      "field_notes": [
+        "Use repeatable framing at each photo stop.",
+        "Blur faces and license plates before publishing.",
+        "Treat public records as context, not conclusions about current conditions."
+      ],
+      "ai_observations": []
+    }
+  ],
+  "public_sources": [
+    {
+      "name": "Open Data Syracuse",
+      "url": "https://www.syr.gov/Departments/API/API-Initiatives/Open-Data",
+      "use": "General public data catalog."
+    },
+    {
+      "name": "311 Service Requests",
+      "url": "https://www.arcgis.com/home/item.html?id=8d38c0c8dda74696a1f07fac8aa9db5c",
+      "use": "Nearby public-realm issue checks such as streets, sidewalks, lights, trash, drainage, and snow."
+    },
+    {
+      "name": "Code Violations V2",
+      "url": "https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Code_Violations_v2/FeatureServer/0",
+      "use": "Property-context records, shown carefully with dates and caveats."
+    }
+  ]
+}
