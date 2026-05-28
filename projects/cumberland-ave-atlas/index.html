@@ -355,7 +355,7 @@
 
         .photo-grid {
             display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
+            grid-template-columns: repeat(4, minmax(0, 1fr));
             gap: 16px;
         }
 
@@ -371,6 +371,50 @@
             border-radius: 7px;
             font-weight: 900;
             letter-spacing: 0.08em;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .photo-placeholder.field-photo {
+            align-content: end;
+            justify-items: start;
+            min-height: 260px;
+            padding: 18px;
+            background:
+                linear-gradient(180deg, rgba(8, 17, 31, 0.08), rgba(8, 17, 31, 0.78)),
+                linear-gradient(135deg, rgba(247, 105, 0, 0.62), rgba(21, 59, 103, 0.9));
+        }
+
+        .photo-placeholder.pavement {
+            background:
+                linear-gradient(180deg, rgba(8, 17, 31, 0.05), rgba(8, 17, 31, 0.72)),
+                repeating-linear-gradient(112deg, #4b4f52 0, #4b4f52 14px, #62676b 14px, #62676b 20px, #2f3336 20px, #2f3336 22px);
+        }
+
+        .observation-list {
+            margin: 16px 0 0;
+            padding-left: 18px;
+            color: #4c5968;
+            line-height: 1.55;
+        }
+
+        .observation-list li + li { margin-top: 6px; }
+
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 16px;
+        }
+
+        .tag-list span {
+            padding: 5px 8px;
+            border: 1px solid rgba(8, 17, 31, 0.12);
+            border-radius: 999px;
+            background: #fff7eb;
+            color: #344255;
+            font-size: 0.72rem;
+            font-weight: 900;
             text-transform: uppercase;
         }
 
@@ -548,28 +592,58 @@
         <section class="section">
             <div class="section-heading">
                 <p class="eyebrow">Photo log</p>
-                <h2>First walk slots.</h2>
-                <p>These placeholders become repeat-photo cards once field images are added to this project folder.</p>
+                <h2>First field walk: Cumberland and Colvin.</h2>
+                <p>Initial phone photos document the repeat-view baseline. Photo files still need to be copied into the project folder before the published page can show the original images.</p>
             </div>
 
             <div class="photo-grid">
                 <article class="stop-card">
-                    <div class="photo-placeholder">Stop 1</div>
-                    <p class="kicker">West approach</p>
-                    <h3>Public realm baseline</h3>
-                    <p>Use this view for sidewalks, curb line, street lighting, signs, and the edge of the residential block.</p>
-                </article>
-                <article class="stop-card">
-                    <div class="photo-placeholder">Stop 2</div>
-                    <p class="kicker">Mid-block</p>
-                    <h3>Everyday conditions</h3>
-                    <p>Use this view for canopy, pavement, parking behavior, trash set-out, snow storage, and visible maintenance changes.</p>
-                </article>
-                <article class="stop-card">
-                    <div class="photo-placeholder">Stop 3</div>
+                    <div class="photo-placeholder field-photo">South to north<br>over Colvin</div>
                     <p class="kicker">Colvin corner</p>
-                    <h3>Intersection context</h3>
-                    <p>Use this view for crossing comfort, traffic speed cues, drainage, bus or pedestrian activity, and corner visibility.</p>
+                    <h3>Intersection approach</h3>
+                    <p>South-to-north view looking out over Colvin, useful for the Cumberland/Colvin intersection context.</p>
+                    <ul class="observation-list">
+                        <li>Wide cross-street pavement and curb-edge context are visible.</li>
+                        <li>Overhead utilities and mature tree canopy frame the street.</li>
+                        <li>Pedestrian crossing markings are not clearly visible in the provided view.</li>
+                    </ul>
+                    <div class="tag-list"><span>intersection</span><span>utilities</span><span>tree canopy</span><span>crossing context</span></div>
+                </article>
+                <article class="stop-card">
+                    <div class="photo-placeholder field-photo">North to south<br>up Cumberland</div>
+                    <p class="kicker">Cumberland view</p>
+                    <h3>Residential street edge</h3>
+                    <p>North-to-south view looking up Cumberland from near Colvin.</p>
+                    <ul class="observation-list">
+                        <li>Residential street with mature tree canopy and overhead utility lines.</li>
+                        <li>No visible lane markings in this frame.</li>
+                        <li>Street edge and pedestrian space are partly obscured by lawn and curbside conditions.</li>
+                    </ul>
+                    <div class="tag-list"><span>residential street</span><span>tree canopy</span><span>curbside set-out</span><span>sidewalk unclear</span></div>
+                </article>
+                <article class="stop-card">
+                    <div class="photo-placeholder field-photo">South to north<br>down Cumberland</div>
+                    <p class="kicker">Cumberland view</p>
+                    <h3>Long block baseline</h3>
+                    <p>South-to-north view down Cumberland showing the everyday neighborhood street context.</p>
+                    <ul class="observation-list">
+                        <li>Long, low-volume residential block with parked vehicles visible in the distance.</li>
+                        <li>Pavement shows visible cracking and worn surface texture.</li>
+                        <li>Grass shoulders, lawns, shade, overhead wires, and tree canopy shape the streetscape.</li>
+                    </ul>
+                    <div class="tag-list"><span>long view</span><span>pavement wear</span><span>parked vehicles</span><span>tree canopy</span></div>
+                </article>
+                <article class="stop-card">
+                    <div class="photo-placeholder field-photo pavement">Road surface<br>crack detail</div>
+                    <p class="kicker">Pavement condition</p>
+                    <h3>Cracking near the edge</h3>
+                    <p>Close-up of pavement cracking on Cumberland, including edge cracking and loose organic debris on the road surface.</p>
+                    <ul class="observation-list">
+                        <li>Multiple longitudinal and branching cracks are visible.</li>
+                        <li>Cracking appears concentrated near the pavement edge and continues into the travel surface.</li>
+                        <li>Use future repeat photos to see whether cracking expands, patching occurs, or drainage patterns appear after rain.</li>
+                    </ul>
+                    <div class="tag-list"><span>pavement cracks</span><span>edge condition</span><span>road debris</span><span>repeat photo</span></div>
                 </article>
             </div>
         </section>
@@ -620,12 +694,12 @@
                 <article class="note-card">
                     <p class="kicker">May 2026</p>
                     <h3>Project scaffold published</h3>
-                    <p>The atlas is ready for the first Cumberland Avenue walk. Next update should add real photos, field notes, and an initial public-record scan.</p>
+                    <p>Initial Cumberland/Colvin field photos were reviewed: two directional street views, one long block baseline, and one pavement-crack detail. Original image files still need to be copied into the project folder for publication.</p>
                 </article>
                 <article class="note-card">
                     <p class="kicker">Next monthly walk</p>
                     <h3>Baseline capture</h3>
-                    <p>Take three repeat photos, record weather and time, list observed public-realm conditions, then run an AI caption and issue-review pass.</p>
+                    <p>Copy original image files into the project assets folder, blur any faces or plates if needed, then replace the photo placeholders with the real images and repeat the same views next month.</p>
                 </article>
             </div>
         </section>

@@ -4,7 +4,7 @@
     "location": "1300 block of Cumberland Avenue near Colvin Street, Syracuse, NY",
     "privacy_mode": "privacy-first",
     "update_rhythm": "monthly walk",
-    "last_updated": "2026-05-02"
+    "last_updated": "2026-05-28"
   },
   "photo_stops": [
     {
@@ -25,16 +25,78 @@
   ],
   "walks": [
     {
-      "walk_date": "2026-05-02",
-      "status": "scaffold",
-      "summary": "Project page and data structure created. First field walk still needs real photos, notes, and public-record checks.",
-      "photos": [],
-      "field_notes": [
-        "Use repeatable framing at each photo stop.",
-        "Blur faces and license plates before publishing.",
-        "Treat public records as context, not conclusions about current conditions."
+      "walk_date": "2026-05-28",
+      "status": "field_notes_added_images_pending",
+      "summary": "Initial Cumberland/Colvin field observations added from phone photos. Original photo files were not available in the local Hermes image cache, so the published page uses descriptive field-photo cards until the image files are copied into the project folder.",
+      "photos": [
+        {
+          "id": "colvin-south-to-north",
+          "label": "South to north over Colvin",
+          "image_path": null,
+          "caption": "South-to-north view looking out over Colvin, useful for the Cumberland/Colvin intersection context.",
+          "alt_text": "View from Cumberland Avenue looking south to north over Colvin Street with intersection pavement, overhead utilities, and mature tree canopy visible.",
+          "tags": [
+            "intersection",
+            "utilities",
+            "tree canopy",
+            "crossing context"
+          ]
+        },
+        {
+          "id": "cumberland-north-to-south",
+          "label": "North to south up Cumberland",
+          "image_path": null,
+          "caption": "North-to-south view looking up Cumberland from near Colvin.",
+          "alt_text": "View looking south up Cumberland Avenue from near Colvin Street with residential lawns, tree canopy, overhead utilities, curbside set-out area, and pavement surface visible.",
+          "tags": [
+            "residential street",
+            "tree canopy",
+            "curbside set-out",
+            "sidewalk unclear"
+          ]
+        },
+        {
+          "id": "cumberland-south-to-north",
+          "label": "South to north down Cumberland",
+          "image_path": null,
+          "caption": "South-to-north view down Cumberland showing the everyday neighborhood street context.",
+          "alt_text": "Long view looking north down Cumberland Avenue with residential lawns, tree canopy, overhead wires, parked vehicles, and cracked pavement visible.",
+          "tags": [
+            "long view",
+            "pavement wear",
+            "parked vehicles",
+            "tree canopy"
+          ]
+        },
+        {
+          "id": "cumberland-road-cracks",
+          "label": "Road surface crack detail",
+          "image_path": null,
+          "caption": "Close-up of pavement cracking on Cumberland, including edge cracking and loose organic debris on the road surface.",
+          "alt_text": "Close view of cracked asphalt pavement along the edge of Cumberland Avenue with grass at the roadside and organic debris on the road surface.",
+          "tags": [
+            "pavement cracks",
+            "edge condition",
+            "road debris",
+            "repeat photo"
+          ]
+        }
       ],
-      "ai_observations": []
+      "field_notes": [
+        "Residential block context includes mature tree canopy, lawns or grass edges, parked vehicles, and overhead utility lines.",
+        "Pavement cracking is visible in both long-view and close-up photos, including longitudinal and branching cracks near the pavement edge.",
+        "Pedestrian space and crossing markings are not clearly visible in the provided views; avoid asserting missing infrastructure without a clearer photo or field confirmation.",
+        "Repeat the same directions next month and add weather/time-of-day metadata."
+      ],
+      "ai_observations": [
+        "pavement cracking",
+        "residential street",
+        "tree canopy",
+        "overhead utilities",
+        "curbside set-out",
+        "sidewalk visibility unclear",
+        "intersection context"
+      ]
     }
   ],
   "public_sources": [
