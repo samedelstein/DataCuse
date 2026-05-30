@@ -729,7 +729,62 @@ def osm_context(parcel: sqlite3.Row) -> dict:
                 "tags": tags,
             }
         )
-    return {"available": True, "radius_meters": radius, "features": features}
+    return {
+        "available": True,
+        "radius_meters": radius,
+        "features": features,
+        "summary": summarize_osm_features(features),
+        "notable_features": notable_osm_features(features),
+    }
+
+
+def summarize_osm_features(features: list[dict]) -> dict:
+    summary = {
+        "buildings": 0,
+        "named_features": 0,
+        "amenities": {},
+        "shops": {},
+        "landuse": {},
+        "historic": {},
+    }
+    for feature in features:
+        if feature.get("building"):
+            summary["buildings"] += 1
+        if feature.get("name"):
+            summary["named_features"] += 1
+        for key, bucket in (("amenity", "amenities"), ("shop", "shops"), ("landuse", "landuse"), ("historic", "historic")):
+            value = feature.get(key)
+            if value:
+                summary[bucket][value] = summary[bucket].get(value, 0) + 1
+    return summary
+
+
+def notable_osm_features(features: list[dict]) -> list[dict]:
+    notable = []
+    for feature in features:
+        tags = feature.get("tags") or {}
+        label = feature.get("name")
+        category = None
+        for key in ("amenity", "shop", "landuse", "historic"):
+            if feature.get(key):
+                category = f"{key}: {feature[key]}"
+                break
+        if not label and category:
+            label = category
+        if not label and feature.get("building") not in (None, "yes"):
+            label = f"building: {feature['building']}"
+        if not label:
+            continue
+        notable.append(
+            {
+                "label": label,
+                "category": category or ("building" if feature.get("building") else "feature"),
+                "type": feature.get("type"),
+                "id": feature.get("id"),
+                "tags": {k: v for k, v in tags.items() if k in ("name", "amenity", "shop", "landuse", "historic", "building")},
+            }
+        )
+    return notable[:10]
 
 
 def display_address(parcel: sqlite3.Row) -> str:
@@ -866,6 +921,33 @@ def list_html(values: object) -> str:
     if not isinstance(values, list) or not values:
         return "<li>No items reported.</li>"
     return "".join(f"<li>{html.escape(str(value))}</li>" for value in values if value)
+
+
+def osm_summary_html(osm: dict) -> str:
+    if not osm.get("available"):
+        return f"<p>{html.escape(osm.get('note') or 'No nearby OSM features returned.')}</p>"
+
+    summary = osm.get("summary") or summarize_osm_features(osm.get("features") or [])
+    notable = osm.get("notable_features") or notable_osm_features(osm.get("features") or [])
+    bits = []
+    buildings = summary.get("buildings", 0)
+    if buildings:
+        bits.append(f"{buildings} mapped building footprint{'s' if buildings != 1 else ''}")
+    named = summary.get("named_features", 0)
+    if named:
+        bits.append(f"{named} named feature{'s' if named != 1 else ''}")
+    for key, label in (("amenities", "amenity"), ("shops", "shop"), ("landuse", "land-use"), ("historic", "historic")):
+        values = summary.get(key) or {}
+        for value, count in sorted(values.items()):
+            bits.append(f"{count} {label}: {value}")
+
+    summary_html = "".join(f"<li>{html.escape(bit)}</li>" for bit in bits) or "<li>No meaningful OSM tags found nearby.</li>"
+    notable_html = "".join(
+        f"<li><strong>{html.escape(str(item.get('label')))}</strong><span>{html.escape(str(item.get('type')))} #{html.escape(str(item.get('id')))}</span></li>"
+        for item in notable
+    )
+    notable_block = f"<h5>Notable mapped features</h5><ul class=\"osm-results\">{notable_html}</ul>" if notable_html else ""
+    return f"<h5>Summary</h5><ul class=\"osm-results\">{summary_html}</ul>{notable_block}"
 
 
 def build_site(entries: list[dict]) -> None:
@@ -1039,11 +1121,7 @@ def property_page_html(entry: dict) -> str:
         if value not in (None, "", "-888888888")
     ) or f"<p>{html.escape(census.get('note') or 'No ACS tract context available.')}</p>"
     osm = entry.get("osm", {})
-    osm_features = osm.get("features") or []
-    osm_html = "".join(
-        f"<li><strong>{html.escape(str(item.get('name') or item.get('building') or item.get('amenity') or item.get('shop') or item.get('landuse') or 'OSM feature'))}</strong><span>{html.escape(str(item.get('type')))} #{html.escape(str(item.get('id')))}</span></li>"
-        for item in osm_features[:12]
-    ) or f"<li>{html.escape(osm.get('note') or 'No nearby OSM features returned.')}</li>"
+    osm_html = osm_summary_html(osm)
     image = entry.get("image")
     image_html = f'<img src="../../{html.escape(image)}" alt="Street View image for {html.escape(entry["title"])}">' if image else '<div class="image-missing">No Street View image</div>'
     return f"""<!DOCTYPE html>
@@ -1091,7 +1169,7 @@ def property_page_html(entry: dict) -> str:
         <section>
           <h4>OpenStreetMap nearby</h4>
           <p>{html.escape(str(osm.get("radius_meters") or ""))} meter search radius</p>
-          <ul class="osm-results">{osm_html}</ul>
+          {osm_html}
         </section>
       </div>
       <div class="feed-grid">{''.join(feeds)}</div>
