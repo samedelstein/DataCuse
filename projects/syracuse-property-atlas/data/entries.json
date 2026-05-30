@@ -1,5 +1,375 @@
 [
   {
+    "address": "513 Turtle St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The visibility of some areas is limited, and therefore not all potential issues can be accurately assessed",
+        "There may be additional maintenance needs that are not visible from the image",
+        "It's important to note that this assessment is based solely on exterior conditions visible in the Street View image and does not include any interior or utility-related concerns."
+      ],
+      "confidence": "High",
+      "possible_unrecorded_issues": [
+        "Potential presence of pests or insects not visible in the image",
+        "Exterior plumbing fixtures that may require attention due to age or condition",
+        "Foundation issues that could be concealed from this angle"
+      ],
+      "provider": "ollama:llava:latest",
+      "summary": "The property appears to be a two-story residential building with no immediate signs of structural or cosmetic distress. Visible conditions include an overhanging roofline that may require attention and some minor external maintenance issues, such as rust on the gutters. There is also visible graffiti on the side of one of the houses which could indicate recent vandalism. The area looks well-maintained, with no visible signs of disrepair or neglect. There are no overt issues that would require immediate attention, but some routine maintenance and cleaning might be beneficial.",
+      "visible_conditions": [
+        "Overhanging roofline that could benefit from trimming or maintenance",
+        "Rust on the guttering system",
+        "Graffiti on exterior walls"
+      ]
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 3 matching records",
+      "Image-only flag: Potential presence of pests or insects not visible in the image",
+      "Image-only flag: Exterior plumbing fixtures that may require attention due to age or condition",
+      "Image-only flag: Foundation issues that could be concealed from this angle"
+    ],
+    "id": 7,
+    "image": "images/parcel-000007.jpg",
+    "image_note": null,
+    "lat": 43.071235680331476,
+    "lon": -76.15877185828094,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07118191,
+          "Longitude": -76.15876728,
+          "NeedsRR": "Yes",
+          "ObjectId": 705,
+          "PropertyAddress": "513 Turtle St",
+          "RR_app_received": 1639353600000,
+          "RR_contact_name": "Sean & Alan Johnston",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "002.-22-12.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1639353600000,
+          "pc_owner": "Abdiraham Aynab",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07146746,
+          "Longitude": -76.15883581,
+          "NeedsRR": "Yes",
+          "ObjectId": 701,
+          "PropertyAddress": "1305-07 Spring St",
+          "RR_app_received": 1731456000000,
+          "RR_contact_name": "Loc Mai",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "Yes",
+          "SBL": "002.-22-08.0",
+          "SHAPE": null,
+          "completion_date": 1750982400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1750723200000,
+          "pc_owner": "Loc Mai",
+          "valid_until": 1845676800000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07139763,
+          "Longitude": -76.15866182,
+          "NeedsRR": "Yes",
+          "ObjectId": 703,
+          "PropertyAddress": "1301-03 Spring St",
+          "RR_app_received": 1719964800000,
+          "RR_contact_name": "Irene M Sciarrino",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1753833600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1753833600000,
+          "RRisValid": "Yes",
+          "SBL": "002.-22-09.0",
+          "SHAPE": null,
+          "completion_date": 1754611200000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1753833600000,
+          "pc_owner": "Irene Mary Sciarrino",
+          "valid_until": 1849305600000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302336,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304477,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077307048,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310896,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311109,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312858,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312859,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315104,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077316375,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077316491,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321153,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321154,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329265,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077330770,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331394,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331395,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331396,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921497,
+          "landuse": "religious",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "religious"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60
+    },
+    "parcel_key": "002-22-120",
+    "published_at": "2026-05-30T00:15:04+00:00",
+    "title": "513 Turtle St"
+  },
+  {
     "address": "261-63 Ross Pk",
     "ai_analysis": {
       "available": false,
