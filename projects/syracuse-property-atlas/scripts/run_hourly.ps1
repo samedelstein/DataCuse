@@ -1,5 +1,7 @@
 param(
-    [switch]$Push
+    [switch]$Push,
+    [int]$Id,
+    [string]$Address
 )
 
 $ErrorActionPreference = "Stop"
@@ -36,7 +38,14 @@ try {
 
     Push-Location $ProjectRoot
     try {
-        python scripts\property_atlas.py run-once
+        $AtlasArgs = @("scripts\property_atlas.py", "run-once")
+        if ($Id) {
+            $AtlasArgs += @("--id", $Id)
+        }
+        if ($Address) {
+            $AtlasArgs += @("--address", $Address)
+        }
+        python @AtlasArgs
     }
     finally {
         Pop-Location

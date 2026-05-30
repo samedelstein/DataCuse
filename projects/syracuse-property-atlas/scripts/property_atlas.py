@@ -26,8 +26,10 @@ DB_PATH = ROOT / "data" / "property_atlas.sqlite3"
 SITE_DIR = ROOT
 ENTRIES_PATH = SITE_DIR / "data" / "entries.json"
 PROGRESS_PATH = SITE_DIR / "data" / "progress.json"
+REVIEW_PATH = SITE_DIR / "data" / "review_queue.json"
 IMAGES_DIR = SITE_DIR / "images"
 PROPERTIES_DIR = SITE_DIR / "properties"
+TRACTS_DIR = SITE_DIR / "tracts"
 
 PARCEL_FEED = {
     "name": "parcel_map_2025",
@@ -44,6 +46,45 @@ ACS_VARIABLES = {
     "DP04_0046PE": "Renter-occupied share",
     "DP04_0089E": "Median gross rent",
     "DP04_0134PE": "No vehicle available",
+}
+
+AI_ANALYSIS_SCHEMA = {
+    "summary": "one cautious sentence describing the visible exterior",
+    "property_type_guess": "single_family|two_family|multifamily|commercial|mixed_use|vacant_lot|unclear",
+    "visible_conditions": ["specific exterior observations visible in the image"],
+    "condition_scores": {
+        "roof": "good|fair|poor|not_visible|unclear",
+        "siding_or_facade": "good|fair|poor|not_visible|unclear",
+        "windows_doors": "good|fair|poor|not_visible|unclear",
+        "porch_or_entry": "good|fair|poor|not_visible|unclear",
+        "yard_or_lot": "good|fair|poor|not_visible|unclear",
+        "trash_debris": "none_visible|minor|major|unclear",
+        "vegetation_overgrowth": "none_visible|minor|major|unclear",
+    },
+    "visible_flags": {
+        "boarded_windows_or_doors": "yes|no|unclear",
+        "fire_damage_visible": "yes|no|unclear",
+        "structural_damage_visible": "yes|no|unclear",
+        "vacancy_signs_visible": "yes|no|unclear",
+        "active_construction_visible": "yes|no|unclear",
+    },
+    "possible_unrecorded_issues": ["cautious image-only flags not already reflected in known_data"],
+    "image_annotations": [
+        {
+            "label": "short visible issue label",
+            "reason": "why this area was marked",
+            "bbox": {
+                "x": "left position as 0-1 fraction of image width",
+                "y": "top position as 0-1 fraction of image height",
+                "width": "box width as 0-1 fraction of image width",
+                "height": "box height as 0-1 fraction of image height",
+            },
+            "confidence": "high|medium|low",
+        }
+    ],
+    "needs_human_review": "true|false",
+    "confidence": "high|medium|low",
+    "caveats": ["limits such as image age, obstructed view, angle, or uncertainty"],
 }
 
 
@@ -475,6 +516,28 @@ def fetch_property_image(parcel: sqlite3.Row) -> tuple[str | None, str | None]:
     return None, f"Unsupported PROPERTY_IMAGE_PROVIDER={provider!r}"
 
 
+def image_quality(image_path: Path | None, image_error: str | None = None) -> dict:
+    if image_error:
+        return {"available": False, "needs_rerun": True, "note": image_error}
+    if not image_path or not image_path.exists():
+        return {"available": False, "needs_rerun": True, "note": "No image file found."}
+    size = image_path.stat().st_size
+    status = {
+        "available": True,
+        "bytes": size,
+        "needs_rerun": False,
+        "warnings": [],
+    }
+    if size < 10000:
+        status["needs_rerun"] = True
+        status["warnings"].append("Image file is unexpectedly small.")
+    head = image_path.read_bytes()[:32]
+    if b"error" in head.lower() or b"<html" in head.lower():
+        status["needs_rerun"] = True
+        status["warnings"].append("Image file may contain an API error response.")
+    return status
+
+
 def summarize_records(matches: dict[str, list[dict]]) -> list[str]:
     summaries = []
     labels = {feed["name"]: feed["label"] for feed in OPEN_DATA_FEEDS}
@@ -489,23 +552,36 @@ def analyze_image(image_path: Path, parcel: sqlite3.Row, matches: dict[str, list
         return {"available": False, "note": "No Street View image was available for analysis."}
     provider = os.getenv("VISION_PROVIDER", "ollama").lower()
 
-    prompt = {
-        "address": parcel["address"],
-        "parcel_key": parcel["parcel_key"],
-        "known_data": summarize_records(matches),
-        "instructions": (
-            "Analyze the property exterior from Street View. Return JSON with keys: "
-            "summary, visible_conditions, possible_unrecorded_issues, confidence, caveats. "
-            "Do not identify people, license plates, or private personal details. "
-            "Use cautious language; flag only exterior conditions visible from the image."
-        ),
-    }
+    prompt = build_vision_prompt(parcel, matches)
     data_url = "data:image/jpeg;base64," + base64.b64encode(image_path.read_bytes()).decode("ascii")
     if provider == "ollama":
         return analyze_image_ollama(data_url, prompt)
     if provider == "openai":
         return analyze_image_openai(data_url, prompt)
     return {"available": False, "note": f"Unsupported VISION_PROVIDER={provider!r}; image analysis skipped."}
+
+
+def build_vision_prompt(parcel: sqlite3.Row, matches: dict[str, list[dict]]) -> dict:
+    return {
+        "role": "You are a cautious civic data assistant reviewing a public street-level exterior image for a property atlas.",
+        "property": {
+            "address": parcel["address"],
+            "parcel_key": parcel["parcel_key"],
+            "coordinates": {"lat": parcel["lat"], "lon": parcel["lon"]},
+        },
+        "known_public_records": summarize_records(matches),
+        "task": [
+            "Describe only visible exterior property conditions from the image.",
+            "Compare visible conditions against known_public_records and call out possible image-only issues only when they are plainly visible.",
+            "Use cautious language. Do not infer ownership, occupancy, code violations, criminal activity, socioeconomic status, or protected-class information.",
+            "Do not identify, describe, transcribe, or track people, faces, license plates, or private personal details.",
+            "If the property is blocked, image quality is poor, or the view may show the wrong parcel, lower confidence and explain the caveat.",
+            "When you flag visible issues, include approximate normalized bounding boxes in image_annotations. Use x, y, width, and height as fractions from 0 to 1 relative to the full image.",
+            "Only create bounding boxes for visible property-condition issues, not people, vehicles, license plates, or unrelated background objects.",
+            "Return valid JSON only. Do not wrap it in Markdown.",
+        ],
+        "schema": AI_ANALYSIS_SCHEMA,
+    }
 
 
 def analyze_image_ollama(data_url: str, prompt: dict) -> dict:
@@ -530,7 +606,7 @@ def analyze_image_ollama(data_url: str, prompt: dict) -> dict:
         parsed = {"summary": text, "visible_conditions": [], "possible_unrecorded_issues": [], "confidence": "unknown", "caveats": []}
     parsed["available"] = True
     parsed["provider"] = f"ollama:{model}"
-    return parsed
+    return normalize_ai_analysis(parsed)
 
 
 def analyze_image_openai(data_url: str, prompt: dict) -> dict:
@@ -576,6 +652,24 @@ def analyze_image_openai(data_url: str, prompt: dict) -> dict:
         parsed = {"summary": text or "", "visible_conditions": [], "possible_unrecorded_issues": [], "confidence": "unknown", "caveats": []}
     parsed["available"] = True
     parsed["provider"] = payload["model"]
+    return normalize_ai_analysis(parsed)
+
+
+def normalize_ai_analysis(parsed: dict) -> dict:
+    parsed.setdefault("summary", "")
+    parsed.setdefault("visible_conditions", [])
+    parsed.setdefault("possible_unrecorded_issues", [])
+    parsed.setdefault("condition_scores", {})
+    parsed.setdefault("visible_flags", {})
+    parsed.setdefault("image_annotations", [])
+    parsed.setdefault("confidence", "unknown")
+    parsed.setdefault("caveats", [])
+    parsed.setdefault("property_type_guess", "unclear")
+    review = parsed.get("needs_human_review", False)
+    if isinstance(review, str):
+        parsed["needs_human_review"] = review.strip().lower() in ("true", "yes", "1")
+    else:
+        parsed["needs_human_review"] = bool(review)
     return parsed
 
 
@@ -823,19 +917,26 @@ def parcel_progress() -> dict:
             ORDER BY id
             """
         ).fetchall()
-    parcels = [
-        {
-            "id": row["id"],
-            "parcel_key": row["parcel_key"],
-            "address": row["address"].title() if row["address"] else f"Parcel {row['id']}",
-            "lat": row["lat"],
-            "lon": row["lon"],
-            "published": bool(row["published_at"]),
-            "published_at": row["published_at"],
-            "url": property_url(row["id"]) if row["published_at"] else None,
-        }
-        for row in rows
-    ]
+    entries_by_id = {entry.get("id"): entry for entry in load_entries()}
+    parcels = []
+    for row in rows:
+        entry = entries_by_id.get(row["id"])
+        layers = entry_layers(entry) if entry else {}
+        review = review_reasons(entry) if entry else []
+        parcels.append(
+            {
+                "id": row["id"],
+                "parcel_key": row["parcel_key"],
+                "address": row["address"].title() if row["address"] else f"Parcel {row['id']}",
+                "lat": row["lat"],
+                "lon": row["lon"],
+                "published": bool(row["published_at"]),
+                "published_at": row["published_at"],
+                "url": property_url(row["id"]) if row["published_at"] else None,
+                "layers": layers,
+                "review": review,
+            }
+        )
     published = sum(1 for parcel in parcels if parcel["published"])
     return {
         "generated_at": utc_now(),
@@ -846,14 +947,53 @@ def parcel_progress() -> dict:
     }
 
 
-def issue_flags(matches: dict[str, list[dict]], ai_analysis: dict) -> list[str]:
+def entry_layers(entry: dict | None) -> dict:
+    if not entry:
+        return {}
+    open_data = entry.get("open_data") or {}
+    ai = entry.get("ai_analysis") or {}
+    return {
+        "vacant": bool(open_data.get("vacant_properties")),
+        "rental": bool(open_data.get("rental_registry")),
+        "code": bool(open_data.get("code_violations")),
+        "unfit": bool(open_data.get("unfit_properties")),
+        "ai_flag": bool(ai.get("possible_unrecorded_issues")),
+        "review": bool(entry.get("review_reasons") or review_reasons(entry)),
+    }
+
+
+def issue_flags(matches: dict[str, list[dict]], ai_analysis: dict, image_status: dict | None = None) -> list[str]:
     flags = summarize_records(matches)
+    if image_status and image_status.get("needs_rerun"):
+        flags.append("Image needs rerun")
     possible = ai_analysis.get("possible_unrecorded_issues") if ai_analysis.get("available") else None
     if isinstance(possible, list):
         for item in possible:
             if item:
                 flags.append(f"Image-only flag: {item}")
+    if ai_analysis.get("needs_human_review") in (True, "true", "yes", "Yes"):
+        flags.append("Needs human review")
     return flags
+
+
+def review_reasons(entry: dict) -> list[str]:
+    reasons = []
+    image_status = entry.get("image_quality") or {}
+    ai = entry.get("ai_analysis") or {}
+    if image_status.get("needs_rerun"):
+        reasons.append("Image needs rerun")
+    if not ai.get("available"):
+        reasons.append("AI analysis unavailable")
+    if ai.get("needs_human_review") in (True, "true", "yes", "Yes"):
+        reasons.append("AI requested human review")
+    possible = ai.get("possible_unrecorded_issues")
+    if isinstance(possible, list) and any(possible):
+        reasons.append("Possible image-only issue")
+    flags = ai.get("visible_flags") or {}
+    for label, value in flags.items():
+        if value == "yes":
+            reasons.append(label.replace("_", " "))
+    return sorted(set(reasons))
 
 
 def publish_entry(conn: sqlite3.Connection) -> dict:
@@ -861,10 +1001,38 @@ def publish_entry(conn: sqlite3.Connection) -> dict:
     parcel = conn.execute("SELECT * FROM parcels WHERE published_at IS NULL ORDER BY id ASC LIMIT 1").fetchone()
     if not parcel:
         raise RuntimeError("No unpublished parcels available. Run seed first or reset published_at.")
+    return publish_parcel(conn, parcel)
 
+
+def find_parcel(conn: sqlite3.Connection, id_: int | None = None, address: str | None = None) -> sqlite3.Row:
+    conn.row_factory = sqlite3.Row
+    if id_ is not None:
+        parcel = conn.execute("SELECT * FROM parcels WHERE id = ?", (id_,)).fetchone()
+        if not parcel:
+            raise RuntimeError(f"No parcel found with id {id_}.")
+        return parcel
+    if address:
+        target = normalize_text(address)
+        parcel = conn.execute(
+            "SELECT * FROM parcels WHERE address = ? ORDER BY id LIMIT 1",
+            (target,),
+        ).fetchone()
+        if not parcel:
+            parcel = conn.execute(
+                "SELECT * FROM parcels WHERE address LIKE ? ORDER BY id LIMIT 1",
+                (f"%{target}%",),
+            ).fetchone()
+        if not parcel:
+            raise RuntimeError(f"No parcel found matching address: {address}")
+        return parcel
+    raise RuntimeError("Pass id_ or address.")
+
+
+def publish_parcel(conn: sqlite3.Connection, parcel: sqlite3.Row) -> dict:
     matches = matching_records(conn, parcel)
     image_rel, image_error = fetch_property_image(parcel)
     image_path = ROOT / image_rel if image_rel else ROOT / "missing.jpg"
+    image_status = image_quality(image_path if image_rel else None, image_error)
     ai = analyze_image(image_path, parcel, matches) if image_rel else {"available": False, "note": image_error}
     census = census_tract_context(parcel)
     osm = osm_context(parcel)
@@ -878,12 +1046,14 @@ def publish_entry(conn: sqlite3.Connection) -> dict:
         "lon": parcel["lon"],
         "image": image_rel,
         "image_note": image_error,
+        "image_quality": image_status,
         "open_data": matches,
         "census_tract": census,
         "osm": osm,
         "ai_analysis": ai,
-        "flags": issue_flags(matches, ai),
+        "flags": issue_flags(matches, ai, image_status),
     }
+    entry["review_reasons"] = review_reasons(entry)
     entries = load_entries()
     entries = [item for item in entries if item.get("id") != parcel["id"]]
     entries.insert(0, entry)
@@ -950,9 +1120,36 @@ def osm_summary_html(osm: dict) -> str:
     return f"<h5>Summary</h5><ul class=\"osm-results\">{summary_html}</ul>{notable_block}"
 
 
+def annotation_overlays(ai: dict) -> str:
+    overlays = []
+    for item in ai.get("image_annotations") or []:
+        bbox = item.get("bbox") or {}
+        try:
+            x = max(0, min(1, float(bbox.get("x", 0)))) * 100
+            y = max(0, min(1, float(bbox.get("y", 0)))) * 100
+            width = max(0, min(1, float(bbox.get("width", 0)))) * 100
+            height = max(0, min(1, float(bbox.get("height", 0)))) * 100
+        except (TypeError, ValueError):
+            continue
+        if width <= 0 or height <= 0:
+            continue
+        label = html.escape(str(item.get("label") or "AI review area"))
+        confidence = html.escape(str(item.get("confidence") or "unknown"))
+        overlays.append(
+            f"""
+            <span class="annotation-box" style="left:{x:.2f}%;top:{y:.2f}%;width:{width:.2f}%;height:{height:.2f}%;">
+              <span>{label} · {confidence}</span>
+            </span>
+            """
+        )
+    return "".join(overlays)
+
+
 def build_site(entries: list[dict]) -> None:
     SITE_DIR.mkdir(parents=True, exist_ok=True)
     PROGRESS_PATH.parent.mkdir(parents=True, exist_ok=True)
+    write_review_queue(entries)
+    build_tract_pages(entries)
     progress = parcel_progress()
     PROGRESS_PATH.write_text(json.dumps(progress, separators=(",", ":")), encoding="utf-8")
     build_property_pages(entries)
@@ -1046,6 +1243,14 @@ def build_site(entries: list[dict]) -> None:
             <button type="button" data-status-filter="published">Published</button>
             <button type="button" data-status-filter="queued">Queued</button>
           </div>
+          <div class="layer-filter" aria-label="Map layer filter">
+            <label><input type="checkbox" value="vacant"> Vacant records</label>
+            <label><input type="checkbox" value="rental"> Rental registry</label>
+            <label><input type="checkbox" value="code"> Code violations</label>
+            <label><input type="checkbox" value="unfit"> Unfit records</label>
+            <label><input type="checkbox" value="ai_flag"> AI flags</label>
+            <label><input type="checkbox" value="review"> Review queue</label>
+          </div>
           <div class="progress-bar" aria-label="Publishing progress"><span style="width: {progress_pct}%"></span></div>
           <p><strong id="publishedCount">{published}</strong> of <strong id="totalCount">{total}</strong> mapped parcels published.</p>
           <div id="searchResults" class="search-results" aria-live="polite"></div>
@@ -1091,6 +1296,114 @@ def build_site(entries: list[dict]) -> None:
     (SITE_DIR / "index.html").write_text(html_doc, encoding="utf-8")
 
 
+def write_review_queue(entries: list[dict]) -> None:
+    queue = []
+    for entry in entries:
+        reasons = entry.get("review_reasons") or review_reasons(entry)
+        if not reasons:
+            continue
+        queue.append(
+            {
+                "id": entry.get("id"),
+                "title": entry.get("title"),
+                "published_at": entry.get("published_at"),
+                "reasons": reasons,
+                "url": property_url(entry.get("id")),
+            }
+        )
+    REVIEW_PATH.write_text(json.dumps(queue, indent=2, sort_keys=True), encoding="utf-8")
+
+
+def tract_key(entry: dict) -> str | None:
+    census = entry.get("census_tract") or {}
+    state = census.get("state")
+    county = census.get("county")
+    tract = census.get("tract")
+    if not (state and county and tract):
+        return None
+    return f"{state}{county}{tract}"
+
+
+def build_tract_pages(entries: list[dict]) -> None:
+    if TRACTS_DIR.exists():
+        shutil.rmtree(TRACTS_DIR)
+    groups: dict[str, list[dict]] = {}
+    for entry in entries:
+        key = tract_key(entry)
+        if key:
+            groups.setdefault(key, []).append(entry)
+    if not groups:
+        return
+    TRACTS_DIR.mkdir(parents=True, exist_ok=True)
+    cards = []
+    for key, tract_entries in sorted(groups.items()):
+        page_dir = TRACTS_DIR / key
+        page_dir.mkdir(parents=True, exist_ok=True)
+        page_dir.joinpath("index.html").write_text(tract_page_html(key, tract_entries), encoding="utf-8")
+        census = tract_entries[0].get("census_tract") or {}
+        cards.append(
+            f"""
+            <a class="tract-card" href="{key}/">
+              <strong>{html.escape(census.get("name") or f"Tract {key}")}</strong>
+              <span>{len(tract_entries)} published propert{'ies' if len(tract_entries) != 1 else 'y'}</span>
+            </a>
+            """
+        )
+    index_html = f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tract Index | Syracuse Property Atlas</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <nav class="site-nav" aria-label="Primary"><a class="brand" href="../"><span class="brand-mark">D</span><span>Data<span>Cuse</span></span></a></nav>
+  <main class="section"><div class="section-heading"><p class="eyebrow">Census tracts</p><h1>Published property entries by tract.</h1><p>Tract pages summarize published atlas entries as the hourly pipeline grows.</p></div><div class="tract-grid">{''.join(cards)}</div></main>
+</body>
+</html>"""
+    (TRACTS_DIR / "index.html").write_text(index_html, encoding="utf-8")
+
+
+def tract_page_html(key: str, entries: list[dict]) -> str:
+    census = entries[0].get("census_tract") or {}
+    metrics = census.get("metrics") or {}
+    metrics_html = "".join(
+        f"<dt>{html.escape(str(name))}</dt><dd>{html.escape(str(value))}</dd>"
+        for name, value in metrics.items()
+        if value not in (None, "", "-888888888")
+    ) or f"<p>{html.escape(census.get('note') or 'No ACS metrics available.')}</p>"
+    cards = "".join(
+        f"""
+        <a class="project-card" href="../../{property_url(entry['id'])}">
+          <div class="project-copy">
+            <p class="card-kicker">{html.escape(entry.get("published_at", ""))}</p>
+            <h3>{html.escape(entry.get("title", "Property"))}</h3>
+            <p>{html.escape(str((entry.get("ai_analysis") or {}).get("summary") or "No AI summary available."))}</p>
+          </div>
+        </a>
+        """
+        for entry in entries
+    )
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{html.escape(census.get("name") or key)} | Syracuse Property Atlas</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <nav class="site-nav" aria-label="Primary"><a class="brand" href="../../"><span class="brand-mark">D</span><span>Data<span>Cuse</span></span></a></nav>
+  <main class="section">
+    <div class="section-heading"><p class="eyebrow">Census tract</p><h1>{html.escape(census.get("name") or key)}</h1><p>{len(entries)} published atlas entries in this tract.</p></div>
+    <section class="feed-panel"><h4>ACS context</h4><dl>{metrics_html}</dl></section>
+    <div class="entry-grid">{cards}</div>
+  </main>
+</body>
+</html>"""
+
+
 def build_property_pages(entries: list[dict]) -> None:
     if PROPERTIES_DIR.exists():
         shutil.rmtree(PROPERTIES_DIR)
@@ -1113,6 +1426,23 @@ def property_page_html(entry: dict) -> str:
             """
         )
     ai = entry.get("ai_analysis", {})
+    condition_scores = ai.get("condition_scores") or {}
+    condition_html = "".join(
+        f"<dt>{html.escape(str(key).replace('_', ' ').title())}</dt><dd>{html.escape(str(value))}</dd>"
+        for key, value in condition_scores.items()
+    ) or "<p>No structured condition scores available.</p>"
+    visible_flags = ai.get("visible_flags") or {}
+    visible_flags_html = "".join(
+        f"<dt>{html.escape(str(key).replace('_', ' ').title())}</dt><dd>{html.escape(str(value))}</dd>"
+        for key, value in visible_flags.items()
+    ) or "<p>No structured visible flags available.</p>"
+    image_status = entry.get("image_quality") or {}
+    image_status_html = "".join(
+        f"<dt>{html.escape(str(key).replace('_', ' ').title())}</dt><dd>{html.escape(str(value))}</dd>"
+        for key, value in image_status.items()
+        if key != "warnings"
+    )
+    review_html = list_html(entry.get("review_reasons") or review_reasons(entry))
     census = entry.get("census_tract", {})
     census_metrics = census.get("metrics") or {}
     census_html = "".join(
@@ -1123,7 +1453,8 @@ def property_page_html(entry: dict) -> str:
     osm = entry.get("osm", {})
     osm_html = osm_summary_html(osm)
     image = entry.get("image")
-    image_html = f'<img src="../../{html.escape(image)}" alt="Street View image for {html.escape(entry["title"])}">' if image else '<div class="image-missing">No Street View image</div>'
+    annotations = annotation_overlays(ai)
+    image_html = f'<img src="../../{html.escape(image)}" alt="Street View image for {html.escape(entry["title"])}">{annotations}' if image else '<div class="image-missing">No Street View image</div>'
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1155,10 +1486,21 @@ def property_page_html(entry: dict) -> str:
         <section>
           <h4>AI image read</h4>
           <p>{html.escape(str(ai.get("summary") or ai.get("note") or "No AI summary available."))}</p>
+          <p><strong>Property type guess:</strong> {html.escape(str(ai.get("property_type_guess") or "unclear"))}</p>
           <h5>Visible conditions</h5>
           <ul>{list_html(ai.get("visible_conditions"))}</ul>
+          <h5>Condition scores</h5>
+          <dl>{condition_html}</dl>
+          <h5>Visible flags</h5>
+          <dl>{visible_flags_html}</dl>
           <h5>Possible image-only flags</h5>
           <ul>{list_html(ai.get("possible_unrecorded_issues"))}</ul>
+          <h5>AI review boxes</h5>
+          <ul>{list_html([f"{item.get('label', 'AI review area')}: {item.get('reason', '')}" for item in (ai.get("image_annotations") or [])])}</ul>
+          <h5>Review reasons</h5>
+          <ul>{review_html}</ul>
+          <h5>Image quality</h5>
+          <dl>{image_status_html}</dl>
           <p class="caveat">{html.escape(str(ai.get("caveats") or ""))}</p>
         </section>
         <section>
@@ -1213,7 +1555,11 @@ def cmd_run_once(args: argparse.Namespace) -> None:
         if args.refresh_open_data or conn.execute("SELECT COUNT(*) FROM feed_records").fetchone()[0] == 0:
             print("Refreshing open-data feeds.")
             refresh_open_data(conn, limit=args.limit)
-        entry = publish_entry(conn)
+        if args.id or args.address:
+            parcel = find_parcel(conn, id_=args.id, address=args.address)
+            entry = publish_parcel(conn, parcel)
+        else:
+            entry = publish_entry(conn)
     print(f"Published {entry['title']} to {SITE_DIR / 'index.html'}")
 
 
@@ -1292,6 +1638,8 @@ def main() -> None:
     run_once = sub.add_parser("run-once", help="Publish the next unpublished property.")
     run_once.add_argument("--limit", type=int, default=None, help="Limit records when bootstrapping for testing.")
     run_once.add_argument("--refresh-open-data", action="store_true", help="Refresh open-data feeds before publishing.")
+    run_once.add_argument("--id", type=int, default=None, help="Publish a specific parcel row id.")
+    run_once.add_argument("--address", type=str, default=None, help="Publish the first parcel matching this address.")
     run_once.set_defaults(func=cmd_run_once)
 
     build = sub.add_parser("build-site", help="Rebuild the static website from entries.json.")

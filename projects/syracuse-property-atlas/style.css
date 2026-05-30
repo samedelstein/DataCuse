@@ -291,6 +291,33 @@ h1 {
   background: var(--ink);
 }
 
+.layer-filter {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  margin-top: 14px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(223, 231, 227, 0.35);
+}
+
+.layer-filter label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  color: var(--ink);
+  font-size: 0.84rem;
+  font-weight: 800;
+}
+
+.layer-filter input {
+  width: 16px;
+  min-height: 16px;
+  accent-color: var(--orange);
+}
+
 .progress-bar {
   height: 12px;
   margin: 18px 0 8px;
@@ -457,6 +484,7 @@ h1 {
 }
 
 .property-image {
+  position: relative;
   display: grid;
   min-height: 300px;
   place-items: center;
@@ -470,6 +498,30 @@ h1 {
   height: 100%;
   aspect-ratio: 1;
   object-fit: cover;
+}
+
+.annotation-box {
+  position: absolute;
+  z-index: 2;
+  min-width: 34px;
+  min-height: 28px;
+  border: 3px solid #f76900;
+  background: rgba(247, 105, 0, 0.12);
+  box-shadow: 0 0 0 2px rgba(8, 17, 31, 0.72);
+  pointer-events: none;
+}
+
+.annotation-box span {
+  position: absolute;
+  left: -3px;
+  bottom: 100%;
+  max-width: 220px;
+  padding: 4px 6px;
+  color: var(--white);
+  background: var(--ink);
+  font-size: 0.72rem;
+  font-weight: 900;
+  line-height: 1.25;
 }
 
 .entry-detail { scroll-margin-top: 86px; }
@@ -580,6 +632,31 @@ dd {
   font-weight: 900;
 }
 
+.tract-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.tract-card {
+  display: grid;
+  gap: 8px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.92);
+}
+
+.tract-card strong {
+  font-family: "Space Grotesk", Inter, sans-serif;
+  font-size: 1.2rem;
+}
+
+.tract-card span {
+  color: var(--muted);
+  font-weight: 800;
+}
+
 @media (max-width: 980px) {
   .hero,
   .section-heading,
@@ -594,6 +671,10 @@ dd {
   .entry-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .tract-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 640px) {
@@ -601,7 +682,8 @@ dd {
   .hero { min-height: auto; padding-top: 72px; }
   h1 { font-size: clamp(2.45rem, 14vw, 4rem); line-height: 0.96; }
   .stats,
-  .entry-grid {
+  .entry-grid,
+  .tract-grid {
     grid-template-columns: 1fr;
   }
 }

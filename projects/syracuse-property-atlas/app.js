@@ -4,6 +4,7 @@ const searchResults = document.getElementById("searchResults");
 const publishedCount = document.getElementById("publishedCount");
 const totalCount = document.getElementById("totalCount");
 const statusFilterButtons = Array.from(document.querySelectorAll("[data-status-filter]"));
+const layerFilterInputs = Array.from(document.querySelectorAll(".layer-filter input[type='checkbox']"));
 
 const state = {
   map: null,
@@ -11,6 +12,7 @@ const state = {
   parcels: [],
   markers: new Map(),
   filter: "all",
+  layers: new Set(),
 };
 
 function escapeHtml(value) {
@@ -23,6 +25,10 @@ function escapeHtml(value) {
 
 function popupHtml(parcel) {
   const status = parcel.published ? "Published" : "Waiting in queue";
+  const layers = Object.entries(parcel.layers || {})
+    .filter(([, active]) => active)
+    .map(([key]) => key.replace("_", " "))
+    .join(", ");
   const link = parcel.published && parcel.url
     ? `<a href="${escapeHtml(parcel.url)}">Open property page</a>`
     : "<span>Not published yet</span>";
@@ -31,6 +37,7 @@ function popupHtml(parcel) {
       <strong>${escapeHtml(parcel.address)}</strong>
       <p>${escapeHtml(parcel.parcel_key || `Parcel ${parcel.id}`)}</p>
       <p>${status}</p>
+      ${layers ? `<p>Layers: ${escapeHtml(layers)}</p>` : ""}
       ${link}
     </div>
   `;
@@ -50,6 +57,12 @@ function markerStyle(parcel) {
 function shouldShow(parcel) {
   if (state.filter === "published") return parcel.published;
   if (state.filter === "queued") return !parcel.published;
+  if (state.layers.size) {
+    const parcelLayers = parcel.layers || {};
+    for (const layer of state.layers) {
+      if (!parcelLayers[layer]) return false;
+    }
+  }
   return true;
 }
 
@@ -119,6 +132,12 @@ function setStatusFilter(filter) {
   renderSearch(searchInput?.value || "");
 }
 
+function syncLayerFilter() {
+  state.layers = new Set(layerFilterInputs.filter((input) => input.checked).map((input) => input.value));
+  refreshMarkers();
+  renderSearch(searchInput?.value || "");
+}
+
 async function initAtlas() {
   if (!mapEl || !window.L) return;
 
@@ -165,6 +184,10 @@ statusFilterButtons.forEach((button) => {
   button.addEventListener("click", () => {
     setStatusFilter(button.dataset.statusFilter || "all");
   });
+});
+
+layerFilterInputs.forEach((input) => {
+  input.addEventListener("change", syncLayerFilter);
 });
 
 initAtlas().catch((error) => {

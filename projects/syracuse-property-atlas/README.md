@@ -41,6 +41,18 @@ cd C:\Users\samie\Projects\datacuse\DataCuse\projects\syracuse-property-atlas
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\run_hourly.ps1 -Push
 ```
 
+Publish, commit, and push a specific address match:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\run_hourly.ps1 -Push -Address "1301-03 Spring St"
+```
+
+Or by parcel row id:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts\run_hourly.ps1 -Push -Id 1
+```
+
 Logs are written to `logs/hourly-YYYYMMDD.log`. The runner uses a lock file under `data/` so two scheduled runs do not overlap.
 
 Register or update the Windows Scheduled Task:

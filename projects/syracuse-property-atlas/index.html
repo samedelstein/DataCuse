@@ -61,8 +61,16 @@
             <button type="button" data-status-filter="published">Published</button>
             <button type="button" data-status-filter="queued">Queued</button>
           </div>
+          <div class="layer-filter" aria-label="Map layer filter">
+            <label><input type="checkbox" value="vacant"> Vacant records</label>
+            <label><input type="checkbox" value="rental"> Rental registry</label>
+            <label><input type="checkbox" value="code"> Code violations</label>
+            <label><input type="checkbox" value="unfit"> Unfit records</label>
+            <label><input type="checkbox" value="ai_flag"> AI flags</label>
+            <label><input type="checkbox" value="review"> Review queue</label>
+          </div>
           <div class="progress-bar" aria-label="Publishing progress"><span style="width: 0.02%"></span></div>
-          <p><strong id="publishedCount">9</strong> of <strong id="totalCount">41340</strong> mapped parcels published.</p>
+          <p><strong id="publishedCount">10</strong> of <strong id="totalCount">41340</strong> mapped parcels published.</p>
           <div id="searchResults" class="search-results" aria-live="polite"></div>
         </div>
         <div id="atlasMap" class="atlas-map" aria-label="Syracuse parcel publishing map"></div>
