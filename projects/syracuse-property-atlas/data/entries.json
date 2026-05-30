@@ -2,8 +2,53 @@
   {
     "address": "1326 Cumberland Ave",
     "ai_analysis": {
-      "available": false,
-      "note": "Ollama vision request failed: timed out"
+      "available": true,
+      "caveats": [
+        "The photo appears to be of good quality, taken during the day under typical lighting conditions, and there are no visible obstructions or distortions that would limit visibility or accuracy."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.843,
+            "width": 0.637,
+            "x": 0.438,
+            "y": 0.591
+          },
+          "confidence": "medium",
+          "label": "front yard with sparse grass",
+          "reason": "The front yard has only a small area of grass, which might be due to seasonal variations in plant growth or limited maintenance."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "The property's condition may be better than what can be seen in the image due to factors like the time of day, which could affect lighting and shadows; the angle of the photo, which might make certain features less visible; or the quality of the photograph itself, which could lead to distortions or obscured details.",
+        "cautionary note: Although the house appears well-maintained in the image, it's important to remember that this analysis is based solely on the provided photo and does not include any information about the property's condition over time or other factors that may affect its appearance. "
+      ],
+      "property_type_guess": "single_family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a single-family house on the side of a street in what appears to be a suburban setting. The house has a traditional design with a single visible entrance and an attached garage. The siding looks to be in good condition without significant signs of wear or damage, and the roof also seems to be in good shape. There are no visible windows on the exterior. The front yard is relatively bare with only small areas of grass and what may be a tree or bush in the corner of the image. The house appears to be well-maintained with no noticeable boarded windows or doors, fire damage, structural damage, active construction, or vacancy signs. There are no visible trash, debris, or overgrowth issues in the yard.",
+      "visible_conditions": [
+        "good siding and roof condition",
+        "no visible windows on exterior",
+        "bare front yard with a small area of grass"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
     },
     "census_tract": {
       "available": true,
@@ -24,7 +69,10 @@
       "tract": "005602",
       "tract_lookup": "Census Geocoder"
     },
-    "flags": [],
+    "flags": [
+      "Image-only flag: The property's condition may be better than what can be seen in the image due to factors like the time of day, which could affect lighting and shadows; the angle of the photo, which might make certain features less visible; or the quality of the photograph itself, which could lead to distortions or obscured details.",
+      "Image-only flag: cautionary note: Although the house appears well-maintained in the image, it's important to remember that this analysis is based solely on the provided photo and does not include any information about the property's condition over time or other factors that may affect its appearance. "
+    ],
     "id": 21729,
     "image": "images/parcel-021729.jpg",
     "image_note": null,
@@ -239,9 +287,9 @@
       }
     },
     "parcel_key": "056-10-070",
-    "published_at": "2026-05-30T03:16:37+00:00",
+    "published_at": "2026-05-30T03:21:50+00:00",
     "review_reasons": [
-      "AI analysis unavailable"
+      "Possible image-only issue"
     ],
     "title": "1326 Cumberland Ave"
   },
