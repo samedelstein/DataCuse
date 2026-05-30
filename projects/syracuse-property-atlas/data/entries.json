@@ -1,5 +1,442 @@
 [
   {
+    "address": "412 Bear St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image may not provide a full view of the property, and there might be other issues that are not visible from this perspective."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good|fair|poor|not_visible|unclear",
+        "roof": "good|fair|poor|not_visible|unclear",
+        "siding_or_facade": "good|fair|poor|not_visible|unclear",
+        "trash_debris": "none_visible|minor|major|unclear",
+        "vegetation_overgrowth": "none_visible|minor|major|unclear",
+        "windows_doors": "good|fair|poor|not_visible|unclear",
+        "yard_or_lot": "good|fair|poor|not_visible|unclear"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.713,
+            "width": 0.64,
+            "x": 0.387,
+            "y": 0.259
+          },
+          "confidence": "high",
+          "label": "no visible siding or facade damage",
+          "reason": "No siding or facade damage is clearly visible from this perspective."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "It is possible that other issues not clearly visible from this perspective exist. These might include, but are not limited to, hidden damage, potential building code violations, or maintenance issues. Additionally, the presence of people, vehicles, or personal details in the background may require further review for privacy concerns."
+      ],
+      "property_type_guess": "single-family",
+      "provider": "ollama:llava:latest",
+      "summary": "The house in the image appears to be a single-family home. There are no visible exterior issues that can be confidently identified from this perspective.",
+      "visible_conditions": [
+        "no visible siding or facade damage, no visible structural damage, there do not appear to be any boarded windows, doors, or fire damage, no active construction is visible in the image, and there are no vacancy signs or vegetation overgrowth"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no|unclear",
+        "boarded_windows_or_doors": "no|unclear",
+        "fire_damage_visible": "no|unclear",
+        "structural_damage_visible": "no|unclear",
+        "vacancy_signs_visible": "no|unclear"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 3 matching records",
+      "Image-only flag: It is possible that other issues not clearly visible from this perspective exist. These might include, but are not limited to, hidden damage, potential building code violations, or maintenance issues. Additionally, the presence of people, vehicles, or personal details in the background may require further review for privacy concerns."
+    ],
+    "id": 22,
+    "image": "images/parcel-000022.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 123334,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07041432730614,
+    "lon": -76.1602820293399,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07041516,
+          "Longitude": -76.16032899,
+          "NeedsRR": "Yes",
+          "ObjectId": 711,
+          "PropertyAddress": "412 Bear St",
+          "RR_app_received": 1629158400000,
+          "RR_contact_name": "Capital Gains Prop LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1631491200000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1631491200000,
+          "RRisValid": "No",
+          "SBL": "002.-23-04.0",
+          "SHAPE": null,
+          "completion_date": 1631577600000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1631491200000,
+          "pc_owner": "Capital Gains Prop LLC",
+          "valid_until": 1726272000000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07061204,
+          "Longitude": -76.16030516,
+          "NeedsRR": "Yes",
+          "ObjectId": 713,
+          "PropertyAddress": "416 Bear St",
+          "RR_app_received": 1746662400000,
+          "RR_contact_name": "Forclover NY LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1749081600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1749081600000,
+          "RRisValid": "Yes",
+          "SBL": "002.-23-06.0",
+          "SHAPE": null,
+          "completion_date": 1749081600000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1747612800000,
+          "pc_owner": "Forclover NY LLC",
+          "valid_until": 1843776000000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07069147,
+          "Longitude": -76.16024585,
+          "NeedsRR": "Yes",
+          "ObjectId": 715,
+          "PropertyAddress": "418 Bear St & Carbon St",
+          "RR_app_received": 1730678400000,
+          "RR_contact_name": "Mark D. King C/O Jessica King",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1732492800000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1732492800000,
+          "RRisValid": "Yes",
+          "SBL": "002.-23-07.0",
+          "SHAPE": null,
+          "completion_date": 1733356800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1732579200000,
+          "pc_owner": "Mark King",
+          "valid_until": 1828051200000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300182,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300653,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302986,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303803,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303804,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305895,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077306645,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077306836,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309263,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310966,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077318044,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319830,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077320149,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324698,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325246,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325247,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326067,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077330506,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077335597,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077335598,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 20,
+        "historic": {},
+        "landuse": {},
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "002-23-040",
+    "published_at": "2026-05-30T15:19:12+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "412 Bear St"
+  },
+  {
     "address": "410 Bear St",
     "ai_analysis": {
       "available": true,
