@@ -1,5 +1,453 @@
 [
   {
+    "address": "1012 Carbon St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "not_visible/unclear",
+        "roof": "good",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "not_visible/unclear",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.825,
+            "width": 0.56,
+            "x": 0.132,
+            "y": 0.074
+          },
+          "confidence": "medium",
+          "label": "Leaf fall",
+          "reason": "There is some leaf fall on the tree and ground, indicating that it may be either late spring or autumn."
+        },
+        {
+          "bbox": {
+            "height": 0.85,
+            "width": 0.56,
+            "x": 0.132,
+            "y": 0.709
+          },
+          "confidence": "high",
+          "label": "Yard maintenance",
+          "reason": "The front yard appears to be well-maintained with no visible signs of overgrowth or disrepair."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "The image age or the angle of the photo might limit visibility, particularly for obscured details such as the porch or facade, which could be in need of maintenance but are not clearly visible."
+      ],
+      "property_type_guess": "single-family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a house with visible exterior conditions including some leaf fall on the tree and yard, which may suggest that it is either autumn or late spring. The front yard is grassy and there are no visible signs of active construction or vacancy. No fire damage or structural damage is apparent from the image.",
+      "visible_conditions": [
+        "There is some leaf fall on the tree and ground, indicating that it may be either late spring or autumn.",
+        "The front yard appears to be well-maintained with no visible signs of overgrowth or disrepair."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "yes"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 3 matching records",
+      "Image-only flag: The image age or the angle of the photo might limit visibility, particularly for obscured details such as the porch or facade, which could be in need of maintenance but are not clearly visible."
+    ],
+    "id": 17,
+    "image": "images/parcel-000017.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 149396,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07099156438247,
+    "lon": -76.15976648706845,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07113485,
+          "Longitude": -76.15993235,
+          "NeedsRR": "Yes",
+          "ObjectId": 695,
+          "PropertyAddress": "504 Bear St",
+          "RR_app_received": 1690848000000,
+          "RR_contact_name": "Edward Morris",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1695772800000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1695772800000,
+          "RRisValid": "Yes",
+          "SBL": "002.-22-01.0",
+          "SHAPE": null,
+          "completion_date": 1696464000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1701129600000,
+          "pc_owner": "Morris Construction Prop LLC",
+          "valid_until": 1791158400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07130601,
+          "Longitude": -76.15965311,
+          "NeedsRR": "Yes",
+          "ObjectId": 697,
+          "PropertyAddress": "508-1/2 Bear St",
+          "RR_app_received": 1732579200000,
+          "RR_contact_name": "Syracuse Grace Housing LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1747958400000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1747958400000,
+          "RRisValid": "Yes",
+          "SBL": "002.-22-03.0",
+          "SHAPE": null,
+          "completion_date": 1748476800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1734912000000,
+          "pc_owner": "Syracuse Grace Housing LLC",
+          "valid_until": 1843171200000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07099289,
+          "Longitude": -76.16003836,
+          "NeedsRR": "Yes",
+          "ObjectId": 709,
+          "PropertyAddress": "1014 Carbon St & Bear St",
+          "RR_app_received": 1717372800000,
+          "RR_contact_name": "Steven & Maria Pinto",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1757030400000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1757030400000,
+          "RRisValid": "Yes",
+          "SBL": "002.-22-21.0",
+          "SHAPE": null,
+          "completion_date": 1764892800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1757289600000,
+          "pc_owner": "Steven Pinto",
+          "valid_until": 1859587200000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077301926,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303803,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303804,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305022,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310895,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310896,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311053,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319830,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077320149,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321154,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321198,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321563,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324698,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324699,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325247,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325822,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325823,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326067,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077328534,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329265,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 20,
+        "historic": {},
+        "landuse": {},
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "002-22-200",
+    "published_at": "2026-05-30T10:19:07+00:00",
+    "review_reasons": [
+      "Possible image-only issue",
+      "vacancy signs visible"
+    ],
+    "title": "1012 Carbon St"
+  },
+  {
     "address": "1010 Carbon St",
     "ai_analysis": {
       "available": true,
