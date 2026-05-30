@@ -1,5 +1,429 @@
 [
   {
+    "address": "505 Turtle St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "image_annotations": [],
+      "known_public_records": [
+        "Rental registry: 1 matching record"
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property": {
+        "address": "505 TURTLE ST",
+        "coordinates": {
+          "lat": 43.070778118180165,
+          "lon": -76.15889440577745
+        },
+        "parcel_key": "002-22-140"
+      },
+      "property_type_guess": "unclear",
+      "provider": "ollama:llava:latest",
+      "role": "Cautious civic data assistant reviewing a public street-level exterior image for a property.",
+      "schema": {
+        "caveats": [
+          "limits such as image age, obstructed view, angle, or uncertainty"
+        ],
+        "condition_scores": {
+          "porch_or_entry": "good|fair|poor|not_visible|unclear",
+          "roof": "good|fair|poor|not_visible|unclear",
+          "siding_or_facade": "good|fair|poor|not_visible|unclear",
+          "trash_debris": "none_visible|minor|major|unclear",
+          "vegetation_overgrowth": "none_visible|minor|major|unclear",
+          "windows_doors": "good|fair|poor|not_visible|unclear",
+          "yard_or_lot": "good|fair|poor|not_visible|unclear"
+        },
+        "confidence": "high|medium|low",
+        "image_annotations": [
+          {
+            "bbox": {
+              "height": "box height as 0-1 fraction of image height",
+              "width": "box width as 0-1 fraction of image width",
+              "x": "left position as 0-1 fraction of image width",
+              "y": "top position as 0-1 fraction of image height"
+            },
+            "confidence": "high|medium|low",
+            "label": "short visible issue label",
+            "reason": "why this area was marked"
+          }
+        ],
+        "needs_human_review": "true|false",
+        "possible_unrecorded_issues": [
+          "cautious image-only flags not already reflected in known_data"
+        ],
+        "property_type_guess": "single_family|two_family|multifamily|commercial|mixed_use|vacant_lot|unclear",
+        "summary": "one cautious sentence describing the visible exterior",
+        "visible_conditions": [
+          "specific exterior observations visible in the image"
+        ],
+        "visible_flags": {
+          "active_construction_visible": "yes|no|unclear",
+          "boarded_windows_or_doors": "yes|no|unclear",
+          "fire_damage_visible": "yes|no|unclear",
+          "structural_damage_visible": "yes|no|unclear",
+          "vacancy_signs_visible": "yes|no|unclear"
+        }
+      },
+      "summary": "",
+      "task": [
+        "Describe only visible exterior property conditions from the image.",
+        "Compare visible conditions against known_public_records and call out possible image-only issues only when they are plainly visible.",
+        "Use cautious language. Do not infer ownership, occupancy, code violations, criminal activity, socioeconomic status, or protected-class information.",
+        "Do not identify, describe, transcribe, or track people, faces, license plates, or private personal details.",
+        "If the property is blocked, image quality is poor, or the view may show the wrong parcel, lower confidence and explain the caveat.",
+        "When you flag visible issues, include approximate normalized bounding boxes in image_annotations. Use x, y, width, and height as fractions from 0 to 1 relative to the full image.",
+        "Only create bounding boxes for visible property-condition issues, not people, vehicles, license plates, or unrelated background objects.",
+        "Return valid JSON only. Do not wrap it in Markdown."
+      ],
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record"
+    ],
+    "id": 11,
+    "image": "images/parcel-000011.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 95330,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.070778118180165,
+    "lon": -76.15889440577745,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07056408,
+          "Longitude": -76.15889969,
+          "NeedsRR": "Yes",
+          "ObjectId": 707,
+          "PropertyAddress": "1000 Carbon St & Turtle St",
+          "RR_app_received": 1728518400000,
+          "RR_contact_name": "L&B Housing & Associates LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "Yes",
+          "SBL": "002.-22-15.0",
+          "SHAPE": null,
+          "completion_date": 1743379200000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1731888000000,
+          "pc_owner": "L&B Housing & Associates LLC",
+          "valid_until": 1838073600000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302335,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302336,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303508,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304477,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305022,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310895,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310896,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312859,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077316491,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077316492,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077316844,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321153,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321154,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325164,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325771,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077330770,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331050,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331395,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331396,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077333233,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 20,
+        "historic": {},
+        "landuse": {},
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "002-22-140",
+    "published_at": "2026-05-30T04:20:23+00:00",
+    "review_reasons": [],
+    "title": "505 Turtle St"
+  },
+  {
     "address": "1326 Cumberland Ave",
     "ai_analysis": {
       "available": true,
