@@ -1,5 +1,371 @@
 [
   {
+    "address": "257 Ross Pk",
+    "ai_analysis": {
+      "available": true,
+      "caveats": "Please note that this analysis is based solely on the information available within the Street View image and does not include an in-person inspection or knowledge of the specific property history. A thorough home inspection would be necessary to provide a more accurate assessment.",
+      "confidence": "Based on this single image, it's not possible to provide a definitive assessment. However, from this perspective, the property seems to be in good condition with no visible signs of distress or disrepair.",
+      "possible_unrecorded_issues": "While the image does not reveal any obvious problems or issues, it's important to note that a thorough assessment would require an in-person inspection. Some possible unrecorded issues could include the condition of the roof underlayment, the integrity of the foundation, or the plumbing and electrical systems within the house.",
+      "provider": "ollama:llava:latest",
+      "summary": "The image depicts a single-family house on a residential street. The property appears to be well-maintained with an attached garage. There are no obvious signs of damage or disrepair that can be seen from this angle. Visible conditions include the driveway, lawn, sidewalk, and exterior finishes of the house.",
+      "visible_conditions": "The house is a two-story structure with a visible foundation, siding, windows, and a garage. The roof appears to be in good condition, and there are no signs of water damage or leaks. There is landscaping around the house, including grass and shrubbery. The driveway is clean and well maintained. No vehicles are parked on the driveway."
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 8,
+    "image": "images/parcel-000008.jpg",
+    "image_note": null,
+    "lat": 43.07642217572226,
+    "lon": -76.1466497898831,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 544892166,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "274",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Hood Avenue",
+            "building": "house",
+            "nysgissam:nysaddresspointid": "ONON130573"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 544892167,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "268",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Hood Avenue",
+            "building": "house",
+            "nysgissam:nysaddresspointid": "ONON117390"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 544892168,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "266",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Hood Avenue",
+            "building": "house",
+            "nysgissam:nysaddresspointid": "ONON076763"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 544892169,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "260",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Hood Avenue",
+            "building": "house",
+            "nysgissam:nysaddresspointid": "ONON010732"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 544892170,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "256",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Hood Avenue",
+            "building": "house",
+            "nysgissam:nysaddresspointid": "ONON178739"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 544892171,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "252",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Hood Avenue",
+            "building": "house",
+            "nysgissam:nysaddresspointid": "ONON104965"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 544892172,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "248",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Hood Avenue",
+            "building": "house",
+            "nysgissam:nysaddresspointid": "ONON074879"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 544892173,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "244",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Hood Avenue",
+            "building": "house",
+            "nysgissam:nysaddresspointid": "ONON110282"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 544892174,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "240",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Hood Avenue",
+            "building": "house",
+            "nysgissam:nysaddresspointid": "ONON003929"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "garage",
+          "historic": null,
+          "id": 544892187,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "garage"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "garage",
+          "historic": null,
+          "id": 544892188,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "garage"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "garage",
+          "historic": null,
+          "id": 544892189,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "garage"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "garage",
+          "historic": null,
+          "id": 544892190,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "garage"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "garage",
+          "historic": null,
+          "id": 544892191,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "garage"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "garage",
+          "historic": null,
+          "id": 544892192,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "garage"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "garage",
+          "historic": null,
+          "id": 544892193,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "garage"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302057,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302058,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303667,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303668,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60
+    },
+    "parcel_key": "005-02-110",
+    "published_at": "2026-05-30T00:18:32+00:00",
+    "title": "257 Ross Pk"
+  },
+  {
     "address": "513 Turtle St",
     "ai_analysis": {
       "available": true,
