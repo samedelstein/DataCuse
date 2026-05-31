@@ -18,8 +18,11 @@ An EveryLot-style DataCuse project for Syracuse parcels.
 cd C:\Users\samie\Projects\datacuse\DataCuse\projects\syracuse-property-atlas
 $env:GOOGLE_STREETVIEW_API_KEY="..."
 $env:PROPERTY_IMAGE_PROVIDER="google" # optional; default is no paid image provider
-$env:VISION_PROVIDER="ollama" # default
-$env:OLLAMA_VISION_MODEL="llava:latest" # or another local vision model
+$env:VISION_PROVIDER="gemini"
+$env:VISION_FALLBACK_PROVIDER="ollama"
+$env:GEMINI_API_KEY="..."
+$env:GEMINI_VISION_MODEL="gemini-2.5-flash"
+$env:OLLAMA_VISION_MODEL="llava:latest" # local fallback
 $env:OLLAMA_TIMEOUT_SECONDS="600"
 python scripts\property_atlas.py run-once
 ```
@@ -27,6 +30,8 @@ python scripts\property_atlas.py run-once
 Run `python scripts\property_atlas.py --help` for commands.
 
 For a fully free local run, leave `PROPERTY_IMAGE_PROVIDER` unset and install a local vision-capable Ollama model. Image analysis will run only when an image source is available.
+
+For hosted vision, set `VISION_PROVIDER=gemini`. If `VISION_FALLBACK_PROVIDER=ollama` is also set, the script tries Gemini first and falls back to local Ollama if Gemini fails.
 
 For hourly publishing, schedule `run-once` from Windows Task Scheduler or GitHub Actions. The free pieces are parcel/open-data feeds, tract lookup, and OpenStreetMap/Overpass. Google Street View is optional and billable.
 

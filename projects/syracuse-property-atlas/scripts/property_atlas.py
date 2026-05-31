@@ -554,8 +554,25 @@ def analyze_image(image_path: Path, parcel: sqlite3.Row, matches: dict[str, list
 
     prompt = build_vision_prompt(parcel, matches)
     data_url = "data:image/jpeg;base64," + base64.b64encode(image_path.read_bytes()).decode("ascii")
+    analysis = analyze_image_with_provider(provider, data_url, prompt)
+    if analysis.get("available"):
+        return analysis
+
+    fallback = os.getenv("VISION_FALLBACK_PROVIDER", "").lower().strip()
+    if fallback and fallback != provider:
+        fallback_analysis = analyze_image_with_provider(fallback, data_url, prompt)
+        if fallback_analysis.get("available"):
+            fallback_analysis["fallback_from"] = provider
+            return fallback_analysis
+        analysis["fallback_note"] = fallback_analysis.get("note")
+    return analysis
+
+
+def analyze_image_with_provider(provider: str, data_url: str, prompt: dict) -> dict:
     if provider == "ollama":
         return analyze_image_ollama(data_url, prompt)
+    if provider == "gemini":
+        return analyze_image_gemini(data_url, prompt)
     if provider == "openai":
         return analyze_image_openai(data_url, prompt)
     return {"available": False, "note": f"Unsupported VISION_PROVIDER={provider!r}; image analysis skipped."}
@@ -606,6 +623,55 @@ def analyze_image_ollama(data_url: str, prompt: dict) -> dict:
         parsed = {"summary": text, "visible_conditions": [], "possible_unrecorded_issues": [], "confidence": "unknown", "caveats": []}
     parsed["available"] = True
     parsed["provider"] = f"ollama:{model}"
+    return normalize_ai_analysis(parsed)
+
+
+def analyze_image_gemini(data_url: str, prompt: dict) -> dict:
+    api_key = os.getenv("GEMINI_API_KEY")
+    if not api_key:
+        return {"available": False, "note": "GEMINI_API_KEY is not set; Gemini image analysis skipped."}
+    model = os.getenv("GEMINI_VISION_MODEL", "gemini-2.5-flash")
+    endpoint = f"https://generativelanguage.googleapis.com/v1beta/models/{urllib.parse.quote(model)}:generateContent"
+    image_b64 = data_url.split(",", 1)[1]
+    payload = {
+        "contents": [
+            {
+                "role": "user",
+                "parts": [
+                    {
+                        "text": (
+                            "Return valid JSON only, with no Markdown fence. "
+                            "Use this property-analysis instruction object:\n"
+                            + json.dumps(prompt)
+                        )
+                    },
+                    {"inline_data": {"mime_type": "image/jpeg", "data": image_b64}},
+                ],
+            }
+        ],
+        "generationConfig": {
+            "responseMimeType": "application/json",
+            "temperature": 0.2,
+        },
+    }
+    url = f"{endpoint}?{urllib.parse.urlencode({'key': api_key})}"
+    try:
+        result = post_json(url, payload, timeout=int(os.getenv("GEMINI_TIMEOUT_SECONDS", "180")))
+    except Exception as exc:
+        return {"available": False, "note": f"Gemini vision request failed: {exc}"}
+
+    parts = (
+        result.get("candidates", [{}])[0]
+        .get("content", {})
+        .get("parts", [])
+    )
+    text = "\n".join(part.get("text", "") for part in parts if part.get("text"))
+    try:
+        parsed = json.loads(text)
+    except (TypeError, json.JSONDecodeError):
+        parsed = {"summary": text or "", "visible_conditions": [], "possible_unrecorded_issues": [], "confidence": "unknown", "caveats": []}
+    parsed["available"] = True
+    parsed["provider"] = f"gemini:{model}"
     return normalize_ai_analysis(parsed)
 
 
