@@ -1,5 +1,471 @@
 [
   {
+    "address": "1420 Salina St N",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image shows a vacant lot, which directly conflicts with the public record of 3 rental registry entries. This may indicate the structure was demolished, the records are outdated, or the camera angle is showing an adjacent parcel."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "not_visible",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.15,
+            "width": 0.28,
+            "x": 0.0,
+            "y": 0.55
+          },
+          "confidence": "high",
+          "label": "Graffiti on fence",
+          "reason": "Visible graffiti painted on the red wooden fence on the left side of the image."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "There is a significant discrepancy between the visible vacant lot and the known public records indicating 3 rental registry entries, suggesting a possible demolition or outdated records.",
+        "Graffiti is present on the wooden fence bordering the left side of the lot."
+      ],
+      "property_type_guess": "vacant_lot",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows a vacant grassy lot with a wooden fence on the left featuring graffiti, and trees in the background.",
+      "visible_conditions": [
+        "The parcel appears to be an open grassy lot with no visible permanent structures.",
+        "A red wooden fence on the left boundary has visible graffiti.",
+        "Some wooden logs or posts are lying on the ground within the lot.",
+        "The grass appears moderately maintained with some wild vegetation and trees in the background."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 3 matching records",
+      "Image-only flag: There is a significant discrepancy between the visible vacant lot and the known public records indicating 3 rental registry entries, suggesting a possible demolition or outdated records.",
+      "Image-only flag: Graffiti is present on the wooden fence bordering the left side of the lot.",
+      "Needs human review"
+    ],
+    "id": 61,
+    "image": "images/parcel-000061.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 70082,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.068599407610805,
+    "lon": -76.16096733617474,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.06875871,
+          "Longitude": -76.16057986,
+          "NeedsRR": "Yes",
+          "ObjectId": 744,
+          "PropertyAddress": "315 Turtle St",
+          "RR_app_received": 1740355200000,
+          "RR_contact_name": "John Canzano",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1764633600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1764633600000,
+          "RRisValid": "Yes",
+          "SBL": "002.-24-12.0",
+          "SHAPE": null,
+          "completion_date": 1764806400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1764633600000,
+          "pc_owner": "John Canzano",
+          "valid_until": 1859500800000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.06861396,
+          "Longitude": -76.16047641,
+          "NeedsRR": "Yes",
+          "ObjectId": 746,
+          "PropertyAddress": "313 Turtle St",
+          "RR_app_received": 1740355200000,
+          "RR_contact_name": "John Canzano",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "002.-24-13.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1743033600000,
+          "pc_owner": "John Canzano",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.06853458,
+          "Longitude": -76.16053582,
+          "NeedsRR": "Yes",
+          "ObjectId": 748,
+          "PropertyAddress": "311 Turtle St",
+          "RR_app_received": 1706054400000,
+          "RR_contact_name": "Giovanni Canzano",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1708473600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1708473600000,
+          "RRisValid": "Yes",
+          "SBL": "002.-24-14.0",
+          "SHAPE": null,
+          "completion_date": 1726012800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1723680000000,
+          "pc_owner": "Giovanni Canzano",
+          "valid_until": 1820707200000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300095,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300877,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302608,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303099,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308160,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308161,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315093,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077316450,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317644,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077320452,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077322210,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325925,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326399,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077332235,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077332275,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077332454,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077333082,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077335853,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921493,
+          "landuse": "commercial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "commercial"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921494,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: commercial",
+          "id": 1189921493,
+          "label": "landuse: commercial",
+          "tags": {
+            "landuse": "commercial"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189921494,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 18,
+        "historic": {},
+        "landuse": {
+          "commercial": 1,
+          "industrial": 1
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "002-24-190",
+    "published_at": "2026-05-31T09:28:47+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "1420 Salina St N"
+  },
+  {
     "address": "1414 Salina St N",
     "ai_analysis": {
       "available": true,
