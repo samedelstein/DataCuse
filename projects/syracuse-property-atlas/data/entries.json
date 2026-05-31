@@ -1,5 +1,530 @@
 [
   {
+    "address": "1609 Park St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Tall hedges significantly block the view of the lower level porch, windows, and foundation.",
+        "The roof is low-slope and mostly obscured from this street-level angle."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "unclear",
+        "siding_or_facade": "good",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "multifamily",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential structure with light-colored siding and a large front porch, partially obscured by tall manicured hedges.",
+      "visible_conditions": [
+        "Two-story residential building with light-colored siding and dark trim",
+        "Large front porch spanning the width of the front facade",
+        "Tall, dense hedges blocking the lower portion of the front facade and porch",
+        "Trash receptacles visible on the right side of the property near the driveway"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 5 matching records",
+      "Unfit properties: 1 matching record",
+      "Needs human review"
+    ],
+    "id": 49,
+    "image": "images/parcel-000049.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 83173,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.06909202695678,
+    "lon": -76.16085406983488,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.0691274,
+          "Longitude": -76.16085542,
+          "NeedsRR": "Yes",
+          "ObjectId": 736,
+          "PropertyAddress": "1609 Park St",
+          "RR_app_received": 1714953600000,
+          "RR_contact_name": "Frank Canzano",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1716249600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1716249600000,
+          "RRisValid": "Yes",
+          "SBL": "002.-24-07.0",
+          "SHAPE": null,
+          "completion_date": 1716422400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1716249600000,
+          "pc_owner": "Frank Canzano",
+          "valid_until": 1811116800000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.06928613,
+          "Longitude": -76.16094308,
+          "NeedsRR": "Yes",
+          "ObjectId": 734,
+          "PropertyAddress": "1611 Park St",
+          "RR_app_received": 1714953600000,
+          "RR_contact_name": "Frank Canzano",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1716249600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1716249600000,
+          "RRisValid": "Yes",
+          "SBL": "002.-24-06.0",
+          "SHAPE": null,
+          "completion_date": 1716422400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1716249600000,
+          "pc_owner": "Frank Canzano",
+          "valid_until": 1811116800000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.06913468,
+          "Longitude": -76.16061639,
+          "NeedsRR": "Yes",
+          "ObjectId": 738,
+          "PropertyAddress": "1607 Park St",
+          "RR_app_received": 1728518400000,
+          "RR_contact_name": "Affiliated US Realty Group LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "002.-24-08.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1759190400000,
+          "pc_owner": "Affiliated US Realty Group LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.06906945,
+          "Longitude": -76.1604539,
+          "NeedsRR": "Yes",
+          "ObjectId": 740,
+          "PropertyAddress": "1605 Park St",
+          "RR_app_received": 1749513600000,
+          "RR_contact_name": "1stRespd'r Global Chaplain Inc",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "002.-24-09.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1752019200000,
+          "pc_owner": "1stRespd'r Global Chaplain Inc",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.06883812,
+          "Longitude": -76.1605205,
+          "NeedsRR": "Yes",
+          "ObjectId": 742,
+          "PropertyAddress": "317 Turtle St",
+          "RR_app_received": 1727308800000,
+          "RR_contact_name": "John Canzano",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "Yes",
+          "SBL": "002.-24-11.0",
+          "SHAPE": null,
+          "completion_date": 1737504000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1736467200000,
+          "pc_owner": "John Canzano",
+          "valid_until": 1832198400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [
+        {
+          "Latitude": 43.06906945,
+          "Longitude": -76.1604539,
+          "ObjectId": 147,
+          "SBL": "002.-24-09.0",
+          "Vacant": null,
+          "address": "1605 Park St",
+          "area_involved": "building apt# 1 & 2",
+          "article": "A structure is unfit for human occupancy whenever such structure is unsafe, unlawful or, because of the degree to which the structure is in disrepair or lacks maintenance, is unsanitary, vermin or rat infested, contains filth and contamination, or lacks ventilation, illumination, sanitary or heating facilities or other essential equipment required by this code, or because the location of the structure consti\ntutes a hazard to the occupants of the structure or to the public.",
+          "comp_close_date": -2208988800000,
+          "comp_open_date": 1733324094463,
+          "comp_status": "Open",
+          "complaint_number": "2024-08649",
+          "complaint_type_name": "Property Maintenance-Int",
+          "comply_by_date": 1744816282000,
+          "corrective_action": "Must have a licensed structural engineer / or architect clear building for human occupancy.\r\nStructural members are compromised.\r\nMust pull permits for all work and post on building.",
+          "department_name": "Codes",
+          "owner_address": "PO BOX 52",
+          "owner_city": "River Edge",
+          "owner_name": "Gerard & Arlene Leen",
+          "owner_state": "NJ",
+          "owner_zip_code": "07661",
+          "parcel_id": 469,
+          "status_date": 1743433882000,
+          "status_type_name": "Open",
+          "violation": "2020 PMCNYS - Section 107.1.3 - Structure Unfit for Human Occupancy",
+          "violation_date": 1733325082253,
+          "violation_number": "2024-18369",
+          "zip": 13208
+        }
+      ],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300095,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300569,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300877,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302608,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303099,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303468,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303469,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308160,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308161,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077313658,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315093,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317151,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317644,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077320452,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077322210,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077322211,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077334756,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077335853,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921493,
+          "landuse": "commercial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "commercial"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921501,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: commercial",
+          "id": 1189921493,
+          "label": "landuse: commercial",
+          "tags": {
+            "landuse": "commercial"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: residential",
+          "id": 1189921501,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 18,
+        "historic": {},
+        "landuse": {
+          "commercial": 1,
+          "residential": 1
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "002-24-070",
+    "published_at": "2026-05-31T06:28:39+00:00",
+    "review_reasons": [
+      "AI requested human review"
+    ],
+    "title": "1609 Park St"
+  },
+  {
     "address": "1611 Park St",
     "ai_analysis": {
       "available": true,
