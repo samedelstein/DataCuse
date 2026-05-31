@@ -1,5 +1,476 @@
 [
   {
+    "address": "2519 Lodi St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The structure is almost entirely obscured by dense trees and foliage, preventing an assessment of the building's exterior condition, roof, or facade."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "not_visible",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "unclear",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "low",
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The property is heavily obscured from view by dense trees and foliage, with only a small portion of a structure and a paved driveway area visible.",
+      "visible_conditions": [
+        "Structure is almost entirely obscured by dense trees and foliage",
+        "Paved driveway area appears cracked and uneven"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "unclear",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "unclear",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1127",
+        "Median gross rent": "65900",
+        "Median household income": "36639",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "48.6",
+        "Renter-occupied share": "6.7",
+        "Total population": "2133",
+        "Vacancy rate": "16.0"
+      },
+      "name": "Census Tract 5.01; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000501",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Rental registry: 4 matching records",
+      "Needs human review"
+    ],
+    "id": 91,
+    "image": "images/parcel-000091.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 99849,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.06694806466503,
+    "lon": -76.1626881774008,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.06711328,
+          "Longitude": -76.16297008,
+          "NeedsRR": "Yes",
+          "ObjectId": 758,
+          "PropertyAddress": "2523 Lodi St & Bear St",
+          "RR_app_received": 1718668800000,
+          "RR_contact_name": "Chi Kim Nguyen",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "002.-26-01.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1730332800000,
+          "pc_owner": "Eugenie Niyaramahuku",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.06693443,
+          "Longitude": -76.16249333,
+          "NeedsRR": "Yes",
+          "ObjectId": 760,
+          "PropertyAddress": "2515 Lodi St",
+          "RR_app_received": 1670371200000,
+          "RR_contact_name": "Rossi PK Ventures, LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "002.-26-04.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1670371200000,
+          "pc_owner": "Joseph Chiarenza",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.06668562,
+          "Longitude": -76.16268022,
+          "NeedsRR": "Yes",
+          "ObjectId": 762,
+          "PropertyAddress": "418 Sunset Ave",
+          "RR_app_received": 1668556800000,
+          "RR_contact_name": "Ramy Guindy, Ramy Guindy",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1673308800000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1673308800000,
+          "RRisValid": "No",
+          "SBL": "002.-26-19.0",
+          "SHAPE": null,
+          "completion_date": 1680048000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1680048000000,
+          "pc_owner": "Ramy Guindy",
+          "valid_until": 1774742400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.06674424,
+          "Longitude": -76.16286531,
+          "NeedsRR": "Yes",
+          "ObjectId": 764,
+          "PropertyAddress": "420 Sunset Ave",
+          "RR_app_received": 1760054400000,
+          "RR_contact_name": "Christopher Knapp",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1761782400000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1761782400000,
+          "RRisValid": "Yes",
+          "SBL": "002.-26-20.0",
+          "SHAPE": null,
+          "completion_date": 1763510400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1761782400000,
+          "pc_owner": "Christopher Knapp",
+          "valid_until": 1858204800000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.0668794,
+          "Longitude": -76.16316276,
+          "ObjectId": 994,
+          "Owner": "Ronnie Machuca",
+          "OwnerAddress": "347 Hillside St Syracuse, NY 13208",
+          "PropertyAddress": "424 Sunset Ave & Bear St",
+          "SBL": "002.-26-22.0",
+          "VPR_result": "VPR - Valid / Year 1",
+          "VPR_valid": "Y",
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": "2025-09-24",
+          "completion_type_name": "VPR Cert Issued - Plan A",
+          "neighborhood": "Washington Square",
+          "valid_until": "2026-09-24"
+        }
+      ]
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304186,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077306870,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310255,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314273,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315256,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077316284,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077316285,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319337,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325880,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326053,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326054,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326055,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077334482,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077335585,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336164,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921489,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921494,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1353784590,
+          "landuse": "brownfield",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "brownfield"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: residential",
+          "id": 1189921489,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189921494,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: brownfield",
+          "id": 1353784590,
+          "label": "landuse: brownfield",
+          "tags": {
+            "landuse": "brownfield"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 15,
+        "historic": {},
+        "landuse": {
+          "brownfield": 1,
+          "industrial": 1,
+          "residential": 1
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "002-26-030",
+    "published_at": "2026-05-31T16:58:38+00:00",
+    "review_reasons": [
+      "AI requested human review"
+    ],
+    "title": "2519 Lodi St"
+  },
+  {
     "address": "2521 Lodi St",
     "ai_analysis": {
       "available": false,
