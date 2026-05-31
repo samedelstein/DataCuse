@@ -1,5 +1,408 @@
 [
   {
+    "address": "304 Bear St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "A large utility pole in the foreground directly obstructs the center of the lot.",
+        "Multiple structures are visible in the frame, making exact parcel boundary identification difficult without local mapping overlay."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "unclear",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.45,
+            "width": 0.38,
+            "x": 0.0,
+            "y": 0.18
+          },
+          "confidence": "medium",
+          "label": "weathered siding",
+          "reason": "Peeling paint and surface weathering visible on the upper facade of the blue building."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Surface weathering and peeling paint on the exterior siding of the primary blue structure."
+      ],
+      "property_type_guess": "multifamily",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows a multi-story blue residential building with weathered siding and an adjacent paved parking area containing two vehicles, partially obscured by a central utility pole.",
+      "visible_conditions": [
+        "Blue painted wood or vinyl siding shows signs of weathering and paint peeling, particularly on the upper levels and trim.",
+        "Windows appear intact but show older frames.",
+        "A paved driveway/parking area is located between the blue building and a neighboring brown structure.",
+        "A utility pole and overhead wires heavily obstruct the center of the view."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Image-only flag: Surface weathering and peeling paint on the exterior siding of the primary blue structure."
+    ],
+    "id": 67,
+    "image": "images/parcel-000067.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 81417,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.068787370270805,
+    "lon": -76.16170812616376,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.06895054,
+          "Longitude": -76.16149307,
+          "NeedsRR": "Yes",
+          "ObjectId": 730,
+          "PropertyAddress": "308 Bear St",
+          "RR_app_received": 1740355200000,
+          "RR_contact_name": "John Canzano",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1762473600000,
+          "RR_int_insp_fail": 1746662400000,
+          "RR_int_insp_pass": 1762473600000,
+          "RRisValid": "Yes",
+          "SBL": "002.-24-02.0",
+          "SHAPE": null,
+          "completion_date": 1762992000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1762732800000,
+          "pc_owner": "John Canzano",
+          "valid_until": 1857686400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300877,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303099,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304524,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077307326,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308160,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308161,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310823,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077313774,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315958,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077316450,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317151,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317644,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077322210,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077332275,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077333082,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921493,
+          "landuse": "commercial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "commercial"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921494,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921501,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: commercial",
+          "id": 1189921493,
+          "label": "landuse: commercial",
+          "tags": {
+            "landuse": "commercial"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189921494,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: residential",
+          "id": 1189921501,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 15,
+        "historic": {},
+        "landuse": {
+          "commercial": 1,
+          "industrial": 1,
+          "residential": 1
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "002-24-250",
+    "published_at": "2026-05-31T10:58:52+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "304 Bear St"
+  },
+  {
     "address": "1432-34 Salina St N & Bear St",
     "ai_analysis": {
       "available": true,
