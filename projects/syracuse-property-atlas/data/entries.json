@@ -1,5 +1,151 @@
 [
   {
+    "address": "2504 Lodi St",
+    "ai_analysis": {
+      "available": false,
+      "note": "Gemini vision request failed: HTTP Error 429: Too Many Requests"
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1127",
+        "Median gross rent": "65900",
+        "Median household income": "36639",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "48.6",
+        "Renter-occupied share": "6.7",
+        "Total population": "2133",
+        "Vacancy rate": "16.0"
+      },
+      "name": "Census Tract 5.01; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000501",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 4 matching records"
+    ],
+    "id": 82,
+    "image": "images/parcel-000082.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 71535,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.06723309131842,
+    "lon": -76.16158744592751,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.06745346,
+          "Longitude": -76.16134387,
+          "NeedsRR": "Yes",
+          "ObjectId": 750,
+          "PropertyAddress": "211 Turtle St",
+          "RR_app_received": 1719446400000,
+          "RR_contact_name": "Robert DeBord",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "002.-25-11.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1727222400000,
+          "pc_owner": "Robert DeBord",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.06738267,
+          "Longitude": -76.16139674,
+          "NeedsRR": "Yes",
+          "ObjectId": 752,
+          "PropertyAddress": "209 Turtle St",
+          "RR_app_received": 1746403200000,
+          "RR_contact_name": "Scott R. Trudell",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1762905600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1762905600000,
+          "RRisValid": "No",
+          "SBL": "002.-25-12.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1762905600000,
+          "pc_owner": "GSPDC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.06730435,
+          "Longitude": -76.16145267,
+          "NeedsRR": "Yes",
+          "ObjectId": 754,
+          "PropertyAddress": "207 Turtle St",
+          "RR_app_received": null,
+          "RR_contact_name": "Scott Trudell",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "002.-25-13.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1689292800000,
+          "pc_owner": "Scott Trudell",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.06739007,
+          "Longitude": -76.1616551,
+          "NeedsRR": "Yes",
+          "ObjectId": 756,
+          "PropertyAddress": "2506 Lodi St",
+          "RR_app_received": 1701043200000,
+          "RR_contact_name": "Rellsey Properties Inc/Scott",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "002.-25-16.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1727049600000,
+          "pc_owner": "Rellsey Properties Inc",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "002-25-150",
+    "published_at": "2026-05-31T14:43:41+00:00",
+    "review_reasons": [
+      "AI analysis unavailable"
+    ],
+    "title": "2504 Lodi St"
+  },
+  {
     "address": "205 Turtle St & Lodi St",
     "ai_analysis": {
       "available": true,
