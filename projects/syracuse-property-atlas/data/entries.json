@@ -1,5 +1,492 @@
 [
   {
+    "address": "205 Turtle St & Lodi St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "A large green blur severely obstructs the center of the image, making it impossible to view the primary structure or verify the property's condition."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "unclear",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "unclear",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "low",
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Severe image obstruction prevents assessment of any potential property-condition issues."
+      ],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A street-level view showing a grassy lot and the side of a light-colored building, heavily obscured by a large central blur.",
+      "visible_conditions": [
+        "A large portion of the center image is obscured by a green blur",
+        "A grassy lot is visible in the foreground",
+        "The side of a light-colored building with horizontal siding is visible on the right"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "unclear",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1127",
+        "Median gross rent": "65900",
+        "Median household income": "36639",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "48.6",
+        "Renter-occupied share": "6.7",
+        "Total population": "2133",
+        "Vacancy rate": "16.0"
+      },
+      "name": "Census Tract 5.01; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000501",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 2 matching records",
+      "Rental registry: 4 matching records",
+      "Image-only flag: Severe image obstruction prevents assessment of any potential property-condition issues.",
+      "Needs human review"
+    ],
+    "id": 81,
+    "image": "images/parcel-000081.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 66598,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.067157483414924,
+    "lon": -76.16144692603238,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.06745346,
+          "Longitude": -76.16134387,
+          "NeedsRR": "Yes",
+          "ObjectId": 750,
+          "PropertyAddress": "211 Turtle St",
+          "RR_app_received": 1719446400000,
+          "RR_contact_name": "Robert DeBord",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "002.-25-11.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1727222400000,
+          "pc_owner": "Robert DeBord",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.06738267,
+          "Longitude": -76.16139674,
+          "NeedsRR": "Yes",
+          "ObjectId": 752,
+          "PropertyAddress": "209 Turtle St",
+          "RR_app_received": 1746403200000,
+          "RR_contact_name": "Scott R. Trudell",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1762905600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1762905600000,
+          "RRisValid": "No",
+          "SBL": "002.-25-12.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1762905600000,
+          "pc_owner": "GSPDC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.06730435,
+          "Longitude": -76.16145267,
+          "NeedsRR": "Yes",
+          "ObjectId": 754,
+          "PropertyAddress": "207 Turtle St",
+          "RR_app_received": null,
+          "RR_contact_name": "Scott Trudell",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "002.-25-13.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1689292800000,
+          "pc_owner": "Scott Trudell",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.06739007,
+          "Longitude": -76.1616551,
+          "NeedsRR": "Yes",
+          "ObjectId": 756,
+          "PropertyAddress": "2506 Lodi St",
+          "RR_app_received": 1701043200000,
+          "RR_contact_name": "Rellsey Properties Inc/Scott",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "002.-25-16.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1727049600000,
+          "pc_owner": "Rellsey Properties Inc",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.06707224,
+          "Longitude": -76.16103027,
+          "ObjectId": 1,
+          "Owner": "Gary Claflin",
+          "OwnerAddress": "204-06 Turtle St Syracuse, NY 13208",
+          "PropertyAddress": "204-06 Turtle St",
+          "SBL": "007.-02-01.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Commercial",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Washington Square",
+          "valid_until": null
+        },
+        {
+          "Latitude": 43.06695191,
+          "Longitude": -76.16112013,
+          "ObjectId": 343,
+          "Owner": "Gary Claflin",
+          "OwnerAddress": "204-06 Turtle St Syracuse, NY 13208",
+          "PropertyAddress": "2424-26 Lodi St & Turtle St",
+          "SBL": "007.-02-10.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Commercial",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Washington Square",
+          "valid_until": null
+        }
+      ]
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300495,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302317,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077306689,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308915,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312751,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314526,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315929,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077316450,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319024,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319025,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319079,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077322344,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077327763,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331716,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077333252,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077333266,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077333287,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077334482,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336164,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336287,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 20,
+        "historic": {},
+        "landuse": {},
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "002-25-140",
+    "published_at": "2026-05-31T14:28:45+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "205 Turtle St & Lodi St"
+  },
+  {
     "address": "207 Turtle St",
     "ai_analysis": {
       "available": false,
