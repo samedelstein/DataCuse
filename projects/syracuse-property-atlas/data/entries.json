@@ -1,5 +1,415 @@
 [
   {
+    "address": "211 Lewiston Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The structures are positioned at a distance from the camera, limiting detailed inspection of specific exterior elements like window seals or minor siding wear.",
+        "Multiple structures are visible in the frame, which may introduce ambiguity regarding the exact parcel boundaries for 211 Lewiston Dr."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "unclear",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A street-level view shows a well-maintained single-family residential property with a large green lawn and mature trees, set back from the road.",
+      "visible_conditions": [
+        "The primary visible structure is a two-story residential home with light-colored siding and dark shutters.",
+        "A second residential structure is visible to the left with a paved driveway.",
+        "The lawn is mowed and landscaped with several trees and shrubs.",
+        "No obvious structural damage or exterior defects are visible from this distance."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "771",
+        "Median gross rent": "205300",
+        "Median household income": "92045",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "10.1",
+        "Renter-occupied share": "76.2",
+        "Total population": "1536",
+        "Vacancy rate": "4.5"
+      },
+      "name": "Census Tract 56.01; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "005601",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 21542,
+    "image": "images/parcel-021542.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 97410,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.024272074124966,
+    "lon": -76.11292615624073,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 241572621,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:country": "US",
+            "addr:housenumber": "1136",
+            "addr:postcode": "13210",
+            "addr:state": "NY",
+            "addr:street": "Cumberland Avenue",
+            "building": "house",
+            "nysgissam:nysaddresspointid": "ONON181213"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 241572622,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:country": "US",
+            "addr:housenumber": "1142",
+            "addr:postcode": "13210",
+            "addr:state": "NY",
+            "addr:street": "Cumberland Avenue",
+            "building": "house",
+            "nysgissam:nysaddresspointid": "ONON176150"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 241572623,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:country": "US",
+            "addr:housenumber": "1148",
+            "addr:postcode": "13210",
+            "addr:state": "NY",
+            "addr:street": "Cumberland Avenue",
+            "building": "house",
+            "nysgissam:nysaddresspointid": "ONON115697"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 241572639,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:country": "US",
+            "addr:housenumber": "229",
+            "addr:postcode": "13210",
+            "addr:state": "NY",
+            "addr:street": "Lewiston Drive",
+            "building": "house",
+            "nysgissam:nysaddresspointid": "ONON021463"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 242053645,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:country": "US",
+            "addr:housenumber": "1527",
+            "addr:postcode": "13210",
+            "addr:state": "NY",
+            "addr:street": "Westmoreland Avenue",
+            "building": "house",
+            "nysgissam:nysaddresspointid": "ONON174106",
+            "source:addr:postcode": "TIGER 2015"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 242053649,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:country": "US",
+            "addr:housenumber": "1533",
+            "addr:postcode": "13210",
+            "addr:state": "NY",
+            "addr:street": "Westmoreland Avenue",
+            "building": "house",
+            "nysgissam:nysaddresspointid": "ONON117226",
+            "source:addr:postcode": "TIGER 2015"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 242053650,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:country": "US",
+            "addr:housenumber": "1542",
+            "addr:postcode": "13210",
+            "addr:state": "NY",
+            "addr:street": "Westmoreland Avenue",
+            "building": "house",
+            "nysgissam:nysaddresspointid": "ONON171341",
+            "source:addr:postcode": "TIGER 2015"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 242053651,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:country": "US",
+            "addr:housenumber": "1546",
+            "addr:postcode": "13210",
+            "addr:state": "NY",
+            "addr:street": "Westmoreland Avenue",
+            "building": "house",
+            "nysgissam:nysaddresspointid": "ONON011037",
+            "source:addr:postcode": "TIGER 2015"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 242053666,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:country": "US",
+            "addr:housenumber": "203",
+            "addr:postcode": "13210",
+            "addr:state": "NY",
+            "addr:street": "Lewiston Drive",
+            "building": "house",
+            "nysgissam:nysaddresspointid": "ONON025526"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 242053674,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:country": "US",
+            "addr:housenumber": "211",
+            "addr:postcode": "13210",
+            "addr:state": "NY",
+            "addr:street": "Lewiston Drive",
+            "building": "house",
+            "nysgissam:nysaddresspointid": "ONON136202"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 297822318,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:country": "US",
+            "addr:housenumber": "221",
+            "addr:postcode": "13210",
+            "addr:state": "NY",
+            "addr:street": "Lewiston Drive",
+            "building": "house",
+            "nysgissam:nysaddresspointid": "ONON009144"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "building",
+          "id": 241572621,
+          "label": "building: house",
+          "tags": {
+            "building": "house"
+          },
+          "type": "way"
+        },
+        {
+          "category": "building",
+          "id": 241572622,
+          "label": "building: house",
+          "tags": {
+            "building": "house"
+          },
+          "type": "way"
+        },
+        {
+          "category": "building",
+          "id": 241572623,
+          "label": "building: house",
+          "tags": {
+            "building": "house"
+          },
+          "type": "way"
+        },
+        {
+          "category": "building",
+          "id": 241572639,
+          "label": "building: house",
+          "tags": {
+            "building": "house"
+          },
+          "type": "way"
+        },
+        {
+          "category": "building",
+          "id": 242053645,
+          "label": "building: house",
+          "tags": {
+            "building": "house"
+          },
+          "type": "way"
+        },
+        {
+          "category": "building",
+          "id": 242053649,
+          "label": "building: house",
+          "tags": {
+            "building": "house"
+          },
+          "type": "way"
+        },
+        {
+          "category": "building",
+          "id": 242053650,
+          "label": "building: house",
+          "tags": {
+            "building": "house"
+          },
+          "type": "way"
+        },
+        {
+          "category": "building",
+          "id": 242053651,
+          "label": "building: house",
+          "tags": {
+            "building": "house"
+          },
+          "type": "way"
+        },
+        {
+          "category": "building",
+          "id": 242053666,
+          "label": "building: house",
+          "tags": {
+            "building": "house"
+          },
+          "type": "way"
+        },
+        {
+          "category": "building",
+          "id": 242053674,
+          "label": "building: house",
+          "tags": {
+            "building": "house"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 11,
+        "historic": {},
+        "landuse": {},
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "056-05-100",
+    "published_at": "2026-05-31T04:35:37+00:00",
+    "review_reasons": [],
+    "title": "211 Lewiston Dr"
+  },
+  {
     "address": "1614 Park St",
     "ai_analysis": {
       "available": true,
