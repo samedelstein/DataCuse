@@ -1,5 +1,281 @@
 [
   {
+    "address": "1326 Cumberland Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "A large mature tree heavily obstructs the view of the front facade and roof of the house.",
+        "A red vehicle in the foreground partially blocks the lower left view of the yard."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "not_visible",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential structure with a front porch is partially visible, heavily obscured by a large mature tree in the foreground.",
+      "visible_conditions": [
+        "Light-colored siding appears intact on the visible portions of the facade.",
+        "Front porch with white railings appears stable and in fair to good condition.",
+        "A large mature tree heavily obstructs the front facade and roof of the structure.",
+        "The grassy lawn appears maintained and sloped."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "144",
+        "Median gross rent": "155000",
+        "Median household income": "21741",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "62.5",
+        "Renter-occupied share": "16.3",
+        "Total population": "5225",
+        "Vacancy rate": "14.6"
+      },
+      "name": "Census Tract 56.02; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "005602",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 21729,
+    "image": "images/parcel-021729.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 72689,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.02106774054248,
+    "lon": -76.11226422649997,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 682076763,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "1326",
+            "addr:postcode": "13210",
+            "addr:state": "NY",
+            "addr:street": "Cumberland Avenue",
+            "building": "house",
+            "building:levels": "3"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "garage",
+          "historic": null,
+          "id": 682076764,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "garage"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 931494908,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "1639",
+            "addr:postcode": "13210",
+            "addr:state": "NY",
+            "addr:street": "Westmoreland Avenue",
+            "building": "house",
+            "nysgissam:nysaddresspointid": "ONON080882"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303160,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077306900,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077313396,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077327663,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329831,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331930,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1304919728,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "building",
+          "id": 682076763,
+          "label": "building: house",
+          "tags": {
+            "building": "house"
+          },
+          "type": "way"
+        },
+        {
+          "category": "building",
+          "id": 682076764,
+          "label": "building: garage",
+          "tags": {
+            "building": "garage"
+          },
+          "type": "way"
+        },
+        {
+          "category": "building",
+          "id": 931494908,
+          "label": "building: house",
+          "tags": {
+            "building": "house"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: residential",
+          "id": 1304919728,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 9,
+        "historic": {},
+        "landuse": {
+          "residential": 1
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "056-10-070",
+    "published_at": "2026-05-31T04:31:59+00:00",
+    "review_reasons": [],
+    "title": "1326 Cumberland Ave"
+  },
+  {
     "address": "1651 Westmoreland Ave",
     "ai_analysis": {
       "available": true,
@@ -1627,304 +1903,6 @@
     "published_at": "2026-05-31T04:23:04+00:00",
     "review_reasons": [],
     "title": "1604 Park St"
-  },
-  {
-    "address": "1326 Cumberland Ave",
-    "ai_analysis": {
-      "available": true,
-      "caveats": [
-        "The property's full exterior is significantly obscured by a large tree and a red truck in the foreground, limiting a comprehensive assessment.",
-        "The image date is 2011, so current conditions may differ."
-      ],
-      "condition_scores": {
-        "porch_or_entry": "good",
-        "roof": "not_visible",
-        "siding_or_facade": "fair",
-        "trash_debris": "none_visible",
-        "vegetation_overgrowth": "none_visible",
-        "windows_doors": "unclear",
-        "yard_or_lot": "good"
-      },
-      "confidence": "medium",
-      "image_annotations": [
-        {
-          "bbox": {
-            "height": 0.1,
-            "width": 0.1,
-            "x": 0.7,
-            "y": 0.6
-          },
-          "confidence": "medium",
-          "label": "Siding discoloration",
-          "reason": "Visible darker patches or staining on the lower right section of the visible siding."
-        }
-      ],
-      "needs_human_review": true,
-      "possible_unrecorded_issues": [
-        "Possible discoloration or staining on portions of the exterior siding."
-      ],
-      "property_type_guess": "single_family",
-      "provider": "gemini:gemini-2.5-flash",
-      "summary": "The visible exterior of the property appears to be a light-colored house with a front porch, partially obscured by a large tree and a vehicle in the foreground.",
-      "visible_conditions": [
-        "The main structure features light-colored siding, possibly white or light grey.",
-        "A front porch with white railings and columns is visible.",
-        "A large, mature tree significantly obscures the front of the house and the roof.",
-        "The visible portion of the yard consists of mowed grass.",
-        "A red fire hydrant is present in the front yard.",
-        "Some areas of the exterior siding appear to show discoloration or staining."
-      ],
-      "visible_flags": {
-        "active_construction_visible": "no",
-        "boarded_windows_or_doors": "no",
-        "fire_damage_visible": "no",
-        "structural_damage_visible": "no",
-        "vacancy_signs_visible": "no"
-      }
-    },
-    "census_tract": {
-      "available": true,
-      "county": "067",
-      "metrics": {
-        "Housing units": "144",
-        "Median gross rent": "155000",
-        "Median household income": "21741",
-        "No vehicle available": "-888888888",
-        "Poverty rate": "62.5",
-        "Renter-occupied share": "16.3",
-        "Total population": "5225",
-        "Vacancy rate": "14.6"
-      },
-      "name": "Census Tract 56.02; Onondaga County; New York",
-      "source": "2024 ACS 5-year profile",
-      "state": "36",
-      "tract": "005602",
-      "tract_lookup": "Census Geocoder"
-    },
-    "flags": [
-      "Image-only flag: Possible discoloration or staining on portions of the exterior siding.",
-      "Needs human review"
-    ],
-    "id": 21729,
-    "image": "images/parcel-021729.jpg",
-    "image_note": null,
-    "image_quality": {
-      "available": true,
-      "bytes": 72689,
-      "needs_rerun": false,
-      "warnings": []
-    },
-    "lat": 43.02106774054248,
-    "lon": -76.11226422649997,
-    "open_data": {
-      "code_violations": [],
-      "rental_registry": [],
-      "unfit_properties": [],
-      "vacant_properties": []
-    },
-    "osm": {
-      "available": true,
-      "features": [
-        {
-          "amenity": null,
-          "building": "house",
-          "historic": null,
-          "id": 682076763,
-          "landuse": null,
-          "name": null,
-          "shop": null,
-          "tags": {
-            "addr:city": "Syracuse",
-            "addr:housenumber": "1326",
-            "addr:postcode": "13210",
-            "addr:state": "NY",
-            "addr:street": "Cumberland Avenue",
-            "building": "house",
-            "building:levels": "3"
-          },
-          "type": "way"
-        },
-        {
-          "amenity": null,
-          "building": "garage",
-          "historic": null,
-          "id": 682076764,
-          "landuse": null,
-          "name": null,
-          "shop": null,
-          "tags": {
-            "building": "garage"
-          },
-          "type": "way"
-        },
-        {
-          "amenity": null,
-          "building": "house",
-          "historic": null,
-          "id": 931494908,
-          "landuse": null,
-          "name": null,
-          "shop": null,
-          "tags": {
-            "addr:city": "Syracuse",
-            "addr:housenumber": "1639",
-            "addr:postcode": "13210",
-            "addr:state": "NY",
-            "addr:street": "Westmoreland Avenue",
-            "building": "house",
-            "nysgissam:nysaddresspointid": "ONON080882"
-          },
-          "type": "way"
-        },
-        {
-          "amenity": null,
-          "building": "yes",
-          "historic": null,
-          "id": 1077303160,
-          "landuse": null,
-          "name": null,
-          "shop": null,
-          "tags": {
-            "building": "yes"
-          },
-          "type": "way"
-        },
-        {
-          "amenity": null,
-          "building": "yes",
-          "historic": null,
-          "id": 1077306900,
-          "landuse": null,
-          "name": null,
-          "shop": null,
-          "tags": {
-            "building": "yes"
-          },
-          "type": "way"
-        },
-        {
-          "amenity": null,
-          "building": "yes",
-          "historic": null,
-          "id": 1077313396,
-          "landuse": null,
-          "name": null,
-          "shop": null,
-          "tags": {
-            "building": "yes"
-          },
-          "type": "way"
-        },
-        {
-          "amenity": null,
-          "building": "yes",
-          "historic": null,
-          "id": 1077327663,
-          "landuse": null,
-          "name": null,
-          "shop": null,
-          "tags": {
-            "building": "yes"
-          },
-          "type": "way"
-        },
-        {
-          "amenity": null,
-          "building": "yes",
-          "historic": null,
-          "id": 1077329831,
-          "landuse": null,
-          "name": null,
-          "shop": null,
-          "tags": {
-            "building": "yes"
-          },
-          "type": "way"
-        },
-        {
-          "amenity": null,
-          "building": "yes",
-          "historic": null,
-          "id": 1077331930,
-          "landuse": null,
-          "name": null,
-          "shop": null,
-          "tags": {
-            "building": "yes"
-          },
-          "type": "way"
-        },
-        {
-          "amenity": null,
-          "building": null,
-          "historic": null,
-          "id": 1304919728,
-          "landuse": "residential",
-          "name": null,
-          "shop": null,
-          "tags": {
-            "landuse": "residential"
-          },
-          "type": "way"
-        }
-      ],
-      "notable_features": [
-        {
-          "category": "building",
-          "id": 682076763,
-          "label": "building: house",
-          "tags": {
-            "building": "house"
-          },
-          "type": "way"
-        },
-        {
-          "category": "building",
-          "id": 682076764,
-          "label": "building: garage",
-          "tags": {
-            "building": "garage"
-          },
-          "type": "way"
-        },
-        {
-          "category": "building",
-          "id": 931494908,
-          "label": "building: house",
-          "tags": {
-            "building": "house"
-          },
-          "type": "way"
-        },
-        {
-          "category": "landuse: residential",
-          "id": 1304919728,
-          "label": "landuse: residential",
-          "tags": {
-            "landuse": "residential"
-          },
-          "type": "way"
-        }
-      ],
-      "radius_meters": 60,
-      "summary": {
-        "amenities": {},
-        "buildings": 9,
-        "historic": {},
-        "landuse": {
-          "residential": 1
-        },
-        "named_features": 0,
-        "shops": {}
-      }
-    },
-    "parcel_key": "056-10-070",
-    "published_at": "2026-05-31T04:21:33+00:00",
-    "review_reasons": [
-      "AI requested human review",
-      "Possible image-only issue"
-    ],
-    "title": "1326 Cumberland Ave"
   },
   {
     "address": "1600 Park St & Turtle St",
