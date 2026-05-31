@@ -1,6 +1,7 @@
 param(
     [string]$TaskName = "DataCuse Syracuse Property Atlas Hourly",
     [int]$StartInMinutes = 5,
+    [int]$IntervalMinutes = 15,
     [switch]$NoPush
 )
 
@@ -21,7 +22,7 @@ $Start = (Get-Date).AddMinutes($StartInMinutes)
 $Trigger = New-ScheduledTaskTrigger `
     -Once `
     -At $Start `
-    -RepetitionInterval (New-TimeSpan -Hours 1) `
+    -RepetitionInterval (New-TimeSpan -Minutes $IntervalMinutes) `
     -RepetitionDuration (New-TimeSpan -Days 3650)
 
 $Settings = New-ScheduledTaskSettingsSet `
@@ -49,5 +50,5 @@ Register-ScheduledTask `
 
 Write-Host "Registered scheduled task: $TaskName"
 Write-Host "Starts: $Start"
-Write-Host "Repeats: hourly"
+Write-Host "Repeats: every $IntervalMinutes minutes"
 Write-Host "Command: $PowerShell $Arguments"
