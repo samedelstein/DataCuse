@@ -1,5 +1,355 @@
 [
   {
+    "address": "1651 Westmoreland Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "good",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.05,
+            "width": 0.3,
+            "x": 0.15,
+            "y": 0.7
+          },
+          "confidence": "medium",
+          "label": "Siding discoloration/wear",
+          "reason": "Visible discoloration and possible surface wear on the siding below the garage door."
+        },
+        {
+          "bbox": {
+            "height": 0.1,
+            "width": 0.3,
+            "x": 0.15,
+            "y": 0.6
+          },
+          "confidence": "medium",
+          "label": "Garage door trim wear",
+          "reason": "Discoloration or wear visible on the trim surrounding the garage door."
+        },
+        {
+          "bbox": {
+            "height": 0.1,
+            "width": 0.1,
+            "x": 0.38,
+            "y": 0.58
+          },
+          "confidence": "medium",
+          "label": "Railing weathering",
+          "reason": "The wooden railing appears to show signs of weathering or discoloration."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Some discoloration or possible minor surface wear is visible on the siding directly below the garage door.",
+        "The trim around the garage door appears to show some signs of wear or discoloration.",
+        "The wooden railing leading to the entry may show signs of weathering or discoloration."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a single-family residence with a sloped front yard and some areas of minor wear.",
+      "visible_conditions": [
+        "The property features light-colored exterior siding.",
+        "A red front door is visible on the upper level.",
+        "An integrated garage is present on the lower level.",
+        "The roof appears to be covered with asphalt shingles.",
+        "A wooden railing is visible leading to the front entry.",
+        "The front yard is a grassy slope with some young trees."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "144",
+        "Median gross rent": "155000",
+        "Median household income": "21741",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "62.5",
+        "Renter-occupied share": "16.3",
+        "Total population": "5225",
+        "Vacancy rate": "14.6"
+      },
+      "name": "Census Tract 56.02; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "005602",
+      "tract_lookup": "FCC Census Block API"
+    },
+    "flags": [
+      "Image-only flag: Some discoloration or possible minor surface wear is visible on the siding directly below the garage door.",
+      "Image-only flag: The trim around the garage door appears to show some signs of wear or discoloration.",
+      "Image-only flag: The wooden railing leading to the entry may show signs of weathering or discoloration."
+    ],
+    "id": 21732,
+    "image": "images/parcel-021732.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 78383,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.02099798938391,
+    "lon": -76.11266039400473,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 682076763,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "1326",
+            "addr:postcode": "13210",
+            "addr:state": "NY",
+            "addr:street": "Cumberland Avenue",
+            "building": "house",
+            "building:levels": "3"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "garage",
+          "historic": null,
+          "id": 682076764,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "garage"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 931494903,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "house"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 931494908,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "1639",
+            "addr:postcode": "13210",
+            "addr:state": "NY",
+            "addr:street": "Westmoreland Avenue",
+            "building": "house",
+            "nysgissam:nysaddresspointid": "ONON080882"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "house",
+          "historic": null,
+          "id": 931494910,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "house"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303160,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077313396,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319140,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329831,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331930,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1304919728,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "building",
+          "id": 682076763,
+          "label": "building: house",
+          "tags": {
+            "building": "house"
+          },
+          "type": "way"
+        },
+        {
+          "category": "building",
+          "id": 682076764,
+          "label": "building: garage",
+          "tags": {
+            "building": "garage"
+          },
+          "type": "way"
+        },
+        {
+          "category": "building",
+          "id": 931494903,
+          "label": "building: house",
+          "tags": {
+            "building": "house"
+          },
+          "type": "way"
+        },
+        {
+          "category": "building",
+          "id": 931494908,
+          "label": "building: house",
+          "tags": {
+            "building": "house"
+          },
+          "type": "way"
+        },
+        {
+          "category": "building",
+          "id": 931494910,
+          "label": "building: house",
+          "tags": {
+            "building": "house"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: residential",
+          "id": 1304919728,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 10,
+        "historic": {},
+        "landuse": {
+          "residential": 1
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "056-10-100",
+    "published_at": "2026-05-31T04:26:56+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1651 Westmoreland Ave"
+  },
+  {
     "address": "1608 Park St",
     "ai_analysis": {
       "available": true,
