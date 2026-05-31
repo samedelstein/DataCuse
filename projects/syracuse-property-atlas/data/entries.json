@@ -1,5 +1,540 @@
 [
   {
+    "address": "1400 Salina St N & Turtle St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image primarily shows an open lot and the side of a red structure; it is unclear if the 'unfit' or 'rental' records apply to the visible red structure, a demolished structure, or an adjacent property out of view."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.3,
+            "width": 0.06,
+            "x": 0.63,
+            "y": 0.65
+          },
+          "confidence": "medium",
+          "label": "graffiti",
+          "reason": "Visible markings or graffiti on the utility pole in the foreground"
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Minor graffiti on the utility pole in the foreground",
+        "Weed growth along the edges of the paved lot"
+      ],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A street-level view showing a paved or gravel lot with an adjacent red single-story structure, bordered by dense trees and a utility pole in the foreground.",
+      "visible_conditions": [
+        "Paved or gravel lot area with some weeds along the edges",
+        "Single-story red structure on the left side of the image with visible doors",
+        "Dense mature trees and vegetation in the background",
+        "Utility pole in the foreground with markings or graffiti"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Rental registry: 2 matching records",
+      "Unfit properties: 2 matching records",
+      "Image-only flag: Minor graffiti on the utility pole in the foreground",
+      "Image-only flag: Weed growth along the edges of the paved lot",
+      "Needs human review"
+    ],
+    "id": 57,
+    "image": "images/parcel-000057.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 69566,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.06838115853031,
+    "lon": -76.1606225036113,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.06861396,
+          "Longitude": -76.16047641,
+          "NeedsRR": "Yes",
+          "ObjectId": 746,
+          "PropertyAddress": "313 Turtle St",
+          "RR_app_received": 1740355200000,
+          "RR_contact_name": "John Canzano",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "002.-24-13.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1743033600000,
+          "pc_owner": "John Canzano",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.06853458,
+          "Longitude": -76.16053582,
+          "NeedsRR": "Yes",
+          "ObjectId": 748,
+          "PropertyAddress": "311 Turtle St",
+          "RR_app_received": 1706054400000,
+          "RR_contact_name": "Giovanni Canzano",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1708473600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1708473600000,
+          "RRisValid": "Yes",
+          "SBL": "002.-24-14.0",
+          "SHAPE": null,
+          "completion_date": 1726012800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1723680000000,
+          "pc_owner": "Giovanni Canzano",
+          "valid_until": 1820707200000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [
+        {
+          "Latitude": 43.06834453,
+          "Longitude": -76.1606094,
+          "ObjectId": 163,
+          "SBL": "002.-24-15.0",
+          "Vacant": null,
+          "address": "1400 Salina St N & Turtle St",
+          "area_involved": "Premises",
+          "article": "A structure is unfit for human occupancy whenever such structure is unsafe, unlawful or, because of the degree to which the structure is in disrepair or lacks maintenance, is unsanitary, vermin or rat infested, contains filth and contamination, or lacks ventilation, illumination, sanitary or heating facilities or other essential equipment required by this code, or because the location of the structure consti\ntutes a hazard to the occupants of the structure or to the public.",
+          "comp_close_date": -2208988800000,
+          "comp_open_date": 1694173791183,
+          "comp_status": "Open",
+          "complaint_number": "2023-06368",
+          "complaint_type_name": "Property Maintenance-Int",
+          "comply_by_date": 1725021419490,
+          "corrective_action": "The premises hasn't had an issued Certificate of Use \"C of U\" since 9/14/20, which expired on 9/14/22.  Inspections from the Syracuse Fire Department and the Division of Code Enforcement are a requirement to obtain a C of U.  The inspections are necessary to ensure that there are no hazards to the public, and so all health and safety requirements are installed and functioning correctly.  Operating without safety inspections constitutes hazards to the public and to occupants on the premises.  Vacate the premises immediately.  Safety inspections of the entire premises will be required before re-occupancy. ",
+          "department_name": "Codes",
+          "owner_address": "PO BOX 2",
+          "owner_city": "Central Square",
+          "owner_name": "Kenneth Rubin",
+          "owner_state": "NY",
+          "owner_zip_code": "13031",
+          "parcel_id": 475,
+          "status_date": 1725021419490,
+          "status_type_name": "Open",
+          "violation": "2020 PMCNYS - Section 107.1.3 - Structure Unfit for Human Occupancy",
+          "violation_date": 1725021419490,
+          "violation_number": "2024-13229",
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.06834453,
+          "Longitude": -76.1606094,
+          "ObjectId": 164,
+          "SBL": "002.-24-15.0",
+          "Vacant": null,
+          "address": "1400 Salina St N & Turtle St",
+          "area_involved": "Premises",
+          "article": "A structure is unfit for human occupancy whenever such structure is unsafe, unlawful or, because of the degree to which the structure is in disrepair or lacks maintenance, is unsanitary, vermin or rat infested, contains filth and contamination, or lacks ventilation, illumination, sanitary or heating facilities or other essential equipment required by this code, or because the location of the structure consti\ntutes a hazard to the occupants of the structure or to the public.",
+          "comp_close_date": -2208988800000,
+          "comp_open_date": 1694173791183,
+          "comp_status": "Open",
+          "complaint_number": "2023-06368",
+          "complaint_type_name": "Property Maintenance-Int",
+          "comply_by_date": 1725018728000,
+          "corrective_action": "The premises is hereby declared unlawful based upon the bench ruling of Justice McMahon on September 8, 2023 revoking your special permit.  Apply for and obtain a special permit and Certificate of use before re-occupying the premises.  ",
+          "department_name": "Codes",
+          "owner_address": "PO BOX 2",
+          "owner_city": "Central Square",
+          "owner_name": "Kenneth Rubin",
+          "owner_state": "NY",
+          "owner_zip_code": "13031",
+          "parcel_id": 475,
+          "status_date": 1694173928680,
+          "status_type_name": "Open",
+          "violation": "2020 PMCNYS - Section 107.1.3 - Structure Unfit for Human Occupancy",
+          "violation_date": 1694173928680,
+          "violation_number": "2023-16042",
+          "zip": 13208
+        }
+      ],
+      "vacant_properties": [
+        {
+          "Latitude": 43.06834453,
+          "Longitude": -76.1606094,
+          "ObjectId": 960,
+          "Owner": "Receipt Book LLC",
+          "OwnerAddress": "1400 N Salina St Syracuse, NY 13203",
+          "PropertyAddress": "1400 Salina St N & Turtle St",
+          "SBL": "002.-24-15.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Commercial",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Washington Square",
+          "valid_until": null
+        }
+      ]
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300095,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302608,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303084,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315011,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315093,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077316450,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317644,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319280,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077320452,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321189,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077322210,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325925,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326399,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077332235,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077332454,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077334654,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077335853,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921489,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921493,
+          "landuse": "commercial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "commercial"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921494,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: residential",
+          "id": 1189921489,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: commercial",
+          "id": 1189921493,
+          "label": "landuse: commercial",
+          "tags": {
+            "landuse": "commercial"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189921494,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 17,
+        "historic": {},
+        "landuse": {
+          "commercial": 1,
+          "industrial": 1,
+          "residential": 1
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "002-24-150",
+    "published_at": "2026-05-31T08:28:48+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "1400 Salina St N & Turtle St"
+  },
+  {
     "address": "311 Turtle St",
     "ai_analysis": {
       "available": true,
