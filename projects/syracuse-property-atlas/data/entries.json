@@ -1,5 +1,439 @@
 [
   {
+    "address": "1426 Salina St N",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Two distinct residential structures are present in the image, making it unclear which building corresponds to the target address 1426 Salina St N without parcel boundary maps.",
+        "The image is taken from across the street, limiting close inspection of rear or side exterior elements."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.06,
+            "width": 0.08,
+            "x": 0.8,
+            "y": 0.28
+          },
+          "confidence": "high",
+          "label": "boarded window",
+          "reason": "The attic window on the blue building is boarded up with plywood."
+        },
+        {
+          "bbox": {
+            "height": 0.12,
+            "width": 0.5,
+            "x": 0.3,
+            "y": 0.72
+          },
+          "confidence": "medium",
+          "label": "deteriorated pavement",
+          "reason": "The driveway entrance shows significant cracking and uneven asphalt."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Boarded attic window on the blue building may indicate partial vacancy or unaddressed damage.",
+        "Pavement deterioration in the shared driveway area."
+      ],
+      "property_type_guess": "multifamily",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows two multi-story residential structures separated by a shared driveway, with the blue structure on the right displaying a boarded attic window.",
+      "visible_conditions": [
+        "Two separate multi-story residential buildings are visible in the image.",
+        "The blue building on the right features a boarded-up window in the front attic gable.",
+        "The driveway between the two properties shows signs of cracked and uneven pavement.",
+        "The left building has light-colored siding and a blue front door."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "yes",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Rental registry: 2 matching records",
+      "Image-only flag: Boarded attic window on the blue building may indicate partial vacancy or unaddressed damage.",
+      "Image-only flag: Pavement deterioration in the shared driveway area.",
+      "Needs human review"
+    ],
+    "id": 63,
+    "image": "images/parcel-000063.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 73961,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.06879455488504,
+    "lon": -76.16128857762212,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.06895054,
+          "Longitude": -76.16149307,
+          "NeedsRR": "Yes",
+          "ObjectId": 730,
+          "PropertyAddress": "308 Bear St",
+          "RR_app_received": 1740355200000,
+          "RR_contact_name": "John Canzano",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1762473600000,
+          "RR_int_insp_fail": 1746662400000,
+          "RR_int_insp_pass": 1762473600000,
+          "RRisValid": "Yes",
+          "SBL": "002.-24-02.0",
+          "SHAPE": null,
+          "completion_date": 1762992000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1762732800000,
+          "pc_owner": "John Canzano",
+          "valid_until": 1857686400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.06908953,
+          "Longitude": -76.16138928,
+          "NeedsRR": "Yes",
+          "ObjectId": 732,
+          "PropertyAddress": "310 Bear St",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "002.-24-03.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Santino Crisafulli",
+          "valid_until": null,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.06908953,
+          "Longitude": -76.16138928,
+          "ObjectId": 222,
+          "Owner": "Santino Crisafulli",
+          "OwnerAddress": "107 Saturn Dr Syracuse, NY 13205",
+          "PropertyAddress": "310 Bear St",
+          "SBL": "002.-24-03.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Washington Square",
+          "valid_until": null
+        }
+      ]
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300095,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300569,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300877,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303099,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077307326,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308160,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308161,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317151,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317644,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077322210,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077322211,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077332275,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077333082,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921493,
+          "landuse": "commercial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "commercial"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921494,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921501,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: commercial",
+          "id": 1189921493,
+          "label": "landuse: commercial",
+          "tags": {
+            "landuse": "commercial"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189921494,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: residential",
+          "id": 1189921501,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 13,
+        "historic": {},
+        "landuse": {
+          "commercial": 1,
+          "industrial": 1,
+          "residential": 1
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "002-24-210",
+    "published_at": "2026-05-31T09:58:41+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue",
+      "boarded windows or doors"
+    ],
+    "title": "1426 Salina St N"
+  },
+  {
     "address": "1416-18 Salina St N",
     "ai_analysis": {
       "available": true,
