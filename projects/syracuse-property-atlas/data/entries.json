@@ -1,5 +1,362 @@
 [
   {
+    "address": "1417 Salina St N",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The roof is not visible from this street-level angle.",
+        "Interior conditions cannot be determined."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "not_visible",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.12,
+            "width": 0.11,
+            "x": 0.33,
+            "y": 0.31
+          },
+          "confidence": "high",
+          "label": "boarded window",
+          "reason": "An upper-story window opening is covered with a solid white panel instead of glass."
+        },
+        {
+          "bbox": {
+            "height": 0.18,
+            "width": 0.12,
+            "x": 0.17,
+            "y": 0.39
+          },
+          "confidence": "high",
+          "label": "peeling paint",
+          "reason": "Visible paint deterioration and peeling on the brick facade to the left of the main sign."
+        },
+        {
+          "bbox": {
+            "height": 0.04,
+            "width": 0.06,
+            "x": 0.71,
+            "y": 0.57
+          },
+          "confidence": "medium",
+          "label": "vacancy sign",
+          "reason": "A sign in the window appears to display 'AVAILABLE' with a contact phone number."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Covered/boarded upper window",
+        "Peeling paint on exterior masonry",
+        "Possible vacancy indicated by window sign"
+      ],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story painted brick commercial building showing some facade wear, a boarded upper window, and a vacancy sign.",
+      "visible_conditions": [
+        "Peeling paint and surface discoloration on the front facade",
+        "One upper-story window opening is covered with a solid white panel",
+        "A sign indicating availability is posted in a lower-level window",
+        "Minor weed growth along the base of the building structure"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "yes",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "yes"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1127",
+        "Median gross rent": "65900",
+        "Median household income": "36639",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "48.6",
+        "Renter-occupied share": "6.7",
+        "Total population": "2133",
+        "Vacancy rate": "16.0"
+      },
+      "name": "Census Tract 5.01; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000501",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Covered/boarded upper window",
+      "Image-only flag: Peeling paint on exterior masonry",
+      "Image-only flag: Possible vacancy indicated by window sign",
+      "Needs human review"
+    ],
+    "id": 71,
+    "image": "images/parcel-000071.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 62327,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.06793425324489,
+    "lon": -76.16159273623668,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5345913149,
+          "landuse": null,
+          "name": "C&C Mini Mart Inc",
+          "shop": "convenience",
+          "tags": {
+            "name": "C&C Mini Mart Inc",
+            "shop": "convenience"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308915,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310255,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311660,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315076,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077316450,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317644,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319024,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325925,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077327763,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921489,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921493,
+          "landuse": "commercial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "commercial"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921494,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "shop: convenience",
+          "id": 5345913149,
+          "label": "C&C Mini Mart Inc",
+          "tags": {
+            "name": "C&C Mini Mart Inc",
+            "shop": "convenience"
+          },
+          "type": "node"
+        },
+        {
+          "category": "landuse: residential",
+          "id": 1189921489,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: commercial",
+          "id": 1189921493,
+          "label": "landuse: commercial",
+          "tags": {
+            "landuse": "commercial"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189921494,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 9,
+        "historic": {},
+        "landuse": {
+          "commercial": 1,
+          "industrial": 1,
+          "residential": 1
+        },
+        "named_features": 1,
+        "shops": {
+          "convenience": 1
+        }
+      }
+    },
+    "parcel_key": "002-25-040",
+    "published_at": "2026-05-31T11:58:52+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue",
+      "boarded windows or doors",
+      "vacancy signs visible"
+    ],
+    "title": "1417 Salina St N"
+  },
+  {
     "address": "1423 Salina St N",
     "ai_analysis": {
       "available": true,
