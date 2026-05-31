@@ -99,7 +99,7 @@ def load_local_env() -> None:
         key, value = stripped.split("=", 1)
         key = key.strip()
         value = value.strip().strip('"').strip("'")
-        if key and key not in os.environ:
+        if key:
             os.environ[key] = value
 
 OPEN_DATA_FEEDS = [
