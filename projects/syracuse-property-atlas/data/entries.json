@@ -1,5 +1,441 @@
 [
   {
+    "address": "400 Sunset Ave & Turtle St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.15",
+            "width": "0.20",
+            "x": "0.55",
+            "y": "0.60"
+          },
+          "confidence": "high",
+          "label": "Trash and debris",
+          "reason": "Visible miscellaneous items, including a grill and bags, are present in the yard near the fence and addition."
+        },
+        {
+          "bbox": {
+            "height": "0.10",
+            "width": "0.80",
+            "x": "0.00",
+            "y": "0.60"
+          },
+          "confidence": "high",
+          "label": "Vegetation overgrowth",
+          "reason": "Taller grass and weeds are visible along the front fence line and near the foundation of the structure."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Visible items in the yard and near the entry area, such as a grill and bags, might suggest activity or storage that could be inconsistent with a 'Vacant properties' record."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a two-story residence with an attached single-story addition, featuring gray siding and a front yard with some visible items and vegetation.",
+      "visible_conditions": [
+        "The main structure is a two-story building with gray horizontal siding.",
+        "An attached single-story addition is present on the right side of the main structure, also with gray siding.",
+        "The roof appears to be shingled and generally intact.",
+        "Windows are visible on the front facade of both the main structure and the addition.",
+        "A small covered entry with steps is visible on the addition.",
+        "A chain-link fence runs along the front of the property.",
+        "The front yard has grass, with some areas of taller vegetation and weeds.",
+        "Miscellaneous items, including what appears to be a grill and bags, are visible near the fence and the addition."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1127",
+        "Median gross rent": "65900",
+        "Median household income": "36639",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "48.6",
+        "Renter-occupied share": "6.7",
+        "Total population": "2133",
+        "Vacancy rate": "16.0"
+      },
+      "name": "Census Tract 5.01; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000501",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Rental registry: 1 matching record",
+      "Image-only flag: Visible items in the yard and near the entry area, such as a grill and bags, might suggest activity or storage that could be inconsistent with a 'Vacant properties' record."
+    ],
+    "id": 101,
+    "image": "images/parcel-000101.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 82595,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0663389238882,
+    "lon": -76.16203005906016,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.06619704,
+          "Longitude": -76.16168298,
+          "NeedsRR": "Yes",
+          "ObjectId": 186,
+          "PropertyAddress": "132 Turtle St & Sunset Ave",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "007.-01-01.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Santino Crisafulli",
+          "valid_until": null,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.06641453,
+          "Longitude": -76.16216343,
+          "ObjectId": 223,
+          "Owner": "Maryann Decook-Vasteno",
+          "OwnerAddress": "135 Turtle St Syracuse, NY 13208",
+          "PropertyAddress": "402 Sunset Ave",
+          "SBL": "002.-26-15.0",
+          "VPR_result": "VPR - Valid / Year 1",
+          "VPR_valid": "Y",
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": "2025-09-29",
+          "completion_type_name": "VPR Cert Issued - Plan B",
+          "neighborhood": "Washington Square",
+          "valid_until": "2026-09-29"
+        }
+      ]
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302317,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077306870,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309693,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314273,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315527,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319263,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319337,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077320019,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077320020,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321682,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077322344,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077328600,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077328601,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329598,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331263,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331653,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077334482,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336164,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921489,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: residential",
+          "id": 1189921489,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 18,
+        "historic": {},
+        "landuse": {
+          "residential": 1
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "002-26-140",
+    "published_at": "2026-06-01T23:03:11+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "400 Sunset Ave & Turtle St"
+  },
+  {
     "address": "135 Turtle St",
     "ai_analysis": {
       "available": true,
