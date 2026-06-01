@@ -1,5 +1,431 @@
 [
   {
+    "address": "2505 Lodi St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image is from 2020, so conditions may have changed.",
+        "A utility pole partially obstructs the view of the left side of the property.",
+        "The roof condition is unclear due to the image angle and partial visibility."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "poor",
+        "roof": "unclear",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "poor",
+        "yard_or_lot": "poor"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.12,
+            "width": 0.1,
+            "x": 0.35,
+            "y": 0.59
+          },
+          "confidence": "high",
+          "label": "Boarded ground floor opening",
+          "reason": "A large opening on the ground floor is visibly covered."
+        },
+        {
+          "bbox": {
+            "height": 0.12,
+            "width": 0.06,
+            "x": 0.44,
+            "y": 0.59
+          },
+          "confidence": "high",
+          "label": "Boarded ground floor entry",
+          "reason": "The main ground floor entry appears to be covered or boarded."
+        },
+        {
+          "bbox": {
+            "height": 0.12,
+            "width": 0.08,
+            "x": 0.54,
+            "y": 0.59
+          },
+          "confidence": "high",
+          "label": "Boarded ground floor opening",
+          "reason": "Another large opening on the ground floor is visibly covered."
+        },
+        {
+          "bbox": {
+            "height": 0.05,
+            "width": 0.05,
+            "x": 0.48,
+            "y": 0.24
+          },
+          "confidence": "high",
+          "label": "Damaged upper window",
+          "reason": "An attic-level window appears to have missing panes."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Visible boarding or covering of multiple ground-floor openings suggests potential disuse or security measures.",
+        "Apparent missing window panes on an upper-level window may indicate a need for repair.",
+        "General exterior disrepair, including cracked pavement and visible weeds, is present."
+      ],
+      "property_type_guess": "mixed_use",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a multi-story structure with signs of disrepair, including boarded ground-floor openings and damaged upper-level windows.",
+      "visible_conditions": [
+        "The property is a multi-story building with a gabled roof.",
+        "The upper floors feature light-colored siding, while the ground floor has a stone or masonry facade.",
+        "Multiple openings on the ground floor, including what appear to be former windows or entryways, are visibly covered or boarded.",
+        "An upper-level window, specifically in the attic area, appears to have missing panes.",
+        "The area directly in front of the property is a cracked paved surface with some visible weeds.",
+        "Steps lead up to the covered ground-floor entry points.",
+        "A utility pole partially obstructs the view of the left side of the property."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "yes",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1127",
+        "Median gross rent": "65900",
+        "Median household income": "36639",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "48.6",
+        "Renter-occupied share": "6.7",
+        "Total population": "2133",
+        "Vacancy rate": "16.0"
+      },
+      "name": "Census Tract 5.01; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000501",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Visible boarding or covering of multiple ground-floor openings suggests potential disuse or security measures.",
+      "Image-only flag: Apparent missing window panes on an upper-level window may indicate a need for repair.",
+      "Image-only flag: General exterior disrepair, including cracked pavement and visible weeds, is present.",
+      "Needs human review"
+    ],
+    "id": 96,
+    "image": "images/parcel-000096.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 67352,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.066801051090565,
+    "lon": -76.16196647497713,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302317,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077306689,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077306870,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309693,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314273,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314526,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315256,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315527,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319025,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319263,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319337,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077322344,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325880,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326053,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077328600,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077328601,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331263,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331653,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077334482,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336164,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 20,
+        "historic": {},
+        "landuse": {},
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "002-26-090",
+    "published_at": "2026-06-01T18:04:16+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue",
+      "boarded windows or doors"
+    ],
+    "title": "2505 Lodi St"
+  },
+  {
     "address": "2507 Lodi St",
     "ai_analysis": {
       "available": true,
