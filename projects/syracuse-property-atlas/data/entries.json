@@ -2,8 +2,74 @@
   {
     "address": "221-23 Turtle St",
     "ai_analysis": {
-      "available": false,
-      "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable"
+      "available": true,
+      "caveats": [
+        "The image provides a street-level view, and conditions of the rear or other sides of the property are not visible."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "unclear",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "poor",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.38,
+            "width": 0.6,
+            "x": 0.04,
+            "y": 0.34
+          },
+          "confidence": "high",
+          "label": "Boarded Window Openings",
+          "reason": "Numerous window openings on the main building are visibly covered or boarded up."
+        },
+        {
+          "bbox": {
+            "height": 0.4,
+            "width": 0.95,
+            "x": 0.0,
+            "y": 0.55
+          },
+          "confidence": "high",
+          "label": "Lot Disrepair and Overgrowth",
+          "reason": "The paved lot shows visible cracks and areas of minor weed overgrowth."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "The extensive boarding of window openings on the main building may suggest a condition that does not align with active residential rental use, as indicated by public records showing 'Rental registry: 3 matching records'."
+      ],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property appears to consist of a large, multi-story building with numerous boarded-up window openings, alongside smaller ancillary structures and a partially overgrown paved lot.",
+      "visible_conditions": [
+        "A large, multi-story building with a light-colored exterior is visible, featuring many window openings that appear to be boarded up or covered.",
+        "Smaller, single-story white structures are visible to the right, one of which includes a roll-up garage door.",
+        "The foreground features a paved or graveled lot, showing signs of cracking and some areas of vegetation growth.",
+        "A chain-link fence with a gate is present in the foreground, bordering the lot.",
+        "Minor overgrowth of weeds is visible in various parts of the paved lot and along the fence lines."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "yes",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
     },
     "census_tract": {
       "available": true,
@@ -25,7 +91,9 @@
       "tract_lookup": "Census Geocoder"
     },
     "flags": [
-      "Rental registry: 3 matching records"
+      "Rental registry: 3 matching records",
+      "Image-only flag: The extensive boarding of window openings on the main building may suggest a condition that does not align with active residential rental use, as indicated by public records showing 'Rental registry: 3 matching records'.",
+      "Needs human review"
     ],
     "id": 75,
     "image": "images/parcel-000075.jpg",
@@ -399,9 +467,11 @@
       }
     },
     "parcel_key": "002-25-080",
-    "published_at": "2026-06-01T02:02:59+00:00",
+    "published_at": "2026-06-01T02:11:22+00:00",
     "review_reasons": [
-      "AI analysis unavailable"
+      "AI requested human review",
+      "Possible image-only issue",
+      "boarded windows or doors"
     ],
     "title": "221-23 Turtle St"
   },
