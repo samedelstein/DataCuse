@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Street Quality Atlas | DataCuse</title>
+  <meta name="description" content="A DataCuse field workflow for street-facing imagery, sidewalk and pavement condition review, public-right-of-way object cataloging, and bounding-box-ready issue records.">
+  <link rel="canonical" href="https://www.datacuse.com/projects/street-quality-atlas/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../public/site.css">
+</head>
+<body>
+  <nav class="site-nav" aria-label="Primary">
+    <a class="brand" href="../../">
+      <span class="brand-mark">D</span>
+      <span>Data<span>Cuse</span></span>
+    </a>
+    <div class="nav-links">
+      <a href="../../#projects">Projects</a>
+      <a href="../syracuse-property-atlas/">Property Atlas</a>
+      <a class="nav-pill" href="mailto:sam.i.edelstein@gmail.com">Contact</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-media" aria-hidden="true">
+      <img src="../../public/street_quality_atlas.svg" alt="">
+    </div>
+    <div class="hero-grid">
+      <section class="hero-copy">
+        <p class="eyebrow">Street-scale civic data</p>
+        <h1>Street Quality Atlas</h1>
+        <p class="hero-lede">A street-facing companion to the Syracuse Property Atlas: same parcel database, same civic data frame, but aimed down the road to catalog pavement, curbs, sidewalks, signs, hydrants, and other public-right-of-way conditions.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="../syracuse-property-atlas/">Open Property Atlas</a>
+          <a class="button secondary" href="results/">View sample results</a>
+        </div>
+      </section>
+      <aside class="hero-panel" aria-label="Street Quality Atlas status">
+        <div class="signal-card">
+          <span class="signal-label">Pipeline</span>
+          <strong>Uses the Property Atlas database</strong>
+          <p>Reads the same parcel SQLite source and writes street-specific captures, observations, assessments, and issue boxes into separate street tables.</p>
+        </div>
+        <div class="mini-grid">
+          <div><span>AI</span><p>Gemini to Ollama fallback</p></div>
+          <div><span>2x</span><p>Views per parcel</p></div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section class="section method-section" aria-label="Street Quality Atlas method">
+      <div class="method-copy">
+        <p class="eyebrow">Method</p>
+        <h2>Same parcels, street-facing camera.</h2>
+        <p>The workflow keeps the EveryLot rhythm but changes the target: use the address or parcel coordinate to find Street View, set an explicit road heading, capture both directions where possible, then analyze the street and sidewalk instead of the building facade.</p>
+      </div>
+      <div class="method-grid">
+        <article><span>01</span><h3>Capture</h3><p>Generate Google Street View images with explicit headings so the camera looks along the road outside each address.</p></article>
+        <article><span>02</span><h3>Catalog</h3><p>Record hydrants, curbs, signs, sidewalks, storm drains, pavement markings, and visible maintenance issues.</p></article>
+        <article><span>03</span><h3>Review</h3><p>Store normalized bounding boxes and export CSV or Label Studio-ready tasks for human review and correction.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="about">
+    <div>
+      <a class="brand" href="../../"><span class="brand-mark">D</span><span>Data<span>Cuse</span></span></a>
+      <p>DataCuse is an independent Syracuse data lab building civic tools, maps, and explainers for the 315.</p>
+    </div>
+    <small>&copy; 2026 DataCuse. All rights reserved.</small>
+  </footer>
+</body>
+</html>

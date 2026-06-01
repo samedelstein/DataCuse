@@ -1,0 +1,394 @@
+[
+  {
+    "data": {
+      "image": "C:\\Users\\samie\\Projects\\datacuse\\DataCuse\\projects\\syracuse-property-atlas\\images\\street-quality\\002-22-090_299.jpg",
+      "lot_id": "002-22-090",
+      "address": "1301-03 SPRING ST",
+      "heading": 298.83175629418724
+    },
+    "predictions": [
+      {
+        "result": [
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 0.0,
+              "y": 54.0,
+              "width": 46.0,
+              "height": 14.999999999999991,
+              "rectanglelabels": [
+                "sidewalk"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 44.0,
+              "y": 53.0,
+              "width": 56.00000000000001,
+              "height": 15.999999999999993,
+              "rectanglelabels": [
+                "sidewalk"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 0.0,
+              "y": 66.0,
+              "width": 44.0,
+              "height": 7.9999999999999964,
+              "rectanglelabels": [
+                "curb"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 44.0,
+              "y": 63.0,
+              "width": 56.00000000000001,
+              "height": 6.999999999999995,
+              "rectanglelabels": [
+                "curb"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 32.0,
+              "y": 0.0,
+              "width": 7.000000000000001,
+              "height": 53.0,
+              "rectanglelabels": [
+                "utility_pole"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 32.0,
+              "y": 31.0,
+              "width": 2.9999999999999973,
+              "height": 7.000000000000001,
+              "rectanglelabels": [
+                "street_light"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 34.0,
+              "y": 0.0,
+              "width": 9.999999999999998,
+              "height": 48.0,
+              "rectanglelabels": [
+                "tree"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 56.00000000000001,
+              "y": 0.0,
+              "width": 13.99999999999999,
+              "height": 48.0,
+              "rectanglelabels": [
+                "tree"
+              ]
+            }
+          },
+          {
+            "from_name": "issue",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 0.0,
+              "y": 68.0,
+              "width": 100.0,
+              "height": 31.999999999999996,
+              "rectanglelabels": [
+                "street_crack"
+              ]
+            }
+          },
+          {
+            "from_name": "issue",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 20.0,
+              "y": 55.00000000000001,
+              "width": 70.0,
+              "height": 14.999999999999991,
+              "rectanglelabels": [
+                "street_crack"
+              ]
+            }
+          },
+          {
+            "from_name": "issue",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 0.0,
+              "y": 50.0,
+              "width": 100.0,
+              "height": 50.0,
+              "rectanglelabels": [
+                "rough_pavement"
+              ]
+            }
+          },
+          {
+            "from_name": "issue",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 0.0,
+              "y": 60.0,
+              "width": 40.0,
+              "height": 8.999999999999996,
+              "rectanglelabels": [
+                "sidewalk_crack"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "image": "C:\\Users\\samie\\Projects\\datacuse\\DataCuse\\projects\\syracuse-property-atlas\\images\\street-quality\\002-22-090_119.jpg",
+      "lot_id": "002-22-090",
+      "address": "1301-03 SPRING ST",
+      "heading": 118.83175629418724
+    },
+    "predictions": [
+      {
+        "result": [
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 0.0,
+              "y": 0.0,
+              "width": 54.0,
+              "height": 81.0,
+              "rectanglelabels": [
+                "tree"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 0.0,
+              "y": 28.000000000000004,
+              "width": 28.000000000000004,
+              "height": 31.999999999999996,
+              "rectanglelabels": [
+                "tree"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 72.0,
+              "y": 28.000000000000004,
+              "width": 28.000000000000004,
+              "height": 30.999999999999993,
+              "rectanglelabels": [
+                "tree"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 0.0,
+              "y": 60.0,
+              "width": 70.0,
+              "height": 17.000000000000004,
+              "rectanglelabels": [
+                "sidewalk"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 0.0,
+              "y": 76.0,
+              "width": 70.0,
+              "height": 5.000000000000004,
+              "rectanglelabels": [
+                "curb"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 70.0,
+              "y": 67.0,
+              "width": 30.000000000000004,
+              "height": 3.9999999999999925,
+              "rectanglelabels": [
+                "curb"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 44.0,
+              "y": 26.0,
+              "width": 8.000000000000002,
+              "height": 25.0,
+              "rectanglelabels": [
+                "utility_pole"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 55.00000000000001,
+              "y": 32.0,
+              "width": 3.9999999999999925,
+              "height": 12.0,
+              "rectanglelabels": [
+                "utility_pole"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 32.0,
+              "y": 38.0,
+              "width": 2.9999999999999973,
+              "height": 4.999999999999999,
+              "rectanglelabels": [
+                "utility_pole"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 48.0,
+              "y": 44.0,
+              "width": 3.0000000000000027,
+              "height": 3.9999999999999982,
+              "rectanglelabels": [
+                "traffic_sign"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 46.0,
+              "y": 30.0,
+              "width": 2.9999999999999973,
+              "height": 3.0000000000000027,
+              "rectanglelabels": [
+                "street_light"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 34.0,
+              "y": 43.0,
+              "width": 1.9999999999999962,
+              "height": 2.0000000000000018,
+              "rectanglelabels": [
+                "street_sign"
+              ]
+            }
+          },
+          {
+            "from_name": "issue",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 0.0,
+              "y": 78.0,
+              "width": 100.0,
+              "height": 21.999999999999996,
+              "rectanglelabels": [
+                "rough_pavement"
+              ]
+            }
+          },
+          {
+            "from_name": "issue",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 0.0,
+              "y": 60.0,
+              "width": 100.0,
+              "height": 18.000000000000004,
+              "rectanglelabels": [
+                "street_crack"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
