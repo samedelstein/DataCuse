@@ -1,7 +1,7 @@
 param(
     [string]$TaskName = "DataCuse Syracuse Property Atlas Hourly",
     [int]$StartInMinutes = 5,
-    [int]$IntervalMinutes = 15,
+    [int]$IntervalMinutes = 60,
     [switch]$NoPush
 )
 

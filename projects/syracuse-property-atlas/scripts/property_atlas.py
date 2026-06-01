@@ -1688,6 +1688,35 @@ def cmd_reset(args: argparse.Namespace) -> None:
         print(f"  {row['id']}: {row['address'] or '(no address)'}")
 
 
+def cmd_reset_failed(args: argparse.Namespace) -> None:
+    if not DB_PATH.exists():
+        raise RuntimeError(f"No database found at {DB_PATH}")
+    entries = load_entries()
+    failed = []
+    for entry in entries:
+        note = str((entry.get("ai_analysis") or {}).get("note") or "")
+        if args.contains.lower() in note.lower():
+            failed.append(entry)
+
+    if not failed:
+        print(f"No entries found with AI note containing: {args.contains}")
+        return
+
+    failed_ids = {entry["id"] for entry in failed}
+    with sqlite3.connect(DB_PATH) as conn:
+        for id_ in failed_ids:
+            conn.execute("UPDATE parcels SET published_at = NULL WHERE id = ?", (id_,))
+        conn.commit()
+
+    remaining = [entry for entry in entries if entry.get("id") not in failed_ids]
+    save_entries(remaining)
+    build_site(remaining)
+
+    print(f"Reset {len(failed_ids)} failed entries:")
+    for entry in failed:
+        print(f"  {entry['id']}: {entry.get('title')}")
+
+
 def main() -> None:
     load_local_env()
     parser = argparse.ArgumentParser(description=__doc__)
@@ -1718,6 +1747,10 @@ def main() -> None:
     reset.add_argument("--id", type=int, default=None, help="Parcel row id to reset.")
     reset.add_argument("--address", type=str, default=None, help="Normalized or display address to reset.")
     reset.set_defaults(func=cmd_reset)
+
+    reset_failed = sub.add_parser("reset-failed", help="Reset published entries whose AI note contains text.")
+    reset_failed.add_argument("--contains", type=str, default="Gemini vision request failed: HTTP Error 429", help="Text to match in ai_analysis.note.")
+    reset_failed.set_defaults(func=cmd_reset_failed)
 
     args = parser.parse_args()
     args.func(args)

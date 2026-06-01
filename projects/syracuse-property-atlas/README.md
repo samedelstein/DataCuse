@@ -66,4 +66,4 @@ Register or update the Windows Scheduled Task:
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts\install_windows_task.ps1
 ```
 
-The task starts a few minutes after registration and repeats every 15 minutes by default. Use `-NoPush` if you want local commits without pushing, or `-IntervalMinutes 60` for hourly.
+The task starts a few minutes after registration and repeats hourly by default. Use `-NoPush` if you want local commits without pushing, or `-IntervalMinutes 15` for a faster temporary run.
