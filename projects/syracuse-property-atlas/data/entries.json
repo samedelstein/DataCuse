@@ -1,5 +1,133 @@
 [
   {
+    "address": "2523 Lodi St & Bear St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "A parked vehicle in the foreground and a tall hedge block the view of the lower level, foundation, and main entryway."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential structure with light-colored siding and a manicured hedge, partially obscured by a parked vehicle in the foreground.",
+      "visible_conditions": [
+        "Light-colored vinyl siding appears intact from the visible angles",
+        "Double-hung windows appear intact with no visible damage or boarding",
+        "A tall, manicured hedge runs along the front of the property",
+        "A black SUV is parked in the foreground, partially obstructing the view of the lower level"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1127",
+        "Median gross rent": "65900",
+        "Median household income": "36639",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "48.6",
+        "Renter-occupied share": "6.7",
+        "Total population": "2133",
+        "Vacancy rate": "16.0"
+      },
+      "name": "Census Tract 5.01; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000501",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Rental registry: 1 matching record"
+    ],
+    "id": 89,
+    "image": "images/parcel-000089.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 85121,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.067112636697004,
+    "lon": -76.16295038882136,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.06711328,
+          "Longitude": -76.16297008,
+          "NeedsRR": "Yes",
+          "ObjectId": 758,
+          "PropertyAddress": "2523 Lodi St & Bear St",
+          "RR_app_received": 1718668800000,
+          "RR_contact_name": "Chi Kim Nguyen",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "002.-26-01.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1730332800000,
+          "pc_owner": "Eugenie Niyaramahuku",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.0668794,
+          "Longitude": -76.16316276,
+          "ObjectId": 994,
+          "Owner": "Ronnie Machuca",
+          "OwnerAddress": "347 Hillside St Syracuse, NY 13208",
+          "PropertyAddress": "424 Sunset Ave & Bear St",
+          "SBL": "002.-26-22.0",
+          "VPR_result": "VPR - Valid / Year 1",
+          "VPR_valid": "Y",
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": "2025-09-24",
+          "completion_type_name": "VPR Cert Issued - Plan A",
+          "neighborhood": "Washington Square",
+          "valid_until": "2026-09-24"
+        }
+      ]
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "002-26-010",
+    "published_at": "2026-06-01T13:03:14+00:00",
+    "review_reasons": [],
+    "title": "2523 Lodi St & Bear St"
+  },
+  {
     "address": "2524 Lodi St & Bear St",
     "ai_analysis": {
       "available": true,
