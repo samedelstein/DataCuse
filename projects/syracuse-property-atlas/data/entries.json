@@ -1,5 +1,90 @@
 [
   {
+    "address": "2516 Lodi St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The flat roof is not visible from this street-level perspective.",
+        "Only the front facade of the building is visible in the image."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "not_visible",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A single-story commercial building with a painted masonry facade, a loading dock, and an asphalt parking area, showing no major visible exterior defects.",
+      "visible_conditions": [
+        "Painted masonry exterior walls appear intact with minor surface weathering.",
+        "Loading dock area with an overhead door and concrete steps appears functional.",
+        "Paved asphalt parking lot in front of the building is clear of debris.",
+        "A brick chimney is visible extending above the roofline."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1127",
+        "Median gross rent": "65900",
+        "Median household income": "36639",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "48.6",
+        "Renter-occupied share": "6.7",
+        "Total population": "2133",
+        "Vacancy rate": "16.0"
+      },
+      "name": "Census Tract 5.01; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000501",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 87,
+    "image": "images/parcel-000087.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 45381,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.06769849745741,
+    "lon": -76.16202118632228,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "002-25-201",
+    "published_at": "2026-06-01T11:03:02+00:00",
+    "review_reasons": [],
+    "title": "2516 Lodi St"
+  },
+  {
     "address": "2510 Lodi St",
     "ai_analysis": {
       "available": true,
