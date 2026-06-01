@@ -554,28 +554,49 @@ def analyze_image(image_path: Path, parcel: sqlite3.Row, matches: dict[str, list
 
     prompt = build_vision_prompt(parcel, matches)
     data_url = "data:image/jpeg;base64," + base64.b64encode(image_path.read_bytes()).decode("ascii")
-    analysis = analyze_image_with_provider(provider, data_url, prompt)
-    if analysis.get("available"):
-        return analysis
+    failures = []
+    for item in vision_provider_chain(provider):
+        analysis = analyze_image_with_provider(item["provider"], data_url, prompt, model_override=item.get("model"))
+        if analysis.get("available"):
+            if failures:
+                analysis["fallback_from"] = [failure["provider"] for failure in failures]
+                analysis["fallback_failures"] = failures
+            return analysis
+        failures.append({"provider": item["label"], "note": analysis.get("note")})
+    return {"available": False, "note": "All vision providers failed.", "failures": failures}
 
+
+def vision_provider_chain(default_provider: str) -> list[dict]:
+    raw = os.getenv("VISION_PROVIDER_CHAIN", "").strip()
+    if raw:
+        chain = []
+        for part in raw.split(","):
+            token = part.strip()
+            if not token:
+                continue
+            if ":" in token:
+                provider, model = token.split(":", 1)
+                chain.append({"provider": provider.strip().lower(), "model": model.strip(), "label": token})
+            else:
+                chain.append({"provider": token.lower(), "model": None, "label": token})
+        if chain:
+            return chain
+
+    chain = [{"provider": default_provider, "model": None, "label": default_provider}]
     fallback = os.getenv("VISION_FALLBACK_PROVIDER", "").lower().strip()
-    if fallback and fallback != provider:
-        fallback_analysis = analyze_image_with_provider(fallback, data_url, prompt)
-        if fallback_analysis.get("available"):
-            fallback_analysis["fallback_from"] = provider
-            return fallback_analysis
-        analysis["fallback_note"] = fallback_analysis.get("note")
-    return analysis
+    if fallback and fallback != default_provider:
+        chain.append({"provider": fallback, "model": None, "label": fallback})
+    return chain
 
 
-def analyze_image_with_provider(provider: str, data_url: str, prompt: dict) -> dict:
+def analyze_image_with_provider(provider: str, data_url: str, prompt: dict, model_override: str | None = None) -> dict:
     if provider == "ollama":
-        return analyze_image_ollama(data_url, prompt)
+        return analyze_image_ollama(data_url, prompt, model_override=model_override)
     if provider == "gemini":
-        return analyze_image_gemini(data_url, prompt)
+        return analyze_image_gemini(data_url, prompt, model_override=model_override)
     if provider == "openai":
-        return analyze_image_openai(data_url, prompt)
-    return {"available": False, "note": f"Unsupported VISION_PROVIDER={provider!r}; image analysis skipped."}
+        return analyze_image_openai(data_url, prompt, model_override=model_override)
+    return {"available": False, "note": f"Unsupported vision provider {provider!r}; image analysis skipped."}
 
 
 def build_vision_prompt(parcel: sqlite3.Row, matches: dict[str, list[dict]]) -> dict:
@@ -601,8 +622,8 @@ def build_vision_prompt(parcel: sqlite3.Row, matches: dict[str, list[dict]]) -> 
     }
 
 
-def analyze_image_ollama(data_url: str, prompt: dict) -> dict:
-    model = os.getenv("OLLAMA_VISION_MODEL", "llava:latest")
+def analyze_image_ollama(data_url: str, prompt: dict, model_override: str | None = None) -> dict:
+    model = model_override or os.getenv("OLLAMA_VISION_MODEL", "llava:latest")
     endpoint = os.getenv("OLLAMA_URL", "http://localhost:11434/api/generate")
     timeout = int(os.getenv("OLLAMA_TIMEOUT_SECONDS", "600"))
     payload = {
@@ -626,11 +647,11 @@ def analyze_image_ollama(data_url: str, prompt: dict) -> dict:
     return normalize_ai_analysis(parsed)
 
 
-def analyze_image_gemini(data_url: str, prompt: dict) -> dict:
+def analyze_image_gemini(data_url: str, prompt: dict, model_override: str | None = None) -> dict:
     api_key = os.getenv("GEMINI_API_KEY")
     if not api_key:
         return {"available": False, "note": "GEMINI_API_KEY is not set; Gemini image analysis skipped."}
-    model = os.getenv("GEMINI_VISION_MODEL", "gemini-2.5-flash")
+    model = model_override or os.getenv("GEMINI_VISION_MODEL", "gemini-2.5-flash")
     endpoint = f"https://generativelanguage.googleapis.com/v1beta/models/{urllib.parse.quote(model)}:generateContent"
     image_b64 = data_url.split(",", 1)[1]
     payload = {
@@ -675,12 +696,12 @@ def analyze_image_gemini(data_url: str, prompt: dict) -> dict:
     return normalize_ai_analysis(parsed)
 
 
-def analyze_image_openai(data_url: str, prompt: dict) -> dict:
+def analyze_image_openai(data_url: str, prompt: dict, model_override: str | None = None) -> dict:
     api_key = os.getenv("OPENAI_API_KEY")
     if not api_key:
         return {"available": False, "note": "OPENAI_API_KEY is not set; OpenAI image analysis skipped."}
     payload = {
-        "model": os.getenv("OPENAI_VISION_MODEL", "gpt-4.1-mini"),
+        "model": model_override or os.getenv("OPENAI_VISION_MODEL", "gpt-4.1-mini"),
         "input": [
             {
                 "role": "user",
@@ -1749,7 +1770,7 @@ def main() -> None:
     reset.set_defaults(func=cmd_reset)
 
     reset_failed = sub.add_parser("reset-failed", help="Reset published entries whose AI note contains text.")
-    reset_failed.add_argument("--contains", type=str, default="Gemini vision request failed: HTTP Error 429", help="Text to match in ai_analysis.note.")
+    reset_failed.add_argument("--contains", type=str, default="Gemini vision request failed", help="Text to match in ai_analysis.note.")
     reset_failed.set_defaults(func=cmd_reset_failed)
 
     args = parser.parse_args()
