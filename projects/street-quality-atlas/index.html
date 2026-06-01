@@ -4,75 +4,162 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Street Quality Atlas | DataCuse</title>
-  <meta name="description" content="A DataCuse field workflow for street-facing imagery, sidewalk and pavement condition review, public-right-of-way object cataloging, and bounding-box-ready issue records.">
+  <meta name="description" content="A street-facing companion to the Syracuse Property Atlas, cataloging pavement, sidewalks, curbs, signs, hydrants, and public-right-of-way issues from Street View imagery.">
   <link rel="canonical" href="https://www.datacuse.com/projects/street-quality-atlas/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../../public/site.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="../syracuse-property-atlas/style.css">
+  <style>
+    .street-photo-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .street-image-wrap { position: relative; min-height: 320px; overflow: hidden; border-radius: 8px 8px 0 0; background: #dfe7e3; }
+    .street-image-wrap img { width: 100%; height: 100%; aspect-ratio: 1; object-fit: cover; }
+    .street-image-wrap .annotation-box.issue { border-color: #d64545; background: rgba(214, 69, 69, 0.12); }
+    .street-image-wrap .annotation-box.object { border-color: #00a6d6; background: rgba(0, 166, 214, 0.12); }
+    .street-image-wrap .annotation-box.issue span { background: #d64545; }
+    .direction-pill { display: inline-flex; margin-bottom: 10px; padding: 6px 9px; border-radius: 999px; background: rgba(247, 105, 0, 0.12); color: var(--orange-dark); font-size: .78rem; font-weight: 900; }
+    .sample-note { margin-top: 10px; color: var(--muted); font-size: .9rem; line-height: 1.55; }
+    .atlas-map.street-map { min-height: 520px; }
+    .latest-card .mini-meta { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 18px; }
+    .latest-card .mini-meta div { padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: #fffaf3; }
+    .latest-card .mini-meta strong { display: block; font-family: "Space Grotesk", Inter, sans-serif; font-size: 1.7rem; }
+    @media (max-width: 760px) { .street-photo-grid { grid-template-columns: 1fr; } }
+  </style>
 </head>
 <body>
   <nav class="site-nav" aria-label="Primary">
-    <a class="brand" href="../../">
+    <a class="brand" href="/">
       <span class="brand-mark">D</span>
       <span>Data<span>Cuse</span></span>
     </a>
     <div class="nav-links">
-      <a href="../../#projects">Projects</a>
+      <a href="#latest">Latest</a>
+      <a href="#map">Map</a>
+      <a href="#entries">Street views</a>
+      <a href="#method">Method</a>
       <a href="../syracuse-property-atlas/">Property Atlas</a>
-      <a class="nav-pill" href="mailto:sam.i.edelstein@gmail.com">Contact</a>
     </div>
   </nav>
 
-  <header class="hero">
-    <div class="hero-media" aria-hidden="true">
-      <img src="../../public/street_quality_atlas.svg" alt="">
-    </div>
-    <div class="hero-grid">
-      <section class="hero-copy">
-        <p class="eyebrow">Street-scale civic data</p>
-        <h1>Street Quality Atlas</h1>
-        <p class="hero-lede">A street-facing companion to the Syracuse Property Atlas: same parcel database, same civic data frame, but aimed down the road to catalog pavement, curbs, sidewalks, signs, hydrants, and other public-right-of-way conditions.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="../syracuse-property-atlas/">Open Property Atlas</a>
-          <a class="button secondary" href="results/">View sample results</a>
-        </div>
-      </section>
-      <aside class="hero-panel" aria-label="Street Quality Atlas status">
-        <div class="signal-card">
-          <span class="signal-label">Pipeline</span>
-          <strong>Uses the Property Atlas database</strong>
-          <p>Reads the same parcel SQLite source and writes street-specific captures, observations, assessments, and issue boxes into separate street tables.</p>
-        </div>
-        <div class="mini-grid">
-          <div><span>AI</span><p>Gemini to Ollama fallback</p></div>
-          <div><span>2x</span><p>Views per parcel</p></div>
-        </div>
-      </aside>
-    </div>
+  <header class="hero" id="latest">
+    <section>
+      <p class="eyebrow">Street Quality Atlas</p>
+      <h1>One street edge at a time.</h1>
+      <p class="lede">A street-facing companion to the Syracuse Property Atlas. It uses the same parcel database, points the camera down the road, and catalogs pavement, sidewalks, curbs, signs, utility poles, trees, hydrants, and visible public-right-of-way issues.</p>
+      <div class="stats">
+        <div><strong>2</strong><span>street-facing views</span></div>
+        <div><strong>25</strong><span>cataloged findings</span></div>
+        <div><strong>9</strong><span>issue boxes</span></div>
+      </div>
+    </section>
+    <aside class="latest-card">
+      <span>Sample parcel</span>
+      <h2>1301-03 Spring St</h2>
+      <p>Two road-axis Street View captures show a residential street with mature trees, sidewalks, curbs, overhead utilities, a stop sign, and visible pavement cracking.</p>
+      <div class="mini-meta">
+        <div><strong>299°</strong><small>northwest view</small></div>
+        <div><strong>119°</strong><small>southeast view</small></div>
+      </div>
+      <p class="sample-note">Generated from the Property Atlas SQLite database and OpenStreetMap-derived street headings.</p>
+      <a href="#entries">Review street views</a>
+    </aside>
   </header>
 
   <main>
-    <section class="section method-section" aria-label="Street Quality Atlas method">
-      <div class="method-copy">
+    <section class="section atlas-tools" id="map">
+      <div class="section-heading">
+        <p class="eyebrow">Atlas map</p>
+        <h2>Street observations on the same parcel base.</h2>
+        <p>The street layer reuses the Property Atlas coordinates, then adds street-facing captures and issue annotations. Orange marks the sampled parcel; blue rays show the two camera directions.</p>
+      </div>
+      <div class="tool-shell">
+        <div class="map-toolbar">
+          <label>Sample location</label>
+          <input type="text" value="1301-03 SPRING ST" readonly>
+          <div class="status-filter" aria-label="Street status summary">
+            <button type="button" class="is-active">Street</button>
+            <button type="button">Sidewalk</button>
+            <button type="button">Signs</button>
+          </div>
+          <div class="layer-filter" aria-label="Detected feature summary">
+            <label><input type="checkbox" checked disabled> Pavement cracking</label>
+            <label><input type="checkbox" checked disabled> Sidewalks and curbs</label>
+            <label><input type="checkbox" checked disabled> Utility poles and street light</label>
+            <label><input type="checkbox" checked disabled> Stop sign and street sign</label>
+            <label><input type="checkbox" checked disabled> Mature street trees</label>
+          </div>
+          <div class="progress-bar" aria-label="Sample processing progress"><span style="width: 100%"></span></div>
+          <p><strong>2</strong> of <strong>2</strong> corrected street-facing captures analyzed.</p>
+          <div class="search-results">
+            <button type="button"><span>1301-03 SPRING ST</span><small>Parcel 002-22-090 · street quality sample</small></button>
+          </div>
+        </div>
+        <div id="streetMap" class="atlas-map street-map" aria-label="Street quality sample map"></div>
+      </div>
+    </section>
+
+    <section class="section" id="entries">
+      <div class="section-heading">
+        <p class="eyebrow">Street-facing captures</p>
+        <h2>Sample street views</h2>
+        <p>Bounding boxes are normalized issue/object annotations from the vision pass. They are field notes for review, not official infrastructure findings.</p>
+      </div>
+      <div class="street-photo-grid">
+        <article class="entry-card">
+          <div class="street-image-wrap">
+            <img src="../syracuse-property-atlas/images/street-quality/002-22-090_299.jpg" alt="Street-facing view northwest from 1301-03 Spring St">
+            <span class="annotation-box issue" style="left:0%;top:68%;width:100%;height:32%;"><span>street cracks</span></span>
+            <span class="annotation-box object" style="left:44%;top:53%;width:56%;height:16%;"><span>sidewalk</span></span>
+            <span class="annotation-box object" style="left:32%;top:0%;width:7%;height:53%;"><span>utility pole</span></span>
+          </div>
+          <div class="entry-body">
+            <span class="direction-pill">Heading 299°</span>
+            <h3>Northwest street view</h3>
+            <p>A residential street scene with cracked asphalt pavement, concrete sidewalks, mature trees, curbs, a utility pole, overhead lines, and a street light.</p>
+            <div class="flag-row"><span>Street quality: 2/5</span><span>Sidewalk quality: 3/5</span><span>4 issue boxes</span><span>8 objects</span></div>
+            <a href="results/">Open exported records</a>
+          </div>
+        </article>
+
+        <article class="entry-card">
+          <div class="street-image-wrap">
+            <img src="../syracuse-property-atlas/images/street-quality/002-22-090_119.jpg" alt="Street-facing view southeast from 1301-03 Spring St">
+            <span class="annotation-box issue" style="left:0%;top:78%;width:100%;height:22%;"><span>rough pavement</span></span>
+            <span class="annotation-box object" style="left:48%;top:44%;width:3%;height:4%;"><span>stop sign</span></span>
+            <span class="annotation-box object" style="left:0%;top:60%;width:70%;height:17%;"><span>sidewalk</span></span>
+          </div>
+          <div class="entry-body">
+            <span class="direction-pill">Heading 119°</span>
+            <h3>Southeast street view</h3>
+            <p>A residential street with mature trees, sidewalks, curbs, utility poles, a street light, a visible stop sign, and general pavement wear.</p>
+            <div class="flag-row"><span>Street quality: 3/5</span><span>Signs quality: 4/5</span><span>2 issue boxes</span><span>12 objects</span></div>
+            <a href="results/">Open exported records</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="method" id="method">
+      <div>
         <p class="eyebrow">Method</p>
-        <h2>Same parcels, street-facing camera.</h2>
-        <p>The workflow keeps the EveryLot rhythm but changes the target: use the address or parcel coordinate to find Street View, set an explicit road heading, capture both directions where possible, then analyze the street and sidewalk instead of the building facade.</p>
+        <h2>Property Atlas, rotated toward the street.</h2>
+        <p>The workflow uses the existing parcel SQLite database and Google Street View image pipeline, then derives a road-axis heading from OpenStreetMap so the camera looks along the street instead of at the house.</p>
       </div>
-      <div class="method-grid">
-        <article><span>01</span><h3>Capture</h3><p>Generate Google Street View images with explicit headings so the camera looks along the road outside each address.</p></article>
-        <article><span>02</span><h3>Catalog</h3><p>Record hydrants, curbs, signs, sidewalks, storm drains, pavement markings, and visible maintenance issues.</p></article>
-        <article><span>03</span><h3>Review</h3><p>Store normalized bounding boxes and export CSV or Label Studio-ready tasks for human review and correction.</p></article>
-      </div>
+      <ul>
+        <li>Source database: Syracuse Property Atlas parcels.</li>
+        <li>Camera heading: nearest OpenStreetMap road segment, with parcel-neighbor fallback.</li>
+        <li>Vision chain: Gemini 3.5, Gemini 2.5, then local Ollama when configured.</li>
+        <li>Outputs: street images, object observations, condition assessments, issue boxes, CSV, and Label Studio-ready JSON.</li>
+      </ul>
     </section>
   </main>
 
-  <footer class="site-footer" id="about">
-    <div>
-      <a class="brand" href="../../"><span class="brand-mark">D</span><span>Data<span>Cuse</span></span></a>
-      <p>DataCuse is an independent Syracuse data lab building civic tools, maps, and explainers for the 315.</p>
-    </div>
-    <small>&copy; 2026 DataCuse. All rights reserved.</small>
+  <footer class="site-footer">
+    <a class="brand" href="/"><span class="brand-mark">D</span><span>Data<span>Cuse</span></span></a>
+    <p>Independent Syracuse data stories, tools, and field notes.</p>
   </footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
