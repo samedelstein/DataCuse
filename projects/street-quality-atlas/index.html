@@ -24,6 +24,8 @@
     .latest-card .mini-meta { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 18px; }
     .latest-card .mini-meta div { padding: 12px; border: 1px solid var(--line); border-radius: 8px; background: #fffaf3; }
     .latest-card .mini-meta strong { display: block; font-family: "Space Grotesk", Inter, sans-serif; font-size: 1.7rem; }
+    .loading-card { padding: 22px; color: var(--muted); }
+    .street-list-button.is-active { border-color: var(--orange); background: #fff; }
     @media (max-width: 760px) { .street-photo-grid { grid-template-columns: 1fr; } }
   </style>
 </head>
@@ -47,19 +49,19 @@
       <p class="eyebrow">Street Quality Atlas</p>
       <h1>One street edge at a time.</h1>
       <p class="lede">A street-facing companion to the Syracuse Property Atlas. It uses the same parcel database, points the camera down the road, and catalogs pavement, sidewalks, curbs, signs, utility poles, trees, hydrants, and visible public-right-of-way issues.</p>
-      <div class="stats">
-        <div><strong>2</strong><span>street-facing views</span></div>
-        <div><strong>25</strong><span>cataloged findings</span></div>
-        <div><strong>9</strong><span>issue boxes</span></div>
+      <div class="stats" id="streetStats">
+        <div><strong>--</strong><span>street-facing views</span></div>
+        <div><strong>--</strong><span>cataloged findings</span></div>
+        <div><strong>--</strong><span>issue boxes</span></div>
       </div>
     </section>
-    <aside class="latest-card">
-      <span>Sample parcel</span>
-      <h2>1301-03 Spring St</h2>
-      <p>Two road-axis Street View captures show a residential street with mature trees, sidewalks, curbs, overhead utilities, a stop sign, and visible pavement cracking.</p>
+    <aside class="latest-card" id="latestStreetCard">
+      <span>Latest street edge</span>
+      <h2>Loading captures</h2>
+      <p>Street Quality Atlas is loading the latest exported street-facing observations.</p>
       <div class="mini-meta">
-        <div><strong>299°</strong><small>northwest view</small></div>
-        <div><strong>119°</strong><small>southeast view</small></div>
+        <div><strong>--</strong><small>views</small></div>
+        <div><strong>--</strong><small>issues</small></div>
       </div>
       <p class="sample-note">Generated from the Property Atlas SQLite database and OpenStreetMap-derived street headings.</p>
       <a href="#entries">Review street views</a>
@@ -71,72 +73,36 @@
       <div class="section-heading">
         <p class="eyebrow">Atlas map</p>
         <h2>Street observations on the same parcel base.</h2>
-        <p>The street layer reuses the Property Atlas coordinates, then adds street-facing captures and issue annotations. Orange marks the sampled parcel; blue rays show the two camera directions.</p>
+        <p>The street layer reuses the Property Atlas coordinates, then adds street-facing captures and issue annotations. Orange points are captured parcels; direction rays show the camera headings.</p>
       </div>
       <div class="tool-shell">
         <div class="map-toolbar">
-          <label>Sample location</label>
-          <input type="text" value="1301-03 SPRING ST" readonly>
+          <label for="streetSearch">Search captured street edges</label>
+          <input id="streetSearch" type="search" placeholder="Try Spring, Ross, or a parcel ID">
           <div class="status-filter" aria-label="Street status summary">
-            <button type="button" class="is-active">Street</button>
-            <button type="button">Sidewalk</button>
-            <button type="button">Signs</button>
+            <button type="button" class="is-active">Captured</button>
+            <button type="button">Analyzed</button>
+            <button type="button">Issue boxes</button>
           </div>
-          <div class="layer-filter" aria-label="Detected feature summary">
-            <label><input type="checkbox" checked disabled> Pavement cracking</label>
-            <label><input type="checkbox" checked disabled> Sidewalks and curbs</label>
-            <label><input type="checkbox" checked disabled> Utility poles and street light</label>
-            <label><input type="checkbox" checked disabled> Stop sign and street sign</label>
-            <label><input type="checkbox" checked disabled> Mature street trees</label>
+          <div class="layer-filter" id="featureSummary" aria-label="Detected feature summary">
+            <label><input type="checkbox" checked disabled> Loading feature summary</label>
           </div>
-          <div class="progress-bar" aria-label="Sample processing progress"><span style="width: 100%"></span></div>
-          <p><strong>2</strong> of <strong>2</strong> corrected street-facing captures analyzed.</p>
-          <div class="search-results">
-            <button type="button"><span>1301-03 SPRING ST</span><small>Parcel 002-22-090 · street quality sample</small></button>
-          </div>
+          <div class="progress-bar" aria-label="Street quality processing progress"><span id="progressFill" style="width: 0%"></span></div>
+          <p id="progressText"><strong>0</strong> captured street-facing images loaded.</p>
+          <div id="streetSearchResults" class="search-results" aria-live="polite"></div>
         </div>
-        <div id="streetMap" class="atlas-map street-map" aria-label="Street quality sample map"></div>
+        <div id="streetMap" class="atlas-map street-map" aria-label="Street quality map"></div>
       </div>
     </section>
 
     <section class="section" id="entries">
       <div class="section-heading">
         <p class="eyebrow">Street-facing captures</p>
-        <h2>Sample street views</h2>
+        <h2>Latest street views</h2>
         <p>Bounding boxes are normalized issue/object annotations from the vision pass. They are field notes for review, not official infrastructure findings.</p>
       </div>
-      <div class="street-photo-grid">
-        <article class="entry-card">
-          <div class="street-image-wrap">
-            <img src="../syracuse-property-atlas/images/street-quality/002-22-090_299.jpg" alt="Street-facing view northwest from 1301-03 Spring St">
-            <span class="annotation-box issue" style="left:0%;top:68%;width:100%;height:32%;"><span>street cracks</span></span>
-            <span class="annotation-box object" style="left:44%;top:53%;width:56%;height:16%;"><span>sidewalk</span></span>
-            <span class="annotation-box object" style="left:32%;top:0%;width:7%;height:53%;"><span>utility pole</span></span>
-          </div>
-          <div class="entry-body">
-            <span class="direction-pill">Heading 299°</span>
-            <h3>Northwest street view</h3>
-            <p>A residential street scene with cracked asphalt pavement, concrete sidewalks, mature trees, curbs, a utility pole, overhead lines, and a street light.</p>
-            <div class="flag-row"><span>Street quality: 2/5</span><span>Sidewalk quality: 3/5</span><span>4 issue boxes</span><span>8 objects</span></div>
-            <a href="results/">Open exported records</a>
-          </div>
-        </article>
-
-        <article class="entry-card">
-          <div class="street-image-wrap">
-            <img src="../syracuse-property-atlas/images/street-quality/002-22-090_119.jpg" alt="Street-facing view southeast from 1301-03 Spring St">
-            <span class="annotation-box issue" style="left:0%;top:78%;width:100%;height:22%;"><span>rough pavement</span></span>
-            <span class="annotation-box object" style="left:48%;top:44%;width:3%;height:4%;"><span>stop sign</span></span>
-            <span class="annotation-box object" style="left:0%;top:60%;width:70%;height:17%;"><span>sidewalk</span></span>
-          </div>
-          <div class="entry-body">
-            <span class="direction-pill">Heading 119°</span>
-            <h3>Southeast street view</h3>
-            <p>A residential street with mature trees, sidewalks, curbs, utility poles, a street light, a visible stop sign, and general pavement wear.</p>
-            <div class="flag-row"><span>Street quality: 3/5</span><span>Signs quality: 4/5</span><span>2 issue boxes</span><span>12 objects</span></div>
-            <a href="results/">Open exported records</a>
-          </div>
-        </article>
+      <div class="street-photo-grid" id="streetEntries">
+        <article class="entry-card loading-card">Loading latest captures...</article>
       </div>
     </section>
 

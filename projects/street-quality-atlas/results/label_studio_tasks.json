@@ -1,7 +1,7 @@
 [
   {
     "data": {
-      "image": "C:\\Users\\samie\\Projects\\datacuse\\DataCuse\\projects\\syracuse-property-atlas\\images\\street-quality\\002-22-090_299.jpg",
+      "image": "../syracuse-property-atlas/images/street-quality/002-22-090_299.jpg",
       "lot_id": "002-22-090",
       "address": "1301-03 SPRING ST",
       "heading": 298.83175629418724
@@ -183,7 +183,7 @@
   },
   {
     "data": {
-      "image": "C:\\Users\\samie\\Projects\\datacuse\\DataCuse\\projects\\syracuse-property-atlas\\images\\street-quality\\002-22-090_119.jpg",
+      "image": "../syracuse-property-atlas/images/street-quality/002-22-090_119.jpg",
       "lot_id": "002-22-090",
       "address": "1301-03 SPRING ST",
       "heading": 118.83175629418724
@@ -384,6 +384,230 @@
               "height": 18.000000000000004,
               "rectanglelabels": [
                 "street_crack"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "image": "../syracuse-property-atlas/images/street-quality/005-02-080_133.jpg",
+      "lot_id": "005-02-080",
+      "address": "271-73 ROSS PK",
+      "heading": 133.41948678865396
+    },
+    "predictions": [
+      {
+        "result": [
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 0.0,
+              "y": 43.0,
+              "width": 52.0,
+              "height": 25.999999999999996,
+              "rectanglelabels": [
+                "curb"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 52.0,
+              "y": 44.0,
+              "width": 48.0,
+              "height": 13.999999999999996,
+              "rectanglelabels": [
+                "curb"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 0.0,
+              "y": 38.0,
+              "width": 20.0,
+              "height": 6.0,
+              "rectanglelabels": [
+                "sidewalk"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 57.99999999999999,
+              "y": 43.0,
+              "width": 42.00000000000001,
+              "height": 8.000000000000002,
+              "rectanglelabels": [
+                "sidewalk"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 26.0,
+              "y": 21.0,
+              "width": 8.000000000000002,
+              "height": 22.0,
+              "rectanglelabels": [
+                "street_light"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 28.999999999999996,
+              "y": 28.000000000000004,
+              "width": 3.0000000000000027,
+              "height": 4.999999999999999,
+              "rectanglelabels": [
+                "street_sign"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 0.0,
+              "y": 0.0,
+              "width": 18.0,
+              "height": 44.0,
+              "rectanglelabels": [
+                "tree"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 36.0,
+              "y": 5.0,
+              "width": 24.0,
+              "height": 22.000000000000004,
+              "rectanglelabels": [
+                "tree"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 72.0,
+              "y": 0.0,
+              "width": 28.000000000000004,
+              "height": 25.0,
+              "rectanglelabels": [
+                "tree"
+              ]
+            }
+          },
+          {
+            "from_name": "issue",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 0.0,
+              "y": 77.0,
+              "width": 21.0,
+              "height": 21.999999999999996,
+              "rectanglelabels": [
+                "street_crack"
+              ]
+            }
+          },
+          {
+            "from_name": "issue",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 25.0,
+              "y": 70.0,
+              "width": 30.000000000000004,
+              "height": 18.000000000000004,
+              "rectanglelabels": [
+                "street_crack"
+              ]
+            }
+          },
+          {
+            "from_name": "issue",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 70.0,
+              "y": 55.00000000000001,
+              "width": 30.000000000000004,
+              "height": 9.999999999999998,
+              "rectanglelabels": [
+                "street_crack"
+              ]
+            }
+          },
+          {
+            "from_name": "issue",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 70.0,
+              "y": 43.0,
+              "width": 20.000000000000007,
+              "height": 3.9999999999999982,
+              "rectanglelabels": [
+                "sidewalk_crack"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "image": "../syracuse-property-atlas/images/street-quality/005-02-080_313.jpg",
+      "lot_id": "005-02-080",
+      "address": "271-73 ROSS PK",
+      "heading": 313.41948678865396
+    },
+    "predictions": [
+      {
+        "result": [
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 49.6,
+              "y": 18.3,
+              "width": 22.4,
+              "height": 40.8,
+              "rectanglelabels": [
+                "tree|sidewalk"
               ]
             }
           }
