@@ -1,5 +1,123 @@
 [
   {
+    "address": "2524 Lodi St & Bear St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "A large portion of the image is digitally blurred, obscuring parts of the building facade and signage.",
+        "The view is from across the street, limiting close inspection of windows and entryways."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "fair",
+        "siding_or_facade": "poor",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.07,
+            "width": 0.11,
+            "x": 0.19,
+            "y": 0.61
+          },
+          "confidence": "high",
+          "label": "Graffiti",
+          "reason": "Blue graffiti markings on the green wood siding"
+        },
+        {
+          "bbox": {
+            "height": 0.18,
+            "width": 0.5,
+            "x": 0.0,
+            "y": 0.55
+          },
+          "confidence": "high",
+          "label": "Weathered siding",
+          "reason": "Faded and weathered paint on the wood siding"
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Graffiti on the green siding",
+        "Weathered and peeling paint on the exterior wood siding"
+      ],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows a single-story commercial or accessory building with weathered green siding and graffiti, adjacent to a larger commercial building with a partially blurred facade.",
+      "visible_conditions": [
+        "Weathered green wood siding with faded paint",
+        "Blue graffiti on the left side of the green building facade",
+        "Large digital blur obscuring the central portion of the property/signage",
+        "Asphalt parking area and concrete sidewalk with minor weed growth along the edges"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1127",
+        "Median gross rent": "65900",
+        "Median household income": "36639",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "48.6",
+        "Renter-occupied share": "6.7",
+        "Total population": "2133",
+        "Vacancy rate": "16.0"
+      },
+      "name": "Census Tract 5.01; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000501",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Graffiti on the green siding",
+      "Image-only flag: Weathered and peeling paint on the exterior wood siding",
+      "Needs human review"
+    ],
+    "id": 88,
+    "image": "images/parcel-000088.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 72909,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.067645982708896,
+    "lon": -76.16257574862534,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "002-25-210",
+    "published_at": "2026-06-01T12:03:18+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "2524 Lodi St & Bear St"
+  },
+  {
     "address": "2516 Lodi St",
     "ai_analysis": {
       "available": true,
