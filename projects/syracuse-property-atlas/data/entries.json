@@ -1,5 +1,460 @@
 [
   {
+    "address": "406-14 Sunset Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The visible house number '410' on the brick pillar does not precisely match the provided address range '406-14 SUNSET AVE', suggesting the image may not fully represent the intended parcel or may show an adjacent property.",
+        "The full extent of the property, particularly the rear and sides, is not clearly visible.",
+        "The address range '406-14' might imply multiple units or parcels, but the image primarily shows one main structure."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "low",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.05,
+            "width": 0.08,
+            "x": 0.55,
+            "y": 0.65
+          },
+          "confidence": "high",
+          "label": "No Trespassing sign",
+          "reason": "Visible signage on the brick wall."
+        },
+        {
+          "bbox": {
+            "height": 0.05,
+            "width": 0.05,
+            "x": 0.45,
+            "y": 0.68
+          },
+          "confidence": "medium",
+          "label": "For Sale sign",
+          "reason": "Visible signage on the gate."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "A sign that appears to indicate 'FOR SALE' or similar is visible on the gate, which may not be explicitly captured by a 'vacant' record alone."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image displays a property with a light blue-sided structure, a brick retaining wall, and a gated entry, with some visible signage and maintained vegetation.",
+      "visible_conditions": [
+        "Light blue siding on the main structure appears to be in fair condition.",
+        "A white chimney structure is visible.",
+        "Windows on the visible side of the house appear intact.",
+        "A brick retaining wall runs along the street frontage.",
+        "A black metal gate provides access to a set of steps leading towards the structure.",
+        "A white bench is visible behind the gate.",
+        "The front yard area behind the wall contains some maintained plantings and shrubs.",
+        "Dense tree cover is present on the right side and rear of the property.",
+        "A small, dark-roofed structure, possibly a gazebo or well cover, is visible in the right portion of the lot.",
+        "A sign is affixed to the brick wall to the right of the gate.",
+        "Another sign is visible on the gate itself."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "yes"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1127",
+        "Median gross rent": "65900",
+        "Median household income": "36639",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "48.6",
+        "Renter-occupied share": "6.7",
+        "Total population": "2133",
+        "Vacancy rate": "16.0"
+      },
+      "name": "Census Tract 5.01; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000501",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Rental registry: 2 matching records",
+      "Image-only flag: A sign that appears to indicate 'FOR SALE' or similar is visible on the gate, which may not be explicitly captured by a 'vacant' record alone.",
+      "Needs human review"
+    ],
+    "id": 103,
+    "image": "images/parcel-000103.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 94208,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.06665877039246,
+    "lon": -76.16236151008947,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.06693443,
+          "Longitude": -76.16249333,
+          "NeedsRR": "Yes",
+          "ObjectId": 760,
+          "PropertyAddress": "2515 Lodi St",
+          "RR_app_received": 1670371200000,
+          "RR_contact_name": "Rossi PK Ventures, LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "002.-26-04.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1670371200000,
+          "pc_owner": "Joseph Chiarenza",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.06668562,
+          "Longitude": -76.16268022,
+          "NeedsRR": "Yes",
+          "ObjectId": 762,
+          "PropertyAddress": "418 Sunset Ave",
+          "RR_app_received": 1668556800000,
+          "RR_contact_name": "Ramy Guindy, Ramy Guindy",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1673308800000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1673308800000,
+          "RRisValid": "No",
+          "SBL": "002.-26-19.0",
+          "SHAPE": null,
+          "completion_date": 1680048000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1680048000000,
+          "pc_owner": "Ramy Guindy",
+          "valid_until": 1774742400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.06641453,
+          "Longitude": -76.16216343,
+          "ObjectId": 223,
+          "Owner": "Maryann Decook-Vasteno",
+          "OwnerAddress": "135 Turtle St Syracuse, NY 13208",
+          "PropertyAddress": "402 Sunset Ave",
+          "SBL": "002.-26-15.0",
+          "VPR_result": "VPR - Valid / Year 1",
+          "VPR_valid": "Y",
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": "2025-09-29",
+          "completion_type_name": "VPR Cert Issued - Plan B",
+          "neighborhood": "Washington Square",
+          "valid_until": "2026-09-29"
+        }
+      ]
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077306870,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314273,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315256,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319263,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319337,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077322344,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325880,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326053,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326054,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326055,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077328600,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077328601,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331263,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331653,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077334482,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077335585,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336164,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921489,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: residential",
+          "id": 1189921489,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 17,
+        "historic": {},
+        "landuse": {
+          "residential": 1
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "002-26-181",
+    "published_at": "2026-06-02T01:03:04+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue",
+      "vacancy signs visible"
+    ],
+    "title": "406-14 Sunset Ave"
+  },
+  {
     "address": "402 Sunset Ave",
     "ai_analysis": {
       "available": true,
