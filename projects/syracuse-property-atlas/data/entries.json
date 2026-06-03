@@ -1,5 +1,207 @@
 [
   {
+    "address": "420 Sunset Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "A large tree in the foreground partially obstructs the view of the front facade and roof."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "unclear",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.16,
+            "width": 0.33,
+            "x": 0.37,
+            "y": 0.61
+          },
+          "confidence": "high",
+          "label": "Overgrown vegetation",
+          "reason": "Weeds and bushes growing densely along the front foundation of the house."
+        },
+        {
+          "bbox": {
+            "height": 0.11,
+            "width": 0.07,
+            "x": 0.21,
+            "y": 0.85
+          },
+          "confidence": "medium",
+          "label": "Debris",
+          "reason": "A black bag or container sitting on the grass near the tree."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor vegetation overgrowth along the foundation",
+        "A black bag or debris left near the curb"
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential building with light-colored siding, partially obscured by a large tree in the foreground, showing minor vegetation overgrowth near the foundation.",
+      "visible_conditions": [
+        "Light-colored siding appears intact but shows some weathering near the base",
+        "Overgrown weeds and vegetation are visible along the front foundation",
+        "An open entryway with brick steps is visible on the left side",
+        "A black bag is present near the base of the large tree in the foreground"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1127",
+        "Median gross rent": "65900",
+        "Median household income": "36639",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "48.6",
+        "Renter-occupied share": "6.7",
+        "Total population": "2133",
+        "Vacancy rate": "16.0"
+      },
+      "name": "Census Tract 5.01; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000501",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Rental registry: 3 matching records",
+      "Image-only flag: Minor vegetation overgrowth along the foundation",
+      "Image-only flag: A black bag or debris left near the curb"
+    ],
+    "id": 105,
+    "image": "images/parcel-000105.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 109279,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0667659809063,
+    "lon": -76.16283796442214,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.06674424,
+          "Longitude": -76.16286531,
+          "NeedsRR": "Yes",
+          "ObjectId": 764,
+          "PropertyAddress": "420 Sunset Ave",
+          "RR_app_received": 1760054400000,
+          "RR_contact_name": "Christopher Knapp",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1761782400000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1761782400000,
+          "RRisValid": "Yes",
+          "SBL": "002.-26-20.0",
+          "SHAPE": null,
+          "completion_date": 1763510400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1761782400000,
+          "pc_owner": "Christopher Knapp",
+          "valid_until": 1858204800000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.06693443,
+          "Longitude": -76.16249333,
+          "NeedsRR": "Yes",
+          "ObjectId": 760,
+          "PropertyAddress": "2515 Lodi St",
+          "RR_app_received": 1670371200000,
+          "RR_contact_name": "Rossi PK Ventures, LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "002.-26-04.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1670371200000,
+          "pc_owner": "Joseph Chiarenza",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.06668562,
+          "Longitude": -76.16268022,
+          "NeedsRR": "Yes",
+          "ObjectId": 762,
+          "PropertyAddress": "418 Sunset Ave",
+          "RR_app_received": 1668556800000,
+          "RR_contact_name": "Ramy Guindy, Ramy Guindy",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1673308800000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1673308800000,
+          "RRisValid": "No",
+          "SBL": "002.-26-19.0",
+          "SHAPE": null,
+          "completion_date": 1680048000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1680048000000,
+          "pc_owner": "Ramy Guindy",
+          "valid_until": 1774742400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.0668794,
+          "Longitude": -76.16316276,
+          "ObjectId": 994,
+          "Owner": "Ronnie Machuca",
+          "OwnerAddress": "347 Hillside St Syracuse, NY 13208",
+          "PropertyAddress": "424 Sunset Ave & Bear St",
+          "SBL": "002.-26-22.0",
+          "VPR_result": "VPR - Valid / Year 1",
+          "VPR_valid": "Y",
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": "2025-09-24",
+          "completion_type_name": "VPR Cert Issued - Plan A",
+          "neighborhood": "Washington Square",
+          "valid_until": "2026-09-24"
+        }
+      ]
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: Remote end closed connection without response"
+    },
+    "parcel_key": "002-26-200",
+    "published_at": "2026-06-03T10:25:14+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "420 Sunset Ave"
+  },
+  {
     "address": "418 Sunset Ave",
     "ai_analysis": {
       "available": true,
