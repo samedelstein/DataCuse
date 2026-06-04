@@ -1,5 +1,409 @@
 [
   {
+    "address": "422 Sunset Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view of the ground level is heavily obstructed by a parked vehicle in the foreground.",
+        "It is unclear if the adjacent building on the right is part of the subject parcel or a neighboring property."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "unclear",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "major",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "poor"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.75,
+            "width": 0.75,
+            "x": 0.15,
+            "y": 0.0
+          },
+          "confidence": "high",
+          "label": "vegetation overgrowth",
+          "reason": "Extensive unmaintained trees and brush covering the parcel area"
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "The lot features significant vegetation overgrowth which may require maintenance."
+      ],
+      "property_type_guess": "vacant_lot",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows a heavily vegetated, seemingly vacant lot with dense trees and brush, partially obscured by a parked vehicle in the foreground.",
+      "visible_conditions": [
+        "Dense, mature trees and thick undergrowth cover the lot.",
+        "A portion of a light-colored building exterior is visible on the far right.",
+        "A detour road sign is visible on the left side of the frame.",
+        "A silver sedan is parked in the foreground, obstructing the lower portion of the lot."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1127",
+        "Median gross rent": "65900",
+        "Median household income": "36639",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "48.6",
+        "Renter-occupied share": "6.7",
+        "Total population": "2133",
+        "Vacancy rate": "16.0"
+      },
+      "name": "Census Tract 5.01; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000501",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Rental registry: 3 matching records",
+      "Image-only flag: The lot features significant vegetation overgrowth which may require maintenance."
+    ],
+    "id": 106,
+    "image": "images/parcel-000106.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 129626,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0668668628962,
+    "lon": -76.16299300010088,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.06711328,
+          "Longitude": -76.16297008,
+          "NeedsRR": "Yes",
+          "ObjectId": 758,
+          "PropertyAddress": "2523 Lodi St & Bear St",
+          "RR_app_received": 1718668800000,
+          "RR_contact_name": "Chi Kim Nguyen",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "002.-26-01.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1730332800000,
+          "pc_owner": "Eugenie Niyaramahuku",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.06668562,
+          "Longitude": -76.16268022,
+          "NeedsRR": "Yes",
+          "ObjectId": 762,
+          "PropertyAddress": "418 Sunset Ave",
+          "RR_app_received": 1668556800000,
+          "RR_contact_name": "Ramy Guindy, Ramy Guindy",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1673308800000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1673308800000,
+          "RRisValid": "No",
+          "SBL": "002.-26-19.0",
+          "SHAPE": null,
+          "completion_date": 1680048000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1680048000000,
+          "pc_owner": "Ramy Guindy",
+          "valid_until": 1774742400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.06674424,
+          "Longitude": -76.16286531,
+          "NeedsRR": "Yes",
+          "ObjectId": 764,
+          "PropertyAddress": "420 Sunset Ave",
+          "RR_app_received": 1760054400000,
+          "RR_contact_name": "Christopher Knapp",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1761782400000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1761782400000,
+          "RRisValid": "Yes",
+          "SBL": "002.-26-20.0",
+          "SHAPE": null,
+          "completion_date": 1763510400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1761782400000,
+          "pc_owner": "Christopher Knapp",
+          "valid_until": 1858204800000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.0668794,
+          "Longitude": -76.16316276,
+          "ObjectId": 994,
+          "Owner": "Ronnie Machuca",
+          "OwnerAddress": "347 Hillside St Syracuse, NY 13208",
+          "PropertyAddress": "424 Sunset Ave & Bear St",
+          "SBL": "002.-26-22.0",
+          "VPR_result": "VPR - Valid / Year 1",
+          "VPR_valid": "Y",
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": "2025-09-24",
+          "completion_type_name": "VPR Cert Issued - Plan A",
+          "neighborhood": "Washington Square",
+          "valid_until": "2026-09-24"
+        }
+      ]
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304186,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077306870,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314273,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315256,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077316284,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077316285,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319337,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325880,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326053,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326054,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326055,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077335585,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921489,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1353784590,
+          "landuse": "brownfield",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "brownfield"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: residential",
+          "id": 1189921489,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: brownfield",
+          "id": 1353784590,
+          "label": "landuse: brownfield",
+          "tags": {
+            "landuse": "brownfield"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 12,
+        "historic": {},
+        "landuse": {
+          "brownfield": 1,
+          "residential": 1
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "002-26-210",
+    "published_at": "2026-06-03T23:50:52+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "422 Sunset Ave"
+  },
+  {
     "address": "420 Sunset Ave",
     "ai_analysis": {
       "available": true,
