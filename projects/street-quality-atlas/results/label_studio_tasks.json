@@ -614,5 +614,173 @@
         ]
       }
     ]
+  },
+  {
+    "data": {
+      "image": "../syracuse-property-atlas/images/street-quality/002-22-100_299.jpg",
+      "lot_id": "002-22-100",
+      "address": "517 TURTLE ST & SPRING ST",
+      "heading": 298.83175629418724
+    },
+    "predictions": [
+      {
+        "result": [
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 28.999999999999996,
+              "y": 30.0,
+              "width": 6.0,
+              "height": 21.000000000000004,
+              "rectanglelabels": [
+                "utility_pole"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 60.0,
+              "y": 50.0,
+              "width": 39.0,
+              "height": 12.0,
+              "rectanglelabels": [
+                "sidewalk"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 55.00000000000001,
+              "y": 49.0,
+              "width": 43.99999999999999,
+              "height": 31.000000000000007,
+              "rectanglelabels": [
+                "curb"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 55.00000000000001,
+              "y": 0.0,
+              "width": 44.99999999999999,
+              "height": 55.00000000000001,
+              "rectanglelabels": [
+                "tree"
+              ]
+            }
+          },
+          {
+            "from_name": "issue",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 20.0,
+              "y": 50.0,
+              "width": 60.00000000000001,
+              "height": 25.0,
+              "rectanglelabels": [
+                "street_crack"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "image": "../syracuse-property-atlas/images/street-quality/002-22-100_119.jpg",
+      "lot_id": "002-22-100",
+      "address": "517 TURTLE ST & SPRING ST",
+      "heading": 118.83175629418724
+    },
+    "predictions": [
+      {
+        "result": [
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 11.0,
+              "y": 35.0,
+              "width": 6.999999999999999,
+              "height": 21.999999999999996,
+              "rectanglelabels": [
+                "street_sign"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 59.0,
+              "y": 30.0,
+              "width": 5.000000000000004,
+              "height": 16.000000000000004,
+              "rectanglelabels": [
+                "utility_pole"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 19.0,
+              "y": 15.0,
+              "width": 28.999999999999996,
+              "height": 31.000000000000007,
+              "rectanglelabels": [
+                "tree"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 0.0,
+              "y": 51.0,
+              "width": 12.0,
+              "height": 7.9999999999999964,
+              "rectanglelabels": [
+                "sidewalk"
+              ]
+            }
+          },
+          {
+            "from_name": "issue",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 30.0,
+              "y": 48.0,
+              "width": 69.0,
+              "height": 20.000000000000007,
+              "rectanglelabels": [
+                "rough_pavement"
+              ]
+            }
+          }
+        ]
+      }
+    ]
   }
 ]

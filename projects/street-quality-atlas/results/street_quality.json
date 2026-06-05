@@ -1,12 +1,187 @@
 {
   "generated_at": null,
   "totals": {
-    "parcels": 2,
-    "images": 4,
-    "objects": 30,
-    "issues": 10
+    "parcels": 3,
+    "images": 6,
+    "objects": 38,
+    "issues": 12
   },
   "parcels": [
+    {
+      "lot_id": "002-22-100",
+      "address": "517 TURTLE ST & SPRING ST",
+      "lat": 43.07136953083629,
+      "lon": -76.15837073744753,
+      "images": [
+        {
+          "id": 8,
+          "lot_id": "002-22-100",
+          "address": "517 TURTLE ST & SPRING ST",
+          "lat": 43.07136953083629,
+          "lon": -76.15837073744753,
+          "heading": 118.83175629418724,
+          "image_path": "../syracuse-property-atlas/images/street-quality/002-22-100_119.jpg",
+          "created_at": "2026-06-05 10:44:52",
+          "summary": "A residential intersection featuring a street sign, utility poles, and mature trees with minor roadway wear.",
+          "street_quality": 3,
+          "sidewalk_quality": 2,
+          "curb_quality": 2,
+          "signs_quality": 4,
+          "model_provider": "gemini",
+          "model_name": "gemini-3.5-flash",
+          "objects": [
+            {
+              "id": 48,
+              "image_id": 8,
+              "label": "street_sign",
+              "confidence": 0.95,
+              "bbox_xmin": 0.11,
+              "bbox_ymin": 0.35,
+              "bbox_xmax": 0.18,
+              "bbox_ymax": 0.57,
+              "notes": "Spring St / Turtle St signpost",
+              "created_at": "2026-06-05 10:45:11"
+            },
+            {
+              "id": 49,
+              "image_id": 8,
+              "label": "utility_pole",
+              "confidence": 0.9,
+              "bbox_xmin": 0.59,
+              "bbox_ymin": 0.3,
+              "bbox_xmax": 0.64,
+              "bbox_ymax": 0.46,
+              "notes": "Wooden utility pole with wires",
+              "created_at": "2026-06-05 10:45:11"
+            },
+            {
+              "id": 50,
+              "image_id": 8,
+              "label": "tree",
+              "confidence": 0.95,
+              "bbox_xmin": 0.19,
+              "bbox_ymin": 0.15,
+              "bbox_xmax": 0.48,
+              "bbox_ymax": 0.46,
+              "notes": "Large mature tree near corner",
+              "created_at": "2026-06-05 10:45:11"
+            },
+            {
+              "id": 51,
+              "image_id": 8,
+              "label": "sidewalk",
+              "confidence": 0.8,
+              "bbox_xmin": 0.0,
+              "bbox_ymin": 0.51,
+              "bbox_xmax": 0.12,
+              "bbox_ymax": 0.59,
+              "notes": "Sidewalk segment on left corner",
+              "created_at": "2026-06-05 10:45:11"
+            }
+          ],
+          "issues": [
+            {
+              "id": 21,
+              "image_id": 8,
+              "category": "rough_pavement",
+              "severity": 2,
+              "bbox_xmin": 0.3,
+              "bbox_ymin": 0.48,
+              "bbox_xmax": 0.99,
+              "bbox_ymax": 0.68,
+              "notes": "Minor wear across intersection pavement",
+              "created_at": "2026-06-05 10:45:11"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "lot_id": "002-22-100",
+          "address": "517 TURTLE ST & SPRING ST",
+          "lat": 43.07136953083629,
+          "lon": -76.15837073744753,
+          "heading": 298.83175629418724,
+          "image_path": "../syracuse-property-atlas/images/street-quality/002-22-100_299.jpg",
+          "created_at": "2026-06-05 10:44:52",
+          "summary": "A suburban residential street featuring pavement cracking, lined with mature trees, sidewalks, and utility poles.",
+          "street_quality": 3,
+          "sidewalk_quality": 4,
+          "curb_quality": 3,
+          "signs_quality": 3,
+          "model_provider": "gemini",
+          "model_name": "gemini-3.5-flash",
+          "objects": [
+            {
+              "id": 44,
+              "image_id": 7,
+              "label": "utility_pole",
+              "confidence": 0.95,
+              "bbox_xmin": 0.29,
+              "bbox_ymin": 0.3,
+              "bbox_xmax": 0.35,
+              "bbox_ymax": 0.51,
+              "notes": "Wooden utility pole on left side",
+              "created_at": "2026-06-05 10:45:02"
+            },
+            {
+              "id": 45,
+              "image_id": 7,
+              "label": "sidewalk",
+              "confidence": 0.9,
+              "bbox_xmin": 0.6,
+              "bbox_ymin": 0.5,
+              "bbox_xmax": 0.99,
+              "bbox_ymax": 0.62,
+              "notes": "Concrete sidewalk on right side",
+              "created_at": "2026-06-05 10:45:02"
+            },
+            {
+              "id": 46,
+              "image_id": 7,
+              "label": "curb",
+              "confidence": 0.85,
+              "bbox_xmin": 0.55,
+              "bbox_ymin": 0.49,
+              "bbox_xmax": 0.99,
+              "bbox_ymax": 0.8,
+              "notes": "Low concrete curb line",
+              "created_at": "2026-06-05 10:45:02"
+            },
+            {
+              "id": 47,
+              "image_id": 7,
+              "label": "tree",
+              "confidence": 0.9,
+              "bbox_xmin": 0.55,
+              "bbox_ymin": 0.0,
+              "bbox_xmax": 1.0,
+              "bbox_ymax": 0.55,
+              "notes": "Large mature tree canopy on right",
+              "created_at": "2026-06-05 10:45:02"
+            }
+          ],
+          "issues": [
+            {
+              "id": 20,
+              "image_id": 7,
+              "category": "street_crack",
+              "severity": 2,
+              "bbox_xmin": 0.2,
+              "bbox_ymin": 0.5,
+              "bbox_xmax": 0.8,
+              "bbox_ymax": 0.75,
+              "notes": "Moderate longitudinal and block cracking",
+              "created_at": "2026-06-05 10:45:02"
+            }
+          ]
+        }
+      ],
+      "image_count": 2,
+      "object_count": 8,
+      "issue_count": 2,
+      "latest_created_at": "2026-06-05 10:44:52",
+      "summary": "A residential intersection featuring a street sign, utility poles, and mature trees with minor roadway wear."
+    },
     {
       "lot_id": "005-02-080",
       "address": "271-73 ROSS PK",
@@ -1160,6 +1335,168 @@
         }
       ],
       "issues": []
+    },
+    {
+      "id": 7,
+      "lot_id": "002-22-100",
+      "address": "517 TURTLE ST & SPRING ST",
+      "lat": 43.07136953083629,
+      "lon": -76.15837073744753,
+      "heading": 298.83175629418724,
+      "image_path": "../syracuse-property-atlas/images/street-quality/002-22-100_299.jpg",
+      "created_at": "2026-06-05 10:44:52",
+      "summary": "A suburban residential street featuring pavement cracking, lined with mature trees, sidewalks, and utility poles.",
+      "street_quality": 3,
+      "sidewalk_quality": 4,
+      "curb_quality": 3,
+      "signs_quality": 3,
+      "model_provider": "gemini",
+      "model_name": "gemini-3.5-flash",
+      "objects": [
+        {
+          "id": 44,
+          "image_id": 7,
+          "label": "utility_pole",
+          "confidence": 0.95,
+          "bbox_xmin": 0.29,
+          "bbox_ymin": 0.3,
+          "bbox_xmax": 0.35,
+          "bbox_ymax": 0.51,
+          "notes": "Wooden utility pole on left side",
+          "created_at": "2026-06-05 10:45:02"
+        },
+        {
+          "id": 45,
+          "image_id": 7,
+          "label": "sidewalk",
+          "confidence": 0.9,
+          "bbox_xmin": 0.6,
+          "bbox_ymin": 0.5,
+          "bbox_xmax": 0.99,
+          "bbox_ymax": 0.62,
+          "notes": "Concrete sidewalk on right side",
+          "created_at": "2026-06-05 10:45:02"
+        },
+        {
+          "id": 46,
+          "image_id": 7,
+          "label": "curb",
+          "confidence": 0.85,
+          "bbox_xmin": 0.55,
+          "bbox_ymin": 0.49,
+          "bbox_xmax": 0.99,
+          "bbox_ymax": 0.8,
+          "notes": "Low concrete curb line",
+          "created_at": "2026-06-05 10:45:02"
+        },
+        {
+          "id": 47,
+          "image_id": 7,
+          "label": "tree",
+          "confidence": 0.9,
+          "bbox_xmin": 0.55,
+          "bbox_ymin": 0.0,
+          "bbox_xmax": 1.0,
+          "bbox_ymax": 0.55,
+          "notes": "Large mature tree canopy on right",
+          "created_at": "2026-06-05 10:45:02"
+        }
+      ],
+      "issues": [
+        {
+          "id": 20,
+          "image_id": 7,
+          "category": "street_crack",
+          "severity": 2,
+          "bbox_xmin": 0.2,
+          "bbox_ymin": 0.5,
+          "bbox_xmax": 0.8,
+          "bbox_ymax": 0.75,
+          "notes": "Moderate longitudinal and block cracking",
+          "created_at": "2026-06-05 10:45:02"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "lot_id": "002-22-100",
+      "address": "517 TURTLE ST & SPRING ST",
+      "lat": 43.07136953083629,
+      "lon": -76.15837073744753,
+      "heading": 118.83175629418724,
+      "image_path": "../syracuse-property-atlas/images/street-quality/002-22-100_119.jpg",
+      "created_at": "2026-06-05 10:44:52",
+      "summary": "A residential intersection featuring a street sign, utility poles, and mature trees with minor roadway wear.",
+      "street_quality": 3,
+      "sidewalk_quality": 2,
+      "curb_quality": 2,
+      "signs_quality": 4,
+      "model_provider": "gemini",
+      "model_name": "gemini-3.5-flash",
+      "objects": [
+        {
+          "id": 48,
+          "image_id": 8,
+          "label": "street_sign",
+          "confidence": 0.95,
+          "bbox_xmin": 0.11,
+          "bbox_ymin": 0.35,
+          "bbox_xmax": 0.18,
+          "bbox_ymax": 0.57,
+          "notes": "Spring St / Turtle St signpost",
+          "created_at": "2026-06-05 10:45:11"
+        },
+        {
+          "id": 49,
+          "image_id": 8,
+          "label": "utility_pole",
+          "confidence": 0.9,
+          "bbox_xmin": 0.59,
+          "bbox_ymin": 0.3,
+          "bbox_xmax": 0.64,
+          "bbox_ymax": 0.46,
+          "notes": "Wooden utility pole with wires",
+          "created_at": "2026-06-05 10:45:11"
+        },
+        {
+          "id": 50,
+          "image_id": 8,
+          "label": "tree",
+          "confidence": 0.95,
+          "bbox_xmin": 0.19,
+          "bbox_ymin": 0.15,
+          "bbox_xmax": 0.48,
+          "bbox_ymax": 0.46,
+          "notes": "Large mature tree near corner",
+          "created_at": "2026-06-05 10:45:11"
+        },
+        {
+          "id": 51,
+          "image_id": 8,
+          "label": "sidewalk",
+          "confidence": 0.8,
+          "bbox_xmin": 0.0,
+          "bbox_ymin": 0.51,
+          "bbox_xmax": 0.12,
+          "bbox_ymax": 0.59,
+          "notes": "Sidewalk segment on left corner",
+          "created_at": "2026-06-05 10:45:11"
+        }
+      ],
+      "issues": [
+        {
+          "id": 21,
+          "image_id": 8,
+          "category": "rough_pavement",
+          "severity": 2,
+          "bbox_xmin": 0.3,
+          "bbox_ymin": 0.48,
+          "bbox_xmax": 0.99,
+          "bbox_ymax": 0.68,
+          "notes": "Minor wear across intersection pavement",
+          "created_at": "2026-06-05 10:45:11"
+        }
+      ]
     }
   ]
 }
