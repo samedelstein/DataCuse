@@ -1,5 +1,115 @@
 [
   {
+    "address": "715 Second North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The roof is largely obscured due to the steep angle of the street-level image.",
+        "A vehicle in the foreground partially limits the view of the lower front yard area."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "unclear",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story light-colored residential building with two front entrances, a paved driveway, and mature front landscaping.",
+      "visible_conditions": [
+        "Light-colored siding appears intact with minor weathering.",
+        "Windows appear intact and functional from the street view.",
+        "Two separate front entryways are visible, suggesting a multi-unit or two-family layout.",
+        "Front yard features mature shrubs that partially obscure the lower level facade."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record"
+    ],
+    "id": 113,
+    "image": "images/parcel-000113.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 80866,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07596463461215,
+    "lon": -76.16204932057164,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07599555,
+          "Longitude": -76.16219701,
+          "NeedsRR": "Yes",
+          "ObjectId": 766,
+          "PropertyAddress": "717 Second North St",
+          "RR_app_received": 1708905600000,
+          "RR_contact_name": "Japan Soe",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1710201600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1710201600000,
+          "RRisValid": "Yes",
+          "SBL": "003.-01-06.0",
+          "SHAPE": null,
+          "completion_date": 1713312000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1711670400000,
+          "pc_owner": "Japan Soe",
+          "valid_until": 1808006400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-01-070",
+    "published_at": "2026-06-06T20:03:03+00:00",
+    "review_reasons": [],
+    "title": "715 Second North St"
+  },
+  {
     "address": "717 Second North St",
     "ai_analysis": {
       "available": true,
