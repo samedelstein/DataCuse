@@ -1,5 +1,562 @@
 [
   {
+    "address": "603 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The ground floor windows are covered, preventing a view of the interior or potential window damage behind the panels."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.15,
+            "width": 0.09,
+            "x": 0.41,
+            "y": 0.51
+          },
+          "confidence": "high",
+          "label": "covered storefront window",
+          "reason": "Large window is completely covered with an opaque white panel"
+        },
+        {
+          "bbox": {
+            "height": 0.15,
+            "width": 0.09,
+            "x": 0.56,
+            "y": 0.51
+          },
+          "confidence": "high",
+          "label": "covered storefront window",
+          "reason": "Large window is completely covered with an opaque white panel"
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "The large ground-floor display windows are covered with opaque white panels, which may indicate vacancy or temporary boarding."
+      ],
+      "property_type_guess": "mixed_use",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A multi-story mixed-use building with a brick ground-floor facade and vinyl-sided upper floors, featuring covered ground-floor storefront windows.",
+      "visible_conditions": [
+        "Ground floor storefront windows are covered with solid white panels.",
+        "Upper floor double-hung windows appear intact.",
+        "Brick veneer on the ground floor and vinyl siding on upper floors appear to be in fair condition.",
+        "Concrete steps lead to the central entrance."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "yes",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 4 matching records",
+      "Image-only flag: The large ground-floor display windows are covered with opaque white panels, which may indicate vacancy or temporary boarding."
+    ],
+    "id": 124,
+    "image": "images/parcel-000124.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 74132,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07484863927176,
+    "lon": -76.16176870878196,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07483958,
+          "Longitude": -76.16179105,
+          "NeedsRR": "Yes",
+          "ObjectId": 770,
+          "PropertyAddress": "603 Wolf St",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-01-20.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Omar Plaza, LLC",
+          "valid_until": null,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07489557,
+          "Longitude": -76.16193058,
+          "NeedsRR": "Yes",
+          "ObjectId": 772,
+          "PropertyAddress": "1604 First North St",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-01-22.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Joseph Chiarenza",
+          "valid_until": null,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07493311,
+          "Longitude": -76.16202416,
+          "NeedsRR": "Yes",
+          "ObjectId": 774,
+          "PropertyAddress": "1606 First North St",
+          "RR_app_received": 1674000000000,
+          "RR_contact_name": "Rosene Bordonaro",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-01-23.0",
+          "SHAPE": null,
+          "completion_date": 1674000000000,
+          "completion_type_name": "Family Based Exemption Granted",
+          "inspect_period": 1674000000000,
+          "pc_owner": "Rosene Bordonaro",
+          "valid_until": 1768694400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07461288,
+          "Longitude": -76.16140434,
+          "NeedsRR": "Yes",
+          "ObjectId": 856,
+          "PropertyAddress": "600 Wolf St & First North St",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-13-01.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Omar Plaza, LLC",
+          "valid_until": null,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": "fast_food",
+          "building": null,
+          "historic": null,
+          "id": 5189770701,
+          "landuse": null,
+          "name": "Uncle Chubby's",
+          "shop": null,
+          "tags": {
+            "amenity": "fast_food",
+            "contact:phone": "+1 315 472 2522",
+            "cuisine": "pizza",
+            "delivery": "yes",
+            "fixme": "resurvey for address",
+            "name": "Uncle Chubby's",
+            "takeaway": "yes"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5189770702,
+          "landuse": null,
+          "name": "Sam's Super Saver",
+          "shop": "convenience",
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "613",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Wolf Street",
+            "name": "Sam's Super Saver",
+            "nysgissam:nysaddresspointid": "ONON026868",
+            "opening_hours": "Mo-Su 08:00-22:00; Fr,Sa 08:00-24:00",
+            "shop": "convenience"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5189770703,
+          "landuse": null,
+          "name": "Go Smart Wireless Shop",
+          "shop": "mobile_phone",
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "607",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Wolf Street",
+            "contact:phone": "+1 315 373 0159",
+            "name": "Go Smart Wireless Shop",
+            "nysgissam:nysaddresspointid": "ONON158795",
+            "shop": "mobile_phone"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5189770704,
+          "landuse": null,
+          "name": "Tito's Crispy Cuts Barbershop",
+          "shop": "hairdresser",
+          "tags": {
+            "name": "Tito's Crispy Cuts Barbershop",
+            "shop": "hairdresser"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5189770706,
+          "landuse": null,
+          "name": "\"Blessings\" In Disguise",
+          "shop": "yes",
+          "tags": {
+            "contact:phone": "+1 315 885 1035",
+            "name": "\"Blessings\" In Disguise",
+            "shop": "yes"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077301636,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302003,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305486,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305500,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309892,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311936,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312413,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312469,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314870,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315775,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077318230,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077318231,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077320527,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323611,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326398,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "amenity: fast_food",
+          "id": 5189770701,
+          "label": "Uncle Chubby's",
+          "tags": {
+            "amenity": "fast_food",
+            "name": "Uncle Chubby's"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: convenience",
+          "id": 5189770702,
+          "label": "Sam's Super Saver",
+          "tags": {
+            "name": "Sam's Super Saver",
+            "shop": "convenience"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: mobile_phone",
+          "id": 5189770703,
+          "label": "Go Smart Wireless Shop",
+          "tags": {
+            "name": "Go Smart Wireless Shop",
+            "shop": "mobile_phone"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: hairdresser",
+          "id": 5189770704,
+          "label": "Tito's Crispy Cuts Barbershop",
+          "tags": {
+            "name": "Tito's Crispy Cuts Barbershop",
+            "shop": "hairdresser"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: yes",
+          "id": 5189770706,
+          "label": "\"Blessings\" In Disguise",
+          "tags": {
+            "name": "\"Blessings\" In Disguise",
+            "shop": "yes"
+          },
+          "type": "node"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {
+          "fast_food": 1
+        },
+        "buildings": 15,
+        "historic": {},
+        "landuse": {},
+        "named_features": 5,
+        "shops": {
+          "convenience": 1,
+          "hairdresser": 1,
+          "mobile_phone": 1,
+          "yes": 1
+        }
+      }
+    },
+    "parcel_key": "003-01-200",
+    "published_at": "2026-06-07T07:03:04+00:00",
+    "review_reasons": [
+      "Possible image-only issue",
+      "boarded windows or doors"
+    ],
+    "title": "603 Wolf St"
+  },
+  {
     "address": "605 Wolf St",
     "ai_analysis": {
       "available": true,
