@@ -1,5 +1,450 @@
 [
   {
+    "address": "620 Hiawatha Blvd E",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Only the front facade is clearly visible from the street view; the sides and rear of the structure are largely obstructed."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential building with gray siding and an enclosed front porch, appearing in generally fair to good condition.",
+      "visible_conditions": [
+        "Gray siding appears intact with no major damage visible.",
+        "Enclosed front porch features a row of windows with red curtains.",
+        "Shingled roof appears structurally sound from this angle.",
+        "Small landscaped bed in front of the porch appears maintained."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 3 matching records"
+    ],
+    "id": 134,
+    "image": "images/parcel-000134.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 70838,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.076709533474805,
+    "lon": -76.16146578150887,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07671893,
+          "Longitude": -76.16153449,
+          "NeedsRR": "Yes",
+          "ObjectId": 781,
+          "PropertyAddress": "620 Hiawatha Blvd E",
+          "RR_app_received": 1714089600000,
+          "RR_contact_name": "Palmisano Warehousing Inc",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1716940800000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1716854400000,
+          "RRisValid": "No",
+          "SBL": "003.-02-02.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1734048000000,
+          "pc_owner": "Palmisano Warehousing Inc",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07637466,
+          "Longitude": -76.1615866,
+          "NeedsRR": "Yes",
+          "ObjectId": 806,
+          "PropertyAddress": "714 Second North St",
+          "RR_app_received": 1586217600000,
+          "RR_contact_name": "Thomas House",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1586736000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-02-25.0",
+          "SHAPE": null,
+          "completion_date": 1586995200000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1586736000000,
+          "pc_owner": "LSBF, LLC",
+          "valid_until": 1681689600000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07642076,
+          "Longitude": -76.16170152,
+          "NeedsRR": "Yes",
+          "ObjectId": 808,
+          "PropertyAddress": "716 Second North St",
+          "RR_app_received": 1718928000000,
+          "RR_contact_name": "Nina Phimmahom",
+          "RR_ext_insp_fail": 1690329600000,
+          "RR_ext_insp_pass": 1715817600000,
+          "RR_int_insp_fail": 1690329600000,
+          "RR_int_insp_pass": 1715817600000,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-26.0",
+          "SHAPE": null,
+          "completion_date": 1718928000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1717459200000,
+          "pc_owner": "Nina Phimmahom",
+          "valid_until": 1813622400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300622,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300623,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077301791,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309523,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309822,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309823,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311021,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311837,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311866,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311867,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324246,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324277,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326820,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077327751,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331419,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331420,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336941,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336942,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189609078,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771112,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: industrial",
+          "id": 1189609078,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: residential",
+          "id": 1189771112,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 18,
+        "historic": {},
+        "landuse": {
+          "industrial": 1,
+          "residential": 1
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-02-020",
+    "published_at": "2026-06-07T21:02:57+00:00",
+    "review_reasons": [],
+    "title": "620 Hiawatha Blvd E"
+  },
+  {
     "address": "616 Hiawatha Blvd E",
     "ai_analysis": {
       "available": true,
