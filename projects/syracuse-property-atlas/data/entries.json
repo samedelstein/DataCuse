@@ -1,5 +1,490 @@
 [
   {
+    "address": "1610 First North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "A large tree in the foreground partially obstructs the view of the left side of the house and roof."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.18,
+            "width": 0.28,
+            "x": 0.56,
+            "y": 0.32
+          },
+          "confidence": "medium",
+          "label": "weathered siding",
+          "reason": "Slight discoloration and weathering visible on the upper white siding"
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor weathering and discoloration on the upper-level siding."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential building featuring a brick-faced enclosed front porch and white upper siding, partially obscured by a large tree in the foreground.",
+      "visible_conditions": [
+        "Enclosed front porch with a brick lower half and multiple windows",
+        "White siding on the second story showing minor weathering",
+        "Paved driveway on the left side of the property",
+        "Two waste bins positioned near the front porch",
+        "Large tree in the foreground partially obstructing the upper left view of the house"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 4 matching records",
+      "Image-only flag: Minor weathering and discoloration on the upper-level siding."
+    ],
+    "id": 129,
+    "image": "images/parcel-000129.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 126631,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.075175139555746,
+    "lon": -76.16230808239024,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07511904,
+          "Longitude": -76.16235897,
+          "NeedsRR": "Yes",
+          "ObjectId": 776,
+          "PropertyAddress": "1610 First North St",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-01-25.1",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Advance Concrete Products LLC",
+          "valid_until": null,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07493311,
+          "Longitude": -76.16202416,
+          "NeedsRR": "Yes",
+          "ObjectId": 774,
+          "PropertyAddress": "1606 First North St",
+          "RR_app_received": 1674000000000,
+          "RR_contact_name": "Rosene Bordonaro",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-01-23.0",
+          "SHAPE": null,
+          "completion_date": 1674000000000,
+          "completion_type_name": "Family Based Exemption Granted",
+          "inspect_period": 1674000000000,
+          "pc_owner": "Rosene Bordonaro",
+          "valid_until": 1768694400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07519248,
+          "Longitude": -76.16254201,
+          "NeedsRR": "Yes",
+          "ObjectId": 778,
+          "PropertyAddress": "1614 First North St",
+          "RR_app_received": 1779062400000,
+          "RR_contact_name": "EBRU ASLAN ONEN",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-01-26.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1780272000000,
+          "pc_owner": "EBRU ASLAN ONEN",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07526698,
+          "Longitude": -76.16273938,
+          "NeedsRR": "Yes",
+          "ObjectId": 779,
+          "PropertyAddress": "1618 First North St",
+          "RR_app_received": null,
+          "RR_contact_name": "Demauro Holdings, LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1667433600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1667433600000,
+          "RRisValid": "Yes",
+          "SBL": "003.-01-28.0",
+          "SHAPE": null,
+          "completion_date": 1721952000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1710201600000,
+          "pc_owner": "Demauro Holdings, LLC",
+          "valid_until": 1816646400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5189770714,
+          "landuse": null,
+          "name": "New Millenium Auto Brokers",
+          "shop": "car",
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "500",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Hiawatha Boulevard East",
+            "contact:phone": "+1 315 471 9467",
+            "name": "New Millenium Auto Brokers",
+            "nysgissam:nysaddresspointid": "ONON169432",
+            "shop": "car",
+            "website": "https://www.cusecars.com/"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300596,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305500,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077306721,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309892,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311936,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312413,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312508,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312509,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314870,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315775,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077318230,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077318231,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077318907,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077320640,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077320641,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321340,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323611,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323742,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077327384,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "shop: car",
+          "id": 5189770714,
+          "label": "New Millenium Auto Brokers",
+          "tags": {
+            "name": "New Millenium Auto Brokers",
+            "shop": "car"
+          },
+          "type": "node"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 19,
+        "historic": {},
+        "landuse": {},
+        "named_features": 1,
+        "shops": {
+          "car": 1
+        }
+      }
+    },
+    "parcel_key": "003-01-251",
+    "published_at": "2026-06-07T12:03:01+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1610 First North St"
+  },
+  {
     "address": "1608 First North St",
     "ai_analysis": {
       "available": true,
