@@ -1,5 +1,462 @@
 [
   {
+    "address": "623-25 Wolf St & Second North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The roof is largely obscured from this street-level angle.",
+        "Only the front facade and a portion of the left side are visible."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "unclear",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "mixed_use",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story mixed-use or multi-family building with gray siding, a stone-accented entryway, and a paved front area.",
+      "visible_conditions": [
+        "Gray vinyl siding appears intact across the facade.",
+        "Multiple double-hung windows are visible and appear intact.",
+        "A covered entryway with stone-veneer pillars and concrete steps leads to the main door.",
+        "Several black trash receptacles are lined up on the left side of the building.",
+        "The surrounding ground surface is paved asphalt and appears mostly clear."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record"
+    ],
+    "id": 117,
+    "image": "images/parcel-000117.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 60709,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07564305655166,
+    "lon": -76.16124779296672,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07563159,
+          "Longitude": -76.16128985,
+          "NeedsRR": "Yes",
+          "ObjectId": 768,
+          "PropertyAddress": "623-25 Wolf St & Second North St",
+          "RR_app_received": 1775088000000,
+          "RR_contact_name": "East Coast Housing LLC / West Coast Housing LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-01-12.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1775174400000,
+          "pc_owner": "East Coast Housing LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": "bar",
+          "building": null,
+          "historic": null,
+          "id": 5170081869,
+          "landuse": null,
+          "name": "Second North Deli",
+          "shop": null,
+          "tags": {
+            "amenity": "bar",
+            "name": "Second North Deli"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5170081873,
+          "landuse": null,
+          "name": "Majewski's Auto Body Collision Service",
+          "shop": "car_repair",
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "701",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Wolf Street",
+            "name": "Majewski's Auto Body Collision Service",
+            "nysgissam:nysaddresspointid": "ONON151163",
+            "service": "repair",
+            "shop": "car_repair",
+            "short_name": "MACS"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5170081874,
+          "landuse": null,
+          "name": "Golden Sunshine Spa",
+          "shop": "beauty",
+          "tags": {
+            "fixme": "resurvey for more data",
+            "name": "Golden Sunshine Spa",
+            "shop": "beauty"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": "fast_food",
+          "building": null,
+          "historic": null,
+          "id": 5189770701,
+          "landuse": null,
+          "name": "Uncle Chubby's",
+          "shop": null,
+          "tags": {
+            "amenity": "fast_food",
+            "contact:phone": "+1 315 472 2522",
+            "cuisine": "pizza",
+            "delivery": "yes",
+            "fixme": "resurvey for address",
+            "name": "Uncle Chubby's",
+            "takeaway": "yes"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303187,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305500,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305972,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077307037,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310293,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312469,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315775,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077318503,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323298,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324277,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077327751,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329633,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077330191,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077332094,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077335851,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771111,
+          "landuse": "commercial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "commercial"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "amenity: bar",
+          "id": 5170081869,
+          "label": "Second North Deli",
+          "tags": {
+            "amenity": "bar",
+            "name": "Second North Deli"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: car_repair",
+          "id": 5170081873,
+          "label": "Majewski's Auto Body Collision Service",
+          "tags": {
+            "name": "Majewski's Auto Body Collision Service",
+            "shop": "car_repair"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: beauty",
+          "id": 5170081874,
+          "label": "Golden Sunshine Spa",
+          "tags": {
+            "name": "Golden Sunshine Spa",
+            "shop": "beauty"
+          },
+          "type": "node"
+        },
+        {
+          "category": "amenity: fast_food",
+          "id": 5189770701,
+          "label": "Uncle Chubby's",
+          "tags": {
+            "amenity": "fast_food",
+            "name": "Uncle Chubby's"
+          },
+          "type": "node"
+        },
+        {
+          "category": "landuse: commercial",
+          "id": 1189771111,
+          "label": "landuse: commercial",
+          "tags": {
+            "landuse": "commercial"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {
+          "bar": 1,
+          "fast_food": 1
+        },
+        "buildings": 15,
+        "historic": {},
+        "landuse": {
+          "commercial": 1
+        },
+        "named_features": 4,
+        "shops": {
+          "beauty": 1,
+          "car_repair": 1
+        }
+      }
+    },
+    "parcel_key": "003-01-120",
+    "published_at": "2026-06-07T00:02:54+00:00",
+    "review_reasons": [],
+    "title": "623-25 Wolf St & Second North St"
+  },
+  {
     "address": "705 Second North St",
     "ai_analysis": {
       "available": true,
