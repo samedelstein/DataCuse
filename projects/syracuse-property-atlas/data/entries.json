@@ -1,5 +1,461 @@
 [
   {
+    "address": "615 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "A parked vehicle partially blocks the lower portion of the storefront.",
+        "The roof is flat and not visible from street level.",
+        "Covered windows suggest potential vacancy or renovation, but actual occupancy status cannot be verified from the exterior."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "not_visible",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.13,
+            "width": 0.38,
+            "x": 0.28,
+            "y": 0.53
+          },
+          "confidence": "high",
+          "label": "covered storefront windows",
+          "reason": "Windows are covered internally with paper or plastic, obscuring the interior view."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Covered windows and a blank sign board suggest the commercial space may be vacant or undergoing interior transition."
+      ],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows a single-story commercial storefront with stone veneer facade, where the main windows are covered internally and the primary sign is blank.",
+      "visible_conditions": [
+        "Storefront windows are covered internally with paper or protective sheeting.",
+        "The main exterior signage board is blank.",
+        "A dark SUV is parked directly in front of the building, partially obstructing the lower facade.",
+        "The masonry facade appears intact with no obvious structural cracking."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Covered windows and a blank sign board suggest the commercial space may be vacant or undergoing interior transition."
+    ],
+    "id": 120,
+    "image": "images/parcel-000120.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 74796,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.075323039897576,
+    "lon": -76.16165543365537,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": "bar",
+          "building": null,
+          "historic": null,
+          "id": 5170081869,
+          "landuse": null,
+          "name": "Second North Deli",
+          "shop": null,
+          "tags": {
+            "amenity": "bar",
+            "name": "Second North Deli"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": "fast_food",
+          "building": null,
+          "historic": null,
+          "id": 5189770701,
+          "landuse": null,
+          "name": "Uncle Chubby's",
+          "shop": null,
+          "tags": {
+            "amenity": "fast_food",
+            "contact:phone": "+1 315 472 2522",
+            "cuisine": "pizza",
+            "delivery": "yes",
+            "fixme": "resurvey for address",
+            "name": "Uncle Chubby's",
+            "takeaway": "yes"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5189770702,
+          "landuse": null,
+          "name": "Sam's Super Saver",
+          "shop": "convenience",
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "613",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Wolf Street",
+            "name": "Sam's Super Saver",
+            "nysgissam:nysaddresspointid": "ONON026868",
+            "opening_hours": "Mo-Su 08:00-22:00; Fr,Sa 08:00-24:00",
+            "shop": "convenience"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5189770703,
+          "landuse": null,
+          "name": "Go Smart Wireless Shop",
+          "shop": "mobile_phone",
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "607",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Wolf Street",
+            "contact:phone": "+1 315 373 0159",
+            "name": "Go Smart Wireless Shop",
+            "nysgissam:nysaddresspointid": "ONON158795",
+            "shop": "mobile_phone"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5189770704,
+          "landuse": null,
+          "name": "Tito's Crispy Cuts Barbershop",
+          "shop": "hairdresser",
+          "tags": {
+            "name": "Tito's Crispy Cuts Barbershop",
+            "shop": "hairdresser"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300596,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302003,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303187,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305500,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077307037,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309892,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310293,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311936,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312469,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314870,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315775,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077318230,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077318231,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077318503,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323611,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "amenity: bar",
+          "id": 5170081869,
+          "label": "Second North Deli",
+          "tags": {
+            "amenity": "bar",
+            "name": "Second North Deli"
+          },
+          "type": "node"
+        },
+        {
+          "category": "amenity: fast_food",
+          "id": 5189770701,
+          "label": "Uncle Chubby's",
+          "tags": {
+            "amenity": "fast_food",
+            "name": "Uncle Chubby's"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: convenience",
+          "id": 5189770702,
+          "label": "Sam's Super Saver",
+          "tags": {
+            "name": "Sam's Super Saver",
+            "shop": "convenience"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: mobile_phone",
+          "id": 5189770703,
+          "label": "Go Smart Wireless Shop",
+          "tags": {
+            "name": "Go Smart Wireless Shop",
+            "shop": "mobile_phone"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: hairdresser",
+          "id": 5189770704,
+          "label": "Tito's Crispy Cuts Barbershop",
+          "tags": {
+            "name": "Tito's Crispy Cuts Barbershop",
+            "shop": "hairdresser"
+          },
+          "type": "node"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {
+          "bar": 1,
+          "fast_food": 1
+        },
+        "buildings": 15,
+        "historic": {},
+        "landuse": {},
+        "named_features": 5,
+        "shops": {
+          "convenience": 1,
+          "hairdresser": 1,
+          "mobile_phone": 1
+        }
+      }
+    },
+    "parcel_key": "003-01-150",
+    "published_at": "2026-06-07T03:02:58+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "615 Wolf St"
+  },
+  {
     "address": "617-19 Wolf St",
     "ai_analysis": {
       "available": true,
