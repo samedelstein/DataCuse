@@ -1,5 +1,160 @@
 [
   {
+    "address": "1618 First North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image captures both a commercial car lot and a residential structure, making it difficult to definitively identify which building corresponds to the target parcel address without parcel boundary overlays."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "unclear",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows a commercial used car lot with a white canopy tent and parked vehicles, situated next to a two-story green residential building.",
+      "visible_conditions": [
+        "Paved parking lot containing multiple vehicles under a white canopy tent",
+        "One-story commercial building with brown siding and a shingled roof on the left",
+        "Two-story green residential-style building with a pitched roof on the right"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 3 matching records",
+      "Needs human review"
+    ],
+    "id": 132,
+    "image": "images/parcel-000132.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 73237,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.075326897329205,
+    "lon": -76.16271084354271,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07526698,
+          "Longitude": -76.16273938,
+          "NeedsRR": "Yes",
+          "ObjectId": 779,
+          "PropertyAddress": "1618 First North St",
+          "RR_app_received": null,
+          "RR_contact_name": "Demauro Holdings, LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1667433600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1667433600000,
+          "RRisValid": "Yes",
+          "SBL": "003.-01-28.0",
+          "SHAPE": null,
+          "completion_date": 1721952000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1710201600000,
+          "pc_owner": "Demauro Holdings, LLC",
+          "valid_until": 1816646400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07511904,
+          "Longitude": -76.16235897,
+          "NeedsRR": "Yes",
+          "ObjectId": 776,
+          "PropertyAddress": "1610 First North St",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-01-25.1",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Advance Concrete Products LLC",
+          "valid_until": null,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07519248,
+          "Longitude": -76.16254201,
+          "NeedsRR": "Yes",
+          "ObjectId": 778,
+          "PropertyAddress": "1614 First North St",
+          "RR_app_received": 1779062400000,
+          "RR_contact_name": "EBRU ASLAN ONEN",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-01-26.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1780272000000,
+          "pc_owner": "EBRU ASLAN ONEN",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-01-280",
+    "published_at": "2026-06-07T15:43:35+00:00",
+    "review_reasons": [
+      "AI requested human review"
+    ],
+    "title": "1618 First North St"
+  },
+  {
     "address": "1616 First North St",
     "ai_analysis": {
       "available": true,
