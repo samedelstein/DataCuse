@@ -1,5 +1,529 @@
 [
   {
+    "address": "1604 First North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Only the front facade is visible from the street-level perspective.",
+        "The interior condition cannot be determined as the ground-floor windows are fully obscured."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "good",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.16,
+            "width": 0.25,
+            "x": 0.44,
+            "y": 0.51
+          },
+          "confidence": "high",
+          "label": "covered storefront windows",
+          "reason": "Large ground-floor windows are completely covered or blocked from the inside, obscuring visibility."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "The large ground-floor display windows are completely obscured from the inside, which may indicate an inactive commercial space or transition."
+      ],
+      "property_type_guess": "mixed_use",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows a two-and-a-half-story mixed-use building with a brick lower facade and light-colored siding on the upper floors, featuring covered ground-floor storefront windows.",
+      "visible_conditions": [
+        "Ground floor storefront windows are completely covered or blocked from the inside with white material.",
+        "Siding on the upper floors appears intact but shows minor weathering.",
+        "The brickwork on the lower level appears structurally sound with no obvious major damage.",
+        "The main entrance door and upper-story windows appear intact."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "unclear",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 3 matching records",
+      "Image-only flag: The large ground-floor display windows are completely obscured from the inside, which may indicate an inactive commercial space or transition."
+    ],
+    "id": 126,
+    "image": "images/parcel-000126.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 74531,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.074913307013404,
+    "lon": -76.16190048811056,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07489557,
+          "Longitude": -76.16193058,
+          "NeedsRR": "Yes",
+          "ObjectId": 772,
+          "PropertyAddress": "1604 First North St",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-01-22.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Joseph Chiarenza",
+          "valid_until": null,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07483958,
+          "Longitude": -76.16179105,
+          "NeedsRR": "Yes",
+          "ObjectId": 770,
+          "PropertyAddress": "603 Wolf St",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-01-20.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Omar Plaza, LLC",
+          "valid_until": null,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07493311,
+          "Longitude": -76.16202416,
+          "NeedsRR": "Yes",
+          "ObjectId": 774,
+          "PropertyAddress": "1606 First North St",
+          "RR_app_received": 1674000000000,
+          "RR_contact_name": "Rosene Bordonaro",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-01-23.0",
+          "SHAPE": null,
+          "completion_date": 1674000000000,
+          "completion_type_name": "Family Based Exemption Granted",
+          "inspect_period": 1674000000000,
+          "pc_owner": "Rosene Bordonaro",
+          "valid_until": 1768694400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": "fast_food",
+          "building": null,
+          "historic": null,
+          "id": 5189770701,
+          "landuse": null,
+          "name": "Uncle Chubby's",
+          "shop": null,
+          "tags": {
+            "amenity": "fast_food",
+            "contact:phone": "+1 315 472 2522",
+            "cuisine": "pizza",
+            "delivery": "yes",
+            "fixme": "resurvey for address",
+            "name": "Uncle Chubby's",
+            "takeaway": "yes"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5189770702,
+          "landuse": null,
+          "name": "Sam's Super Saver",
+          "shop": "convenience",
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "613",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Wolf Street",
+            "name": "Sam's Super Saver",
+            "nysgissam:nysaddresspointid": "ONON026868",
+            "opening_hours": "Mo-Su 08:00-22:00; Fr,Sa 08:00-24:00",
+            "shop": "convenience"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5189770703,
+          "landuse": null,
+          "name": "Go Smart Wireless Shop",
+          "shop": "mobile_phone",
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "607",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Wolf Street",
+            "contact:phone": "+1 315 373 0159",
+            "name": "Go Smart Wireless Shop",
+            "nysgissam:nysaddresspointid": "ONON158795",
+            "shop": "mobile_phone"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5189770704,
+          "landuse": null,
+          "name": "Tito's Crispy Cuts Barbershop",
+          "shop": "hairdresser",
+          "tags": {
+            "name": "Tito's Crispy Cuts Barbershop",
+            "shop": "hairdresser"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5189770706,
+          "landuse": null,
+          "name": "\"Blessings\" In Disguise",
+          "shop": "yes",
+          "tags": {
+            "contact:phone": "+1 315 885 1035",
+            "name": "\"Blessings\" In Disguise",
+            "shop": "yes"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302003,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305486,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305500,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309892,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311936,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312413,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314870,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315775,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077318230,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077318231,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077318907,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321340,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323611,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326398,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077327384,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "amenity: fast_food",
+          "id": 5189770701,
+          "label": "Uncle Chubby's",
+          "tags": {
+            "amenity": "fast_food",
+            "name": "Uncle Chubby's"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: convenience",
+          "id": 5189770702,
+          "label": "Sam's Super Saver",
+          "tags": {
+            "name": "Sam's Super Saver",
+            "shop": "convenience"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: mobile_phone",
+          "id": 5189770703,
+          "label": "Go Smart Wireless Shop",
+          "tags": {
+            "name": "Go Smart Wireless Shop",
+            "shop": "mobile_phone"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: hairdresser",
+          "id": 5189770704,
+          "label": "Tito's Crispy Cuts Barbershop",
+          "tags": {
+            "name": "Tito's Crispy Cuts Barbershop",
+            "shop": "hairdresser"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: yes",
+          "id": 5189770706,
+          "label": "\"Blessings\" In Disguise",
+          "tags": {
+            "name": "\"Blessings\" In Disguise",
+            "shop": "yes"
+          },
+          "type": "node"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {
+          "fast_food": 1
+        },
+        "buildings": 15,
+        "historic": {},
+        "landuse": {},
+        "named_features": 5,
+        "shops": {
+          "convenience": 1,
+          "hairdresser": 1,
+          "mobile_phone": 1,
+          "yes": 1
+        }
+      }
+    },
+    "parcel_key": "003-01-220",
+    "published_at": "2026-06-07T09:02:57+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1604 First North St"
+  },
+  {
     "address": "601 Wolf St & First North St",
     "ai_analysis": {
       "available": true,
