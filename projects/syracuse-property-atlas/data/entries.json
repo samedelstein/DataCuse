@@ -1,5 +1,522 @@
 [
   {
+    "address": "3129-31 Grant Blvd",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The roof is mostly obscured from this street-level angle.",
+        "Side and rear facades are not visible."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "unclear",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.05,
+            "width": 0.28,
+            "x": 0.45,
+            "y": 0.35
+          },
+          "confidence": "high",
+          "label": "Peeling paint on trim",
+          "reason": "Visible paint chipping and weathering on the upper cornice/trim of the building."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Peeling paint on the upper facade trim"
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential building with a front porch, showing some signs of paint peeling on the upper trim.",
+      "visible_conditions": [
+        "Peeling paint on the upper cornice and trim",
+        "Front porch with wooden steps and railing",
+        "Driveway on the left side with a trash bin",
+        "Lawn with fallen leaves"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": false,
+      "note": "Census tract lookup failed: ACS profile request failed for 2024, 2023, 2022: The read operation timed out"
+    },
+    "flags": [
+      "Rental registry: 4 matching records",
+      "Image-only flag: Peeling paint on the upper facade trim"
+    ],
+    "id": 140,
+    "image": "images/parcel-000140.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 114271,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07718089690801,
+    "lon": -76.16119867454348,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.0771506,
+          "Longitude": -76.16119746,
+          "NeedsRR": "Yes",
+          "ObjectId": 784,
+          "PropertyAddress": "3129-31 Grant Blvd",
+          "RR_app_received": 1747872000000,
+          "RR_contact_name": "FENPROP, LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1748390400000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1748390400000,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-07.0",
+          "SHAPE": null,
+          "completion_date": 1748908800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1749081600000,
+          "pc_owner": "JUNAINA ISLAM",
+          "valid_until": 1843603200000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07727667,
+          "Longitude": -76.16136486,
+          "NeedsRR": "Yes",
+          "ObjectId": 782,
+          "PropertyAddress": "3137 Grant Blvd & Hiawatha Blv",
+          "RR_app_received": 1694563200000,
+          "RR_contact_name": "Jeffrey Fenocchi",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1696291200000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-06.0",
+          "SHAPE": null,
+          "completion_date": 1701993600000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1702252800000,
+          "pc_owner": "Jeffrey Fenocchi",
+          "valid_until": 1796688000000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07699339,
+          "Longitude": -76.16104827,
+          "NeedsRR": "Yes",
+          "ObjectId": 786,
+          "PropertyAddress": "3125 Grant Blvd",
+          "RR_app_received": 1748304000000,
+          "RR_contact_name": "Moise Samba Meya & Kalulu Makambu",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-02-08.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1770768000000,
+          "pc_owner": "Moise Samba Meya",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07692955,
+          "Longitude": -76.160889,
+          "NeedsRR": "Yes",
+          "ObjectId": 788,
+          "PropertyAddress": "3119 Grant Blvd",
+          "RR_app_received": 1654732800000,
+          "RR_contact_name": "FENPROP, LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1657065600000,
+          "RR_int_insp_fail": 1657065600000,
+          "RR_int_insp_pass": null,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-09.0",
+          "SHAPE": null,
+          "completion_date": 1694390400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1687392000000,
+          "pc_owner": "FENPROP, LLC",
+          "valid_until": 1789084800000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5167889505,
+          "landuse": null,
+          "name": "Guy's Automotive Service",
+          "shop": "car_repair",
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "700",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Hiawatha Boulevard East",
+            "check_date": "2025-09-30",
+            "contact:phone": "+1 315 472 7011",
+            "name": "Guy's Automotive Service",
+            "nysgissam:nysaddresspointid": "ONON057850",
+            "service": "repair",
+            "shop": "car_repair"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5167889506,
+          "landuse": null,
+          "name": null,
+          "shop": "antiques",
+          "tags": {
+            "fixme": "resurvey for name",
+            "shop": "antiques"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300622,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300623,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077306121,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309523,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311021,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311837,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311866,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311867,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326820,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077330077,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077337294,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077337523,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189609078,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189609083,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771112,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771113,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771119,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "shop: car_repair",
+          "id": 5167889505,
+          "label": "Guy's Automotive Service",
+          "tags": {
+            "name": "Guy's Automotive Service",
+            "shop": "car_repair"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: antiques",
+          "id": 5167889506,
+          "label": "shop: antiques",
+          "tags": {
+            "shop": "antiques"
+          },
+          "type": "node"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189609078,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189609083,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: residential",
+          "id": 1189771112,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189771113,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189771119,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 12,
+        "historic": {},
+        "landuse": {
+          "industrial": 4,
+          "residential": 1
+        },
+        "named_features": 1,
+        "shops": {
+          "antiques": 1,
+          "car_repair": 1
+        }
+      }
+    },
+    "parcel_key": "003-02-070",
+    "published_at": "2026-06-08T03:04:39+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "3129-31 Grant Blvd"
+  },
+  {
     "address": "3137 Grant Blvd & Hiawatha Blv",
     "ai_analysis": {
       "available": true,
