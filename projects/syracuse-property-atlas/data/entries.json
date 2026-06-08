@@ -1,5 +1,514 @@
 [
   {
+    "address": "725 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The target property is heavily obstructed by a utility vehicle and worker in the foreground.",
+        "The only visible building is in the far background, preventing accurate assessment of its exterior condition."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "unclear",
+        "roof": "unclear",
+        "siding_or_facade": "unclear",
+        "trash_debris": "unclear",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "unclear",
+        "yard_or_lot": "unclear"
+      },
+      "confidence": "low",
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The view of the property is heavily obstructed by a utility vehicle and worker in the foreground, with only a distant, partial view of a blue building in the background.",
+      "visible_conditions": [
+        "Distant blue building visible in background",
+        "Foreground is dominated by a white utility truck and a worker"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "unclear",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 4 matching records",
+      "Needs human review"
+    ],
+    "id": 145,
+    "image": "images/parcel-000145.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 53016,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07681991240099,
+    "lon": -76.1604597960403,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07692955,
+          "Longitude": -76.160889,
+          "NeedsRR": "Yes",
+          "ObjectId": 788,
+          "PropertyAddress": "3119 Grant Blvd",
+          "RR_app_received": 1654732800000,
+          "RR_contact_name": "FENPROP, LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1657065600000,
+          "RR_int_insp_fail": 1657065600000,
+          "RR_int_insp_pass": null,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-09.0",
+          "SHAPE": null,
+          "completion_date": 1694390400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1687392000000,
+          "pc_owner": "FENPROP, LLC",
+          "valid_until": 1789084800000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.0768861,
+          "Longitude": -76.16078063,
+          "NeedsRR": "Yes",
+          "ObjectId": 790,
+          "PropertyAddress": "3115 Grant Blvd",
+          "RR_app_received": 1655251200000,
+          "RR_contact_name": "FENPROP, LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1657065600000,
+          "RR_int_insp_fail": 1657238400000,
+          "RR_int_insp_pass": 1664236800000,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-10.0",
+          "SHAPE": null,
+          "completion_date": 1694390400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1687392000000,
+          "pc_owner": "William Anthony Henderson",
+          "valid_until": 1789084800000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07664919,
+          "Longitude": -76.16060115,
+          "NeedsRR": "Yes",
+          "ObjectId": 792,
+          "PropertyAddress": "717 Wolf St",
+          "RR_app_received": 1654732800000,
+          "RR_contact_name": "Jeffery & Robert Fenocchi, Robert Fenocchi",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1657065600000,
+          "RR_int_insp_fail": 1657065600000,
+          "RR_int_insp_pass": 1664236800000,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-13.0",
+          "SHAPE": null,
+          "completion_date": 1694390400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1678924800000,
+          "pc_owner": "FENPROP, LLC",
+          "valid_until": 1789084800000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07661927,
+          "Longitude": -76.1607641,
+          "NeedsRR": "Yes",
+          "ObjectId": 794,
+          "PropertyAddress": "715 Wolf St",
+          "RR_app_received": 1670198400000,
+          "RR_contact_name": "Timothy Wilson",
+          "RR_ext_insp_fail": 1674777600000,
+          "RR_ext_insp_pass": 1688688000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1674604800000,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-14.0",
+          "SHAPE": null,
+          "completion_date": 1689292800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1690502400000,
+          "pc_owner": "Timothy Wilson Living Trust",
+          "valid_until": 1783987200000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5167889495,
+          "landuse": null,
+          "name": "Douglas Auto Service",
+          "shop": "car_repair",
+          "tags": {
+            "addr:housenumber": "726",
+            "addr:street": "Wolf Street",
+            "name": "Douglas Auto Service",
+            "service": "repair",
+            "shop": "car_repair"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5167889496,
+          "landuse": null,
+          "name": "Judy's Auto Sales",
+          "shop": "car",
+          "tags": {
+            "addr:housenumber": "726",
+            "addr:street": "Wolf Street",
+            "contact:phone": "+1 315 476 6004",
+            "name": "Judy's Auto Sales",
+            "shop": "car",
+            "website": "https://judysautos.com"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": "cafe",
+          "building": null,
+          "historic": null,
+          "id": 5167889508,
+          "landuse": null,
+          "name": "Easy Cafe",
+          "shop": null,
+          "tags": {
+            "amenity": "cafe",
+            "fixme": "resurvey to make sure this really is a care & not a bar or pub",
+            "name": "Easy Cafe"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 6486954736,
+          "landuse": null,
+          "name": "Guy's Automotive Sales",
+          "shop": "car",
+          "tags": {
+            "contact:phone": "+1 315 579 0777",
+            "fixme": "resurvey for address",
+            "name": "Guy's Automotive Sales",
+            "second_hand": "yes",
+            "service": "repair",
+            "shop": "car"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300622,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300623,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304841,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077306608,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309523,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310593,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311837,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311866,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311867,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312475,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324620,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077328039,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077328077,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077328710,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077334372,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077334373,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "shop: car_repair",
+          "id": 5167889495,
+          "label": "Douglas Auto Service",
+          "tags": {
+            "name": "Douglas Auto Service",
+            "shop": "car_repair"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: car",
+          "id": 5167889496,
+          "label": "Judy's Auto Sales",
+          "tags": {
+            "name": "Judy's Auto Sales",
+            "shop": "car"
+          },
+          "type": "node"
+        },
+        {
+          "category": "amenity: cafe",
+          "id": 5167889508,
+          "label": "Easy Cafe",
+          "tags": {
+            "amenity": "cafe",
+            "name": "Easy Cafe"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: car",
+          "id": 6486954736,
+          "label": "Guy's Automotive Sales",
+          "tags": {
+            "name": "Guy's Automotive Sales",
+            "shop": "car"
+          },
+          "type": "node"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {
+          "cafe": 1
+        },
+        "buildings": 16,
+        "historic": {},
+        "landuse": {},
+        "named_features": 4,
+        "shops": {
+          "car": 2,
+          "car_repair": 1
+        }
+      }
+    },
+    "parcel_key": "003-02-120",
+    "published_at": "2026-06-08T08:02:55+00:00",
+    "review_reasons": [
+      "AI requested human review"
+    ],
+    "title": "725 Wolf St"
+  },
+  {
     "address": "3109 Grant Blvd",
     "ai_analysis": {
       "available": true,
