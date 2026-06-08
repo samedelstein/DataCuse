@@ -1,5 +1,495 @@
 [
   {
+    "address": "701 Wolf St & Second North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image is taken from across the street, and utility poles/wires partially obstruct the upper view of the property."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.15,
+            "width": 0.4,
+            "x": 0.2,
+            "y": 0.65
+          },
+          "confidence": "medium",
+          "label": "pavement cracking",
+          "reason": "Visible cracking and minor weed growth in the asphalt parking lot surface."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor asphalt cracking and weed growth in the front parking area."
+      ],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A single-story commercial garage building with a paved lot, showing minor pavement wear and some vegetation in cracks.",
+      "visible_conditions": [
+        "Single-story commercial garage structure with a front-facing garage door and a separate entrance under an awning.",
+        "Paved asphalt parking area shows cracking and minor weed growth.",
+        "Exterior facade appears to be stucco or painted masonry in fair condition."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Image-only flag: Minor asphalt cracking and weed growth in the front parking area."
+    ],
+    "id": 153,
+    "image": "images/parcel-000153.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 70154,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07600290593602,
+    "lon": -76.16095206244157,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07624024,
+          "Longitude": -76.16090621,
+          "NeedsRR": "Yes",
+          "ObjectId": 800,
+          "PropertyAddress": "707 Wolf St",
+          "RR_app_received": null,
+          "RR_contact_name": "Jasmine Garza",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-02-18.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1779148800000,
+          "pc_owner": "Jasmine Garza",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": "bar",
+          "building": null,
+          "historic": null,
+          "id": 5170081869,
+          "landuse": null,
+          "name": "Second North Deli",
+          "shop": null,
+          "tags": {
+            "amenity": "bar",
+            "name": "Second North Deli"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5170081872,
+          "landuse": null,
+          "name": "Dollar Tree",
+          "shop": "variety_store",
+          "tags": {
+            "brand": "Dollar Tree",
+            "brand:wikidata": "Q5289230",
+            "check_date": "2017-10-15",
+            "name": "Dollar Tree",
+            "opening_hours": "Mo-Sa 09:00-21:00; Su 09:00-20:00",
+            "payment:american_express": "yes",
+            "payment:cash": "yes",
+            "payment:coins": "no",
+            "payment:discover_card": "yes",
+            "payment:maestro": "yes",
+            "payment:mastercard": "yes",
+            "payment:nyce": "yes",
+            "payment:quest": "yes",
+            "payment:snap": "yes",
+            "payment:star": "yes",
+            "shop": "variety_store",
+            "source": "photograph",
+            "source:address": "sales receipt"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5170081873,
+          "landuse": null,
+          "name": "Majewski's Auto Body Collision Service",
+          "shop": "car_repair",
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "701",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Wolf Street",
+            "name": "Majewski's Auto Body Collision Service",
+            "nysgissam:nysaddresspointid": "ONON151163",
+            "service": "repair",
+            "shop": "car_repair",
+            "short_name": "MACS"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5170081874,
+          "landuse": null,
+          "name": "Golden Sunshine Spa",
+          "shop": "beauty",
+          "tags": {
+            "fixme": "resurvey for more data",
+            "name": "Golden Sunshine Spa",
+            "shop": "beauty"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": "post_box",
+          "building": null,
+          "historic": null,
+          "id": 5189770697,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "amenity": "post_box",
+            "collection_times": "Mo-Fr 09:30; Sa 09:00",
+            "operator": "United States Postal Service",
+            "operator:short": "USPS",
+            "operator:type": "public",
+            "operator:website": "https://www.usps.com",
+            "operator:wikidata": "Q668687",
+            "operator:wikipedia": "en:United States Postal Service",
+            "ref": "1320800001",
+            "short_name": "USPS"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304624,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305972,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312475,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077316569,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077318503,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324246,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324277,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077327751,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077328039,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329633,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331419,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331420,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077332094,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336941,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336942,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "amenity: bar",
+          "id": 5170081869,
+          "label": "Second North Deli",
+          "tags": {
+            "amenity": "bar",
+            "name": "Second North Deli"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: variety_store",
+          "id": 5170081872,
+          "label": "Dollar Tree",
+          "tags": {
+            "name": "Dollar Tree",
+            "shop": "variety_store"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: car_repair",
+          "id": 5170081873,
+          "label": "Majewski's Auto Body Collision Service",
+          "tags": {
+            "name": "Majewski's Auto Body Collision Service",
+            "shop": "car_repair"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: beauty",
+          "id": 5170081874,
+          "label": "Golden Sunshine Spa",
+          "tags": {
+            "name": "Golden Sunshine Spa",
+            "shop": "beauty"
+          },
+          "type": "node"
+        },
+        {
+          "category": "amenity: post_box",
+          "id": 5189770697,
+          "label": "amenity: post_box",
+          "tags": {
+            "amenity": "post_box"
+          },
+          "type": "node"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {
+          "bar": 1,
+          "post_box": 1
+        },
+        "buildings": 15,
+        "historic": {},
+        "landuse": {},
+        "named_features": 4,
+        "shops": {
+          "beauty": 1,
+          "car_repair": 1,
+          "variety_store": 1
+        }
+      }
+    },
+    "parcel_key": "003-02-200",
+    "published_at": "2026-06-08T16:02:56+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "701 Wolf St & Second North St"
+  },
+  {
     "address": "705 Wolf St",
     "ai_analysis": {
       "available": true,
