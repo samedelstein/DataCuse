@@ -1,5 +1,436 @@
 [
   {
+    "address": "632-36 Hiawatha Blvd E",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The residential property associated with the address may be located behind the dense foliage, or the image may depict an adjacent lot or a parcel that has been cleared since the registry records were updated."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "unclear",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "low",
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "There is a discrepancy between known rental registry records (suggesting residential units) and the visible lot which contains only parked trailers and no clear residential structure."
+      ],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows an open gravel and grass lot containing several parked trailers and truck bodies, with dense vegetation in the background and a portion of a white building visible on the right.",
+      "visible_conditions": [
+        "Gravel and grass lot used for parking or storage of trailers",
+        "Dense trees and brush along the rear and left boundaries",
+        "A white masonry building wall is partially visible on the right side of the frame",
+        "No residential structure is visible from this street-level perspective"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 3 matching records",
+      "Image-only flag: There is a discrepancy between known rental registry records (suggesting residential units) and the visible lot which contains only parked trailers and no clear residential structure.",
+      "Needs human review"
+    ],
+    "id": 137,
+    "image": "images/parcel-000137.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 75600,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0770797749584,
+    "lon": -76.16141485916442,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07727667,
+          "Longitude": -76.16136486,
+          "NeedsRR": "Yes",
+          "ObjectId": 782,
+          "PropertyAddress": "3137 Grant Blvd & Hiawatha Blv",
+          "RR_app_received": 1694563200000,
+          "RR_contact_name": "Jeffrey Fenocchi",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1696291200000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-06.0",
+          "SHAPE": null,
+          "completion_date": 1701993600000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1702252800000,
+          "pc_owner": "Jeffrey Fenocchi",
+          "valid_until": 1796688000000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.0771506,
+          "Longitude": -76.16119746,
+          "NeedsRR": "Yes",
+          "ObjectId": 784,
+          "PropertyAddress": "3129-31 Grant Blvd",
+          "RR_app_received": 1747872000000,
+          "RR_contact_name": "FENPROP, LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1748390400000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1748390400000,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-07.0",
+          "SHAPE": null,
+          "completion_date": 1748908800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1749081600000,
+          "pc_owner": "JUNAINA ISLAM",
+          "valid_until": 1843603200000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07699339,
+          "Longitude": -76.16104827,
+          "NeedsRR": "Yes",
+          "ObjectId": 786,
+          "PropertyAddress": "3125 Grant Blvd",
+          "RR_app_received": 1748304000000,
+          "RR_contact_name": "Moise Samba Meya & Kalulu Makambu",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-02-08.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1770768000000,
+          "pc_owner": "Moise Samba Meya",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300622,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300623,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077301912,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077306121,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309523,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309823,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311021,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311837,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311866,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311867,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326820,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077330077,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336942,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189609078,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771112,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771113,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771119,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: industrial",
+          "id": 1189609078,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: residential",
+          "id": 1189771112,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189771113,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189771119,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 13,
+        "historic": {},
+        "landuse": {
+          "industrial": 3,
+          "residential": 1
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-02-040",
+    "published_at": "2026-06-08T00:02:55+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "632-36 Hiawatha Blvd E"
+  },
+  {
     "address": "628 Hiawatha Blvd E",
     "ai_analysis": {
       "available": true,
