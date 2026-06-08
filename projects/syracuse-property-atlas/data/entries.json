@@ -1,5 +1,187 @@
 [
   {
+    "address": "608-10 Hiawatha Blvd E & Second",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "It is difficult to determine if the white building in the background is part of the subject parcel or an adjacent property.",
+        "The primary view is of a vacant lot, which conflicts with the active rental registry records."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "unclear",
+        "roof": "unclear",
+        "siding_or_facade": "unclear",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "unclear",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "There is a potential discrepancy between the known public records (4 rental registry records) and the visual evidence, which primarily shows a vacant gravel lot, suggesting the building may have been demolished or the parcel boundaries are offset."
+      ],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows a large, vacant gravel-covered lot in the foreground with a two-story residential-style building visible in the background to the right.",
+      "visible_conditions": [
+        "The foreground consists of a flat, gravel-surfaced lot with minor weed growth.",
+        "A wooden privacy fence runs along the back of the gravel lot.",
+        "A two-story building with white siding and a dark roof is visible in the background on the right side of the image."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 4 matching records",
+      "Image-only flag: There is a potential discrepancy between the known public records (4 rental registry records) and the visual evidence, which primarily shows a vacant gravel lot, suggesting the building may have been demolished or the parcel boundaries are offset.",
+      "Needs human review"
+    ],
+    "id": 160,
+    "image": "images/parcel-000160.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 75820,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07653619475472,
+    "lon": -76.16186636569314,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07671893,
+          "Longitude": -76.16153449,
+          "NeedsRR": "Yes",
+          "ObjectId": 781,
+          "PropertyAddress": "620 Hiawatha Blvd E",
+          "RR_app_received": 1714089600000,
+          "RR_contact_name": "Palmisano Warehousing Inc",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1716940800000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1716854400000,
+          "RRisValid": "No",
+          "SBL": "003.-02-02.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1734048000000,
+          "pc_owner": "Palmisano Warehousing Inc",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.0763358,
+          "Longitude": -76.16148975,
+          "NeedsRR": "Yes",
+          "ObjectId": 804,
+          "PropertyAddress": "712 Second North St",
+          "RR_app_received": 1749600000000,
+          "RR_contact_name": "Karen Paradiso",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1765152000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1765152000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-24.0",
+          "SHAPE": null,
+          "completion_date": 1765497600000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1750118400000,
+          "pc_owner": "Karen Parzych",
+          "valid_until": 1860192000000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07637466,
+          "Longitude": -76.1615866,
+          "NeedsRR": "Yes",
+          "ObjectId": 806,
+          "PropertyAddress": "714 Second North St",
+          "RR_app_received": 1586217600000,
+          "RR_contact_name": "Thomas House",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1586736000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-02-25.0",
+          "SHAPE": null,
+          "completion_date": 1586995200000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1586736000000,
+          "pc_owner": "LSBF, LLC",
+          "valid_until": 1681689600000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07642076,
+          "Longitude": -76.16170152,
+          "NeedsRR": "Yes",
+          "ObjectId": 808,
+          "PropertyAddress": "716 Second North St",
+          "RR_app_received": 1718928000000,
+          "RR_contact_name": "Nina Phimmahom",
+          "RR_ext_insp_fail": 1690329600000,
+          "RR_ext_insp_pass": 1715817600000,
+          "RR_int_insp_fail": 1690329600000,
+          "RR_int_insp_pass": 1715817600000,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-26.0",
+          "SHAPE": null,
+          "completion_date": 1718928000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1717459200000,
+          "pc_owner": "Nina Phimmahom",
+          "valid_until": 1813622400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-02-270",
+    "published_at": "2026-06-08T23:03:12+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "608-10 Hiawatha Blvd E & Second"
+  },
+  {
     "address": "716 Second North St",
     "ai_analysis": {
       "available": true,
