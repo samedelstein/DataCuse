@@ -1,5 +1,490 @@
 [
   {
+    "address": "716 Second North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The rear and sides of the structure are not fully visible from this street-level angle."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.07,
+            "width": 0.18,
+            "x": 0.0,
+            "y": 0.73
+          },
+          "confidence": "high",
+          "label": "yard debris",
+          "reason": "A discarded wooden structure and black bag are visible on the grass near the street."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor debris/discarded materials on the front lawn."
+      ],
+      "property_type_guess": "multifamily",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story white residential building with multiple entrances and a small grass lawn, appearing in generally fair condition.",
+      "visible_conditions": [
+        "White siding appears intact with minor weathering.",
+        "Windows and doors appear functional and intact.",
+        "Small concrete steps lead to the front entrances.",
+        "Trash bins are present on the left side of the property.",
+        "Some minor debris or discarded items are visible on the left lawn area."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 4 matching records",
+      "Image-only flag: Minor debris/discarded materials on the front lawn."
+    ],
+    "id": 159,
+    "image": "images/parcel-000159.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 73681,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07645613068022,
+    "lon": -76.16166680438482,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07642076,
+          "Longitude": -76.16170152,
+          "NeedsRR": "Yes",
+          "ObjectId": 808,
+          "PropertyAddress": "716 Second North St",
+          "RR_app_received": 1718928000000,
+          "RR_contact_name": "Nina Phimmahom",
+          "RR_ext_insp_fail": 1690329600000,
+          "RR_ext_insp_pass": 1715817600000,
+          "RR_int_insp_fail": 1690329600000,
+          "RR_int_insp_pass": 1715817600000,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-26.0",
+          "SHAPE": null,
+          "completion_date": 1718928000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1717459200000,
+          "pc_owner": "Nina Phimmahom",
+          "valid_until": 1813622400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07671893,
+          "Longitude": -76.16153449,
+          "NeedsRR": "Yes",
+          "ObjectId": 781,
+          "PropertyAddress": "620 Hiawatha Blvd E",
+          "RR_app_received": 1714089600000,
+          "RR_contact_name": "Palmisano Warehousing Inc",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1716940800000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1716854400000,
+          "RRisValid": "No",
+          "SBL": "003.-02-02.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1734048000000,
+          "pc_owner": "Palmisano Warehousing Inc",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.0763358,
+          "Longitude": -76.16148975,
+          "NeedsRR": "Yes",
+          "ObjectId": 804,
+          "PropertyAddress": "712 Second North St",
+          "RR_app_received": 1749600000000,
+          "RR_contact_name": "Karen Paradiso",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1765152000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1765152000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-24.0",
+          "SHAPE": null,
+          "completion_date": 1765497600000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1750118400000,
+          "pc_owner": "Karen Parzych",
+          "valid_until": 1860192000000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07637466,
+          "Longitude": -76.1615866,
+          "NeedsRR": "Yes",
+          "ObjectId": 806,
+          "PropertyAddress": "714 Second North St",
+          "RR_app_received": 1586217600000,
+          "RR_contact_name": "Thomas House",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1586736000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-02-25.0",
+          "SHAPE": null,
+          "completion_date": 1586995200000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1586736000000,
+          "pc_owner": "LSBF, LLC",
+          "valid_until": 1681689600000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077299434,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300236,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077301791,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077301912,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077307037,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309523,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309822,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309823,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311867,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324246,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324277,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326820,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077327751,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331419,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331420,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077332094,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336941,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336942,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189609078,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771112,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: industrial",
+          "id": 1189609078,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: residential",
+          "id": 1189771112,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 18,
+        "historic": {},
+        "landuse": {
+          "industrial": 1,
+          "residential": 1
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-02-260",
+    "published_at": "2026-06-08T22:03:02+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "716 Second North St"
+  },
+  {
     "address": "714 Second North St",
     "ai_analysis": {
       "available": true,
