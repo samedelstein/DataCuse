@@ -1,5 +1,539 @@
 [
   {
+    "address": "3125 Grant Blvd",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image is taken from a distance, limiting detailed inspection of the siding, window frames, and rear areas of the property."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.04,
+            "width": 0.2,
+            "x": 0.4,
+            "y": 0.71
+          },
+          "confidence": "high",
+          "label": "tarp on lawn",
+          "reason": "Blue tarp or plastic cover lying on the grass in the front yard"
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Blue tarp or plastic sheeting left on the front lawn area"
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential building with light grey siding and a front-gabled entry, featuring a grassy front yard with a blue tarp on the lawn.",
+      "visible_conditions": [
+        "Light grey siding appears mostly intact with minor weathering",
+        "Asphalt shingle roof appears in fair condition",
+        "Grassy front yard contains a blue tarp or temporary pool cover on the lawn",
+        "Foundation plantings and shrubs are present and slightly overgrown"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 5 matching records",
+      "Image-only flag: Blue tarp or plastic sheeting left on the front lawn area"
+    ],
+    "id": 141,
+    "image": "images/parcel-000141.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 87829,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.077028899133914,
+    "lon": -76.16103051411467,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07699339,
+          "Longitude": -76.16104827,
+          "NeedsRR": "Yes",
+          "ObjectId": 786,
+          "PropertyAddress": "3125 Grant Blvd",
+          "RR_app_received": 1748304000000,
+          "RR_contact_name": "Moise Samba Meya & Kalulu Makambu",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-02-08.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1770768000000,
+          "pc_owner": "Moise Samba Meya",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07727667,
+          "Longitude": -76.16136486,
+          "NeedsRR": "Yes",
+          "ObjectId": 782,
+          "PropertyAddress": "3137 Grant Blvd & Hiawatha Blv",
+          "RR_app_received": 1694563200000,
+          "RR_contact_name": "Jeffrey Fenocchi",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1696291200000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-06.0",
+          "SHAPE": null,
+          "completion_date": 1701993600000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1702252800000,
+          "pc_owner": "Jeffrey Fenocchi",
+          "valid_until": 1796688000000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.0771506,
+          "Longitude": -76.16119746,
+          "NeedsRR": "Yes",
+          "ObjectId": 784,
+          "PropertyAddress": "3129-31 Grant Blvd",
+          "RR_app_received": 1747872000000,
+          "RR_contact_name": "FENPROP, LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1748390400000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1748390400000,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-07.0",
+          "SHAPE": null,
+          "completion_date": 1748908800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1749081600000,
+          "pc_owner": "JUNAINA ISLAM",
+          "valid_until": 1843603200000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07692955,
+          "Longitude": -76.160889,
+          "NeedsRR": "Yes",
+          "ObjectId": 788,
+          "PropertyAddress": "3119 Grant Blvd",
+          "RR_app_received": 1654732800000,
+          "RR_contact_name": "FENPROP, LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1657065600000,
+          "RR_int_insp_fail": 1657065600000,
+          "RR_int_insp_pass": null,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-09.0",
+          "SHAPE": null,
+          "completion_date": 1694390400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1687392000000,
+          "pc_owner": "FENPROP, LLC",
+          "valid_until": 1789084800000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.0768861,
+          "Longitude": -76.16078063,
+          "NeedsRR": "Yes",
+          "ObjectId": 790,
+          "PropertyAddress": "3115 Grant Blvd",
+          "RR_app_received": 1655251200000,
+          "RR_contact_name": "FENPROP, LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1657065600000,
+          "RR_int_insp_fail": 1657238400000,
+          "RR_int_insp_pass": 1664236800000,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-10.0",
+          "SHAPE": null,
+          "completion_date": 1694390400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1687392000000,
+          "pc_owner": "William Anthony Henderson",
+          "valid_until": 1789084800000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5167889506,
+          "landuse": null,
+          "name": null,
+          "shop": "antiques",
+          "tags": {
+            "fixme": "resurvey for name",
+            "shop": "antiques"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 6486954736,
+          "landuse": null,
+          "name": "Guy's Automotive Sales",
+          "shop": "car",
+          "tags": {
+            "contact:phone": "+1 315 579 0777",
+            "fixme": "resurvey for address",
+            "name": "Guy's Automotive Sales",
+            "second_hand": "yes",
+            "service": "repair",
+            "shop": "car"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300622,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300623,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077306121,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077306608,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309523,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310593,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311021,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311837,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311866,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311867,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326820,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077328077,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077330077,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336942,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077337294,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077337523,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771112,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771113,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "shop: antiques",
+          "id": 5167889506,
+          "label": "shop: antiques",
+          "tags": {
+            "shop": "antiques"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: car",
+          "id": 6486954736,
+          "label": "Guy's Automotive Sales",
+          "tags": {
+            "name": "Guy's Automotive Sales",
+            "shop": "car"
+          },
+          "type": "node"
+        },
+        {
+          "category": "landuse: residential",
+          "id": 1189771112,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189771113,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 16,
+        "historic": {},
+        "landuse": {
+          "industrial": 1,
+          "residential": 1
+        },
+        "named_features": 1,
+        "shops": {
+          "antiques": 1,
+          "car": 1
+        }
+      }
+    },
+    "parcel_key": "003-02-080",
+    "published_at": "2026-06-08T04:04:07+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "3125 Grant Blvd"
+  },
+  {
     "address": "3129-31 Grant Blvd",
     "ai_analysis": {
       "available": true,
