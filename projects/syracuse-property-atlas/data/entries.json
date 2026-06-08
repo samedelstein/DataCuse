@@ -1,5 +1,187 @@
 [
   {
+    "address": "705 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The rear and sides of the property are not visible from this street-level angle, which may contain the conditions leading to the 'unfit' public record designation."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.14,
+            "width": 0.14,
+            "x": 0.38,
+            "y": 0.37
+          },
+          "confidence": "medium",
+          "label": "empty sign bracket",
+          "reason": "An empty metal sign frame is mounted on the roof of the first-floor storefront, which may present a minor hazard if structurally compromised."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "The exterior appears to be in fair to good condition, which does not immediately reveal the cause for the 'unfit' designation in public records."
+      ],
+      "property_type_guess": "mixed_use",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story mixed-use building featuring a stone-veneer commercial storefront on the first floor and a residential-style second story with white siding.",
+      "visible_conditions": [
+        "Stone veneer facade on the first floor appears intact.",
+        "White siding on the second floor shows minor weathering but no major damage.",
+        "An empty metal sign bracket is mounted on the roof of the first-floor storefront.",
+        "Windows and doors appear intact with no visible boarding."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 2 matching records",
+      "Unfit properties: 1 matching record",
+      "Image-only flag: The exterior appears to be in fair to good condition, which does not immediately reveal the cause for the 'unfit' designation in public records.",
+      "Needs human review"
+    ],
+    "id": 152,
+    "image": "images/parcel-000152.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 71630,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.076131336783355,
+    "lon": -76.16096134233312,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07645812,
+          "Longitude": -76.16088445,
+          "NeedsRR": "Yes",
+          "ObjectId": 798,
+          "PropertyAddress": "711 Wolf St",
+          "RR_app_received": 1670198400000,
+          "RR_contact_name": "Timothy Wilson",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1688688000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1688688000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-16.0",
+          "SHAPE": null,
+          "completion_date": 1689292800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1688688000000,
+          "pc_owner": "Timothy Wilson Living Trust",
+          "valid_until": 1783987200000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07624024,
+          "Longitude": -76.16090621,
+          "NeedsRR": "Yes",
+          "ObjectId": 800,
+          "PropertyAddress": "707 Wolf St",
+          "RR_app_received": null,
+          "RR_contact_name": "Jasmine Garza",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-02-18.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1779148800000,
+          "pc_owner": "Jasmine Garza",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [
+        {
+          "Latitude": 43.07637748,
+          "Longitude": -76.16094461,
+          "ObjectId": 318,
+          "SBL": "003.-02-17.0",
+          "Vacant": null,
+          "address": "709 Wolf St",
+          "area_involved": null,
+          "article": "A structure is unfit for human occupancy whenever such structure is unsafe, unlawful or, because of the degree to which the structure is in disrepair or lacks maintenance, is insanitary, vermin or rat infested, contains filth and contamination, or lacks ventilation, illumination, sanitary or heating facilities or other essential equipment required by this code, or because the location of the structure constitutes a hazard to the occupants of the structure or to the public.",
+          "comp_close_date": 1447632000000,
+          "comp_open_date": 1337248326000,
+          "comp_status": "Completed",
+          "complaint_number": "2012-11018",
+          "complaint_type_name": "Property Maintenance-Int",
+          "comply_by_date": 1337853158000,
+          "corrective_action": "Unfit due to no water",
+          "department_name": "Codes",
+          "owner_address": "709 Wolf St ",
+          "owner_city": "Syracuse",
+          "owner_name": "Charles Greco",
+          "owner_state": "NY",
+          "owner_zip_code": "13208",
+          "parcel_id": 571,
+          "status_date": 1337248355873,
+          "status_type_name": "Open",
+          "violation": "2010 IMC - Section 107.1.3 - Premises Unfit for Human Occupancy",
+          "violation_date": 1337248355873,
+          "violation_number": "04306",
+          "zip": 13208
+        }
+      ],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-02-190",
+    "published_at": "2026-06-08T15:03:10+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "705 Wolf St"
+  },
+  {
     "address": "707 Wolf St",
     "ai_analysis": {
       "available": true,
