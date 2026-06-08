@@ -1,5 +1,635 @@
 [
   {
+    "address": "711 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The roof is not visible from the image angle.",
+        "A utility pole and overhead wires partially obstruct the view of the property."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "poor",
+        "roof": "not_visible",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: The read operation timed out",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.200",
+            "width": "0.550",
+            "x": "0.050",
+            "y": "0.590"
+          },
+          "confidence": "high",
+          "label": "Obscured storefront windows",
+          "reason": "The ground-level windows appear covered from the interior, obscuring visibility."
+        },
+        {
+          "bbox": {
+            "height": "0.100",
+            "width": "0.400",
+            "x": "0.200",
+            "y": "0.780"
+          },
+          "confidence": "high",
+          "label": "Uneven entry paving",
+          "reason": "The flagstone-like paving directly in front of the building appears uneven or broken."
+        },
+        {
+          "bbox": {
+            "height": "0.080",
+            "width": "0.100",
+            "x": "0.350",
+            "y": "0.700"
+          },
+          "confidence": "high",
+          "label": "Worn entry steps",
+          "reason": "The steps leading to the main door show visible signs of wear."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Uneven or damaged paving is visible at the property entry.",
+        "The entry steps appear worn.",
+        "Storefront windows are obscured from the interior, which may suggest disuse or an attempt to block the view."
+      ],
+      "property_type_guess": "mixed_use",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "A street-level view shows a building with a storefront-style facade, exhibiting some visible wear and obscured windows.",
+      "visible_conditions": [
+        "The main facade features light-colored siding that appears somewhat worn or discolored in areas.",
+        "A green trim band is visible along the bottom of the facade.",
+        "The storefront windows on the ground level appear to be covered from the interior, obscuring the view inside.",
+        "A small, high window is visible on the upper facade.",
+        "The main entry door has a glass panel.",
+        "A small stoop with steps leads to the main door, and the steps appear to show some wear.",
+        "The paving directly in front of the building appears uneven or possibly damaged in sections.",
+        "The yard area to the left of the building has grass that appears somewhat long.",
+        "A utility pole and overhead wires are prominently in front of the property, partially obscuring the view."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "unclear",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 5 matching records",
+      "Unfit properties: 1 matching record",
+      "Image-only flag: Uneven or damaged paving is visible at the property entry.",
+      "Image-only flag: The entry steps appear worn.",
+      "Image-only flag: Storefront windows are obscured from the interior, which may suggest disuse or an attempt to block the view.",
+      "Needs human review"
+    ],
+    "id": 149,
+    "image": "images/parcel-000149.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 77363,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0764487282511,
+    "lon": -76.16081572978705,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07645812,
+          "Longitude": -76.16088445,
+          "NeedsRR": "Yes",
+          "ObjectId": 798,
+          "PropertyAddress": "711 Wolf St",
+          "RR_app_received": 1670198400000,
+          "RR_contact_name": "Timothy Wilson",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1688688000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1688688000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-16.0",
+          "SHAPE": null,
+          "completion_date": 1689292800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1688688000000,
+          "pc_owner": "Timothy Wilson Living Trust",
+          "valid_until": 1783987200000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07664919,
+          "Longitude": -76.16060115,
+          "NeedsRR": "Yes",
+          "ObjectId": 792,
+          "PropertyAddress": "717 Wolf St",
+          "RR_app_received": 1654732800000,
+          "RR_contact_name": "Jeffery & Robert Fenocchi, Robert Fenocchi",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1657065600000,
+          "RR_int_insp_fail": 1657065600000,
+          "RR_int_insp_pass": 1664236800000,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-13.0",
+          "SHAPE": null,
+          "completion_date": 1694390400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1678924800000,
+          "pc_owner": "FENPROP, LLC",
+          "valid_until": 1789084800000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07661927,
+          "Longitude": -76.1607641,
+          "NeedsRR": "Yes",
+          "ObjectId": 794,
+          "PropertyAddress": "715 Wolf St",
+          "RR_app_received": 1670198400000,
+          "RR_contact_name": "Timothy Wilson",
+          "RR_ext_insp_fail": 1674777600000,
+          "RR_ext_insp_pass": 1688688000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1674604800000,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-14.0",
+          "SHAPE": null,
+          "completion_date": 1689292800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1690502400000,
+          "pc_owner": "Timothy Wilson Living Trust",
+          "valid_until": 1783987200000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07653877,
+          "Longitude": -76.16082429,
+          "NeedsRR": "Yes",
+          "ObjectId": 796,
+          "PropertyAddress": "713 Wolf St",
+          "RR_app_received": 1670198400000,
+          "RR_contact_name": "Timothy Wilson",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1674604800000,
+          "RR_int_insp_fail": 1674604800000,
+          "RR_int_insp_pass": 1688688000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-15.0",
+          "SHAPE": null,
+          "completion_date": 1689292800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1688688000000,
+          "pc_owner": "Timothy Wilson Living Trust",
+          "valid_until": 1783987200000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07624024,
+          "Longitude": -76.16090621,
+          "NeedsRR": "Yes",
+          "ObjectId": 800,
+          "PropertyAddress": "707 Wolf St",
+          "RR_app_received": null,
+          "RR_contact_name": "Jasmine Garza",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-02-18.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1779148800000,
+          "pc_owner": "Jasmine Garza",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [
+        {
+          "Latitude": 43.07637748,
+          "Longitude": -76.16094461,
+          "ObjectId": 318,
+          "SBL": "003.-02-17.0",
+          "Vacant": null,
+          "address": "709 Wolf St",
+          "area_involved": null,
+          "article": "A structure is unfit for human occupancy whenever such structure is unsafe, unlawful or, because of the degree to which the structure is in disrepair or lacks maintenance, is insanitary, vermin or rat infested, contains filth and contamination, or lacks ventilation, illumination, sanitary or heating facilities or other essential equipment required by this code, or because the location of the structure constitutes a hazard to the occupants of the structure or to the public.",
+          "comp_close_date": 1447632000000,
+          "comp_open_date": 1337248326000,
+          "comp_status": "Completed",
+          "complaint_number": "2012-11018",
+          "complaint_type_name": "Property Maintenance-Int",
+          "comply_by_date": 1337853158000,
+          "corrective_action": "Unfit due to no water",
+          "department_name": "Codes",
+          "owner_address": "709 Wolf St ",
+          "owner_city": "Syracuse",
+          "owner_name": "Charles Greco",
+          "owner_state": "NY",
+          "owner_zip_code": "13208",
+          "parcel_id": 571,
+          "status_date": 1337248355873,
+          "status_type_name": "Open",
+          "violation": "2010 IMC - Section 107.1.3 - Premises Unfit for Human Occupancy",
+          "violation_date": 1337248355873,
+          "violation_number": "04306",
+          "zip": 13208
+        }
+      ],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5170081873,
+          "landuse": null,
+          "name": "Majewski's Auto Body Collision Service",
+          "shop": "car_repair",
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "701",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Wolf Street",
+            "name": "Majewski's Auto Body Collision Service",
+            "nysgissam:nysaddresspointid": "ONON151163",
+            "service": "repair",
+            "shop": "car_repair",
+            "short_name": "MACS"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5170081874,
+          "landuse": null,
+          "name": "Golden Sunshine Spa",
+          "shop": "beauty",
+          "tags": {
+            "fixme": "resurvey for more data",
+            "name": "Golden Sunshine Spa",
+            "shop": "beauty"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": "post_box",
+          "building": null,
+          "historic": null,
+          "id": 5189770697,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "amenity": "post_box",
+            "collection_times": "Mo-Fr 09:30; Sa 09:00",
+            "operator": "United States Postal Service",
+            "operator:short": "USPS",
+            "operator:type": "public",
+            "operator:website": "https://www.usps.com",
+            "operator:wikidata": "Q668687",
+            "operator:wikipedia": "en:United States Postal Service",
+            "ref": "1320800001",
+            "short_name": "USPS"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 6486954736,
+          "landuse": null,
+          "name": "Guy's Automotive Sales",
+          "shop": "car",
+          "tags": {
+            "contact:phone": "+1 315 579 0777",
+            "fixme": "resurvey for address",
+            "name": "Guy's Automotive Sales",
+            "second_hand": "yes",
+            "service": "repair",
+            "shop": "car"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300622,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300623,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304624,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305972,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077306608,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309523,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309823,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310593,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311837,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311867,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312475,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077316569,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324246,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324277,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324620,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077327751,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "shop: car_repair",
+          "id": 5170081873,
+          "label": "Majewski's Auto Body Collision Service",
+          "tags": {
+            "name": "Majewski's Auto Body Collision Service",
+            "shop": "car_repair"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: beauty",
+          "id": 5170081874,
+          "label": "Golden Sunshine Spa",
+          "tags": {
+            "name": "Golden Sunshine Spa",
+            "shop": "beauty"
+          },
+          "type": "node"
+        },
+        {
+          "category": "amenity: post_box",
+          "id": 5189770697,
+          "label": "amenity: post_box",
+          "tags": {
+            "amenity": "post_box"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: car",
+          "id": 6486954736,
+          "label": "Guy's Automotive Sales",
+          "tags": {
+            "name": "Guy's Automotive Sales",
+            "shop": "car"
+          },
+          "type": "node"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {
+          "post_box": 1
+        },
+        "buildings": 16,
+        "historic": {},
+        "landuse": {},
+        "named_features": 3,
+        "shops": {
+          "beauty": 1,
+          "car": 1,
+          "car_repair": 1
+        }
+      }
+    },
+    "parcel_key": "003-02-160",
+    "published_at": "2026-06-08T12:06:21+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "711 Wolf St"
+  },
+  {
     "address": "713 Wolf St",
     "ai_analysis": {
       "available": true,
