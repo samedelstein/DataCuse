@@ -1,5 +1,230 @@
 [
   {
+    "address": "717 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image appears to be slightly blurry and the angle may cause some distortion, so the visible conditions should be confirmed with more accurate imagery or an on-site visit. Additionally, there may be issues that are not visible in this image or are obscured by weather or other factors."
+      ],
+      "condition_scores": {},
+      "confidence": "high|medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "x": "0.135,0.278,0.640,0.930"
+          },
+          "confidence": "high",
+          "label": "structural damage",
+          "reason": "evidence of cracks and possible water damage on the siding"
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "image-only flags not already reflected in known_data"
+      ],
+      "property_type_guess": "single-family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image displays a single-family house with some visible exterior conditions.",
+      "visible_conditions": {
+        "porch_or_entry": "not visible",
+        "roof": "good",
+        "siding_or_facade": "fair",
+        "trash_debris": "none visible",
+        "vegetation_overgrowth": "none visible",
+        "windows_doors": "good",
+        "yard_or_lot": "poor|unclear"
+      },
+      "visible_flags": {
+        "active_construction_visible": "yes",
+        "boarded_windows_or_doors": "no|unclear",
+        "fire_damage_visible": "yes",
+        "structural_damage_visible": "yes",
+        "vacancy_signs_visible": "yes|unclear"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 5 matching records",
+      "Image-only flag: image-only flags not already reflected in known_data",
+      "Needs human review"
+    ],
+    "id": 146,
+    "image": "images/parcel-000146.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 74047,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07664705255002,
+    "lon": -76.16055516568558,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07664919,
+          "Longitude": -76.16060115,
+          "NeedsRR": "Yes",
+          "ObjectId": 792,
+          "PropertyAddress": "717 Wolf St",
+          "RR_app_received": 1654732800000,
+          "RR_contact_name": "Jeffery & Robert Fenocchi, Robert Fenocchi",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1657065600000,
+          "RR_int_insp_fail": 1657065600000,
+          "RR_int_insp_pass": 1664236800000,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-13.0",
+          "SHAPE": null,
+          "completion_date": 1694390400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1678924800000,
+          "pc_owner": "FENPROP, LLC",
+          "valid_until": 1789084800000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.0768861,
+          "Longitude": -76.16078063,
+          "NeedsRR": "Yes",
+          "ObjectId": 790,
+          "PropertyAddress": "3115 Grant Blvd",
+          "RR_app_received": 1655251200000,
+          "RR_contact_name": "FENPROP, LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1657065600000,
+          "RR_int_insp_fail": 1657238400000,
+          "RR_int_insp_pass": 1664236800000,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-10.0",
+          "SHAPE": null,
+          "completion_date": 1694390400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1687392000000,
+          "pc_owner": "William Anthony Henderson",
+          "valid_until": 1789084800000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07661927,
+          "Longitude": -76.1607641,
+          "NeedsRR": "Yes",
+          "ObjectId": 794,
+          "PropertyAddress": "715 Wolf St",
+          "RR_app_received": 1670198400000,
+          "RR_contact_name": "Timothy Wilson",
+          "RR_ext_insp_fail": 1674777600000,
+          "RR_ext_insp_pass": 1688688000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1674604800000,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-14.0",
+          "SHAPE": null,
+          "completion_date": 1689292800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1690502400000,
+          "pc_owner": "Timothy Wilson Living Trust",
+          "valid_until": 1783987200000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07653877,
+          "Longitude": -76.16082429,
+          "NeedsRR": "Yes",
+          "ObjectId": 796,
+          "PropertyAddress": "713 Wolf St",
+          "RR_app_received": 1670198400000,
+          "RR_contact_name": "Timothy Wilson",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1674604800000,
+          "RR_int_insp_fail": 1674604800000,
+          "RR_int_insp_pass": 1688688000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-15.0",
+          "SHAPE": null,
+          "completion_date": 1689292800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1688688000000,
+          "pc_owner": "Timothy Wilson Living Trust",
+          "valid_until": 1783987200000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07645812,
+          "Longitude": -76.16088445,
+          "NeedsRR": "Yes",
+          "ObjectId": 798,
+          "PropertyAddress": "711 Wolf St",
+          "RR_app_received": 1670198400000,
+          "RR_contact_name": "Timothy Wilson",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1688688000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1688688000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-02-16.0",
+          "SHAPE": null,
+          "completion_date": 1689292800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1688688000000,
+          "pc_owner": "Timothy Wilson Living Trust",
+          "valid_until": 1783987200000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-02-130",
+    "published_at": "2026-06-08T09:07:49+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue",
+      "active construction visible",
+      "fire damage visible",
+      "structural damage visible"
+    ],
+    "title": "717 Wolf St"
+  },
+  {
     "address": "725 Wolf St",
     "ai_analysis": {
       "available": true,
