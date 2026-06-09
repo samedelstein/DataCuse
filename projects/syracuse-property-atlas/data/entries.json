@@ -1,5 +1,384 @@
 [
   {
+    "address": "3120-22 Grant Blvd",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image does not provide enough context to confidently determine the property type or current use, and there are no visible indicators of recent activity beyond being vacant."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "good",
+        "siding_or_facade": "fair",
+        "windows_doors": "fair"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.793,
+            "width": 0.826,
+            "x": 0.278,
+            "y": 0.415
+          },
+          "confidence": "high",
+          "label": "building on an empty lot",
+          "reason": "The lot is clear and appears to be vacant."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "No visible signs of occupancy or recent use, so the status of the property may not be fully accurate if it's not a current image"
+      ],
+      "property_type_guess": "unclear",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a two-story building with a flat roof on an empty city lot. The property appears to be unoccupied and is not currently being used for any visible purpose.",
+      "visible_conditions": [
+        "The exterior of the building is in fair condition, with no apparent signs of damage or neglect. The windows are intact, and there's no visible overgrowth. The yard is clear, and it looks like an open space without any fencing or landscaping features.",
+        "trash_debris: none_visible|minor|major|unclear",
+        "porch_or_entry: good|fair|poor|not_visible|unclear"
+      ],
+      "visible_flags": {
+        "boarded_windows_or_doors: no|unclear": "fire_damage_visible: no|unclear"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: No visible signs of occupancy or recent use, so the status of the property may not be fully accurate if it's not a current image",
+      "Needs human review"
+    ],
+    "id": 177,
+    "image": "images/parcel-000177.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 73966,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.077536903779766,
+    "lon": -76.16062809395152,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5167889505,
+          "landuse": null,
+          "name": "Guy's Automotive Service",
+          "shop": "car_repair",
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "700",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Hiawatha Boulevard East",
+            "check_date": "2025-09-30",
+            "contact:phone": "+1 315 472 7011",
+            "name": "Guy's Automotive Service",
+            "nysgissam:nysaddresspointid": "ONON057850",
+            "service": "repair",
+            "shop": "car_repair"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5167889506,
+          "landuse": null,
+          "name": null,
+          "shop": "antiques",
+          "tags": {
+            "fixme": "resurvey for name",
+            "shop": "antiques"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077299815,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300622,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304841,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077306121,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311021,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311837,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311866,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312852,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077337294,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077337523,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771112,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771114,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771119,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "shop: car_repair",
+          "id": 5167889505,
+          "label": "Guy's Automotive Service",
+          "tags": {
+            "name": "Guy's Automotive Service",
+            "shop": "car_repair"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: antiques",
+          "id": 5167889506,
+          "label": "shop: antiques",
+          "tags": {
+            "shop": "antiques"
+          },
+          "type": "node"
+        },
+        {
+          "category": "landuse: residential",
+          "id": 1189771112,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: residential",
+          "id": 1189771114,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189771119,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 10,
+        "historic": {},
+        "landuse": {
+          "industrial": 1,
+          "residential": 2
+        },
+        "named_features": 1,
+        "shops": {
+          "antiques": 1,
+          "car_repair": 1
+        }
+      }
+    },
+    "parcel_key": "003-03-190",
+    "published_at": "2026-06-09T16:07:56+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "3120-22 Grant Blvd"
+  },
+  {
     "address": "3110 Grant Blvd",
     "ai_analysis": {
       "available": true,
