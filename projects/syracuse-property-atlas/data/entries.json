@@ -1,5 +1,89 @@
 [
   {
+    "address": "756 Hiawatha Blvd E & Fourth",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The roof is not visible from this street-level perspective."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "not_visible",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A single-story commercial or industrial building with grey painted walls, featuring two metal roll-up garage doors and a standard metal entry door.",
+      "visible_conditions": [
+        "Grey painted exterior walls in seemingly stable condition",
+        "Two intact metal roll-up garage doors",
+        "One standard metal entry door",
+        "Paved asphalt apron in front of the building showing minor wear and cracking"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 164,
+    "image": "images/parcel-000164.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 51730,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.078232501556954,
+    "lon": -76.16051722219964,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-03-051",
+    "published_at": "2026-06-09T03:03:06+00:00",
+    "review_reasons": [],
+    "title": "756 Hiawatha Blvd E & Fourth"
+  },
+  {
     "address": "718 Hiawatha Blvd E",
     "ai_analysis": {
       "available": true,
