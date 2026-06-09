@@ -1,5 +1,139 @@
 [
   {
+    "address": "913 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "A small, partially visible structure is present on the far left edge of the image, making it slightly unclear if the entire parcel is solely a vacant lot or if this structure is part of it."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "not_visible",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.25,
+            "width": 0.35,
+            "x": 0.6,
+            "y": 0.5
+          },
+          "confidence": "high",
+          "label": "Trailer with materials",
+          "reason": "A trailer loaded with what appears to be scaffolding or metal pipes is parked on the lot."
+        },
+        {
+          "bbox": {
+            "height": 0.4,
+            "width": 0.9,
+            "x": 0.05,
+            "y": 0.45
+          },
+          "confidence": "high",
+          "label": "Sparse ground cover",
+          "reason": "The lot surface consists of dirt, gravel, and sparse grass rather than a maintained lawn."
+        },
+        {
+          "bbox": {
+            "height": 0.25,
+            "width": 1.0,
+            "x": 0.0,
+            "y": 0.35
+          },
+          "confidence": "high",
+          "label": "Vegetation along fence",
+          "reason": "Overgrown vegetation is visible along the chain-link fence at the rear of the lot."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "The presence of a trailer with materials on the lot might suggest storage or activity not typically associated with a purely vacant lot."
+      ],
+      "property_type_guess": "vacant_lot",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image appears to show a mostly vacant lot with a surface of dirt, gravel, and sparse grass, featuring a trailer with materials parked on the right side.",
+      "visible_conditions": [
+        "The property appears to be a vacant lot with a surface composed of dirt, gravel, and sparse grass.",
+        "A chain-link fence is visible along what appears to be the rear boundary of the lot.",
+        "A trailer loaded with materials, possibly scaffolding or metal pipes, is parked on the right side of the lot.",
+        "Minor vegetation overgrowth, including weeds and small bushes, is present along the fence line and in various patches across the lot.",
+        "A small, partially visible structure with yellow siding is present on the far left edge of the image, potentially on an adjacent parcel or the very edge of the subject parcel."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: The presence of a trailer with materials on the lot might suggest storage or activity not typically associated with a purely vacant lot."
+    ],
+    "id": 181,
+    "image": "images/parcel-000181.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 91644,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07883705466766,
+    "lon": -76.15886681441405,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-04-020",
+    "published_at": "2026-06-09T20:04:03+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "913 Wolf St"
+  },
+  {
     "address": "900 Hiawatha Blvd E",
     "ai_analysis": {
       "available": true,
