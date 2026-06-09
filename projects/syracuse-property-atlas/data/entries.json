@@ -1,5 +1,121 @@
 [
   {
+    "address": "213-19 Fourth North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Only the front facade is visible from the street-level image; the roof, sides, and rear of the structure cannot be evaluated."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "not_visible",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "poor",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.1,
+            "width": 0.12,
+            "x": 0.4,
+            "y": 0.58
+          },
+          "confidence": "high",
+          "label": "boarded window",
+          "reason": "Ground floor window opening is covered with a wooden board."
+        },
+        {
+          "bbox": {
+            "height": 0.11,
+            "width": 0.5,
+            "x": 0.41,
+            "y": 0.4
+          },
+          "confidence": "high",
+          "label": "covered upper windows",
+          "reason": "Upper level window openings appear covered or boarded with dark panels."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Multiple boarded-up window openings on both the ground and upper levels suggest the building may be vacant or secured."
+      ],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story commercial building with a masonry facade, featuring closed garage bays and several boarded or covered window openings.",
+      "visible_conditions": [
+        "Lower-level window on the left is boarded up with a wooden panel.",
+        "Upper-level windows appear to be covered with dark, weathered panels or shutters.",
+        "The masonry facade shows minor discoloration and weathering.",
+        "The grass area in front of the building is mowed, but shows some weeds along the concrete borders."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "yes",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Multiple boarded-up window openings on both the ground and upper levels suggest the building may be vacant or secured.",
+      "Needs human review"
+    ],
+    "id": 165,
+    "image": "images/parcel-000165.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 70902,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07821051707698,
+    "lon": -76.16015850140307,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-03-070",
+    "published_at": "2026-06-09T04:03:11+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue",
+      "boarded windows or doors"
+    ],
+    "title": "213-19 Fourth North St"
+  },
+  {
     "address": "756 Hiawatha Blvd E & Fourth",
     "ai_analysis": {
       "available": true,
