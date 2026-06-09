@@ -1,5 +1,226 @@
 [
   {
+    "address": "901 Wolf St & Fourth North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The flat roof is not directly visible from this street-level angle.",
+        "Distance from the camera limits detailed inspection of the windows and doors."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "unclear",
+        "siding_or_facade": "good",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A single-story commercial building with metal siding, two garage bays, and a paved parking lot in front.",
+      "visible_conditions": [
+        "The metal siding appears intact with no major denting or rust visible from this distance.",
+        "Two white overhead garage doors and one standard entry door appear functional and intact.",
+        "The paved lot shows some minor cracking and surface wear.",
+        "Mature trees are visible immediately behind the structure but do not appear to be encroaching on the building."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 182,
+    "image": "images/parcel-000182.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 75779,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07860230974547,
+    "lon": -76.15919125569259,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077299431,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077299432,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304489,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314888,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315180,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336095,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771114,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771119,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: residential",
+          "id": 1189771114,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189771119,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 6,
+        "historic": {},
+        "landuse": {
+          "industrial": 1,
+          "residential": 1
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-04-030",
+    "published_at": "2026-06-09T21:03:10+00:00",
+    "review_reasons": [],
+    "title": "901 Wolf St & Fourth North St"
+  },
+  {
     "address": "913 Wolf St",
     "ai_analysis": {
       "available": true,
