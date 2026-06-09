@@ -1,5 +1,191 @@
 [
   {
+    "address": "810 Hiawatha Blvd E & Fourth",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The lower portion of the building facade is partially obstructed by parked vehicles.",
+        "The roof and main entryways are not visible from this angle."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.09,
+            "width": 0.22,
+            "x": 0.22,
+            "y": 0.57
+          },
+          "confidence": "high",
+          "label": "graffiti",
+          "reason": "Visible spray-painted graffiti on the lower brick wall"
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Graffiti on the lower brick facade"
+      ],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A multi-story brick commercial or industrial building with faded historic lettering and visible graffiti on the lower facade, fronted by a gravel parking area with several vehicles.",
+      "visible_conditions": [
+        "Faded historic painted signage on the brick facade.",
+        "Graffiti tagging on the lower brick wall behind parked vehicles.",
+        "Gravel parking area in front of the building.",
+        "Upper-story windows appear intact with dark frames."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Graffiti on the lower brick facade"
+    ],
+    "id": 184,
+    "image": "images/parcel-000184.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 88104,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07902928299034,
+    "lon": -76.15973564858163,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304488,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304489,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189609083,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771119,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: industrial",
+          "id": 1189609083,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189771119,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 2,
+        "historic": {},
+        "landuse": {
+          "industrial": 2
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-04-050",
+    "published_at": "2026-06-09T23:02:56+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "810 Hiawatha Blvd E & Fourth"
+  },
+  {
     "address": "214 Fourth North St",
     "ai_analysis": {
       "available": true,
