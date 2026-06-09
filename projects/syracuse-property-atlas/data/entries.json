@@ -1,5 +1,134 @@
 [
   {
+    "address": "817 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Parked vehicles partially obstruct the lower level of the property from the street view.",
+        "The exact property boundaries are assumed based on typical parcel layouts for the address."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential building with light grey siding and white trim, appearing in fair to good exterior condition with no obvious structural damage or boarding visible from the street.",
+      "visible_conditions": [
+        "Light grey siding appears intact and in good condition",
+        "Windows and front door appear intact with no visible boarding",
+        "Small front entry stoop is visible behind parked vehicles",
+        "No significant trash, debris, or overgrowth is visible in the immediate front yard area"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Rental registry: 1 matching record"
+    ],
+    "id": 170,
+    "image": "images/parcel-000170.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 78315,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07795231257347,
+    "lon": -76.15980604130503,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07791482,
+          "Longitude": -76.15978536,
+          "NeedsRR": "Yes",
+          "ObjectId": 810,
+          "PropertyAddress": "817 Wolf St",
+          "RR_app_received": 1692748800000,
+          "RR_contact_name": "Brian Freeman",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "Yes",
+          "SBL": "003.-03-12.0",
+          "SHAPE": null,
+          "completion_date": 1705536000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1705622400000,
+          "pc_owner": "Brian Freeman",
+          "valid_until": 1800230400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.07785897,
+          "Longitude": -76.15983945,
+          "ObjectId": 370,
+          "Owner": "Carol Ace",
+          "OwnerAddress": "815 Wolf St Syracuse, NY 13208",
+          "PropertyAddress": "815 Wolf St",
+          "SBL": "003.-03-13.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": null
+        }
+      ]
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-03-120",
+    "published_at": "2026-06-09T09:03:04+00:00",
+    "review_reasons": [],
+    "title": "817 Wolf St"
+  },
+  {
     "address": "819 Wolf St",
     "ai_analysis": {
       "available": true,
