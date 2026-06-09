@@ -1,5 +1,454 @@
 [
   {
+    "address": "815 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Parked vehicles in the foreground partially obstruct the lower level of the property.",
+        "The exact boundary of the parcel is not fully clear from the street view."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential building with grey siding and white trim, partially obscured by parked vehicles.",
+      "visible_conditions": [
+        "Grey vinyl siding appears intact and in fair to good condition.",
+        "Windows appear intact with no visible boarding or breakage.",
+        "The front facade is partially obstructed by parked vehicles.",
+        "No obvious signs of vacancy or neglect are visible from the street exterior."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Rental registry: 1 matching record"
+    ],
+    "id": 171,
+    "image": "images/parcel-000171.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 78130,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07784728188218,
+    "lon": -76.15977243438522,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07791482,
+          "Longitude": -76.15978536,
+          "NeedsRR": "Yes",
+          "ObjectId": 810,
+          "PropertyAddress": "817 Wolf St",
+          "RR_app_received": 1692748800000,
+          "RR_contact_name": "Brian Freeman",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "Yes",
+          "SBL": "003.-03-12.0",
+          "SHAPE": null,
+          "completion_date": 1705536000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1705622400000,
+          "pc_owner": "Brian Freeman",
+          "valid_until": 1800230400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.07785897,
+          "Longitude": -76.15983945,
+          "ObjectId": 370,
+          "Owner": "Carol Ace",
+          "OwnerAddress": "815 Wolf St Syracuse, NY 13208",
+          "PropertyAddress": "815 Wolf St",
+          "SBL": "003.-03-13.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": null
+        }
+      ]
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077299431,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077299432,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077299811,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077299815,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077307181,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312105,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312852,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077320184,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326498,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329304,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077335400,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336095,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336822,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077337294,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077337523,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771094,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771114,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771115,
+          "landuse": "retail",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "retail"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771116,
+          "landuse": "retail",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "retail"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771119,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: residential",
+          "id": 1189771094,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: residential",
+          "id": 1189771114,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: retail",
+          "id": 1189771115,
+          "label": "landuse: retail",
+          "tags": {
+            "landuse": "retail"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: retail",
+          "id": 1189771116,
+          "label": "landuse: retail",
+          "tags": {
+            "landuse": "retail"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189771119,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 15,
+        "historic": {},
+        "landuse": {
+          "industrial": 1,
+          "residential": 2,
+          "retail": 2
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-03-130",
+    "published_at": "2026-06-09T10:02:56+00:00",
+    "review_reasons": [],
+    "title": "815 Wolf St"
+  },
+  {
     "address": "817 Wolf St",
     "ai_analysis": {
       "available": true,
