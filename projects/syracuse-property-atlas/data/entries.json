@@ -1,5 +1,120 @@
 [
   {
+    "address": "708 Hiawatha Blvd E To Grant",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The roof is not visible from this street-level perspective.",
+        "A utility pole partially obstructs the left portion of the facade."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.12,
+            "width": 0.2,
+            "x": 0.26,
+            "y": 0.45
+          },
+          "confidence": "high",
+          "label": "boarded window",
+          "reason": "Large rectangular window opening covered with a solid board"
+        },
+        {
+          "bbox": {
+            "height": 0.11,
+            "width": 0.06,
+            "x": 0.62,
+            "y": 0.46
+          },
+          "confidence": "high",
+          "label": "boarded window",
+          "reason": "Smaller vertical window opening covered with a solid board"
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Boarded-up windows may indicate vacancy or security measures not fully detailed in standard public records."
+      ],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A single-story brick commercial or industrial building with boarded-up window openings, a metal service door, and a large roll-up garage door.",
+      "visible_conditions": [
+        "Multiple window openings are boarded up with painted panels.",
+        "The facade consists of red brick with a concrete block foundation level showing some staining.",
+        "A metal service door and a large white overhead garage door appear intact.",
+        "A wooden utility pole stands directly in front of the building's left side."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "yes",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Boarded-up windows may indicate vacancy or security measures not fully detailed in standard public records."
+    ],
+    "id": 162,
+    "image": "images/parcel-000162.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 69655,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07771786223611,
+    "lon": -76.16086556756619,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-03-020",
+    "published_at": "2026-06-09T01:03:16+00:00",
+    "review_reasons": [
+      "Possible image-only issue",
+      "boarded windows or doors"
+    ],
+    "title": "708 Hiawatha Blvd E To Grant"
+  },
+  {
     "address": "3130 Grant Blvd & Hiawatha Blv",
     "ai_analysis": {
       "available": true,
