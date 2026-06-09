@@ -1,5 +1,359 @@
 [
   {
+    "address": "3110 Grant Blvd",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "{\n  \"summary\": \"The property appears to be a two-story brick building, possibly commercial or mixed-use, exhibiting some minor vegetation overgrowth near the foundation and an unkempt front yard.\",\n  \"property_type_guess\": \"commercial\",\n  \"visible_conditions\": [\n    \"The property features a two-story brick building facade.\",\n    \"Multiple windows are visible on both the ground and upper floors, appearing intact.\",\n    \"A glass entry door is visible on the ground floor.\",\n    \"A green sign is affixed to the building near the main entrance, though its text is not legible.\",\n    \"The front yard consists of grass, which appears somewhat unkempt with some bare patches.\",\n    \"Minor vegetation is visible growing near the building's foundation and around the entry area.\",\n    \"The sidewalk in front of the property shows visible cracks.\",\n    \"A utility pole is present in the foreground, partially obstructing the view of the left side of the property.\"\n   furlough\"\n  ],\n  \"condition_scores\": {\n    \"roof\": \"not_visible\",\n    \"siding_or_facade\": \"fair\",\n    \"windows_doors\": \"good\",\n    \"porch_or_entry\": \"fair\",\n    \"yard_or_lot\": \"fair\",\n    \"trash_debris\": \"none_visible\",\n    \"vegetation_overgrowth\": \"minor\"\n  },\n  \"visible_flags\": {\n    \"boarded_windows_or_doors\": \"no\",\n    \"fire_damage_visible\": \"no\",\n    \"structural_damage_visible\": \"no\",\n    \"vacancy_signs_visible\": \"unclear\",\n    \"active_construction_visible\": \"no\"\n  },\n  \"possible_unrecorded_issues\": [\n    \"Minor vegetation overgrowth is visible near the building's foundation and entry.\",\n    \"The front yard appears unkempt with some areas of sparse grass.\",\n    \"Cracks are visible in the sidewalk directly in front of the property.\"\n  ],\n  \"image_annotations\": [\n    {\n      \"label\": \"Vegetation overgrowth\",\n      \"reason\": \"Minor vegetation is growing near the building's foundation and around the entry.\",\n      \"bbox\": {\n        \"x\": 0.45,\n        \"y\": 0.58,\n        \"width\": 0.45,\n        \"height\": 0.1\n      },\n      \"confidence\": \"high\"\n    },\n    {\n      \"label\": \"Unkempt yard\",\n      \"reason\": \"The grass in the front yard appears unmaintained with some bare patches.\",\n      \"bbox\": {\n        \"x\": 0.35,\n        \"y\": 0.65,\n        \"width\": 0.6,\n        \"height\": 0.15\n      },\n      \"confidence\": \"high\"\n    },\n    {\n      \"label\": \"Cracked sidewalk\",\n      \"reason\": \"Visible cracks are present in the concrete sidewalk directly in front of the property.\",\n      \"bbox\": {\n        \"x\": 0.3,\n        \"y\": 0.75,\n        \"width\": 0.65,\n        \"height\": 0.1\n      },\n      \"confidence\": \"high\"\n    }\n  ],\n  \"needs_human_review\": \"false\",\n  \"confidence\": \"high\",\n  \"caveats\": [\n    \"The roof condition could not be assessed due to the viewing angle and possible parapet walls.\",\n    \"The exact nature of the green sign near the entrance is not legible from the image.\",\n    \"A utility pole partially obstructs the view of the far left side of the property.\"\n  ]\n}",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 176,
+    "image": "images/parcel-000176.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 86836,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07760753901043,
+    "lon": -76.16041637358768,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5167889505,
+          "landuse": null,
+          "name": "Guy's Automotive Service",
+          "shop": "car_repair",
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "700",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Hiawatha Boulevard East",
+            "check_date": "2025-09-30",
+            "contact:phone": "+1 315 472 7011",
+            "name": "Guy's Automotive Service",
+            "nysgissam:nysaddresspointid": "ONON057850",
+            "service": "repair",
+            "shop": "car_repair"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5167889506,
+          "landuse": null,
+          "name": null,
+          "shop": "antiques",
+          "tags": {
+            "fixme": "resurvey for name",
+            "shop": "antiques"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077299811,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077299815,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304841,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077306121,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312105,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312852,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329304,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077335400,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077335401,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077337294,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077337523,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771112,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771114,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771119,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "shop: car_repair",
+          "id": 5167889505,
+          "label": "Guy's Automotive Service",
+          "tags": {
+            "name": "Guy's Automotive Service",
+            "shop": "car_repair"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: antiques",
+          "id": 5167889506,
+          "label": "shop: antiques",
+          "tags": {
+            "shop": "antiques"
+          },
+          "type": "node"
+        },
+        {
+          "category": "landuse: residential",
+          "id": 1189771112,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: residential",
+          "id": 1189771114,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189771119,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 11,
+        "historic": {},
+        "landuse": {
+          "industrial": 1,
+          "residential": 2
+        },
+        "named_features": 1,
+        "shops": {
+          "antiques": 1,
+          "car_repair": 1
+        }
+      }
+    },
+    "parcel_key": "003-03-180",
+    "published_at": "2026-06-09T15:04:42+00:00",
+    "review_reasons": [],
+    "title": "3110 Grant Blvd"
+  },
+  {
     "address": "801 Wolf St & Grant Blvd",
     "ai_analysis": {
       "available": true,
