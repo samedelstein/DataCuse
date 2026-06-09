@@ -1,5 +1,165 @@
 [
   {
+    "address": "209-11 Fourth North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "image quality is poor with low resolution and may not fully represent property conditions"
+      ],
+      "condition_scores": {
+        "porch_or_entry": "poor",
+        "roof": "poor",
+        "siding_or_facade": "poor",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "major",
+        "windows_doors": "unclear",
+        "yard_or_lot": "poor"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.659,
+            "width": 0.572,
+            "x": 0.381,
+            "y": 0.476
+          },
+          "confidence": "high",
+          "label": "overgrown yard",
+          "reason": "weeds in yard are overgrown and untended"
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "poor siding and exterior condition may not be fully visible due to angle or quality of the image, and additional conditions could exist on the interior or back of the property"
+      ],
+      "property_type_guess": "single_family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a two-story residential building with an open front door and a covered porch. The yard is overgrown with weeds and there are signs of disrepair on the exterior.",
+      "visible_conditions": [
+        "poor siding",
+        "overgrown yard",
+        "damaged or weathered roof"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "unclear",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Rental registry: 1 matching record",
+      "Image-only flag: poor siding and exterior condition may not be fully visible due to angle or quality of the image, and additional conditions could exist on the interior or back of the property",
+      "Needs human review"
+    ],
+    "id": 166,
+    "image": "images/parcel-000166.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 70207,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0781778782994,
+    "lon": -76.15987135954305,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07791482,
+          "Longitude": -76.15978536,
+          "NeedsRR": "Yes",
+          "ObjectId": 810,
+          "PropertyAddress": "817 Wolf St",
+          "RR_app_received": 1692748800000,
+          "RR_contact_name": "Brian Freeman",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "Yes",
+          "SBL": "003.-03-12.0",
+          "SHAPE": null,
+          "completion_date": 1705536000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1705622400000,
+          "pc_owner": "Brian Freeman",
+          "valid_until": 1800230400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.07785897,
+          "Longitude": -76.15983945,
+          "ObjectId": 370,
+          "Owner": "Carol Ace",
+          "OwnerAddress": "815 Wolf St Syracuse, NY 13208",
+          "PropertyAddress": "815 Wolf St",
+          "SBL": "003.-03-13.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": null
+        }
+      ]
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-03-080",
+    "published_at": "2026-06-09T05:07:25+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "209-11 Fourth North St"
+  },
+  {
     "address": "213-19 Fourth North St",
     "ai_analysis": {
       "available": true,
