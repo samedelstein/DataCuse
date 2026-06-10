@@ -1,5 +1,275 @@
 [
   {
+    "address": "1032 Hiawatha Blvd E",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The roof is mostly obscured from this low street-level angle.",
+        "Only the front facade is visible; side and rear conditions cannot be verified."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "poor",
+        "roof": "unclear",
+        "siding_or_facade": "poor",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "poor",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.12,
+            "width": 0.16,
+            "x": 0.34,
+            "y": 0.47
+          },
+          "confidence": "high",
+          "label": "broken window panes",
+          "reason": "Shattered and missing glass panes in the enclosed porch windows"
+        },
+        {
+          "bbox": {
+            "height": 0.11,
+            "width": 0.08,
+            "x": 0.71,
+            "y": 0.49
+          },
+          "confidence": "high",
+          "label": "broken door glass",
+          "reason": "Shattered glass pane on the front entry door"
+        },
+        {
+          "bbox": {
+            "height": 0.2,
+            "width": 0.3,
+            "x": 0.35,
+            "y": 0.25
+          },
+          "confidence": "high",
+          "label": "peeling paint",
+          "reason": "Extensive paint peeling and weathered wood siding on the upper facade"
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Multiple broken window and door panes present an open security and weather exposure risk",
+        "Severe paint deterioration on wood siding"
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential structure showing significant exterior neglect, including extensive peeling paint on the siding and multiple broken window panes on the front porch and entry door.",
+      "visible_conditions": [
+        "Extensive peeling paint and weathered wood siding on the upper gable",
+        "Multiple broken glass panes on the enclosed front porch windows",
+        "Shattered glass pane on the front entry door",
+        "Slightly overgrown grass in the front yard"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Image-only flag: Multiple broken window and door panes present an open security and weather exposure risk",
+      "Image-only flag: Severe paint deterioration on wood siding",
+      "Needs human review"
+    ],
+    "id": 187,
+    "image": "images/parcel-000187.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 79439,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0819615816264,
+    "lon": -76.15771782812128,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.08196239,
+          "Longitude": -76.15776481,
+          "ObjectId": 224,
+          "Owner": "Edward Mccarty",
+          "OwnerAddress": "103 Kirsch Dr Syracuse, NY 13211",
+          "PropertyAddress": "1032 Hiawatha Blvd E",
+          "SBL": "003.-05-03.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": null
+        }
+      ]
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305338,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077306085,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325336,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077337553,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077337554,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189609084,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771119,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: industrial",
+          "id": 1189609084,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189771119,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 5,
+        "historic": {},
+        "landuse": {
+          "industrial": 2
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-05-030",
+    "published_at": "2026-06-10T02:03:10+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "1032 Hiawatha Blvd E"
+  },
+  {
     "address": "1020 Hiawatha Blvd E",
     "ai_analysis": {
       "available": true,
