@@ -1,5 +1,142 @@
 [
   {
+    "address": "1114 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "not_visible"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: The read operation timed out",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.081,
+            "width": 0.033,
+            "x": 0.781,
+            "y": 0.672
+          },
+          "confidence": "high",
+          "label": "Minor debris (orange cone)",
+          "reason": "An orange traffic cone is visible on the sidewalk near the right side of the property's entrance."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "The visible commercial storefront on the ground floor, indicated by signage and outdoor seating, may represent a mixed-use condition not explicitly detailed by a single 'Rental registry: 1 matching record' if that record pertains to the entire building."
+      ],
+      "property_type_guess": "mixed_use",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property appears to be a two-story mixed-use building with a commercial establishment on the ground floor and residential-style windows on the upper floor, generally presenting in fair visible exterior condition.",
+      "visible_conditions": [
+        "The building has a light-colored siding on the upper story and a darker facade on the ground level.",
+        "Multiple windows are visible on the upper floor, with one containing an air conditioning unit.",
+        "The ground floor features arched windows and a main entry door, suggesting a commercial storefront.",
+        "Outdoor picnic tables are present on the sidewalk in front of the ground-floor establishment.",
+        "The roof appears to be a gable style, with visible portions in fair condition.",
+        "The property is situated directly adjacent to the sidewalk, with no visible front yard."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Image-only flag: The visible commercial storefront on the ground floor, indicated by signage and outdoor seating, may represent a mixed-use condition not explicitly detailed by a single 'Rental registry: 1 matching record' if that record pertains to the entire building.",
+      "Needs human review"
+    ],
+    "id": 199,
+    "image": "images/parcel-000199.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 77366,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.080830223414864,
+    "lon": -76.15625757479471,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.08069066,
+          "Longitude": -76.1566269,
+          "NeedsRR": "Yes",
+          "ObjectId": 818,
+          "PropertyAddress": "1108 Wolf St",
+          "RR_app_received": 1529280000000,
+          "RR_contact_name": "Tiffany Vasta % Donna Daniels",
+          "RR_ext_insp_fail": 1529539200000,
+          "RR_ext_insp_pass": 1536192000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-06-02.0",
+          "SHAPE": null,
+          "completion_date": 1536278400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1536192000000,
+          "pc_owner": "Lucio Vasta",
+          "valid_until": 1630972800000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-06-040",
+    "published_at": "2026-06-10T14:06:06+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "1114 Wolf St"
+  },
+  {
     "address": "1110 Wolf St",
     "ai_analysis": {
       "available": true,
