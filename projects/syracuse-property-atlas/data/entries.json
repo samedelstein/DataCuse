@@ -1,5 +1,137 @@
 [
   {
+    "address": "1108 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "A vehicle in the foreground partially obstructs the lower view of the property.",
+        "The exact boundary and relationship between the two structures on the parcel is unclear from the street-level view alone."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A single-story light blue residential structure and a portion of an adjacent two-story residential building are visible, both appearing in fair condition with intact siding and windows.",
+      "visible_conditions": [
+        "Light blue siding appears intact on both visible structures.",
+        "Windows and doors appear intact with no visible boarding.",
+        "The yard has green grass with some minor foundation-level vegetation.",
+        "Standard trash bins are present on the property."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 2 matching records"
+    ],
+    "id": 197,
+    "image": "images/parcel-000197.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 104257,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.080694143893666,
+    "lon": -76.15658972512956,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.08069066,
+          "Longitude": -76.1566269,
+          "NeedsRR": "Yes",
+          "ObjectId": 818,
+          "PropertyAddress": "1108 Wolf St",
+          "RR_app_received": 1529280000000,
+          "RR_contact_name": "Tiffany Vasta % Donna Daniels",
+          "RR_ext_insp_fail": 1529539200000,
+          "RR_ext_insp_pass": 1536192000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-06-02.0",
+          "SHAPE": null,
+          "completion_date": 1536278400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1536192000000,
+          "pc_owner": "Lucio Vasta",
+          "valid_until": 1630972800000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.0805738,
+          "Longitude": -76.15673441,
+          "NeedsRR": "Yes",
+          "ObjectId": 816,
+          "PropertyAddress": "1100 Wolf St & Sixth North St",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-06-01.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Morris Construction Props LLC",
+          "valid_until": null,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-06-020",
+    "published_at": "2026-06-10T12:03:07+00:00",
+    "review_reasons": [],
+    "title": "1108 Wolf St"
+  },
+  {
     "address": "1100 Wolf St & Sixth North St",
     "ai_analysis": {
       "available": true,
