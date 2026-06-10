@@ -1,5 +1,236 @@
 [
   {
+    "address": "1040 Hiawatha Blvd E",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "not visible",
+        "roof": "not visible",
+        "siding_or_facade": "not visible",
+        "trash_debris": "none visible",
+        "vegetation_overgrowth": "none visible",
+        "windows_doors": "not visible",
+        "yard_or_lot": "not visible"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 429: Too Many Requests",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "The presence of vehicles and people in the vicinity may suggest an active usage, but without a clear view of the property itself or any specific details, it is not possible to assess these conditions further.",
+        "image_annotations: [],"
+      ],
+      "property_type_guess": "unclear",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a parking lot with multiple cars parked in front of a building. The visible conditions include the presence of vehicles and a clear sky in the background. No specific issues regarding the property itself are immediately apparent from this vantage point.",
+      "visible_conditions": [
+        "cars parked in lot"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Image-only flag: The presence of vehicles and people in the vicinity may suggest an active usage, but without a clear view of the property itself or any specific details, it is not possible to assess these conditions further.",
+      "Image-only flag: image_annotations: [],",
+      "Needs human review"
+    ],
+    "id": 189,
+    "image": "images/parcel-000189.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 59845,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.082088698105636,
+    "lon": -76.15762302001708,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.08196239,
+          "Longitude": -76.15776481,
+          "ObjectId": 224,
+          "Owner": "Edward Mccarty",
+          "OwnerAddress": "103 Kirsch Dr Syracuse, NY 13211",
+          "PropertyAddress": "1032 Hiawatha Blvd E",
+          "SBL": "003.-05-03.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": null
+        }
+      ]
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305338,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077306085,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077337553,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077337554,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189609084,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771119,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: industrial",
+          "id": 1189609084,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189771119,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 4,
+        "historic": {},
+        "landuse": {
+          "industrial": 2
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-05-042",
+    "published_at": "2026-06-10T04:06:50+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "1040 Hiawatha Blvd E"
+  },
+  {
     "address": "1050 Hiawatha Blvd E & Seventh",
     "ai_analysis": {
       "available": true,
