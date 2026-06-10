@@ -1,5 +1,154 @@
 [
   {
+    "address": "1109 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image only shows the front facade; the sides and rear of the property are not fully visible."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.25,
+            "width": 0.12,
+            "x": 0.2,
+            "y": 0.5
+          },
+          "confidence": "high",
+          "label": "vegetation overgrowth",
+          "reason": "Climbing vines growing up the left side of the porch support and steps."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor vegetation overgrowth climbing the left side of the front porch structure."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential building with a double-deck enclosed front porch, vinyl siding, and municipal waste bins in the front yard.",
+      "visible_conditions": [
+        "Enclosed front porches on both the first and second stories.",
+        "Light-colored vinyl siding appears intact but shows minor weathering.",
+        "Front steps lead to a main entry door on the left side.",
+        "Four municipal waste and recycling bins are positioned in the front yard area.",
+        "Some climbing vines/vegetation are visible on the left side of the front porch structure."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 2 matching records",
+      "Image-only flag: Minor vegetation overgrowth climbing the left side of the front porch structure."
+    ],
+    "id": 195,
+    "image": "images/parcel-000195.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 84766,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08107110811385,
+    "lon": -76.15705405528882,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.08107056,
+          "Longitude": -76.15707064,
+          "NeedsRR": "Yes",
+          "ObjectId": 814,
+          "PropertyAddress": "1109 Wolf St",
+          "RR_app_received": 1766102400000,
+          "RR_contact_name": "Zuckerman Enterprises LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-05-09.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1767916800000,
+          "pc_owner": "Zuckerman Enterprises LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.08114891,
+          "Longitude": -76.1570038,
+          "NeedsRR": "Yes",
+          "ObjectId": 812,
+          "PropertyAddress": "1111-13 Wolf St",
+          "RR_app_received": 1675036800000,
+          "RR_contact_name": "Volha Lutsevich",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1675814400000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1675814400000,
+          "RRisValid": "No",
+          "SBL": "003.-05-08.0",
+          "SHAPE": null,
+          "completion_date": 1678924800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1680566400000,
+          "pc_owner": "Lee Quashawn Williams",
+          "valid_until": 1773619200000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-05-090",
+    "published_at": "2026-06-10T10:03:07+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1109 Wolf St"
+  },
+  {
     "address": "1111-13 Wolf St",
     "ai_analysis": {
       "available": true,
