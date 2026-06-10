@@ -1,5 +1,181 @@
 [
   {
+    "address": "1110 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image provides a street-level view, so conditions of the rear or obscured sides of the property are not visible.",
+        "The exact age of the image is not known."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.2",
+            "width": "0.27",
+            "x": "0.38",
+            "y": "0.55"
+          },
+          "confidence": "high",
+          "label": "Porch wear",
+          "reason": "Visible wear and discoloration on porch railings and steps."
+        },
+        {
+          "bbox": {
+            "height": "0.1",
+            "width": "0.3",
+            "x": "0.35",
+            "y": "0.65"
+          },
+          "confidence": "medium",
+          "label": "Minor yard overgrowth",
+          "reason": "Grass in the front yard appears sparse or has minor overgrowth in areas."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor wear and discoloration are visible on the porch railings and steps.",
+        "The front yard shows minor overgrowth or sparseness in some areas."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a two-story structure with light blue siding and a front porch, showing some minor wear on the porch elements and minor yard maintenance needs.",
+      "visible_conditions": [
+        "The main structure is a two-story house with light blue siding.",
+        "The roof appears to be a light-colored shingle material, generally intact.",
+        "The front facade features multiple windows with white trim.",
+        "A red front door is visible on the porch level.",
+        "A front porch with white railings and steps is present.",
+        "Some wear and discoloration are visible on the porch railings and steps.",
+        "The front yard contains grass, with some areas appearing sparse or having minor overgrowth.",
+        "Multiple trash bins are visible at the curb in front of the property.",
+        "A utility pole and overhead wires are in the foreground."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 2 matching records",
+      "Image-only flag: Minor wear and discoloration are visible on the porch railings and steps.",
+      "Image-only flag: The front yard shows minor overgrowth or sparseness in some areas."
+    ],
+    "id": 198,
+    "image": "images/parcel-000198.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 97795,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08070693404661,
+    "lon": -76.15637792032867,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.0805738,
+          "Longitude": -76.15673441,
+          "NeedsRR": "Yes",
+          "ObjectId": 816,
+          "PropertyAddress": "1100 Wolf St & Sixth North St",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-06-01.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Morris Construction Props LLC",
+          "valid_until": null,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.08069066,
+          "Longitude": -76.1566269,
+          "NeedsRR": "Yes",
+          "ObjectId": 818,
+          "PropertyAddress": "1108 Wolf St",
+          "RR_app_received": 1529280000000,
+          "RR_contact_name": "Tiffany Vasta % Donna Daniels",
+          "RR_ext_insp_fail": 1529539200000,
+          "RR_ext_insp_pass": 1536192000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-06-02.0",
+          "SHAPE": null,
+          "completion_date": 1536278400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1536192000000,
+          "pc_owner": "Lucio Vasta",
+          "valid_until": 1630972800000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-06-030",
+    "published_at": "2026-06-10T13:04:04+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1110 Wolf St"
+  },
+  {
     "address": "1108 Wolf St",
     "ai_analysis": {
       "available": true,
