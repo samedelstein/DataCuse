@@ -1,5 +1,469 @@
 [
   {
+    "address": "1111-13 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view of the property is significantly obstructed by a large tree, limiting the visibility of the roof and central facade.",
+        "The image appears to be from autumn, indicated by fallen leaves."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "unclear",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.15",
+            "width": "0.30",
+            "x": "0.05",
+            "y": "0.50"
+          },
+          "confidence": "high",
+          "label": "Siding discoloration",
+          "reason": "Visible staining or discoloration on the lower portion of the white siding."
+        },
+        {
+          "bbox": {
+            "height": "0.10",
+            "width": "0.55",
+            "x": "0.05",
+            "y": "0.65"
+          },
+          "confidence": "medium",
+          "label": "Foundation/Skirting condition",
+          "reason": "Apparent deterioration or missing material on the foundation/skirting below the main structure and porch."
+        },
+        {
+          "bbox": {
+            "height": "0.10",
+            "width": "0.15",
+            "x": "0.45",
+            "y": "0.60"
+          },
+          "confidence": "medium",
+          "label": "Porch steps wear",
+          "reason": "Visible wear and possibly some deterioration on the wooden porch steps."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Visible discoloration or staining on the lower siding.",
+        "Apparent deterioration or missing material on the foundation/skirting below the structure and porch.",
+        "Visible wear on the wooden porch steps."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a multi-story residential structure, partially obscured by a large tree, showing some signs of wear on the siding, foundation/skirting, and porch steps.",
+      "visible_conditions": [
+        "The building features white horizontal siding on the visible portions.",
+        "A bay window is visible on the left side of the facade.",
+        "The roof is largely obscured by a large tree, but a dark shingle roof is partially visible.",
+        "A front porch with wooden steps is visible behind the tree.",
+        "The front yard contains grass with numerous fallen leaves, suggesting an autumn season.",
+        "Some discoloration or staining is visible on the lower portion of the siding.",
+        "Apparent deterioration or missing material is visible on the foundation or skirting below the main structure and porch.",
+        "The wooden porch steps appear worn."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "yes",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 2 matching records",
+      "Image-only flag: Visible discoloration or staining on the lower siding.",
+      "Image-only flag: Apparent deterioration or missing material on the foundation/skirting below the structure and porch.",
+      "Image-only flag: Visible wear on the wooden porch steps.",
+      "Needs human review"
+    ],
+    "id": 194,
+    "image": "images/parcel-000194.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 155048,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.081148047671036,
+    "lon": -76.1569589071691,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.08114891,
+          "Longitude": -76.1570038,
+          "NeedsRR": "Yes",
+          "ObjectId": 812,
+          "PropertyAddress": "1111-13 Wolf St",
+          "RR_app_received": 1675036800000,
+          "RR_contact_name": "Volha Lutsevich",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1675814400000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1675814400000,
+          "RRisValid": "No",
+          "SBL": "003.-05-08.0",
+          "SHAPE": null,
+          "completion_date": 1678924800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1680566400000,
+          "pc_owner": "Lee Quashawn Williams",
+          "valid_until": 1773619200000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.08107056,
+          "Longitude": -76.15707064,
+          "NeedsRR": "Yes",
+          "ObjectId": 814,
+          "PropertyAddress": "1109 Wolf St",
+          "RR_app_received": 1766102400000,
+          "RR_contact_name": "Zuckerman Enterprises LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-05-09.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1767916800000,
+          "pc_owner": "Zuckerman Enterprises LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": "bar",
+          "building": null,
+          "historic": null,
+          "id": 5197066554,
+          "landuse": null,
+          "name": "Loop Grill",
+          "shop": null,
+          "tags": {
+            "amenity": "bar",
+            "fixme": "make sure this is bar and not a restaurant",
+            "name": "Loop Grill"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303609,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077307047,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309527,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314744,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324811,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325182,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325336,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325337,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077328393,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077332754,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077334841,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771094,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771119,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921498,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921499,
+          "landuse": "commercial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "commercial"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "amenity: bar",
+          "id": 5197066554,
+          "label": "Loop Grill",
+          "tags": {
+            "amenity": "bar",
+            "name": "Loop Grill"
+          },
+          "type": "node"
+        },
+        {
+          "category": "landuse: residential",
+          "id": 1189771094,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189771119,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: residential",
+          "id": 1189921498,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: commercial",
+          "id": 1189921499,
+          "label": "landuse: commercial",
+          "tags": {
+            "landuse": "commercial"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {
+          "bar": 1
+        },
+        "buildings": 11,
+        "historic": {},
+        "landuse": {
+          "commercial": 1,
+          "industrial": 1,
+          "residential": 2
+        },
+        "named_features": 1,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-05-080",
+    "published_at": "2026-06-10T09:03:09+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue",
+      "structural damage visible"
+    ],
+    "title": "1111-13 Wolf St"
+  },
+  {
     "address": "1117 Wolf St",
     "ai_analysis": {
       "available": true,
