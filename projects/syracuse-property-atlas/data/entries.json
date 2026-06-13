@@ -1,5 +1,472 @@
 [
   {
+    "address": "421 Seventh North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "It is unclear which of the two visible houses corresponds to the address 421 Seventh North St.",
+        "Heavy foliage from mature trees obstructs a significant portion of both facades, potentially obscuring exterior defects.",
+        "While public records indicate the property is vacant and unfit, no such conditions are clearly visible on the street-facing exteriors, suggesting the issues may be interior or on unseen portions of the property."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows two multi-story residential structures separated by a paved driveway, with both properties partially obscured by mature trees.",
+      "visible_conditions": [
+        "Two separate residential structures are visible: one with tan siding on the left and one with white siding on the right.",
+        "A paved driveway runs between the two houses leading to a small detached garage in the rear.",
+        "Both structures appear structurally intact from the street view, with no obvious signs of severe exterior deterioration, boarding, or vacancy.",
+        "The lawns appear maintained, and there are potted plants on the porch of the right-hand structure."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Rental registry: 1 matching record",
+      "Unfit properties: 1 matching record",
+      "Needs human review"
+    ],
+    "id": 205,
+    "image": "images/parcel-000205.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 141452,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08097475046535,
+    "lon": -76.15566841443552,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.08101281,
+          "Longitude": -76.15579748,
+          "NeedsRR": "Yes",
+          "ObjectId": 820,
+          "PropertyAddress": "425 Seventh North St",
+          "RR_app_received": 1773273600000,
+          "RR_contact_name": "James Coogan",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "Yes",
+          "SBL": "003.-06-11.0",
+          "SHAPE": null,
+          "completion_date": 1773273600000,
+          "completion_type_name": "Family Based Exemption Granted",
+          "inspect_period": 1773273600000,
+          "pc_owner": "James Coogan",
+          "valid_until": 1867968000000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [
+        {
+          "Latitude": 43.08079714,
+          "Longitude": -76.15526375,
+          "ObjectId": 83,
+          "SBL": "003.-06-14.1",
+          "Vacant": null,
+          "address": "415 Seventh North St & Stedma",
+          "area_involved": "Premises",
+          "article": "A structure is unfit for human occupancy whenever such structure is unsafe, unlawful or, because of the degree to which the structure is in disrepair or lacks maintenance, is unsanitary, vermin or rat infested, contains filth and contamination, or lacks ventilation, illumination, sanitary or heating facilities or other essential equipment required by this code, or because the location of the structure consti\ntutes a hazard to the occupants of the structure or to the public.",
+          "comp_close_date": -2208988800000,
+          "comp_open_date": 1684831879193,
+          "comp_status": "Referred to BAA - Pending",
+          "complaint_number": "2023-03484",
+          "complaint_type_name": "Property Maintenance-Ext",
+          "comply_by_date": 1750862521000,
+          "corrective_action": "Remove unfit violations.",
+          "department_name": "Codes",
+          "owner_address": "6133 Leslieanne Path ",
+          "owner_city": "Cicero",
+          "owner_name": "Diep Ngoc Pham",
+          "owner_state": "NY",
+          "owner_zip_code": "13039",
+          "parcel_id": 634,
+          "status_date": 1749566521043,
+          "status_type_name": "Open",
+          "violation": "2020 PMCNYS - Section 107.1.3 - Structure Unfit for Human Occupancy",
+          "violation_date": 1749566521043,
+          "violation_number": "2025-11075",
+          "zip": 13208
+        }
+      ],
+      "vacant_properties": [
+        {
+          "Latitude": 43.08079714,
+          "Longitude": -76.15526375,
+          "ObjectId": 360,
+          "Owner": "Diana Barndollar",
+          "OwnerAddress": "415 Seventh North St & Stedma Syracuse, NY 13208",
+          "PropertyAddress": "415 Seventh North St & Stedma",
+          "SBL": "003.-06-14.1",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": null
+        }
+      ]
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309527,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309528,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309623,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309624,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310305,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310306,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310307,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314744,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077330493,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077330494,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077330781,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077330782,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331375,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331376,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077334840,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077334841,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077334842,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771094,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771099,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921499,
+          "landuse": "commercial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "commercial"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: residential",
+          "id": 1189771094,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189771099,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: commercial",
+          "id": 1189921499,
+          "label": "landuse: commercial",
+          "tags": {
+            "landuse": "commercial"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 17,
+        "historic": {},
+        "landuse": {
+          "commercial": 1,
+          "industrial": 1,
+          "residential": 1
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-06-120",
+    "published_at": "2026-06-13T00:10:54+00:00",
+    "review_reasons": [
+      "AI requested human review"
+    ],
+    "title": "421 Seventh North St"
+  },
+  {
     "address": "425 Seventh North St",
     "ai_analysis": {
       "available": true,
