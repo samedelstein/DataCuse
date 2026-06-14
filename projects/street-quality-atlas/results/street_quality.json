@@ -1,12 +1,163 @@
 {
   "generated_at": null,
   "totals": {
-    "parcels": 3,
-    "images": 6,
-    "objects": 38,
-    "issues": 12
+    "parcels": 4,
+    "images": 8,
+    "objects": 44,
+    "issues": 14
   },
   "parcels": [
+    {
+      "lot_id": "005-02-090",
+      "address": "267 ROSS PK",
+      "lat": 43.07663173463308,
+      "lon": -76.14688863806451,
+      "images": [
+        {
+          "id": 9,
+          "lot_id": "005-02-090",
+          "address": "267 ROSS PK",
+          "lat": 43.07663173463308,
+          "lon": -76.14688863806451,
+          "heading": 133.41948678865396,
+          "image_path": "../syracuse-property-atlas/images/street-quality/005-02-090_133.jpg",
+          "created_at": "2026-06-14 16:36:05",
+          "summary": "A suburban residential street flanked by lawns, sidewalks, and houses under a clear blue sky.",
+          "street_quality": 4,
+          "sidewalk_quality": 4,
+          "curb_quality": 3,
+          "signs_quality": 3,
+          "model_provider": "gemini",
+          "model_name": "gemini-3.5-flash",
+          "objects": [
+            {
+              "id": 52,
+              "image_id": 9,
+              "label": "sidewalk",
+              "confidence": 0.9,
+              "bbox_xmin": 0.58,
+              "bbox_ymin": 0.45,
+              "bbox_xmax": 0.96,
+              "bbox_ymax": 0.59,
+              "notes": "Concrete sidewalk on the right side of the street.",
+              "created_at": "2026-06-14 16:36:13"
+            },
+            {
+              "id": 53,
+              "image_id": 9,
+              "label": "tree",
+              "confidence": 0.95,
+              "bbox_xmin": 0.24,
+              "bbox_ymin": 0.24,
+              "bbox_xmax": 0.47,
+              "bbox_ymax": 0.49,
+              "notes": "Deciduous tree near the left parkway.",
+              "created_at": "2026-06-14 16:36:13"
+            },
+            {
+              "id": 54,
+              "image_id": 9,
+              "label": "curb",
+              "confidence": 0.85,
+              "bbox_xmin": 0.58,
+              "bbox_ymin": 0.46,
+              "bbox_xmax": 1.0,
+              "bbox_ymax": 0.76,
+              "notes": "Right-side street curb line.",
+              "created_at": "2026-06-14 16:36:13"
+            }
+          ],
+          "issues": [
+            {
+              "id": 22,
+              "image_id": 9,
+              "category": "street_crack",
+              "severity": 2,
+              "bbox_xmin": 0.72,
+              "bbox_ymin": 0.58,
+              "bbox_xmax": 1.0,
+              "bbox_ymax": 0.77,
+              "notes": "Minor cracking and wear along the right edge of the pavement.",
+              "created_at": "2026-06-14 16:36:13"
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "lot_id": "005-02-090",
+          "address": "267 ROSS PK",
+          "lat": 43.07663173463308,
+          "lon": -76.14688863806451,
+          "heading": 313.41948678865396,
+          "image_path": "../syracuse-property-atlas/images/street-quality/005-02-090_313.jpg",
+          "created_at": "2026-06-14 16:36:05",
+          "summary": "Residential street featuring mature trees, a sidewalk, and an ornamental street light.",
+          "street_quality": 4,
+          "sidewalk_quality": 3,
+          "curb_quality": 3,
+          "signs_quality": 3,
+          "model_provider": "gemini",
+          "model_name": "gemini-3.5-flash",
+          "objects": [
+            {
+              "id": 55,
+              "image_id": 10,
+              "label": "street_light",
+              "confidence": 0.9,
+              "bbox_xmin": 0.3,
+              "bbox_ymin": 0.76,
+              "bbox_xmax": 0.56,
+              "bbox_ymax": 0.84,
+              "notes": "Decorative dual-lantern post",
+              "created_at": "2026-06-14 16:36:20"
+            },
+            {
+              "id": 56,
+              "image_id": 10,
+              "label": "sidewalk",
+              "confidence": 0.85,
+              "bbox_xmin": 0.48,
+              "bbox_ymin": 0.0,
+              "bbox_xmax": 0.69,
+              "bbox_ymax": 0.44,
+              "notes": "Concrete sidewalk along left side",
+              "created_at": "2026-06-14 16:36:20"
+            },
+            {
+              "id": 57,
+              "image_id": 10,
+              "label": "tree",
+              "confidence": 0.95,
+              "bbox_xmin": 0.23,
+              "bbox_ymin": 0.5,
+              "bbox_xmax": 0.5,
+              "bbox_ymax": 0.65,
+              "notes": "Bright green deciduous tree",
+              "created_at": "2026-06-14 16:36:20"
+            }
+          ],
+          "issues": [
+            {
+              "id": 23,
+              "image_id": 10,
+              "category": "sidewalk_crack",
+              "severity": 2,
+              "bbox_xmin": 0.55,
+              "bbox_ymin": 0.15,
+              "bbox_xmax": 0.61,
+              "bbox_ymax": 0.28,
+              "notes": "Minor cracks in sidewalk segments",
+              "created_at": "2026-06-14 16:36:20"
+            }
+          ]
+        }
+      ],
+      "image_count": 2,
+      "object_count": 6,
+      "issue_count": 2,
+      "latest_created_at": "2026-06-14 16:36:05",
+      "summary": "A suburban residential street flanked by lawns, sidewalks, and houses under a clear blue sky."
+    },
     {
       "lot_id": "002-22-100",
       "address": "517 TURTLE ST & SPRING ST",
@@ -1495,6 +1646,144 @@
           "bbox_ymax": 0.68,
           "notes": "Minor wear across intersection pavement",
           "created_at": "2026-06-05 10:45:11"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "lot_id": "005-02-090",
+      "address": "267 ROSS PK",
+      "lat": 43.07663173463308,
+      "lon": -76.14688863806451,
+      "heading": 133.41948678865396,
+      "image_path": "../syracuse-property-atlas/images/street-quality/005-02-090_133.jpg",
+      "created_at": "2026-06-14 16:36:05",
+      "summary": "A suburban residential street flanked by lawns, sidewalks, and houses under a clear blue sky.",
+      "street_quality": 4,
+      "sidewalk_quality": 4,
+      "curb_quality": 3,
+      "signs_quality": 3,
+      "model_provider": "gemini",
+      "model_name": "gemini-3.5-flash",
+      "objects": [
+        {
+          "id": 52,
+          "image_id": 9,
+          "label": "sidewalk",
+          "confidence": 0.9,
+          "bbox_xmin": 0.58,
+          "bbox_ymin": 0.45,
+          "bbox_xmax": 0.96,
+          "bbox_ymax": 0.59,
+          "notes": "Concrete sidewalk on the right side of the street.",
+          "created_at": "2026-06-14 16:36:13"
+        },
+        {
+          "id": 53,
+          "image_id": 9,
+          "label": "tree",
+          "confidence": 0.95,
+          "bbox_xmin": 0.24,
+          "bbox_ymin": 0.24,
+          "bbox_xmax": 0.47,
+          "bbox_ymax": 0.49,
+          "notes": "Deciduous tree near the left parkway.",
+          "created_at": "2026-06-14 16:36:13"
+        },
+        {
+          "id": 54,
+          "image_id": 9,
+          "label": "curb",
+          "confidence": 0.85,
+          "bbox_xmin": 0.58,
+          "bbox_ymin": 0.46,
+          "bbox_xmax": 1.0,
+          "bbox_ymax": 0.76,
+          "notes": "Right-side street curb line.",
+          "created_at": "2026-06-14 16:36:13"
+        }
+      ],
+      "issues": [
+        {
+          "id": 22,
+          "image_id": 9,
+          "category": "street_crack",
+          "severity": 2,
+          "bbox_xmin": 0.72,
+          "bbox_ymin": 0.58,
+          "bbox_xmax": 1.0,
+          "bbox_ymax": 0.77,
+          "notes": "Minor cracking and wear along the right edge of the pavement.",
+          "created_at": "2026-06-14 16:36:13"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "lot_id": "005-02-090",
+      "address": "267 ROSS PK",
+      "lat": 43.07663173463308,
+      "lon": -76.14688863806451,
+      "heading": 313.41948678865396,
+      "image_path": "../syracuse-property-atlas/images/street-quality/005-02-090_313.jpg",
+      "created_at": "2026-06-14 16:36:05",
+      "summary": "Residential street featuring mature trees, a sidewalk, and an ornamental street light.",
+      "street_quality": 4,
+      "sidewalk_quality": 3,
+      "curb_quality": 3,
+      "signs_quality": 3,
+      "model_provider": "gemini",
+      "model_name": "gemini-3.5-flash",
+      "objects": [
+        {
+          "id": 55,
+          "image_id": 10,
+          "label": "street_light",
+          "confidence": 0.9,
+          "bbox_xmin": 0.3,
+          "bbox_ymin": 0.76,
+          "bbox_xmax": 0.56,
+          "bbox_ymax": 0.84,
+          "notes": "Decorative dual-lantern post",
+          "created_at": "2026-06-14 16:36:20"
+        },
+        {
+          "id": 56,
+          "image_id": 10,
+          "label": "sidewalk",
+          "confidence": 0.85,
+          "bbox_xmin": 0.48,
+          "bbox_ymin": 0.0,
+          "bbox_xmax": 0.69,
+          "bbox_ymax": 0.44,
+          "notes": "Concrete sidewalk along left side",
+          "created_at": "2026-06-14 16:36:20"
+        },
+        {
+          "id": 57,
+          "image_id": 10,
+          "label": "tree",
+          "confidence": 0.95,
+          "bbox_xmin": 0.23,
+          "bbox_ymin": 0.5,
+          "bbox_xmax": 0.5,
+          "bbox_ymax": 0.65,
+          "notes": "Bright green deciduous tree",
+          "created_at": "2026-06-14 16:36:20"
+        }
+      ],
+      "issues": [
+        {
+          "id": 23,
+          "image_id": 10,
+          "category": "sidewalk_crack",
+          "severity": 2,
+          "bbox_xmin": 0.55,
+          "bbox_ymin": 0.15,
+          "bbox_xmax": 0.61,
+          "bbox_ymax": 0.28,
+          "notes": "Minor cracks in sidewalk segments",
+          "created_at": "2026-06-14 16:36:20"
         }
       ]
     }

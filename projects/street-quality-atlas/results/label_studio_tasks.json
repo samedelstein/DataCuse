@@ -782,5 +782,145 @@
         ]
       }
     ]
+  },
+  {
+    "data": {
+      "image": "../syracuse-property-atlas/images/street-quality/005-02-090_133.jpg",
+      "lot_id": "005-02-090",
+      "address": "267 ROSS PK",
+      "heading": 133.41948678865396
+    },
+    "predictions": [
+      {
+        "result": [
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 57.99999999999999,
+              "y": 45.0,
+              "width": 38.0,
+              "height": 13.999999999999996,
+              "rectanglelabels": [
+                "sidewalk"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 24.0,
+              "y": 24.0,
+              "width": 23.0,
+              "height": 25.0,
+              "rectanglelabels": [
+                "tree"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 57.99999999999999,
+              "y": 46.0,
+              "width": 42.00000000000001,
+              "height": 30.0,
+              "rectanglelabels": [
+                "curb"
+              ]
+            }
+          },
+          {
+            "from_name": "issue",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 72.0,
+              "y": 57.99999999999999,
+              "width": 28.000000000000004,
+              "height": 19.000000000000007,
+              "rectanglelabels": [
+                "street_crack"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "image": "../syracuse-property-atlas/images/street-quality/005-02-090_313.jpg",
+      "lot_id": "005-02-090",
+      "address": "267 ROSS PK",
+      "heading": 313.41948678865396
+    },
+    "predictions": [
+      {
+        "result": [
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 30.0,
+              "y": 76.0,
+              "width": 26.000000000000007,
+              "height": 7.9999999999999964,
+              "rectanglelabels": [
+                "street_light"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 48.0,
+              "y": 0.0,
+              "width": 20.999999999999996,
+              "height": 44.0,
+              "rectanglelabels": [
+                "sidewalk"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 23.0,
+              "y": 50.0,
+              "width": 27.0,
+              "height": 15.000000000000002,
+              "rectanglelabels": [
+                "tree"
+              ]
+            }
+          },
+          {
+            "from_name": "issue",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 55.00000000000001,
+              "y": 15.0,
+              "width": 5.999999999999995,
+              "height": 13.000000000000004,
+              "rectanglelabels": [
+                "sidewalk_crack"
+              ]
+            }
+          }
+        ]
+      }
+    ]
   }
 ]
