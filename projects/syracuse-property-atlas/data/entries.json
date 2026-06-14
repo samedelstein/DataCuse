@@ -1,5 +1,155 @@
 [
   {
+    "address": "1006 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view of the property is partially obstructed by a prominent utility pole in the foreground and the structure is set back from the road."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A single-story residential structure with light-colored siding and a gabled roof, featuring a paved driveway with parked vehicles.",
+      "visible_conditions": [
+        "Light-colored siding appears intact with minor weathering",
+        "Gabled roof appears in fair condition from a distance",
+        "Paved driveway contains parked vehicles",
+        "Grass lawn appears maintained"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Rental registry: 2 matching records"
+    ],
+    "id": 213,
+    "image": "images/parcel-000213.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 88745,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07961944044308,
+    "lon": -76.15757375980552,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07984513,
+          "Longitude": -76.15738499,
+          "NeedsRR": "Yes",
+          "ObjectId": 822,
+          "PropertyAddress": "1012 Wolf St",
+          "RR_app_received": 1726617600000,
+          "RR_contact_name": "315 Property Group LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1727049600000,
+          "RR_int_insp_fail": 1727049600000,
+          "RR_int_insp_pass": 1731024000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-07-04.0",
+          "SHAPE": null,
+          "completion_date": 1731628800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1728000000000,
+          "pc_owner": "Nicholas Potenza",
+          "valid_until": 1826323200000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.0793777,
+          "Longitude": -76.15763751,
+          "NeedsRR": "Yes",
+          "ObjectId": 826,
+          "PropertyAddress": "416 Willumae Dr",
+          "RR_app_received": 1742342400000,
+          "RR_contact_name": "Zeeshan James",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1749081600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1749081600000,
+          "RRisValid": "Yes",
+          "SBL": "003.-07-13.0",
+          "SHAPE": null,
+          "completion_date": 1749081600000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1744848000000,
+          "pc_owner": "Zeeshan James",
+          "valid_until": 1843776000000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.07947565,
+          "Longitude": -76.1577539,
+          "ObjectId": 342,
+          "Owner": "Charles Kammar",
+          "OwnerAddress": "926 Wolf St Syracuse, NY 13208",
+          "PropertyAddress": "1000 Wolf St & Willumae Dr",
+          "SBL": "003.-07-01.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Commercial",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": null
+        }
+      ]
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-07-020",
+    "published_at": "2026-06-14T20:25:46+00:00",
+    "review_reasons": [],
+    "title": "1006 Wolf St"
+  },
+  {
     "address": "1000 Wolf St & Willumae Dr",
     "ai_analysis": {
       "available": true,
