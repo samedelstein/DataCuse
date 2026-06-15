@@ -1,5 +1,429 @@
 [
   {
+    "address": "1014 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The left side, rear, and interior of the property are not visible from this street-level perspective."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.05,
+            "width": 0.18,
+            "x": 0.69,
+            "y": 0.63
+          },
+          "confidence": "high",
+          "label": "Peeling paint on foundation skirting",
+          "reason": "Visible peeling paint and surface wear on the lower foundation area of the enclosed porch."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Peeling paint and surface wear on the lower front porch foundation skirting"
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential building with blue siding and an enclosed front porch, situated next to an asphalt parking lot.",
+      "visible_conditions": [
+        "Blue siding appears mostly intact with some minor weathering",
+        "Peeling paint and surface deterioration visible on the lower foundation skirting of the front porch",
+        "Enclosed front porch with multiple glass windows",
+        "Grassy side yard on a slight slope adjacent to a paved parking lot"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 2 matching records",
+      "Rental registry: 2 matching records",
+      "Image-only flag: Peeling paint and surface wear on the lower front porch foundation skirting"
+    ],
+    "id": 216,
+    "image": "images/parcel-000216.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 75932,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07993703420078,
+    "lon": -76.15725830399454,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07984513,
+          "Longitude": -76.15738499,
+          "NeedsRR": "Yes",
+          "ObjectId": 822,
+          "PropertyAddress": "1012 Wolf St",
+          "RR_app_received": 1726617600000,
+          "RR_contact_name": "315 Property Group LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1727049600000,
+          "RR_int_insp_fail": 1727049600000,
+          "RR_int_insp_pass": 1731024000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-07-04.0",
+          "SHAPE": null,
+          "completion_date": 1731628800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1728000000000,
+          "pc_owner": "Nicholas Potenza",
+          "valid_until": 1826323200000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.08003578,
+          "Longitude": -76.15693115,
+          "NeedsRR": "Yes",
+          "ObjectId": 824,
+          "PropertyAddress": "111 Sixth North St",
+          "RR_app_received": 1687824000000,
+          "RR_contact_name": "John F Nestico",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1731888000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1731888000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-07-07.0",
+          "SHAPE": null,
+          "completion_date": 1733356800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1734048000000,
+          "pc_owner": "John Nestico",
+          "valid_until": 1828051200000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.07993419,
+          "Longitude": -76.15730998,
+          "ObjectId": 421,
+          "Owner": "Kendra Jones",
+          "OwnerAddress": "106 Sherwood Lane North Syracuse, NY 13212",
+          "PropertyAddress": "1014 Wolf St",
+          "SBL": "003.-07-05.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": null
+        },
+        {
+          "Latitude": 43.08012645,
+          "Longitude": -76.1571711,
+          "ObjectId": 933,
+          "Owner": "Big M Mgmt Group Inc.",
+          "OwnerAddress": "1700 Lodi St Syracuse, NY 13208",
+          "PropertyAddress": "1022 Wolf St & Sixth North St",
+          "SBL": "003.-07-06.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Commercial",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": null
+        }
+      ]
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305430,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308116,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308117,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310775,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310927,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311017,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311018,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314082,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317597,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324732,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077327702,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077330417,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336896,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336897,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771094,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771119,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: residential",
+          "id": 1189771094,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189771119,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 14,
+        "historic": {},
+        "landuse": {
+          "industrial": 1,
+          "residential": 1
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-07-050",
+    "published_at": "2026-06-15T00:04:03+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1014 Wolf St"
+  },
+  {
     "address": "1012 Wolf St",
     "ai_analysis": {
       "available": true,
