@@ -1,5 +1,420 @@
 [
   {
+    "address": "414 Willumae Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The property structure is almost entirely obscured by dense trees and foliage, making it impossible to assess its condition or confirm the property type."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "unclear",
+        "trash_debris": "unclear",
+        "vegetation_overgrowth": "major",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "poor"
+      },
+      "confidence": "low",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.9,
+            "width": 1.0,
+            "x": 0.0,
+            "y": 0.1
+          },
+          "confidence": "high",
+          "label": "vegetation overgrowth",
+          "reason": "Dense foliage and trees completely block the view of the property structure"
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Severe vegetation overgrowth obscuring the property structure"
+      ],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The property is heavily obscured by dense trees and overgrown vegetation, preventing a clear view of any structures.",
+      "visible_conditions": [
+        "Dense foliage and trees block the view of the property",
+        "A white structure or wall is partially visible behind the vegetation"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "unclear",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "unclear",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Rental registry: 1 matching record",
+      "Image-only flag: Severe vegetation overgrowth obscuring the property structure",
+      "Needs human review"
+    ],
+    "id": 223,
+    "image": "images/parcel-000223.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 141560,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07946730350753,
+    "lon": -76.15743043042742,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.0793777,
+          "Longitude": -76.15763751,
+          "NeedsRR": "Yes",
+          "ObjectId": 826,
+          "PropertyAddress": "416 Willumae Dr",
+          "RR_app_received": 1742342400000,
+          "RR_contact_name": "Zeeshan James",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1749081600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1749081600000,
+          "RRisValid": "Yes",
+          "SBL": "003.-07-13.0",
+          "SHAPE": null,
+          "completion_date": 1749081600000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1744848000000,
+          "pc_owner": "Zeeshan James",
+          "valid_until": 1843776000000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.07947565,
+          "Longitude": -76.1577539,
+          "ObjectId": 342,
+          "Owner": "Charles Kammar",
+          "OwnerAddress": "926 Wolf St Syracuse, NY 13208",
+          "PropertyAddress": "1000 Wolf St & Willumae Dr",
+          "SBL": "003.-07-01.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Commercial",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": null
+        }
+      ]
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077301681,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303511,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308116,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308117,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308886,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310333,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310334,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310775,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311017,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311018,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314082,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317597,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324732,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325396,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325397,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077330417,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077330418,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077330419,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336896,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336897,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 20,
+        "historic": {},
+        "landuse": {},
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-07-120",
+    "published_at": "2026-06-15T11:33:21+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "414 Willumae Dr"
+  },
+  {
     "address": "410 Willumae Dr & Gannett Ave",
     "ai_analysis": {
       "available": true,
