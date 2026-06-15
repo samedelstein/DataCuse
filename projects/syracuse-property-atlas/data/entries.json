@@ -1,5 +1,397 @@
 [
   {
+    "address": "1022 Wolf St & Sixth North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Only a single corner and side of the building are visible, obscuring the main entrance and other facades.",
+        "The gap above the roofline is difficult to fully diagnose from this angle and distance."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.04,
+            "width": 0.28,
+            "x": 0.0,
+            "y": 0.34
+          },
+          "confidence": "medium",
+          "label": "missing siding or trim gap",
+          "reason": "An apparent gap or unfinished area exposing the structure beneath the second-floor siding, just above the lower roof shingles."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Visible gap or missing exterior trim/siding at the junction between the first-floor roof and the second-floor wall, potentially exposing the underlying structure to weather."
+      ],
+      "property_type_guess": "mixed_use",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A multi-story building with light-colored siding and an adjacent paved lot, showing a visible gap or missing trim where the upper siding meets the lower roofline.",
+      "visible_conditions": [
+        "Light-colored horizontal siding on upper levels and vertical siding on the ground level.",
+        "A dark gap or missing siding/trim is visible at the transition between the first-floor roof and the second-floor wall.",
+        "Adjacent paved lot is clear of major debris with a trailer parked in the background.",
+        "Minor vegetation is growing in the sidewalk cracks."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 2 matching records",
+      "Rental registry: 1 matching record",
+      "Image-only flag: Visible gap or missing exterior trim/siding at the junction between the first-floor roof and the second-floor wall, potentially exposing the underlying structure to weather.",
+      "Needs human review"
+    ],
+    "id": 217,
+    "image": "images/parcel-000217.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 69707,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.080159968114984,
+    "lon": -76.15711853519414,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.08003578,
+          "Longitude": -76.15693115,
+          "NeedsRR": "Yes",
+          "ObjectId": 824,
+          "PropertyAddress": "111 Sixth North St",
+          "RR_app_received": 1687824000000,
+          "RR_contact_name": "John F Nestico",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1731888000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1731888000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-07-07.0",
+          "SHAPE": null,
+          "completion_date": 1733356800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1734048000000,
+          "pc_owner": "John Nestico",
+          "valid_until": 1828051200000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.08012645,
+          "Longitude": -76.1571711,
+          "ObjectId": 933,
+          "Owner": "Big M Mgmt Group Inc.",
+          "OwnerAddress": "1700 Lodi St Syracuse, NY 13208",
+          "PropertyAddress": "1022 Wolf St & Sixth North St",
+          "SBL": "003.-07-06.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Commercial",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": null
+        },
+        {
+          "Latitude": 43.07993419,
+          "Longitude": -76.15730998,
+          "ObjectId": 421,
+          "Owner": "Kendra Jones",
+          "OwnerAddress": "106 Sherwood Lane North Syracuse, NY 13212",
+          "PropertyAddress": "1014 Wolf St",
+          "SBL": "003.-07-05.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": null
+        }
+      ]
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305430,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308116,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308117,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310775,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310927,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311017,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311018,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314082,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077316852,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317243,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324732,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325451,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077327702,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771094,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771119,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: residential",
+          "id": 1189771094,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189771119,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 13,
+        "historic": {},
+        "landuse": {
+          "industrial": 1,
+          "residential": 1
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-07-060",
+    "published_at": "2026-06-15T01:02:56+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "1022 Wolf St & Sixth North St"
+  },
+  {
     "address": "1014 Wolf St",
     "ai_analysis": {
       "available": true,
