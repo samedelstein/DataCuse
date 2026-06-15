@@ -1,5 +1,373 @@
 [
   {
+    "address": "109 Sixth North St & Gannett",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view is limited to one side of the property.",
+        "The image date is from 2020, so conditions may have changed."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.10",
+            "width": "0.10",
+            "x": "0.85",
+            "y": "0.65"
+          },
+          "confidence": "medium",
+          "label": "Worn steps",
+          "reason": "Visible concrete steps appear to have minor wear or chipping."
+        },
+        {
+          "bbox": {
+            "height": "0.05",
+            "width": "0.10",
+            "x": "0.75",
+            "y": "0.35"
+          },
+          "confidence": "medium",
+          "label": "Disheveled window covering",
+          "reason": "An interior window covering in an upper-level window appears disheveled or possibly torn."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor wear is observed on the visible concrete steps.",
+        "A window covering in an upper-level window appears disheveled or possibly damaged."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image displays a residential-style building with white siding and a dark shingle roof, situated in a grassy lot.",
+      "visible_conditions": [
+        "White horizontal siding is visible on the exterior walls.",
+        "A dark asphalt shingle roof is present, with a visible chimney vent.",
+        "Multiple windows are visible, including one with a window-mounted air conditioning unit.",
+        "A small set of concrete steps is visible on the right side of the building.",
+        "A grassy front yard is present, with some low-lying vegetation near the foundation.",
+        "An American flag is displayed on the front of the building."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Image-only flag: Minor wear is observed on the visible concrete steps.",
+      "Image-only flag: A window covering in an upper-level window appears disheveled or possibly damaged."
+    ],
+    "id": 219,
+    "image": "images/parcel-000219.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 88381,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07998447088761,
+    "lon": -76.15668118936311,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.08003578,
+          "Longitude": -76.15693115,
+          "NeedsRR": "Yes",
+          "ObjectId": 824,
+          "PropertyAddress": "111 Sixth North St",
+          "RR_app_received": 1687824000000,
+          "RR_contact_name": "John F Nestico",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1731888000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1731888000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-07-07.0",
+          "SHAPE": null,
+          "completion_date": 1733356800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1734048000000,
+          "pc_owner": "John Nestico",
+          "valid_until": 1828051200000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305430,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308117,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310333,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310775,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310927,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311017,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077316852,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317243,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317597,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077322868,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324732,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325451,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077327702,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336794,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771094,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: residential",
+          "id": 1189771094,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 14,
+        "historic": {},
+        "landuse": {
+          "residential": 1
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-07-080",
+    "published_at": "2026-06-15T07:17:26+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "109 Sixth North St & Gannett"
+  },
+  {
     "address": "111 Sixth North St",
     "ai_analysis": {
       "available": true,
