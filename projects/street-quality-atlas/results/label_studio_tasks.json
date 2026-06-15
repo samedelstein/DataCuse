@@ -922,5 +922,159 @@
         ]
       }
     ]
+  },
+  {
+    "data": {
+      "image": "../syracuse-property-atlas/images/street-quality/002-22-110_28.jpg",
+      "lot_id": "002-22-110",
+      "address": "515 TURTLE ST",
+      "heading": 27.79254367574788
+    },
+    "predictions": [
+      {
+        "result": [
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 17.0,
+              "y": 0.0,
+              "width": 39.0,
+              "height": 49.0,
+              "rectanglelabels": [
+                "tree"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 48.0,
+              "y": 0.0,
+              "width": 15.000000000000002,
+              "height": 38.0,
+              "rectanglelabels": [
+                "sidewalk"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 28.999999999999996,
+              "y": 79.0,
+              "width": 16.000000000000004,
+              "height": 3.9999999999999925,
+              "rectanglelabels": [
+                "utility_pole"
+              ]
+            }
+          },
+          {
+            "from_name": "issue",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 48.0,
+              "y": 0.0,
+              "width": 15.000000000000002,
+              "height": 38.0,
+              "rectanglelabels": [
+                "sidewalk_crack"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": {
+      "image": "../syracuse-property-atlas/images/street-quality/002-22-110_208.jpg",
+      "lot_id": "002-22-110",
+      "address": "515 TURTLE ST",
+      "heading": 207.79254367574788
+    },
+    "predictions": [
+      {
+        "result": [
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 20.0,
+              "y": 24.0,
+              "width": 27.999999999999996,
+              "height": 25.0,
+              "rectanglelabels": [
+                "tree"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 57.99999999999999,
+              "y": 1.0,
+              "width": 26.0,
+              "height": 49.0,
+              "rectanglelabels": [
+                "tree"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 52.0,
+              "y": 31.0,
+              "width": 6.999999999999995,
+              "height": 18.0,
+              "rectanglelabels": [
+                "utility_pole"
+              ]
+            }
+          },
+          {
+            "from_name": "object",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 24.0,
+              "y": 45.0,
+              "width": 2.0000000000000018,
+              "height": 4.999999999999999,
+              "rectanglelabels": [
+                "traffic_sign"
+              ]
+            }
+          },
+          {
+            "from_name": "issue",
+            "to_name": "image",
+            "type": "rectanglelabels",
+            "value": {
+              "x": 70.0,
+              "y": 55.00000000000001,
+              "width": 30.000000000000004,
+              "height": 29.999999999999993,
+              "rectanglelabels": [
+                "rough_pavement"
+              ]
+            }
+          }
+        ]
+      }
+    ]
   }
 ]

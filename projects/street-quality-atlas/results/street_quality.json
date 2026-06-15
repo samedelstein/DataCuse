@@ -1,12 +1,175 @@
 {
   "generated_at": null,
   "totals": {
-    "parcels": 4,
-    "images": 8,
-    "objects": 44,
-    "issues": 14
+    "parcels": 5,
+    "images": 10,
+    "objects": 51,
+    "issues": 16
   },
   "parcels": [
+    {
+      "lot_id": "002-22-110",
+      "address": "515 TURTLE ST",
+      "lat": 43.07124579304014,
+      "lon": -76.15846303959556,
+      "images": [
+        {
+          "id": 11,
+          "lot_id": "002-22-110",
+          "address": "515 TURTLE ST",
+          "lat": 43.07124579304014,
+          "lon": -76.15846303959556,
+          "heading": 27.79254367574788,
+          "image_path": "../syracuse-property-atlas/images/street-quality/002-22-110_28.jpg",
+          "created_at": "2026-06-15 00:15:31",
+          "summary": "Residential street with mature trees, houses, and an asphalt sidewalk needing maintenance.",
+          "street_quality": 4,
+          "sidewalk_quality": 2,
+          "curb_quality": 3,
+          "signs_quality": 3,
+          "model_provider": "gemini",
+          "model_name": "gemini-3.5-flash",
+          "objects": [
+            {
+              "id": 58,
+              "image_id": 11,
+              "label": "tree",
+              "confidence": 0.95,
+              "bbox_xmin": 0.17,
+              "bbox_ymin": 0.0,
+              "bbox_xmax": 0.56,
+              "bbox_ymax": 0.49,
+              "notes": "Large mature deciduous tree near the curb",
+              "created_at": "2026-06-15 00:15:39"
+            },
+            {
+              "id": 59,
+              "image_id": 11,
+              "label": "sidewalk",
+              "confidence": 0.85,
+              "bbox_xmin": 0.48,
+              "bbox_ymin": 0.0,
+              "bbox_xmax": 0.63,
+              "bbox_ymax": 0.38,
+              "notes": "Asphalt-paved sidewalk on the left side",
+              "created_at": "2026-06-15 00:15:39"
+            },
+            {
+              "id": 60,
+              "image_id": 11,
+              "label": "utility_pole",
+              "confidence": 0.9,
+              "bbox_xmin": 0.29,
+              "bbox_ymin": 0.79,
+              "bbox_xmax": 0.45,
+              "bbox_ymax": 0.83,
+              "notes": "Power pole in the background",
+              "created_at": "2026-06-15 00:15:39"
+            }
+          ],
+          "issues": [
+            {
+              "id": 24,
+              "image_id": 11,
+              "category": "sidewalk_crack",
+              "severity": 3,
+              "bbox_xmin": 0.48,
+              "bbox_ymin": 0.0,
+              "bbox_xmax": 0.63,
+              "bbox_ymax": 0.38,
+              "notes": "Cracked and degraded asphalt sidewalk surface",
+              "created_at": "2026-06-15 00:15:39"
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "lot_id": "002-22-110",
+          "address": "515 TURTLE ST",
+          "lat": 43.07124579304014,
+          "lon": -76.15846303959556,
+          "heading": 207.79254367574788,
+          "image_path": "../syracuse-property-atlas/images/street-quality/002-22-110_208.jpg",
+          "created_at": "2026-06-15 00:15:31",
+          "summary": "Quiet residential street with mature trees and uneven curb/sidewalk infrastructure.",
+          "street_quality": 4,
+          "sidewalk_quality": 2,
+          "curb_quality": 3,
+          "signs_quality": 4,
+          "model_provider": "gemini",
+          "model_name": "gemini-3.5-flash",
+          "objects": [
+            {
+              "id": 61,
+              "image_id": 12,
+              "label": "tree",
+              "confidence": 0.95,
+              "bbox_xmin": 0.2,
+              "bbox_ymin": 0.24,
+              "bbox_xmax": 0.48,
+              "bbox_ymax": 0.49,
+              "notes": "Mature tree on left parkway",
+              "created_at": "2026-06-15 00:15:47"
+            },
+            {
+              "id": 62,
+              "image_id": 12,
+              "label": "tree",
+              "confidence": 0.95,
+              "bbox_xmin": 0.58,
+              "bbox_ymin": 0.01,
+              "bbox_xmax": 0.84,
+              "bbox_ymax": 0.5,
+              "notes": "Large mature tree on right",
+              "created_at": "2026-06-15 00:15:47"
+            },
+            {
+              "id": 63,
+              "image_id": 12,
+              "label": "utility_pole",
+              "confidence": 0.9,
+              "bbox_xmin": 0.52,
+              "bbox_ymin": 0.31,
+              "bbox_xmax": 0.59,
+              "bbox_ymax": 0.49,
+              "notes": "Pole with overhead lines",
+              "created_at": "2026-06-15 00:15:47"
+            },
+            {
+              "id": 64,
+              "image_id": 12,
+              "label": "traffic_sign",
+              "confidence": 0.85,
+              "bbox_xmin": 0.24,
+              "bbox_ymin": 0.45,
+              "bbox_xmax": 0.26,
+              "bbox_ymax": 0.5,
+              "notes": "Stop sign",
+              "created_at": "2026-06-15 00:15:47"
+            }
+          ],
+          "issues": [
+            {
+              "id": 25,
+              "image_id": 12,
+              "category": "rough_pavement",
+              "severity": 2,
+              "bbox_xmin": 0.7,
+              "bbox_ymin": 0.55,
+              "bbox_xmax": 1.0,
+              "bbox_ymax": 0.85,
+              "notes": "Degraded asphalt along the right road edge",
+              "created_at": "2026-06-15 00:15:47"
+            }
+          ]
+        }
+      ],
+      "image_count": 2,
+      "object_count": 7,
+      "issue_count": 2,
+      "latest_created_at": "2026-06-15 00:15:31",
+      "summary": "Residential street with mature trees, houses, and an asphalt sidewalk needing maintenance."
+    },
     {
       "lot_id": "005-02-090",
       "address": "267 ROSS PK",
@@ -1784,6 +1947,156 @@
           "bbox_ymax": 0.28,
           "notes": "Minor cracks in sidewalk segments",
           "created_at": "2026-06-14 16:36:20"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "lot_id": "002-22-110",
+      "address": "515 TURTLE ST",
+      "lat": 43.07124579304014,
+      "lon": -76.15846303959556,
+      "heading": 27.79254367574788,
+      "image_path": "../syracuse-property-atlas/images/street-quality/002-22-110_28.jpg",
+      "created_at": "2026-06-15 00:15:31",
+      "summary": "Residential street with mature trees, houses, and an asphalt sidewalk needing maintenance.",
+      "street_quality": 4,
+      "sidewalk_quality": 2,
+      "curb_quality": 3,
+      "signs_quality": 3,
+      "model_provider": "gemini",
+      "model_name": "gemini-3.5-flash",
+      "objects": [
+        {
+          "id": 58,
+          "image_id": 11,
+          "label": "tree",
+          "confidence": 0.95,
+          "bbox_xmin": 0.17,
+          "bbox_ymin": 0.0,
+          "bbox_xmax": 0.56,
+          "bbox_ymax": 0.49,
+          "notes": "Large mature deciduous tree near the curb",
+          "created_at": "2026-06-15 00:15:39"
+        },
+        {
+          "id": 59,
+          "image_id": 11,
+          "label": "sidewalk",
+          "confidence": 0.85,
+          "bbox_xmin": 0.48,
+          "bbox_ymin": 0.0,
+          "bbox_xmax": 0.63,
+          "bbox_ymax": 0.38,
+          "notes": "Asphalt-paved sidewalk on the left side",
+          "created_at": "2026-06-15 00:15:39"
+        },
+        {
+          "id": 60,
+          "image_id": 11,
+          "label": "utility_pole",
+          "confidence": 0.9,
+          "bbox_xmin": 0.29,
+          "bbox_ymin": 0.79,
+          "bbox_xmax": 0.45,
+          "bbox_ymax": 0.83,
+          "notes": "Power pole in the background",
+          "created_at": "2026-06-15 00:15:39"
+        }
+      ],
+      "issues": [
+        {
+          "id": 24,
+          "image_id": 11,
+          "category": "sidewalk_crack",
+          "severity": 3,
+          "bbox_xmin": 0.48,
+          "bbox_ymin": 0.0,
+          "bbox_xmax": 0.63,
+          "bbox_ymax": 0.38,
+          "notes": "Cracked and degraded asphalt sidewalk surface",
+          "created_at": "2026-06-15 00:15:39"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "lot_id": "002-22-110",
+      "address": "515 TURTLE ST",
+      "lat": 43.07124579304014,
+      "lon": -76.15846303959556,
+      "heading": 207.79254367574788,
+      "image_path": "../syracuse-property-atlas/images/street-quality/002-22-110_208.jpg",
+      "created_at": "2026-06-15 00:15:31",
+      "summary": "Quiet residential street with mature trees and uneven curb/sidewalk infrastructure.",
+      "street_quality": 4,
+      "sidewalk_quality": 2,
+      "curb_quality": 3,
+      "signs_quality": 4,
+      "model_provider": "gemini",
+      "model_name": "gemini-3.5-flash",
+      "objects": [
+        {
+          "id": 61,
+          "image_id": 12,
+          "label": "tree",
+          "confidence": 0.95,
+          "bbox_xmin": 0.2,
+          "bbox_ymin": 0.24,
+          "bbox_xmax": 0.48,
+          "bbox_ymax": 0.49,
+          "notes": "Mature tree on left parkway",
+          "created_at": "2026-06-15 00:15:47"
+        },
+        {
+          "id": 62,
+          "image_id": 12,
+          "label": "tree",
+          "confidence": 0.95,
+          "bbox_xmin": 0.58,
+          "bbox_ymin": 0.01,
+          "bbox_xmax": 0.84,
+          "bbox_ymax": 0.5,
+          "notes": "Large mature tree on right",
+          "created_at": "2026-06-15 00:15:47"
+        },
+        {
+          "id": 63,
+          "image_id": 12,
+          "label": "utility_pole",
+          "confidence": 0.9,
+          "bbox_xmin": 0.52,
+          "bbox_ymin": 0.31,
+          "bbox_xmax": 0.59,
+          "bbox_ymax": 0.49,
+          "notes": "Pole with overhead lines",
+          "created_at": "2026-06-15 00:15:47"
+        },
+        {
+          "id": 64,
+          "image_id": 12,
+          "label": "traffic_sign",
+          "confidence": 0.85,
+          "bbox_xmin": 0.24,
+          "bbox_ymin": 0.45,
+          "bbox_xmax": 0.26,
+          "bbox_ymax": 0.5,
+          "notes": "Stop sign",
+          "created_at": "2026-06-15 00:15:47"
+        }
+      ],
+      "issues": [
+        {
+          "id": 25,
+          "image_id": 12,
+          "category": "rough_pavement",
+          "severity": 2,
+          "bbox_xmin": 0.7,
+          "bbox_ymin": 0.55,
+          "bbox_xmax": 1.0,
+          "bbox_ymax": 0.85,
+          "notes": "Degraded asphalt along the right road edge",
+          "created_at": "2026-06-15 00:15:47"
         }
       ]
     }
