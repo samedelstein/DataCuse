@@ -1,5 +1,299 @@
 [
   {
+    "address": "106 Gannett Ave & Stedman St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image provides a street-level view, and some parts of the property, such as the full roof or rear, are not visible.",
+        "A multi-story building visible in the background on a hill is likely a separate parcel and not the target property."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.39,
+            "width": 0.23,
+            "x": 0.77,
+            "y": 0.61
+          },
+          "confidence": "medium",
+          "label": "Overgrown grass",
+          "reason": "Grass on the right side of the driveway appears somewhat overgrown."
+        },
+        {
+          "bbox": {
+            "height": 0.21,
+            "width": 0.21,
+            "x": 0.49,
+            "y": 0.48
+          },
+          "confidence": "medium",
+          "label": "Minor debris/storage",
+          "reason": "Miscellaneous items, some covered by a tarp, are visible near the white shed/side of the house."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor vegetation overgrowth is visible in some grass areas of the yard.",
+        "A minor accumulation of items or debris is visible near a side structure."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a single-family residence with stone veneer siding, a paved driveway, and some areas of minor vegetation overgrowth.",
+      "visible_conditions": [
+        "The main structure features stone veneer on its exterior walls, with some brick accents and a lighter-colored gable end.",
+        "A paved driveway is present, leading towards the side of the house.",
+        "Grass areas are visible on the lot, with some sections appearing somewhat overgrown.",
+        "A small, white, shed-like structure is situated adjacent to the main building.",
+        "Some miscellaneous items, partially covered by a white tarp, are visible near the shed structure.",
+        "The roof, where visible, appears to have asphalt shingles.",
+        "Windows visible on the side of the house appear intact, with one screen visible."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Minor vegetation overgrowth is visible in some grass areas of the yard.",
+      "Image-only flag: A minor accumulation of items or debris is visible near a side structure."
+    ],
+    "id": 228,
+    "image": "images/parcel-000228.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 97657,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07941378304313,
+    "lon": -76.15650669176239,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077301681,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303511,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303735,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305430,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077307855,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310333,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310334,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317597,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319073,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077322868,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324732,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336794,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 12,
+        "historic": {},
+        "landuse": {},
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-08-040",
+    "published_at": "2026-06-17T01:07:43+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "106 Gannett Ave & Stedman St"
+  },
+  {
     "address": "111-15 Stedman St To Gannett Ave",
     "ai_analysis": {
       "available": true,
