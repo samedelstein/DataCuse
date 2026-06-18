@@ -1,5 +1,516 @@
 [
   {
+    "address": "107 Fourth North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "ollama:llava:latest",
+      "summary": "{\"role\": \"Cautious Civic Data Assistant Reviewing Public Street-Level Exterior Image for Property\", \"property\": {\"address\": \"107 FOURTH NORTH ST\", \"parcel_key\": \"003-10-080\", \"coordinates\": {\"lat\": 43.077554175418314, \"lon\": -76.15830173243485}}, \"known_public_records\": [\"Vacant properties: 1 matching record\", \"Rental registry: 5 matching records\"], \"task\": [\"Describe only visible exterior property conditions from the image.\", \"Compare visible conditions against known_public_records and call out possible image-only issues only when they are plainly visible.\", \"Use cautious language. Do not infer ownership, occupancy, code violations, criminal activity, socioeconomic status, or protected-class information.\", \"Do not identify, describe, transcribe, or track people, faces, license plates, or private personal details.\", \"If the property is blocked, image quality is poor, or the view may show the wrong parcel, lower confidence and explain the caveat.\", \"When you flag visible issues, include approximate normalized bounding boxes in image_annotations. Use x, y, width, and height as fractions from 0 to 1 relative to the full image.\", \"Only create bounding boxes for visible property-condition issues, not people, vehicles, license plates, or unrelated background objects.\", \"Return valid JSON only. Do not wrap it in Markdown\"], \"schema\": {\"summary\": \"One cautious sentence describing the visible exterior\", \"property_type_guess\": \"Single-Family|Two-Family|Multifamily|Commercial|Mixed-Use|Vacant Lot|Unclear\", \"visible_conditions\": [\"Specific exterior observations visible in the image\"], \"condition_scores\": {\"Roof\": \"Good|Fair|Poor|Not Visible|Unclear\", \"Siding or Facade\": \"Good|Fair|Poor|Not Visible|Unclear\", \"Windows or Doors\": \"Good|Fair|Poor|Not Visible|Unclear\", \"Porch or Entry\": \"Good|Fair|Poor|Not Visible|Unclear\", \"Yard or Lot\": \"Good|Fair|Poor|Not Visible|Unclear\", \"Trash or Debris\": \"None Visible|Minor|Major|Unclear\", \"Vegetation or Overgrowth\": \"None Visible|Minor|Major|Unclear\"}, \"visible_flags\": {\"Board Ed Windows or Doors\": \"Yes|No|Unclear\", \"Fire Damage Visible\": \"Yes|No|Unclear\", \"Structural Damage Visible\": \"Yes|No|Unclear\", \"Vacancy Signs Visible\": \"Yes|No|Unclear\", \"Active Construction Visible\": \"Yes|No|Unclear\"}, \"possible_unrecorded_issues\": [\"Cautious Image-Only Flags Not Already Reflected in Known Data\"], \"image_annotations\": [{\"label\": \"Short Visible Issue Label\", \"reason\": \"Why This Area Was Marked\", \"bbox\": {\"x\": \"Left Position as 0-1 Fraction of Image Width\", \"y\": \"Top Position as 0-1 Fraction of Image Height\", \"width\": \"Box Width as 0-1 Fraction of Image Width\", \"height\": \"Box Height as 0-1 Fraction of Image Height\"}, \"confidence\": \"High|Medium|Low\"}], \"needs_human_review\": \"True|False\", \"confidence\": \"High|Medium|Low\", \"caveats\": [\"Limits Such as Image Age, Obstructed View, Angle, or Uncertainty\"]} \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Rental registry: 5 matching records"
+    ],
+    "id": 240,
+    "image": "images/parcel-000240.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 86687,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.077554175418314,
+    "lon": -76.15830173243485,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07752725,
+          "Longitude": -76.15832717,
+          "NeedsRR": "Yes",
+          "ObjectId": 834,
+          "PropertyAddress": "107 Fourth North St",
+          "RR_app_received": 1727395200000,
+          "RR_contact_name": "Areial Sturtevant",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1747785600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1747785600000,
+          "RRisValid": "Yes",
+          "SBL": "003.-10-08.0",
+          "SHAPE": null,
+          "completion_date": 1748304000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1752451200000,
+          "pc_owner": "Areial Sturtevant",
+          "valid_until": 1842998400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07765763,
+          "Longitude": -76.15865224,
+          "NeedsRR": "Yes",
+          "ObjectId": 832,
+          "PropertyAddress": "113 Fourth North St",
+          "RR_app_received": 1499385600000,
+          "RR_contact_name": "Michelle Garlic, Richard Garlic",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1501200000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-10-06.0",
+          "SHAPE": null,
+          "completion_date": 1501545600000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1501632000000,
+          "pc_owner": "Hamooed Ahmed Essa",
+          "valid_until": 1596240000000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07759244,
+          "Longitude": -76.15848971,
+          "NeedsRR": "Yes",
+          "ObjectId": 833,
+          "PropertyAddress": "109 Fourth North St",
+          "RR_app_received": 1771459200000,
+          "RR_contact_name": "Leonard Dyer",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-10-07.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1773360000000,
+          "pc_owner": "Leonard Dyer",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07748379,
+          "Longitude": -76.15821881,
+          "NeedsRR": "Yes",
+          "ObjectId": 835,
+          "PropertyAddress": "105 Fourth North St",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-10-09.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Consolidated Extended Svcs Inc",
+          "valid_until": null,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.0774672,
+          "Longitude": -76.15805521,
+          "NeedsRR": "Yes",
+          "ObjectId": 836,
+          "PropertyAddress": "103 Fourth North St",
+          "RR_app_received": 1758844800000,
+          "RR_contact_name": "Swimm Team LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-10-10.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1760054400000,
+          "pc_owner": "Swimm Team LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.07748379,
+          "Longitude": -76.15821881,
+          "ObjectId": 500,
+          "Owner": "Consolidated Extended Svcs Inc",
+          "OwnerAddress": "106 Beecher Street Syracuse, NY 13203",
+          "PropertyAddress": "105 Fourth North St",
+          "SBL": "003.-10-09.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": null
+        }
+      ]
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5197066564,
+          "landuse": null,
+          "name": "Colonial Laundromat",
+          "shop": "laundry",
+          "tags": {
+            "name": "Colonial Laundromat",
+            "shop": "laundry",
+            "website": "https://www.coloniallaundromats.com/"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": "fast_food",
+          "building": null,
+          "historic": null,
+          "id": 5197066565,
+          "landuse": null,
+          "name": "Little Caesars",
+          "shop": null,
+          "tags": {
+            "amenity": "fast_food",
+            "brand": "Little Caesars",
+            "brand:wikidata": "Q1393809",
+            "cuisine": "pizza",
+            "name": "Little Caesars",
+            "takeaway": "yes"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302152,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304976,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077307614,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312880,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315024,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315025,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315180,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319075,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323676,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323677,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323678,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324026,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325709,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326498,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329212,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329542,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077330769,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331244,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "shop: laundry",
+          "id": 5197066564,
+          "label": "Colonial Laundromat",
+          "tags": {
+            "name": "Colonial Laundromat",
+            "shop": "laundry"
+          },
+          "type": "node"
+        },
+        {
+          "category": "amenity: fast_food",
+          "id": 5197066565,
+          "label": "Little Caesars",
+          "tags": {
+            "amenity": "fast_food",
+            "name": "Little Caesars"
+          },
+          "type": "node"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {
+          "fast_food": 1
+        },
+        "buildings": 18,
+        "historic": {},
+        "landuse": {},
+        "named_features": 2,
+        "shops": {
+          "laundry": 1
+        }
+      }
+    },
+    "parcel_key": "003-10-080",
+    "published_at": "2026-06-18T19:07:04+00:00",
+    "review_reasons": [],
+    "title": "107 Fourth North St"
+  },
+  {
     "address": "109 Fourth North St",
     "ai_analysis": {
       "available": true,

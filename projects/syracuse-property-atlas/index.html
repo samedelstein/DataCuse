@@ -33,65 +33,15 @@
       <h1>One Syracuse parcel at a time.</h1>
       <p class="lede">A slow, sourced field notebook for city properties: parcel data, Street View, AI image observations, city open-data matches, tract context, and OpenStreetMap features.</p>
       <div class="stats">
-        <div><strong>242</strong><span>published entries</span></div>
+        <div><strong>243</strong><span>published entries</span></div>
         <div><strong>41340</strong><span>mapped parcels</span></div>
-        <div><strong>0.58%</strong><span>complete</span></div>
+        <div><strong>0.59%</strong><span>complete</span></div>
       </div>
     </section>
     <aside class="latest-card">
       <span>Latest parcel</span>
-      <h2>109 Fourth North St</h2>
-      <p>{&quot;role&quot;:&quot;Cautious civic data assistant reviewing a public street-level exterior image for a property atlas.&quot;,
-
-&quot;property&quot;:{
-   &quot;address&quot;:&quot;109 FOURTH NORTH ST&quot;,
-   &quot;parcel_key&quot;:&quot;003-10-070&quot;,
-   &quot;coordinates&quot;:{
-      &quot;lat&quot;:43.07761502433066,
-      &quot;lon&quot;:-76.1584534305038
-   }
-},
-
-&quot;known_public_records&quot;:[&quot;Vacant properties: 1 matching record&quot;,
-   &quot;Rental registry: 6 matching records&quot;],
-
-&quot;task&quot;:[&quot;Describe only visible exterior property conditions from the image.&quot;,
-   &quot;Compare visible conditions against known_public_records and call out possible image-only issues only when they are plainly visible.&quot;,
-   &quot;Use cautious language. Do not infer ownership, occupancy, code violations, criminal activity, socioeconomic status, or protected-class information.&quot;,
-   &quot;Do not identify, describe, transcribe, or track people, faces, license plates, or private personal details.&quot;,
-   &quot;If the property is blocked, image quality is poor, or the view may show the wrong parcel, lower confidence and explain the caveat.&quot;,
-   &quot;When you flag visible issues, include approximate normalized bounding boxes in image_annotations. Use x, y, width, and height as fractions from 0 to 1 relative to the full image.&quot;,
-   &quot;Only create bounding boxes for visible property-condition issues, not people, vehicles, license plates, or unrelated background objects&quot;,
-   &quot;Return valid JSON only. Do not wrap it in Markdown&quot;],
-
-&quot;schema&quot;:{
-   &quot;summary&quot;:&quot;one cautious sentence describing the visible exterior&quot;,
-   &quot;property_type_guess&quot;:&quot;single_family|two_family|multifamily|commercial|mixed_use|vacant_lot|unclear&quot;,
-   &quot;visible_conditions&quot;:[&quot;specific exterior observations visible in the image&quot;],
-   &quot;condition_scores&quot;:{&quot;roof&quot;:&quot;good|fair|poor|not_visible|unclear&quot;,
-      &quot;siding_or_facade&quot;:&quot;good|fair|poor|not_visible|unclear&quot;,
-      &quot;windows_doors&quot;:&quot;good|fair|poor|not_visible|unclear&quot;,
-      &quot;porch_or_entry&quot;:&quot;good|fair|poor|not_visible|unclear&quot;,
-      &quot;yard_or_lot&quot;:&quot;good|fair|poor|not_visible|unclear&quot;,
-      &quot;trash_debris&quot;:&quot;none_visible|minor|major|unclear&quot;,
-      &quot;vegetation_overgrowth&quot;:&quot;none_visible|minor|major|unclear&quot;},
-   &quot;visible_flags&quot;:{&quot;boarded_windows_or_doors&quot;:&quot;yes|no|unclear&quot;,
-      &quot;fire_damage_visible&quot;:&quot;yes|no|unclear&quot;,
-      &quot;structural_damage_visible&quot;:&quot;yes|no|unclear&quot;,
-      &quot;vacancy_signs_visible&quot;:&quot;yes|no|unclear&quot;,
-      &quot;active_construction_visible&quot;:&quot;yes|no|unclear&quot;},
-   &quot;possible_unrecorded_issues&quot;:[&quot;cautious image-only flags not already reflected in known_data&quot;],
-   &quot;image_annotations&quot;:[{&quot;label&quot;:&quot;short visible issue label&quot;,
-      &quot;reason&quot;:&quot;why this area was marked&quot;,
-      &quot;bbox&quot;:{&quot;x&quot;:&quot;left position as 0-1 fraction of image width&quot;,
-         &quot;y&quot;:&quot;top position as 0-1 fraction of image height&quot;,
-         &quot;width&quot;:&quot;box width as 0-1 fraction of image width&quot;,
-         &quot;height&quot;:&quot;box height as 0-1 fraction of image height&quot;},
-      &quot;confidence&quot;:&quot;high|medium|low&quot;}],
-   &quot;needs_human_review&quot;:&quot;true|false&quot;,
-   &quot;confidence&quot;:&quot;high|medium|low&quot;,
-   &quot;caveats&quot;:[&quot;limits such as image age, obstructed view, angle, or uncertainty&quot;]
-} 
+      <h2>107 Fourth North St</h2>
+      <p>{&quot;role&quot;: &quot;Cautious Civic Data Assistant Reviewing Public Street-Level Exterior Image for Property&quot;, &quot;property&quot;: {&quot;address&quot;: &quot;107 FOURTH NORTH ST&quot;, &quot;parcel_key&quot;: &quot;003-10-080&quot;, &quot;coordinates&quot;: {&quot;lat&quot;: 43.077554175418314, &quot;lon&quot;: -76.15830173243485}}, &quot;known_public_records&quot;: [&quot;Vacant properties: 1 matching record&quot;, &quot;Rental registry: 5 matching records&quot;], &quot;task&quot;: [&quot;Describe only visible exterior property conditions from the image.&quot;, &quot;Compare visible conditions against known_public_records and call out possible image-only issues only when they are plainly visible.&quot;, &quot;Use cautious language. Do not infer ownership, occupancy, code violations, criminal activity, socioeconomic status, or protected-class information.&quot;, &quot;Do not identify, describe, transcribe, or track people, faces, license plates, or private personal details.&quot;, &quot;If the property is blocked, image quality is poor, or the view may show the wrong parcel, lower confidence and explain the caveat.&quot;, &quot;When you flag visible issues, include approximate normalized bounding boxes in image_annotations. Use x, y, width, and height as fractions from 0 to 1 relative to the full image.&quot;, &quot;Only create bounding boxes for visible property-condition issues, not people, vehicles, license plates, or unrelated background objects.&quot;, &quot;Return valid JSON only. Do not wrap it in Markdown&quot;], &quot;schema&quot;: {&quot;summary&quot;: &quot;One cautious sentence describing the visible exterior&quot;, &quot;property_type_guess&quot;: &quot;Single-Family|Two-Family|Multifamily|Commercial|Mixed-Use|Vacant Lot|Unclear&quot;, &quot;visible_conditions&quot;: [&quot;Specific exterior observations visible in the image&quot;], &quot;condition_scores&quot;: {&quot;Roof&quot;: &quot;Good|Fair|Poor|Not Visible|Unclear&quot;, &quot;Siding or Facade&quot;: &quot;Good|Fair|Poor|Not Visible|Unclear&quot;, &quot;Windows or Doors&quot;: &quot;Good|Fair|Poor|Not Visible|Unclear&quot;, &quot;Porch or Entry&quot;: &quot;Good|Fair|Poor|Not Visible|Unclear&quot;, &quot;Yard or Lot&quot;: &quot;Good|Fair|Poor|Not Visible|Unclear&quot;, &quot;Trash or Debris&quot;: &quot;None Visible|Minor|Major|Unclear&quot;, &quot;Vegetation or Overgrowth&quot;: &quot;None Visible|Minor|Major|Unclear&quot;}, &quot;visible_flags&quot;: {&quot;Board Ed Windows or Doors&quot;: &quot;Yes|No|Unclear&quot;, &quot;Fire Damage Visible&quot;: &quot;Yes|No|Unclear&quot;, &quot;Structural Damage Visible&quot;: &quot;Yes|No|Unclear&quot;, &quot;Vacancy Signs Visible&quot;: &quot;Yes|No|Unclear&quot;, &quot;Active Construction Visible&quot;: &quot;Yes|No|Unclear&quot;}, &quot;possible_unrecorded_issues&quot;: [&quot;Cautious Image-Only Flags Not Already Reflected in Known Data&quot;], &quot;image_annotations&quot;: [{&quot;label&quot;: &quot;Short Visible Issue Label&quot;, &quot;reason&quot;: &quot;Why This Area Was Marked&quot;, &quot;bbox&quot;: {&quot;x&quot;: &quot;Left Position as 0-1 Fraction of Image Width&quot;, &quot;y&quot;: &quot;Top Position as 0-1 Fraction of Image Height&quot;, &quot;width&quot;: &quot;Box Width as 0-1 Fraction of Image Width&quot;, &quot;height&quot;: &quot;Box Height as 0-1 Fraction of Image Height&quot;}, &quot;confidence&quot;: &quot;High|Medium|Low&quot;}], &quot;needs_human_review&quot;: &quot;True|False&quot;, &quot;confidence&quot;: &quot;High|Medium|Low&quot;, &quot;caveats&quot;: [&quot;Limits Such as Image Age, Obstructed View, Angle, or Uncertainty&quot;]} 
 
 
 
@@ -149,8 +99,8 @@
             <label><input type="checkbox" value="ai_flag"> AI flags</label>
             <label><input type="checkbox" value="review"> Review queue</label>
           </div>
-          <div class="progress-bar" aria-label="Publishing progress"><span style="width: 0.58%"></span></div>
-          <p><strong id="publishedCount">241</strong> of <strong id="totalCount">41340</strong> mapped parcels published.</p>
+          <div class="progress-bar" aria-label="Publishing progress"><span style="width: 0.59%"></span></div>
+          <p><strong id="publishedCount">242</strong> of <strong id="totalCount">41340</strong> mapped parcels published.</p>
           <div id="searchResults" class="search-results" aria-live="polite"></div>
         </div>
         <div id="atlasMap" class="atlas-map" aria-label="Syracuse parcel publishing map"></div>
@@ -165,6 +115,47 @@
       </div>
       <div class="entry-grid">
         
+            <article class="entry-card">
+                <div class="entry-image"><img src="images/parcel-000240.jpg" alt="Street View image for 107 Fourth North St"></div>
+                <div class="entry-body">
+                    <p class="entry-date">2026-06-18T19:07:04+00:00</p>
+                    <h3>107 Fourth North St</h3>
+                    <p>{&quot;role&quot;: &quot;Cautious Civic Data Assistant Reviewing Public Street-Level Exterior Image for Property&quot;, &quot;property&quot;: {&quot;address&quot;: &quot;107 FOURTH NORTH ST&quot;, &quot;parcel_key&quot;: &quot;003-10-080&quot;, &quot;coordinates&quot;: {&quot;lat&quot;: 43.077554175418314, &quot;lon&quot;: -76.15830173243485}}, &quot;known_public_records&quot;: [&quot;Vacant properties: 1 matching record&quot;, &quot;Rental registry: 5 matching records&quot;], &quot;task&quot;: [&quot;Describe only visible exterior property conditions from the image.&quot;, &quot;Compare visible conditions against known_public_records and call out possible image-only issues only when they are plainly visible.&quot;, &quot;Use cautious language. Do not infer ownership, occupancy, code violations, criminal activity, socioeconomic status, or protected-class information.&quot;, &quot;Do not identify, describe, transcribe, or track people, faces, license plates, or private personal details.&quot;, &quot;If the property is blocked, image quality is poor, or the view may show the wrong parcel, lower confidence and explain the caveat.&quot;, &quot;When you flag visible issues, include approximate normalized bounding boxes in image_annotations. Use x, y, width, and height as fractions from 0 to 1 relative to the full image.&quot;, &quot;Only create bounding boxes for visible property-condition issues, not people, vehicles, license plates, or unrelated background objects.&quot;, &quot;Return valid JSON only. Do not wrap it in Markdown&quot;], &quot;schema&quot;: {&quot;summary&quot;: &quot;One cautious sentence describing the visible exterior&quot;, &quot;property_type_guess&quot;: &quot;Single-Family|Two-Family|Multifamily|Commercial|Mixed-Use|Vacant Lot|Unclear&quot;, &quot;visible_conditions&quot;: [&quot;Specific exterior observations visible in the image&quot;], &quot;condition_scores&quot;: {&quot;Roof&quot;: &quot;Good|Fair|Poor|Not Visible|Unclear&quot;, &quot;Siding or Facade&quot;: &quot;Good|Fair|Poor|Not Visible|Unclear&quot;, &quot;Windows or Doors&quot;: &quot;Good|Fair|Poor|Not Visible|Unclear&quot;, &quot;Porch or Entry&quot;: &quot;Good|Fair|Poor|Not Visible|Unclear&quot;, &quot;Yard or Lot&quot;: &quot;Good|Fair|Poor|Not Visible|Unclear&quot;, &quot;Trash or Debris&quot;: &quot;None Visible|Minor|Major|Unclear&quot;, &quot;Vegetation or Overgrowth&quot;: &quot;None Visible|Minor|Major|Unclear&quot;}, &quot;visible_flags&quot;: {&quot;Board Ed Windows or Doors&quot;: &quot;Yes|No|Unclear&quot;, &quot;Fire Damage Visible&quot;: &quot;Yes|No|Unclear&quot;, &quot;Structural Damage Visible&quot;: &quot;Yes|No|Unclear&quot;, &quot;Vacancy Signs Visible&quot;: &quot;Yes|No|Unclear&quot;, &quot;Active Construction Visible&quot;: &quot;Yes|No|Unclear&quot;}, &quot;possible_unrecorded_issues&quot;: [&quot;Cautious Image-Only Flags Not Already Reflected in Known Data&quot;], &quot;image_annotations&quot;: [{&quot;label&quot;: &quot;Short Visible Issue Label&quot;, &quot;reason&quot;: &quot;Why This Area Was Marked&quot;, &quot;bbox&quot;: {&quot;x&quot;: &quot;Left Position as 0-1 Fraction of Image Width&quot;, &quot;y&quot;: &quot;Top Position as 0-1 Fraction of Image Height&quot;, &quot;width&quot;: &quot;Box Width as 0-1 Fraction of Image Width&quot;, &quot;height&quot;: &quot;Box Height as 0-1 Fraction of Image Height&quot;}, &quot;confidence&quot;: &quot;High|Medium|Low&quot;}], &quot;needs_human_review&quot;: &quot;True|False&quot;, &quot;confidence&quot;: &quot;High|Medium|Low&quot;, &quot;caveats&quot;: [&quot;Limits Such as Image Age, Obstructed View, Angle, or Uncertainty&quot;]} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+                    <div class="flag-row"><span>Vacant properties: 1 matching record</span><span>Rental registry: 5 matching records</span></div>
+                    <a href="properties/000240/">Open entry</a>
+                </div>
+            </article>
+            
             <article class="entry-card">
                 <div class="entry-image"><img src="images/parcel-000239.jpg" alt="Street View image for 109 Fourth North St"></div>
                 <div class="entry-body">
@@ -557,17 +548,6 @@
                     <p>A multi-story building with light-colored siding and an adjacent paved lot, showing a visible gap or missing trim where the upper siding meets the lower roofline.</p>
                     <div class="flag-row"><span>Vacant properties: 2 matching records</span><span>Rental registry: 1 matching record</span><span>Image-only flag: Visible gap or missing exterior trim/siding at the junction between the first-floor roof and the second-floor wall, potentially exposing the underlying structure to weather.</span></div>
                     <a href="properties/000217/">Open entry</a>
-                </div>
-            </article>
-            
-            <article class="entry-card">
-                <div class="entry-image"><img src="images/parcel-000216.jpg" alt="Street View image for 1014 Wolf St"></div>
-                <div class="entry-body">
-                    <p class="entry-date">2026-06-15T00:04:03+00:00</p>
-                    <h3>1014 Wolf St</h3>
-                    <p>A two-story residential building with blue siding and an enclosed front porch, situated next to an asphalt parking lot.</p>
-                    <div class="flag-row"><span>Vacant properties: 2 matching records</span><span>Rental registry: 2 matching records</span><span>Image-only flag: Peeling paint and surface wear on the lower front porch foundation skirting</span></div>
-                    <a href="properties/000216/">Open entry</a>
                 </div>
             </article>
             
