@@ -1,5 +1,521 @@
 [
   {
+    "address": "103 Fourth North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.35,
+            "width": 0.2,
+            "x": 0.41,
+            "y": 0.49
+          },
+          "confidence": "high",
+          "label": "Peeling paint/wear on porch stairs and railings",
+          "reason": "Visible deterioration of paint and material on the porch steps and railings."
+        },
+        {
+          "bbox": {
+            "height": 0.25,
+            "width": 0.45,
+            "x": 0.2,
+            "y": 0.6
+          },
+          "confidence": "high",
+          "label": "Overgrown vegetation near foundation",
+          "reason": "Shrubbery and taller grass are growing close to the house foundation and porch."
+        },
+        {
+          "bbox": {
+            "height": 0.15,
+            "width": 0.27,
+            "x": 0.28,
+            "y": 0.5
+          },
+          "confidence": "medium",
+          "label": "Siding discoloration/staining",
+          "reason": "Visible areas of discoloration or staining on the exterior siding, particularly on the lower levels."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Visible wear and peeling paint are present on the front porch stairs and railings.",
+        "Areas of overgrown vegetation are present near the foundation and porch.",
+        "Discoloration or staining is visible on portions of the exterior siding.",
+        "Typical visible signs of vacancy, such as boarded windows or extreme neglect, are not plainly evident in the image, despite a public record indicating vacancy."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "A multi-story residence with a front porch is visible, exhibiting some wear on exterior surfaces and moderate vegetation growth around the property.",
+      "visible_conditions": [
+        "The property features a multi-story structure with light-colored siding and a covered front porch.",
+        "The roof is partially visible and appears to be in fair condition.",
+        "The siding shows some areas of discoloration and general wear.",
+        "Windows and doors are present, with some windows containing air conditioning units.",
+        "The front porch stairs and railings exhibit visible wear and what appears to be peeling paint.",
+        "The yard area has grass, with some areas of taller vegetation or overgrowth, particularly near the foundation and porch.",
+        "Minor items are visible on the porch.",
+        "Significant tree and shrub vegetation surrounds the property."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Rental registry: 4 matching records",
+      "Image-only flag: Visible wear and peeling paint are present on the front porch stairs and railings.",
+      "Image-only flag: Areas of overgrown vegetation are present near the foundation and porch.",
+      "Image-only flag: Discoloration or staining is visible on portions of the exterior siding.",
+      "Image-only flag: Typical visible signs of vacancy, such as boarded windows or extreme neglect, are not plainly evident in the image, despite a public record indicating vacancy."
+    ],
+    "id": 242,
+    "image": "images/parcel-000242.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 98082,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07748439895034,
+    "lon": -76.15802999262583,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.0774672,
+          "Longitude": -76.15805521,
+          "NeedsRR": "Yes",
+          "ObjectId": 836,
+          "PropertyAddress": "103 Fourth North St",
+          "RR_app_received": 1758844800000,
+          "RR_contact_name": "Swimm Team LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-10-10.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1760054400000,
+          "pc_owner": "Swimm Team LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07759244,
+          "Longitude": -76.15848971,
+          "NeedsRR": "Yes",
+          "ObjectId": 833,
+          "PropertyAddress": "109 Fourth North St",
+          "RR_app_received": 1771459200000,
+          "RR_contact_name": "Leonard Dyer",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-10-07.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1773360000000,
+          "pc_owner": "Leonard Dyer",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07752725,
+          "Longitude": -76.15832717,
+          "NeedsRR": "Yes",
+          "ObjectId": 834,
+          "PropertyAddress": "107 Fourth North St",
+          "RR_app_received": 1727395200000,
+          "RR_contact_name": "Areial Sturtevant",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1747785600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1747785600000,
+          "RRisValid": "Yes",
+          "SBL": "003.-10-08.0",
+          "SHAPE": null,
+          "completion_date": 1748304000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1752451200000,
+          "pc_owner": "Areial Sturtevant",
+          "valid_until": 1842998400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07748379,
+          "Longitude": -76.15821881,
+          "NeedsRR": "Yes",
+          "ObjectId": 835,
+          "PropertyAddress": "105 Fourth North St",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-10-09.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Consolidated Extended Svcs Inc",
+          "valid_until": null,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.07748379,
+          "Longitude": -76.15821881,
+          "ObjectId": 500,
+          "Owner": "Consolidated Extended Svcs Inc",
+          "OwnerAddress": "106 Beecher Street Syracuse, NY 13203",
+          "PropertyAddress": "105 Fourth North St",
+          "SBL": "003.-10-09.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": null
+        }
+      ]
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302152,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312880,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315024,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315025,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315180,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319075,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323676,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323677,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323678,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324026,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325709,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077327023,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329212,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077330769,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077332826,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077332827,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771094,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771119,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: residential",
+          "id": 1189771094,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189771119,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 16,
+        "historic": {},
+        "landuse": {
+          "industrial": 1,
+          "residential": 1
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-10-100",
+    "published_at": "2026-06-18T21:03:07+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "103 Fourth North St"
+  },
+  {
     "address": "105 Fourth North St",
     "ai_analysis": {
       "available": true,
