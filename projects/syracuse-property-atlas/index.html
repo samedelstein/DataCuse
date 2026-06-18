@@ -33,15 +33,77 @@
       <h1>One Syracuse parcel at a time.</h1>
       <p class="lede">A slow, sourced field notebook for city properties: parcel data, Street View, AI image observations, city open-data matches, tract context, and OpenStreetMap features.</p>
       <div class="stats">
-        <div><strong>234</strong><span>published entries</span></div>
+        <div><strong>235</strong><span>published entries</span></div>
         <div><strong>41340</strong><span>mapped parcels</span></div>
-        <div><strong>0.56%</strong><span>complete</span></div>
+        <div><strong>0.57%</strong><span>complete</span></div>
       </div>
     </section>
     <aside class="latest-card">
       <span>Latest parcel</span>
-      <h2>900 Wolf St &amp; Fourth North St</h2>
-      <p>The visible exterior of the property appears to be a commercial-style building with a multi-colored facade, showing generally fair conditions with some minor visible debris.</p>
+      <h2>916 Wolf St</h2>
+      <p>{
+  &quot;summary&quot;: &quot;The visible exterior of the property appears to be a commercial or industrial building with an upper brick facade and a lower white section, partially obscured by large containers and various stored items on the lot.&quot;,
+  &quot;property_type_guess&quot;: &quot;commercial&quot;,
+  &quot;visible_conditions&quot;: [
+    &quot;The building features an upper brick facade that appears to be in fair condition.&quot;,
+    &quot;The lower section of the building is white, possibly painted masonry, showing some visible discoloration or grime.&quot;,
+    &quot;A large garage door is visible on the lower white section of the building, exhibiting some signs of wear.&quot;,
+    &quot;One small window is visible on the far left of the building, partially obscured by an object.&quot;,
+    &quot;The lot area in front of the building and to its right contains several large white containers or trailers.&quot;,
+    &quot;Various items, including what appears to be a yellow forklift and other materials, are stored on the lot, contributing to a cluttered appearance.&quot;,
+    &quot;The immediate ground surface in the foreground of the lot appears to be paved.&quot;
+  侬&quot;,
+  &quot;condition_scores&quot;: {
+    &quot;roof&quot;: &quot;not_visible&quot;,
+    &quot;siding_or_facade&quot;: &quot;fair&quot;,
+    &quot;windows_doors&quot;: &quot;fair&quot;,
+    &quot;porch_or_entry&quot;: &quot;not_visible&quot;,
+    &quot;yard_or_lot&quot;: &quot;poor&quot;,
+    &quot;trash_debris&quot;: &quot;major&quot;,
+    &quot;vegetation_overgrowth&quot;: &quot;none_visible&quot;
+  },
+  &quot;visible_flags&quot;: {
+    &quot;boarded_windows_or_doors&quot;: &quot;no&quot;,
+    &quot;fire_damage_visible&quot;: &quot;no&quot;,
+    &quot;structural_damage_visible&quot;: &quot;no&quot;,
+    &quot;vacancy_signs_visible&quot;: &quot;no&quot;,
+    &quot;active_construction_visible&quot;: &quot;unclear&quot;
+  },
+  &quot;possible_unrecorded_issues&quot;: [
+    &quot;Significant accumulation of stored items and containers on the lot, contributing to a cluttered appearance.&quot;,
+    &quot;Visible discoloration or grime on the lower white facade of the building.&quot;
+  ],
+  &quot;image_annotations&quot;: [
+    {
+      &quot;label&quot;: &quot;Clutter and stored items&quot;,
+      &quot;reason&quot;: &quot;Numerous containers, trailers, and other materials are stored on the lot, creating a cluttered environment.&quot;,
+      &quot;bbox&quot;: {
+        &quot;x&quot;: 0.15,
+        &quot;y&quot;: 0.4,
+        &quot;width&quot;: 0.8,
+        &quot;height&quot;: 0.3
+      },
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;label&quot;: &quot;Facade discoloration&quot;,
+      &quot;reason&quot;: &quot;The lower white facade of the building shows visible signs of discoloration or grime.&quot;,
+      &quot;bbox&quot;: {
+        &quot;x&quot;: 0.05,
+        &quot;y&quot;: 0.5,
+        &quot;width&quot;: 0.25,
+        &quot;height&quot;: 0.15
+      },
+      &quot;confidence&quot;: &quot;medium&quot;
+    }
+  ],
+  &quot;needs_human_review&quot;: &quot;true&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;caveats&quot;: [
+    &quot;A significant portion of the property&#x27;s facade and lot area is obstructed by large containers and various stored items, limiting a full assessment.&quot;,
+    &quot;The angle of the image does not allow for a clear view of the roof.&quot;
+  ]
+}</p>
       <a href="#entries">Browse entries</a>
     </aside>
   </header>
@@ -69,8 +131,8 @@
             <label><input type="checkbox" value="ai_flag"> AI flags</label>
             <label><input type="checkbox" value="review"> Review queue</label>
           </div>
-          <div class="progress-bar" aria-label="Publishing progress"><span style="width: 0.56%"></span></div>
-          <p><strong id="publishedCount">233</strong> of <strong id="totalCount">41340</strong> mapped parcels published.</p>
+          <div class="progress-bar" aria-label="Publishing progress"><span style="width: 0.57%"></span></div>
+          <p><strong id="publishedCount">234</strong> of <strong id="totalCount">41340</strong> mapped parcels published.</p>
           <div id="searchResults" class="search-results" aria-live="polite"></div>
         </div>
         <div id="atlasMap" class="atlas-map" aria-label="Syracuse parcel publishing map"></div>
@@ -85,6 +147,79 @@
       </div>
       <div class="entry-grid">
         
+            <article class="entry-card">
+                <div class="entry-image"><img src="images/parcel-000232.jpg" alt="Street View image for 916 Wolf St"></div>
+                <div class="entry-body">
+                    <p class="entry-date">2026-06-18T11:03:25+00:00</p>
+                    <h3>916 Wolf St</h3>
+                    <p>{
+  &quot;summary&quot;: &quot;The visible exterior of the property appears to be a commercial or industrial building with an upper brick facade and a lower white section, partially obscured by large containers and various stored items on the lot.&quot;,
+  &quot;property_type_guess&quot;: &quot;commercial&quot;,
+  &quot;visible_conditions&quot;: [
+    &quot;The building features an upper brick facade that appears to be in fair condition.&quot;,
+    &quot;The lower section of the building is white, possibly painted masonry, showing some visible discoloration or grime.&quot;,
+    &quot;A large garage door is visible on the lower white section of the building, exhibiting some signs of wear.&quot;,
+    &quot;One small window is visible on the far left of the building, partially obscured by an object.&quot;,
+    &quot;The lot area in front of the building and to its right contains several large white containers or trailers.&quot;,
+    &quot;Various items, including what appears to be a yellow forklift and other materials, are stored on the lot, contributing to a cluttered appearance.&quot;,
+    &quot;The immediate ground surface in the foreground of the lot appears to be paved.&quot;
+  侬&quot;,
+  &quot;condition_scores&quot;: {
+    &quot;roof&quot;: &quot;not_visible&quot;,
+    &quot;siding_or_facade&quot;: &quot;fair&quot;,
+    &quot;windows_doors&quot;: &quot;fair&quot;,
+    &quot;porch_or_entry&quot;: &quot;not_visible&quot;,
+    &quot;yard_or_lot&quot;: &quot;poor&quot;,
+    &quot;trash_debris&quot;: &quot;major&quot;,
+    &quot;vegetation_overgrowth&quot;: &quot;none_visible&quot;
+  },
+  &quot;visible_flags&quot;: {
+    &quot;boarded_windows_or_doors&quot;: &quot;no&quot;,
+    &quot;fire_damage_visible&quot;: &quot;no&quot;,
+    &quot;structural_damage_visible&quot;: &quot;no&quot;,
+    &quot;vacancy_signs_visible&quot;: &quot;no&quot;,
+    &quot;active_construction_visible&quot;: &quot;unclear&quot;
+  },
+  &quot;possible_unrecorded_issues&quot;: [
+    &quot;Significant accumulation of stored items and containers on the lot, contributing to a cluttered appearance.&quot;,
+    &quot;Visible discoloration or grime on the lower white facade of the building.&quot;
+  ],
+  &quot;image_annotations&quot;: [
+    {
+      &quot;label&quot;: &quot;Clutter and stored items&quot;,
+      &quot;reason&quot;: &quot;Numerous containers, trailers, and other materials are stored on the lot, creating a cluttered environment.&quot;,
+      &quot;bbox&quot;: {
+        &quot;x&quot;: 0.15,
+        &quot;y&quot;: 0.4,
+        &quot;width&quot;: 0.8,
+        &quot;height&quot;: 0.3
+      },
+      &quot;confidence&quot;: &quot;high&quot;
+    },
+    {
+      &quot;label&quot;: &quot;Facade discoloration&quot;,
+      &quot;reason&quot;: &quot;The lower white facade of the building shows visible signs of discoloration or grime.&quot;,
+      &quot;bbox&quot;: {
+        &quot;x&quot;: 0.05,
+        &quot;y&quot;: 0.5,
+        &quot;width&quot;: 0.25,
+        &quot;height&quot;: 0.15
+      },
+      &quot;confidence&quot;: &quot;medium&quot;
+    }
+  ],
+  &quot;needs_human_review&quot;: &quot;true&quot;,
+  &quot;confidence&quot;: &quot;medium&quot;,
+  &quot;caveats&quot;: [
+    &quot;A significant portion of the property&#x27;s facade and lot area is obstructed by large containers and various stored items, limiting a full assessment.&quot;,
+    &quot;The angle of the image does not allow for a clear view of the roof.&quot;
+  ]
+}</p>
+                    <div class="flag-row"><span>No open-data match yet</span></div>
+                    <a href="properties/000232/">Open entry</a>
+                </div>
+            </article>
+            
             <article class="entry-card">
                 <div class="entry-image"><img src="images/parcel-000231.jpg" alt="Street View image for 900 Wolf St &amp; Fourth North St"></div>
                 <div class="entry-body">
@@ -335,17 +470,6 @@
                     <p>No street-level imagery is available for this location.</p>
                     <div class="flag-row"><span>Image needs rerun</span><span>Needs human review</span></div>
                     <a href="properties/000209/">Open entry</a>
-                </div>
-            </article>
-            
-            <article class="entry-card">
-                <div class="entry-image"><img src="images/parcel-000208.jpg" alt="Street View image for 219-21 Stedman St"></div>
-                <div class="entry-body">
-                    <p class="entry-date">2026-06-13T11:14:21+00:00</p>
-                    <h3>219-21 Stedman St</h3>
-                    <p>The view of the property is completely obstructed by dense trees and thick foliage, with no structures visible.</p>
-                    <div class="flag-row"><span>Vacant properties: 1 matching record</span><span>Unfit properties: 1 matching record</span><span>Needs human review</span></div>
-                    <a href="properties/000208/">Open entry</a>
                 </div>
             </article>
             

@@ -1,5 +1,138 @@
 [
   {
+    "address": "916 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "{\n  \"summary\": \"The visible exterior of the property appears to be a commercial or industrial building with an upper brick facade and a lower white section, partially obscured by large containers and various stored items on the lot.\",\n  \"property_type_guess\": \"commercial\",\n  \"visible_conditions\": [\n    \"The building features an upper brick facade that appears to be in fair condition.\",\n    \"The lower section of the building is white, possibly painted masonry, showing some visible discoloration or grime.\",\n    \"A large garage door is visible on the lower white section of the building, exhibiting some signs of wear.\",\n    \"One small window is visible on the far left of the building, partially obscured by an object.\",\n    \"The lot area in front of the building and to its right contains several large white containers or trailers.\",\n    \"Various items, including what appears to be a yellow forklift and other materials, are stored on the lot, contributing to a cluttered appearance.\",\n    \"The immediate ground surface in the foreground of the lot appears to be paved.\"\n  \u4fac\",\n  \"condition_scores\": {\n    \"roof\": \"not_visible\",\n    \"siding_or_facade\": \"fair\",\n    \"windows_doors\": \"fair\",\n    \"porch_or_entry\": \"not_visible\",\n    \"yard_or_lot\": \"poor\",\n    \"trash_debris\": \"major\",\n    \"vegetation_overgrowth\": \"none_visible\"\n  },\n  \"visible_flags\": {\n    \"boarded_windows_or_doors\": \"no\",\n    \"fire_damage_visible\": \"no\",\n    \"structural_damage_visible\": \"no\",\n    \"vacancy_signs_visible\": \"no\",\n    \"active_construction_visible\": \"unclear\"\n  },\n  \"possible_unrecorded_issues\": [\n    \"Significant accumulation of stored items and containers on the lot, contributing to a cluttered appearance.\",\n    \"Visible discoloration or grime on the lower white facade of the building.\"\n  ],\n  \"image_annotations\": [\n    {\n      \"label\": \"Clutter and stored items\",\n      \"reason\": \"Numerous containers, trailers, and other materials are stored on the lot, creating a cluttered environment.\",\n      \"bbox\": {\n        \"x\": 0.15,\n        \"y\": 0.4,\n        \"width\": 0.8,\n        \"height\": 0.3\n      },\n      \"confidence\": \"high\"\n    },\n    {\n      \"label\": \"Facade discoloration\",\n      \"reason\": \"The lower white facade of the building shows visible signs of discoloration or grime.\",\n      \"bbox\": {\n        \"x\": 0.05,\n        \"y\": 0.5,\n        \"width\": 0.25,\n        \"height\": 0.15\n      },\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"needs_human_review\": \"true\",\n  \"confidence\": \"medium\",\n  \"caveats\": [\n    \"A significant portion of the property's facade and lot area is obstructed by large containers and various stored items, limiting a full assessment.\",\n    \"The angle of the image does not allow for a clear view of the roof.\"\n  ]\n}",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 232,
+    "image": "images/parcel-000232.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 60590,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.078605968955586,
+    "lon": -76.15784392286491,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308886,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315180,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771119,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: industrial",
+          "id": 1189771119,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 2,
+        "historic": {},
+        "landuse": {
+          "industrial": 1
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-09-030",
+    "published_at": "2026-06-18T11:03:25+00:00",
+    "review_reasons": [],
+    "title": "916 Wolf St"
+  },
+  {
     "address": "900 Wolf St & Fourth North St",
     "ai_analysis": {
       "available": true,
