@@ -1,5 +1,312 @@
 [
   {
+    "address": "406 Willumae Dr & Stedman St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image provides a street-level view of only one side of the property.",
+        "The lower portion of the building is partially obscured by a street sign.",
+        "The full extent of the roof is not clearly visible."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.15,
+            "width": 0.3,
+            "x": 0.65,
+            "y": 0.0
+          },
+          "confidence": "medium",
+          "label": "Roof edge deterioration",
+          "reason": "Visible exposed or damaged material at the roof edge/fascia near the chimney."
+        },
+        {
+          "bbox": {
+            "height": 0.2,
+            "width": 1.0,
+            "x": 0.0,
+            "y": 0.65
+          },
+          "confidence": "medium",
+          "label": "Foundation deterioration",
+          "reason": "Visible cracks or deterioration in the stone/block foundation."
+        },
+        {
+          "bbox": {
+            "height": 0.25,
+            "width": 1.0,
+            "x": 0.0,
+            "y": 0.75
+          },
+          "confidence": "high",
+          "label": "Yard overgrowth",
+          "reason": "Taller grass and weeds are visible in the foreground yard area."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Possible deterioration or damage to the roof edge/fascia near the chimney.",
+        "Visible cracks or deterioration in the foundation.",
+        "Taller grass and weeds in the foreground yard area."
+      ],
+      "property_type_guess": "multifamily",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "A two-story residential structure with light-colored siding is visible, showing some possible deterioration at the roofline and foundation, and an unkempt grassy area in the foreground.",
+      "visible_conditions": [
+        "A two-story structure with light-colored horizontal siding is visible.",
+        "Multiple windows with white frames are present on both visible floors.",
+        "A chimney is visible on the roofline.",
+        "Portions of the roof edge or fascia appear to be exposed or damaged near the chimney.",
+        "The foundation appears to be constructed of stone or concrete blocks, with some visible cracks or deterioration.",
+        "The grassy area in the foreground appears to have some taller grass and weeds.",
+        "Satellite dishes are visible above the roofline."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "yes",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Possible deterioration or damage to the roof edge/fascia near the chimney.",
+      "Image-only flag: Visible cracks or deterioration in the foundation.",
+      "Image-only flag: Taller grass and weeds in the foreground yard area.",
+      "Needs human review"
+    ],
+    "id": 230,
+    "image": "images/parcel-000230.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 85451,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0790631337016,
+    "lon": -76.15677830000212,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077301681,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303511,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077307855,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308886,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310333,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310334,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317597,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325396,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771094,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771119,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: residential",
+          "id": 1189771094,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189771119,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 8,
+        "historic": {},
+        "landuse": {
+          "industrial": 1,
+          "residential": 1
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-08-060",
+    "published_at": "2026-06-18T10:41:59+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue",
+      "structural damage visible"
+    ],
+    "title": "406 Willumae Dr & Stedman St"
+  },
+  {
     "address": "108 Gannett Ave To Stedman St",
     "ai_analysis": {
       "available": true,
