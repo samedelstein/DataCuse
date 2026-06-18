@@ -1,5 +1,182 @@
 [
   {
+    "address": "926 Wolf St & Willumae Dr & L",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "unclear",
+        "roof": "good",
+        "siding_or_facade": "fair",
+        "trash_debris": "none visible issue label, reason:why this area was marked, bbox:{",
+        "windows_doors": "poor",
+        "yard_or_lot": "not visible"
+      },
+      "confidence": {
+        "porch_or_entry": "low",
+        "roof": "high",
+        "siding_or_facade": "medium",
+        "trash_debris": "unclear",
+        "windows_doors": "low",
+        "yard_or_lot": "low"
+      },
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "ollama:llava:latest",
+      "summary": "A single family house with a small lot and some buildings in the background. The property appears to be vacant and has no visible damage.",
+      "visible_conditions": [
+        "siding is not visibly damaged, front door is boarded up"
+      ],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 233,
+    "image": "images/parcel-000233.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 60523,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.078475991742955,
+    "lon": -76.15758505801449,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308886,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315180,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771094,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771119,
+          "landuse": "industrial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: residential",
+          "id": 1189771094,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: industrial",
+          "id": 1189771119,
+          "label": "landuse: industrial",
+          "tags": {
+            "landuse": "industrial"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 2,
+        "historic": {},
+        "landuse": {
+          "industrial": 1,
+          "residential": 1
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-09-040",
+    "published_at": "2026-06-18T12:05:44+00:00",
+    "review_reasons": [],
+    "title": "926 Wolf St & Willumae Dr & L"
+  },
+  {
     "address": "916 Wolf St",
     "ai_analysis": {
       "available": true,
