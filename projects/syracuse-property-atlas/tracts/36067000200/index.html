@@ -9,9 +9,97 @@
 <body>
   <nav class="site-nav" aria-label="Primary"><a class="brand" href="../../"><span class="brand-mark">D</span><span>Data<span>Cuse</span></span></a></nav>
   <main class="section">
-    <div class="section-heading"><p class="eyebrow">Census tract</p><h1>Census Tract 2; Onondaga County; New York</h1><p>192 published atlas entries in this tract.</p></div>
+    <div class="section-heading"><p class="eyebrow">Census tract</p><h1>Census Tract 2; Onondaga County; New York</h1><p>193 published atlas entries in this tract.</p></div>
     <section class="feed-panel"><h4>ACS context</h4><dl><dt>Total population</dt><dd>3511</dd><dt>Median household income</dt><dd>51848</dd><dt>Poverty rate</dt><dd>28.1</dd><dt>Housing units</dt><dd>1686</dd><dt>Vacancy rate</dt><dd>14.7</dd><dt>Renter-occupied share</dt><dd>50.1</dd><dt>Median gross rent</dt><dd>146700</dd></dl></section>
     <div class="entry-grid">
+        <a class="project-card" href="../../properties/000239/">
+          <div class="project-copy">
+            <p class="card-kicker">2026-06-18T18:07:02+00:00</p>
+            <h3>109 Fourth North St</h3>
+            <p>{&quot;role&quot;:&quot;Cautious civic data assistant reviewing a public street-level exterior image for a property atlas.&quot;,
+
+&quot;property&quot;:{
+   &quot;address&quot;:&quot;109 FOURTH NORTH ST&quot;,
+   &quot;parcel_key&quot;:&quot;003-10-070&quot;,
+   &quot;coordinates&quot;:{
+      &quot;lat&quot;:43.07761502433066,
+      &quot;lon&quot;:-76.1584534305038
+   }
+},
+
+&quot;known_public_records&quot;:[&quot;Vacant properties: 1 matching record&quot;,
+   &quot;Rental registry: 6 matching records&quot;],
+
+&quot;task&quot;:[&quot;Describe only visible exterior property conditions from the image.&quot;,
+   &quot;Compare visible conditions against known_public_records and call out possible image-only issues only when they are plainly visible.&quot;,
+   &quot;Use cautious language. Do not infer ownership, occupancy, code violations, criminal activity, socioeconomic status, or protected-class information.&quot;,
+   &quot;Do not identify, describe, transcribe, or track people, faces, license plates, or private personal details.&quot;,
+   &quot;If the property is blocked, image quality is poor, or the view may show the wrong parcel, lower confidence and explain the caveat.&quot;,
+   &quot;When you flag visible issues, include approximate normalized bounding boxes in image_annotations. Use x, y, width, and height as fractions from 0 to 1 relative to the full image.&quot;,
+   &quot;Only create bounding boxes for visible property-condition issues, not people, vehicles, license plates, or unrelated background objects&quot;,
+   &quot;Return valid JSON only. Do not wrap it in Markdown&quot;],
+
+&quot;schema&quot;:{
+   &quot;summary&quot;:&quot;one cautious sentence describing the visible exterior&quot;,
+   &quot;property_type_guess&quot;:&quot;single_family|two_family|multifamily|commercial|mixed_use|vacant_lot|unclear&quot;,
+   &quot;visible_conditions&quot;:[&quot;specific exterior observations visible in the image&quot;],
+   &quot;condition_scores&quot;:{&quot;roof&quot;:&quot;good|fair|poor|not_visible|unclear&quot;,
+      &quot;siding_or_facade&quot;:&quot;good|fair|poor|not_visible|unclear&quot;,
+      &quot;windows_doors&quot;:&quot;good|fair|poor|not_visible|unclear&quot;,
+      &quot;porch_or_entry&quot;:&quot;good|fair|poor|not_visible|unclear&quot;,
+      &quot;yard_or_lot&quot;:&quot;good|fair|poor|not_visible|unclear&quot;,
+      &quot;trash_debris&quot;:&quot;none_visible|minor|major|unclear&quot;,
+      &quot;vegetation_overgrowth&quot;:&quot;none_visible|minor|major|unclear&quot;},
+   &quot;visible_flags&quot;:{&quot;boarded_windows_or_doors&quot;:&quot;yes|no|unclear&quot;,
+      &quot;fire_damage_visible&quot;:&quot;yes|no|unclear&quot;,
+      &quot;structural_damage_visible&quot;:&quot;yes|no|unclear&quot;,
+      &quot;vacancy_signs_visible&quot;:&quot;yes|no|unclear&quot;,
+      &quot;active_construction_visible&quot;:&quot;yes|no|unclear&quot;},
+   &quot;possible_unrecorded_issues&quot;:[&quot;cautious image-only flags not already reflected in known_data&quot;],
+   &quot;image_annotations&quot;:[{&quot;label&quot;:&quot;short visible issue label&quot;,
+      &quot;reason&quot;:&quot;why this area was marked&quot;,
+      &quot;bbox&quot;:{&quot;x&quot;:&quot;left position as 0-1 fraction of image width&quot;,
+         &quot;y&quot;:&quot;top position as 0-1 fraction of image height&quot;,
+         &quot;width&quot;:&quot;box width as 0-1 fraction of image width&quot;,
+         &quot;height&quot;:&quot;box height as 0-1 fraction of image height&quot;},
+      &quot;confidence&quot;:&quot;high|medium|low&quot;}],
+   &quot;needs_human_review&quot;:&quot;true|false&quot;,
+   &quot;confidence&quot;:&quot;high|medium|low&quot;,
+   &quot;caveats&quot;:[&quot;limits such as image age, obstructed view, angle, or uncertainty&quot;]
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+          </div>
+        </a>
+        
         <a class="project-card" href="../../properties/000238/">
           <div class="project-copy">
             <p class="card-kicker">2026-06-18T17:03:10+00:00</p>
