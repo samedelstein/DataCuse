@@ -33,45 +33,15 @@
       <h1>One Syracuse parcel at a time.</h1>
       <p class="lede">A slow, sourced field notebook for city properties: parcel data, Street View, AI image observations, city open-data matches, tract context, and OpenStreetMap features.</p>
       <div class="stats">
-        <div><strong>243</strong><span>published entries</span></div>
+        <div><strong>244</strong><span>published entries</span></div>
         <div><strong>41340</strong><span>mapped parcels</span></div>
         <div><strong>0.59%</strong><span>complete</span></div>
       </div>
     </section>
     <aside class="latest-card">
       <span>Latest parcel</span>
-      <h2>107 Fourth North St</h2>
-      <p>{&quot;role&quot;: &quot;Cautious Civic Data Assistant Reviewing Public Street-Level Exterior Image for Property&quot;, &quot;property&quot;: {&quot;address&quot;: &quot;107 FOURTH NORTH ST&quot;, &quot;parcel_key&quot;: &quot;003-10-080&quot;, &quot;coordinates&quot;: {&quot;lat&quot;: 43.077554175418314, &quot;lon&quot;: -76.15830173243485}}, &quot;known_public_records&quot;: [&quot;Vacant properties: 1 matching record&quot;, &quot;Rental registry: 5 matching records&quot;], &quot;task&quot;: [&quot;Describe only visible exterior property conditions from the image.&quot;, &quot;Compare visible conditions against known_public_records and call out possible image-only issues only when they are plainly visible.&quot;, &quot;Use cautious language. Do not infer ownership, occupancy, code violations, criminal activity, socioeconomic status, or protected-class information.&quot;, &quot;Do not identify, describe, transcribe, or track people, faces, license plates, or private personal details.&quot;, &quot;If the property is blocked, image quality is poor, or the view may show the wrong parcel, lower confidence and explain the caveat.&quot;, &quot;When you flag visible issues, include approximate normalized bounding boxes in image_annotations. Use x, y, width, and height as fractions from 0 to 1 relative to the full image.&quot;, &quot;Only create bounding boxes for visible property-condition issues, not people, vehicles, license plates, or unrelated background objects.&quot;, &quot;Return valid JSON only. Do not wrap it in Markdown&quot;], &quot;schema&quot;: {&quot;summary&quot;: &quot;One cautious sentence describing the visible exterior&quot;, &quot;property_type_guess&quot;: &quot;Single-Family|Two-Family|Multifamily|Commercial|Mixed-Use|Vacant Lot|Unclear&quot;, &quot;visible_conditions&quot;: [&quot;Specific exterior observations visible in the image&quot;], &quot;condition_scores&quot;: {&quot;Roof&quot;: &quot;Good|Fair|Poor|Not Visible|Unclear&quot;, &quot;Siding or Facade&quot;: &quot;Good|Fair|Poor|Not Visible|Unclear&quot;, &quot;Windows or Doors&quot;: &quot;Good|Fair|Poor|Not Visible|Unclear&quot;, &quot;Porch or Entry&quot;: &quot;Good|Fair|Poor|Not Visible|Unclear&quot;, &quot;Yard or Lot&quot;: &quot;Good|Fair|Poor|Not Visible|Unclear&quot;, &quot;Trash or Debris&quot;: &quot;None Visible|Minor|Major|Unclear&quot;, &quot;Vegetation or Overgrowth&quot;: &quot;None Visible|Minor|Major|Unclear&quot;}, &quot;visible_flags&quot;: {&quot;Board Ed Windows or Doors&quot;: &quot;Yes|No|Unclear&quot;, &quot;Fire Damage Visible&quot;: &quot;Yes|No|Unclear&quot;, &quot;Structural Damage Visible&quot;: &quot;Yes|No|Unclear&quot;, &quot;Vacancy Signs Visible&quot;: &quot;Yes|No|Unclear&quot;, &quot;Active Construction Visible&quot;: &quot;Yes|No|Unclear&quot;}, &quot;possible_unrecorded_issues&quot;: [&quot;Cautious Image-Only Flags Not Already Reflected in Known Data&quot;], &quot;image_annotations&quot;: [{&quot;label&quot;: &quot;Short Visible Issue Label&quot;, &quot;reason&quot;: &quot;Why This Area Was Marked&quot;, &quot;bbox&quot;: {&quot;x&quot;: &quot;Left Position as 0-1 Fraction of Image Width&quot;, &quot;y&quot;: &quot;Top Position as 0-1 Fraction of Image Height&quot;, &quot;width&quot;: &quot;Box Width as 0-1 Fraction of Image Width&quot;, &quot;height&quot;: &quot;Box Height as 0-1 Fraction of Image Height&quot;}, &quot;confidence&quot;: &quot;High|Medium|Low&quot;}], &quot;needs_human_review&quot;: &quot;True|False&quot;, &quot;confidence&quot;: &quot;High|Medium|Low&quot;, &quot;caveats&quot;: [&quot;Limits Such as Image Age, Obstructed View, Angle, or Uncertainty&quot;]} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
+      <h2>105 Fourth North St</h2>
+      <p>The property&#x27;s primary structure is largely obscured by dense trees and vegetation, making a comprehensive exterior assessment difficult.</p>
       <a href="#entries">Browse entries</a>
     </aside>
   </header>
@@ -100,7 +70,7 @@
             <label><input type="checkbox" value="review"> Review queue</label>
           </div>
           <div class="progress-bar" aria-label="Publishing progress"><span style="width: 0.59%"></span></div>
-          <p><strong id="publishedCount">242</strong> of <strong id="totalCount">41340</strong> mapped parcels published.</p>
+          <p><strong id="publishedCount">243</strong> of <strong id="totalCount">41340</strong> mapped parcels published.</p>
           <div id="searchResults" class="search-results" aria-live="polite"></div>
         </div>
         <div id="atlasMap" class="atlas-map" aria-label="Syracuse parcel publishing map"></div>
@@ -115,6 +85,17 @@
       </div>
       <div class="entry-grid">
         
+            <article class="entry-card">
+                <div class="entry-image"><img src="images/parcel-000241.jpg" alt="Street View image for 105 Fourth North St"></div>
+                <div class="entry-body">
+                    <p class="entry-date">2026-06-18T20:03:04+00:00</p>
+                    <h3>105 Fourth North St</h3>
+                    <p>The property&#x27;s primary structure is largely obscured by dense trees and vegetation, making a comprehensive exterior assessment difficult.</p>
+                    <div class="flag-row"><span>Vacant properties: 1 matching record</span><span>Rental registry: 4 matching records</span><span>Image-only flag: Extensive vegetation overgrowth significantly obscures the property, which could hinder a full assessment of its condition. This level of overgrowth might be consistent with a vacant property, but the image alone does not confirm vacancy.</span></div>
+                    <a href="properties/000241/">Open entry</a>
+                </div>
+            </article>
+            
             <article class="entry-card">
                 <div class="entry-image"><img src="images/parcel-000240.jpg" alt="Street View image for 107 Fourth North St"></div>
                 <div class="entry-body">
@@ -537,17 +518,6 @@
                     <p>The image shows the side and rear yard of a single-story residential structure with white siding, an adjacent shed, and a grassy lawn.</p>
                     <div class="flag-row"><span>Vacant properties: 2 matching records</span><span>Rental registry: 1 matching record</span></div>
                     <a href="properties/000218/">Open entry</a>
-                </div>
-            </article>
-            
-            <article class="entry-card">
-                <div class="entry-image"><img src="images/parcel-000217.jpg" alt="Street View image for 1022 Wolf St &amp; Sixth North St"></div>
-                <div class="entry-body">
-                    <p class="entry-date">2026-06-15T01:02:56+00:00</p>
-                    <h3>1022 Wolf St &amp; Sixth North St</h3>
-                    <p>A multi-story building with light-colored siding and an adjacent paved lot, showing a visible gap or missing trim where the upper siding meets the lower roofline.</p>
-                    <div class="flag-row"><span>Vacant properties: 2 matching records</span><span>Rental registry: 1 matching record</span><span>Image-only flag: Visible gap or missing exterior trim/siding at the junction between the first-floor roof and the second-floor wall, potentially exposing the underlying structure to weather.</span></div>
-                    <a href="properties/000217/">Open entry</a>
                 </div>
             </article>
             
