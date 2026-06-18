@@ -1,5 +1,221 @@
 [
   {
+    "address": "113 Fourth North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The lower portion of the front facade is partially obstructed by a parked vehicle."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential building with light-colored siding and an enclosed front porch, featuring a paved driveway with a parked vehicle.",
+      "visible_conditions": [
+        "Siding appears intact with no major damage visible from this angle",
+        "Enclosed front porch windows appear intact",
+        "Driveway pavement shows some cracking and wear",
+        "A vehicle is parked in the driveway, suggesting active use despite the vacant property record"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Rental registry: 5 matching records"
+    ],
+    "id": 238,
+    "image": "images/parcel-000238.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 102413,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.077684568562,
+    "lon": -76.15862679794549,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07765763,
+          "Longitude": -76.15865224,
+          "NeedsRR": "Yes",
+          "ObjectId": 832,
+          "PropertyAddress": "113 Fourth North St",
+          "RR_app_received": 1499385600000,
+          "RR_contact_name": "Michelle Garlic, Richard Garlic",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1501200000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-10-06.0",
+          "SHAPE": null,
+          "completion_date": 1501545600000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1501632000000,
+          "pc_owner": "Hamooed Ahmed Essa",
+          "valid_until": 1596240000000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07770109,
+          "Longitude": -76.1587606,
+          "NeedsRR": "Yes",
+          "ObjectId": 829,
+          "PropertyAddress": "115 Fourth North St",
+          "RR_app_received": 1701820800000,
+          "RR_contact_name": "JHS Realty XV LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1708905600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1708905600000,
+          "RRisValid": "Yes",
+          "SBL": "003.-10-05.0",
+          "SHAPE": null,
+          "completion_date": 1711065600000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1708992000000,
+          "pc_owner": "JHS Realty XV LLC",
+          "valid_until": 1805760000000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07759244,
+          "Longitude": -76.15848971,
+          "NeedsRR": "Yes",
+          "ObjectId": 833,
+          "PropertyAddress": "109 Fourth North St",
+          "RR_app_received": 1771459200000,
+          "RR_contact_name": "Leonard Dyer",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-10-07.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1773360000000,
+          "pc_owner": "Leonard Dyer",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07752725,
+          "Longitude": -76.15832717,
+          "NeedsRR": "Yes",
+          "ObjectId": 834,
+          "PropertyAddress": "107 Fourth North St",
+          "RR_app_received": 1727395200000,
+          "RR_contact_name": "Areial Sturtevant",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1747785600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1747785600000,
+          "RRisValid": "Yes",
+          "SBL": "003.-10-08.0",
+          "SHAPE": null,
+          "completion_date": 1748304000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1752451200000,
+          "pc_owner": "Areial Sturtevant",
+          "valid_until": 1842998400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07748379,
+          "Longitude": -76.15821881,
+          "NeedsRR": "Yes",
+          "ObjectId": 835,
+          "PropertyAddress": "105 Fourth North St",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-10-09.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Consolidated Extended Svcs Inc",
+          "valid_until": null,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.07748379,
+          "Longitude": -76.15821881,
+          "ObjectId": 500,
+          "Owner": "Consolidated Extended Svcs Inc",
+          "OwnerAddress": "106 Beecher Street Syracuse, NY 13203",
+          "PropertyAddress": "105 Fourth North St",
+          "SBL": "003.-10-09.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": null
+        }
+      ]
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-10-060",
+    "published_at": "2026-06-18T17:03:10+00:00",
+    "review_reasons": [],
+    "title": "113 Fourth North St"
+  },
+  {
     "address": "115 Fourth North St",
     "ai_analysis": {
       "available": true,
