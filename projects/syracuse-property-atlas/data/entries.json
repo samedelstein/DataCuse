@@ -1,5 +1,466 @@
 [
   {
+    "address": "927 Lemoyne Ave & Penn Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view of the property is entirely obstructed by dense trees and foliage, making it impossible to confirm the presence or condition of any structures associated with the address or public records."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "not_visible",
+        "trash_debris": "unclear",
+        "vegetation_overgrowth": "major",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "poor"
+      },
+      "confidence": "low",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.75,
+            "width": 0.85,
+            "x": 0.15,
+            "y": 0.25
+          },
+          "confidence": "high",
+          "label": "major vegetation overgrowth",
+          "reason": "Dense, uncontrolled foliage and trees completely obscuring the lot"
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Severe vegetation overgrowth that completely blocks the view of the property and may impact accessibility or neighboring parcels"
+      ],
+      "property_type_guess": "vacant_lot",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows a heavily overgrown lot filled with dense trees and thick green foliage, with no visible building structures.",
+      "visible_conditions": [
+        "Extensive and dense vegetation overgrowth covering the entire visible area",
+        "No building structures are visible from this angle",
+        "A partially obscured signpost is visible amidst the foliage",
+        "A small portion of a white vehicle is visible on the bottom left edge"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Rental registry: 3 matching records",
+      "Image-only flag: Severe vegetation overgrowth that completely blocks the view of the property and may impact accessibility or neighboring parcels",
+      "Needs human review"
+    ],
+    "id": 244,
+    "image": "images/parcel-000244.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 90469,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.077289953648226,
+    "lon": -76.1581431442981,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07752725,
+          "Longitude": -76.15832717,
+          "NeedsRR": "Yes",
+          "ObjectId": 834,
+          "PropertyAddress": "107 Fourth North St",
+          "RR_app_received": 1727395200000,
+          "RR_contact_name": "Areial Sturtevant",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1747785600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1747785600000,
+          "RRisValid": "Yes",
+          "SBL": "003.-10-08.0",
+          "SHAPE": null,
+          "completion_date": 1748304000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1752451200000,
+          "pc_owner": "Areial Sturtevant",
+          "valid_until": 1842998400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07748379,
+          "Longitude": -76.15821881,
+          "NeedsRR": "Yes",
+          "ObjectId": 835,
+          "PropertyAddress": "105 Fourth North St",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-10-09.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Consolidated Extended Svcs Inc",
+          "valid_until": null,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.0774672,
+          "Longitude": -76.15805521,
+          "NeedsRR": "Yes",
+          "ObjectId": 836,
+          "PropertyAddress": "103 Fourth North St",
+          "RR_app_received": 1758844800000,
+          "RR_contact_name": "Swimm Team LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-10-10.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1760054400000,
+          "pc_owner": "Swimm Team LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.07748379,
+          "Longitude": -76.15821881,
+          "ObjectId": 500,
+          "Owner": "Consolidated Extended Svcs Inc",
+          "OwnerAddress": "106 Beecher Street Syracuse, NY 13203",
+          "PropertyAddress": "105 Fourth North St",
+          "SBL": "003.-10-09.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": null
+        }
+      ]
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077299817,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302152,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304976,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077309919,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315024,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315025,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319075,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321316,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323676,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323677,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323678,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324026,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325453,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325709,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329212,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329542,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329816,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077330769,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331244,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077332794,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 20,
+        "historic": {},
+        "landuse": {},
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-10-120",
+    "published_at": "2026-06-19T11:53:38+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "927 Lemoyne Ave & Penn Ave"
+  },
+  {
     "address": "937 Lemoyne Ave & Fourth Nort",
     "ai_analysis": {
       "available": true,
