@@ -1,5 +1,503 @@
 [
   {
+    "address": "106 Pennsylvania Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The front of the house is not fully visible in the image, which limits a comprehensive assessment. The property's condition may not be fully representative of its overall state."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "unclear",
+        "roof": "good",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high|medium|low",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.814,
+            "width": 0.725,
+            "x": 0.398,
+            "y": 0.169
+          },
+          "confidence": "medium",
+          "label": "Siding condition",
+          "reason": "The siding appears worn on the lower level."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "The front of the house is not fully visible, which may suggest that a full inspection would be needed to make definitive statements about the property's conditions. The image angle and potential obstructions could also impact the accuracy of this assessment."
+      ],
+      "property_type_guess": "single_family|two_family|multifamily|commercial|mixed_use|vacant_lot|unclear",
+      "provider": "ollama:llava:latest",
+      "summary": "The property at 106 PENNSYLVANIA AVE appears to be a two-story residential structure with multiple visible exterior conditions. There are no overt signs of vandalism or neglect that would suggest it is vacant or abandoned.",
+      "visible_conditions": [
+        "The siding on the lower level of the house shows signs of wear and possibly minor maintenance issues. The upper level appears to be in better condition, with less visible siding damage.",
+        "The windows on both levels are clean and in a functional state. There is no overt signage indicating vacancy or rental status, which may suggest that such information is not visible in the image, or it may simply not exist at this location.",
+        "A vehicle is parked next to the house, which could imply occupancy, but does not provide definitive evidence of a current resident.",
+        "There are no visible exterior signs of structural damage or fire damage. The yard area appears to be well-maintained and devoid of any overt vegetation issues.",
+        "The porch area is not clearly visible in the image."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no|unclear",
+        "boarded_windows_or_doors": "no|unclear",
+        "fire_damage_visible": "no|unclear",
+        "structural_damage_visible": "no|unclear",
+        "vacancy_signs_visible": "yes|unclear"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Rental registry: 4 matching records",
+      "Image-only flag: The front of the house is not fully visible, which may suggest that a full inspection would be needed to make definitive statements about the property's conditions. The image angle and potential obstructions could also impact the accuracy of this assessment.",
+      "Needs human review"
+    ],
+    "id": 245,
+    "image": "images/parcel-000245.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 103984,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07732546143638,
+    "lon": -76.15841604707049,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07759244,
+          "Longitude": -76.15848971,
+          "NeedsRR": "Yes",
+          "ObjectId": 833,
+          "PropertyAddress": "109 Fourth North St",
+          "RR_app_received": 1771459200000,
+          "RR_contact_name": "Leonard Dyer",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-10-07.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1773360000000,
+          "pc_owner": "Leonard Dyer",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07752725,
+          "Longitude": -76.15832717,
+          "NeedsRR": "Yes",
+          "ObjectId": 834,
+          "PropertyAddress": "107 Fourth North St",
+          "RR_app_received": 1727395200000,
+          "RR_contact_name": "Areial Sturtevant",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1747785600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1747785600000,
+          "RRisValid": "Yes",
+          "SBL": "003.-10-08.0",
+          "SHAPE": null,
+          "completion_date": 1748304000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1752451200000,
+          "pc_owner": "Areial Sturtevant",
+          "valid_until": 1842998400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07748379,
+          "Longitude": -76.15821881,
+          "NeedsRR": "Yes",
+          "ObjectId": 835,
+          "PropertyAddress": "105 Fourth North St",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-10-09.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Consolidated Extended Svcs Inc",
+          "valid_until": null,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.0774672,
+          "Longitude": -76.15805521,
+          "NeedsRR": "Yes",
+          "ObjectId": 836,
+          "PropertyAddress": "103 Fourth North St",
+          "RR_app_received": 1758844800000,
+          "RR_contact_name": "Swimm Team LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-10-10.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1760054400000,
+          "pc_owner": "Swimm Team LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.07748379,
+          "Longitude": -76.15821881,
+          "ObjectId": 500,
+          "Owner": "Consolidated Extended Svcs Inc",
+          "OwnerAddress": "106 Beecher Street Syracuse, NY 13203",
+          "PropertyAddress": "105 Fourth North St",
+          "SBL": "003.-10-09.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": null
+        }
+      ]
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077299817,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302152,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304976,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077307614,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312145,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312880,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315024,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315025,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319075,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323572,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323676,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323677,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323678,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324026,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325709,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326498,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329212,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329542,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077330769,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331243,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 20,
+        "historic": {},
+        "landuse": {},
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-10-130",
+    "published_at": "2026-06-19T12:09:09+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "106 Pennsylvania Ave"
+  },
+  {
     "address": "927 Lemoyne Ave & Penn Ave",
     "ai_analysis": {
       "available": true,
