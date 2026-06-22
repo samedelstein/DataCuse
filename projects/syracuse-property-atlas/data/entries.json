@@ -1,5 +1,428 @@
 [
   {
+    "address": "800 Wolf St & Grant Blvd",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The presence of a rental registry record for this address is noted, though the primary visible use is a commercial gas station.",
+        "The exact parcel boundaries between the gas station and the adjacent blue building on the left are unclear from the image alone."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.35,
+            "width": 1.0,
+            "x": 0.0,
+            "y": 0.65
+          },
+          "confidence": "high",
+          "label": "cracked pavement",
+          "reason": "The asphalt surface across the foreground shows significant cracking and wear."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Widespread cracking and deterioration of the asphalt parking lot surface."
+      ],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows a commercial gas station property with a convenience store, fuel canopy, and a paved parking lot showing visible surface cracking.",
+      "visible_conditions": [
+        "Paved lot shows widespread surface cracking and wear.",
+        "The convenience store building and fuel canopy appear structurally intact with typical commercial signage.",
+        "An adjacent blue painted masonry building is visible on the left side of the lot."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Image-only flag: Widespread cracking and deterioration of the asphalt parking lot surface."
+    ],
+    "id": 247,
+    "image": "images/parcel-000247.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 58217,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07710431661623,
+    "lon": -76.15938402922745,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07685562,
+          "Longitude": -76.15903919,
+          "NeedsRR": "Yes",
+          "ObjectId": 842,
+          "PropertyAddress": "3018 Grant Blvd",
+          "RR_app_received": 1694563200000,
+          "RR_contact_name": "Anthony Dimura",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1700092800000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1700092800000,
+          "RRisValid": "Yes",
+          "SBL": "003.-11-14.0",
+          "SHAPE": null,
+          "completion_date": 1701648000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1700179200000,
+          "pc_owner": "Anthony Dimura",
+          "valid_until": 1796342400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": "cafe",
+          "building": null,
+          "historic": null,
+          "id": 5167889508,
+          "landuse": null,
+          "name": "Easy Cafe",
+          "shop": null,
+          "tags": {
+            "amenity": "cafe",
+            "fixme": "resurvey to make sure this really is a care & not a bar or pub",
+            "name": "Easy Cafe"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": "fuel",
+          "building": null,
+          "historic": null,
+          "id": 5167889510,
+          "landuse": null,
+          "name": "Mirabito",
+          "shop": null,
+          "tags": {
+            "amenity": "fuel",
+            "name": "Mirabito"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077299811,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304841,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304976,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077307181,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312145,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312852,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077313636,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315024,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315025,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077316848,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317634,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317872,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317873,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317882,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323572,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323573,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326498,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329382,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "amenity: cafe",
+          "id": 5167889508,
+          "label": "Easy Cafe",
+          "tags": {
+            "amenity": "cafe",
+            "name": "Easy Cafe"
+          },
+          "type": "node"
+        },
+        {
+          "category": "amenity: fuel",
+          "id": 5167889510,
+          "label": "Mirabito",
+          "tags": {
+            "amenity": "fuel",
+            "name": "Mirabito"
+          },
+          "type": "node"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {
+          "cafe": 1,
+          "fuel": 1
+        },
+        "buildings": 18,
+        "historic": {},
+        "landuse": {},
+        "named_features": 2,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-11-010",
+    "published_at": "2026-06-22T02:02:55+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "800 Wolf St & Grant Blvd"
+  },
+  {
     "address": "108 Pennsylvania Ave",
     "ai_analysis": {
       "available": true,
