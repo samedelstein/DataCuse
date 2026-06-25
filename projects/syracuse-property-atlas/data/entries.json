@@ -1,5 +1,410 @@
 [
   {
+    "address": "808 Wolf St & Pennsylvania Av",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "limits such as the image angle and the possibility that not all parts of the building are fully visible"
+      ],
+      "condition_scores": {
+        "roof": "good|not_visible|unclear",
+        "siding": "fair|poor|not_visible|unclear"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.473,
+            "width": 0.592,
+            "x": 0.157,
+            "y": 0.368
+          },
+          "confidence": "medium",
+          "label": "short visible issue label",
+          "reason": "Why this area was marked"
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "cautious image-only flags such as the building's exact condition, which may not be fully visible or clear from this angle"
+      ],
+      "property_type_guess": "commercial|mixed-use",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows an exterior view of a building with a flat roof and a visible concrete floor. There are no people present in the scene.",
+      "visible_conditions": [
+        "roof",
+        "siding"
+      ],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: cautious image-only flags such as the building's exact condition, which may not be fully visible or clear from this angle",
+      "Needs human review"
+    ],
+    "id": 248,
+    "image": "images/parcel-000248.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 55319,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07732334400764,
+    "lon": -76.1592875508832,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": "fuel",
+          "building": null,
+          "historic": null,
+          "id": 5167889510,
+          "landuse": null,
+          "name": "Mirabito",
+          "shop": null,
+          "tags": {
+            "amenity": "fuel",
+            "name": "Mirabito"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": "fast_food",
+          "building": null,
+          "historic": null,
+          "id": 5197066565,
+          "landuse": null,
+          "name": "Little Caesars",
+          "shop": null,
+          "tags": {
+            "amenity": "fast_food",
+            "brand": "Little Caesars",
+            "brand:wikidata": "Q1393809",
+            "cuisine": "pizza",
+            "name": "Little Caesars",
+            "takeaway": "yes"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077299811,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304841,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304976,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077307181,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077307614,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312105,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312852,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312880,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077313636,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315024,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315025,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317634,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317872,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317873,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317882,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077320184,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323572,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323573,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "amenity: fuel",
+          "id": 5167889510,
+          "label": "Mirabito",
+          "tags": {
+            "amenity": "fuel",
+            "name": "Mirabito"
+          },
+          "type": "node"
+        },
+        {
+          "category": "amenity: fast_food",
+          "id": 5197066565,
+          "label": "Little Caesars",
+          "tags": {
+            "amenity": "fast_food",
+            "name": "Little Caesars"
+          },
+          "type": "node"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {
+          "fast_food": 1,
+          "fuel": 1
+        },
+        "buildings": 18,
+        "historic": {},
+        "landuse": {},
+        "named_features": 2,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-11-020",
+    "published_at": "2026-06-25T11:27:33+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "808 Wolf St & Pennsylvania Av"
+  },
+  {
     "address": "800 Wolf St & Grant Blvd",
     "ai_analysis": {
       "available": true,
