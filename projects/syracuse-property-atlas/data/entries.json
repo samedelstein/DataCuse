@@ -1,5 +1,467 @@
 [
   {
+    "address": "3010 Grant Blvd",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The upper story and roof are significantly obscured by dense tree foliage, limiting a full assessment of those components."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "unclear",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.6,
+            "width": 0.6,
+            "x": 0.35,
+            "y": 0.0
+          },
+          "confidence": "medium",
+          "label": "Overhanging vegetation",
+          "reason": "Mature tree branches directly overhanging and potentially contacting the roofline."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Heavy tree canopy overhanging the roof structure may present a long-term maintenance or safety risk."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential structure with white siding and a prominent red front door, partially obscured by dense mature trees.",
+      "visible_conditions": [
+        "White horizontal siding appears intact with minor weathering.",
+        "Red front entry door appears functional and in good condition.",
+        "Heavy tree canopy overhangs the roofline on the right side of the structure.",
+        "The front yard is sloped with some unmaintained brush and vegetation on the right side."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 4 matching records",
+      "Image-only flag: Heavy tree canopy overhanging the roof structure may present a long-term maintenance or safety risk."
+    ],
+    "id": 258,
+    "image": "images/parcel-000258.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 124210,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07677352502602,
+    "lon": -76.15873372633719,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07674701,
+          "Longitude": -76.15876827,
+          "NeedsRR": "Yes",
+          "ObjectId": 840,
+          "PropertyAddress": "3010 Grant Blvd",
+          "RR_app_received": 1762992000000,
+          "RR_contact_name": "IHJB, LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1765152000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1765152000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-11-12.0",
+          "SHAPE": null,
+          "completion_date": 1765497600000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1765152000000,
+          "pc_owner": "IHJB, LLC",
+          "valid_until": 1860192000000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07706073,
+          "Longitude": -76.15881761,
+          "NeedsRR": "Yes",
+          "ObjectId": 837,
+          "PropertyAddress": "109 Pennsylvania Ave",
+          "RR_app_received": 1705968000000,
+          "RR_contact_name": "Anthony Christodoulou",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-11-05.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1711670400000,
+          "pc_owner": "Anthony Christodoulou",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07662243,
+          "Longitude": -76.1585797,
+          "NeedsRR": "Yes",
+          "ObjectId": 838,
+          "PropertyAddress": "901-03 Lemoyne Ave & Grant Blvd",
+          "RR_app_received": 1753747200000,
+          "RR_contact_name": "Jamal Al-Qaraghuli",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1772064000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1772064000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-11-11.0",
+          "SHAPE": null,
+          "completion_date": 1772064000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1759968000000,
+          "pc_owner": "Jamal Al-Qaraghuli",
+          "valid_until": 1866758400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07685562,
+          "Longitude": -76.15903919,
+          "NeedsRR": "Yes",
+          "ObjectId": 842,
+          "PropertyAddress": "3018 Grant Blvd",
+          "RR_app_received": 1694563200000,
+          "RR_contact_name": "Anthony Dimura",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1700092800000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1700092800000,
+          "RRisValid": "Yes",
+          "SBL": "003.-11-14.0",
+          "SHAPE": null,
+          "completion_date": 1701648000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1700179200000,
+          "pc_owner": "Anthony Dimura",
+          "valid_until": 1796342400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077299817,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304976,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312145,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312146,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077313636,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315024,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317634,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317873,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317882,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321341,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323572,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323573,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323676,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325709,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329122,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329123,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329434,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329435,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329542,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077330116,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 20,
+        "historic": {},
+        "landuse": {},
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-11-120",
+    "published_at": "2026-06-27T04:03:53+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "3010 Grant Blvd"
+  },
+  {
     "address": "901-03 Lemoyne Ave & Grant Blvd",
     "ai_analysis": {
       "available": true,
