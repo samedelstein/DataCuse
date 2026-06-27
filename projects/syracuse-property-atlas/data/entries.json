@@ -1,5 +1,523 @@
 [
   {
+    "address": "710 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The primary structure associated with the address may span multiple buildings visible in the frame, including the residential-style building on the left and the commercial garage in the center."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "unclear",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.14,
+            "width": 0.55,
+            "x": 0.41,
+            "y": 0.78
+          },
+          "confidence": "high",
+          "label": "cracked sidewalk",
+          "reason": "Deteriorated and uneven concrete sidewalk in the foreground"
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Deteriorated and cracked public sidewalk in the foreground."
+      ],
+      "property_type_guess": "mixed_use",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows a commercial auto body shop with a paved parking lot, flanked by a multi-story green building on the left and a plain commercial wall on the right.",
+      "visible_conditions": [
+        "A commercial auto body and paint shop is visible in the background with a paved parking lot in front.",
+        "A green-sided building is visible on the left side of the lot.",
+        "The concrete sidewalk in the foreground shows significant cracking and deterioration.",
+        "The asphalt parking lot appears to be in fair condition with minor wear."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 2 matching records",
+      "Image-only flag: Deteriorated and cracked public sidewalk in the foreground."
+    ],
+    "id": 262,
+    "image": "images/parcel-000262.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 68460,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07610791226631,
+    "lon": -76.15998130214274,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07621508,
+          "Longitude": -76.15993955,
+          "NeedsRR": "Yes",
+          "ObjectId": 844,
+          "PropertyAddress": "712-14 Wolf St",
+          "RR_app_received": 1730678400000,
+          "RR_contact_name": "Resstored Holdings LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-12-02.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1753660800000,
+          "pc_owner": "Resstored Holdings LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07633425,
+          "Longitude": -76.15985065,
+          "NeedsRR": "Yes",
+          "ObjectId": 846,
+          "PropertyAddress": "716-18 Wolf St",
+          "RR_app_received": 1730160000000,
+          "RR_contact_name": "Resstored Holdings LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-12-03.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1753660800000,
+          "pc_owner": "Resstored Holdings LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5167889495,
+          "landuse": null,
+          "name": "Douglas Auto Service",
+          "shop": "car_repair",
+          "tags": {
+            "addr:housenumber": "726",
+            "addr:street": "Wolf Street",
+            "name": "Douglas Auto Service",
+            "service": "repair",
+            "shop": "car_repair"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5167889496,
+          "landuse": null,
+          "name": "Judy's Auto Sales",
+          "shop": "car",
+          "tags": {
+            "addr:housenumber": "726",
+            "addr:street": "Wolf Street",
+            "contact:phone": "+1 315 476 6004",
+            "name": "Judy's Auto Sales",
+            "shop": "car",
+            "website": "https://judysautos.com"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5170081872,
+          "landuse": null,
+          "name": "Dollar Tree",
+          "shop": "variety_store",
+          "tags": {
+            "brand": "Dollar Tree",
+            "brand:wikidata": "Q5289230",
+            "check_date": "2017-10-15",
+            "name": "Dollar Tree",
+            "opening_hours": "Mo-Sa 09:00-21:00; Su 09:00-20:00",
+            "payment:american_express": "yes",
+            "payment:cash": "yes",
+            "payment:coins": "no",
+            "payment:discover_card": "yes",
+            "payment:maestro": "yes",
+            "payment:mastercard": "yes",
+            "payment:nyce": "yes",
+            "payment:quest": "yes",
+            "payment:snap": "yes",
+            "payment:star": "yes",
+            "shop": "variety_store",
+            "source": "photograph",
+            "source:address": "sales receipt"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": "post_box",
+          "building": null,
+          "historic": null,
+          "id": 5189770697,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "amenity": "post_box",
+            "collection_times": "Mo-Fr 09:30; Sa 09:00",
+            "operator": "United States Postal Service",
+            "operator:short": "USPS",
+            "operator:type": "public",
+            "operator:website": "https://www.usps.com",
+            "operator:wikidata": "Q668687",
+            "operator:wikipedia": "en:United States Postal Service",
+            "ref": "1320800001",
+            "short_name": "USPS"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5197066573,
+          "landuse": null,
+          "name": "F.M. Auto Body, INC.",
+          "shop": "car_repair",
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "710",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Wolf Street",
+            "contact:phone": "+1 315 475 4946",
+            "name": "F.M. Auto Body, INC.",
+            "nysgissam:nysaddresspointid": "ONON071457",
+            "service": "repair",
+            "shop": "car_repair"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300941,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304624,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077306608,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310593,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312475,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314012,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077316569,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077316848,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321342,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324620,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326801,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077328039,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077328265,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077328710,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329123,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "shop: car_repair",
+          "id": 5167889495,
+          "label": "Douglas Auto Service",
+          "tags": {
+            "name": "Douglas Auto Service",
+            "shop": "car_repair"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: car",
+          "id": 5167889496,
+          "label": "Judy's Auto Sales",
+          "tags": {
+            "name": "Judy's Auto Sales",
+            "shop": "car"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: variety_store",
+          "id": 5170081872,
+          "label": "Dollar Tree",
+          "tags": {
+            "name": "Dollar Tree",
+            "shop": "variety_store"
+          },
+          "type": "node"
+        },
+        {
+          "category": "amenity: post_box",
+          "id": 5189770697,
+          "label": "amenity: post_box",
+          "tags": {
+            "amenity": "post_box"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: car_repair",
+          "id": 5197066573,
+          "label": "F.M. Auto Body, INC.",
+          "tags": {
+            "name": "F.M. Auto Body, INC.",
+            "shop": "car_repair"
+          },
+          "type": "node"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {
+          "post_box": 1
+        },
+        "buildings": 15,
+        "historic": {},
+        "landuse": {},
+        "named_features": 4,
+        "shops": {
+          "car": 1,
+          "car_repair": 2,
+          "variety_store": 1
+        }
+      }
+    },
+    "parcel_key": "003-12-010",
+    "published_at": "2026-06-27T08:02:54+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "710 Wolf St"
+  },
+  {
     "address": "3024 Grant Blvd",
     "ai_analysis": {
       "available": true,
