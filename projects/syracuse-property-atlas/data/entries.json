@@ -1,5 +1,436 @@
 [
   {
+    "address": "909 Lemoyne Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The property's exterior is largely obscured by dense trees and bushes.",
+        "Limited visibility prevents a comprehensive assessment of the structure's condition.",
+        "The image quality and angle make it difficult to ascertain specific details of the building."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "unclear",
+        "siding_or_facade": "unclear",
+        "trash_debris": "unclear",
+        "vegetation_overgrowth": "major",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "poor"
+      },
+      "confidence": "low",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "1.0",
+            "width": "1.0",
+            "x": "0.0",
+            "y": "0.0"
+          },
+          "confidence": "high",
+          "label": "Heavy vegetation",
+          "reason": "Dense trees and bushes obscure most of the property's exterior."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Significant vegetation overgrowth appears to largely obscure the property's exterior from this vantage point, which may hinder full visual inspection."
+      ],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The exterior of the property is largely obscured by dense vegetation, making a comprehensive assessment of its conditions difficult from this image.",
+      "visible_conditions": [
+        "Dense trees and bushes heavily obscure the view of the property's structure.",
+        "A dark-colored roof is partially visible through the foliage.",
+        "Some dark siding or wall material is partially discernible behind the vegetation.",
+        "Significant vegetation overgrowth is present in the foreground and around the visible portions of the property."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "unclear",
+        "boarded_windows_or_doors": "unclear",
+        "fire_damage_visible": "unclear",
+        "structural_damage_visible": "unclear",
+        "vacancy_signs_visible": "unclear"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 2 matching records",
+      "Image-only flag: Significant vegetation overgrowth appears to largely obscure the property's exterior from this vantage point, which may hinder full visual inspection.",
+      "Needs human review"
+    ],
+    "id": 255,
+    "image": "images/parcel-000255.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 93196,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07682073794234,
+    "lon": -76.15844023648192,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07662243,
+          "Longitude": -76.1585797,
+          "NeedsRR": "Yes",
+          "ObjectId": 838,
+          "PropertyAddress": "901-03 Lemoyne Ave & Grant Blvd",
+          "RR_app_received": 1753747200000,
+          "RR_contact_name": "Jamal Al-Qaraghuli",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1772064000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1772064000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-11-11.0",
+          "SHAPE": null,
+          "completion_date": 1772064000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1759968000000,
+          "pc_owner": "Jamal Al-Qaraghuli",
+          "valid_until": 1866758400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07674701,
+          "Longitude": -76.15876827,
+          "NeedsRR": "Yes",
+          "ObjectId": 840,
+          "PropertyAddress": "3010 Grant Blvd",
+          "RR_app_received": 1762992000000,
+          "RR_contact_name": "IHJB, LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1765152000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1765152000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-11-12.0",
+          "SHAPE": null,
+          "completion_date": 1765497600000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1765152000000,
+          "pc_owner": "IHJB, LLC",
+          "valid_until": 1860192000000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077299817,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304976,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312145,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312146,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312410,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077313636,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315024,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315715,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077322071,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323572,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323573,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323676,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323677,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325709,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329434,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329435,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329542,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331243,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331244,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077332794,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 20,
+        "historic": {},
+        "landuse": {},
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-11-090",
+    "published_at": "2026-06-27T01:03:03+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "909 Lemoyne Ave"
+  },
+  {
     "address": "913-15 Lemoyne Ave & Pennsylvini",
     "ai_analysis": {
       "available": true,
