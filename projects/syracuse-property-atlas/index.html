@@ -33,15 +33,15 @@
       <h1>One Syracuse parcel at a time.</h1>
       <p class="lede">A slow, sourced field notebook for city properties: parcel data, Street View, AI image observations, city open-data matches, tract context, and OpenStreetMap features.</p>
       <div class="stats">
-        <div><strong>265</strong><span>published entries</span></div>
+        <div><strong>266</strong><span>published entries</span></div>
         <div><strong>41340</strong><span>mapped parcels</span></div>
         <div><strong>0.64%</strong><span>complete</span></div>
       </div>
     </section>
     <aside class="latest-card">
       <span>Latest parcel</span>
-      <h2>710 Wolf St</h2>
-      <p>The image shows a commercial auto body shop with a paved parking lot, flanked by a multi-story green building on the left and a plain commercial wall on the right.</p>
+      <h2>712-14 Wolf St</h2>
+      <p>A two-story residential building with green shingle siding and a front porch, partially obscured by a tree on the left.</p>
       <a href="#entries">Browse entries</a>
     </aside>
   </header>
@@ -70,7 +70,7 @@
             <label><input type="checkbox" value="review"> Review queue</label>
           </div>
           <div class="progress-bar" aria-label="Publishing progress"><span style="width: 0.64%"></span></div>
-          <p><strong id="publishedCount">264</strong> of <strong id="totalCount">41340</strong> mapped parcels published.</p>
+          <p><strong id="publishedCount">265</strong> of <strong id="totalCount">41340</strong> mapped parcels published.</p>
           <div id="searchResults" class="search-results" aria-live="polite"></div>
         </div>
         <div id="atlasMap" class="atlas-map" aria-label="Syracuse parcel publishing map"></div>
@@ -85,6 +85,17 @@
       </div>
       <div class="entry-grid">
         
+            <article class="entry-card">
+                <div class="entry-image"><img src="images/parcel-000263.jpg" alt="Street View image for 712-14 Wolf St"></div>
+                <div class="entry-body">
+                    <p class="entry-date">2026-06-27T09:02:54+00:00</p>
+                    <h3>712-14 Wolf St</h3>
+                    <p>A two-story residential building with green shingle siding and a front porch, partially obscured by a tree on the left.</p>
+                    <div class="flag-row"><span>Rental registry: 3 matching records</span></div>
+                    <a href="properties/000263/">Open entry</a>
+                </div>
+            </article>
+            
             <article class="entry-card">
                 <div class="entry-image"><img src="images/parcel-000262.jpg" alt="Street View image for 710 Wolf St"></div>
                 <div class="entry-body">
@@ -365,97 +376,6 @@
 </p>
                     <div class="flag-row"><span>Vacant properties: 1 matching record</span><span>Rental registry: 5 matching records</span></div>
                     <a href="properties/000240/">Open entry</a>
-                </div>
-            </article>
-            
-            <article class="entry-card">
-                <div class="entry-image"><img src="images/parcel-000239.jpg" alt="Street View image for 109 Fourth North St"></div>
-                <div class="entry-body">
-                    <p class="entry-date">2026-06-18T18:07:02+00:00</p>
-                    <h3>109 Fourth North St</h3>
-                    <p>{&quot;role&quot;:&quot;Cautious civic data assistant reviewing a public street-level exterior image for a property atlas.&quot;,
-
-&quot;property&quot;:{
-   &quot;address&quot;:&quot;109 FOURTH NORTH ST&quot;,
-   &quot;parcel_key&quot;:&quot;003-10-070&quot;,
-   &quot;coordinates&quot;:{
-      &quot;lat&quot;:43.07761502433066,
-      &quot;lon&quot;:-76.1584534305038
-   }
-},
-
-&quot;known_public_records&quot;:[&quot;Vacant properties: 1 matching record&quot;,
-   &quot;Rental registry: 6 matching records&quot;],
-
-&quot;task&quot;:[&quot;Describe only visible exterior property conditions from the image.&quot;,
-   &quot;Compare visible conditions against known_public_records and call out possible image-only issues only when they are plainly visible.&quot;,
-   &quot;Use cautious language. Do not infer ownership, occupancy, code violations, criminal activity, socioeconomic status, or protected-class information.&quot;,
-   &quot;Do not identify, describe, transcribe, or track people, faces, license plates, or private personal details.&quot;,
-   &quot;If the property is blocked, image quality is poor, or the view may show the wrong parcel, lower confidence and explain the caveat.&quot;,
-   &quot;When you flag visible issues, include approximate normalized bounding boxes in image_annotations. Use x, y, width, and height as fractions from 0 to 1 relative to the full image.&quot;,
-   &quot;Only create bounding boxes for visible property-condition issues, not people, vehicles, license plates, or unrelated background objects&quot;,
-   &quot;Return valid JSON only. Do not wrap it in Markdown&quot;],
-
-&quot;schema&quot;:{
-   &quot;summary&quot;:&quot;one cautious sentence describing the visible exterior&quot;,
-   &quot;property_type_guess&quot;:&quot;single_family|two_family|multifamily|commercial|mixed_use|vacant_lot|unclear&quot;,
-   &quot;visible_conditions&quot;:[&quot;specific exterior observations visible in the image&quot;],
-   &quot;condition_scores&quot;:{&quot;roof&quot;:&quot;good|fair|poor|not_visible|unclear&quot;,
-      &quot;siding_or_facade&quot;:&quot;good|fair|poor|not_visible|unclear&quot;,
-      &quot;windows_doors&quot;:&quot;good|fair|poor|not_visible|unclear&quot;,
-      &quot;porch_or_entry&quot;:&quot;good|fair|poor|not_visible|unclear&quot;,
-      &quot;yard_or_lot&quot;:&quot;good|fair|poor|not_visible|unclear&quot;,
-      &quot;trash_debris&quot;:&quot;none_visible|minor|major|unclear&quot;,
-      &quot;vegetation_overgrowth&quot;:&quot;none_visible|minor|major|unclear&quot;},
-   &quot;visible_flags&quot;:{&quot;boarded_windows_or_doors&quot;:&quot;yes|no|unclear&quot;,
-      &quot;fire_damage_visible&quot;:&quot;yes|no|unclear&quot;,
-      &quot;structural_damage_visible&quot;:&quot;yes|no|unclear&quot;,
-      &quot;vacancy_signs_visible&quot;:&quot;yes|no|unclear&quot;,
-      &quot;active_construction_visible&quot;:&quot;yes|no|unclear&quot;},
-   &quot;possible_unrecorded_issues&quot;:[&quot;cautious image-only flags not already reflected in known_data&quot;],
-   &quot;image_annotations&quot;:[{&quot;label&quot;:&quot;short visible issue label&quot;,
-      &quot;reason&quot;:&quot;why this area was marked&quot;,
-      &quot;bbox&quot;:{&quot;x&quot;:&quot;left position as 0-1 fraction of image width&quot;,
-         &quot;y&quot;:&quot;top position as 0-1 fraction of image height&quot;,
-         &quot;width&quot;:&quot;box width as 0-1 fraction of image width&quot;,
-         &quot;height&quot;:&quot;box height as 0-1 fraction of image height&quot;},
-      &quot;confidence&quot;:&quot;high|medium|low&quot;}],
-   &quot;needs_human_review&quot;:&quot;true|false&quot;,
-   &quot;confidence&quot;:&quot;high|medium|low&quot;,
-   &quot;caveats&quot;:[&quot;limits such as image age, obstructed view, angle, or uncertainty&quot;]
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</p>
-                    <div class="flag-row"><span>Vacant properties: 1 matching record</span><span>Rental registry: 6 matching records</span></div>
-                    <a href="properties/000239/">Open entry</a>
                 </div>
             </article>
             

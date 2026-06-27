@@ -1,5 +1,508 @@
 [
   {
+    "address": "712-14 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "A large tree on the left side of the image partially obstructs the view of the building's facade."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential building with green shingle siding and a front porch, partially obscured by a tree on the left.",
+      "visible_conditions": [
+        "Green shingle siding appears mostly intact with minor weathering",
+        "Front porch with metal railing and concrete foundation",
+        "Double-hung windows with one window AC unit visible",
+        "Large tree partially obstructing the left side of the facade"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 3 matching records"
+    ],
+    "id": 263,
+    "image": "images/parcel-000263.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 90618,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07618749976777,
+    "lon": -76.15985154412687,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07621508,
+          "Longitude": -76.15993955,
+          "NeedsRR": "Yes",
+          "ObjectId": 844,
+          "PropertyAddress": "712-14 Wolf St",
+          "RR_app_received": 1730678400000,
+          "RR_contact_name": "Resstored Holdings LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-12-02.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1753660800000,
+          "pc_owner": "Resstored Holdings LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07633425,
+          "Longitude": -76.15985065,
+          "NeedsRR": "Yes",
+          "ObjectId": 846,
+          "PropertyAddress": "716-18 Wolf St",
+          "RR_app_received": 1730160000000,
+          "RR_contact_name": "Resstored Holdings LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-12-03.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1753660800000,
+          "pc_owner": "Resstored Holdings LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.0764261,
+          "Longitude": -76.15950058,
+          "NeedsRR": "Yes",
+          "ObjectId": 848,
+          "PropertyAddress": "3021 Grant Blvd",
+          "RR_app_received": 1718668800000,
+          "RR_contact_name": "Tom Glamcevski",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-12-07.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1725494400000,
+          "pc_owner": "Tom Glamcevski",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5167889495,
+          "landuse": null,
+          "name": "Douglas Auto Service",
+          "shop": "car_repair",
+          "tags": {
+            "addr:housenumber": "726",
+            "addr:street": "Wolf Street",
+            "name": "Douglas Auto Service",
+            "service": "repair",
+            "shop": "car_repair"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5167889496,
+          "landuse": null,
+          "name": "Judy's Auto Sales",
+          "shop": "car",
+          "tags": {
+            "addr:housenumber": "726",
+            "addr:street": "Wolf Street",
+            "contact:phone": "+1 315 476 6004",
+            "name": "Judy's Auto Sales",
+            "shop": "car",
+            "website": "https://judysautos.com"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5170081872,
+          "landuse": null,
+          "name": "Dollar Tree",
+          "shop": "variety_store",
+          "tags": {
+            "brand": "Dollar Tree",
+            "brand:wikidata": "Q5289230",
+            "check_date": "2017-10-15",
+            "name": "Dollar Tree",
+            "opening_hours": "Mo-Sa 09:00-21:00; Su 09:00-20:00",
+            "payment:american_express": "yes",
+            "payment:cash": "yes",
+            "payment:coins": "no",
+            "payment:discover_card": "yes",
+            "payment:maestro": "yes",
+            "payment:mastercard": "yes",
+            "payment:nyce": "yes",
+            "payment:quest": "yes",
+            "payment:snap": "yes",
+            "payment:star": "yes",
+            "shop": "variety_store",
+            "source": "photograph",
+            "source:address": "sales receipt"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5197066573,
+          "landuse": null,
+          "name": "F.M. Auto Body, INC.",
+          "shop": "car_repair",
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "710",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Wolf Street",
+            "contact:phone": "+1 315 475 4946",
+            "name": "F.M. Auto Body, INC.",
+            "nysgissam:nysaddresspointid": "ONON071457",
+            "service": "repair",
+            "shop": "car_repair"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300941,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304624,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077306608,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310593,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312475,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077316848,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321341,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321342,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324620,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326801,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077328039,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077328265,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077328710,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329122,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329123,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077334372,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "shop: car_repair",
+          "id": 5167889495,
+          "label": "Douglas Auto Service",
+          "tags": {
+            "name": "Douglas Auto Service",
+            "shop": "car_repair"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: car",
+          "id": 5167889496,
+          "label": "Judy's Auto Sales",
+          "tags": {
+            "name": "Judy's Auto Sales",
+            "shop": "car"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: variety_store",
+          "id": 5170081872,
+          "label": "Dollar Tree",
+          "tags": {
+            "name": "Dollar Tree",
+            "shop": "variety_store"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: car_repair",
+          "id": 5197066573,
+          "label": "F.M. Auto Body, INC.",
+          "tags": {
+            "name": "F.M. Auto Body, INC.",
+            "shop": "car_repair"
+          },
+          "type": "node"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 16,
+        "historic": {},
+        "landuse": {},
+        "named_features": 4,
+        "shops": {
+          "car": 1,
+          "car_repair": 2,
+          "variety_store": 1
+        }
+      }
+    },
+    "parcel_key": "003-12-020",
+    "published_at": "2026-06-27T09:02:54+00:00",
+    "review_reasons": [],
+    "title": "712-14 Wolf St"
+  },
+  {
     "address": "710 Wolf St",
     "ai_analysis": {
       "available": true,
