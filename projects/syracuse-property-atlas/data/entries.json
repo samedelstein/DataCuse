@@ -1,5 +1,413 @@
 [
   {
+    "address": "823 Lemoyne Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view of the immediate foreground is partially obstructed by a vehicle."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "major",
+        "windows_doors": "fair",
+        "yard_or_lot": "poor"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.25,
+            "width": 0.7,
+            "x": 0.05,
+            "y": 0.55
+          },
+          "confidence": "high",
+          "label": "Overgrown vegetation",
+          "reason": "Tall weeds and bushes significantly cover the front yard area."
+        },
+        {
+          "bbox": {
+            "height": 0.08,
+            "width": 0.05,
+            "x": 0.28,
+            "y": 0.6
+          },
+          "confidence": "medium",
+          "label": "Minor debris/items",
+          "reason": "A few items, possibly a trash can, are visible near the attached structure."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Significant vegetation overgrowth in the front yard.",
+        "Minor accumulation of items near the attached structure."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property appears to be a two-story dwelling with an attached single-story structure, exhibiting significant vegetation overgrowth in the front yard and some minor items near the attached structure.",
+      "visible_conditions": [
+        "The main dwelling is a two-story structure with light-colored siding, possibly vinyl.",
+        "A single-story attached structure is visible to the left of the main dwelling, also with light-colored siding.",
+        "The roof of the main dwelling is partially visible and appears to be dark-colored shingles.",
+        "Windows are visible on both levels of the main dwelling; some have awnings.",
+        "A covered front porch with an awning is present.",
+        "The front yard contains significant overgrowth of vegetation, including tall weeds and bushes.",
+        "A paved or dirt driveway/path leads to the attached structure.",
+        "A window air conditioning unit is visible on the second floor of the main dwelling.",
+        "Some minor items, possibly a trash can, are visible near the attached structure."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Image-only flag: Significant vegetation overgrowth in the front yard.",
+      "Image-only flag: Minor accumulation of items near the attached structure.",
+      "Needs human review"
+    ],
+    "id": 271,
+    "image": "images/parcel-000271.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 114307,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07593204338868,
+    "lon": -76.15903376221712,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07592339,
+          "Longitude": -76.15906668,
+          "NeedsRR": "Yes",
+          "ObjectId": 850,
+          "PropertyAddress": "823 Lemoyne Ave",
+          "RR_app_received": 1672876800000,
+          "RR_contact_name": "George Rushford",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-12-14.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1690156800000,
+          "pc_owner": "B Real LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 108167221,
+          "landuse": "cemetery",
+          "name": "First Ward Cemetery",
+          "shop": null,
+          "tags": {
+            "landuse": "cemetery",
+            "leisure": "park",
+            "name": "First Ward Cemetery"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077299896,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300941,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302086,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077307479,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321341,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321342,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077322765,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329122,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329123,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077330116,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077335686,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336684,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077337383,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771118,
+          "landuse": "retail",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "retail"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921501,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: cemetery",
+          "id": 108167221,
+          "label": "First Ward Cemetery",
+          "tags": {
+            "landuse": "cemetery",
+            "name": "First Ward Cemetery"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: retail",
+          "id": 1189771118,
+          "label": "landuse: retail",
+          "tags": {
+            "landuse": "retail"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: residential",
+          "id": 1189921501,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 13,
+        "historic": {},
+        "landuse": {
+          "cemetery": 1,
+          "residential": 1,
+          "retail": 1
+        },
+        "named_features": 1,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-12-140",
+    "published_at": "2026-06-29T02:09:35+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "823 Lemoyne Ave"
+  },
+  {
     "address": "3015 Grant Blvd",
     "ai_analysis": {
       "available": true,
