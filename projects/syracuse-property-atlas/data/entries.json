@@ -1,5 +1,462 @@
 [
   {
+    "address": "610 Second North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Multiple distinct residential structures are visible in the image, making it difficult to definitively assign the observed conditions to the specific parcel address without additional mapping verification.",
+        "The left structure shows boarded-up openings, while the right structure appears maintained."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "poor",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.13,
+            "width": 0.16,
+            "x": 0.02,
+            "y": 0.57
+          },
+          "confidence": "high",
+          "label": "boarded_openings",
+          "reason": "Plywood boards covering the window and door openings on the porch of the left structure."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "The structure on the left has boarded-up openings on the first floor, which may indicate vacancy or unsecured areas."
+      ],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows two residential structures separated by a driveway, with the structure on the left displaying boarded-up ground-floor openings, while the structure on the right appears to be in fair condition.",
+      "visible_conditions": [
+        "The structure on the left has boarded-up window or door openings on the front porch area.",
+        "The structure on the right has intact windows, siding, and a small front porch with a wooden retaining wall.",
+        "A paved driveway runs between the two structures leading to a wooden fence and a small accessory structure."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "yes",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Image-only flag: The structure on the left has boarded-up openings on the first floor, which may indicate vacancy or unsecured areas.",
+      "Needs human review"
+    ],
+    "id": 278,
+    "image": "images/parcel-000278.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 105387,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07586088951283,
+    "lon": -76.15969805177215,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07576036,
+          "Longitude": -76.15980005,
+          "NeedsRR": "Yes",
+          "ObjectId": 854,
+          "PropertyAddress": "610 Second North St",
+          "RR_app_received": 1700438400000,
+          "RR_contact_name": "Tom Glamcevski",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-12-21.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1729555200000,
+          "pc_owner": "Tom Glamcevski",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5170081872,
+          "landuse": null,
+          "name": "Dollar Tree",
+          "shop": "variety_store",
+          "tags": {
+            "brand": "Dollar Tree",
+            "brand:wikidata": "Q5289230",
+            "check_date": "2017-10-15",
+            "name": "Dollar Tree",
+            "opening_hours": "Mo-Sa 09:00-21:00; Su 09:00-20:00",
+            "payment:american_express": "yes",
+            "payment:cash": "yes",
+            "payment:coins": "no",
+            "payment:discover_card": "yes",
+            "payment:maestro": "yes",
+            "payment:mastercard": "yes",
+            "payment:nyce": "yes",
+            "payment:quest": "yes",
+            "payment:snap": "yes",
+            "payment:star": "yes",
+            "shop": "variety_store",
+            "source": "photograph",
+            "source:address": "sales receipt"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5197066573,
+          "landuse": null,
+          "name": "F.M. Auto Body, INC.",
+          "shop": "car_repair",
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "710",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Wolf Street",
+            "contact:phone": "+1 315 475 4946",
+            "name": "F.M. Auto Body, INC.",
+            "nysgissam:nysaddresspointid": "ONON071457",
+            "service": "repair",
+            "shop": "car_repair"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077299896,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077299922,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300941,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302086,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304624,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077307479,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314012,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321341,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321342,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077322765,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324620,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326801,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077328265,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329123,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336684,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771118,
+          "landuse": "retail",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "retail"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921501,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "shop: variety_store",
+          "id": 5170081872,
+          "label": "Dollar Tree",
+          "tags": {
+            "name": "Dollar Tree",
+            "shop": "variety_store"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: car_repair",
+          "id": 5197066573,
+          "label": "F.M. Auto Body, INC.",
+          "tags": {
+            "name": "F.M. Auto Body, INC.",
+            "shop": "car_repair"
+          },
+          "type": "node"
+        },
+        {
+          "category": "landuse: retail",
+          "id": 1189771118,
+          "label": "landuse: retail",
+          "tags": {
+            "landuse": "retail"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: residential",
+          "id": 1189921501,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 15,
+        "historic": {},
+        "landuse": {
+          "residential": 1,
+          "retail": 1
+        },
+        "named_features": 2,
+        "shops": {
+          "car_repair": 1,
+          "variety_store": 1
+        }
+      }
+    },
+    "parcel_key": "003-12-210",
+    "published_at": "2026-06-30T21:03:03+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue",
+      "boarded windows or doors"
+    ],
+    "title": "610 Second North St"
+  },
+  {
     "address": "608 Second North St",
     "ai_analysis": {
       "available": true,
