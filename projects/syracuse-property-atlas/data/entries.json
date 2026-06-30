@@ -1,5 +1,478 @@
 [
   {
+    "address": "604-06 Second North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "A vehicle partially obstructs the view of the immediate foreground on the right side of the property."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "poor",
+        "roof": "unclear",
+        "siding_or_facade": "poor",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "major",
+        "windows_doors": "poor",
+        "yard_or_lot": "poor"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.2,
+            "width": 0.35,
+            "x": 0.28,
+            "y": 0.54
+          },
+          "confidence": "high",
+          "label": "Boarded lower facade and porch",
+          "reason": "Multiple windows and the main porch area are covered with plywood, suggesting a lack of occupancy or security measures."
+        },
+        {
+          "bbox": {
+            "height": 0.1,
+            "width": 0.09,
+            "x": 0.32,
+            "y": 0.44
+          },
+          "confidence": "high",
+          "label": "Damaged or open upper windows",
+          "reason": "Two upper-story windows appear to be open or have missing panes, indicating potential disrepair."
+        },
+        {
+          "bbox": {
+            "height": 0.4,
+            "width": 0.7,
+            "x": 0.0,
+            "y": 0.45
+          },
+          "confidence": "high",
+          "label": "Overgrown yard and vegetation",
+          "reason": "The front yard has overgrown grass and weeds, and dense vegetation surrounds parts of the property."
+        },
+        {
+          "bbox": {
+            "height": 0.15,
+            "width": 0.15,
+            "x": 0.08,
+            "y": 0.55
+          },
+          "confidence": "high",
+          "label": "Dilapidated shed",
+          "reason": "A small shed-like structure in the rear left appears to be in a state of disrepair."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The exterior of the property appears to be a two-story residential structure with visible signs of disrepair, including boarded windows and overgrown vegetation.",
+      "visible_conditions": [
+        "The main building is a two-story structure with light green siding.",
+        "Multiple windows on the first floor and some on the second floor are boarded with plywood.",
+        "The front porch area also appears to be boarded.",
+        "Some upper-story windows appear to be open or have missing panes.",
+        "The siding or facade shows signs of wear, with possible peeling paint.",
+        "The front yard has overgrown grass and weeds.",
+        "Significant vegetation overgrowth is visible around the property, particularly on the left side and around a small, dilapidated shed-like structure in the rear left.",
+        "Minor debris is visible on the porch area."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "yes",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "yes"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Rental registry: 3 matching records"
+    ],
+    "id": 276,
+    "image": "images/parcel-000276.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 91912,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07568029310956,
+    "lon": -76.15942118849021,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07592339,
+          "Longitude": -76.15906668,
+          "NeedsRR": "Yes",
+          "ObjectId": 850,
+          "PropertyAddress": "823 Lemoyne Ave",
+          "RR_app_received": 1672876800000,
+          "RR_contact_name": "George Rushford",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-12-14.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1690156800000,
+          "pc_owner": "B Real LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.075411,
+          "Longitude": -76.15937737,
+          "NeedsRR": "Yes",
+          "ObjectId": 852,
+          "PropertyAddress": "602 Second North St & Lemoyne",
+          "RR_app_received": 1773100800000,
+          "RR_contact_name": "Tania Marie Negron-Fuentes",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1774915200000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1774915200000,
+          "RRisValid": "Yes",
+          "SBL": "003.-12-18.0",
+          "SHAPE": null,
+          "completion_date": 1775520000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1773792000000,
+          "pc_owner": "Nicholas Pistillo",
+          "valid_until": 1870214400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07576036,
+          "Longitude": -76.15980005,
+          "NeedsRR": "Yes",
+          "ObjectId": 854,
+          "PropertyAddress": "610 Second North St",
+          "RR_app_received": 1700438400000,
+          "RR_contact_name": "Tom Glamcevski",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-12-21.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1729555200000,
+          "pc_owner": "Tom Glamcevski",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.07559336,
+          "Longitude": -76.15931312,
+          "ObjectId": 339,
+          "Owner": "William Meier",
+          "OwnerAddress": "813 Lemoyne Ave Syracuse, NY 13208",
+          "PropertyAddress": "813 Lemoyne Ave",
+          "SBL": "003.-12-17.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Washington Square",
+          "valid_until": null
+        }
+      ]
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 108167221,
+          "landuse": "cemetery",
+          "name": "First Ward Cemetery",
+          "shop": null,
+          "tags": {
+            "landuse": "cemetery",
+            "leisure": "park",
+            "name": "First Ward Cemetery"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077299896,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077299922,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300941,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302086,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304624,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077307479,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314012,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321342,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077322765,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326801,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336684,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077337383,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771118,
+          "landuse": "retail",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "retail"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921501,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: cemetery",
+          "id": 108167221,
+          "label": "First Ward Cemetery",
+          "tags": {
+            "landuse": "cemetery",
+            "name": "First Ward Cemetery"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: retail",
+          "id": 1189771118,
+          "label": "landuse: retail",
+          "tags": {
+            "landuse": "retail"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: residential",
+          "id": 1189921501,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 12,
+        "historic": {},
+        "landuse": {
+          "cemetery": 1,
+          "residential": 1,
+          "retail": 1
+        },
+        "named_features": 1,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-12-190",
+    "published_at": "2026-06-30T19:47:30+00:00",
+    "review_reasons": [
+      "boarded windows or doors",
+      "vacancy signs visible"
+    ],
+    "title": "604-06 Second North St"
+  },
+  {
     "address": "602 Second North St & Lemoyne",
     "ai_analysis": {
       "available": true,
