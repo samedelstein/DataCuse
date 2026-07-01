@@ -1,5 +1,138 @@
 [
   {
+    "address": "612 Second North St & Wolf",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image only shows a close-up of a blank exterior wall and fascia, providing no view of windows, doors, roof, or overall structure to assess condition or verify property type."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "not_visible"
+      },
+      "confidence": "low",
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows a close-up view of a windowless textured masonry wall with a brown fascia overhang, bordering a concrete sidewalk.",
+      "visible_conditions": [
+        "Windowless textured masonry wall",
+        "Brown fascia overhang",
+        "Concrete sidewalk in the foreground"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 2 matching records",
+      "Needs human review"
+    ],
+    "id": 279,
+    "image": "images/parcel-000279.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 52801,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07594225918405,
+    "lon": -76.16005916773504,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07621508,
+          "Longitude": -76.15993955,
+          "NeedsRR": "Yes",
+          "ObjectId": 844,
+          "PropertyAddress": "712-14 Wolf St",
+          "RR_app_received": 1730678400000,
+          "RR_contact_name": "Resstored Holdings LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-12-02.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1753660800000,
+          "pc_owner": "Resstored Holdings LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07576036,
+          "Longitude": -76.15980005,
+          "NeedsRR": "Yes",
+          "ObjectId": 854,
+          "PropertyAddress": "610 Second North St",
+          "RR_app_received": 1700438400000,
+          "RR_contact_name": "Tom Glamcevski",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-12-21.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1729555200000,
+          "pc_owner": "Tom Glamcevski",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-12-220",
+    "published_at": "2026-07-01T07:49:25+00:00",
+    "review_reasons": [
+      "AI requested human review"
+    ],
+    "title": "612 Second North St & Wolf"
+  },
+  {
     "address": "610 Second North St",
     "ai_analysis": {
       "available": true,
