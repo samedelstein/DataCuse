@@ -1,5 +1,526 @@
 [
   {
+    "address": "600 Wolf St & First North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The roof and rear portions of the structure are largely obscured from this street-level viewing angle."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "unclear",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "multifamily",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential building featuring light green siding, a white vinyl privacy fence, and a side staircase.",
+      "visible_conditions": [
+        "Light green vinyl siding appears to be in generally good condition",
+        "White vinyl privacy fence enclosing a side yard area",
+        "Double-hung windows with decorative shutters appear intact",
+        "Side staircase with white railings leading to an entry"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 4 matching records"
+    ],
+    "id": 280,
+    "image": "images/parcel-000280.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 76635,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0746248872405,
+    "lon": -76.16137356832147,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07461288,
+          "Longitude": -76.16140434,
+          "NeedsRR": "Yes",
+          "ObjectId": 856,
+          "PropertyAddress": "600 Wolf St & First North St",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-13-01.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Omar Plaza, LLC",
+          "valid_until": null,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07476903,
+          "Longitude": -76.16115983,
+          "NeedsRR": "Yes",
+          "ObjectId": 858,
+          "PropertyAddress": "608 Wolf St",
+          "RR_app_received": 1724025600000,
+          "RR_contact_name": "Melissa Chiodo",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-13-03.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1763683200000,
+          "pc_owner": "Melissa Chiodo",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07454231,
+          "Longitude": -76.16111444,
+          "NeedsRR": "Yes",
+          "ObjectId": 897,
+          "PropertyAddress": "1516 First North St",
+          "RR_app_received": 1773273600000,
+          "RR_contact_name": "Alharbi Properties, LLC/Fadl Alharbi",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-13-30.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1778630400000,
+          "pc_owner": "Fadl Mohamad Alharbi",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07458183,
+          "Longitude": -76.16121293,
+          "NeedsRR": "Yes",
+          "ObjectId": 900,
+          "PropertyAddress": "1518 First North St",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-13-31.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Fadl Mohamad Alharbi",
+          "valid_until": null,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5189770702,
+          "landuse": null,
+          "name": "Sam's Super Saver",
+          "shop": "convenience",
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "613",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Wolf Street",
+            "name": "Sam's Super Saver",
+            "nysgissam:nysaddresspointid": "ONON026868",
+            "opening_hours": "Mo-Su 08:00-22:00; Fr,Sa 08:00-24:00",
+            "shop": "convenience"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5189770703,
+          "landuse": null,
+          "name": "Go Smart Wireless Shop",
+          "shop": "mobile_phone",
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "607",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "Wolf Street",
+            "contact:phone": "+1 315 373 0159",
+            "name": "Go Smart Wireless Shop",
+            "nysgissam:nysaddresspointid": "ONON158795",
+            "shop": "mobile_phone"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5189770704,
+          "landuse": null,
+          "name": "Tito's Crispy Cuts Barbershop",
+          "shop": "hairdresser",
+          "tags": {
+            "name": "Tito's Crispy Cuts Barbershop",
+            "shop": "hairdresser"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5189770706,
+          "landuse": null,
+          "name": "\"Blessings\" In Disguise",
+          "shop": "yes",
+          "tags": {
+            "contact:phone": "+1 315 885 1035",
+            "name": "\"Blessings\" In Disguise",
+            "shop": "yes"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 5197066542,
+          "landuse": null,
+          "name": "Dream Food Market",
+          "shop": "convenience",
+          "tags": {
+            "name": "Dream Food Market",
+            "shop": "convenience"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300617,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077301636,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302003,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305500,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311936,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312469,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314870,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315775,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077318230,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077318231,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319217,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077320526,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077320527,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077322425,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323611,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "shop: convenience",
+          "id": 5189770702,
+          "label": "Sam's Super Saver",
+          "tags": {
+            "name": "Sam's Super Saver",
+            "shop": "convenience"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: mobile_phone",
+          "id": 5189770703,
+          "label": "Go Smart Wireless Shop",
+          "tags": {
+            "name": "Go Smart Wireless Shop",
+            "shop": "mobile_phone"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: hairdresser",
+          "id": 5189770704,
+          "label": "Tito's Crispy Cuts Barbershop",
+          "tags": {
+            "name": "Tito's Crispy Cuts Barbershop",
+            "shop": "hairdresser"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: yes",
+          "id": 5189770706,
+          "label": "\"Blessings\" In Disguise",
+          "tags": {
+            "name": "\"Blessings\" In Disguise",
+            "shop": "yes"
+          },
+          "type": "node"
+        },
+        {
+          "category": "shop: convenience",
+          "id": 5197066542,
+          "label": "Dream Food Market",
+          "tags": {
+            "name": "Dream Food Market",
+            "shop": "convenience"
+          },
+          "type": "node"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 15,
+        "historic": {},
+        "landuse": {},
+        "named_features": 5,
+        "shops": {
+          "convenience": 2,
+          "hairdresser": 1,
+          "mobile_phone": 1,
+          "yes": 1
+        }
+      }
+    },
+    "parcel_key": "003-13-010",
+    "published_at": "2026-07-01T08:02:56+00:00",
+    "review_reasons": [],
+    "title": "600 Wolf St & First North St"
+  },
+  {
     "address": "612 Second North St & Wolf",
     "ai_analysis": {
       "available": true,
