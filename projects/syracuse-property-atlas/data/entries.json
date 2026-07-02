@@ -1,5 +1,198 @@
 [
   {
+    "address": "608 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The rear and sides of the property are not fully visible from the street-level angle.",
+        "Image age and potential changes since the capture date are unknown."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.14,
+            "width": 0.3,
+            "x": 0.22,
+            "y": 0.61
+          },
+          "confidence": "medium",
+          "label": "vegetation overgrowth",
+          "reason": "Weeds and climbing plants growing into the porch lattice and foundation area"
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor vegetation growth climbing the front porch lattice and along the foundation."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential structure with gray siding, a front porch with white lattice skirting, and a small front yard.",
+      "visible_conditions": [
+        "Gray horizontal siding appears mostly intact with minor weathering.",
+        "Front porch features a dark railing and white lattice skirting with some climbing vegetation.",
+        "Windows on the front facade appear intact and unobstructed.",
+        "The front yard has grass with some weed growth along the foundation and porch base."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 4 matching records",
+      "Image-only flag: Minor vegetation growth climbing the front porch lattice and along the foundation."
+    ],
+    "id": 282,
+    "image": "images/parcel-000282.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 85764,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0747488830768,
+    "lon": -76.16111873902683,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07476903,
+          "Longitude": -76.16115983,
+          "NeedsRR": "Yes",
+          "ObjectId": 858,
+          "PropertyAddress": "608 Wolf St",
+          "RR_app_received": 1724025600000,
+          "RR_contact_name": "Melissa Chiodo",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-13-03.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1763683200000,
+          "pc_owner": "Melissa Chiodo",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07461288,
+          "Longitude": -76.16140434,
+          "NeedsRR": "Yes",
+          "ObjectId": 856,
+          "PropertyAddress": "600 Wolf St & First North St",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-13-01.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Omar Plaza, LLC",
+          "valid_until": null,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07454231,
+          "Longitude": -76.16111444,
+          "NeedsRR": "Yes",
+          "ObjectId": 897,
+          "PropertyAddress": "1516 First North St",
+          "RR_app_received": 1773273600000,
+          "RR_contact_name": "Alharbi Properties, LLC/Fadl Alharbi",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-13-30.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1778630400000,
+          "pc_owner": "Fadl Mohamad Alharbi",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07458183,
+          "Longitude": -76.16121293,
+          "NeedsRR": "Yes",
+          "ObjectId": 900,
+          "PropertyAddress": "1518 First North St",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-13-31.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Fadl Mohamad Alharbi",
+          "valid_until": null,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-13-030",
+    "published_at": "2026-07-02T03:20:17+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "608 Wolf St"
+  },
+  {
     "address": "604 Wolf St",
     "ai_analysis": {
       "available": true,
