@@ -1,5 +1,522 @@
 [
   {
+    "address": "626-1/2 Wolf St & Second North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The building is viewed from a distance, obscuring details of windows, doors, and entryways.",
+        "It is unclear if the parked vehicles are associated with this specific parcel or adjacent properties."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "unclear",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows a white two-story residential structure set back behind a grassy lawn and gravel parking area with several parked vehicles.",
+      "visible_conditions": [
+        "White horizontal siding appears intact from this distance",
+        "Dark shingled roof appears in fair condition",
+        "Gravel parking area in front of the structure contains multiple parked vehicles",
+        "Grassy lawn in the foreground appears maintained"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Rental registry: 4 matching records"
+    ],
+    "id": 287,
+    "image": "images/parcel-000287.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 72902,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.075451365977095,
+    "lon": -76.16077207550771,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07527319,
+          "Longitude": -76.1607889,
+          "NeedsRR": "Yes",
+          "ObjectId": 861,
+          "PropertyAddress": "622 Wolf St",
+          "RR_app_received": 1768435200000,
+          "RR_contact_name": "Angelo & Frank Chiodo",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1771459200000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1771459200000,
+          "RRisValid": "Yes",
+          "SBL": "003.-13-06.0",
+          "SHAPE": null,
+          "completion_date": 1772064000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1770595200000,
+          "pc_owner": "Angelo Chiodo",
+          "valid_until": 1866758400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.0753677,
+          "Longitude": -76.1606347,
+          "NeedsRR": "Yes",
+          "ObjectId": 864,
+          "PropertyAddress": "619 Second North St",
+          "RR_app_received": 1689811200000,
+          "RR_contact_name": "Thomas House",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1698192000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1698192000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-13-08.0",
+          "SHAPE": null,
+          "completion_date": 1698278400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1698278400000,
+          "pc_owner": "Derek Montressor",
+          "valid_until": 1792972800000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07521568,
+          "Longitude": -76.16051565,
+          "NeedsRR": "Yes",
+          "ObjectId": 867,
+          "PropertyAddress": "615 Second North St",
+          "RR_app_received": null,
+          "RR_contact_name": "Scott Sharp",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-13-10.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1684108800000,
+          "pc_owner": "Scott Sharp",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.0751923,
+          "Longitude": -76.16045737,
+          "NeedsRR": "Yes",
+          "ObjectId": 870,
+          "PropertyAddress": "613 Second North St",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-13-11.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Scott Sharp",
+          "valid_until": null,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.0751923,
+          "Longitude": -76.16045737,
+          "ObjectId": 568,
+          "Owner": "Scott Sharp",
+          "OwnerAddress": "PO BOX 222 Liverpool, NY 13088",
+          "PropertyAddress": "613 Second North St",
+          "SBL": "003.-13-11.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Washington Square",
+          "valid_until": null
+        }
+      ]
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": "bar",
+          "building": null,
+          "historic": null,
+          "id": 5170081869,
+          "landuse": null,
+          "name": "Second North Deli",
+          "shop": null,
+          "tags": {
+            "amenity": "bar",
+            "name": "Second North Deli"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": "fast_food",
+          "building": null,
+          "historic": null,
+          "id": 5189770701,
+          "landuse": null,
+          "name": "Uncle Chubby's",
+          "shop": null,
+          "tags": {
+            "amenity": "fast_food",
+            "contact:phone": "+1 315 472 2522",
+            "cuisine": "pizza",
+            "delivery": "yes",
+            "fixme": "resurvey for address",
+            "name": "Uncle Chubby's",
+            "takeaway": "yes"
+          },
+          "type": "node"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303187,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304624,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305484,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305485,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305972,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310293,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312469,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315775,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077318503,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323298,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323713,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077328103,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077330191,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331445,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331453,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077331454,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771111,
+          "landuse": "commercial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "commercial"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771118,
+          "landuse": "retail",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "retail"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "amenity: bar",
+          "id": 5170081869,
+          "label": "Second North Deli",
+          "tags": {
+            "amenity": "bar",
+            "name": "Second North Deli"
+          },
+          "type": "node"
+        },
+        {
+          "category": "amenity: fast_food",
+          "id": 5189770701,
+          "label": "Uncle Chubby's",
+          "tags": {
+            "amenity": "fast_food",
+            "name": "Uncle Chubby's"
+          },
+          "type": "node"
+        },
+        {
+          "category": "landuse: commercial",
+          "id": 1189771111,
+          "label": "landuse: commercial",
+          "tags": {
+            "landuse": "commercial"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: retail",
+          "id": 1189771118,
+          "label": "landuse: retail",
+          "tags": {
+            "landuse": "retail"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {
+          "bar": 1,
+          "fast_food": 1
+        },
+        "buildings": 16,
+        "historic": {},
+        "landuse": {
+          "commercial": 1,
+          "retail": 1
+        },
+        "named_features": 2,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-13-070",
+    "published_at": "2026-07-04T16:23:50+00:00",
+    "review_reasons": [],
+    "title": "626-1/2 Wolf St & Second North St"
+  },
+  {
     "address": "622 Wolf St",
     "ai_analysis": {
       "available": true,
