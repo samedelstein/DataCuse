@@ -1,5 +1,468 @@
 [
   {
+    "address": "603 Second North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image shows a vacant lot, which conflicts with the public record indicating 4 rental registry entries. It is unclear if the building was demolished, if the camera is facing the wrong parcel, or if the structure is set back and fully obscured by vegetation."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "not_visible",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.07,
+            "width": 0.13,
+            "x": 0.03,
+            "y": 0.67
+          },
+          "confidence": "medium",
+          "label": "covered pile",
+          "reason": "A black tarp or covered object is situated in the overgrown vegetation on the left side of the lot."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "There is a discrepancy between the visible vacant lot and the public record of 4 rental registry entries, suggesting the structure may have been demolished or the image shows an incorrect parcel."
+      ],
+      "property_type_guess": "vacant_lot",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows a vacant grassy lot with mature trees and some overgrown vegetation along the left boundary line, with no primary structure visible.",
+      "visible_conditions": [
+        "The parcel appears to be an open grassy lot with trees and brush.",
+        "A black tarp or covered object is visible in the weeds on the left side of the lot.",
+        "No residential or commercial building is visible on the immediate parcel, though neighboring structures are partially visible in the background behind a fence."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 4 matching records",
+      "Image-only flag: There is a discrepancy between the visible vacant lot and the public record of 4 rental registry entries, suggesting the structure may have been demolished or the image shows an incorrect parcel.",
+      "Needs human review"
+    ],
+    "id": 295,
+    "image": "images/parcel-000295.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 103060,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07503192067673,
+    "lon": -76.15992710649516,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07511622,
+          "Longitude": -76.1602678,
+          "NeedsRR": "Yes",
+          "ObjectId": 873,
+          "PropertyAddress": "609 Second North St",
+          "RR_app_received": 1742256000000,
+          "RR_contact_name": "Patrick Murphy",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1743033600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1743033600000,
+          "RRisValid": "Yes",
+          "SBL": "003.-13-13.0",
+          "SHAPE": null,
+          "completion_date": 1743465600000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1742342400000,
+          "pc_owner": "Patrick Murphy",
+          "valid_until": 1838160000000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07507276,
+          "Longitude": -76.16015942,
+          "NeedsRR": "Yes",
+          "ObjectId": 876,
+          "PropertyAddress": "605-07 Second North St",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-13-14.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Kenneth Todmann",
+          "valid_until": null,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07504094,
+          "Longitude": -76.15969038,
+          "NeedsRR": "Yes",
+          "ObjectId": 879,
+          "PropertyAddress": "737 Lemoyne Ave & Second Nort",
+          "RR_app_received": 1777334400000,
+          "RR_contact_name": "Yelvel Rafael Silverio",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-13-16.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1777939200000,
+          "pc_owner": "Yelvel Rafael Silverio",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07496072,
+          "Longitude": -76.15975027,
+          "NeedsRR": "Yes",
+          "ObjectId": 882,
+          "PropertyAddress": "735 Lemoyne Ave",
+          "RR_app_received": 1777334400000,
+          "RR_contact_name": "Yelvel Rafael Silverio",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-13-17.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1780444800000,
+          "pc_owner": "Yelvel Rafael Silverio",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077299922,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300941,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302746,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302747,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303587,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304397,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305154,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305484,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305485,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077307732,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308559,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308560,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311916,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312469,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314012,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077318154,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077322765,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323562,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323713,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077328103,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 20,
+        "historic": {},
+        "landuse": {},
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-13-150",
+    "published_at": "2026-07-11T19:03:08+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "603 Second North St"
+  },
+  {
     "address": "605-07 Second North St",
     "ai_analysis": {
       "available": true,
