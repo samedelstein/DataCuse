@@ -1,0 +1,12 @@
+{
+  "name": "datacuse-mcp-site",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Public landing page for Datacuse MCP",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs",
+    "check": "node --check server.mjs"
+  },
+  "engines": { "node": ">=18" }
+}

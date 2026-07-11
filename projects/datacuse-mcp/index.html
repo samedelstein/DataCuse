@@ -1,171 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introducing Datacuse MCP | DataCuse</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --orange-primary: #F76900;
-            --navy-deep: #050a18;
-            --navy-panel: rgba(255, 255, 255, 0.04);
-        }
-        body {
-            font-family: 'Inter', sans-serif;
-            background:
-                radial-gradient(circle at top, rgba(247, 105, 0, 0.12), transparent 30%),
-                linear-gradient(180deg, #040816 0%, #030711 100%);
-            color: #e2e8f0;
-        }
-        .heading-font {
-            font-family: 'Space Grotesk', sans-serif;
-        }
-        .glass-card {
-            background: var(--navy-panel);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.06);
-        }
-        .prose-copy p {
-            margin-bottom: 1.25rem;
-            line-height: 1.85;
-            color: #cbd5e1;
-        }
-        .prose-copy h2 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 1.75rem;
-            font-weight: 700;
-            margin-top: 3rem;
-            margin-bottom: 1rem;
-            color: #ffffff;
-        }
-        .prose-copy h3 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 1.25rem;
-            font-weight: 700;
-            margin-top: 2rem;
-            margin-bottom: 0.75rem;
-            color: #ffffff;
-        }
-        .prose-copy ul,
-        .prose-copy ol {
-            margin-bottom: 1.25rem;
-            padding-left: 1.25rem;
-            color: #cbd5e1;
-        }
-        .prose-copy li {
-            margin-bottom: 0.5rem;
-        }
-        .accent {
-            color: var(--orange-primary);
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Datacuse MCP connects AI tools to Syracuse open data, OCPL services, and trusted public sources.">
+  <meta name="theme-color" content="#07152b">
+  <title>Datacuse MCP — Local data, ready to use</title>
+  <style>
+    :root{--ink:#0b1b35;--muted:#53647c;--paper:#f7f4ed;--white:#fffdf8;--orange:#e9560b;--orange-dark:#bd3d00;--line:rgba(11,27,53,.14);--shadow:0 24px 70px rgba(8,27,53,.12);--radius:24px}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--paper);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6}a{color:inherit}img{display:block;max-width:100%}button{font:inherit}:focus-visible{outline:3px solid #ffb27c;outline-offset:3px}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}.skip{position:fixed;left:16px;top:-80px;z-index:100;padding:10px 14px;color:white;background:var(--ink);border-radius:10px}.skip:focus{top:16px}
+    header{position:sticky;top:0;z-index:20;background:rgba(247,244,237,.9);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}nav{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:inline-flex;align-items:center;gap:10px;font-weight:850;text-decoration:none;letter-spacing:-.03em}.mark{width:28px;height:28px;display:grid;place-items:center;color:white;background:var(--orange);border-radius:8px 8px 8px 2px;font-size:14px}.links{display:flex;align-items:center;gap:24px}.links a{color:var(--muted);text-decoration:none;font-size:14px;font-weight:700}.links a:hover{color:var(--ink)}
+    .button{display:inline-flex;justify-content:center;align-items:center;gap:8px;min-height:48px;padding:0 20px;border:0;border-radius:12px;text-decoration:none;font-weight:800;cursor:pointer;transition:transform .18s,background .18s}.button:hover{transform:translateY(-2px)}.primary{color:white!important;background:var(--orange);box-shadow:0 10px 24px rgba(233,86,11,.24)}.primary:hover{background:var(--orange-dark)}.secondary{color:var(--ink);background:var(--white);border:1px solid var(--line)}.small{min-height:38px;padding:0 14px!important;font-size:13px!important}
+    .hero{position:relative;overflow:hidden;padding:84px 0 72px}.hero:before{content:"";position:absolute;width:600px;height:600px;right:-260px;top:-300px;border-radius:50%;background:rgba(233,86,11,.12)}.hero-grid{position:relative;display:grid;grid-template-columns:1.04fr .96fr;align-items:center;gap:64px}.eyebrow{margin:0 0 18px;color:var(--orange-dark);font-size:13px;font-weight:850;letter-spacing:.14em;text-transform:uppercase}h1,h2,h3{line-height:1.08;letter-spacing:-.045em}h1{margin:0;font-size:clamp(48px,6.3vw,82px)}.hero-copy{max-width:650px;margin:24px 0 0;color:var(--muted);font-size:clamp(18px,2vw,22px)}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px}.trust{margin-top:20px;color:var(--muted);font-size:13px;font-weight:650}
+    .demo{min-height:470px;padding:20px;color:#d8e8ff;background:#07152b;border:1px solid rgba(255,255,255,.12);border-radius:30px;box-shadow:var(--shadow);transform:rotate(1deg)}.demo-bar{display:flex;align-items:center;gap:7px;padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,.12)}.dot{width:9px;height:9px;border-radius:50%;background:#ff6c56}.dot:nth-child(2){background:#ffc04d}.dot:nth-child(3){background:#51cf78}.demo-title{margin-left:8px;color:#8ca4c8;font-size:12px}.prompt{margin:24px 0 14px;padding:16px;color:white;background:rgba(255,255,255,.07);border-radius:14px;font-size:15px}.tool{margin-top:12px;padding:14px 16px;border-left:3px solid var(--orange);background:rgba(233,86,11,.08);border-radius:0 12px 12px 0}.tool-name{color:#ff9b62;font:700 12px ui-monospace,monospace}.result{display:grid;grid-template-columns:auto 1fr;gap:12px;margin-top:18px;padding:16px;background:#0d2241;border-radius:14px}.result-icon{width:32px;height:32px;display:grid;place-items:center;background:#164f82;border-radius:50%}.result strong{display:block;color:white}.result p{margin:4px 0 0;color:#9eb4d3;font-size:13px}.chip{display:inline-block;margin:18px 6px 0 0;padding:6px 9px;color:#a8c2e6;border:1px solid rgba(255,255,255,.14);border-radius:999px;font-size:11px}
+    .section{padding:88px 0}.alt{background:var(--white);border-block:1px solid var(--line)}.section-head{max-width:720px;margin-bottom:42px}.section h2{margin:0;font-size:clamp(34px,4vw,54px)}.lede{margin:16px 0 0;color:var(--muted);font-size:18px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{padding:28px;background:var(--white);border:1px solid var(--line);border-radius:var(--radius)}.alt .card{background:var(--paper)}.number{display:grid;place-items:center;width:38px;height:38px;margin-bottom:26px;color:white;background:var(--ink);border-radius:11px;font-weight:850}.card h3{margin:0 0 10px;font-size:24px}.card p{margin:0;color:var(--muted)}
+    .workflow{display:grid;grid-template-columns:.86fr 1.14fr;gap:56px}.steps{display:grid;gap:14px}.step{display:grid;grid-template-columns:42px 1fr;gap:14px;padding:18px;background:var(--paper);border-radius:16px}.step>span{display:grid;place-items:center;width:34px;height:34px;color:white;background:var(--orange);border-radius:50%;font-weight:800}.step strong{display:block}.step p{margin:2px 0 0;color:var(--muted);font-size:14px}
+    .quick{color:white;background:#07152b}.quick-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}.quick h2{color:white}.quick .lede{color:#a9bbd4}.terminal{overflow:hidden;background:#020a15;border:1px solid rgba(255,255,255,.14);border-radius:18px;box-shadow:0 24px 70px rgba(0,0,0,.24)}.terminal-head{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;color:#89a2c5;background:#0b1b32;font-size:12px}.copy{padding:6px 10px;color:white;background:#183454;border:0;border-radius:7px;cursor:pointer}pre{margin:0;padding:24px;overflow:auto;color:#d7e7fd;font:14px/1.8 ui-monospace,monospace}.note{margin:14px 0 0;color:#8fa6c5;font-size:13px}
+    .gallery{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}.shot{overflow:hidden;margin:0;background:var(--ink);border-radius:var(--radius)}.shot img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top}.shot figcaption{padding:16px 18px;color:#d9e5f7;font-size:14px}.shot-stack{display:grid;gap:18px}details{margin-top:48px;padding:0 24px;background:var(--white);border:1px solid var(--line);border-radius:var(--radius)}summary{padding:22px 0;font-weight:850;cursor:pointer}.essay{max-width:760px;padding:6px 0 34px;color:#34445c}.essay h3{margin:36px 0 10px;color:var(--ink);font-size:24px}.essay p{margin:0 0 18px}footer{padding:36px 0;color:var(--muted);border-top:1px solid var(--line)}.footer{display:flex;justify-content:space-between;gap:24px}.footer p{margin:0}
+    @media(max-width:860px){.hero-grid,.workflow,.quick-grid,.gallery{grid-template-columns:1fr}.hero{padding-top:56px}.demo{min-height:auto;transform:none}.cards{grid-template-columns:1fr}.links a:not(.button){display:none}}@media(max-width:540px){.wrap{width:calc(100% - 24px)}nav{min-height:64px}.links .button{display:none}.hero{padding:44px 0 54px}h1{font-size:45px}.section{padding:64px 0}.card{padding:22px}.footer{flex-direction:column}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+  </style>
 </head>
 <body>
-    <main class="px-6 py-12 md:py-20">
-        <div class="max-w-4xl mx-auto">
-            <a href="../../index.html#blog" class="inline-flex items-center text-sm font-semibold text-slate-300 hover:text-white transition mb-8">
-                &larr; Back to DataCuse
-            </a>
-            <header class="mb-12">
-                <div class="inline-flex items-center gap-3 mb-5">
-                    <span class="text-xs font-bold uppercase tracking-[0.25em] text-[#F76900]">Launch Essay</span>
-                    <span class="text-sm text-slate-500">March 2026</span>
-                </div>
-                <h1 class="heading-font text-4xl md:text-6xl font-extrabold leading-tight mb-6">
-                    Syracuse data is fragmented. <span class="accent">Datacuse MCP</span> makes it usable.
-                </h1>
-                <p class="text-lg md:text-xl text-slate-400 max-w-3xl leading-relaxed">
-                    One MCP server for Syracuse open data, Onondaga County Public Libraries, and selected county, state, and federal sources, built so ChatGPT can search, analyze, and act on real local systems instead of treating them like disconnected portals.
-                </p>
-                <div class="glass-card rounded-3xl overflow-hidden mt-10">
-                    <img src="../ocplbooksearch.png" alt="Datacuse MCP book search and library availability workflow" class="w-full h-[320px] md:h-[420px] object-cover" />
-                </div>
-            </header>
-            <section class="glass-card rounded-3xl p-8 md:p-12 prose-copy">
-                <p>Public data is usually available in theory and painful in practice.</p>
-                <p>Cities publish dashboards, ArcGIS services, CSV downloads, PDFs, portals, and one-off department pages. Libraries run separate catalogs, events systems, and reporting sites. State and federal agencies expose their own APIs and portals. The data is real, but using it across systems still takes too much manual work.</p>
-                                <p>That is the problem <strong>Datacuse MCP</strong> is trying to solve.</p>
-                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin:2rem 0 2.5rem 0;">
-                    <figure class="glass-card" style="padding:0.75rem;border-radius:1rem;">
-                        <img src="../onondagacountydatascreenshot.png" alt="Onondaga County data search in Datacuse MCP" style="width:100%;height:200px;object-fit:cover;border-radius:0.75rem;margin-bottom:0.75rem;" />
-                        <figcaption style="font-size:0.9rem;line-height:1.5;color:#cbd5e1;">Official county-level source discovery for Onondaga County datasets and reporting sources.</figcaption>
-                    </figure>
-                    <figure class="glass-card" style="padding:0.75rem;border-radius:1rem;">
-                        <img src="../syracuseroaddata.png" alt="Syracuse road data analysis in Datacuse MCP" style="width:100%;height:200px;object-fit:cover;border-radius:0.75rem;margin-bottom:0.75rem;" />
-                        <figcaption style="font-size:0.9rem;line-height:1.5;color:#cbd5e1;">A Syracuse-specific analysis workflow using public street and pavement data.</figcaption>
-                    </figure>
-                    <figure class="glass-card" style="padding:0.75rem;border-radius:1rem;">
-                        <img src="../ocplbooksearch.png" alt="OCPL book search through Datacuse MCP" style="width:100%;height:200px;object-fit:cover;border-radius:0.75rem;margin-bottom:0.75rem;" />
-                        <figcaption style="font-size:0.9rem;line-height:1.5;color:#cbd5e1;">Library catalog search and branch-level book availability through the OCPL connector flow.</figcaption>
-                    </figure>
-                </div>
-                <h2>What Datacuse MCP Is</h2>
-                <p>Datacuse MCP is a Model Context Protocol server focused on Syracuse, Onondaga County, and closely related public data sources.</p>
-                <p>It gives ChatGPT and other MCP clients a single tool surface for:</p>
-                <ul>
-                    <li>Syracuse open data discovery from <code>data.syr.gov</code></li>
-                    <li>raw Syracuse ArcGIS REST access for Syracuse datasets</li>
-                    <li>Onondaga County Public Libraries branch, event, catalog, and account workflows</li>
-                    <li>curated county, state, and federal datasets relevant to Syracuse and Onondaga County</li>
-                    <li>live access to selected official APIs like Census, BLS, and Health Data NY</li>
-                </ul>
-                <p>The practical goal is simple: make local public data and local civic workflows usable through natural language.</p>
-                <h2>Why Build This</h2>
-                <p>If you have ever tried to answer basic civic questions with public data, you have probably run into versions of the same problems:</p>
-                <ul>
-                    <li>the official data lives in multiple systems</li>
-                    <li>one portal lists a curated subset while raw services expose much more</li>
-                    <li>metadata is inconsistent</li>
-                    <li>different sources use different identifiers and schemas</li>
-                    <li>some high-value workflows are not datasets at all</li>
-                </ul>
-                <p>Library usage is a good example. A city data portal may expose geography and service context, but that has nothing to do with whether a specific book is in the catalog, whether a branch has an event this week, or whether a hold can actually be placed from an AI-driven workflow.</p>
-                <p>Datacuse MCP is opinionated about that. It treats the local data ecosystem as a set of connected but different systems, then exposes them through one MCP server instead of pretending everything is a flat dataset.</p>
-                <h2>What It Can Do Today</h2>
-                <h3>Syracuse open data</h3>
-                <p>Datacuse MCP can search and inspect the Syracuse open data ecosystem across both the ArcGIS Hub layer and the raw ArcGIS REST layer. That means it can find datasets by topic, compare curated Hub items to raw REST services, inspect layers and metadata, and query records from public ArcGIS services.</p>
-                <h3>Onondaga County Public Libraries</h3>
-                <p>This is where the project gets more interesting. Datacuse MCP includes OCPL branch metadata, LibCal-backed event discovery, annual library stats, Polaris catalog search and item availability, and browser-assisted account workflows for holds and verification.</p>
-                <p>That last part is the key distinction. A lot of public data work stops at search and read-only browsing. Datacuse MCP goes further and supports an actual resident workflow: find a book, authenticate through a live browser session, place a hold, and confirm it appears in the account.</p>
-                <h3>County, state, and federal context</h3>
-                <p>Local questions often need non-local sources. A Syracuse or Onondaga County workflow may also need Census demographic context, BLS unemployment trends, or Health Data NY county-level indicators. Datacuse MCP adds a curated geographic source layer and a few live adapters so those sources can sit alongside city and library tools instead of living in a separate research process.</p>
-                <h2>What Makes It Different</h2>
-                <h3>1. It treats source systems honestly</h3>
-                <p>Not everything is the same shape. ArcGIS layers, catalog search results, branch pages, library events, annual stats, and account actions are different things. Datacuse MCP does not force them into one fake abstraction. It shares a discovery layer where that helps, then adds domain-specific tools where that is the better design.</p>
-                <h3>2. It is local and practical</h3>
-                <p>This is not a smart city platform pitch deck. It is a working MCP server built around concrete Syracuse and Onondaga workflows: find the right dataset, compare what is public versus what is raw, inspect records, find the right library item, place the hold, and verify the result.</p>
-                <h3>3. It is built for plain-English use</h3>
-                <p>One of the lessons from building this was that tool quality is not enough. If the MCP surface is too low-level, users have to think like implementers instead of users. That is why the project now includes higher-level library workflow tools, so prompts can sound more like:</p>
-                <p><strong>"Use Syracuse Data to place a hold on this book for pickup at Petit Branch Library."</strong></p>
-                <p>instead of:</p>
-                <p><strong>"Search the catalog, resolve the item ref, open the browser login, place the hold, and verify the request table."</strong></p>
-                <h2>What It Is Not</h2>
-                <p>Datacuse MCP is not an official city or library product, a full hosted SaaS, a substitute for secure multi-user auth design, or a production-grade civic data warehouse.</p>
-                <p>It also depends on upstream systems that can change. Public pages drift. Portal metadata is messy. Browser-backed library flows are inherently more fragile than stable APIs. That is the tradeoff: it is useful now because it works against the systems that already exist, not because those systems were designed for clean machine interoperability.</p>
-                <h2>Why MCP Is the Right Interface</h2>
-                <p>The value of MCP here is not just that AI can call tools. The real advantage is that it gives a structured way for a model to discover capabilities, use the right tool at the right time, preserve context across a workflow, and mix search, data access, and action.</p>
-                <p>For local public-data work, that is a big deal. The problem is rarely just one API call. It is usually a chain:</p>
-                <ol>
-                    <li>find the right source</li>
-                    <li>understand what it contains</li>
-                    <li>resolve the right record or item</li>
-                    <li>take the right next action</li>
-                    <li>confirm the outcome</li>
-                </ol>
-                <p>Datacuse MCP is built around that chain.</p>
-                <h2>Where This Could Go</h2>
-                <p>There are obvious next steps: more Syracuse and Onondaga adapters, more state and federal live integrations, better ranking and source preference logic, safer auth and hosting patterns, and a cleaner public-facing app on top of the MCP.</p>
-                <p>The larger opportunity is not limited to Syracuse. The same pattern could work for any city where the real public-data ecosystem is fragmented across portals, services, dashboards, and operational tools.</p>
-                <h2>Closing Thought</h2>
-                <p>Public data becomes much more useful when it stops being a scavenger hunt.</p>
-                <p>Datacuse MCP is an attempt to make local civic data and local civic workflows feel coherent, usable, and actionable through one interface.</p>
-                <p>That is the core idea: not just more data access, but better access to the systems people actually need.</p>
-            </section>
-        </div>
-    </main>
+  <a class="skip" href="#main">Skip to content</a>
+  <header><nav class="wrap" aria-label="Primary navigation"><a class="brand" href="#top"><span class="mark">D</span> Datacuse MCP</a><div class="links"><a href="#capabilities">Capabilities</a><a href="#how">How it works</a><a href="#quickstart">Run locally</a><a class="button primary small" href="#quickstart">Get started</a></div></nav></header>
+  <main id="main">
+    <section class="hero" id="top"><div class="hero-grid wrap">
+      <div><p class="eyebrow">Built for Syracuse &amp; Onondaga County</p><h1>Local data, finally ready to use.</h1><p class="hero-copy">Datacuse MCP gives AI assistants one reliable way to search Syracuse data, explore library services, and connect local questions to trusted public sources.</p><div class="actions"><a class="button primary" href="#quickstart">Run it locally <span aria-hidden="true">→</span></a><a class="button secondary" href="#capabilities">See what it can do</a></div><p class="trust">Open-source friendly · Local-first · No account required for public data</p></div>
+      <div class="demo" aria-label="Example Datacuse MCP workflow"><div class="demo-bar"><i class="dot"></i><i class="dot"></i><i class="dot"></i><span class="demo-title">AI assistant + Datacuse MCP</span></div><div class="prompt">“Find a copy of <em>The Color of Law</em> and tell me which nearby OCPL branch has it.”</div><div class="tool"><div class="tool-name">DATACUSE · search_ocpl_catalog</div><div>Searching catalog and branch availability…</div></div><div class="result"><div class="result-icon">✓</div><div><strong>Available at Petit Branch</strong><p>1 copy available now. Catalog and branch records checked moments ago.</p></div></div><span class="chip">OCPL catalog</span><span class="chip">Branch data</span><span class="chip">Live availability</span></div>
+    </div></section>
+    <section class="section alt" id="capabilities"><div class="wrap"><div class="section-head"><p class="eyebrow">One connection, many systems</p><h2>Ask local questions without hunting through portals.</h2><p class="lede">Datacuse MCP keeps each source honest while making them feel like one coherent civic data layer.</p></div><div class="cards">
+      <article class="card"><div class="number">01</div><h3>Search city data</h3><p>Discover Syracuse datasets, inspect ArcGIS services, and query public records from both curated and raw sources.</p></article>
+      <article class="card"><div class="number">02</div><h3>Use library services</h3><p>Find branches, events, catalog items, and availability—then continue into account-assisted workflows when needed.</p></article>
+      <article class="card"><div class="number">03</div><h3>Add trusted context</h3><p>Connect local analysis to selected Census, labor, health, county, state, and federal sources.</p></article>
+    </div></div></section>
+    <section class="section" id="how"><div class="workflow wrap"><div><p class="eyebrow">Designed around real work</p><h2>From plain-English question to a sourced answer.</h2><p class="lede">The server handles the messy middle: finding the right system, understanding its shape, and returning a useful result.</p></div><div class="steps">
+      <div class="step"><span>1</span><div><strong>Ask naturally</strong><p>Use the language you would use with a colleague, not an API manual.</p></div></div>
+      <div class="step"><span>2</span><div><strong>Route to the right source</strong><p>Datacuse chooses a city, library, county, state, or federal tool.</p></div></div>
+      <div class="step"><span>3</span><div><strong>Inspect and act</strong><p>It resolves the relevant dataset, record, event, item, or workflow.</p></div></div>
+      <div class="step"><span>4</span><div><strong>Confirm the result</strong><p>You get a clear answer grounded in the original public system.</p></div></div>
+    </div></div></section>
+    <section class="section quick" id="quickstart"><div class="quick-grid wrap"><div><p class="eyebrow">Zero-build local preview</p><h2>Run this site in one command.</h2><p class="lede">Clone or download the folder, then start the included dependency-free local server. The same files can be uploaded to any static host.</p></div><div><div class="terminal"><div class="terminal-head"><span>Terminal</span><button class="copy" type="button" data-copy="node server.mjs">Copy</button></div><pre><code>node server.mjs
+
+# Open http://localhost:4173</code></pre></div><p class="note">Also works with <code>npm start</code>. No install, build, framework, or environment variables required.</p></div></div></section>
+    <section class="section alt"><div class="wrap"><div class="section-head"><p class="eyebrow">Working examples</p><h2>Built around useful local outcomes.</h2></div><div class="gallery"><figure class="shot"><img src="assets/onondagacountydatascreenshot.png" alt="Onondaga County source discovery results" loading="lazy"><figcaption>Discover official county sources without starting from a blank search box.</figcaption></figure><div class="shot-stack"><figure class="shot"><img src="assets/syracuseroaddata.png" alt="Syracuse road data analysis" loading="lazy"><figcaption>Analyze Syracuse street and pavement data.</figcaption></figure><figure class="shot"><img src="assets/ocplbooksearch.png" alt="OCPL catalog and availability search" loading="lazy"><figcaption>Find books and branch-level availability.</figcaption></figure></div></div>
+      <details><summary>Read the launch essay: why Datacuse MCP exists</summary><article class="essay"><p>Public data is usually available in theory and painful in practice. Cities publish dashboards, ArcGIS services, CSV downloads, PDFs, portals, and one-off department pages. Libraries run separate catalogs, events systems, and reporting sites. The data is real, but using it across systems still takes too much manual work.</p><h3>What makes it different</h3><p>Datacuse MCP treats the local data ecosystem as connected but genuinely different systems. ArcGIS layers, catalog results, branch pages, events, annual statistics, and account actions are not forced into one fake abstraction. Shared discovery helps where it should; domain-specific tools handle the rest.</p><p>It is local and practical: find the right dataset, inspect records, locate a library item, and verify an outcome.</p><h3>Why MCP fits the problem</h3><p>Local public-data work is rarely a single API call. It is a chain: find the right source, understand it, resolve the right record, take the next action, and confirm the result. MCP gives an AI assistant a structured way to use the right capability at the right time.</p><h3>What it is not</h3><p>Datacuse MCP is not an official city or library product, a production civic data warehouse, or a substitute for secure multi-user authentication. It depends on upstream public systems that can change.</p><h3>Where it could go</h3><p>The same pattern can extend to more local sources, deeper state and federal integrations, and safer hosted workflows. It can work for any community whose public information is fragmented across portals, services, dashboards, and operational tools.</p><p><strong>Public data becomes much more useful when it stops being a scavenger hunt.</strong></p></article></details>
+    </div></section>
+  </main>
+  <footer><div class="footer wrap"><p>Datacuse MCP · Syracuse data made usable.</p><a href="../../index.html#blog">Back to DataCuse</a></div></footer>
+  <script>document.querySelector('[data-copy]').addEventListener('click',async e=>{const b=e.currentTarget;try{await navigator.clipboard.writeText(b.dataset.copy);b.textContent='Copied';setTimeout(()=>b.textContent='Copy',1600)}catch{b.textContent='Select command'}})</script>
 </body>
 </html>
-
-
