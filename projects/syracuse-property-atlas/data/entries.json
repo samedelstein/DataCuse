@@ -1,5 +1,479 @@
 [
   {
+    "address": "1504 First North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image is taken from the street, and the sides and rear of the property are not fully visible."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.08,
+            "width": 0.3,
+            "x": 0.01,
+            "y": 0.89
+          },
+          "confidence": "high",
+          "label": "ground debris",
+          "reason": "Discarded board or panel lying on the grass in the foreground"
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "A piece of discarded board or debris is lying on the grass in the foreground."
+      ],
+      "property_type_guess": "multifamily",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story multifamily residential building with blue-green siding and a front wooden porch, situated on a grassy lot.",
+      "visible_conditions": [
+        "Blue-green siding appears intact with no major visible damage.",
+        "Front wooden steps and small porch entry appear functional.",
+        "Grassy front yard with some bare patches.",
+        "A piece of discarded board or panel is visible on the grass in the foreground."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 4 matching records",
+      "Image-only flag: A piece of discarded board or debris is lying on the grass in the foreground."
+    ],
+    "id": 303,
+    "image": "images/parcel-000303.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 92326,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07436493647011,
+    "lon": -76.16038855897357,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07434594,
+          "Longitude": -76.16042692,
+          "NeedsRR": "Yes",
+          "ObjectId": 891,
+          "PropertyAddress": "1504 First North St",
+          "RR_app_received": 1745193600000,
+          "RR_contact_name": "Alharbi Properties, LLC/Fadl Alharbi",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1759881600000,
+          "RR_int_insp_fail": 1751846400000,
+          "RR_int_insp_pass": 1759881600000,
+          "RRisValid": "Yes",
+          "SBL": "003.-13-25.0",
+          "SHAPE": null,
+          "completion_date": 1760054400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1759881600000,
+          "pc_owner": "Alharbi Properties, LLC",
+          "valid_until": 1854748800000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07437963,
+          "Longitude": -76.16018416,
+          "NeedsRR": "Yes",
+          "ObjectId": 885,
+          "PropertyAddress": "709-11 Lemoyne Ave",
+          "RR_app_received": 1774569600000,
+          "RR_contact_name": "Cheyenne Talbert",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-13-22.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1779840000000,
+          "pc_owner": "Cheyenne Talbert",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07427042,
+          "Longitude": -76.1602657,
+          "NeedsRR": "Yes",
+          "ObjectId": 888,
+          "PropertyAddress": "705-07 Lemoyne Ave",
+          "RR_app_received": null,
+          "RR_contact_name": "Marguerite Serio",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-13-23.0",
+          "SHAPE": null,
+          "completion_date": 1484006400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1484006400000,
+          "pc_owner": "Julie Huertas",
+          "valid_until": 1578700800000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07438941,
+          "Longitude": -76.16053526,
+          "NeedsRR": "Yes",
+          "ObjectId": 894,
+          "PropertyAddress": "1506 First North St",
+          "RR_app_received": 1773273600000,
+          "RR_contact_name": "Alharbi Properties, LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-13-26.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1778630400000,
+          "pc_owner": "Alharbi Properties, LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300617,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302746,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302747,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308559,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308560,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311061,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311916,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312469,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077313101,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077313102,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077318775,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077320526,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077322554,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325404,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329957,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077330805,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077330857,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077332830,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336765,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189771111,
+          "landuse": "commercial",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "commercial"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: commercial",
+          "id": 1189771111,
+          "label": "landuse: commercial",
+          "tags": {
+            "landuse": "commercial"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 19,
+        "historic": {},
+        "landuse": {
+          "commercial": 1
+        },
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-13-250",
+    "published_at": "2026-07-12T15:12:39+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1504 First North St"
+  },
+  {
     "address": "1500 First North St & Lemoyne",
     "ai_analysis": {
       "available": true,
