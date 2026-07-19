@@ -1,5 +1,460 @@
 [
   {
+    "address": "738-40 Lemoyne Ave & Second Nort",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The side and rear elevations of the main structure are not visible from this street-level angle."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.1,
+            "width": 0.26,
+            "x": 0.18,
+            "y": 0.54
+          },
+          "confidence": "medium",
+          "label": "weathered garage doors",
+          "reason": "The garage doors show signs of surface wear, discoloration, and minor weathering."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor weathering and cosmetic wear on the detached garage doors."
+      ],
+      "property_type_guess": "multifamily",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential building with red siding and a front porch, accompanied by a detached white garage and a paved driveway.",
+      "visible_conditions": [
+        "Red siding on the main structure appears intact and in generally good condition.",
+        "Detached white garage shows some surface weathering and discoloration on the doors.",
+        "Front porch with white railings and decorative trim appears stable and functional.",
+        "Paved driveway shows minor cracking and wear."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 3 matching records",
+      "Image-only flag: Minor weathering and cosmetic wear on the detached garage doors."
+    ],
+    "id": 318,
+    "image": "images/parcel-000318.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 96926,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07476335887916,
+    "lon": -76.15900523800167,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.0747601,
+          "Longitude": -76.15905525,
+          "NeedsRR": "Yes",
+          "ObjectId": 923,
+          "PropertyAddress": "738-40 Lemoyne Ave & Second Nort",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-14-09.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Wal Mujak",
+          "valid_until": null,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07448981,
+          "Longitude": -76.15925707,
+          "NeedsRR": "Yes",
+          "ObjectId": 917,
+          "PropertyAddress": "726 Lemoyne Ave",
+          "RR_app_received": 1779321600000,
+          "RR_contact_name": "Jay Subedi",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-14-06.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1780531200000,
+          "pc_owner": "CNY Karmaa Mgmnt Holdings L",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07465025,
+          "Longitude": -76.15913727,
+          "NeedsRR": "Yes",
+          "ObjectId": 920,
+          "PropertyAddress": "734 Lemoyne Ave",
+          "RR_app_received": 1748390400000,
+          "RR_contact_name": "Trung Van Le",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1750118400000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1750118400000,
+          "RRisValid": "Yes",
+          "SBL": "003.-14-08.0",
+          "SHAPE": null,
+          "completion_date": 1752624000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1752451200000,
+          "pc_owner": "Trung Le",
+          "valid_until": 1847318400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 108167221,
+          "landuse": "cemetery",
+          "name": "First Ward Cemetery",
+          "shop": null,
+          "tags": {
+            "landuse": "cemetery",
+            "leisure": "park",
+            "name": "First Ward Cemetery"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300226,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303587,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303588,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311810,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311811,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315044,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315045,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317489,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317490,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317491,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317527,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317528,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077318154,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321289,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323562,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324883,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077334263,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336456,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336457,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: cemetery",
+          "id": 108167221,
+          "label": "First Ward Cemetery",
+          "tags": {
+            "landuse": "cemetery",
+            "name": "First Ward Cemetery"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 19,
+        "historic": {},
+        "landuse": {
+          "cemetery": 1
+        },
+        "named_features": 1,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-14-090",
+    "published_at": "2026-07-19T09:02:57+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "738-40 Lemoyne Ave & Second Nort"
+  },
+  {
     "address": "734 Lemoyne Ave",
     "ai_analysis": {
       "available": true,
