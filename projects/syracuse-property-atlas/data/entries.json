@@ -1,5 +1,389 @@
 [
   {
+    "address": "1400 First North St & Bear St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The primary structure is heavily obstructed by a large tree in the foreground, limiting the assessment of the facade, roof, and entryways."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "unclear",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.08,
+            "width": 0.12,
+            "x": 0.87,
+            "y": 0.77
+          },
+          "confidence": "high",
+          "label": "street litter",
+          "reason": "Accumulated trash and debris on the street curb"
+        },
+        {
+          "bbox": {
+            "height": 0.11,
+            "width": 0.32,
+            "x": 0.37,
+            "y": 0.56
+          },
+          "confidence": "high",
+          "label": "vehicle parked on lawn",
+          "reason": "Large recreational vehicle parked on the grass yard area"
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Litter and discarded items are present along the curb in the foreground.",
+        "A large recreational vehicle is parked on the unpaved lawn area."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A multi-story residential building is partially visible behind a large mature tree, featuring a fenced yard with a parked recreational vehicle.",
+      "visible_conditions": [
+        "Siding appears to be two-tone with light green on the upper level and white on the lower level.",
+        "A large recreational vehicle is parked in the yard area behind a chain-link fence.",
+        "Some litter and debris are visible on the street curb in the foreground.",
+        "A large tree in the foreground significantly obstructs the view of the primary structure."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 2 matching records",
+      "Image-only flag: Litter and discarded items are present along the curb in the foreground.",
+      "Image-only flag: A large recreational vehicle is parked on the unpaved lawn area."
+    ],
+    "id": 327,
+    "image": "images/parcel-000327.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 141468,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07370821033742,
+    "lon": -76.15861067358212,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07402959,
+          "Longitude": -76.15840416,
+          "NeedsRR": "Yes",
+          "ObjectId": 938,
+          "PropertyAddress": "711 Bear St",
+          "RR_app_received": 1745539200000,
+          "RR_contact_name": "Sharif Aden",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-14-17.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1745971200000,
+          "pc_owner": "Sharif Aden",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07391588,
+          "Longitude": -76.15848908,
+          "NeedsRR": "Yes",
+          "ObjectId": 941,
+          "PropertyAddress": "707 Bear St",
+          "RR_app_received": 1762387200000,
+          "RR_contact_name": "Heritage Prop Mgmt LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "Yes",
+          "SBL": "003.-14-18.0",
+          "SHAPE": null,
+          "completion_date": 1771372800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1764028800000,
+          "pc_owner": "Heritage Prop Mgmt LLC",
+          "valid_until": 1866067200000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "garage",
+          "historic": null,
+          "id": 535410242,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "1400",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "First North Street",
+            "building": "garage",
+            "building:levels": "2",
+            "nysgissam:nysaddresspointid": "ONON147783",
+            "nysgissam:review": "no matching street nearby"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304037,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305098,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077307198,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308875,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308876,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314653,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317585,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323386,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326852,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326853,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077327671,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077328716,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077332448,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077334264,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "building",
+          "id": 535410242,
+          "label": "building: garage",
+          "tags": {
+            "building": "garage"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 15,
+        "historic": {},
+        "landuse": {},
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-14-190",
+    "published_at": "2026-07-19T18:14:01+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1400 First North St & Bear St"
+  },
+  {
     "address": "707 Bear St",
     "ai_analysis": {
       "available": true,
