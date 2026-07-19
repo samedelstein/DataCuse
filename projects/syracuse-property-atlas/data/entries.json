@@ -1,5 +1,429 @@
 [
   {
+    "address": "712 Lemoyne Ave To First Nort",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "{\n  \"summary\": \"A street-level view shows a residential property with a light blue single-story house on the right and another structure partially visible on the left, significantly obscured by a large mature tree in the foreground.\",\n  \"property_type_guess\": \"unclear\",\n  \"visible_conditions\": [\n    \"A large mature tree in the center foreground heavily obstructs the view of both structures.\",\n    \"The visible structure on the right features light blue siding and a grey shingle roof in seemingly stable condition.\",\n    \"The structure on the left is mostly obscured, showing only portions of pinkish siding and an entry porch.\",\n    \"The front yard is a sloped, grassy lawn that appears generally maintained.\"\n  ],\n  \"condition_scores\": {\n    \"roof\": \"good\",\n    \"siding_or_facade\": \"good\",\n    \"windows_doors\": \"good\",\n    \"porch_or_entry\": \"good\",\n    \"yard_or_lot\": \"good\",\n    \"trash_debris\": \"none_visible\",\n    \"vegetation_overgrowth\": \"none_visible\"\n  },\n  \"visible_flags\": {\n    \"boarded_windows_or_doors\": \"no\",\n    \"fire_damage_visible\": \"no\",\n    \"structural_damage_visible\": \"no\",\n    \"vacancy_signs_visible\": \"no\",\n    \"active_construction_visible\": \"no\"\n  },\n  \"possible_unrecorded_issues\": [],\n  \"image_annotations\": [],\n  \"needs_human_review\": \"false\",\n  \"confidence\": \"medium\",\n  \"caveats\": [\n    \"The presence of a large, leafy tree in the center foreground significantly blocks the view of both structures, preventing a complete assessment of the facades, windows, and entryways.\"\n  ]",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 4 matching records"
+    ],
+    "id": 311,
+    "image": "images/parcel-000311.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 129328,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07406476791374,
+    "lon": -76.15953886645534,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07410139,
+          "Longitude": -76.15956005,
+          "NeedsRR": "Yes",
+          "ObjectId": 905,
+          "PropertyAddress": "712 Lemoyne Ave To First Nort",
+          "RR_app_received": 1719964800000,
+          "RR_contact_name": "Donald Dashley",
+          "RR_ext_insp_fail": 1722470400000,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": 1722470400000,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-14-02.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1734912000000,
+          "pc_owner": "Donald Dashley",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07400216,
+          "Longitude": -76.15977495,
+          "NeedsRR": "Yes",
+          "ObjectId": 902,
+          "PropertyAddress": "700 Lemoyne Ave & First North",
+          "RR_app_received": 1698019200000,
+          "RR_contact_name": "Donald Dashley",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1698796800000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1698796800000,
+          "RRisValid": "Yes",
+          "SBL": "003.-14-01.0",
+          "SHAPE": null,
+          "completion_date": 1702857600000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1702944000000,
+          "pc_owner": "DONALD DASHLEY",
+          "valid_until": 1797552000000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07424888,
+          "Longitude": -76.15943285,
+          "NeedsRR": "Yes",
+          "ObjectId": 908,
+          "PropertyAddress": "714 Lemoyne Ave",
+          "RR_app_received": null,
+          "RR_contact_name": "Brenda Giacchi",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-14-03.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1722384000000,
+          "pc_owner": "Brenda Giacchi",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07433578,
+          "Longitude": -76.15936988,
+          "NeedsRR": "Yes",
+          "ObjectId": 911,
+          "PropertyAddress": "718 Lemoyne Ave",
+          "RR_app_received": 1772064000000,
+          "RR_contact_name": "SFR3-030 LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "Yes",
+          "SBL": "003.-14-04.0",
+          "SHAPE": null,
+          "completion_date": 1773792000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1821398400000,
+          "pc_owner": "SFR3-030 LLC",
+          "valid_until": 1868486400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300226,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304037,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077313101,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077313469,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317489,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317490,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317527,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317528,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077320973,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325404,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326852,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326853,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329447,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077330857,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077332830,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077334263,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077334264,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077335163,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336456,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077336457,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 20,
+        "historic": {},
+        "landuse": {},
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-14-020",
+    "published_at": "2026-07-19T02:03:14+00:00",
+    "review_reasons": [],
+    "title": "712 Lemoyne Ave To First Nort"
+  },
+  {
     "address": "700 Lemoyne Ave & First North",
     "ai_analysis": {
       "available": true,
