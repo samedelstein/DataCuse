@@ -1,5 +1,496 @@
 [
   {
+    "address": "718 Lemoyne Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Multiple distinct residential structures are visible in the frame, making it difficult to definitively isolate parcel 003-14-040 without a parcel boundary overlay.",
+        "Foliage and a large evergreen tree block significant portions of the building facades and roofs.",
+        "A parked vehicle partially obstructs the lower street-level view of the properties."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "unclear",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "multifamily",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows multiple multi-story residential structures situated on an elevated, sloped lot with mature trees and a blue sedan parked in the foreground.",
+      "visible_conditions": [
+        "Multiple residential structures are visible on a terraced slope with concrete steps.",
+        "A large evergreen tree significantly obstructs the front facade of the central white building.",
+        "The visible siding and windows on the structures appear intact and in stable condition.",
+        "Roofs are largely obscured by mature tree canopies."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 6 matching records"
+    ],
+    "id": 313,
+    "image": "images/parcel-000313.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 112490,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07431325623553,
+    "lon": -76.15927459139178,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07433578,
+          "Longitude": -76.15936988,
+          "NeedsRR": "Yes",
+          "ObjectId": 911,
+          "PropertyAddress": "718 Lemoyne Ave",
+          "RR_app_received": 1772064000000,
+          "RR_contact_name": "SFR3-030 LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "Yes",
+          "SBL": "003.-14-04.0",
+          "SHAPE": null,
+          "completion_date": 1773792000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1821398400000,
+          "pc_owner": "SFR3-030 LLC",
+          "valid_until": 1868486400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07410139,
+          "Longitude": -76.15956005,
+          "NeedsRR": "Yes",
+          "ObjectId": 905,
+          "PropertyAddress": "712 Lemoyne Ave To First Nort",
+          "RR_app_received": 1719964800000,
+          "RR_contact_name": "Donald Dashley",
+          "RR_ext_insp_fail": 1722470400000,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": 1722470400000,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-14-02.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1734912000000,
+          "pc_owner": "Donald Dashley",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07424888,
+          "Longitude": -76.15943285,
+          "NeedsRR": "Yes",
+          "ObjectId": 908,
+          "PropertyAddress": "714 Lemoyne Ave",
+          "RR_app_received": null,
+          "RR_contact_name": "Brenda Giacchi",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-14-03.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1722384000000,
+          "pc_owner": "Brenda Giacchi",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.074412,
+          "Longitude": -76.15931517,
+          "NeedsRR": "Yes",
+          "ObjectId": 914,
+          "PropertyAddress": "722-24 Lemoyne Ave",
+          "RR_app_received": 1695686400000,
+          "RR_contact_name": "Brian Cogan",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-14-05.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1696982400000,
+          "pc_owner": "Daylin Leyva Sanchez",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07448981,
+          "Longitude": -76.15925707,
+          "NeedsRR": "Yes",
+          "ObjectId": 917,
+          "PropertyAddress": "726 Lemoyne Ave",
+          "RR_app_received": 1779321600000,
+          "RR_contact_name": "Jay Subedi",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-14-06.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1780531200000,
+          "pc_owner": "CNY Karmaa Mgmnt Holdings L",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07465025,
+          "Longitude": -76.15913727,
+          "NeedsRR": "Yes",
+          "ObjectId": 920,
+          "PropertyAddress": "734 Lemoyne Ave",
+          "RR_app_received": 1748390400000,
+          "RR_contact_name": "Trung Van Le",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1750118400000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1750118400000,
+          "RRisValid": "Yes",
+          "SBL": "003.-14-08.0",
+          "SHAPE": null,
+          "completion_date": 1752624000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1752451200000,
+          "pc_owner": "Trung Le",
+          "valid_until": 1847318400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300226,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302746,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303587,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077303588,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304037,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308559,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311810,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077311811,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315045,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317489,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317490,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317491,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317527,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317528,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077320973,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321289,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324883,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325404,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326852,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326853,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 20,
+        "historic": {},
+        "landuse": {},
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-14-040",
+    "published_at": "2026-07-19T04:02:57+00:00",
+    "review_reasons": [],
+    "title": "718 Lemoyne Ave"
+  },
+  {
     "address": "714 Lemoyne Ave",
     "ai_analysis": {
       "available": true,
