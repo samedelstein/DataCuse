@@ -1,5 +1,499 @@
 [
   {
+    "address": "711 Bear St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The text on the door is illegible from this distance, and the dumpster on the far left may belong to an adjacent property."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.11,
+            "width": 0.05,
+            "x": 0.5,
+            "y": 0.57
+          },
+          "confidence": "medium",
+          "label": "Posted signage on door",
+          "reason": "The door has text or notices posted on it, which may indicate a regulatory notice or vacancy, though the text is illegible."
+        },
+        {
+          "bbox": {
+            "height": 0.04,
+            "width": 0.14,
+            "x": 0.24,
+            "y": 0.7
+          },
+          "confidence": "high",
+          "label": "Lawn debris",
+          "reason": "Unidentified items or bags are resting on the front lawn."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Unidentified signs or text posted on the front door of the side wing",
+        "Minor debris on the front lawn"
+      ],
+      "property_type_guess": "multifamily",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential building with light-colored siding and a side wing, showing a mostly intact exterior with some items on the front lawn.",
+      "visible_conditions": [
+        "Light-colored siding appears intact with no major damage visible",
+        "Roof shingles on both sections appear to be in fair condition",
+        "Windows appear intact with shutters on the upper level",
+        "Some items or debris are visible on the front lawn near the fire hydrant",
+        "The front door of the side wing has some signs or text posted on it"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "unclear"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 4 matching records",
+      "Image-only flag: Unidentified signs or text posted on the front door of the side wing",
+      "Image-only flag: Minor debris on the front lawn"
+    ],
+    "id": 325,
+    "image": "images/parcel-000325.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 111779,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07403720599856,
+    "lon": -76.15836496765814,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07402959,
+          "Longitude": -76.15840416,
+          "NeedsRR": "Yes",
+          "ObjectId": 938,
+          "PropertyAddress": "711 Bear St",
+          "RR_app_received": 1745539200000,
+          "RR_contact_name": "Sharif Aden",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-14-17.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1745971200000,
+          "pc_owner": "Sharif Aden",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07427026,
+          "Longitude": -76.15822441,
+          "NeedsRR": "Yes",
+          "ObjectId": 932,
+          "PropertyAddress": "715 Bear St",
+          "RR_app_received": 1774569600000,
+          "RR_contact_name": "Odyssey Properties LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-14-15.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1775174400000,
+          "pc_owner": "Odyssey Properties LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07414993,
+          "Longitude": -76.15831429,
+          "NeedsRR": "Yes",
+          "ObjectId": 935,
+          "PropertyAddress": "713 Bear St",
+          "RR_app_received": null,
+          "RR_contact_name": "Giuseppe Zappala",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-14-16.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1732492800000,
+          "pc_owner": "Giuseppe Zappala",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07391588,
+          "Longitude": -76.15848908,
+          "NeedsRR": "Yes",
+          "ObjectId": 941,
+          "PropertyAddress": "707 Bear St",
+          "RR_app_received": 1762387200000,
+          "RR_contact_name": "Heritage Prop Mgmt LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "Yes",
+          "SBL": "003.-14-18.0",
+          "SHAPE": null,
+          "completion_date": 1771372800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1764028800000,
+          "pc_owner": "Heritage Prop Mgmt LLC",
+          "valid_until": 1866067200000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "garage",
+          "historic": null,
+          "id": 535410242,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "addr:city": "Syracuse",
+            "addr:housenumber": "1400",
+            "addr:postcode": "13208",
+            "addr:state": "NY",
+            "addr:street": "First North Street",
+            "building": "garage",
+            "building:levels": "2",
+            "nysgissam:nysaddresspointid": "ONON147783",
+            "nysgissam:review": "no matching street nearby"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077304037,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077305098,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077307198,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308875,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308876,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315044,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315045,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315417,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077316661,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077316662,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317585,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321289,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077322562,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077323386,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326852,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326853,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077327671,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077332447,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077332448,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "building",
+          "id": 535410242,
+          "label": "building: garage",
+          "tags": {
+            "building": "garage"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 20,
+        "historic": {},
+        "landuse": {},
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-14-170",
+    "published_at": "2026-07-19T16:02:58+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "711 Bear St"
+  },
+  {
     "address": "713 Bear St",
     "ai_analysis": {
       "available": true,
