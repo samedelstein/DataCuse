@@ -1,5 +1,150 @@
 [
   {
+    "address": "500 Second North St & Grant B",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "No structures are visible on the parcel to assess building conditions.",
+        "Exact parcel boundaries are not visible from the street-level view."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "not_visible",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "vacant_lot",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "An open, well-maintained grassy lot or park area with scattered trees and a utility pole in the foreground.",
+      "visible_conditions": [
+        "Open grassy field with scattered trees",
+        "No structures or buildings are visible in the frame",
+        "Grass appears mowed and maintained"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 333,
+    "image": "images/parcel-000333.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 93120,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07542143367724,
+    "lon": -76.1578380325816,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 108167221,
+          "landuse": "cemetery",
+          "name": "First Ward Cemetery",
+          "shop": null,
+          "tags": {
+            "landuse": "cemetery",
+            "leisure": "park",
+            "name": "First Ward Cemetery"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 1189921501,
+          "landuse": "residential",
+          "name": null,
+          "shop": null,
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: cemetery",
+          "id": 108167221,
+          "label": "First Ward Cemetery",
+          "tags": {
+            "landuse": "cemetery",
+            "name": "First Ward Cemetery"
+          },
+          "type": "way"
+        },
+        {
+          "category": "landuse: residential",
+          "id": 1189921501,
+          "label": "landuse: residential",
+          "tags": {
+            "landuse": "residential"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 0,
+        "historic": {},
+        "landuse": {
+          "cemetery": 1,
+          "residential": 1
+        },
+        "named_features": 1,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-15-010",
+    "published_at": "2026-07-20T03:03:02+00:00",
+    "review_reasons": [],
+    "title": "500 Second North St & Grant B"
+  },
+  {
     "address": "736 Lemoyne Ave",
     "ai_analysis": {
       "available": true,
