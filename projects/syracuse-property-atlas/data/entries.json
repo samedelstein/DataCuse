@@ -1,5 +1,197 @@
 [
   {
+    "address": "900-02 Lemoyne Ave & Grant Blvd",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image primarily captures the side profile of the building rather than the front facade, which may obscure some exterior features or entryways."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.07,
+            "width": 0.13,
+            "x": 0.23,
+            "y": 0.63
+          },
+          "confidence": "medium",
+          "label": "foundation clutter and weeds",
+          "reason": "Minor accumulation of weeds and miscellaneous items near the side foundation."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor accumulation of yard clutter and weed growth along the foundation wall."
+      ],
+      "property_type_guess": "multifamily",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A multi-story white residential building with vinyl siding and a flat roof, viewed from the side yard and driveway area.",
+      "visible_conditions": [
+        "White vinyl siding appears mostly intact with minor weathering",
+        "Low-slope roofline is partially visible and appears in fair condition",
+        "Some weeds and minor clutter are present along the foundation on the left side",
+        "A blue SUV is parked in the driveway area"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 4 matching records",
+      "Image-only flag: Minor accumulation of yard clutter and weed growth along the foundation wall."
+    ],
+    "id": 334,
+    "image": "images/parcel-000334.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 79862,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07637800214934,
+    "lon": -76.15799396331792,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07636641,
+          "Longitude": -76.15801779,
+          "NeedsRR": "Yes",
+          "ObjectId": 944,
+          "PropertyAddress": "900-02 Lemoyne Ave & Grant Blvd",
+          "RR_app_received": 1768348800000,
+          "RR_contact_name": "Ngoc Nguyen",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1770076800000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1770076800000,
+          "RRisValid": "Yes",
+          "SBL": "003.-16-01.0",
+          "SHAPE": null,
+          "completion_date": 1771372800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1769126400000,
+          "pc_owner": "Ngoc Nguyen",
+          "valid_until": 1866067200000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07645785,
+          "Longitude": -76.15794944,
+          "NeedsRR": "Yes",
+          "ObjectId": 947,
+          "PropertyAddress": "904 Lemoyne Ave",
+          "RR_app_received": 1738627200000,
+          "RR_contact_name": "Noel Farone",
+          "RR_ext_insp_fail": 1741910400000,
+          "RR_ext_insp_pass": 1772496000000,
+          "RR_int_insp_fail": 1741910400000,
+          "RR_int_insp_pass": 1772496000000,
+          "RRisValid": "No",
+          "SBL": "003.-16-02.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1772582400000,
+          "pc_owner": "Fitzrone Properties LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07632921,
+          "Longitude": -76.15768709,
+          "NeedsRR": "Yes",
+          "ObjectId": 977,
+          "PropertyAddress": "2916-18 Grant Blvd",
+          "RR_app_received": 1712188800000,
+          "RR_contact_name": "Akkad Properties, LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1775692800000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1775692800000,
+          "RRisValid": "Yes",
+          "SBL": "003.-16-34.0",
+          "SHAPE": null,
+          "completion_date": 1776384000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1775779200000,
+          "pc_owner": "Akkad Properties, LLC",
+          "valid_until": 1871078400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07634752,
+          "Longitude": -76.15784198,
+          "NeedsRR": "Yes",
+          "ObjectId": 979,
+          "PropertyAddress": "2920 Grant Blvd",
+          "RR_app_received": 1747612800000,
+          "RR_contact_name": "Steven Loveland",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1749772800000,
+          "RR_int_insp_fail": 1749772800000,
+          "RR_int_insp_pass": 1751328000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-16-35.0",
+          "SHAPE": null,
+          "completion_date": 1752019200000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1751328000000,
+          "pc_owner": "Steven Loveland",
+          "valid_until": 1846713600000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-16-010",
+    "published_at": "2026-07-20T04:03:13+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "900-02 Lemoyne Ave & Grant Blvd"
+  },
+  {
     "address": "500 Second North St & Grant B",
     "ai_analysis": {
       "available": true,
