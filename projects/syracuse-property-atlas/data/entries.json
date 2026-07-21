@@ -3,69 +3,38 @@
     "address": "934 Lemoyne Ave",
     "ai_analysis": {
       "available": true,
-      "caveats": [],
+      "caveats": [
+        "The view of the primary structure is partially obstructed by a utility pole and mature trees in the foreground.",
+        "Multiple residential structures are visible in the frame, which may span across parcel boundaries."
+      ],
       "condition_scores": {
-        "porch_or_entry": "unclear",
-        "roof": "good",
-        "siding_or_facade": "fair",
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "good",
         "trash_debris": "none_visible",
         "vegetation_overgrowth": "none_visible",
-        "windows_doors": "unclear",
+        "windows_doors": "good",
         "yard_or_lot": "good"
       },
-      "confidence": "unknown",
-      "fallback_failures": [
-        {
-          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
-          "provider": "gemini:gemini-3.5-flash"
-        },
-        {
-          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
-          "provider": "gemini:gemini-2.5-flash"
-        }
-      ],
-      "fallback_from": [
-        "gemini:gemini-3.5-flash",
-        "gemini:gemini-2.5-flash"
-      ],
-      "image_annotations": [
-        {
-          "bbox": {
-            "height": 0.952,
-            "width": 0.53,
-            "x": 0.154,
-            "y": 0.726
-          },
-          "confidence": "high",
-          "label": "vacancy sign",
-          "reason": "a vacant house sign is visible on the lawn of the home"
-        },
-        "needs_human_review: "
-      ],
+      "confidence": "medium",
+      "image_annotations": [],
       "needs_human_review": false,
-      "possible_unrecorded_issues": [
-        "the presence of a vacancy sign suggests potential unreported issues or the home may be empty",
-        "there could be other condition-related issues that are not visible from this angle, such as interior damage, hidden structural issues, or neglected maintenance"
-      ],
-      "property_type_guess": "two-family",
-      "provider": "ollama:llava:latest",
-      "summary": "The image depicts a two-family home on a residential street. The yard is clear with bare trees, indicating that it might be late fall or winter.",
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "multifamily",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A street-level view shows a two-story residential structure with light-colored siding and a front porch, partially obscured by mature trees and a utility pole.",
       "visible_conditions": [
-        "the roof appears to be in good condition with no visible damage",
-        "siding or facade seems to be fair, showing some wear but without significant signs of rot or damage",
-        "windows and doors are not clearly visible in this angle, so their condition is unknown",
-        "the porch is partially obscured by the trees, making it difficult to evaluate its condition",
-        "there is no visible trash or overgrown vegetation",
-        "no boarded windows or doors are seen from this angle",
-        "fire or structural damage is not apparent in this view",
-        "vacancy signs or active construction are not noticeable in the image"
+        "Two-story residential building with light green siding and a double-decker front porch",
+        "An adjacent two-story yellow residential building with a paved driveway is visible on the right",
+        "Mature trees and a utility pole partially obstruct the view of the properties",
+        "Yards appear grass-covered and generally clear of major debris"
       ],
       "visible_flags": {
         "active_construction_visible": "no",
         "boarded_windows_or_doors": "no",
         "fire_damage_visible": "no",
         "structural_damage_visible": "no",
-        "vacancy_signs_visible": "yes"
+        "vacancy_signs_visible": "no"
       }
     },
     "census_tract": {
@@ -88,9 +57,7 @@
       "tract_lookup": "Census Geocoder"
     },
     "flags": [
-      "Rental registry: 3 matching records",
-      "Image-only flag: the presence of a vacancy sign suggests potential unreported issues or the home may be empty",
-      "Image-only flag: there could be other condition-related issues that are not visible from this angle, such as interior damage, hidden structural issues, or neglected maintenance"
+      "Rental registry: 3 matching records"
     ],
     "id": 343,
     "image": "images/parcel-000343.jpg",
@@ -452,11 +419,8 @@
       }
     },
     "parcel_key": "003-16-100",
-    "published_at": "2026-07-21T16:05:40+00:00",
-    "review_reasons": [
-      "Possible image-only issue",
-      "vacancy signs visible"
-    ],
+    "published_at": "2026-07-21T18:51:13+00:00",
+    "review_reasons": [],
     "title": "934 Lemoyne Ave"
   },
   {
