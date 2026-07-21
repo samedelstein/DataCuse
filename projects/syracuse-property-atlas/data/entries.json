@@ -1,5 +1,153 @@
 [
   {
+    "address": "920 Lemoyne Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The front facade of the primary structure is significantly obscured by a large mature tree in the foreground, limiting a full assessment of the windows, doors, and siding."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.15,
+            "width": 0.27,
+            "x": 0.25,
+            "y": 0.65
+          },
+          "confidence": "high",
+          "label": "yard waste pile",
+          "reason": "Large pile of discarded branches and brush on the front lawn."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Accumulation of yard waste/brush pile on the front lawn"
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential property partially obscured by a large mature tree, featuring a well-maintained lawn with a large pile of cut brush and yard waste near the curb.",
+      "visible_conditions": [
+        "Large pile of cut tree branches and yard debris on the front lawn",
+        "A blue recycling bin is visible near the driveway on the left",
+        "The main facade of the central structure is heavily obscured by a large tree",
+        "Siding on visible portions of the houses appears intact"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 2 matching records",
+      "Image-only flag: Accumulation of yard waste/brush pile on the front lawn"
+    ],
+    "id": 339,
+    "image": "images/parcel-000339.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 73258,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07671263584762,
+    "lon": -76.15741779405128,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07661559,
+          "Longitude": -76.15759895,
+          "NeedsRR": "Yes",
+          "ObjectId": 950,
+          "PropertyAddress": "914-16 Lemoyne Ave",
+          "RR_app_received": 1747612800000,
+          "RR_contact_name": "William Cyr",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-16-05.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1747612800000,
+          "pc_owner": "William Cyr",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07661764,
+          "Longitude": -76.15698295,
+          "NeedsRR": "Yes",
+          "ObjectId": 971,
+          "PropertyAddress": "105 Murray Ave",
+          "RR_app_received": 1744243200000,
+          "RR_contact_name": "MD Sahel Rana, MD Sahel Rana",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1761264000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1761264000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-16-27.0",
+          "SHAPE": null,
+          "completion_date": 1761782400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1761264000000,
+          "pc_owner": "MD Rana",
+          "valid_until": 1856476800000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-16-060",
+    "published_at": "2026-07-21T12:06:57+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "920 Lemoyne Ave"
+  },
+  {
     "address": "914-16 Lemoyne Ave",
     "ai_analysis": {
       "available": true,
