@@ -1,5 +1,159 @@
 [
   {
+    "address": "942 Lemoyne Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Significant tree canopy obstructs a clear view of the roof and upper portions of the facade.",
+        "Multiple structures are visible in the background, making it difficult to definitively isolate the primary structure associated with the parcel from this angle."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "unclear",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A street-level view of a residential property partially obscured by mature trees, featuring a light-colored siding exterior and a paved driveway.",
+      "visible_conditions": [
+        "Light-colored siding appears intact from this distance",
+        "Front door and windows are visible and appear unbroken",
+        "Driveway shows some surface wear",
+        "Mature trees heavily shade the front yard and obstruct full view of the structures"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 3 matching records"
+    ],
+    "id": 344,
+    "image": "images/parcel-000344.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 117455,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07718242586036,
+    "lon": -76.15703313034726,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07721525,
+          "Longitude": -76.15715075,
+          "NeedsRR": "Yes",
+          "ObjectId": 954,
+          "PropertyAddress": "942 Lemoyne Ave",
+          "RR_app_received": 1772409600000,
+          "RR_contact_name": "Michael Howell",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-16-11.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1772409600000,
+          "pc_owner": "Michael Howell",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07736444,
+          "Longitude": -76.15703924,
+          "NeedsRR": "Yes",
+          "ObjectId": 956,
+          "PropertyAddress": "946 Lemoyne Ave",
+          "RR_app_received": 1737676800000,
+          "RR_contact_name": "Vadim Sedletsky",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1742342400000,
+          "RR_int_insp_fail": 1742342400000,
+          "RR_int_insp_pass": 1743638400000,
+          "RRisValid": "Yes",
+          "SBL": "003.-16-12.0",
+          "SHAPE": null,
+          "completion_date": 1754956800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1743724800000,
+          "pc_owner": "Vadim Sedletsky",
+          "valid_until": 1849651200000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.0771001,
+          "Longitude": -76.15662234,
+          "NeedsRR": "Yes",
+          "ObjectId": 965,
+          "PropertyAddress": "115 Murray Ave",
+          "RR_app_received": 1740528000000,
+          "RR_contact_name": "Resstored Holdings LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1743984000000,
+          "RR_int_insp_fail": 1743984000000,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-16-22.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1765929600000,
+          "pc_owner": "Resstored Holdings LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-16-110",
+    "published_at": "2026-07-21T19:03:58+00:00",
+    "review_reasons": [],
+    "title": "942 Lemoyne Ave"
+  },
+  {
     "address": "934 Lemoyne Ave",
     "ai_analysis": {
       "available": true,
