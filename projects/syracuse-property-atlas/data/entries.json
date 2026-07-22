@@ -1,5 +1,466 @@
 [
   {
+    "address": "946 Lemoyne Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The main structures are almost entirely obscured by a dense line of tall evergreen trees and hedges.",
+        "It is difficult to definitively identify which structure corresponds to the target address.",
+        "Ground-level features like entryways, foundations, and lower windows are completely blocked from view."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "unclear",
+        "siding_or_facade": "unclear",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "unclear",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "low",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.08,
+            "width": 0.18,
+            "x": 0.2,
+            "y": 0.88
+          },
+          "confidence": "medium",
+          "label": "Debris on curb",
+          "reason": "Discarded material or debris lying near the curb in the foreground."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The property is heavily obscured from street view by a dense row of tall evergreen hedges and a chain-link fence, leaving only the upper stories of background residential structures partially visible.",
+      "visible_conditions": [
+        "A dense row of tall evergreen hedges and a chain-link fence block the ground-level view of the structures.",
+        "Upper portions of a yellow two-story house on the left and a green house in the center are partially visible behind the foliage.",
+        "A small piece of debris or discarded material is visible on the curb in the foreground."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 4 matching records",
+      "Needs human review"
+    ],
+    "id": 345,
+    "image": "images/parcel-000345.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 121890,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.077355056844894,
+    "lon": -76.15694434117675,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07736444,
+          "Longitude": -76.15703924,
+          "NeedsRR": "Yes",
+          "ObjectId": 956,
+          "PropertyAddress": "946 Lemoyne Ave",
+          "RR_app_received": 1737676800000,
+          "RR_contact_name": "Vadim Sedletsky",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1742342400000,
+          "RR_int_insp_fail": 1742342400000,
+          "RR_int_insp_pass": 1743638400000,
+          "RRisValid": "Yes",
+          "SBL": "003.-16-12.0",
+          "SHAPE": null,
+          "completion_date": 1754956800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1743724800000,
+          "pc_owner": "Vadim Sedletsky",
+          "valid_until": 1849651200000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07721525,
+          "Longitude": -76.15715075,
+          "NeedsRR": "Yes",
+          "ObjectId": 954,
+          "PropertyAddress": "942 Lemoyne Ave",
+          "RR_app_received": 1772409600000,
+          "RR_contact_name": "Michael Howell",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-16-11.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1772409600000,
+          "pc_owner": "Michael Howell",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07760514,
+          "Longitude": -76.15692976,
+          "NeedsRR": "Yes",
+          "ObjectId": 959,
+          "PropertyAddress": "954 Lemoyne Ave",
+          "RR_app_received": null,
+          "RR_contact_name": "Kayla Jones",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-16-14.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1729036800000,
+          "pc_owner": "Kayla Jones",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.0771001,
+          "Longitude": -76.15662234,
+          "NeedsRR": "Yes",
+          "ObjectId": 965,
+          "PropertyAddress": "115 Murray Ave",
+          "RR_app_received": 1740528000000,
+          "RR_contact_name": "Resstored Holdings LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1743984000000,
+          "RR_int_insp_fail": 1743984000000,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-16-22.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1765929600000,
+          "pc_owner": "Resstored Holdings LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077301585,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077301618,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302858,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077306012,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077306013,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308916,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308917,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310396,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310397,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314487,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314488,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315924,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319145,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325452,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077325453,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077326961,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077327023,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077327024,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077328700,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329450,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 20,
+        "historic": {},
+        "landuse": {},
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-16-120",
+    "published_at": "2026-07-22T02:10:59+00:00",
+    "review_reasons": [
+      "AI requested human review"
+    ],
+    "title": "946 Lemoyne Ave"
+  },
+  {
     "address": "942 Lemoyne Ave",
     "ai_analysis": {
       "available": true,
