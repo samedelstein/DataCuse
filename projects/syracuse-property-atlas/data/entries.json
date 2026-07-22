@@ -1,5 +1,175 @@
 [
   {
+    "address": "958 Lemoyne Ave & Burdick Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.15,
+            "width": 1.0,
+            "x": 0.0,
+            "y": 0.75
+          },
+          "confidence": "high",
+          "label": "Litter on sidewalk/street",
+          "reason": "Visible accumulation of debris on the public right-of-way adjacent to the property."
+        },
+        {
+          "bbox": {
+            "height": 0.07,
+            "width": 0.9,
+            "x": 0.0,
+            "y": 0.6
+          },
+          "confidence": "medium",
+          "label": "Foundation discoloration",
+          "reason": "The light-colored foundation shows areas of visible grime or discoloration."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Visible litter on the sidewalk and street in front of the property."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image displays a two-story residential structure with blue siding and white trim, featuring stacked porches on the right side, and some visible litter on the adjacent sidewalk and street.",
+      "visible_conditions": [
+        "The building is a two-story structure with a gabled roof.",
+        "The exterior siding appears to be blue, possibly vinyl or aluminum, with white trim around windows and doors.",
+        "There are two stacked porches on the right side of the building, each with white railings.",
+        "Multiple windows are visible, some with air conditioning units.",
+        "The foundation is light-colored and shows some discoloration or grime.",
+        "The yard in front of the property has grass that appears somewhat maintained.",
+        "Several trash bins are visible near the front of the property.",
+        "Litter is visible on the sidewalk and street directly in front of the property."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 2 matching records",
+      "Image-only flag: Visible litter on the sidewalk and street in front of the property."
+    ],
+    "id": 348,
+    "image": "images/parcel-000348.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 76539,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07774073228562,
+    "lon": -76.15689733418064,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07760514,
+          "Longitude": -76.15692976,
+          "NeedsRR": "Yes",
+          "ObjectId": 959,
+          "PropertyAddress": "954 Lemoyne Ave",
+          "RR_app_received": null,
+          "RR_contact_name": "Kayla Jones",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-16-14.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1729036800000,
+          "pc_owner": "Kayla Jones",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07792796,
+          "Longitude": -76.15670984,
+          "NeedsRR": "Yes",
+          "ObjectId": 982,
+          "PropertyAddress": "1000-02 Lemoyne Ave & Burdick Ave",
+          "RR_app_received": null,
+          "RR_contact_name": "JAK Rentals LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "Yes",
+          "SBL": "003.-17-01.0",
+          "SHAPE": null,
+          "completion_date": 1708041600000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1704412800000,
+          "pc_owner": "Lede-Commerce LLC",
+          "valid_until": 1802736000000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-16-150",
+    "published_at": "2026-07-22T11:03:13+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "958 Lemoyne Ave & Burdick Ave"
+  },
+  {
     "address": "954 Lemoyne Ave",
     "ai_analysis": {
       "available": true,
