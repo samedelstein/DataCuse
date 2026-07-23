@@ -1,5 +1,153 @@
 [
   {
+    "address": "117 Murray Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The right side of the building's facade is partially obscured by dense foliage, and a parked vehicle limits the view of the lower-left ground level."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.39,
+            "width": 0.36,
+            "x": 0.51,
+            "y": 0.33
+          },
+          "confidence": "high",
+          "label": "Encroaching vegetation",
+          "reason": "Large tree/shrub is growing in close proximity to the right side of the house, potentially contacting the siding and roof."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Large tree/shrub on the right side is encroaching closely on the house facade and roofline, which could cause moisture retention or physical wear over time."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential building with a mix of siding and stone-veneer facade, featuring a red pickup truck parked in the driveway and a large tree partially obscuring the right side.",
+      "visible_conditions": [
+        "The upper story features light-colored horizontal siding that appears intact but shows minor weathering.",
+        "The lower story has a stone or brick veneer facade.",
+        "A large tree/shrub on the right side of the property is growing very close to the structure, partially obscuring the facade.",
+        "The front yard consists of grass and a paved driveway area where a vehicle is parked."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 2 matching records",
+      "Image-only flag: Large tree/shrub on the right side is encroaching closely on the house facade and roofline, which could cause moisture retention or physical wear over time."
+    ],
+    "id": 353,
+    "image": "images/parcel-000353.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 89394,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07723231497069,
+    "lon": -76.15655395342559,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07739902,
+          "Longitude": -76.15641823,
+          "NeedsRR": "Yes",
+          "ObjectId": 962,
+          "PropertyAddress": "405-07 Burdick Ave",
+          "RR_app_received": 1667520000000,
+          "RR_contact_name": "Iroro Onoriode Idogun",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1669161600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1669161600000,
+          "RRisValid": "No",
+          "SBL": "003.-16-19.0",
+          "SHAPE": null,
+          "completion_date": 1670976000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1669680000000,
+          "pc_owner": "Winro Group LLC",
+          "valid_until": 1765670400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.0771001,
+          "Longitude": -76.15662234,
+          "NeedsRR": "Yes",
+          "ObjectId": 965,
+          "PropertyAddress": "115 Murray Ave",
+          "RR_app_received": 1740528000000,
+          "RR_contact_name": "Resstored Holdings LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1743984000000,
+          "RR_int_insp_fail": 1743984000000,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-16-22.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1765929600000,
+          "pc_owner": "Resstored Holdings LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-16-210",
+    "published_at": "2026-07-23T11:03:10+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "117 Murray Ave"
+  },
+  {
     "address": "401 Burdick Ave & Murray Ave",
     "ai_analysis": {
       "available": true,
