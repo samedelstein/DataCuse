@@ -1,5 +1,146 @@
 [
   {
+    "address": "405-07 Burdick Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The lower right portion of the property view is partially obstructed by a foreground vehicle.",
+        "Analysis is limited to the front exterior visible from the street-level perspective."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.22,
+            "width": 0.35,
+            "x": 0.15,
+            "y": 0.66
+          },
+          "confidence": "medium",
+          "label": "Driveway cracking and weeds",
+          "reason": "The paved driveway surface shows visible cracks and vegetative growth."
+        },
+        {
+          "bbox": {
+            "height": 0.08,
+            "width": 0.2,
+            "x": 0.52,
+            "y": 0.65
+          },
+          "confidence": "high",
+          "label": "Trash bins on porch",
+          "reason": "Multiple waste and recycling bins are stored directly against the front porch railing."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor cracking and weed growth in the driveway surface.",
+        "Multiple trash receptacles stored prominently on the front porch structure."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The property is a two-story residential building with grey siding, a front porch, and a paved driveway showing minor wear and weed growth.",
+      "visible_conditions": [
+        "Grey siding appears intact with no major damage visible.",
+        "Front porch has wooden railings and steps that appear functional.",
+        "Multiple trash and recycling bins are stored along the front porch area.",
+        "The paved driveway shows cracking and some weed growth.",
+        "Windows appear intact, with at least one window air conditioning unit installed."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Image-only flag: Minor cracking and weed growth in the driveway surface.",
+      "Image-only flag: Multiple trash receptacles stored prominently on the front porch structure."
+    ],
+    "id": 351,
+    "image": "images/parcel-000351.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 94054,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07743156554704,
+    "lon": -76.15638386595529,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07739902,
+          "Longitude": -76.15641823,
+          "NeedsRR": "Yes",
+          "ObjectId": 962,
+          "PropertyAddress": "405-07 Burdick Ave",
+          "RR_app_received": 1667520000000,
+          "RR_contact_name": "Iroro Onoriode Idogun",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1669161600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1669161600000,
+          "RRisValid": "No",
+          "SBL": "003.-16-19.0",
+          "SHAPE": null,
+          "completion_date": 1670976000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1669680000000,
+          "pc_owner": "Winro Group LLC",
+          "valid_until": 1765670400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-16-190",
+    "published_at": "2026-07-23T01:03:13+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "405-07 Burdick Ave"
+  },
+  {
     "address": "411-13 Burdick Ave",
     "ai_analysis": {
       "available": true,
