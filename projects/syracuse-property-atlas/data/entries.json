@@ -1,5 +1,175 @@
 [
   {
+    "address": "411-13 Burdick Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The right side of the property is heavily obscured by dense trees and foliage, limiting full visibility of the lot."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.25,
+            "width": 0.26,
+            "x": 0.01,
+            "y": 0.38
+          },
+          "confidence": "high",
+          "label": "vine growth on facade",
+          "reason": "Heavy vegetation climbing directly on the exterior siding, which can lead to structural or surface damage."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Significant vine growth on the siding which may cause moisture retention or facade degradation over time."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential building with white siding, featuring prominent vine growth on the front facade and a paved driveway.",
+      "visible_conditions": [
+        "Heavy vine growth climbing the front left facade of the building",
+        "Paved driveway with a parked vehicle",
+        "Chain-link fencing along the front yard boundary",
+        "Window air conditioning unit installed on the first floor"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 3 matching records",
+      "Image-only flag: Significant vine growth on the siding which may cause moisture retention or facade degradation over time."
+    ],
+    "id": 350,
+    "image": "images/parcel-000350.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 110664,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07748733792855,
+    "lon": -76.15661850743453,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07736444,
+          "Longitude": -76.15703924,
+          "NeedsRR": "Yes",
+          "ObjectId": 956,
+          "PropertyAddress": "946 Lemoyne Ave",
+          "RR_app_received": 1737676800000,
+          "RR_contact_name": "Vadim Sedletsky",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1742342400000,
+          "RR_int_insp_fail": 1742342400000,
+          "RR_int_insp_pass": 1743638400000,
+          "RRisValid": "Yes",
+          "SBL": "003.-16-12.0",
+          "SHAPE": null,
+          "completion_date": 1754956800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1743724800000,
+          "pc_owner": "Vadim Sedletsky",
+          "valid_until": 1849651200000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07760514,
+          "Longitude": -76.15692976,
+          "NeedsRR": "Yes",
+          "ObjectId": 959,
+          "PropertyAddress": "954 Lemoyne Ave",
+          "RR_app_received": null,
+          "RR_contact_name": "Kayla Jones",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-16-14.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1729036800000,
+          "pc_owner": "Kayla Jones",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07739902,
+          "Longitude": -76.15641823,
+          "NeedsRR": "Yes",
+          "ObjectId": 962,
+          "PropertyAddress": "405-07 Burdick Ave",
+          "RR_app_received": 1667520000000,
+          "RR_contact_name": "Iroro Onoriode Idogun",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1669161600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1669161600000,
+          "RRisValid": "No",
+          "SBL": "003.-16-19.0",
+          "SHAPE": null,
+          "completion_date": 1670976000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1669680000000,
+          "pc_owner": "Winro Group LLC",
+          "valid_until": 1765670400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-16-181",
+    "published_at": "2026-07-23T00:12:33+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "411-13 Burdick Ave"
+  },
+  {
     "address": "417 Burdick Ave",
     "ai_analysis": {
       "available": true,
