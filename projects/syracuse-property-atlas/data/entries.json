@@ -1,5 +1,441 @@
 [
   {
+    "address": "401 Burdick Ave & Murray Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view of the right side of the property is partially obstructed by a signpost.",
+        "The image provides a street-level exterior view, limiting full assessment of all property conditions."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.1,
+            "width": 0.7,
+            "x": 0.0,
+            "y": 0.59
+          },
+          "confidence": "medium",
+          "label": "Chain-link fence wear",
+          "reason": "The chain-link fence appears to have some minor wear or slight bending in sections."
+        },
+        {
+          "bbox": {
+            "height": 0.15,
+            "width": 0.09,
+            "x": 0.17,
+            "y": 0.58
+          },
+          "confidence": "high",
+          "label": "Trash bin",
+          "reason": "A black trash bin is visible in the front yard area."
+        },
+        {
+          "bbox": {
+            "height": 0.08,
+            "width": 0.1,
+            "x": 0.35,
+            "y": 0.61
+          },
+          "confidence": "medium",
+          "label": "Porch items",
+          "reason": "Minor items are visible on the left porch, which could be considered minor clutter."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "The chain-link fence appears to show some minor wear or slight bending in sections.",
+        "Minor items are visible on the left porch, which could be considered minor clutter.",
+        "A trash bin is visible in the front yard area."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image displays a two-story residential structure with light-colored siding and a dark roof, fronted by a chain-link fence.",
+      "visible_conditions": [
+        "The structure features light-colored horizontal siding.",
+        "The roof appears to be dark-colored shingles.",
+        "Multiple windows are visible, including some on the upper and lower levels.",
+        "There is a small porch or entry area on the left side with white railings.",
+        "A chain-link fence runs along the front of the property.",
+        "The front yard consists of grass, which appears somewhat maintained.",
+        "A black trash bin is visible near the driveway on the left side of the property.",
+        "Some items are visible on the left porch area."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Image-only flag: The chain-link fence appears to show some minor wear or slight bending in sections.",
+      "Image-only flag: Minor items are visible on the left porch, which could be considered minor clutter.",
+      "Image-only flag: A trash bin is visible in the front yard area."
+    ],
+    "id": 352,
+    "image": "images/parcel-000352.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 90835,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.077373634866674,
+    "lon": -76.1562393766628,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07739902,
+          "Longitude": -76.15641823,
+          "NeedsRR": "Yes",
+          "ObjectId": 962,
+          "PropertyAddress": "405-07 Burdick Ave",
+          "RR_app_received": 1667520000000,
+          "RR_contact_name": "Iroro Onoriode Idogun",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1669161600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1669161600000,
+          "RRisValid": "No",
+          "SBL": "003.-16-19.0",
+          "SHAPE": null,
+          "completion_date": 1670976000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1669680000000,
+          "pc_owner": "Winro Group LLC",
+          "valid_until": 1765670400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077301585,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077301618,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302858,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308916,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077308917,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077310396,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077313243,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314130,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314487,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314488,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077314692,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315924,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317886,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077318404,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077318803,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077318881,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319145,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077319269,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321099,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077322082,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 20,
+        "historic": {},
+        "landuse": {},
+        "named_features": 0,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-16-200",
+    "published_at": "2026-07-23T10:21:37+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "401 Burdick Ave & Murray Ave"
+  },
+  {
     "address": "405-07 Burdick Ave",
     "ai_analysis": {
       "available": true,
