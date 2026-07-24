@@ -1,5 +1,158 @@
 [
   {
+    "address": "115 Murray Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view is from the street and only shows the front facade; side and rear conditions are not visible."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential building with light-colored siding and a small front entry awning, showing generally fair exterior conditions.",
+      "visible_conditions": [
+        "Light-colored siding appears intact with minor weathering",
+        "Asphalt shingle roof appears in fair condition",
+        "Windows and front door appear intact",
+        "Front yard is mostly clear grass"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 3 matching records"
+    ],
+    "id": 354,
+    "image": "images/parcel-000354.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 90713,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0771175753149,
+    "lon": -76.15661802565405,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.0771001,
+          "Longitude": -76.15662234,
+          "NeedsRR": "Yes",
+          "ObjectId": 965,
+          "PropertyAddress": "115 Murray Ave",
+          "RR_app_received": 1740528000000,
+          "RR_contact_name": "Resstored Holdings LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1743984000000,
+          "RR_int_insp_fail": 1743984000000,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-16-22.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1765929600000,
+          "pc_owner": "Resstored Holdings LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07739902,
+          "Longitude": -76.15641823,
+          "NeedsRR": "Yes",
+          "ObjectId": 962,
+          "PropertyAddress": "405-07 Burdick Ave",
+          "RR_app_received": 1667520000000,
+          "RR_contact_name": "Iroro Onoriode Idogun",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1669161600000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1669161600000,
+          "RRisValid": "No",
+          "SBL": "003.-16-19.0",
+          "SHAPE": null,
+          "completion_date": 1670976000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1669680000000,
+          "pc_owner": "Winro Group LLC",
+          "valid_until": 1765670400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07681134,
+          "Longitude": -76.15683817,
+          "NeedsRR": "Yes",
+          "ObjectId": 968,
+          "PropertyAddress": "109 Murray Ave",
+          "RR_app_received": 1737676800000,
+          "RR_contact_name": "RTEK Properties LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-16-25.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1739491200000,
+          "pc_owner": "RTEK Properties LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-16-220",
+    "published_at": "2026-07-24T10:31:52+00:00",
+    "review_reasons": [],
+    "title": "115 Murray Ave"
+  },
+  {
     "address": "117 Murray Ave",
     "ai_analysis": {
       "available": true,
