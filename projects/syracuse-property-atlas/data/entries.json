@@ -1,5 +1,154 @@
 [
   {
+    "address": "113 Murray Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The lower portion of the front facade is partially obscured by overgrown vegetation.",
+        "The image is taken from across the street, limiting close inspection of the siding and window frames."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.2,
+            "width": 0.39,
+            "x": 0.11,
+            "y": 0.57
+          },
+          "confidence": "high",
+          "label": "Overgrown vegetation",
+          "reason": "Uncontrolled bushes and weeds obscuring the lower front facade of the property."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Overgrown foundation vegetation encroaching on the front porch area."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A residential property with light-colored siding, an enclosed front porch, and overgrown foundation vegetation.",
+      "visible_conditions": [
+        "Enclosed front porch with curtains in the windows",
+        "Overgrown bushes and weeds along the front foundation of the house",
+        "Light-colored siding appears intact with minor weathering",
+        "Gabled roof appears structurally intact from the street view"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 2 matching records",
+      "Image-only flag: Overgrown foundation vegetation encroaching on the front porch area."
+    ],
+    "id": 355,
+    "image": "images/parcel-000355.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 88859,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.077005906335415,
+    "lon": -76.15664901592247,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.0771001,
+          "Longitude": -76.15662234,
+          "NeedsRR": "Yes",
+          "ObjectId": 965,
+          "PropertyAddress": "115 Murray Ave",
+          "RR_app_received": 1740528000000,
+          "RR_contact_name": "Resstored Holdings LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1743984000000,
+          "RR_int_insp_fail": 1743984000000,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-16-22.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1765929600000,
+          "pc_owner": "Resstored Holdings LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07681134,
+          "Longitude": -76.15683817,
+          "NeedsRR": "Yes",
+          "ObjectId": 968,
+          "PropertyAddress": "109 Murray Ave",
+          "RR_app_received": 1737676800000,
+          "RR_contact_name": "RTEK Properties LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-16-25.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1739491200000,
+          "pc_owner": "RTEK Properties LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-16-230",
+    "published_at": "2026-07-27T09:34:10+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "113 Murray Ave"
+  },
+  {
     "address": "115 Murray Ave",
     "ai_analysis": {
       "available": true,
