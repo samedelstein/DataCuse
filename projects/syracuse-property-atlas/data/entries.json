@@ -1,5 +1,187 @@
 [
   {
+    "address": "101 Murray Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "image is clear and taken during the day; no visible obstructions or issues"
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.722,
+            "width": 0.461,
+            "x": 0.376,
+            "y": 0.598
+          },
+          "confidence": "high",
+          "label": "boarded windows",
+          "reason": "There are visible covered windows on the building."
+        },
+        {
+          "bbox": {
+            "height": 0.722,
+            "width": 0.461,
+            "x": 0.376,
+            "y": 0.598
+          },
+          "confidence": "low",
+          "label": "vacancy signs",
+          "reason": "There are no visible signs indicating vacancy or rentals."
+        },
+        {
+          "bbox": {
+            "height": 0.722,
+            "width": 0.461,
+            "x": 0.376,
+            "y": 0.598
+          },
+          "confidence": "low",
+          "label": "active construction",
+          "reason": "There are no visible signs of active construction."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "cautious image-only flags not already reflected in known_data"
+      ],
+      "property_type_guess": "single-family",
+      "provider": "ollama:llava:latest",
+      "summary": "The exterior of the property at 101 Murray Ave appears to be in good condition. The image shows a clear day and there are no visible issues that can be confidently reported.",
+      "visible_conditions": [
+        "specific exterior observations visible in the image"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "yes",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 2 matching records",
+      "Image-only flag: cautious image-only flags not already reflected in known_data"
+    ],
+    "id": 361,
+    "image": "images/parcel-000361.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 86143,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07641090886676,
+    "lon": -76.1571105829141,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07661764,
+          "Longitude": -76.15698295,
+          "NeedsRR": "Yes",
+          "ObjectId": 971,
+          "PropertyAddress": "105 Murray Ave",
+          "RR_app_received": 1744243200000,
+          "RR_contact_name": "MD Sahel Rana, MD Sahel Rana",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1761264000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1761264000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-16-27.0",
+          "SHAPE": null,
+          "completion_date": 1761782400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1761264000000,
+          "pc_owner": "MD Rana",
+          "valid_until": 1856476800000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07621419,
+          "Longitude": -76.157291,
+          "NeedsRR": "Yes",
+          "ObjectId": 974,
+          "PropertyAddress": "2904-06 Grant Blvd",
+          "RR_app_received": 1720569600000,
+          "RR_contact_name": "Plodkowski&Tavolacci Equities",
+          "RR_ext_insp_fail": 1741564800000,
+          "RR_ext_insp_pass": 1762300800000,
+          "RR_int_insp_fail": 1741564800000,
+          "RR_int_insp_pass": 1762300800000,
+          "RRisValid": "Yes",
+          "SBL": "003.-16-31.0",
+          "SHAPE": null,
+          "completion_date": 1762992000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1762387200000,
+          "pc_owner": "Plodkowski&Tavolacci Equities",
+          "valid_until": 1857686400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-16-290",
+    "published_at": "2026-07-28T12:06:51+00:00",
+    "review_reasons": [
+      "Possible image-only issue",
+      "boarded windows or doors"
+    ],
+    "title": "101 Murray Ave"
+  },
+  {
     "address": "103 Murray Ave",
     "ai_analysis": {
       "available": true,
