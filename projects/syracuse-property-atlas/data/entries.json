@@ -1,5 +1,496 @@
 [
   {
+    "address": "2920 Grant Blvd",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The front facade, windows, and roof are heavily obscured by mature foliage and trees, limiting a complete visual assessment of the exterior condition."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "unclear",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "multifamily",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A multi-story residential building with light-colored siding, partially obscured by two large mature trees in the front yard.",
+      "visible_conditions": [
+        "Two large trees in the front yard significantly obstruct the view of the front facade.",
+        "Siding appears intact but shows typical weathering.",
+        "Steps leading to the entrance appear functional.",
+        "Trash receptacles are visible near the side driveway area."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 5 matching records"
+    ],
+    "id": 367,
+    "image": "images/parcel-000367.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 108869,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07637339027102,
+    "lon": -76.15783139202026,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07634752,
+          "Longitude": -76.15784198,
+          "NeedsRR": "Yes",
+          "ObjectId": 979,
+          "PropertyAddress": "2920 Grant Blvd",
+          "RR_app_received": 1747612800000,
+          "RR_contact_name": "Steven Loveland",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1749772800000,
+          "RR_int_insp_fail": 1749772800000,
+          "RR_int_insp_pass": 1751328000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-16-35.0",
+          "SHAPE": null,
+          "completion_date": 1752019200000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1751328000000,
+          "pc_owner": "Steven Loveland",
+          "valid_until": 1846713600000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07636641,
+          "Longitude": -76.15801779,
+          "NeedsRR": "Yes",
+          "ObjectId": 944,
+          "PropertyAddress": "900-02 Lemoyne Ave & Grant Blvd",
+          "RR_app_received": 1768348800000,
+          "RR_contact_name": "Ngoc Nguyen",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1770076800000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1770076800000,
+          "RRisValid": "Yes",
+          "SBL": "003.-16-01.0",
+          "SHAPE": null,
+          "completion_date": 1771372800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1769126400000,
+          "pc_owner": "Ngoc Nguyen",
+          "valid_until": 1866067200000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07645785,
+          "Longitude": -76.15794944,
+          "NeedsRR": "Yes",
+          "ObjectId": 947,
+          "PropertyAddress": "904 Lemoyne Ave",
+          "RR_app_received": 1738627200000,
+          "RR_contact_name": "Noel Farone",
+          "RR_ext_insp_fail": 1741910400000,
+          "RR_ext_insp_pass": 1772496000000,
+          "RR_int_insp_fail": 1741910400000,
+          "RR_int_insp_pass": 1772496000000,
+          "RRisValid": "No",
+          "SBL": "003.-16-02.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1772582400000,
+          "pc_owner": "Fitzrone Properties LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07661559,
+          "Longitude": -76.15759895,
+          "NeedsRR": "Yes",
+          "ObjectId": 950,
+          "PropertyAddress": "914-16 Lemoyne Ave",
+          "RR_app_received": 1747612800000,
+          "RR_contact_name": "William Cyr",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-16-05.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1747612800000,
+          "pc_owner": "William Cyr",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07632921,
+          "Longitude": -76.15768709,
+          "NeedsRR": "Yes",
+          "ObjectId": 977,
+          "PropertyAddress": "2916-18 Grant Blvd",
+          "RR_app_received": 1712188800000,
+          "RR_contact_name": "Akkad Properties, LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1775692800000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1775692800000,
+          "RRisValid": "Yes",
+          "SBL": "003.-16-34.0",
+          "SHAPE": null,
+          "completion_date": 1776384000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1775779200000,
+          "pc_owner": "Akkad Properties, LLC",
+          "valid_until": 1871078400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": true,
+      "features": [
+        {
+          "amenity": null,
+          "building": null,
+          "historic": null,
+          "id": 108167221,
+          "landuse": "cemetery",
+          "name": "First Ward Cemetery",
+          "shop": null,
+          "tags": {
+            "landuse": "cemetery",
+            "leisure": "park",
+            "name": "First Ward Cemetery"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "garage",
+          "historic": null,
+          "id": 532435104,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "garage"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077299817,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077300581,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077302016,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077312410,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077313688,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315715,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077315716,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077317686,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077320387,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077320388,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077320389,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077321316,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077322071,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077324118,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329434,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077329435,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077332281,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        },
+        {
+          "amenity": null,
+          "building": "yes",
+          "historic": null,
+          "id": 1077332282,
+          "landuse": null,
+          "name": null,
+          "shop": null,
+          "tags": {
+            "building": "yes"
+          },
+          "type": "way"
+        }
+      ],
+      "notable_features": [
+        {
+          "category": "landuse: cemetery",
+          "id": 108167221,
+          "label": "First Ward Cemetery",
+          "tags": {
+            "landuse": "cemetery",
+            "name": "First Ward Cemetery"
+          },
+          "type": "way"
+        },
+        {
+          "category": "building",
+          "id": 532435104,
+          "label": "building: garage",
+          "tags": {
+            "building": "garage"
+          },
+          "type": "way"
+        }
+      ],
+      "radius_meters": 60,
+      "summary": {
+        "amenities": {},
+        "buildings": 19,
+        "historic": {},
+        "landuse": {
+          "cemetery": 1
+        },
+        "named_features": 1,
+        "shops": {}
+      }
+    },
+    "parcel_key": "003-16-350",
+    "published_at": "2026-07-29T23:29:29+00:00",
+    "review_reasons": [],
+    "title": "2920 Grant Blvd"
+  },
+  {
     "address": "2916-18 Grant Blvd",
     "ai_analysis": {
       "available": true,
