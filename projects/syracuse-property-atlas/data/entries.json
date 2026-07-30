@@ -1,5 +1,193 @@
 [
   {
+    "address": "1012 Lemoyne Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The visible address on the building ('373') does not match the provided parcel address ('1012 LEMOYNE AVE'), suggesting the image may not be of the specified parcel or '373' is a unit number within a larger complex.",
+        "The roof of the building is not clearly visible due to the image angle and surrounding trees."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "not_visible",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "low",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.030",
+            "width": "0.040",
+            "x": "0.360",
+            "y": "0.440"
+          },
+          "confidence": "high",
+          "label": "Address discrepancy",
+          "reason": "Visible building number '373' does not match provided parcel address '1012 LEMOYNE AVE'."
+        },
+        {
+          "bbox": {
+            "height": "0.150",
+            "width": "0.080",
+            "x": "0.320",
+            "y": "0.430"
+          },
+          "confidence": "medium",
+          "label": "Siding discoloration",
+          "reason": "Visible staining or wear on the exterior siding."
+        },
+        {
+          "bbox": {
+            "height": "0.050",
+            "width": "0.150",
+            "x": "0.380",
+            "y": "0.600"
+          },
+          "confidence": "high",
+          "label": "Minor ground debris",
+          "reason": "Small rocks or debris visible in the grassy area."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "The building appears to contain more than two visible units, which may not align with 'Rental registry: 2 matching records'.",
+        "A visible building number '373' does not match the provided parcel address '1012 LEMOYNE AVE', suggesting a potential address discrepancy or that '373' is a unit number."
+      ],
+      "property_type_guess": "multifamily",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image displays a two-story multi-family building with light-colored vertical siding, multiple balconies, and a paved parking area, with some minor visible exterior wear and ground debris.",
+      "visible_conditions": [
+        "Two-story building with multiple units visible.",
+        "Light-colored vertical siding on the exterior.",
+        "Multiple balconies with dark-colored railings are present on both floors.",
+        "Windows and sliding glass doors are visible on the facade.",
+        "Several air conditioning units are visible on the exterior.",
+        "A paved parking area is located in front of the building.",
+        "A grassy area with some minor debris is situated between the parking area and the foreground.",
+        "A sign displaying '373' is affixed to the building's exterior."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 2 matching records",
+      "Image-only flag: The building appears to contain more than two visible units, which may not align with 'Rental registry: 2 matching records'.",
+      "Image-only flag: A visible building number '373' does not match the provided parcel address '1012 LEMOYNE AVE', suggesting a potential address discrepancy or that '373' is a unit number.",
+      "Needs human review"
+    ],
+    "id": 370,
+    "image": "images/parcel-000370.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 61647,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07820943937215,
+    "lon": -76.15639034622852,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07807957,
+          "Longitude": -76.1566063,
+          "NeedsRR": "Yes",
+          "ObjectId": 985,
+          "PropertyAddress": "1006 Lemoyne Ave",
+          "RR_app_received": 1712620800000,
+          "RR_contact_name": "SN Rentals",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-17-02.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1714435200000,
+          "pc_owner": "Jeremy Spring",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07815209,
+          "Longitude": -76.15594669,
+          "NeedsRR": "Yes",
+          "ObjectId": 988,
+          "PropertyAddress": "365 Willumae Dr",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-17-06.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Jimmy Garcia",
+          "valid_until": null,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-17-030",
+    "published_at": "2026-07-30T07:03:19+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "1012 Lemoyne Ave"
+  },
+  {
     "address": "1006 Lemoyne Ave",
     "ai_analysis": {
       "available": true,
