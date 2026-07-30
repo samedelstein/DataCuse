@@ -1,5 +1,124 @@
 [
   {
+    "address": "357 Willumae Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "{\n  \"summary\": \"The image displays a two-story residential structure with light-colored siding and a dark roof, situated on a lot with maintained landscaping, though a pile of debris is visible near the street.\",\n  \"property_type_guess\": \"single_family\",\n  \"visible_conditions\": [\n    \"Two-story residential structure with a gabled roof.\",\n    \"Light-colored siding on the main facade.\",\n    \"Dark-colored roof shingles appear to be in good condition.\",\n    \"Upper-story windows feature red shutters.\",\n    \"The front yard contains grass and well-trimmed shrubbery.\",\n    \"A pile of what appears to be wood or construction debris is visible in the foreground near the street.\"\n   furlough\",\n  \"condition_scores\": {\n    \"roof\": \"good\",\n    \"siding_or_facade\": \"fair\",\n    \"windows_doors\": \"good\",\n    \"porch_or_entry\": \"unclear\",\n    \"yard_or_lot\": \"fair\",\n    \"trash_debris\": \"minor\",\n    \"vegetation_overgrowth\": \"none_visible\"\n  },\n  \"visible_flags\": {\n    \"boarded_windows_or_doors\": \"no\",\n    \"fire_damage_visible\": \"no\",\n    \"structural_damage_visible\": \"no\",\n    \"vacancy_signs_visible\": \"no\",\n    \"active_construction_visible\": \"no\"\n  },\n  \"possible_unrecorded_issues\": [\n    \"A pile of wood or construction debris is visible in the foreground near the street, which may not be reflected in public records.\"\n  ],\n  \"image_annotations\": [\n    {\n      \"label\": \"Debris pile\",\n      \"reason\": \"Pile of wood or construction debris visible near the street.\",\n      \"bbox\": {\n        \"x\": \"0.58\",\n        \"y\": \"0.71\",\n        \"width\": \"0.35\",\n        \"height\": \"0.20\"\n      },\n      \"confidence\": \"high\"\n    }\n  ],\n  \"needs_human_review\": \"true\",\n  \"confidence\": \"high\",\n  \"caveats\": []\n}",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 2 matching records"
+    ],
+    "id": 375,
+    "image": "images/parcel-000375.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 76874,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07803589145365,
+    "lon": -76.15563767336208,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07815209,
+          "Longitude": -76.15594669,
+          "NeedsRR": "Yes",
+          "ObjectId": 988,
+          "PropertyAddress": "365 Willumae Dr",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-17-06.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Jimmy Garcia",
+          "valid_until": null,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07797434,
+          "Longitude": -76.15550336,
+          "NeedsRR": "Yes",
+          "ObjectId": 991,
+          "PropertyAddress": "355 Willumae Dr",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-17-09.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Susan Hartnagle",
+          "valid_until": null,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 504: Gateway Timeout"
+    },
+    "parcel_key": "003-17-080",
+    "published_at": "2026-07-30T13:04:15+00:00",
+    "review_reasons": [],
+    "title": "357 Willumae Dr"
+  },
+  {
     "address": "361 Willumae Dr",
     "ai_analysis": {
       "available": true,
