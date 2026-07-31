@@ -1,5 +1,146 @@
 [
   {
+    "address": "347 Willumae Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a well-maintained single-family residence with a neatly kept yard and no obvious signs of disrepair.",
+      "visible_conditions": [
+        "The roof appears to be dark-colored and intact, with no visible damage.",
+        "The siding or facade is light-colored and appears clean and in good condition.",
+        "Windows and doors are visible and appear intact, with no boarding or broken panes.",
+        "The front porch and entry area appear clean and well-maintained, with steps leading to the front door.",
+        "The front yard is neatly mowed and includes well-trimmed landscaping, such as a large bush in front of the house.",
+        "No trash or debris is visible on the property.",
+        "Vegetation appears managed and well-maintained, with no signs of overgrowth."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 2 matching records"
+    ],
+    "id": 377,
+    "image": "images/parcel-000377.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 72880,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07791542012239,
+    "lon": -76.15533720024116,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07797434,
+          "Longitude": -76.15550336,
+          "NeedsRR": "Yes",
+          "ObjectId": 991,
+          "PropertyAddress": "355 Willumae Dr",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-17-09.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Susan Hartnagle",
+          "valid_until": null,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07773735,
+          "Longitude": -76.15491227,
+          "NeedsRR": "Yes",
+          "ObjectId": 994,
+          "PropertyAddress": "335 Willumae Dr",
+          "RR_app_received": 1703721600000,
+          "RR_contact_name": "Stage Two Properties LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1744848000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1744848000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-17-13.0",
+          "SHAPE": null,
+          "completion_date": 1745280000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1705017600000,
+          "pc_owner": "Stage Two Properties LLC",
+          "valid_until": 1839974400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-17-100",
+    "published_at": "2026-07-31T02:24:17+00:00",
+    "review_reasons": [],
+    "title": "347 Willumae Dr"
+  },
+  {
     "address": "355 Willumae Dr",
     "ai_analysis": {
       "available": true,
