@@ -1,5 +1,132 @@
 [
   {
+    "address": "329 Willumae Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view is from the street, limiting visibility of the rear and sides of the property."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.2,
+            "width": 0.35,
+            "x": 0.12,
+            "y": 0.65
+          },
+          "confidence": "medium",
+          "label": "Driveway cracking",
+          "reason": "Visible surface cracking and wear on the asphalt driveway."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor surface cracking on the paved driveway."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential building with white siding, black shutters, and an enclosed front porch, featuring a paved driveway and a small front yard with a young tree.",
+      "visible_conditions": [
+        "White siding appears intact and in good condition",
+        "Enclosed front porch with concrete steps",
+        "Paved driveway shows surface cracking and wear",
+        "Small young tree with support stakes in the front yard",
+        "Main roof appears intact with standard asphalt shingles"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Image-only flag: Minor surface cracking on the paved driveway."
+    ],
+    "id": 381,
+    "image": "images/parcel-000381.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 81438,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.077678096177294,
+    "lon": -76.15474528837915,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07773735,
+          "Longitude": -76.15491227,
+          "NeedsRR": "Yes",
+          "ObjectId": 994,
+          "PropertyAddress": "335 Willumae Dr",
+          "RR_app_received": 1703721600000,
+          "RR_contact_name": "Stage Two Properties LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1744848000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1744848000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-17-13.0",
+          "SHAPE": null,
+          "completion_date": 1745280000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1705017600000,
+          "pc_owner": "Stage Two Properties LLC",
+          "valid_until": 1839974400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-17-140",
+    "published_at": "2026-08-03T11:19:31+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "329 Willumae Dr"
+  },
+  {
     "address": "335 Willumae Dr",
     "ai_analysis": {
       "available": true,
