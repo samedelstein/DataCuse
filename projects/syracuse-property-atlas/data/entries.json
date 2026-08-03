@@ -1,5 +1,154 @@
 [
   {
+    "address": "325 Willumae Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.25,
+            "width": 0.5,
+            "x": 0.0,
+            "y": 0.55
+          },
+          "confidence": "high",
+          "label": "Driveway cracks",
+          "reason": "Visible cracking in the paved surface of the driveway."
+        },
+        {
+          "bbox": {
+            "height": 0.1,
+            "width": 0.3,
+            "x": 0.0,
+            "y": 0.65
+          },
+          "confidence": "high",
+          "label": "Minor driveway debris",
+          "reason": "Small items and orange tape are visible on the driveway surface."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor debris, including what appears to be orange tape, is visible on the paved driveway.",
+        "Some cracking is visible in the paved driveway surface."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image displays a two-story residential property with light-colored siding and a dark roof, situated on a lot with a paved driveway and a grassy area.",
+      "visible_conditions": [
+        "The property features light-colored siding, possibly light green or yellow, with white trim around windows and doors.",
+        "The roof appears to be dark-colored shingles, visible on the front slope.",
+        "Multiple windows are visible on both stories, some with white shutters.",
+        "A small covered entry area is present on the front of the house, with a white bench visible.",
+        "The yard includes a grass lawn and a paved driveway leading to the street.",
+        "A well-maintained hedge runs along one side of the driveway.",
+        "Two refuse bins are visible near the street at the edge of the property."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Image-only flag: Minor debris, including what appears to be orange tape, is visible on the paved driveway.",
+      "Image-only flag: Some cracking is visible in the paved driveway surface."
+    ],
+    "id": 382,
+    "image": "images/parcel-000382.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 79602,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07761785929162,
+    "lon": -76.15459505342757,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07773735,
+          "Longitude": -76.15491227,
+          "NeedsRR": "Yes",
+          "ObjectId": 994,
+          "PropertyAddress": "335 Willumae Dr",
+          "RR_app_received": 1703721600000,
+          "RR_contact_name": "Stage Two Properties LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1744848000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1744848000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-17-13.0",
+          "SHAPE": null,
+          "completion_date": 1745280000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1705017600000,
+          "pc_owner": "Stage Two Properties LLC",
+          "valid_until": 1839974400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-17-150",
+    "published_at": "2026-08-03T12:04:29+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "325 Willumae Dr"
+  },
+  {
     "address": "329 Willumae Dr",
     "ai_analysis": {
       "available": true,
