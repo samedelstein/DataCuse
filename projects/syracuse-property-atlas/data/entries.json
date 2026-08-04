@@ -1,5 +1,141 @@
 [
   {
+    "address": "43.02188, -76.15202",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.2,
+            "width": 0.9,
+            "x": 0.0,
+            "y": 0.55
+          },
+          "confidence": "high",
+          "label": "Unkempt yard",
+          "reason": "The grass in the front yard appears overgrown and uneven."
+        },
+        {
+          "bbox": {
+            "height": 0.15,
+            "width": 0.12,
+            "x": 0.58,
+            "y": 0.53
+          },
+          "confidence": "high",
+          "label": "Minor exterior items",
+          "reason": "A blue recycling bin and a blue chair are visible near the right-side entry."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a multi-story residential structure with white siding and green shutters, showing some signs of an unkempt yard and minor exterior items.",
+      "visible_conditions": [
+        "Two-story residential structure with an attic gable.",
+        "White siding and green window shutters are visible.",
+        "Two distinct front entryways with small covered porches are present.",
+        "The front yard shows some unkempt grass and minor vegetation overgrowth near the foundation.",
+        "A blue recycling bin and a blue chair are visible near the right-side entry.",
+        "A paved driveway runs along the right side of the property."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1036",
+        "Median gross rent": "58200",
+        "Median household income": "26847",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "46.5",
+        "Renter-occupied share": "41.3",
+        "Total population": "2316",
+        "Vacancy rate": "19.3"
+      },
+      "name": "Census Tract 58; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "005800",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record"
+    ],
+    "id": 398,
+    "image": "images/parcel-000398.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 85906,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.02187697328042,
+    "lon": -76.15201710212993,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.02212418,
+          "Longitude": -76.15225578,
+          "ObjectId": 429,
+          "Owner": "Todd Hobbs",
+          "OwnerAddress": "102 Grand Ave Ste 2 Syracuse, NY 13204",
+          "PropertyAddress": "166 Hope Ave",
+          "SBL": "078.-06-21.0",
+          "VPR_result": "VPR - Valid / Year 1",
+          "VPR_valid": "Y",
+          "Vacant": "Residential",
+          "Zip": 13205,
+          "completion_date": "2026-04-29",
+          "completion_type_name": "VPR Cert Issued - Plan A",
+          "neighborhood": "Brighton",
+          "valid_until": "2027-04-29"
+        }
+      ]
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "",
+    "published_at": "2026-08-04T23:03:34+00:00",
+    "review_reasons": [],
+    "title": "43.02188, -76.15202"
+  },
+  {
     "address": "306 Burdick Ave",
     "ai_analysis": {
       "available": true,
