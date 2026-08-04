@@ -1,5 +1,135 @@
 [
   {
+    "address": "302-04 Burdick Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view is limited to the front facade from the street level",
+        "Rear and side conditions are not visible in this image"
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "good",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.22,
+            "width": 0.23,
+            "x": 0.18,
+            "y": 0.5
+          },
+          "confidence": "medium",
+          "label": "weathered wooden steps",
+          "reason": "Wooden steps and handrails show weathering and surface wear"
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Weathered wooden front steps and handrails showing surface wear",
+        "Multiple trash receptacles stored in the front yard area"
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential building with light-colored siding, a metal roof, and an enclosed front porch with weathered wooden steps.",
+      "visible_conditions": [
+        "Light-colored siding appears intact with minor surface wear",
+        "Teal-colored metal roof appears in stable condition",
+        "Enclosed front porch with multiple windows and dual entry doors",
+        "Wooden entry steps and railings show signs of weathering and wear",
+        "Sloped grassy front yard with multiple waste bins stored near the steps"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Image-only flag: Weathered wooden front steps and handrails showing surface wear",
+      "Image-only flag: Multiple trash receptacles stored in the front yard area"
+    ],
+    "id": 396,
+    "image": "images/parcel-000396.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 100254,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07744559268681,
+    "lon": -76.1550013063387,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07773735,
+          "Longitude": -76.15491227,
+          "NeedsRR": "Yes",
+          "ObjectId": 994,
+          "PropertyAddress": "335 Willumae Dr",
+          "RR_app_received": 1703721600000,
+          "RR_contact_name": "Stage Two Properties LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1744848000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1744848000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-17-13.0",
+          "SHAPE": null,
+          "completion_date": 1745280000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1705017600000,
+          "pc_owner": "Stage Two Properties LLC",
+          "valid_until": 1839974400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-17-280",
+    "published_at": "2026-08-04T09:15:29+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "302-04 Burdick Ave"
+  },
+  {
     "address": "226 Burdick Ave",
     "ai_analysis": {
       "available": true,
