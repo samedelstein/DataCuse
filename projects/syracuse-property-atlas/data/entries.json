@@ -1,5 +1,136 @@
 [
   {
+    "address": "306 Burdick Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "good",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.35",
+            "width": "0.95",
+            "x": "0.00",
+            "y": "0.50"
+          },
+          "confidence": "high",
+          "label": "Overgrown grass",
+          "reason": "The front lawn exhibits longer grass and some visible weeds, indicating minor overgrowth."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property appears to be a single-family residence with a green-toned exterior, a brown roof, and a front yard that shows some signs of overgrowth.",
+      "visible_conditions": [
+        "The property features a two-story structure with a dormer, clad in green shake-style siding on the upper level and a lighter green horizontal siding below.",
+        "A brown shingle roof is visible and appears to be in good condition.",
+        "The foundation appears to be constructed of a stone or block material.",
+        "White-framed windows are present on the front facade and appear intact.",
+        "A white front door is accessible via concrete steps with metal railings, which show some signs of wear.",
+        "The front yard consists of grass, which appears somewhat overgrown in areas with some visible weeds.",
+        "Two blue refuse/recycling bins are visible on the left side of the property, near the property line."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record"
+    ],
+    "id": 397,
+    "image": "images/parcel-000397.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 83434,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07746935236852,
+    "lon": -76.1551247865727,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07773735,
+          "Longitude": -76.15491227,
+          "NeedsRR": "Yes",
+          "ObjectId": 994,
+          "PropertyAddress": "335 Willumae Dr",
+          "RR_app_received": 1703721600000,
+          "RR_contact_name": "Stage Two Properties LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1744848000000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1744848000000,
+          "RRisValid": "Yes",
+          "SBL": "003.-17-13.0",
+          "SHAPE": null,
+          "completion_date": 1745280000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1705017600000,
+          "pc_owner": "Stage Two Properties LLC",
+          "valid_until": 1839974400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-17-290",
+    "published_at": "2026-08-04T22:52:00+00:00",
+    "review_reasons": [],
+    "title": "306 Burdick Ave"
+  },
+  {
     "address": "302-04 Burdick Ave",
     "ai_analysis": {
       "available": true,
