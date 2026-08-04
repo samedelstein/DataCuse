@@ -1,5 +1,143 @@
 [
   {
+    "address": "220-22 Burdick Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The parcel address 220-22 covers two distinct physical structures; it is unclear if the unfit designation applies to one or both.",
+        "Interior conditions, rear elevations, and side elevations are not visible and may contain defects not captured in this image."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.09,
+            "width": 0.16,
+            "x": 0.16,
+            "y": 0.67
+          },
+          "confidence": "medium",
+          "label": "weathered concrete steps",
+          "reason": "Concrete steps leading to the left structure show signs of cracking and surface deterioration."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "While public records indicate an unfit property record, no severe exterior structural defects or boarding are plainly visible from this front street-level perspective."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows two multi-story residential structures with siding and porches that appear to be in generally fair exterior condition from this street-level view.",
+      "visible_conditions": [
+        "Two separate residential structures are visible, labeled 220 and 222.",
+        "Siding on both structures appears intact with typical weathering.",
+        "Porches and entry stairs appear functional, though the concrete steps on the left structure show some surface wear and cracking.",
+        "Windows appear intact with no visible boarding or breakage from this angle.",
+        "The yard is mowed and trash receptacles are neatly placed."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Unfit properties: 1 matching record",
+      "Image-only flag: While public records indicate an unfit property record, no severe exterior structural defects or boarding are plainly visible from this front street-level perspective.",
+      "Needs human review"
+    ],
+    "id": 394,
+    "image": "images/parcel-000394.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 78872,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07732643622375,
+    "lon": -76.15470412121958,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [
+        {
+          "Latitude": 43.07717465,
+          "Longitude": -76.15450531,
+          "ObjectId": 229,
+          "SBL": "003.-17-24.0",
+          "Vacant": null,
+          "address": "214 Burdick Ave",
+          "area_involved": "House",
+          "article": "A structure is unfit for human occupancy whenever such structure is unsafe, unlawful or, because of the degree to which the structure is in disrepair or lacks maintenance, is unsanitary, vermin or rat infested, contains filth and contamination, or lacks ventilation, illumination, sanitary or heating facilities or other essential equipment required by this code, or because the location of the structure consti\ntutes a hazard to the occupants of the structure or to the public.",
+          "comp_close_date": -2208988800000,
+          "comp_open_date": 1696604769063,
+          "comp_status": "Open",
+          "complaint_number": "2023-07071",
+          "complaint_type_name": "Vacant House",
+          "comply_by_date": 1779116861000,
+          "corrective_action": "Unfit due to fire",
+          "department_name": "Vacant Properties",
+          "owner_address": "PO BOX 6028",
+          "owner_city": "Syracuse",
+          "owner_name": "Daniel Mcmahon",
+          "owner_state": "NY",
+          "owner_zip_code": "13217",
+          "parcel_id": 827,
+          "status_date": 1777561661000,
+          "status_type_name": "Open",
+          "violation": "2020 PMCNYS - Section 107.1.3 - Structure Unfit for Human Occupancy",
+          "violation_date": 1696604861370,
+          "violation_number": "2023-17663",
+          "zip": 13208
+        }
+      ],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-17-260",
+    "published_at": "2026-08-04T04:07:12+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "220-22 Burdick Ave"
+  },
+  {
     "address": "218 Burdick Ave",
     "ai_analysis": {
       "available": true,
