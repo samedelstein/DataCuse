@@ -1,5 +1,139 @@
 [
   {
+    "address": "43.08097, -76.15734",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The target parcel is unclear; the image primarily shows a gravel lot and a metal commercial structure, while the rental registry records suggest a residential property, which may be the partially obscured building on the right."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A wide gravel lot sits in front of a long, corrugated metal commercial-style building, with a residential structure partially visible on the right.",
+      "visible_conditions": [
+        "Gravel lot in the foreground with minor weeds along the curb",
+        "Long corrugated metal building or wall structure in the midground",
+        "Utility pole with transformers located in front of the metal structure",
+        "Partially visible multi-story residential building on the far right side of the image"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 2 matching records",
+      "Needs human review"
+    ],
+    "id": 401,
+    "image": "images/parcel-000401.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 55626,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08096976464584,
+    "lon": -76.15733676120718,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.08114891,
+          "Longitude": -76.1570038,
+          "NeedsRR": "Yes",
+          "ObjectId": 812,
+          "PropertyAddress": "1111-13 Wolf St",
+          "RR_app_received": 1675036800000,
+          "RR_contact_name": "Volha Lutsevich",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1675814400000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1675814400000,
+          "RRisValid": "No",
+          "SBL": "003.-05-08.0",
+          "SHAPE": null,
+          "completion_date": 1678924800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1680566400000,
+          "pc_owner": "Lee Quashawn Williams",
+          "valid_until": 1773619200000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.08107056,
+          "Longitude": -76.15707064,
+          "NeedsRR": "Yes",
+          "ObjectId": 814,
+          "PropertyAddress": "1109 Wolf St",
+          "RR_app_received": 1766102400000,
+          "RR_contact_name": "Zuckerman Enterprises LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-05-09.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1767916800000,
+          "pc_owner": "Zuckerman Enterprises LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "",
+    "published_at": "2026-08-05T12:02:56+00:00",
+    "review_reasons": [
+      "AI requested human review"
+    ],
+    "title": "43.08097, -76.15734"
+  },
+  {
     "address": "43.08089, -76.15713",
     "ai_analysis": {
       "available": true,
