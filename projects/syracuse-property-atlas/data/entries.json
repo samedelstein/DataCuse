@@ -1,5 +1,227 @@
 [
   {
+    "address": "43.06845, -76.16299",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The rear and roof conditions are not fully visible due to the image angle and vegetation.",
+        "The extent of the 'Unfit properties' record is not fully discernible from the visible exterior conditions alone, but some visible issues may contribute to such a designation."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "not_visible",
+        "siding_or_facade": "poor",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "major",
+        "windows_doors": "fair",
+        "yard_or_lot": "poor"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.100",
+            "width": "0.075",
+            "x": "0.088",
+            "y": "0.585"
+          },
+          "confidence": "high",
+          "label": "Boarded window",
+          "reason": "One window on the lower front left appears to be covered or boarded."
+        },
+        {
+          "bbox": {
+            "height": "0.300",
+            "width": "0.600",
+            "x": "0.000",
+            "y": "0.650"
+          },
+          "confidence": "high",
+          "label": "Vegetation overgrowth",
+          "reason": "Significant vegetation is growing around the building's foundation and in the adjacent lot."
+        },
+        {
+          "bbox": {
+            "height": "0.150",
+            "width": "0.150",
+            "x": "0.000",
+            "y": "0.800"
+          },
+          "confidence": "high",
+          "label": "Brush pile",
+          "reason": "A noticeable pile of brush or debris is in the front yard."
+        },
+        {
+          "bbox": {
+            "height": "0.200",
+            "width": "0.380",
+            "x": "0.600",
+            "y": "0.600"
+          },
+          "confidence": "high",
+          "label": "Graffiti on fence/trailer",
+          "reason": "The chain-link fence and a large white container/trailer are covered in graffiti."
+        },
+        {
+          "bbox": {
+            "height": "0.400",
+            "width": "0.450",
+            "x": "0.000",
+            "y": "0.400"
+          },
+          "confidence": "medium",
+          "label": "Siding wear",
+          "reason": "Visible signs of wear and possible peeling paint on the building's siding."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Visible significant vegetation overgrowth around the property and in the adjacent lot.",
+        "A pile of brush or debris is present in the front yard.",
+        "Graffiti is visible on the fence and a large container/trailer in the adjacent lot."
+      ],
+      "property_type_guess": "multifamily",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a multi-story residential building with signs of wear, including possible peeling paint, a boarded window, significant vegetation overgrowth, and a pile of brush in the front yard, with an adjacent lot featuring a graffiti-covered fence and trailer.",
+      "visible_conditions": [
+        "A multi-story residential structure is visible, with an additional smaller structure partially visible behind it.",
+        "The exterior siding appears to be light-colored (possibly yellow) on the upper stories and light blue on the lower front, with visible signs of wear and possible peeling paint.",
+        "One window on the lower front left appears to be boarded up or covered.",
+        "Other windows appear to be present, but their specific condition is not fully discernible.",
+        "A white front door is visible, with metal steps leading to it.",
+        "Significant vegetation overgrowth is present around the foundation of the building and extends into the adjacent lot.",
+        "A pile of brush or debris is visible in the front yard near the street.",
+        "A chain-link fence and a large white trailer or container in the adjacent lot are heavily covered in graffiti.",
+        "A red vehicle is parked in the overgrown driveway or lot area."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "yes",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1127",
+        "Median gross rent": "65900",
+        "Median household income": "36639",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "48.6",
+        "Renter-occupied share": "6.7",
+        "Total population": "2133",
+        "Vacancy rate": "16.0"
+      },
+      "name": "Census Tract 5.01; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000501",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Unfit properties: 1 matching record",
+      "Image-only flag: Visible significant vegetation overgrowth around the property and in the adjacent lot.",
+      "Image-only flag: A pile of brush or debris is present in the front yard.",
+      "Image-only flag: Graffiti is visible on the fence and a large container/trailer in the adjacent lot."
+    ],
+    "id": 399,
+    "image": "images/parcel-000399.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 65575,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.06845118290633,
+    "lon": -76.16299494564542,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.06853081,
+          "Longitude": -76.16282599,
+          "NeedsRR": "Yes",
+          "ObjectId": 606,
+          "PropertyAddress": "1511 Salina St N",
+          "RR_app_received": 1647820800000,
+          "RR_contact_name": "Herizon Transport LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "002.-15-10.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1758585600000,
+          "pc_owner": "Herizon Transport LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [
+        {
+          "Latitude": 43.06853081,
+          "Longitude": -76.16282599,
+          "ObjectId": 243,
+          "SBL": "002.-15-10.0",
+          "Vacant": null,
+          "address": "1511 Salina St N",
+          "area_involved": "premises",
+          "article": "A structure is unfit for human occupancy whenever such structure is unsafe, unlawful or, because of the degree to which the structure is in disrepair or lacks maintenance, is unsanitary, vermin or rat infested, contains filth and contamination, or lacks ventilation, illumination, sanitary or heating facilities or other essential equipment required by this code, or because the location of the structure consti\ntutes a hazard to the occupants of the structure or to the public.",
+          "comp_close_date": -2208988800000,
+          "comp_open_date": 1685457914940,
+          "comp_status": "Open",
+          "complaint_number": "2023-03674",
+          "complaint_type_name": "Property Maintenance-Ext",
+          "comply_by_date": 1687447336000,
+          "corrective_action": "structure is unfit due to excessive disrepair and  lack of electrical utility and functional plumbing facilities",
+          "department_name": "Codes",
+          "owner_address": "252 Concho Dr",
+          "owner_city": "Henderson",
+          "owner_name": "Jeffrey Reitz",
+          "owner_state": "NV",
+          "owner_zip_code": "89015",
+          "parcel_id": 291,
+          "status_date": 1685632936190,
+          "status_type_name": "Open",
+          "violation": "2020 PMCNYS - Section 107.1.3 - Structure Unfit for Human Occupancy",
+          "violation_date": 1685632936190,
+          "violation_number": "2023-10809",
+          "zip": 13208
+        }
+      ],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: Remote end closed connection without response"
+    },
+    "parcel_key": "",
+    "published_at": "2026-08-05T02:00:31+00:00",
+    "review_reasons": [
+      "Possible image-only issue",
+      "boarded windows or doors"
+    ],
+    "title": "43.06845, -76.16299"
+  },
+  {
     "address": "43.02188, -76.15202",
     "ai_analysis": {
       "available": true,
