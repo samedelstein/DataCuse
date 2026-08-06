@@ -1,5 +1,160 @@
 [
   {
+    "address": "43.07603, -76.15896",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image is a street-level view from 2020, limiting visibility of some property details.",
+        "The exact boundaries of the parcel are not definitively clear from the image alone, though the property on the right appears to be the primary subject."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "poor"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.1,
+            "width": 0.15,
+            "x": 0.55,
+            "y": 0.6
+          },
+          "confidence": "medium",
+          "label": "Porch steps/foundation wear",
+          "reason": "Visible signs of wear or deterioration on the porch steps and foundation area."
+        },
+        {
+          "bbox": {
+            "height": 0.2,
+            "width": 0.35,
+            "x": 0.45,
+            "y": 0.65
+          },
+          "confidence": "high",
+          "label": "Unkempt yard area",
+          "reason": "The front yard shows sparse grass, exposed soil/gravel, and leaf litter, indicating a lack of maintenance."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Visible deterioration or wear on the porch steps and foundation.",
+        "The front yard area appears unkempt with sparse vegetation and exposed soil/gravel, which may not be reflected in a rental registry record."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image displays a two-story residential structure with gray siding and a red roof, featuring a front porch, and an unkempt front yard area.",
+      "visible_conditions": [
+        "Two-story residential structure with gray siding.",
+        "Red-colored roof appears generally intact.",
+        "Front porch with wooden railings and stairs is visible.",
+        "Multiple windows are present, some with white shutters.",
+        "Window air conditioning units are visible on both floors.",
+        "Several blue and black trash/recycling bins are located near the front of the property.",
+        "The front yard area consists of sparse grass, exposed soil, and gravel, with some leaf litter.",
+        "The porch steps and visible foundation show signs of wear or deterioration."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Image-only flag: Visible deterioration or wear on the porch steps and foundation.",
+      "Image-only flag: The front yard area appears unkempt with sparse vegetation and exposed soil/gravel, which may not be reflected in a rental registry record.",
+      "Needs human review"
+    ],
+    "id": 406,
+    "image": "images/parcel-000406.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 92764,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07602759469334,
+    "lon": -76.158962416051,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07592339,
+          "Longitude": -76.15906668,
+          "NeedsRR": "Yes",
+          "ObjectId": 850,
+          "PropertyAddress": "823 Lemoyne Ave",
+          "RR_app_received": 1672876800000,
+          "RR_contact_name": "George Rushford",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-12-14.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1690156800000,
+          "pc_owner": "B Real LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "",
+    "published_at": "2026-08-06T04:03:10+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "43.07603, -76.15896"
+  },
+  {
     "address": "43.07611, -76.15890",
     "ai_analysis": {
       "available": true,
