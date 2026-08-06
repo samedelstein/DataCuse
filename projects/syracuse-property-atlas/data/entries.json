@@ -1,5 +1,117 @@
 [
   {
+    "address": "43.07611, -76.15890",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The rear and right side of the property are not visible from this street-level angle.",
+        "Analysis is limited to exterior conditions visible in the provided image."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential building with grey siding, a side porch, and a front yard containing municipal waste bins, appearing in fair overall condition.",
+      "visible_conditions": [
+        "Grey horizontal siding appears intact with minor weathering.",
+        "Front-facing gable roof with red trim appears structurally stable from this angle.",
+        "Double-hung windows are present, with two window air conditioning units installed on the right side.",
+        "A wooden side porch with steps is visible on the left side of the structure.",
+        "Four municipal waste and recycling bins are lined up neatly against the front foundation.",
+        "The front yard consists of grass with some patchy areas and a paved driveway section on the left."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record"
+    ],
+    "id": 405,
+    "image": "images/parcel-000405.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 97545,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07610557587596,
+    "lon": -76.15890418847502,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07592339,
+          "Longitude": -76.15906668,
+          "NeedsRR": "Yes",
+          "ObjectId": 850,
+          "PropertyAddress": "823 Lemoyne Ave",
+          "RR_app_received": 1672876800000,
+          "RR_contact_name": "George Rushford",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-12-14.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1690156800000,
+          "pc_owner": "B Real LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "",
+    "published_at": "2026-08-06T03:30:23+00:00",
+    "review_reasons": [],
+    "title": "43.07611, -76.15890"
+  },
+  {
     "address": "43.07618, -76.15885",
     "ai_analysis": {
       "available": true,
