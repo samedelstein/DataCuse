@@ -1,5 +1,119 @@
 [
   {
+    "address": "251-53 Ross Pk",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view of the property is partially obstructed by a foreground vehicle and a tree.",
+        "Bright sunlight affects visibility in some areas of the image."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "unclear",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.10",
+            "width": "0.22",
+            "x": "0.43",
+            "y": "0.55"
+          },
+          "confidence": "high",
+          "label": "Vine growth",
+          "reason": "Visible vegetation on the lower facade."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor vine growth is visible on the lower front facade."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property appears to be a two-story residence with white siding and a prominent front gable, partially obscured by a foreground tree and vehicle.",
+      "visible_conditions": [
+        "The main structure features white siding on the upper levels and a darker material, possibly brick or stone, on the lower facade.",
+        "A prominent bay window structure is visible on the front of the property.",
+        "The roof is steeply pitched with dark-colored shingles, though its full condition is not clearly visible.",
+        "Windows appear to be intact, with no obvious signs of damage.",
+        "The front yard contains grass and some mature shrubs, appearing generally maintained.",
+        "Minor vine growth is visible on the lower portion of the front facade, below the bay window."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Minor vine growth is visible on the lower front facade."
+    ],
+    "id": 407,
+    "image": "images/parcel-000407.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 60921,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07634612416653,
+    "lon": -76.14647577644729,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-02-120",
+    "published_at": "2026-08-06T05:03:04+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "251-53 Ross Pk"
+  },
+  {
     "address": "43.07603, -76.15896",
     "ai_analysis": {
       "available": true,
