@@ -1,5 +1,167 @@
 [
   {
+    "address": "43.07472, -76.16014",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "the image quality is good, the view appears to be unobstructed, and there are no visible issues that may not be captured in known records, such as structural damage or vacancy"
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not visible",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none visible",
+        "vegetation_overgrowth": "none visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.931,
+            "width": 0.812,
+            "x": 0.541,
+            "y": 0.681
+          },
+          "confidence": "high",
+          "label": "single-family residence",
+          "reason": "home appears to be well maintained and not vacant, at least based on the image provided"
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "none visible"
+      ],
+      "property_type_guess": "single-family",
+      "provider": "ollama:llava:latest",
+      "summary": "This image depicts a suburban residential street with single-family homes, some of which appear to be multi-family units due to the attached garages. The property in focus is a single-story house with visible exterior features, including a front yard with mature landscaping and a driveway leading to a garage. The building's facade shows typical construction materials and styles common in suburban neighborhoods.",
+      "visible_conditions": [
+        "well-maintained roof with no visible damage or wear, clear windows that are not boarded up, siding on the house that appears to be in good condition, front yard landscaping is maintained and lush, driveway leading to a garage is clean and well-paved"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "yes"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 2 matching records",
+      "Image-only flag: none visible",
+      "Needs human review"
+    ],
+    "id": 408,
+    "image": "images/parcel-000408.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 119853,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0747173479904,
+    "lon": -76.1601378723159,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07507276,
+          "Longitude": -76.16015942,
+          "NeedsRR": "Yes",
+          "ObjectId": 876,
+          "PropertyAddress": "605-07 Second North St",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-13-14.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Kenneth Todmann",
+          "valid_until": null,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07437963,
+          "Longitude": -76.16018416,
+          "NeedsRR": "Yes",
+          "ObjectId": 885,
+          "PropertyAddress": "709-11 Lemoyne Ave",
+          "RR_app_received": 1774569600000,
+          "RR_contact_name": "Cheyenne Talbert",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-13-22.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1779840000000,
+          "pc_owner": "Cheyenne Talbert",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "",
+    "published_at": "2026-08-06T06:06:16+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue",
+      "vacancy signs visible"
+    ],
+    "title": "43.07472, -76.16014"
+  },
+  {
     "address": "251-53 Ross Pk",
     "ai_analysis": {
       "available": true,
