@@ -51,6 +51,20 @@ jobs:
           mkdir -p _pages/projects/cityline-bypass
           cp -r projects/cityline-bypass/dist/* _pages/projects/cityline-bypass/
 
+      - name: Install deps (syracuse-water-risk)
+        working-directory: projects/syracuse-water-risk
+        run: npm ci
+
+      - name: Build (syracuse-water-risk)
+        working-directory: projects/syracuse-water-risk
+        run: npm run build
+
+      - name: Copy syracuse-water-risk dist into Pages path
+        run: |
+          rm -rf _pages/projects/syracuse-water-risk
+          mkdir -p _pages/projects/syracuse-water-risk
+          cp -r projects/syracuse-water-risk/dist/* _pages/projects/syracuse-water-risk/
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
