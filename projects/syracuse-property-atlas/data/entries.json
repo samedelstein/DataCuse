@@ -1,5 +1,90 @@
 [
   {
+    "address": "218 Kenwood Ave & Marcia St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Large trees in the foreground significantly obstruct the view of the main building's facade and roof.",
+        "The angle of the photo limits the view of the primary entrance and overall structure."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "unclear",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A red residential structure and an adjacent red accessory building are partially visible behind large foreground trees on a grassy lot.",
+      "visible_conditions": [
+        "Red siding on the main structure and accessory building appears mostly intact.",
+        "Large evergreen trees in the foreground partially obstruct the view of the main house.",
+        "A gravel driveway or path leads into the yard.",
+        "Some items, including what appears to be a chair or wood, are present on the lawn."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 413,
+    "image": "images/parcel-000413.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 123707,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.079603270261146,
+    "lon": -76.15078551819985,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-10-300",
+    "published_at": "2026-08-07T19:08:40+00:00",
+    "review_reasons": [],
+    "title": "218 Kenwood Ave & Marcia St"
+  },
+  {
     "address": "241 Ross Pk",
     "ai_analysis": {
       "available": true,
