@@ -1,5 +1,90 @@
 [
   {
+    "address": "245 Ross Pk",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The lower portion of the property and street-level view are partially obstructed by parked vehicles in the foreground.",
+        "Sun glare is present on the right side of the image."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A single-story residential bungalow with a front gable, light-colored siding, and a brick accent wall, appearing in generally fair to good condition with a maintained front yard.",
+      "visible_conditions": [
+        "Light-colored siding on the main gable and brick veneer on the left wing",
+        "Maintained front lawn with small ornamental plantings",
+        "Large front picture window and a central entry door with steps",
+        "Gable roof structure appears intact from this angle"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 410,
+    "image": "images/parcel-000410.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 54919,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.076255105169984,
+    "lon": -76.14634420589182,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-02-130",
+    "published_at": "2026-08-07T11:18:19+00:00",
+    "review_reasons": [],
+    "title": "245 Ross Pk"
+  },
+  {
     "address": "121 Marcia St",
     "ai_analysis": {
       "available": true,
