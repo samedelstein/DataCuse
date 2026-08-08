@@ -1,5 +1,109 @@
 [
   {
+    "address": "220-22 Kenwood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view of the primary structure is significantly blocked by a large evergreen tree in the foreground, preventing a reliable assessment of the roof, entryway, and front facade."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "unclear",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "low",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.07,
+            "width": 0.08,
+            "x": 0.6,
+            "y": 0.69
+          },
+          "confidence": "medium",
+          "label": "lawn items",
+          "reason": "Unidentified items or equipment stored on the grass lawn"
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "The main structure is heavily obscured by a large tree, preventing a complete exterior condition assessment."
+      ],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A red-sided residential structure and a matching red outbuilding are visible, though the main building is heavily obscured by a large tree in the foreground.",
+      "visible_conditions": [
+        "Red siding on the main structure and outbuilding appears intact where visible",
+        "A large evergreen tree in the foreground heavily obstructs the view of the main house",
+        "Gravel driveway and grass lawn are present",
+        "Some small items or equipment are visible on the lawn near the outbuilding"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: The main structure is heavily obscured by a large tree, preventing a complete exterior condition assessment.",
+      "Needs human review"
+    ],
+    "id": 415,
+    "image": "images/parcel-000415.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 122138,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.079686266376925,
+    "lon": -76.15090512461691,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-10-310",
+    "published_at": "2026-08-08T02:02:55+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "220-22 Kenwood Ave"
+  },
+  {
     "address": "43.07460, -76.16034",
     "ai_analysis": {
       "available": true,
