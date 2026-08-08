@@ -1,5 +1,180 @@
 [
   {
+    "address": "43.07460, -76.16034",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The primary structure is heavily obscured by a large front hedge and mature trees, limiting the assessment of the front facade and foundation."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "multifamily",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential building is partially visible behind mature trees and a tall, manicured hedge.",
+      "visible_conditions": [
+        "Light-colored siding appears intact with some minor weathering or dirt accumulation.",
+        "Windows on the side facade appear intact.",
+        "A tall, dense hedge runs along the front of the property, partially obstructing the view of the structures.",
+        "Trash receptacles are visible on the side of the building."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 4 matching records"
+    ],
+    "id": 414,
+    "image": "images/parcel-000414.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 156489,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07460320215928,
+    "lon": -76.16033915691322,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07437963,
+          "Longitude": -76.16018416,
+          "NeedsRR": "Yes",
+          "ObjectId": 885,
+          "PropertyAddress": "709-11 Lemoyne Ave",
+          "RR_app_received": 1774569600000,
+          "RR_contact_name": "Cheyenne Talbert",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-13-22.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1779840000000,
+          "pc_owner": "Cheyenne Talbert",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07427042,
+          "Longitude": -76.1602657,
+          "NeedsRR": "Yes",
+          "ObjectId": 888,
+          "PropertyAddress": "705-07 Lemoyne Ave",
+          "RR_app_received": null,
+          "RR_contact_name": "Marguerite Serio",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-13-23.0",
+          "SHAPE": null,
+          "completion_date": 1484006400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1484006400000,
+          "pc_owner": "Julie Huertas",
+          "valid_until": 1578700800000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07434594,
+          "Longitude": -76.16042692,
+          "NeedsRR": "Yes",
+          "ObjectId": 891,
+          "PropertyAddress": "1504 First North St",
+          "RR_app_received": 1745193600000,
+          "RR_contact_name": "Alharbi Properties, LLC/Fadl Alharbi",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1759881600000,
+          "RR_int_insp_fail": 1751846400000,
+          "RR_int_insp_pass": 1759881600000,
+          "RRisValid": "Yes",
+          "SBL": "003.-13-25.0",
+          "SHAPE": null,
+          "completion_date": 1760054400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1759881600000,
+          "pc_owner": "Alharbi Properties, LLC",
+          "valid_until": 1854748800000,
+          "zip": 13208
+        },
+        {
+          "Latitude": 43.07438941,
+          "Longitude": -76.16053526,
+          "NeedsRR": "Yes",
+          "ObjectId": 894,
+          "PropertyAddress": "1506 First North St",
+          "RR_app_received": 1773273600000,
+          "RR_contact_name": "Alharbi Properties, LLC",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-13-26.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1778630400000,
+          "pc_owner": "Alharbi Properties, LLC",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "",
+    "published_at": "2026-08-08T01:36:34+00:00",
+    "review_reasons": [],
+    "title": "43.07460, -76.16034"
+  },
+  {
     "address": "218 Kenwood Ave & Marcia St",
     "ai_analysis": {
       "available": true,
