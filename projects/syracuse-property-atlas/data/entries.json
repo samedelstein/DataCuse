@@ -1,5 +1,107 @@
 [
   {
+    "address": "226 Kenwood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "A large mature tree in the front yard significantly obstructs the view of the roof and the upper left portion of the front facade, limiting complete assessment."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "not_visible",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.75,
+            "width": 0.82,
+            "x": 0.0,
+            "y": 0.0
+          },
+          "confidence": "medium",
+          "label": "Overhanging tree branches",
+          "reason": "Large tree canopy directly overhangs and partially contacts the upper structure and roof area."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Large tree branches are in close proximity to the roof and upper porch structure, which may present a risk of physical contact or debris accumulation."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential structure with a double-decker front porch, partially obscured by a large mature tree in the front yard.",
+      "visible_conditions": [
+        "Two-story front porch with wooden railings and steps appears intact.",
+        "Light-colored siding shows some weathering but no major missing sections.",
+        "A large mature tree in the front yard partially obstructs the roof and upper left facade.",
+        "Front yard is grass-covered and appears maintained with a concrete walkway."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Large tree branches are in close proximity to the roof and upper porch structure, which may present a risk of physical contact or debris accumulation."
+    ],
+    "id": 416,
+    "image": "images/parcel-000416.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 101111,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07976846445537,
+    "lon": -76.15106441748871,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-10-320",
+    "published_at": "2026-08-10T11:49:12+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "226 Kenwood Ave"
+  },
+  {
     "address": "220-22 Kenwood Ave",
     "ai_analysis": {
       "available": true,
