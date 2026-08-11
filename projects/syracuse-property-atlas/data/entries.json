@@ -1,5 +1,109 @@
 [
   {
+    "address": "112 Ellen St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The boarded window is located on the accessory garage structure rather than the primary residential dwelling."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.09,
+            "width": 0.07,
+            "x": 0.37,
+            "y": 0.44
+          },
+          "confidence": "high",
+          "label": "boarded window",
+          "reason": "The second-story window of the accessory structure is covered with a solid board."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Boarded-up window on the second floor of the detached garage/carriage house structure."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential property with an adjacent two-story garage structure featuring a boarded-up upper window.",
+      "visible_conditions": [
+        "Boarded-up window on the second floor of the left accessory structure",
+        "Siding and main house windows appear intact and in fair to good condition",
+        "Maintained lawn with minor foundation plantings and shrubs"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "yes",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Boarded-up window on the second floor of the detached garage/carriage house structure.",
+      "Needs human review"
+    ],
+    "id": 421,
+    "image": "images/parcel-000421.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 87411,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08030084561679,
+    "lon": -76.15083006872544,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-10-371",
+    "published_at": "2026-08-11T07:32:57+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue",
+      "boarded windows or doors"
+    ],
+    "title": "112 Ellen St"
+  },
+  {
     "address": "108 Ellen St",
     "ai_analysis": {
       "available": true,
