@@ -1,5 +1,107 @@
 [
   {
+    "address": "303-05 Kenwood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view is from across the street, and the rear of the property is not visible."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.13,
+            "width": 0.29,
+            "x": 0.31,
+            "y": 0.74
+          },
+          "confidence": "high",
+          "label": "Yard waste pile",
+          "reason": "Accumulated pile of organic yard debris on the grass near the curb."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Yard waste and brush pile accumulated on the front lawn near the street."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential structure with light grey siding and a small side-entry porch, featuring a maintained front lawn with a pile of yard waste near the curb.",
+      "visible_conditions": [
+        "Light grey siding appears intact and in good condition",
+        "Windows are intact with decorative shutters",
+        "Small side porch with awning over the entrance appears stable",
+        "A pile of yard waste and brush is present on the grass near the street curb"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Yard waste and brush pile accumulated on the front lawn near the street."
+    ],
+    "id": 428,
+    "image": "images/parcel-000428.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 61425,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07980541587924,
+    "lon": -76.15203785067419,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-11-010",
+    "published_at": "2026-08-12T06:02:55+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "303-05 Kenwood Ave"
+  },
+  {
     "address": "310 Kenwood Ave & Lemoyne Ave",
     "ai_analysis": {
       "available": true,
