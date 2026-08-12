@@ -1,5 +1,92 @@
 [
   {
+    "address": "310 Kenwood Ave & Lemoyne Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The assessment is based on a single street-level image which does not show the rear or sides of the structure.",
+        "The image contains a 2020 Google watermark, meaning current conditions may have changed since the photo was captured."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential structure with light-colored siding on the upper level and stone veneer on the lower level, featuring a front staircase and a grassy yard.",
+      "visible_conditions": [
+        "Light-colored siding on the upper level",
+        "Stone veneer facade on the lower level",
+        "Front concrete steps with metal handrails leading to the entrance",
+        "Double-hung windows with dark decorative shutters",
+        "Window air conditioning unit installed in an upper-story window",
+        "Grassy front yard with a small ornamental tree and concrete walkway"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 427,
+    "image": "images/parcel-000427.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 82306,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08054124410848,
+    "lon": -76.15234209365956,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-10-440",
+    "published_at": "2026-08-12T05:02:56+00:00",
+    "review_reasons": [],
+    "title": "310 Kenwood Ave & Lemoyne Ave"
+  },
+  {
     "address": "306 Kenwood Ave",
     "ai_analysis": {
       "available": true,
