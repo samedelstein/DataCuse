@@ -1,5 +1,107 @@
 [
   {
+    "address": "231 Kenwood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view is limited to the front facade from the street; side and rear conditions are not visible."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "good",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.12,
+            "width": 0.1,
+            "x": 0.35,
+            "y": 0.64
+          },
+          "confidence": "medium",
+          "label": "weathered wooden steps",
+          "reason": "The wooden entry steps show surface weathering and lack a standard handrail on the right side."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Weathering on the wooden front steps"
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential dwelling with green upper siding, a white enclosed front porch, and wooden entry steps.",
+      "visible_conditions": [
+        "Enclosed front porch with multiple horizontal awning-style windows",
+        "Upper story features green siding and a double window with an installed window air conditioning unit",
+        "Wooden entry steps leading to the porch door appear weathered",
+        "Lawn is mowed with small trimmed shrubs in front of the porch"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Weathering on the wooden front steps"
+    ],
+    "id": 433,
+    "image": "images/parcel-000433.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 70694,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.079417608022354,
+    "lon": -76.15147896443413,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-11-060",
+    "published_at": "2026-08-12T23:57:08+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "231 Kenwood Ave"
+  },
+  {
     "address": "233 Kenwood Ave",
     "ai_analysis": {
       "available": true,
