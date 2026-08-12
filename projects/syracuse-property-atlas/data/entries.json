@@ -1,5 +1,77 @@
 [
   {
+    "address": "243 Kenwood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "{\n  \"summary\": \"The visible exterior of the property appears to be a two-story yellow house with white trim, a front porch, and some debris observed near the street frontage.\",\n  \"property_type_guess\": \"single_family\",\n  \"visible_conditions\": [\n    \"The main structure is a two-story house with yellow siding and white trim.\",\n    \"Windows appear to be intact with white frames.\",\n    \"A wooden front porch with steps is visible on the left side of the front facade.\",\n    \"The roof is partially visible and appears to be dark-colored.\",\n    \"The yard contains grass and some shrubs near the house.\",\n    \"A paved driveway is visible on the left side of the property.\",\n    \"A pile of what appears to be discarded materials or debris, including wood and a white fixture, is present near the street frontage on the right side of the property.\"\n   furlough\"\n  ],\n  \"condition_scores\": {\n    \"roof\": \"fair\",\n    \"siding_or_facade\": \"good\",\n    \"windows_doors\": \"good\",\n    \"porch_or_entry\": \"good\",\n    \"yard_or_lot\": \"fair\",\n    \"trash_debris\": \"minor\",\n    \"vegetation_overgrowth\": \"none_visible\"\n  },\n  \"visible_flags\": {\n    \"boarded_windows_or_doors\": \"no\",\n    \"fire_damage_visible\": \"no\",\n    \"structural_damage_visible\": \"no\",\n    \"vacancy_signs_visible\": \"no\",\n    \"active_construction_visible\": \"no\"\n  },\n  \"possible_unrecorded_issues\": [\n    \"Accumulation of debris near the street frontage.\"\n  ],\n  \"image_annotations\": [\n    {\n      \"label\": \"Debris near street\",\n      \"reason\": \"Visible pile of discarded materials or debris near the property's street frontage.\",\n      \"bbox\": {\n        \"x\": \"0.68\",\n        \"y\": \"0.78\",\n        \"width\": \"0.28\",\n        \"height\": \"0.18\"\n      },\n      \"confidence\": \"high\"\n    }\n  ],\n  \"needs_human_review\": \"false\",\n  \"confidence\": \"high\",\n  \"caveats\": []\n}",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 430,
+    "image": "images/parcel-000430.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 68984,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.079617925348415,
+    "lon": -76.15176764884623,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-11-030",
+    "published_at": "2026-08-12T08:05:31+00:00",
+    "review_reasons": [],
+    "title": "243 Kenwood Ave"
+  },
+  {
     "address": "301 Kenwood Ave",
     "ai_analysis": {
       "available": true,
