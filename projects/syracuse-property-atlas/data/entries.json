@@ -1,5 +1,116 @@
 [
   {
+    "address": "105 Ellen St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.10",
+            "width": "0.10",
+            "x": "0.65",
+            "y": "0.60"
+          },
+          "confidence": "medium",
+          "label": "Minor debris",
+          "reason": "Visible accumulation of miscellaneous items near the fence."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor accumulation of items or debris is visible near the rear fence line."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image displays a two-story residential property with white siding and a dark roof, appearing to be in generally fair to good exterior condition, with some minor items visible near a rear fence.",
+      "visible_conditions": [
+        "The property features a two-story structure with white siding and dark-colored roof shingles.",
+        "A covered front porch with white railings is visible.",
+        "Windows appear intact, with an air conditioning unit in an upper-story window.",
+        "The yard area shows mown grass and a paved driveway.",
+        "Two black trash bins are visible near the side of the house.",
+        "Some miscellaneous items or debris are visible near a wooden fence in the rear portion of the lot."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Minor accumulation of items or debris is visible near the rear fence line."
+    ],
+    "id": 424,
+    "image": "images/parcel-000424.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 74010,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08034319691222,
+    "lon": -76.15167550810143,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-10-410",
+    "published_at": "2026-08-12T02:03:27+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "105 Ellen St"
+  },
+  {
     "address": "109 Ellen St",
     "ai_analysis": {
       "available": true,
