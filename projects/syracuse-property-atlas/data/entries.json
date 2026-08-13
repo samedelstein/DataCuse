@@ -1,5 +1,90 @@
 [
   {
+    "address": "208-10 Seventh North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view is from the street and only shows the front facade; rear and side conditions are not visible."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A single-story brick residential structure with an attached garage, a paved driveway, and a well-maintained lawn.",
+      "visible_conditions": [
+        "Light-colored brick facade appears intact",
+        "Attached garage with a white overhead door",
+        "Paved asphalt driveway with a temporary rope barrier",
+        "Double-hung windows appear intact",
+        "Small front entry with steps and an awning"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 440,
+    "image": "images/parcel-000440.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 74453,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07891361327162,
+    "lon": -76.15135546802367,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-11-130",
+    "published_at": "2026-08-13T06:02:52+00:00",
+    "review_reasons": [],
+    "title": "208-10 Seventh North St"
+  },
+  {
     "address": "200 Seventh North St & Cadill",
     "ai_analysis": {
       "available": true,
