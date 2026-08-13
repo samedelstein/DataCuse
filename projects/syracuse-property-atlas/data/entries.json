@@ -1,5 +1,88 @@
 [
   {
+    "address": "1200-22 Lemoyne Ave & Seventh Nor",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The buildings are viewed from a distance across a parking lot, which limits detailed inspection of facades, windows, and roofs."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "multifamily",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A multi-building brick residential complex with red roofs is visible across a paved parking lot under a clear sky.",
+      "visible_conditions": [
+        "Two-story brick apartment or townhouse buildings with red roofs",
+        "Paved parking lot in the foreground with multiple parked vehicles",
+        "Maintained grassy areas visible between and around the structures"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 447,
+    "image": "images/parcel-000447.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 61004,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07984351095713,
+    "lon": -76.15241604666956,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-11-200",
+    "published_at": "2026-08-13T13:03:17+00:00",
+    "review_reasons": [],
+    "title": "1200-22 Lemoyne Ave & Seventh Nor"
+  },
+  {
     "address": "240 Seventh North St",
     "ai_analysis": {
       "available": true,
