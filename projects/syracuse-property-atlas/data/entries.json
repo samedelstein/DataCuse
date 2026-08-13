@@ -1,5 +1,91 @@
 [
   {
+    "address": "230 Seventh North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The main entrance is not clearly visible from this front angle.",
+        "The image is captured from a distance across the street, limiting close inspection of the roof and siding details."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A single-story residential structure with light-colored siding and a front-facing window, situated on a grassy lot with an adjacent driveway.",
+      "visible_conditions": [
+        "Single-story residential building with light-colored siding",
+        "Front-facing multi-pane window",
+        "Grassy front yard with some small decorative items or objects near the foundation",
+        "Paved driveway on the right side of the property",
+        "Mature trees and vegetation bordering the right side of the lot"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 444,
+    "image": "images/parcel-000444.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 84654,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07929439124272,
+    "lon": -76.1519366263677,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-11-170",
+    "published_at": "2026-08-13T10:02:57+00:00",
+    "review_reasons": [],
+    "title": "230 Seventh North St"
+  },
+  {
     "address": "224 Seventh North St",
     "ai_analysis": {
       "available": true,
