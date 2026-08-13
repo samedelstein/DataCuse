@@ -1,5 +1,68 @@
 [
   {
+    "address": "234-36 Seventh North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "{\n  \"summary\": \"A single-story red commercial building with an asphalt parking area in front, showing some accumulated items and vegetation along the foundation.\",\n  \"property_type_guess\": \"commercial\",\n  \"visible_conditions\": [\n    \"Red siding appears mostly intact with some minor weathering\",\n    \"A small pile of miscellaneous items, including a wooden box and a traffic cone, is present on the edge of the asphalt lot\",\n    \"Vegetation and weeds are growing closely along the foundation and fence line\",\n    \"One window on the left side of the facade appears to be covered or boarded with a solid light-colored panel\"\n  ],\n  \"condition_scores\": {\n    \"roof\": \"fair\",\n    \"siding_or_facade\": \"fair\",\n    \"windows_doors\": \"fair\",\n    \"porch_or_entry\": \"not_visible\",\n    \"yard_or_lot\": \"fair\",\n    \"trash_debris\": \"minor\",\n    \"vegetation_overgrowth\": \"minor\"\n  },\n  \"visible_flags\": {\n    \"boarded_windows_or_doors\": \"yes\",\n    \"fire_damage_visible\": \"no\",\n    \"structural_damage_visible\": \"no\",\n    \"vacancy_signs_visible\": \"no\",\n    \"active_construction_visible\": \"no\"\n  },\n  \"possible_unrecorded_issues\": [\n    \"Accumulated debris and items on the asphalt lot\",\n    \"Potential boarded window on the front facade\"\n  ],\n  \"image_annotations\": [\n    {\n      \"label\": \"debris accumulation\",\n      \"reason\": \"A pile of miscellaneous items, including a box and loose materials, is located on the edge of the parking lot.\",\n      \"bbox\": {\n        \"x\": 0.25,\n        \"y\": 0.67,\n        \"width\": 0.2,\n        \"height\": 0.09\n      },\n      \"confidence\": \"high\"\n    },\n    {\n      \"label\": \"covered window\",\n      \"reason\": \"Window appears to be covered or boarded with a solid light-colored panel.\",\n      \"bbox\": {\n        \"x\": 0.32,\n        \"y\": 0.55,\n        \"width\": 0.06,\n        \"height\": 0.04\n      },\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"needs_human_review\": true,\n  \"confidence\": \"medium\",\n  \"caveats\": [\n    \"The view of the building is from a distance across a parking lot, and some lower portions of the facade are partially obscured by vegetation.\"\n  ]\n}\n}\n",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 445,
+    "image": "images/parcel-000445.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 63802,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07941588857543,
+    "lon": -76.15207931181908,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-11-180",
+    "published_at": "2026-08-13T11:02:56+00:00",
+    "review_reasons": [],
+    "title": "234-36 Seventh North St"
+  },
+  {
     "address": "230 Seventh North St",
     "ai_analysis": {
       "available": true,
