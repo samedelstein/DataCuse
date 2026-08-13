@@ -612,10 +612,14 @@ def build_vision_prompt(parcel: sqlite3.Row, matches: dict[str, list[dict]]) -> 
             "Describe only visible exterior property conditions from the image.",
             "Compare visible conditions against known_public_records and call out possible image-only issues only when they are plainly visible.",
             "Use cautious language. Do not infer ownership, occupancy, code violations, criminal activity, socioeconomic status, or protected-class information.",
+            "Treat maintained lawns, garden beds, shrubs, ornamental grasses, and foundation plantings as normal landscaping, not vegetation overgrowth, even when vegetation is dense, varied in height, or near the foundation.",
+            "Set vegetation_overgrowth to minor or major only when unmanaged growth is clearly evident, such as tall weeds or grass overtaking most of a lawn, obstructing a walkway, entry, or window, engulfing a structure, or visibly encroaching into the public way.",
+            "Do not treat ordinary household outdoor items, such as recycling bins or patio chairs, as an exterior-condition issue unless they are clearly abandoned, damaged, or part of a debris accumulation.",
+            "When landscaping intent versus neglect is ambiguous, use none_visible or unclear, state the uncertainty in caveats, and do not create an image annotation.",
             "Do not identify, describe, transcribe, or track people, faces, license plates, or private personal details.",
             "If the property is blocked, image quality is poor, or the view may show the wrong parcel, lower confidence and explain the caveat.",
             "When you flag visible issues, include approximate normalized bounding boxes in image_annotations. Use x, y, width, and height as fractions from 0 to 1 relative to the full image.",
-            "Only create bounding boxes for visible property-condition issues, not people, vehicles, license plates, or unrelated background objects.",
+            "Only create bounding boxes for clearly adverse visible property-condition issues, not neutral features, intentional landscaping, people, vehicles, license plates, or unrelated background objects.",
             "Return valid JSON only. Do not wrap it in Markdown.",
         ],
         "schema": AI_ANALYSIS_SCHEMA,
@@ -1222,6 +1226,7 @@ def annotation_overlays(ai: dict) -> str:
             continue
         label = html.escape(str(item.get("label") or "AI review area"))
         confidence = html.escape(str(item.get("confidence") or "unknown"))
+        confidence = f"{confidence} confidence"
         overlays.append(
             f"""
             <span class="annotation-box" style="left:{x:.2f}%;top:{y:.2f}%;width:{width:.2f}%;height:{height:.2f}%;">
