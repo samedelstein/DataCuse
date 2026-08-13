@@ -1,5 +1,92 @@
 [
   {
+    "address": "225 Kenwood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The primary structure is heavily obscured by a large tree in the foreground, preventing a full assessment of the roof, upper facade, and entryway."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "not_visible",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A residential property with white siding and a front porch, heavily obscured by a large mature tree in the foreground.",
+      "visible_conditions": [
+        "White siding appears intact where visible",
+        "Front porch steps are visible and appear functional",
+        "A large tree in the foreground significantly obstructs the view of the front facade and roof"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Needs human review"
+    ],
+    "id": 434,
+    "image": "images/parcel-000434.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 93898,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0793365022225,
+    "lon": -76.15143014159678,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-11-070",
+    "published_at": "2026-08-13T00:03:20+00:00",
+    "review_reasons": [
+      "AI requested human review"
+    ],
+    "title": "225 Kenwood Ave"
+  },
+  {
     "address": "231 Kenwood Ave",
     "ai_analysis": {
       "available": true,
