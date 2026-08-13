@@ -1,5 +1,107 @@
 [
   {
+    "address": "153 Kenwood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "There is some sun glare in the upper right portion of the image, but it does not obstruct the view of the primary structure."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.23,
+            "width": 0.45,
+            "x": 0.45,
+            "y": 0.75
+          },
+          "confidence": "high",
+          "label": "yard waste pile",
+          "reason": "A pile of cut branches and brush is sitting on the grass near the sidewalk."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Accumulation of cut branches/yard waste in the front yard near the sidewalk."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The property is a well-maintained single-family home with light siding, an enclosed front porch, and a mowed lawn, though a pile of cut brush is visible in the foreground.",
+      "visible_conditions": [
+        "Siding appears intact and clean.",
+        "Enclosed porch windows and front door appear in good condition.",
+        "Front steps and railings are painted blue and appear structurally sound.",
+        "A pile of cut branches and yard debris is present on the grass near the sidewalk."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Accumulation of cut branches/yard waste in the front yard near the sidewalk."
+    ],
+    "id": 456,
+    "image": "images/parcel-000456.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 75734,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07834427268186,
+    "lon": -76.14972742038759,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-12-090",
+    "published_at": "2026-08-13T22:02:54+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "153 Kenwood Ave"
+  },
+  {
     "address": "157 Kenwood Ave",
     "ai_analysis": {
       "available": true,
