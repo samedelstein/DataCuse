@@ -1,5 +1,89 @@
 [
   {
+    "address": "161 Kenwood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Analysis is limited to the front exterior visible from the street view image; rear and side elevations are not visible."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The property is a well-maintained single-family bungalow with intact siding, roof, and windows, and a neatly kept front yard.",
+      "visible_conditions": [
+        "The roof shingles appear intact and in good condition.",
+        "The grey siding is clean and shows no obvious damage.",
+        "The windows on the enclosed porch and upper level appear intact.",
+        "The front yard is mowed and features neatly trimmed foundation shrubs."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 454,
+    "image": "images/parcel-000454.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 70028,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07849532910872,
+    "lon": -76.14994467712972,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-12-070",
+    "published_at": "2026-08-13T20:02:52+00:00",
+    "review_reasons": [],
+    "title": "161 Kenwood Ave"
+  },
+  {
     "address": "165 Kenwood Ave",
     "ai_analysis": {
       "available": true,
