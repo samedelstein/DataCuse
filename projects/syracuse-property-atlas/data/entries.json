@@ -1,5 +1,89 @@
 [
   {
+    "address": "222 Cadillac St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view of the main house is partially angled and obstructed by a utility pole in the foreground and a front hedge."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A single-family residential property with light yellow siding, a manicured hedge, and a side entrance, viewed from the street behind a utility pole.",
+      "visible_conditions": [
+        "Light yellow siding appears intact and in good condition",
+        "Manicured hedge along the front sidewalk",
+        "Side entrance door with oval window pane appears functional",
+        "Detached garage visible to the left behind a white vinyl fence"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 450,
+    "image": "images/parcel-000450.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 66515,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07877824630284,
+    "lon": -76.15036533287832,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-12-030",
+    "published_at": "2026-08-13T16:02:52+00:00",
+    "review_reasons": [],
+    "title": "222 Cadillac St"
+  },
+  {
     "address": "218 Cadillac St",
     "ai_analysis": {
       "available": true,
