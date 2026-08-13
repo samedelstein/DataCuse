@@ -1,5 +1,89 @@
 [
   {
+    "address": "165 Kenwood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Only the front facade and partial left side are visible from the street-level view."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A well-maintained one-and-a-half-story single-family home with white siding, an enclosed front porch, and a manicured lawn.",
+      "visible_conditions": [
+        "White siding appears clean and intact",
+        "Enclosed front porch windows are intact",
+        "Roof shingles appear in good condition",
+        "Lawn is mowed and foundation hedges are neatly trimmed"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 453,
+    "image": "images/parcel-000453.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 56899,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07857085707626,
+    "lon": -76.1500533055334,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-12-060",
+    "published_at": "2026-08-13T19:02:52+00:00",
+    "review_reasons": [],
+    "title": "165 Kenwood Ave"
+  },
+  {
     "address": "167-69 Kenwood Ave",
     "ai_analysis": {
       "available": true,
