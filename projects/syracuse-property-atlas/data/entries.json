@@ -1,5 +1,144 @@
 [
   {
+    "address": "200 Seventh North St & Cadill",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image shows active residential use and a maintained yard, which contradicts the public records indicating a vacant and unfit property; the target parcel may be misaligned, or the records may be outdated.",
+        "Foreground vehicles and trees partially obstruct the view of the property."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A street-level view showing a two-story residential dwelling with a fenced yard, an above-ground pool, and adjacent vehicles, appearing generally maintained from this angle.",
+      "visible_conditions": [
+        "Two-story residential structure with light-colored siding and a dark shingled roof.",
+        "Fenced yard containing outdoor seating, a bench, and an above-ground pool in the background.",
+        "No obvious structural defects, boarded windows, or severe deterioration visible on the primary structure from this distance."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Unfit properties: 1 matching record",
+      "Needs human review"
+    ],
+    "id": 439,
+    "image": "images/parcel-000439.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 127397,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0787626929606,
+    "lon": -76.15121575719304,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [
+        {
+          "Latitude": 43.07851807,
+          "Longitude": -76.15095414,
+          "ObjectId": 269,
+          "SBL": "004.-12-41.0",
+          "Vacant": null,
+          "address": "174 Seventh North St & Cadill",
+          "area_involved": "Front ",
+          "article": "A structure is unfit for human occupancy whenever such structure is unsafe, unlawful or, because of the degree to which the structure is in disrepair or lacks maintenance, is unsanitary, vermin or rat infested, contains filth and contamination, or lacks ventilation, illumination, sanitary or heating facilities or other essential equipment required by this code, or because the location of the structure consti\ntutes a hazard to the occupants of the structure or to the public.",
+          "comp_close_date": -2208988800000,
+          "comp_open_date": 1646611200000,
+          "comp_status": "Open",
+          "complaint_number": "2022-01435",
+          "complaint_type_name": "Vacant House",
+          "comply_by_date": 1652400000000,
+          "corrective_action": "Repair porch, provide electricity and gas to the property",
+          "department_name": "Vacant Properties",
+          "owner_address": "174 Seventh North St ",
+          "owner_city": "Syracuse",
+          "owner_name": "Marcus Martinez",
+          "owner_state": "NY",
+          "owner_zip_code": "13208",
+          "parcel_id": 1310,
+          "status_date": 1688947200000,
+          "status_type_name": "Open",
+          "violation": "2020 PMCNYS - Section 107.1.3 - Structure Unfit for Human Occupancy",
+          "violation_date": 1651142507000,
+          "violation_number": "2022-06928",
+          "zip": 13208
+        }
+      ],
+      "vacant_properties": [
+        {
+          "Latitude": 43.07851807,
+          "Longitude": -76.15095414,
+          "ObjectId": 68,
+          "Owner": "Marcus Martinez",
+          "OwnerAddress": "174 Seventh North St Syracuse, NY 13208",
+          "PropertyAddress": "174 Seventh North St & Cadill",
+          "SBL": "004.-12-41.0",
+          "VPR_result": "VPR - Valid / Year 3",
+          "VPR_valid": "Y",
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": "2025-06-02",
+          "completion_type_name": "VPR Cert Issued - Plan B",
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": "2026-06-02"
+        }
+      ]
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-11-120",
+    "published_at": "2026-08-13T05:02:55+00:00",
+    "review_reasons": [
+      "AI requested human review"
+    ],
+    "title": "200 Seventh North St & Cadill"
+  },
+  {
     "address": "221 Cadillac St & Kenwood Ave",
     "ai_analysis": {
       "available": true,
