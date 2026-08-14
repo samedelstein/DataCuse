@@ -1,5 +1,90 @@
 [
   {
+    "address": "1325 Court St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "A large tree in the foreground partially obstructs the right side of the facade and the roofline."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "unclear",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The visible exterior of the property shows a well-maintained two-story residential structure with intact siding, windows, and a clean yard.",
+      "visible_conditions": [
+        "White horizontal siding appears intact and clean.",
+        "Windows are intact with dark trim.",
+        "Front entry porch and steps appear stable and in good condition.",
+        "The yard features maintained ground cover, a mowed lawn, and a potted plant.",
+        "Fallen leaves are visible on the sidewalk and lawn, typical of seasonal change."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 467,
+    "image": "images/parcel-000467.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 123796,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07748853577482,
+    "lon": -76.148500106755,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-12-200",
+    "published_at": "2026-08-14T22:03:14+00:00",
+    "review_reasons": [],
+    "title": "1325 Court St"
+  },
+  {
     "address": "1329 Court St & Kenwood Ave",
     "ai_analysis": {
       "available": true,
