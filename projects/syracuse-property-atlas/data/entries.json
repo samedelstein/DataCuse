@@ -1,5 +1,104 @@
 [
   {
+    "address": "141 Kenwood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view of the property, particularly the roof and upper facade, is significantly obstructed by a large tree.",
+        "The image quality and angle limit a comprehensive assessment of all exterior conditions."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "not_visible",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a residential structure with a generally maintained yard, though the view of the building is significantly obstructed by a large tree.",
+      "visible_conditions": [
+        "A residential structure with light-colored siding is partially visible.",
+        "A paved driveway is present on the left side of the property.",
+        "A front lawn appears to be generally maintained.",
+        "A trimmed hedge is visible along the driveway.",
+        "A porch or entry area with steps and railings is visible on the left side of the house.",
+        "Several windows are visible and appear intact.",
+        "Household waste bins are visible near the driveway.",
+        "Several bags, possibly containing yard waste or soil, are visible near the street on the right.",
+        "A large tree in the foreground significantly obstructs the view of the property."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 459,
+    "image": "images/parcel-000459.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 130088,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0781176875381,
+    "lon": -76.14940153690614,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-12-120",
+    "published_at": "2026-08-14T14:04:42+00:00",
+    "review_reasons": [],
+    "title": "141 Kenwood Ave"
+  },
+  {
     "address": "145 Kenwood Ave",
     "ai_analysis": {
       "available": true,
