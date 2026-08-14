@@ -1,5 +1,89 @@
 [
   {
+    "address": "1329 Court St & Kenwood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Mature tree branches partially obstruct the view of the roof and upper portion of the facade."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A well-maintained two-story residential building with light siding, intact windows, and a neat front yard with established landscaping.",
+      "visible_conditions": [
+        "Siding appears clean and intact with no visible damage.",
+        "Windows and front door appear in good condition with no broken panes.",
+        "Front steps and entry portico are structurally sound and clear of debris.",
+        "Landscaping is maintained, featuring low ground cover, a mowed lawn, and a potted plant."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 466,
+    "image": "images/parcel-000466.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 118683,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07756537968252,
+    "lon": -76.14837835269233,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-12-190",
+    "published_at": "2026-08-14T21:03:01+00:00",
+    "review_reasons": [],
+    "title": "1329 Court St & Kenwood Ave"
+  },
+  {
     "address": "115 Kenwood Ave",
     "ai_analysis": {
       "available": true,
