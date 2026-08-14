@@ -1,5 +1,89 @@
 [
   {
+    "address": "145 Kenwood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The items on the lawn (chair, bucket, bags) appear to be temporary yard maintenance materials or ordinary household items rather than chronic debris accumulation."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story single-family home with grey siding, an enclosed front porch, and a maintained lawn featuring some temporary yard items in the foreground.",
+      "visible_conditions": [
+        "Grey siding appears intact and in good condition",
+        "Enclosed front porch with intact windows and door",
+        "Maintained lawn with trimmed foundation shrubs",
+        "A chair, bucket, and yard waste bags are present on the front lawn"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 458,
+    "image": "images/parcel-000458.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 67679,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.078193216202344,
+    "lon": -76.1495101644651,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-12-110",
+    "published_at": "2026-08-14T14:01:09+00:00",
+    "review_reasons": [],
+    "title": "145 Kenwood Ave"
+  },
+  {
     "address": "149 Kenwood Ave",
     "ai_analysis": {
       "available": true,
