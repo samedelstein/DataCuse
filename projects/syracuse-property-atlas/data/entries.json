@@ -1,5 +1,108 @@
 [
   {
+    "address": "125 Kenwood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Sun glare is present in the upper right quadrant of the image, partially obscuring the tree and the right side of the roofline."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.12,
+            "width": 0.52,
+            "x": 0.08,
+            "y": 0.87
+          },
+          "confidence": "high",
+          "label": "lumber pile",
+          "reason": "A pile of loose wooden boards and lumber is sitting on the grass strip near the curb."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Lumber and construction materials are left on the curb-side grass strip"
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A well-maintained one-and-a-half-story residential home with gray siding, a mowed lawn, and a pile of lumber on the curb-side grass strip.",
+      "visible_conditions": [
+        "Gray vinyl siding appears intact and in good condition",
+        "Windows and front door appear functional and undamaged",
+        "Concrete steps leading to the entrance are clear and stable",
+        "Lawn is mowed and maintained",
+        "A pile of loose lumber and wooden boards is present on the grass strip near the street"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Lumber and construction materials are left on the curb-side grass strip"
+    ],
+    "id": 463,
+    "image": "images/parcel-000463.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 64392,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.077815572751774,
+    "lon": -76.14896702933315,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-12-160",
+    "published_at": "2026-08-14T18:03:11+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "125 Kenwood Ave"
+  },
+  {
     "address": "127 Kenwood Ave",
     "ai_analysis": {
       "available": true,
