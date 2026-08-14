@@ -1,5 +1,89 @@
 [
   {
+    "address": "149 Kenwood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The assessment is based on a single street-level view; rear and side elevations are not fully visible."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A one-and-a-half-story residential structure featuring a red upper gable, white siding, an enclosed front porch, and established front yard landscaping.",
+      "visible_conditions": [
+        "The roof shingles appear intact from this angle.",
+        "The siding on the upper gable is painted red, while the lower level has white siding, both appearing in fair condition.",
+        "The enclosed front porch has multiple windows and an entry door that appear intact.",
+        "The front yard contains a mowed lawn and dense, seemingly intentional foundation plantings and shrubs."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 457,
+    "image": "images/parcel-000457.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 73817,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07826874458358,
+    "lon": -76.14961879229226,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-12-100",
+    "published_at": "2026-08-14T13:56:14+00:00",
+    "review_reasons": [],
+    "title": "149 Kenwood Ave"
+  },
+  {
     "address": "153 Kenwood Ave",
     "ai_analysis": {
       "available": true,
