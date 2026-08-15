@@ -1,5 +1,111 @@
 [
   {
+    "address": "1307 Court St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view of the side and rear of the property is obstructed.",
+        "The exact condition of the foundation behind the piers cannot be fully determined from the street-level image."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "poor",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.16,
+            "width": 0.25,
+            "x": 0.44,
+            "y": 0.51
+          },
+          "confidence": "high",
+          "label": "weathered porch facade and exposed piers",
+          "reason": "The lower portion of the enclosed porch shows significant weathering, discoloration, and lacks protective skirting, exposing the foundation piers."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Weathered siding and exposed foundation piers on the front enclosed porch structure."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A residential building with a gambrel roof and a central chimney, featuring an enclosed front porch with visible weathering and exposed foundation piers.",
+      "visible_conditions": [
+        "Enclosed front porch shows signs of weathering, discoloration, and missing or unfinished skirting near the base.",
+        "Exposed concrete block foundation piers under the front porch.",
+        "Main roof and upper siding appear intact but show minor wear.",
+        "Driveway contains a parked vehicle and a standard trash bin.",
+        "Lawn appears maintained with no significant overgrowth."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Weathered siding and exposed foundation piers on the front enclosed porch structure.",
+      "Needs human review"
+    ],
+    "id": 471,
+    "image": "images/parcel-000471.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 68472,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0772146502682,
+    "lon": -76.14902533151731,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-12-240",
+    "published_at": "2026-08-15T14:16:00+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "1307 Court St"
+  },
+  {
     "address": "1311 Court St",
     "ai_analysis": {
       "available": true,
