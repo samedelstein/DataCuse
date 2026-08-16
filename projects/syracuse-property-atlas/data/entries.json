@@ -1,5 +1,77 @@
 [
   {
+    "address": "138 Seventh North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "{\n  \"summary\": \"The property features a two-story residential structure with a white exterior, a dark roof, and a front porch, situated on a lot with a green lawn and a large tree.\",\n  \"property_type_guess\": \"single_family\",\n  \"visible_conditions\": [\n    \"A two-story residential structure with a white exterior finish.\",\n    \"A dark-colored gabled roof with a dormer featuring multiple small windows.\",\n    \"A front porch with a gabled roof, wooden railings, and steps leading to an orange-red front door.\",\n    \"Windows are visible on the front porch and within the dormer.\",\n    \"The property includes a green lawn, though some areas appear to have thinner grass or bare soil.\",\n    \"A large deciduous tree with green foliage is situated on the right side of the property, partially obscuring the view of an adjacent structure.\",\n    \"Utility lines are visible in the upper portion of the image.\"\n   \u0432\u0435},\n  \"condition_scores\": {\n    \"roof\": \"good\",\n    \"siding_or_facade\": \"fair\",\n    \"windows_doors\": \"good\",\n    \"porch_or_entry\": \"fair\",\n    \"yard_or_lot\": \"fair\",\n    \"trash_debris\": \"none_visible\",\n    \"vegetation_overgrowth\": \"none_visible\"\n  },\n  \"visible_flags\": {\n    \"boarded_windows_or_doors\": \"no\",\n    \"fire_damage_visible\": \"no\",\n    \"structural_damage_visible\": \"no\",\n    \"vacancy_signs_visible\": \"no\",\n    \"active_construction_visible\": \"no\"\n  },\n  \"possible_unrecorded_issues\": [\n    \"Minor wear or discoloration may be present on the white exterior siding.\",\n    \"Some bare patches are visible within the lawn area.\"\n  ],\n  \"image_annotations\": [],\n  \"needs_human_review\": \"false\",\n  \"confidence\": \"high\",\n  \"caveats\": []\n}",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 479,
+    "image": "images/parcel-000479.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 97874,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07789739485123,
+    "lon": -76.14989217086864,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-12-320",
+    "published_at": "2026-08-16T17:03:01+00:00",
+    "review_reasons": [],
+    "title": "138 Seventh North St"
+  },
+  {
     "address": "132 Seventh North St",
     "ai_analysis": {
       "available": true,
