@@ -1,5 +1,89 @@
 [
   {
+    "address": "124-26 Seventh North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The roof is largely obscured from this street-level angle."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "unclear",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential duplex with a front porch and upper balcony, featuring a maintained lawn and showing no obvious exterior structural issues.",
+      "visible_conditions": [
+        "Light-colored siding appears intact and in good condition",
+        "Brick porch pillars and concrete steps appear stable",
+        "Maintained front lawn with small, trimmed shrubs",
+        "Standard household waste bins are placed near the front steps"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 476,
+    "image": "images/parcel-000476.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 86192,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07767095564903,
+    "lon": -76.14956610218579,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-12-290",
+    "published_at": "2026-08-16T14:44:36+00:00",
+    "review_reasons": [],
+    "title": "124-26 Seventh North St"
+  },
+  {
     "address": "120 Seventh North St",
     "ai_analysis": {
       "available": true,
