@@ -1,5 +1,145 @@
 [
   {
+    "address": "144-46 Seventh North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "poor",
+        "roof": "unclear",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.15,
+            "width": 0.3,
+            "x": 0.35,
+            "y": 0.55
+          },
+          "confidence": "high",
+          "label": "Porch deterioration",
+          "reason": "Visible damage to the porch railing and ceiling structure."
+        },
+        {
+          "bbox": {
+            "height": 0.05,
+            "width": 0.03,
+            "x": 0.45,
+            "y": 0.65
+          },
+          "confidence": "high",
+          "label": "Debris near entry",
+          "reason": "A black bin and other items are visible near the front porch."
+        },
+        {
+          "bbox": {
+            "height": 0.1,
+            "width": 0.3,
+            "x": 0.35,
+            "y": 0.65
+          },
+          "confidence": "high",
+          "label": "Unmanaged vegetation",
+          "reason": "Overgrowth of vegetation around the porch and foundation area."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Deterioration of the front porch structure and railing.",
+        "Minor accumulation of debris near the front entry.",
+        "Minor unmanaged vegetation around the foundation and porch area."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image displays a two-story residential structure with a detached garage, featuring a front porch that shows signs of deterioration.",
+      "visible_conditions": [
+        "A two-story residential structure with light-colored siding is visible.",
+        "A detached garage with a brown garage door is present to the left of the main house.",
+        "The front porch of the main house shows signs of deterioration, including damaged railing and a sagging porch ceiling.",
+        "The yard contains grass and some shrubbery.",
+        "A paved driveway leads to the garage.",
+        "Some items, including a black bin, are visible near the front porch.",
+        "Vegetation around the front porch and foundation appears somewhat unmanaged."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Deterioration of the front porch structure and railing.",
+      "Image-only flag: Minor accumulation of debris near the front entry.",
+      "Image-only flag: Minor unmanaged vegetation around the foundation and porch area.",
+      "Needs human review"
+    ],
+    "id": 481,
+    "image": "images/parcel-000481.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 75287,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07804835440444,
+    "lon": -76.15010955140265,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-12-340",
+    "published_at": "2026-08-16T19:03:02+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "144-46 Seventh North St"
+  },
+  {
     "address": "140-42 Seventh North St",
     "ai_analysis": {
       "available": true,
