@@ -1,5 +1,68 @@
 [
   {
+    "address": "132 Seventh North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "{\n  \"summary\": \"A street-level view showing a small single-story residential structure partially obscured by a tree, alongside a two-story residential building with a paved driveway.\",\n  \"property_type_guess\": \"unclear\",\n  \"visible_conditions\": [\n    \"A large tree partially obstructs the view of the single-story structure on the left.\",\n    \"The single-story structure features a small front porch with a railing.\",\n    \"The two-story structure on the right has white siding, a garage, and concrete steps leading to the entrance.\",\n    \"The lawn appears mowed and maintained, with a garden bed in front of the smaller structure.\",\n    \"A paved driveway runs between the structures.\"\n  ],\n  \"condition_scores\": {\n    \"roof\": \"unclear\",\n    \"siding_or_facade\": \"good\",\n    \"windows_doors\": \"good\",\n    \"porch_or_entry\": \"good\",\n    \"yard_or_lot\": \"good\",\n    \"trash_debris\": \"none_visible\",\n    \"vegetation_overgrowth\": \"none_visible\"\n  },\n  \"visible_flags\": {\n    \"boarded_windows_or_doors\": \"no\",\n    \"fire_damage_visible\": \"no\",\n    \"structural_damage_visible\": \"no\",\n    \"vacancy_signs_visible\": \"no\",\n    \"active_construction_visible\": \"no\"\n  },\n  \"possible_unrecorded_issues\": [],\n  \"image_annotations\": [],\n  \"needs_human_review\": false,\n  \"confidence\": \"medium\",\n  \"caveats\": [\n    \"Multiple structures are visible in the image, making it unclear which specific building corresponds to 132 SEVENTH NORTH ST.\",\n    \"A large tree partially obstructs the facade of the single-story structure on the left.\"\n  ]\n}\n}\n",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 478,
+    "image": "images/parcel-000478.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 86226,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07782191510052,
+    "lon": -76.14978348112352,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-12-310",
+    "published_at": "2026-08-16T16:03:04+00:00",
+    "review_reasons": [],
+    "title": "132 Seventh North St"
+  },
+  {
     "address": "130 Seventh North St",
     "ai_analysis": {
       "available": true,
