@@ -1,5 +1,68 @@
 [
   {
+    "address": "300 Cadillac St & Kenwood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "{\n  \"summary\": \"A two-story residential building with light-colored siding, a wooden fence, and a maintained lawn, partially obscured by vehicles in the foreground.\",\n  \"property_type_guess\": \"two_family\",\n  \"visible_conditions\": [\n    \"Light-colored siding appears intact with minor weathering.\",\n    \"Windows and doors appear intact and functional from this angle.\",\n    \"A wooden picket fence runs along the front yard and appears weathered but standing.\",\n    \"The lawn is mowed and maintained.\"\n  ],\n  \"condition_scores\": {\n    \"roof\": \"fair\",\n    \"siding_or_facade\": \"fair\",\n    \"windows_doors\": \"good\",\n    \"porch_or_entry\": \"fair\",\n    \"yard_or_lot\": \"good\",\n    \"trash_debris\": \"none_visible\",\n    \"vegetation_overgrowth\": \"none_visible\"\n  },\n  \"visible_flags\": {\n    \"boarded_windows_or_doors\": \"no\",\n    \"fire_damage_visible\": \"no\",\n    \"structural_damage_visible\": \"no\",\n    \"vacancy_signs_visible\": \"no\",\n    \"active_construction_visible\": \"no\"\n  },\n  \"possible_unrecorded_issues\": [],\n  \"image_annotations\": [],\n  \"needs_human_review\": \"false\",\n  \"confidence\": \"high\",\n  \"caveats\": [\n    \"Vehicles in the foreground partially obstruct the lower portion of the property and yard.\"\n  ]",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 489,
+    "image": "images/parcel-000489.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 92096,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07906581200948,
+    "lon": -76.15003274587465,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-13-010",
+    "published_at": "2026-08-17T19:03:02+00:00",
+    "review_reasons": [],
+    "title": "300 Cadillac St & Kenwood Ave"
+  },
+  {
     "address": "174 Seventh North St & Cadill",
     "ai_analysis": {
       "available": true,
