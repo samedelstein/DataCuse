@@ -1,5 +1,143 @@
 [
   {
+    "address": "160 Seventh North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The property is recorded as vacant and unfit in public records, but the exterior appears well-maintained with a mowed lawn and intact siding, suggesting the unfit designation may be due to interior conditions not visible from the street.",
+        "A window to the right of the front door has a purple covering which could be interior decor or a board, but its exact nature is unclear from this distance."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A one-and-a-half-story single-family home with white siding, a red front door, and a well-maintained lawn, showing no obvious exterior signs of deterioration.",
+      "visible_conditions": [
+        "White siding appears intact and clean",
+        "Red front door is visible and appears functional",
+        "Front lawn is mowed and clear of debris",
+        "Concrete steps leading to the front entrance have handrails",
+        "A window to the right of the door has a purple covering or panel behind the glass"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "unclear",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Unfit properties: 1 matching record"
+    ],
+    "id": 485,
+    "image": "images/parcel-000485.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 66894,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.078368058236045,
+    "lon": -76.15054196327263,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [
+        {
+          "Latitude": 43.07851807,
+          "Longitude": -76.15095414,
+          "ObjectId": 269,
+          "SBL": "004.-12-41.0",
+          "Vacant": null,
+          "address": "174 Seventh North St & Cadill",
+          "area_involved": "Front ",
+          "article": "A structure is unfit for human occupancy whenever such structure is unsafe, unlawful or, because of the degree to which the structure is in disrepair or lacks maintenance, is unsanitary, vermin or rat infested, contains filth and contamination, or lacks ventilation, illumination, sanitary or heating facilities or other essential equipment required by this code, or because the location of the structure consti\ntutes a hazard to the occupants of the structure or to the public.",
+          "comp_close_date": -2208988800000,
+          "comp_open_date": 1646611200000,
+          "comp_status": "Open",
+          "complaint_number": "2022-01435",
+          "complaint_type_name": "Vacant House",
+          "comply_by_date": 1652400000000,
+          "corrective_action": "Repair porch, provide electricity and gas to the property",
+          "department_name": "Vacant Properties",
+          "owner_address": "174 Seventh North St ",
+          "owner_city": "Syracuse",
+          "owner_name": "Marcus Martinez",
+          "owner_state": "NY",
+          "owner_zip_code": "13208",
+          "parcel_id": 1310,
+          "status_date": 1688947200000,
+          "status_type_name": "Open",
+          "violation": "2020 PMCNYS - Section 107.1.3 - Structure Unfit for Human Occupancy",
+          "violation_date": 1651142507000,
+          "violation_number": "2022-06928",
+          "zip": 13208
+        }
+      ],
+      "vacant_properties": [
+        {
+          "Latitude": 43.07851807,
+          "Longitude": -76.15095414,
+          "ObjectId": 68,
+          "Owner": "Marcus Martinez",
+          "OwnerAddress": "174 Seventh North St Syracuse, NY 13208",
+          "PropertyAddress": "174 Seventh North St & Cadill",
+          "SBL": "004.-12-41.0",
+          "VPR_result": "VPR - Valid / Year 3",
+          "VPR_valid": "Y",
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": "2025-06-02",
+          "completion_type_name": "VPR Cert Issued - Plan B",
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": "2026-06-02"
+        }
+      ]
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-12-380",
+    "published_at": "2026-08-17T07:05:14+00:00",
+    "review_reasons": [],
+    "title": "160 Seventh North St"
+  },
+  {
     "address": "158 Seventh North St",
     "ai_analysis": {
       "available": true,
