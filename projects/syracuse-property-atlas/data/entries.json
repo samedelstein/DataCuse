@@ -1,5 +1,90 @@
 [
   {
+    "address": "185 Martin St & Cadillac St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Only the front facade and side garage are visible from the street-level perspective; rear and interior conditions cannot be assessed."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows a well-maintained residential property with light blue siding, an attached garage, and a manicured lawn with trimmed shrubs.",
+      "visible_conditions": [
+        "Light blue vinyl siding appears intact and clean.",
+        "The shingled roof shows minor weathering but appears structurally sound.",
+        "Windows and doors, including the garage door, appear intact and in good condition.",
+        "The driveway is paved and clear of debris.",
+        "Landscaping is maintained with trimmed shrubs and a mowed lawn."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 492,
+    "image": "images/parcel-000492.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 78387,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07949683451987,
+    "lon": -76.14969506804978,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-13-040",
+    "published_at": "2026-08-19T08:52:14+00:00",
+    "review_reasons": [],
+    "title": "185 Martin St & Cadillac St"
+  },
+  {
     "address": "308 Cadillac St",
     "ai_analysis": {
       "available": true,
