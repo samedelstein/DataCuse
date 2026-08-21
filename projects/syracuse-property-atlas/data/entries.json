@@ -1,5 +1,90 @@
 [
   {
+    "address": "177 Martin St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Only the front facade of the property is visible from the street view; rear and side yards are obscured."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A well-maintained one-and-a-half-story single-family home with white siding, a covered front porch, and neat landscaping.",
+      "visible_conditions": [
+        "White siding appears intact and clean.",
+        "Roof shingles appear to be in good condition with no obvious damage.",
+        "Windows and front door are intact with decorative black shutters.",
+        "Front porch and steps appear structurally sound and well-maintained.",
+        "The lawn is mowed and features intentional foundation plantings."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 494,
+    "image": "images/parcel-000494.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 85103,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07931837569035,
+    "lon": -76.14950671844822,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-13-060",
+    "published_at": "2026-08-21T06:50:22+00:00",
+    "review_reasons": [],
+    "title": "177 Martin St"
+  },
+  {
     "address": "181 Martin St",
     "ai_analysis": {
       "available": true,
