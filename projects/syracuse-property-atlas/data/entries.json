@@ -1,5 +1,89 @@
 [
   {
+    "address": "155 Martin St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Only the front facade is visible from the street-level view; the rear and sides of the structure are not fully visible."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A well-maintained single-family residential property with light green siding, an enclosed front porch, and manicured flower beds.",
+      "visible_conditions": [
+        "Light green horizontal siding appears intact and in good condition.",
+        "Enclosed front porch with concrete steps and metal handrails appears stable.",
+        "Manicured lawn with colorful, intentional flower beds along the front foundation.",
+        "Asphalt shingle roof appears structurally sound from the front angle."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 498,
+    "image": "images/parcel-000498.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 81180,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.079016177594234,
+    "lon": -76.14907229272855,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-13-100",
+    "published_at": "2026-09-08T02:02:56+00:00",
+    "review_reasons": [],
+    "title": "155 Martin St"
+  },
+  {
     "address": "165 Martin St",
     "ai_analysis": {
       "available": true,
