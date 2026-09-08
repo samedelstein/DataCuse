@@ -1,5 +1,120 @@
 [
   {
+    "address": "149 Martin St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "image age, obstructed view, angle, or uncertainty"
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good|fair|poor|not_visible|unclear",
+        "roof": "good|fair|poor|not_visible|unclear",
+        "siding_or_facade": "good|fair|poor|not_visible|unclear",
+        "trash_debris": "none_visible|minor|major|unclear",
+        "vegetation_overgrowth": "none_visible|minor|major|unclear",
+        "windows_doors": "good|fair|poor|not_visible|unclear",
+        "yard_or_lot": "good|fair|poor|not_visible|unclear"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.582,
+            "width": 0.502,
+            "x": 0.0,
+            "y": 0.0
+          },
+          "confidence": "high",
+          "label": "roof",
+          "reason": "roof is in good condition"
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "image age, obstructed view, angle, or uncertainty"
+      ],
+      "property_type_guess": "single_family",
+      "provider": "ollama:llava:latest",
+      "summary": "This image depicts a single-family home with no visible exterior conditions of concern. The property appears well-maintained with a tidy front yard, a clear driveway, and a neatly trimmed lawn. No obvious issues, such as overgrown vegetation, debris, or signs of neglect or damage, are immediately apparent. However, certain details may not be fully visible, such as the roof and foundation, due to the angle and distance of the photo.",
+      "visible_conditions": [
+        "specific exterior observations visible in the image"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: image age, obstructed view, angle, or uncertainty",
+      "Needs human review"
+    ],
+    "id": 501,
+    "image": "images/parcel-000501.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 64189,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07878952779077,
+    "lon": -76.14874647603827,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-13-130",
+    "published_at": "2026-09-08T11:06:51+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "149 Martin St"
+  },
+  {
     "address": "151 Martin St",
     "ai_analysis": {
       "available": true,
