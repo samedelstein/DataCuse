@@ -1,5 +1,90 @@
 [
   {
+    "address": "131-33 Martin St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The assessment is based on a single street-level view; side and rear elevations are not visible."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The property is a multi-story residential structure with a front porch, concrete steps, and a paved driveway, showing no major exterior defects.",
+      "visible_conditions": [
+        "The roof shingles appear intact and in stable condition.",
+        "The siding is a mix of brown and light-colored panels, showing no obvious damage or missing sections.",
+        "The windows and front door appear intact and functional.",
+        "The front concrete steps and enclosed porch entry appear stable.",
+        "The lawn is mowed and maintained, with a large mature shrub/tree on the right side of the property."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 504,
+    "image": "images/parcel-000504.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 84904,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07848638230168,
+    "lon": -76.14831070015049,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-13-160",
+    "published_at": "2026-09-09T05:24:00+00:00",
+    "review_reasons": [],
+    "title": "131-33 Martin St"
+  },
+  {
     "address": "139 Martin St",
     "ai_analysis": {
       "available": true,
