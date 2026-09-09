@@ -1,5 +1,90 @@
 [
   {
+    "address": "121 Martin St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Analysis is based on a single street-level view; rear and side elevations are partially obscured."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A well-maintained multi-story residential building with white siding, an enclosed front porch, and a paved driveway.",
+      "visible_conditions": [
+        "White vinyl siding appears intact and clean.",
+        "Asphalt shingle roof appears in stable condition.",
+        "Enclosed front porch windows and entry door are intact.",
+        "Lawn is mowed and foundation shrubs are neatly trimmed.",
+        "Paved driveway is clear and in good condition."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 507,
+    "image": "images/parcel-000507.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 67836,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.078255008512514,
+    "lon": -76.14797810151474,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-13-190",
+    "published_at": "2026-09-09T14:06:55+00:00",
+    "review_reasons": [],
+    "title": "121 Martin St"
+  },
+  {
     "address": "125 Martin St",
     "ai_analysis": {
       "available": true,
