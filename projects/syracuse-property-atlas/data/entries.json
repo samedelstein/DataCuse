@@ -1,5 +1,88 @@
 [
   {
+    "address": "112 Kenwood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The primary structure is heavily obscured by a large deciduous tree in the foreground, preventing a comprehensive assessment of the roof, facade, windows, and entry."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "not_visible",
+        "siding_or_facade": "unclear",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "good"
+      },
+      "confidence": "low",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A residential property is heavily obscured by a large, leafy tree in the foreground, with only portions of a white porch and siding visible.",
+      "visible_conditions": [
+        "White siding and a front porch with railings are partially visible behind a large tree.",
+        "A paved driveway is visible to the left of the property.",
+        "Lawn bags are present near the curb, indicating active yard maintenance."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 513,
+    "image": "images/parcel-000513.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 146154,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.077996404957695,
+    "lon": -76.14819202121465,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-13-250",
+    "published_at": "2026-09-10T05:02:54+00:00",
+    "review_reasons": [],
+    "title": "112 Kenwood Ave"
+  },
+  {
     "address": "1339 Court St & Kenwood Ave",
     "ai_analysis": {
       "available": true,
