@@ -1,5 +1,89 @@
 [
   {
+    "address": "134 Kenwood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Analysis is based on a single street-level view; rear and side elevations are not fully visible."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A well-maintained one-and-a-half-story single-family home with white siding, a neat front porch, and manicured landscaping.",
+      "visible_conditions": [
+        "White siding appears intact and clean",
+        "Asphalt shingle roof appears in good condition",
+        "Front porch with steps and railings is well-maintained",
+        "Manicured lawn and small garden beds with flowers"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 518,
+    "image": "images/parcel-000518.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 65023,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.078358376666515,
+    "lon": -76.14874171866356,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-13-300",
+    "published_at": "2026-09-10T10:02:52+00:00",
+    "review_reasons": [],
+    "title": "134 Kenwood Ave"
+  },
+  {
     "address": "128 Kenwood Ave",
     "ai_analysis": {
       "available": true,
