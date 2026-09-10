@@ -1,5 +1,102 @@
 [
   {
+    "address": "138 Kenwood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Portions of the roof are obscured by mature trees."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "unclear",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a single-family residence with a well-maintained lawn and landscaping.",
+      "visible_conditions": [
+        "White exterior siding is visible.",
+        "A green and white striped awning is present over the front entry.",
+        "Multiple windows are visible across the front facade.",
+        "A concrete walkway leads to the front entry.",
+        "A paved driveway is visible on the right side of the property.",
+        "The lawn appears to be maintained.",
+        "Mature trees and shrubs are present in the front yard and as foundation plantings.",
+        "A blue recycling bin is visible near the left side of the property."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 519,
+    "image": "images/parcel-000519.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 151050,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07845150603029,
+    "lon": -76.1488299182644,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-13-310",
+    "published_at": "2026-09-10T11:03:09+00:00",
+    "review_reasons": [],
+    "title": "138 Kenwood Ave"
+  },
+  {
     "address": "134 Kenwood Ave",
     "ai_analysis": {
       "available": true,
