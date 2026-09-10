@@ -1,5 +1,89 @@
 [
   {
+    "address": "1345 Court St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Mature tree canopy partially obstructs the view of the roof and portions of the facade."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A single-story brick residential structure with an attached garage and a maintained lawn, partially shaded by mature trees.",
+      "visible_conditions": [
+        "Brick facade appears intact and in good condition",
+        "Maintained lawn with mature trees in the front yard",
+        "Attached single-car garage with a white door",
+        "Two orange traffic cones or markers placed near the curb in front of the property"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 511,
+    "image": "images/parcel-000511.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 135163,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07791817239282,
+    "lon": -76.14794906474721,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-13-230",
+    "published_at": "2026-09-10T03:02:59+00:00",
+    "review_reasons": [],
+    "title": "1345 Court St"
+  },
+  {
     "address": "1403 Court St",
     "ai_analysis": {
       "available": true,
