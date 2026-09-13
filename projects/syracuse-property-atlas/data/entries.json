@@ -1,5 +1,119 @@
 [
   {
+    "address": "158 Kenwood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Image date is from 2022."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.08,
+            "width": 0.03,
+            "x": 0.69,
+            "y": 0.57
+          },
+          "confidence": "high",
+          "label": "Faded house number",
+          "reason": "The house number '158' is visible but appears faded or partially obscured on the porch."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "The house number '158' appears faded or partially obscured on the front porch."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "A two-story single-family residence with white siding, a front porch, and a small second-story balcony is visible, appearing generally maintained.",
+      "visible_conditions": [
+        "The property features a two-story structure with white horizontal siding.",
+        "A gable roof is visible, with a brick chimney extending from it.",
+        "A front porch with white columns and a railing is present at the main entry.",
+        "Second-story windows are equipped with dark shutters, and a small balcony railing is visible.",
+        "A paved driveway runs along the right side of the property.",
+        "The front yard consists of a grass lawn and foundation plantings along the front of the house.",
+        "A house number '158' is visible on the right side of the front porch, near the railing, but appears somewhat faded or partially obscured."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: The house number '158' appears faded or partially obscured on the front porch."
+    ],
+    "id": 525,
+    "image": "images/parcel-000525.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 82583,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07891739559705,
+    "lon": -76.1494996519757,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-13-370",
+    "published_at": "2026-09-13T18:03:04+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "158 Kenwood Ave"
+  },
+  {
     "address": "154-56 Kenwood Ave",
     "ai_analysis": {
       "available": true,
