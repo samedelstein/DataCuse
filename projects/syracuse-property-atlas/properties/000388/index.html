@@ -25,9 +25,41 @@
         </div>
         <div class="property-image"><img src="../../images/parcel-000388.jpg" alt="Street View image for 1015 Turtle St"></div>
       </header>
-      <div class="detail-grid">
+      <section class="record-intro">
+        <h2>City records</h2>
+        <p>Matches use parcel IDs, normalized addresses, or nearby coordinates. Confirm a match against the source record before relying on it. Publication dates are not source-data dates.</p>
+      </section>
+      <div class="feed-grid">
+            <section class="feed-panel">
+                <h4>Vacant properties <span>0</span></h4>
+                <p>No matches stored for this feed. The feed or address matching may be incomplete; this is not confirmation that no records exist.</p>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Vacant_Properties/FeatureServer/0/query">Source: Vacant properties</a></p>
+            </section>
+
+            <section class="feed-panel">
+                <h4>Rental registry <span>2</span></h4>
+                <dl><dt>Latitude</dt><dd>43.07726303</dd><dt>Longitude</dt><dd>-76.15409116</dd><dt>NeedsRR</dt><dd>Yes</dd><dt>ObjectId</dt><dd>1000</dd><dt>PropertyAddress</dt><dd>1015 Turtle St</dd><dt>RRisValid</dt><dd>No</dd></dl><dl><dt>Latitude</dt><dd>43.07739051</dd><dt>Longitude</dt><dd>-76.15380901</dd><dt>NeedsRR</dt><dd>Yes</dd><dt>ObjectId</dt><dd>997</dd><dt>PropertyAddress</dt><dd>301 Willumae Dr &amp; Turtle St</dd><dt>RR_app_received</dt><dd>1759104000000</dd></dl>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Syracuse_Rental_Registry/FeatureServer/0/query">Source: Rental registry</a></p>
+            </section>
+
+            <section class="feed-panel">
+                <h4>Code violations <span>0</span></h4>
+                <p>No matches stored for this feed. The feed or address matching may be incomplete; this is not confirmation that no records exist.</p>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Code_Violations_V2/FeatureServer/0/query">Source: Code violations</a></p>
+            </section>
+
+            <section class="feed-panel">
+                <h4>Unfit properties <span>1</span></h4>
+                <dl><dt>Latitude</dt><dd>43.07717465</dd><dt>Longitude</dt><dd>-76.15450531</dd><dt>ObjectId</dt><dd>229</dd><dt>SBL</dt><dd>003.-17-24.0</dd><dt>address</dt><dd>214 Burdick Ave</dd><dt>area_involved</dt><dd>House</dd></dl>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Unfit_Properties/FeatureServer/0/query">Source: Unfit properties</a></p>
+            </section>
+            </div>
+      <details class="ai-observations">
+        <summary>AI image observations (unverified)</summary>
+        <p>These observations are generated from an image, not an inspection or an official code finding. No human verification is recorded here.</p>
+        <p><strong>Image capture date:</strong> Not recorded. The entry publication date does not establish the age of the image.</p>
         <section>
-          <h4>AI image read</h4>
+          <h4>Automated image description</h4>
           <p>A residential structure with red upper siding and a brick lower facade, heavily obscured by mature trees in the front yard.</p>
           <p><strong>Property type guess:</strong> single_family</p>
           <h5>Visible conditions</h5>
@@ -46,6 +78,8 @@
           <dl><dt>Available</dt><dd>True</dd><dt>Bytes</dt><dd>140869</dd><dt>Needs Rerun</dt><dd>False</dd></dl>
           <p class="caveat">[&quot;The front facade, porch, and roof are heavily obscured by large mature trees, limiting the ability to fully assess the exterior condition or verify the &#x27;unfit&#x27; public record status from this image.&quot;]</p>
         </section>
+      </details>
+      <div class="detail-grid">
         <section>
           <h4>ACS tract context</h4>
           <p>Census Tract 2; Onondaga County; New York</p>
@@ -57,32 +91,11 @@
           <p>OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable</p>
         </section>
       </div>
-      <div class="feed-grid">
-            <section class="feed-panel">
-                <h4>Vacant properties <span>0</span></h4>
-                <p>No matching records found in this feed.</p>
-            </section>
-            
-            <section class="feed-panel">
-                <h4>Rental registry <span>2</span></h4>
-                <dl><dt>Latitude</dt><dd>43.07726303</dd><dt>Longitude</dt><dd>-76.15409116</dd><dt>NeedsRR</dt><dd>Yes</dd><dt>ObjectId</dt><dd>1000</dd><dt>PropertyAddress</dt><dd>1015 Turtle St</dd><dt>RRisValid</dt><dd>No</dd></dl><dl><dt>Latitude</dt><dd>43.07739051</dd><dt>Longitude</dt><dd>-76.15380901</dd><dt>NeedsRR</dt><dd>Yes</dd><dt>ObjectId</dt><dd>997</dd><dt>PropertyAddress</dt><dd>301 Willumae Dr &amp; Turtle St</dd><dt>RR_app_received</dt><dd>1759104000000</dd></dl>
-            </section>
-            
-            <section class="feed-panel">
-                <h4>Code violations <span>0</span></h4>
-                <p>No matching records found in this feed.</p>
-            </section>
-            
-            <section class="feed-panel">
-                <h4>Unfit properties <span>1</span></h4>
-                <dl><dt>Latitude</dt><dd>43.07717465</dd><dt>Longitude</dt><dd>-76.15450531</dd><dt>ObjectId</dt><dd>229</dd><dt>SBL</dt><dd>003.-17-24.0</dd><dt>address</dt><dd>214 Burdick Ave</dd><dt>area_involved</dt><dd>House</dd></dl>
-            </section>
-            </div>
     </article>
   </main>
   <footer class="site-footer">
     <a class="brand" href="../../"><span class="brand-mark">D</span><span>Data<span>Cuse</span></span></a>
-    <p>Independent Syracuse data stories, tools, and field notes.</p>
+    <p>Independent work by <a href="https://samedelstein.com/about/">Sam Edelstein</a>.</p>
   </footer>
 </body>
 </html>

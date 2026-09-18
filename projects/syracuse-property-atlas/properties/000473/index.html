@@ -25,9 +25,41 @@
         </div>
         <div class="property-image"><img src="../../images/parcel-000473.jpg" alt="Street View image for 102 Seventh North St"></div>
       </header>
-      <div class="detail-grid">
+      <section class="record-intro">
+        <h2>City records</h2>
+        <p>Matches use parcel IDs, normalized addresses, or nearby coordinates. Confirm a match against the source record before relying on it. Publication dates are not source-data dates.</p>
+      </section>
+      <div class="feed-grid">
+            <section class="feed-panel">
+                <h4>Vacant properties <span>0</span></h4>
+                <p>No matches stored for this feed. The feed or address matching may be incomplete; this is not confirmation that no records exist.</p>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Vacant_Properties/FeatureServer/0/query">Source: Vacant properties</a></p>
+            </section>
+
+            <section class="feed-panel">
+                <h4>Rental registry <span>0</span></h4>
+                <p>No matches stored for this feed. The feed or address matching may be incomplete; this is not confirmation that no records exist.</p>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Syracuse_Rental_Registry/FeatureServer/0/query">Source: Rental registry</a></p>
+            </section>
+
+            <section class="feed-panel">
+                <h4>Code violations <span>0</span></h4>
+                <p>No matches stored for this feed. The feed or address matching may be incomplete; this is not confirmation that no records exist.</p>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Code_Violations_V2/FeatureServer/0/query">Source: Code violations</a></p>
+            </section>
+
+            <section class="feed-panel">
+                <h4>Unfit properties <span>0</span></h4>
+                <p>No matches stored for this feed. The feed or address matching may be incomplete; this is not confirmation that no records exist.</p>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Unfit_Properties/FeatureServer/0/query">Source: Unfit properties</a></p>
+            </section>
+            </div>
+      <details class="ai-observations">
+        <summary>AI image observations (unverified)</summary>
+        <p>These observations are generated from an image, not an inspection or an official code finding. No human verification is recorded here.</p>
+        <p><strong>Image capture date:</strong> Not recorded. The entry publication date does not establish the age of the image.</p>
         <section>
-          <h4>AI image read</h4>
+          <h4>Automated image description</h4>
           <p>A single-story residential home with light-colored siding, a small front porch, a paved driveway, and a detached garage, all appearing in well-maintained condition.</p>
           <p><strong>Property type guess:</strong> single_family</p>
           <h5>Visible conditions</h5>
@@ -46,6 +78,8 @@
           <dl><dt>Available</dt><dd>True</dd><dt>Bytes</dt><dd>74709</dd><dt>Needs Rerun</dt><dd>False</dd></dl>
           <p class="caveat">[&#x27;The view of the rear and sides of the main structure is obstructed from this street-level angle.&#x27;]</p>
         </section>
+      </details>
+      <div class="detail-grid">
         <section>
           <h4>ACS tract context</h4>
           <p>Census Tract 3; Onondaga County; New York</p>
@@ -57,32 +91,11 @@
           <p>OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable</p>
         </section>
       </div>
-      <div class="feed-grid">
-            <section class="feed-panel">
-                <h4>Vacant properties <span>0</span></h4>
-                <p>No matching records found in this feed.</p>
-            </section>
-            
-            <section class="feed-panel">
-                <h4>Rental registry <span>0</span></h4>
-                <p>No matching records found in this feed.</p>
-            </section>
-            
-            <section class="feed-panel">
-                <h4>Code violations <span>0</span></h4>
-                <p>No matching records found in this feed.</p>
-            </section>
-            
-            <section class="feed-panel">
-                <h4>Unfit properties <span>0</span></h4>
-                <p>No matching records found in this feed.</p>
-            </section>
-            </div>
     </article>
   </main>
   <footer class="site-footer">
     <a class="brand" href="../../"><span class="brand-mark">D</span><span>Data<span>Cuse</span></span></a>
-    <p>Independent Syracuse data stories, tools, and field notes.</p>
+    <p>Independent work by <a href="https://samedelstein.com/about/">Sam Edelstein</a>.</p>
   </footer>
 </body>
 </html>

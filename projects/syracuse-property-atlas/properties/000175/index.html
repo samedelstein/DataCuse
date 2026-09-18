@@ -25,9 +25,41 @@
         </div>
         <div class="property-image"><img src="../../images/parcel-000175.jpg" alt="Street View image for 801 Wolf St &amp; Grant Blvd"></div>
       </header>
-      <div class="detail-grid">
+      <section class="record-intro">
+        <h2>City records</h2>
+        <p>Matches use parcel IDs, normalized addresses, or nearby coordinates. Confirm a match against the source record before relying on it. Publication dates are not source-data dates.</p>
+      </section>
+      <div class="feed-grid">
+            <section class="feed-panel">
+                <h4>Vacant properties <span>0</span></h4>
+                <p>No matches stored for this feed. The feed or address matching may be incomplete; this is not confirmation that no records exist.</p>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Vacant_Properties/FeatureServer/0/query">Source: Vacant properties</a></p>
+            </section>
+
+            <section class="feed-panel">
+                <h4>Rental registry <span>0</span></h4>
+                <p>No matches stored for this feed. The feed or address matching may be incomplete; this is not confirmation that no records exist.</p>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Syracuse_Rental_Registry/FeatureServer/0/query">Source: Rental registry</a></p>
+            </section>
+
+            <section class="feed-panel">
+                <h4>Code violations <span>0</span></h4>
+                <p>No matches stored for this feed. The feed or address matching may be incomplete; this is not confirmation that no records exist.</p>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Code_Violations_V2/FeatureServer/0/query">Source: Code violations</a></p>
+            </section>
+
+            <section class="feed-panel">
+                <h4>Unfit properties <span>0</span></h4>
+                <p>No matches stored for this feed. The feed or address matching may be incomplete; this is not confirmation that no records exist.</p>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Unfit_Properties/FeatureServer/0/query">Source: Unfit properties</a></p>
+            </section>
+            </div>
+      <details class="ai-observations">
+        <summary>AI image observations (unverified)</summary>
+        <p>These observations are generated from an image, not an inspection or an official code finding. No human verification is recorded here.</p>
+        <p><strong>Image capture date:</strong> Not recorded. The entry publication date does not establish the age of the image.</p>
         <section>
-          <h4>AI image read</h4>
+          <h4>Automated image description</h4>
           <p>A wide view of a large grassy lot in the foreground with a single-story commercial or mixed-use building visible in the background under a clear sky.</p>
           <p><strong>Property type guess:</strong> vacant_lot</p>
           <h5>Visible conditions</h5>
@@ -46,6 +78,8 @@
           <dl><dt>Available</dt><dd>True</dd><dt>Bytes</dt><dd>74881</dd><dt>Needs Rerun</dt><dd>False</dd></dl>
           <p class="caveat">[&#x27;The primary building is viewed from a significant distance, limiting detailed assessment of its exterior condition.&#x27;, &#x27;It is unclear if the foreground vacant lot and the background building are on the same parcel.&#x27;]</p>
         </section>
+      </details>
+      <div class="detail-grid">
         <section>
           <h4>ACS tract context</h4>
           <p>Census Tract 2; Onondaga County; New York</p>
@@ -57,32 +91,11 @@
           <h5>Summary</h5><ul class="osm-results"><li>12 mapped building footprints</li><li>2 named features</li><li>1 amenity: cafe</li><li>1 amenity: fuel</li><li>1 shop: antiques</li><li>3 land-use: residential</li><li>2 land-use: retail</li></ul><h5>Notable mapped features</h5><ul class="osm-results"><li><strong>shop: antiques</strong><span>node #5167889506</span></li><li><strong>Easy Cafe</strong><span>node #5167889508</span></li><li><strong>Mirabito</strong><span>node #5167889510</span></li><li><strong>landuse: residential</strong><span>way #1189771094</span></li><li><strong>landuse: residential</strong><span>way #1189771112</span></li><li><strong>landuse: residential</strong><span>way #1189771114</span></li><li><strong>landuse: retail</strong><span>way #1189771116</span></li><li><strong>landuse: retail</strong><span>way #1189771117</span></li></ul>
         </section>
       </div>
-      <div class="feed-grid">
-            <section class="feed-panel">
-                <h4>Vacant properties <span>0</span></h4>
-                <p>No matching records found in this feed.</p>
-            </section>
-            
-            <section class="feed-panel">
-                <h4>Rental registry <span>0</span></h4>
-                <p>No matching records found in this feed.</p>
-            </section>
-            
-            <section class="feed-panel">
-                <h4>Code violations <span>0</span></h4>
-                <p>No matching records found in this feed.</p>
-            </section>
-            
-            <section class="feed-panel">
-                <h4>Unfit properties <span>0</span></h4>
-                <p>No matching records found in this feed.</p>
-            </section>
-            </div>
     </article>
   </main>
   <footer class="site-footer">
     <a class="brand" href="../../"><span class="brand-mark">D</span><span>Data<span>Cuse</span></span></a>
-    <p>Independent Syracuse data stories, tools, and field notes.</p>
+    <p>Independent work by <a href="https://samedelstein.com/about/">Sam Edelstein</a>.</p>
   </footer>
 </body>
 </html>

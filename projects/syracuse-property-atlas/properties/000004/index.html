@@ -25,9 +25,41 @@
         </div>
         <div class="property-image"><img src="../../images/parcel-000004.jpg" alt="Street View image for 267 Ross Pk"></div>
       </header>
-      <div class="detail-grid">
+      <section class="record-intro">
+        <h2>City records</h2>
+        <p>Matches use parcel IDs, normalized addresses, or nearby coordinates. Confirm a match against the source record before relying on it. Publication dates are not source-data dates.</p>
+      </section>
+      <div class="feed-grid">
+            <section class="feed-panel">
+                <h4>Vacant properties <span>0</span></h4>
+                <p>No matches stored for this feed. The feed or address matching may be incomplete; this is not confirmation that no records exist.</p>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Vacant_Properties/FeatureServer/0/query">Source: Vacant properties</a></p>
+            </section>
+
+            <section class="feed-panel">
+                <h4>Rental registry <span>0</span></h4>
+                <p>No matches stored for this feed. The feed or address matching may be incomplete; this is not confirmation that no records exist.</p>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Syracuse_Rental_Registry/FeatureServer/0/query">Source: Rental registry</a></p>
+            </section>
+
+            <section class="feed-panel">
+                <h4>Code violations <span>0</span></h4>
+                <p>No matches stored for this feed. The feed or address matching may be incomplete; this is not confirmation that no records exist.</p>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Code_Violations_V2/FeatureServer/0/query">Source: Code violations</a></p>
+            </section>
+
+            <section class="feed-panel">
+                <h4>Unfit properties <span>0</span></h4>
+                <p>No matches stored for this feed. The feed or address matching may be incomplete; this is not confirmation that no records exist.</p>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Unfit_Properties/FeatureServer/0/query">Source: Unfit properties</a></p>
+            </section>
+            </div>
+      <details class="ai-observations">
+        <summary>AI image observations (unverified)</summary>
+        <p>These observations are generated from an image, not an inspection or an official code finding. No human verification is recorded here.</p>
+        <p><strong>Image capture date:</strong> Not recorded. The entry publication date does not establish the age of the image.</p>
         <section>
-          <h4>AI image read</h4>
+          <h4>Automated image description</h4>
           <p>The image shows a two-story residential house during daylight with clear skies. The property has well-maintained landscaping with healthy grass in front of the house. A sidewalk leads to the front door, which is sheltered by an overhang supported by columns. There are windows on both levels, some of which have visible curtains or blinds. The house features a garage and a driveway with accessory spaces. The roof appears to be in good condition without any obvious damage. The exterior walls seem clean and there&#x27;s no immediate evidence of major structural issues. However, the image does not allow for a thorough assessment of interior conditions.</p>
           <p><strong>Property type guess:</strong> unclear</p>
           <h5>Visible conditions</h5>
@@ -46,6 +78,8 @@
           <dl></dl>
           <p class="caveat">{&#x27;Contextual considerations&#x27;: &#x27;The condition of the property might be affected by seasonal changes or local environmental factors, which are not visible in this image.&#x27;, &#x27;Data limitations&#x27;: &#x27;This analysis is based on a single exterior image and may not capture all aspects of the property.&#x27;}</p>
         </section>
+      </details>
+      <div class="detail-grid">
         <section>
           <h4>ACS tract context</h4>
           <p>Census Tract 4</p>
@@ -57,32 +91,11 @@
           <h5>Summary</h5><ul class="osm-results"><li>20 mapped building footprints</li></ul><h5>Notable mapped features</h5><ul class="osm-results"><li><strong>building: house</strong><span>way #544892165</span></li><li><strong>building: house</strong><span>way #544892166</span></li><li><strong>building: house</strong><span>way #544892167</span></li><li><strong>building: house</strong><span>way #544892168</span></li><li><strong>building: house</strong><span>way #544892169</span></li><li><strong>building: house</strong><span>way #544892170</span></li><li><strong>building: house</strong><span>way #544892171</span></li><li><strong>building: garage</strong><span>way #544892188</span></li><li><strong>building: garage</strong><span>way #544892189</span></li><li><strong>building: garage</strong><span>way #544892190</span></li></ul>
         </section>
       </div>
-      <div class="feed-grid">
-            <section class="feed-panel">
-                <h4>Vacant properties <span>0</span></h4>
-                <p>No matching records found in this feed.</p>
-            </section>
-            
-            <section class="feed-panel">
-                <h4>Rental registry <span>0</span></h4>
-                <p>No matching records found in this feed.</p>
-            </section>
-            
-            <section class="feed-panel">
-                <h4>Code violations <span>0</span></h4>
-                <p>No matching records found in this feed.</p>
-            </section>
-            
-            <section class="feed-panel">
-                <h4>Unfit properties <span>0</span></h4>
-                <p>No matching records found in this feed.</p>
-            </section>
-            </div>
     </article>
   </main>
   <footer class="site-footer">
     <a class="brand" href="../../"><span class="brand-mark">D</span><span>Data<span>Cuse</span></span></a>
-    <p>Independent Syracuse data stories, tools, and field notes.</p>
+    <p>Independent work by <a href="https://samedelstein.com/about/">Sam Edelstein</a>.</p>
   </footer>
 </body>
 </html>

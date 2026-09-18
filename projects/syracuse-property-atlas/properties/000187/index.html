@@ -23,23 +23,43 @@
           <p>Published 2026-06-10T02:03:10+00:00</p>
           <p>Parcel key: 003-05-030</p>
         </div>
-        <div class="property-image"><img src="../../images/parcel-000187.jpg" alt="Street View image for 1032 Hiawatha Blvd E">
-            <span class="annotation-box" style="left:34.00%;top:47.00%;width:16.00%;height:12.00%;">
-              <span>broken window panes · high confidence</span>
-            </span>
-            
-            <span class="annotation-box" style="left:71.00%;top:49.00%;width:8.00%;height:11.00%;">
-              <span>broken door glass · high confidence</span>
-            </span>
-            
-            <span class="annotation-box" style="left:35.00%;top:25.00%;width:30.00%;height:20.00%;">
-              <span>peeling paint · high confidence</span>
-            </span>
-            </div>
+        <div class="property-image"><img src="../../images/parcel-000187.jpg" alt="Street View image for 1032 Hiawatha Blvd E"></div>
       </header>
-      <div class="detail-grid">
+      <section class="record-intro">
+        <h2>City records</h2>
+        <p>Matches use parcel IDs, normalized addresses, or nearby coordinates. Confirm a match against the source record before relying on it. Publication dates are not source-data dates.</p>
+      </section>
+      <div class="feed-grid">
+            <section class="feed-panel">
+                <h4>Vacant properties <span>1</span></h4>
+                <dl><dt>Latitude</dt><dd>43.08196239</dd><dt>Longitude</dt><dd>-76.15776481</dd><dt>ObjectId</dt><dd>224</dd><dt>Owner</dt><dd>Edward Mccarty</dd><dt>OwnerAddress</dt><dd>103 Kirsch Dr Syracuse, NY 13211</dd><dt>PropertyAddress</dt><dd>1032 Hiawatha Blvd E</dd></dl>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Vacant_Properties/FeatureServer/0/query">Source: Vacant properties</a></p>
+            </section>
+
+            <section class="feed-panel">
+                <h4>Rental registry <span>0</span></h4>
+                <p>No matches stored for this feed. The feed or address matching may be incomplete; this is not confirmation that no records exist.</p>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Syracuse_Rental_Registry/FeatureServer/0/query">Source: Rental registry</a></p>
+            </section>
+
+            <section class="feed-panel">
+                <h4>Code violations <span>0</span></h4>
+                <p>No matches stored for this feed. The feed or address matching may be incomplete; this is not confirmation that no records exist.</p>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Code_Violations_V2/FeatureServer/0/query">Source: Code violations</a></p>
+            </section>
+
+            <section class="feed-panel">
+                <h4>Unfit properties <span>0</span></h4>
+                <p>No matches stored for this feed. The feed or address matching may be incomplete; this is not confirmation that no records exist.</p>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Unfit_Properties/FeatureServer/0/query">Source: Unfit properties</a></p>
+            </section>
+            </div>
+      <details class="ai-observations">
+        <summary>AI image observations (unverified)</summary>
+        <p>These observations are generated from an image, not an inspection or an official code finding. No human verification is recorded here.</p>
+        <p><strong>Image capture date:</strong> Not recorded. The entry publication date does not establish the age of the image.</p>
         <section>
-          <h4>AI image read</h4>
+          <h4>Automated image description</h4>
           <p>A two-story residential structure showing significant exterior neglect, including extensive peeling paint on the siding and multiple broken window panes on the front porch and entry door.</p>
           <p><strong>Property type guess:</strong> single_family</p>
           <h5>Visible conditions</h5>
@@ -58,6 +78,8 @@
           <dl><dt>Available</dt><dd>True</dd><dt>Bytes</dt><dd>79439</dd><dt>Needs Rerun</dt><dd>False</dd></dl>
           <p class="caveat">[&#x27;The roof is mostly obscured from this low street-level angle.&#x27;, &#x27;Only the front facade is visible; side and rear conditions cannot be verified.&#x27;]</p>
         </section>
+      </details>
+      <div class="detail-grid">
         <section>
           <h4>ACS tract context</h4>
           <p>Census Tract 2; Onondaga County; New York</p>
@@ -69,32 +91,11 @@
           <h5>Summary</h5><ul class="osm-results"><li>5 mapped building footprints</li><li>2 land-use: industrial</li></ul><h5>Notable mapped features</h5><ul class="osm-results"><li><strong>landuse: industrial</strong><span>way #1189609084</span></li><li><strong>landuse: industrial</strong><span>way #1189771119</span></li></ul>
         </section>
       </div>
-      <div class="feed-grid">
-            <section class="feed-panel">
-                <h4>Vacant properties <span>1</span></h4>
-                <dl><dt>Latitude</dt><dd>43.08196239</dd><dt>Longitude</dt><dd>-76.15776481</dd><dt>ObjectId</dt><dd>224</dd><dt>Owner</dt><dd>Edward Mccarty</dd><dt>OwnerAddress</dt><dd>103 Kirsch Dr Syracuse, NY 13211</dd><dt>PropertyAddress</dt><dd>1032 Hiawatha Blvd E</dd></dl>
-            </section>
-            
-            <section class="feed-panel">
-                <h4>Rental registry <span>0</span></h4>
-                <p>No matching records found in this feed.</p>
-            </section>
-            
-            <section class="feed-panel">
-                <h4>Code violations <span>0</span></h4>
-                <p>No matching records found in this feed.</p>
-            </section>
-            
-            <section class="feed-panel">
-                <h4>Unfit properties <span>0</span></h4>
-                <p>No matching records found in this feed.</p>
-            </section>
-            </div>
     </article>
   </main>
   <footer class="site-footer">
     <a class="brand" href="../../"><span class="brand-mark">D</span><span>Data<span>Cuse</span></span></a>
-    <p>Independent Syracuse data stories, tools, and field notes.</p>
+    <p>Independent work by <a href="https://samedelstein.com/about/">Sam Edelstein</a>.</p>
   </footer>
 </body>
 </html>

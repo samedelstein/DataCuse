@@ -23,15 +23,43 @@
           <p>Published 2026-05-31T07:58:40+00:00</p>
           <p>Parcel key: 002-24-130</p>
         </div>
-        <div class="property-image"><img src="../../images/parcel-000055.jpg" alt="Street View image for 313 Turtle St">
-            <span class="annotation-box" style="left:36.00%;top:52.00%;width:5.00%;height:7.00%;">
-              <span>posted notice · high confidence</span>
-            </span>
-            </div>
+        <div class="property-image"><img src="../../images/parcel-000055.jpg" alt="Street View image for 313 Turtle St"></div>
       </header>
-      <div class="detail-grid">
+      <section class="record-intro">
+        <h2>City records</h2>
+        <p>Matches use parcel IDs, normalized addresses, or nearby coordinates. Confirm a match against the source record before relying on it. Publication dates are not source-data dates.</p>
+      </section>
+      <div class="feed-grid">
+            <section class="feed-panel">
+                <h4>Vacant properties <span>1</span></h4>
+                <dl><dt>Latitude</dt><dd>43.06834453</dd><dt>Longitude</dt><dd>-76.1606094</dd><dt>ObjectId</dt><dd>960</dd><dt>Owner</dt><dd>Receipt Book LLC</dd><dt>OwnerAddress</dt><dd>1400 N Salina St Syracuse, NY 13203</dd><dt>PropertyAddress</dt><dd>1400 Salina St N &amp; Turtle St</dd></dl>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Vacant_Properties/FeatureServer/0/query">Source: Vacant properties</a></p>
+            </section>
+
+            <section class="feed-panel">
+                <h4>Rental registry <span>4</span></h4>
+                <dl><dt>Latitude</dt><dd>43.06861396</dd><dt>Longitude</dt><dd>-76.16047641</dd><dt>NeedsRR</dt><dd>Yes</dd><dt>ObjectId</dt><dd>746</dd><dt>PropertyAddress</dt><dd>313 Turtle St</dd><dt>RR_app_received</dt><dd>1740355200000</dd></dl><dl><dt>Latitude</dt><dd>43.06883812</dd><dt>Longitude</dt><dd>-76.1605205</dd><dt>NeedsRR</dt><dd>Yes</dd><dt>ObjectId</dt><dd>742</dd><dt>PropertyAddress</dt><dd>317 Turtle St</dd><dt>RR_app_received</dt><dd>1727308800000</dd></dl><dl><dt>Latitude</dt><dd>43.06875871</dd><dt>Longitude</dt><dd>-76.16057986</dd><dt>NeedsRR</dt><dd>Yes</dd><dt>ObjectId</dt><dd>744</dd><dt>PropertyAddress</dt><dd>315 Turtle St</dd><dt>RR_app_received</dt><dd>1740355200000</dd></dl><dl><dt>Latitude</dt><dd>43.06853458</dd><dt>Longitude</dt><dd>-76.16053582</dd><dt>NeedsRR</dt><dd>Yes</dd><dt>ObjectId</dt><dd>748</dd><dt>PropertyAddress</dt><dd>311 Turtle St</dd><dt>RR_app_received</dt><dd>1706054400000</dd></dl>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Syracuse_Rental_Registry/FeatureServer/0/query">Source: Rental registry</a></p>
+            </section>
+
+            <section class="feed-panel">
+                <h4>Code violations <span>0</span></h4>
+                <p>No matches stored for this feed. The feed or address matching may be incomplete; this is not confirmation that no records exist.</p>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Code_Violations_V2/FeatureServer/0/query">Source: Code violations</a></p>
+            </section>
+
+            <section class="feed-panel">
+                <h4>Unfit properties <span>2</span></h4>
+                <dl><dt>Latitude</dt><dd>43.06834453</dd><dt>Longitude</dt><dd>-76.1606094</dd><dt>ObjectId</dt><dd>163</dd><dt>SBL</dt><dd>002.-24-15.0</dd><dt>address</dt><dd>1400 Salina St N &amp; Turtle St</dd><dt>area_involved</dt><dd>Premises</dd></dl><dl><dt>Latitude</dt><dd>43.06834453</dd><dt>Longitude</dt><dd>-76.1606094</dd><dt>ObjectId</dt><dd>164</dd><dt>SBL</dt><dd>002.-24-15.0</dd><dt>address</dt><dd>1400 Salina St N &amp; Turtle St</dd><dt>area_involved</dt><dd>Premises</dd></dl>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Unfit_Properties/FeatureServer/0/query">Source: Unfit properties</a></p>
+            </section>
+            </div>
+      <details class="ai-observations">
+        <summary>AI image observations (unverified)</summary>
+        <p>These observations are generated from an image, not an inspection or an official code finding. No human verification is recorded here.</p>
+        <p><strong>Image capture date:</strong> Not recorded. The entry publication date does not establish the age of the image.</p>
         <section>
-          <h4>AI image read</h4>
+          <h4>Automated image description</h4>
           <p>A two-story residential building with an enclosed front porch, showing weathered siding and a blue public notice posted on the front door.</p>
           <p><strong>Property type guess:</strong> two_family</p>
           <h5>Visible conditions</h5>
@@ -50,6 +78,8 @@
           <dl><dt>Available</dt><dd>True</dd><dt>Bytes</dt><dd>66868</dd><dt>Needs Rerun</dt><dd>False</dd></dl>
           <p class="caveat">[&#x27;The roof is mostly obscured from this street-level angle.&#x27;, &#x27;A vehicle in the foreground partially limits the view of the lower right portion of the property.&#x27;]</p>
         </section>
+      </details>
+      <div class="detail-grid">
         <section>
           <h4>ACS tract context</h4>
           <p>Census Tract 2; Onondaga County; New York</p>
@@ -61,32 +91,11 @@
           <h5>Summary</h5><ul class="osm-results"><li>17 mapped building footprints</li><li>1 named feature</li><li>1 amenity: place_of_worship</li><li>1 land-use: commercial</li><li>1 land-use: residential</li></ul><h5>Notable mapped features</h5><ul class="osm-results"><li><strong>Westminster Presbyterian Church</strong><span>node #3786836167</span></li><li><strong>landuse: commercial</strong><span>way #1189921493</span></li><li><strong>landuse: residential</strong><span>way #1189921501</span></li></ul>
         </section>
       </div>
-      <div class="feed-grid">
-            <section class="feed-panel">
-                <h4>Vacant properties <span>1</span></h4>
-                <dl><dt>Latitude</dt><dd>43.06834453</dd><dt>Longitude</dt><dd>-76.1606094</dd><dt>ObjectId</dt><dd>960</dd><dt>Owner</dt><dd>Receipt Book LLC</dd><dt>OwnerAddress</dt><dd>1400 N Salina St Syracuse, NY 13203</dd><dt>PropertyAddress</dt><dd>1400 Salina St N &amp; Turtle St</dd></dl>
-            </section>
-            
-            <section class="feed-panel">
-                <h4>Rental registry <span>4</span></h4>
-                <dl><dt>Latitude</dt><dd>43.06861396</dd><dt>Longitude</dt><dd>-76.16047641</dd><dt>NeedsRR</dt><dd>Yes</dd><dt>ObjectId</dt><dd>746</dd><dt>PropertyAddress</dt><dd>313 Turtle St</dd><dt>RR_app_received</dt><dd>1740355200000</dd></dl><dl><dt>Latitude</dt><dd>43.06883812</dd><dt>Longitude</dt><dd>-76.1605205</dd><dt>NeedsRR</dt><dd>Yes</dd><dt>ObjectId</dt><dd>742</dd><dt>PropertyAddress</dt><dd>317 Turtle St</dd><dt>RR_app_received</dt><dd>1727308800000</dd></dl><dl><dt>Latitude</dt><dd>43.06875871</dd><dt>Longitude</dt><dd>-76.16057986</dd><dt>NeedsRR</dt><dd>Yes</dd><dt>ObjectId</dt><dd>744</dd><dt>PropertyAddress</dt><dd>315 Turtle St</dd><dt>RR_app_received</dt><dd>1740355200000</dd></dl><dl><dt>Latitude</dt><dd>43.06853458</dd><dt>Longitude</dt><dd>-76.16053582</dd><dt>NeedsRR</dt><dd>Yes</dd><dt>ObjectId</dt><dd>748</dd><dt>PropertyAddress</dt><dd>311 Turtle St</dd><dt>RR_app_received</dt><dd>1706054400000</dd></dl>
-            </section>
-            
-            <section class="feed-panel">
-                <h4>Code violations <span>0</span></h4>
-                <p>No matching records found in this feed.</p>
-            </section>
-            
-            <section class="feed-panel">
-                <h4>Unfit properties <span>2</span></h4>
-                <dl><dt>Latitude</dt><dd>43.06834453</dd><dt>Longitude</dt><dd>-76.1606094</dd><dt>ObjectId</dt><dd>163</dd><dt>SBL</dt><dd>002.-24-15.0</dd><dt>address</dt><dd>1400 Salina St N &amp; Turtle St</dd><dt>area_involved</dt><dd>Premises</dd></dl><dl><dt>Latitude</dt><dd>43.06834453</dd><dt>Longitude</dt><dd>-76.1606094</dd><dt>ObjectId</dt><dd>164</dd><dt>SBL</dt><dd>002.-24-15.0</dd><dt>address</dt><dd>1400 Salina St N &amp; Turtle St</dd><dt>area_involved</dt><dd>Premises</dd></dl>
-            </section>
-            </div>
     </article>
   </main>
   <footer class="site-footer">
     <a class="brand" href="../../"><span class="brand-mark">D</span><span>Data<span>Cuse</span></span></a>
-    <p>Independent Syracuse data stories, tools, and field notes.</p>
+    <p>Independent work by <a href="https://samedelstein.com/about/">Sam Edelstein</a>.</p>
   </footer>
 </body>
 </html>

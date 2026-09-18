@@ -1166,7 +1166,7 @@ def compact_value(value: object) -> str:
 
 def record_preview(records: list[dict], limit: int = 4) -> str:
     if not records:
-        return "<p>No matching records found in this feed.</p>"
+        return "<p>No matches stored for this feed. The feed or address matching may be incomplete; this is not confirmation that no records exist.</p>"
     pieces = []
     for record in records[:limit]:
         fields = [(k, compact_value(v)) for k, v in record.items() if compact_value(v)]
@@ -1237,6 +1237,10 @@ def annotation_overlays(ai: dict) -> str:
     return "".join(overlays)
 
 
+def write_html(path: Path, content: str) -> None:
+    path.write_text("\n".join(line.rstrip() for line in content.splitlines()) + "\n", encoding="utf-8")
+
+
 def build_site(entries: list[dict]) -> None:
     SITE_DIR.mkdir(parents=True, exist_ok=True)
     PROGRESS_PATH.parent.mkdir(parents=True, exist_ok=True)
@@ -1245,40 +1249,31 @@ def build_site(entries: list[dict]) -> None:
     progress = parcel_progress()
     PROGRESS_PATH.write_text(json.dumps(progress, separators=(",", ":")), encoding="utf-8")
     build_property_pages(entries)
-    latest = entries[0] if entries else None
     cards = []
-    for entry in entries[:24]:
-        image = entry.get("image")
-        image_html = f'<img src="{html.escape(image)}" alt="Street View image for {html.escape(entry["title"])}">' if image else '<div class="image-missing">No Street View image</div>'
-        summary = entry.get("ai_analysis", {}).get("summary") or entry.get("ai_analysis", {}).get("note") or "AI analysis has not run for this entry."
-        flags = entry.get("flags") or []
-        cards.append(
-            f"""
+    for entry in entries[:8]:
+        matches = entry.get("open_data") or {}
+        flags = summarize_records(matches)
+        record_summary = "; ".join(flags) if flags else "No matches stored in the four city feeds. Coverage and matching may be incomplete."
+        published_date = html.escape(entry.get("published_at", "").split("T")[0])
+        cards.append(f"""
             <article class="entry-card">
-                <div class="entry-image">{image_html}</div>
-                <div class="entry-body">
-                    <p class="entry-date">{html.escape(entry.get("published_at", ""))}</p>
-                    <h3>{html.escape(entry["title"])}</h3>
-                    <p>{html.escape(str(summary))}</p>
-                    <div class="flag-row">{''.join(f'<span>{html.escape(flag)}</span>' for flag in flags[:3]) or '<span>No open-data match yet</span>'}</div>
-                    <a href="{property_url(entry['id'])}">Open entry</a>
-                </div>
+              <div class="entry-body">
+                <h3><a href="{property_url(entry['id'])}">{html.escape(entry['title'])}</a></h3>
+                <p>{html.escape(record_summary)}</p>
+                <p class="entry-date">Entry published {published_date} &middot; Parcel {html.escape(str(entry.get('parcel_key') or 'unknown'))}</p>
+              </div>
             </article>
-            """
-        )
+        """)
 
-    latest_title = html.escape(latest["title"]) if latest else "No published entries yet"
-    latest_summary = html.escape(str((latest or {}).get("ai_analysis", {}).get("summary") or "Run the hourly job to publish the first parcel."))
     total = progress["total"]
     published = progress["published"]
-    progress_pct = round((published / total) * 100, 2) if total else 0
     html_doc = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Syracuse Property Atlas | DataCuse</title>
-  <meta name="description" content="An EveryLot-style Syracuse parcel atlas combining Street View, AI image notes, and city open data.">
+  <meta name="description" content="Search Syracuse parcels, matched city records, and Census tract context. Coverage is incomplete.">
   <link rel="canonical" href="https://www.datacuse.com/projects/syracuse-property-atlas/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1293,7 +1288,6 @@ def build_site(entries: list[dict]) -> None:
       <span>Data<span>Cuse</span></span>
     </a>
     <div class="nav-links">
-      <a href="#latest">Latest</a>
       <a href="#map">Map</a>
       <a href="#search">Search</a>
       <a href="#entries">Entries</a>
@@ -1301,30 +1295,19 @@ def build_site(entries: list[dict]) -> None:
       <a href="/">All projects</a>
     </div>
   </nav>
-  <header class="hero" id="latest">
-    <section>
-      <p class="eyebrow">Syracuse Property Atlas</p>
-      <h1>One Syracuse parcel at a time.</h1>
-      <p class="lede">A slow, sourced field notebook for city properties: parcel data, Street View, AI image observations, city open-data matches, tract context, and OpenStreetMap features.</p>
-      <div class="stats">
-        <div><strong>{len(entries)}</strong><span>published entries</span></div>
-        <div><strong>{total}</strong><span>mapped parcels</span></div>
-        <div><strong>{progress_pct}%</strong><span>complete</span></div>
-      </div>
-    </section>
-    <aside class="latest-card">
-      <span>Latest parcel</span>
-      <h2>{latest_title}</h2>
-      <p>{latest_summary}</p>
-      <a href="#entries">Browse entries</a>
-    </aside>
+  <header class="atlas-intro" id="latest">
+    <p class="eyebrow">Syracuse Property Atlas</p>
+    <h1>Look up a Syracuse property.</h1>
+    <p>Search by address or parcel ID to find a property, then read available city records and neighborhood context.</p>
+    <p class="coverage-note">Only some parcels have a detailed entry. A missing match does not establish that a property has no violations or other records.</p>
+    <p class="byline">An independent project by <a href="https://samedelstein.com/about/">Sam Edelstein</a>.</p>
   </header>
   <main>
     <section class="section atlas-tools" id="map">
       <div class="section-heading">
         <p class="eyebrow">Atlas map</p>
-        <h2>Progress across Syracuse</h2>
-        <p>Orange points are published entries. Gray points are parcels still waiting in the queue. Select a point to open the property popup.</p>
+        <h2>Find an address</h2>
+        <p>Orange points have a published entry; gray points do not yet have one. Select a point to see available details.</p>
       </div>
       <div class="tool-shell">
         <div class="map-toolbar" id="search">
@@ -1340,10 +1323,14 @@ def build_site(entries: list[dict]) -> None:
             <label><input type="checkbox" value="rental"> Rental registry</label>
             <label><input type="checkbox" value="code"> Code violations</label>
             <label><input type="checkbox" value="unfit"> Unfit records</label>
-            <label><input type="checkbox" value="ai_flag"> AI flags</label>
-            <label><input type="checkbox" value="review"> Review queue</label>
           </div>
-          <div class="progress-bar" aria-label="Publishing progress"><span style="width: {progress_pct}%"></span></div>
+          <details class="image-filters"><summary>Experimental image filters</summary>
+            <p>These flags come from automated image analysis, not city findings.</p>
+            <div class="layer-filter">
+              <label><input type="checkbox" value="ai_flag"> AI image flags</label>
+              <label><input type="checkbox" value="review"> Flagged for review</label>
+            </div>
+          </details>
           <p><strong id="publishedCount">{published}</strong> of <strong id="totalCount">{total}</strong> mapped parcels published.</p>
           <div id="searchResults" class="search-results" aria-live="polite"></div>
         </div>
@@ -1354,8 +1341,8 @@ def build_site(entries: list[dict]) -> None:
     <section class="section" id="entries">
       <div class="section-heading">
         <p class="eyebrow">Published properties</p>
-        <h2>Newest entries</h2>
-        <p>Each entry is generated by the hourly pipeline. AI notes are treated as field observations, not official code findings.</p>
+        <h2>Recently added records</h2>
+        <p>Publication dates show when an entry was created, not when its source records or imagery were captured. Search the map for other addresses.</p>
       </div>
       <div class="entry-grid">
         {''.join(cards) or '<p>No entries have been published yet.</p>'}
@@ -1364,7 +1351,7 @@ def build_site(entries: list[dict]) -> None:
     <section class="method" id="method">
       <div>
         <p class="eyebrow">Method</p>
-        <h2>Open data first, AI second.</h2>
+        <h2>Sources and limits</h2>
         <p>The database starts with Syracuse parcels and enriches each selected property with vacant, rental registry, code violation, and unfit-property feeds. Census geocoding adds tract-level ACS context, OpenStreetMap adds nearby mapped features, and optional image analysis adds a visible-condition read when a free or paid image source is configured.</p>
       </div>
       <ul>
@@ -1372,20 +1359,20 @@ def build_site(entries: list[dict]) -> None:
         <li>Open-data joins use parcel IDs, normalized addresses, and nearby coordinates.</li>
         <li>ACS source: Census API, defaulting to the 2024 ACS 5-year profile.</li>
         <li>OSM source: Overpass API, queried with an identifying User-Agent by the Python runtime.</li>
-        <li>AI output is intentionally cautious and limited to exterior conditions visible from the configured image source.</li>
+        <li>AI observations are unverified interpretations of imagery. Image capture dates are not stored in these entries; the images may not show current conditions.</li>
       </ul>
     </section>
   </main>
   <footer class="site-footer">
     <a class="brand" href="/"><span class="brand-mark">D</span><span>Data<span>Cuse</span></span></a>
-    <p>Independent Syracuse data stories, tools, and field notes.</p>
+    <p>Independent work by <a href="https://samedelstein.com/about/">Sam Edelstein</a>.</p>
   </footer>
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
 """
-    (SITE_DIR / "index.html").write_text(html_doc, encoding="utf-8")
+    write_html(SITE_DIR / "index.html", html_doc)
 
 
 def write_review_queue(entries: list[dict]) -> None:
@@ -1431,7 +1418,7 @@ def build_tract_pages(entries: list[dict]) -> None:
     for key, tract_entries in sorted(groups.items()):
         page_dir = TRACTS_DIR / key
         page_dir.mkdir(parents=True, exist_ok=True)
-        page_dir.joinpath("index.html").write_text(tract_page_html(key, tract_entries), encoding="utf-8")
+        write_html(page_dir / "index.html", tract_page_html(key, tract_entries))
         census = tract_entries[0].get("census_tract") or {}
         cards.append(
             f"""
@@ -1454,7 +1441,7 @@ def build_tract_pages(entries: list[dict]) -> None:
   <main class="section"><div class="section-heading"><p class="eyebrow">Census tracts</p><h1>Published property entries by tract.</h1><p>Tract pages summarize published atlas entries as the hourly pipeline grows.</p></div><div class="tract-grid">{''.join(cards)}</div></main>
 </body>
 </html>"""
-    (TRACTS_DIR / "index.html").write_text(index_html, encoding="utf-8")
+    write_html(TRACTS_DIR / "index.html", index_html)
 
 
 def tract_page_html(key: str, entries: list[dict]) -> str:
@@ -1471,7 +1458,7 @@ def tract_page_html(key: str, entries: list[dict]) -> str:
           <div class="project-copy">
             <p class="card-kicker">{html.escape(entry.get("published_at", ""))}</p>
             <h3>{html.escape(entry.get("title", "Property"))}</h3>
-            <p>{html.escape(str((entry.get("ai_analysis") or {}).get("summary") or "No AI summary available."))}</p>
+            <p>{html.escape("; ".join(summarize_records(entry.get("open_data") or {})) or "No city-feed matches stored; coverage may be incomplete.")}</p>
           </div>
         </a>
         """
@@ -1502,7 +1489,7 @@ def build_property_pages(entries: list[dict]) -> None:
     for entry in entries:
         page_dir = PROPERTIES_DIR / f"{int(entry['id']):06d}"
         page_dir.mkdir(parents=True, exist_ok=True)
-        page_dir.joinpath("index.html").write_text(property_page_html(entry), encoding="utf-8")
+        write_html(page_dir / "index.html", property_page_html(entry))
 
 
 def property_page_html(entry: dict) -> str:
@@ -1514,6 +1501,7 @@ def property_page_html(entry: dict) -> str:
             <section class="feed-panel">
                 <h4>{html.escape(feed["label"])} <span>{len(records)}</span></h4>
                 {record_preview(records)}
+                <p><a href="{html.escape(feed['url'])}">Source: {html.escape(feed['label'])}</a></p>
             </section>
             """
         )
@@ -1545,8 +1533,7 @@ def property_page_html(entry: dict) -> str:
     osm = entry.get("osm", {})
     osm_html = osm_summary_html(osm)
     image = entry.get("image")
-    annotations = annotation_overlays(ai)
-    image_html = f'<img src="../../{html.escape(image)}" alt="Street View image for {html.escape(entry["title"])}">{annotations}' if image else '<div class="image-missing">No Street View image</div>'
+    image_html = f'<img src="../../{html.escape(image)}" alt="Street View image for {html.escape(entry["title"])}">' if image else '<div class="image-missing">No Street View image</div>'
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1574,9 +1561,17 @@ def property_page_html(entry: dict) -> str:
         </div>
         <div class="property-image">{image_html}</div>
       </header>
-      <div class="detail-grid">
+      <section class="record-intro">
+        <h2>City records</h2>
+        <p>Matches use parcel IDs, normalized addresses, or nearby coordinates. Confirm a match against the source record before relying on it. Publication dates are not source-data dates.</p>
+      </section>
+      <div class="feed-grid">{''.join(feeds)}</div>
+      <details class="ai-observations">
+        <summary>AI image observations (unverified)</summary>
+        <p>These observations are generated from an image, not an inspection or an official code finding. No human verification is recorded here.</p>
+        <p><strong>Image capture date:</strong> Not recorded. The entry publication date does not establish the age of the image.</p>
         <section>
-          <h4>AI image read</h4>
+          <h4>Automated image description</h4>
           <p>{html.escape(str(ai.get("summary") or ai.get("note") or "No AI summary available."))}</p>
           <p><strong>Property type guess:</strong> {html.escape(str(ai.get("property_type_guess") or "unclear"))}</p>
           <h5>Visible conditions</h5>
@@ -1595,6 +1590,8 @@ def property_page_html(entry: dict) -> str:
           <dl>{image_status_html}</dl>
           <p class="caveat">{html.escape(str(ai.get("caveats") or ""))}</p>
         </section>
+      </details>
+      <div class="detail-grid">
         <section>
           <h4>ACS tract context</h4>
           <p>{html.escape(census.get("name") or census.get("source") or "")}</p>
@@ -1606,12 +1603,11 @@ def property_page_html(entry: dict) -> str:
           {osm_html}
         </section>
       </div>
-      <div class="feed-grid">{''.join(feeds)}</div>
     </article>
   </main>
   <footer class="site-footer">
     <a class="brand" href="../../"><span class="brand-mark">D</span><span>Data<span>Cuse</span></span></a>
-    <p>Independent Syracuse data stories, tools, and field notes.</p>
+    <p>Independent work by <a href="https://samedelstein.com/about/">Sam Edelstein</a>.</p>
   </footer>
 </body>
 </html>

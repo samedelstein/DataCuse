@@ -23,15 +23,43 @@
           <p>Published 2026-07-30T09:03:05+00:00</p>
           <p>Parcel key: 003-17-050</p>
         </div>
-        <div class="property-image"><img src="../../images/parcel-000372.jpg" alt="Street View image for 369 Willumae Dr">
-            <span class="annotation-box" style="left:42.00%;top:70.00%;width:38.00%;height:15.00%;">
-              <span>Driveway cracking · medium confidence</span>
-            </span>
-            </div>
+        <div class="property-image"><img src="../../images/parcel-000372.jpg" alt="Street View image for 369 Willumae Dr"></div>
       </header>
-      <div class="detail-grid">
+      <section class="record-intro">
+        <h2>City records</h2>
+        <p>Matches use parcel IDs, normalized addresses, or nearby coordinates. Confirm a match against the source record before relying on it. Publication dates are not source-data dates.</p>
+      </section>
+      <div class="feed-grid">
+            <section class="feed-panel">
+                <h4>Vacant properties <span>0</span></h4>
+                <p>No matches stored for this feed. The feed or address matching may be incomplete; this is not confirmation that no records exist.</p>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Vacant_Properties/FeatureServer/0/query">Source: Vacant properties</a></p>
+            </section>
+
+            <section class="feed-panel">
+                <h4>Rental registry <span>1</span></h4>
+                <dl><dt>Latitude</dt><dd>43.07815209</dd><dt>Longitude</dt><dd>-76.15594669</dd><dt>NeedsRR</dt><dd>Yes</dd><dt>ObjectId</dt><dd>988</dd><dt>PropertyAddress</dt><dd>365 Willumae Dr</dd><dt>RRisValid</dt><dd>No</dd></dl>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Syracuse_Rental_Registry/FeatureServer/0/query">Source: Rental registry</a></p>
+            </section>
+
+            <section class="feed-panel">
+                <h4>Code violations <span>0</span></h4>
+                <p>No matches stored for this feed. The feed or address matching may be incomplete; this is not confirmation that no records exist.</p>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Code_Violations_V2/FeatureServer/0/query">Source: Code violations</a></p>
+            </section>
+
+            <section class="feed-panel">
+                <h4>Unfit properties <span>0</span></h4>
+                <p>No matches stored for this feed. The feed or address matching may be incomplete; this is not confirmation that no records exist.</p>
+                <p><a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Unfit_Properties/FeatureServer/0/query">Source: Unfit properties</a></p>
+            </section>
+            </div>
+      <details class="ai-observations">
+        <summary>AI image observations (unverified)</summary>
+        <p>These observations are generated from an image, not an inspection or an official code finding. No human verification is recorded here.</p>
+        <p><strong>Image capture date:</strong> Not recorded. The entry publication date does not establish the age of the image.</p>
         <section>
-          <h4>AI image read</h4>
+          <h4>Automated image description</h4>
           <p>A split-level single-family residential property with a front-facing garage, paved driveway, and a grass yard, partially shaded by a large tree.</p>
           <p><strong>Property type guess:</strong> single_family</p>
           <h5>Visible conditions</h5>
@@ -50,6 +78,8 @@
           <dl><dt>Available</dt><dd>True</dd><dt>Bytes</dt><dd>106623</dd><dt>Needs Rerun</dt><dd>False</dd></dl>
           <p class="caveat">[&#x27;The large tree in the foreground partially obstructs the right side of the structure and yard.&#x27;]</p>
         </section>
+      </details>
+      <div class="detail-grid">
         <section>
           <h4>ACS tract context</h4>
           <p>Census Tract 2; Onondaga County; New York</p>
@@ -61,32 +91,11 @@
           <h5>Summary</h5><ul class="osm-results"><li>20 mapped building footprints</li></ul><h5>Notable mapped features</h5><ul class="osm-results"><li><strong>building: apartments</strong><span>way #525726247</span></li></ul>
         </section>
       </div>
-      <div class="feed-grid">
-            <section class="feed-panel">
-                <h4>Vacant properties <span>0</span></h4>
-                <p>No matching records found in this feed.</p>
-            </section>
-            
-            <section class="feed-panel">
-                <h4>Rental registry <span>1</span></h4>
-                <dl><dt>Latitude</dt><dd>43.07815209</dd><dt>Longitude</dt><dd>-76.15594669</dd><dt>NeedsRR</dt><dd>Yes</dd><dt>ObjectId</dt><dd>988</dd><dt>PropertyAddress</dt><dd>365 Willumae Dr</dd><dt>RRisValid</dt><dd>No</dd></dl>
-            </section>
-            
-            <section class="feed-panel">
-                <h4>Code violations <span>0</span></h4>
-                <p>No matching records found in this feed.</p>
-            </section>
-            
-            <section class="feed-panel">
-                <h4>Unfit properties <span>0</span></h4>
-                <p>No matching records found in this feed.</p>
-            </section>
-            </div>
     </article>
   </main>
   <footer class="site-footer">
     <a class="brand" href="../../"><span class="brand-mark">D</span><span>Data<span>Cuse</span></span></a>
-    <p>Independent Syracuse data stories, tools, and field notes.</p>
+    <p>Independent work by <a href="https://samedelstein.com/about/">Sam Edelstein</a>.</p>
   </footer>
 </body>
 </html>

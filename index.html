@@ -35,316 +35,85 @@
         }
     }
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="public/site.css">
+    <link rel="stylesheet" href="public/home.css">
 </head>
 <body>
-    <a class="skip-link" href="#main-content">Skip to main content</a>
-    <nav class="site-nav" aria-label="Primary">
-        <a class="brand" href="/">
-            <span class="brand-mark">D</span>
-            <span>Data<span>Cuse</span></span>
-        </a>
-        <div class="nav-links">
-            <a href="#projects">Projects</a>
-            <a href="#insights">Insights</a>
-            <a href="#about">About</a>
-            <a class="nav-pill" href="mailto:sam.i.edelstein@gmail.com">Contact</a>
-        </div>
-        <details class="mobile-menu">
-            <summary aria-label="Open navigation">Menu</summary>
-            <div>
-                <a href="#projects">Projects</a>
-                <a href="#insights">Insights</a>
-                <a href="#about">About</a>
-                <a href="mailto:sam.i.edelstein@gmail.com">Contact</a>
-            </div>
-        </details>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header">
+    <nav class="wrap navigation" aria-label="Primary">
+      <a class="brand" href="/">Data<span>Cuse</span></a>
+      <div><a href="#projects">Tools</a><a href="#insights">Stories</a><a href="#about">About</a></div>
     </nav>
-
-    <header class="hero">
-        <div class="hero-media" aria-hidden="true">
-            <img src="public/syracuse_clinton_square_1909.jpg" alt="">
-        </div>
-        <div class="hero-grid">
-            <section class="hero-copy">
-                <p class="eyebrow">Syracuse civic data lab</p>
-                <h1>Syracuse, explained through data.</h1>
-                <p class="hero-lede">
-                    Maps, dashboards, field notes, and data stories built around the real systems
-                    Syracuse residents touch: streets, snow, libraries, poverty, housing, and public service.
-                </p>
-                <div class="hero-actions">
-                    <a class="button primary" href="#projects">Explore projects</a>
-                    <a class="button secondary" href="#insights">Read insights</a>
-                </div>
-                <p class="hero-credit">
-                    Hero image: public-domain Clinton Square / Erie Canal postcard via Wikimedia Commons.
-                </p>
-            </section>
-            <aside class="hero-panel" aria-label="Featured DataCuse coverage">
-                <a class="signal-card" href="projects/below-the-line/">
-                    <span class="signal-label">Now reading</span>
-                    <strong>Below the Line 2026</strong>
-                    <p>A local poverty report rebuilt for today with peer cities, housing stress, broadband, transportation, and source notes.</p>
-                    <span class="signal-link">Explore the report &rarr;</span>
-                </a>
-                <div class="mini-grid">
-                    <div>
-                        <span>6</span>
-                        <p>Featured projects</p>
-                    </div>
-                    <div>
-                        <span>315</span>
-                        <p>Local focus</p>
-                    </div>
-                </div>
-            </aside>
-        </div>
+  </header>
+  <main id="main-content" class="wrap">
+    <header class="intro">
+      <div class="intro-copy">
+      <p class="byline">Independent work by <a href="https://samedelstein.com/about/">Sam Edelstein</a></p>
+      <h1>A closer look at Syracuse.</h1>
+      <p>Maps, tools, and reporting about the city and Onondaga County: housing, libraries, snow, and public services.</p>
+      </div>
+      <figure class="city-photo">
+        <img src="public/syracuse_clinton_square_1909.jpg" alt="Historic postcard of Clinton Square, with the Erie Canal in the foreground" width="834" height="529" fetchpriority="high">
+        <figcaption>Clinton Square, 1909. Public-domain postcard via Wikimedia Commons.</figcaption>
+      </figure>
     </header>
-
-    <main id="main-content">
-        <section class="city-strip" aria-label="DataCuse coverage areas">
-            <div>
-                <span>Snow routes</span>
-                <strong>Winter operations</strong>
-            </div>
-            <div>
-                <span>Library access</span>
-                <strong>OCPL and branches</strong>
-            </div>
-            <div>
-                <span>Neighborhoods</span>
-                <strong>Block-level field notes</strong>
-            </div>
-            <div>
-                <span>City systems</span>
-                <strong>Services, OKRs, and open data</strong>
-            </div>
-        </section>
-
-        <section class="section projects-section" id="projects">
-            <div class="section-heading">
-                <p class="eyebrow">Featured work</p>
-                <h2>Useful ways into Syracuse.</h2>
-                <p>Six projects about the public systems, places, and questions that matter here. Each starts with a local question and shows its work.</p>
-            </div>
-
-            <div class="project-grid">
-                <a class="project-card feature-card" href="projects/below-the-line/">
-                    <div class="project-image">
-                        <img src="public/below_the_line_2026_preview.png" alt="Below the Line 2026 report preview" loading="lazy">
-                        <span>Interactive Report</span>
-                    </div>
-                    <div class="project-copy">
-                        <p class="card-kicker">Poverty Data</p>
-                        <h3>Below the Line 2026</h3>
-                        <p>An updated look at Syracuse poverty, housing, education, work, transportation, broadband access, and peer-city change since the original report.</p>
-                        <div class="tag-row" aria-label="Project attributes">
-                            <span>Peer cities</span>
-                            <span>Source notes</span>
-                            <span>PDF report</span>
-                        </div>
-                        <strong>Read the report &rarr;</strong>
-                    </div>
-                </a>
-
-                <a class="project-card" href="https://cusesnowplowcoverage.streamlit.app/" target="_blank" rel="noopener noreferrer">
-                    <div class="project-image">
-                        <img src="public/snow_map.png" alt="Syracuse Snow Map" loading="lazy">
-                        <span>Live map</span>
-                    </div>
-                    <div class="project-copy">
-                        <p class="card-kicker">Snow</p>
-                        <h3>Syracuse Snow Map</h3>
-                        <p>See where plows have been and follow snow-removal progress across Syracuse residential streets.</p>
-                        <div class="tag-row" aria-label="Project attributes">
-                            <span>Map</span>
-                            <span>Operations</span>
-                        </div>
-                        <strong>Explore the map &rarr;</strong>
-                    </div>
-                </a>
-
-                <a class="project-card" href="https://ocpllibrarycensus.streamlit.app/" target="_blank" rel="noopener noreferrer">
-                    <div class="project-image">
-                        <img src="public/library_census.png" alt="Library Census Dashboard" loading="lazy">
-                        <span>Interactive data</span>
-                    </div>
-                    <div class="project-copy">
-                        <p class="card-kicker">Libraries</p>
-                        <h3>Census Data by Library Location</h3>
-                        <p>Compare the communities around Onondaga County library locations using Census data and library context.</p>
-                        <div class="tag-row" aria-label="Project attributes">
-                            <span>OCPL</span>
-                            <span>Demographics</span>
-                        </div>
-                        <strong>Explore the data &rarr;</strong>
-                    </div>
-                </a>
-
-                <a class="project-card" href="https://www.datacuse.com/projects/cityline-bypass/" target="_blank" rel="noopener noreferrer">
-                    <div class="project-image">
-                        <img src="public/cityline_bypass.png" alt="Cityline Workaround Dashboard" loading="lazy">
-                        <span>Service-request guide</span>
-                    </div>
-                    <div class="project-copy">
-                        <p class="card-kicker">Civic Services</p>
-                        <h3>Cityline Workaround App</h3>
-                        <p>Describe a city-service problem in plain language and find the closest currently available Cityline request path.</p>
-                        <div class="tag-row" aria-label="Project attributes">
-                            <span>Service requests</span>
-                            <span>Live categories</span>
-                        </div>
-                        <strong>Open the guide &rarr;</strong>
-                    </div>
-                </a>
-                <a class="project-card" href="projects/syracuse-property-atlas/">
-                    <div class="project-image">
-                        <img src="public/syracuse_property_atlas.svg" alt="Syracuse Property Atlas preview" loading="lazy">
-                        <span>Property research</span>
-                    </div>
-                    <div class="project-copy">
-                        <p class="card-kicker">Property Data</p>
-                        <h3>Syracuse Property Atlas</h3>
-                        <p>Explore a Syracuse parcel with city records, neighborhood context, mapping data, and clearly marked gaps.</p>
-                        <div class="tag-row" aria-label="Project attributes">
-                            <span>Parcels</span>
-                            <span>ACS</span>
-                            <span>Neighborhood context</span>
-                        </div>
-                        <strong>Explore a property &rarr;</strong>
-                    </div>
-                </a>
-                <a class="project-card water-risk-card" href="projects/syracuse-water-risk/">
-                    <div class="project-image water-risk-image" aria-hidden="true">
-                        <span>Research prototype</span>
-                    </div>
-                    <div class="project-copy">
-                        <p class="card-kicker">Water infrastructure</p>
-                        <h3>Syracuse Water Main Risk Explorer</h3>
-                        <p>A transparent public-data model for examining which street segments were most likely to have a recorded water-main break in a given year.</p>
-                        <div class="tag-row" aria-label="Project attributes">
-                            <span>Street segments</span>
-                            <span>Test results</span>
-                            <span>Limitations</span>
-                        </div>
-                        <strong>View the project &rarr;</strong>
-                    </div>
-                </a>
-            </div>
-        </section>
-
-        <section class="section archive-section" aria-labelledby="archive-heading">
-            <div class="archive-heading">
-                <p class="eyebrow">More from DataCuse</p>
-                <h2 id="archive-heading">Earlier projects and experiments.</h2>
-                <p>Work that remains available for reference, without competing with the current project desk.</p>
-            </div>
-            <div class="archive-list">
-                <a href="projects/ocpl-library-story/"><span>Library data story</span><strong>OCPL Library Use Story &rarr;</strong></a>
-                <a href="projects/syracuse-performance-dashboard/"><span>City performance</span><strong>Syracuse Performance Dashboard &rarr;</strong></a>
-                <a href="projects/cumberland-ave-atlas/"><span>Street-scale research</span><strong>Cumberland Ave Atlas &rarr;</strong></a>
-                <a href="projects/street-quality-atlas/"><span>Street conditions</span><strong>Street Quality Atlas &rarr;</strong></a>
-                <a href="projects/cityline-snow-analysis/"><span>Service-request analysis</span><strong>Cityline Snow Request Analysis &rarr;</strong></a>
-            </div>
-        </section>
-
-        <section class="section insights-section" id="insights">
-            <div class="section-heading">
-                <p class="eyebrow">Field notes</p>
-                <h2>Deep dives and build notes.</h2>
-                <p>Long-form analyses from the local data stack, kept close to the project pages they explain.</p>
-            </div>
-
-            <div class="article-list">
-                <article class="article-card">
-                    <img src="public/below_the_line_2026_preview.png" alt="Below the Line 2026 analysis preview" loading="lazy">
-                    <div>
-                        <p class="card-kicker">Interactive Analysis <span>April 29, 2026</span></p>
-                        <h3>Below the Line 2026</h3>
-                        <p>Rebuilding the original poverty analysis with expanded metrics, peer-city baselines, and careful notes on COVID-era data quality.</p>
-                        <div class="article-links">
-                            <a href="projects/below-the-line/">Open report</a>
-                            <a href="projects/below-the-line/report/below_the_line_2026_report.pdf">2026 PDF</a>
-                            <a href="projects/below-the-line/report/below_the_line_2018_original.pdf">Original PDF</a>
-                            <a href="https://www.innovatesyracuse.com/blog/povertydata" target="_blank" rel="noopener noreferrer">Original blog post</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="article-card">
-                    <img src="https://commons.wikimedia.org/wiki/Special:FilePath/White-Branch-Library-Syracuse-2016-0326.jpg" alt="White Branch Library in Syracuse" loading="lazy">
-                    <div>
-                        <p class="card-kicker">Library Data <span>May 2026</span></p>
-                        <h3>OCPL Library Use Story</h3>
-                        <p>A public reporting page that turns the latest city library dashboard into a readable civic data story.</p>
-                        <div class="article-links">
-                            <a href="projects/ocpl-library-story/">Read story</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="article-card">
-                    <img src="projects/ocplbooksearch.png" alt="Datacuse MCP launch article" loading="lazy">
-                    <div>
-                        <p class="card-kicker">Launch Essay <span>March 21, 2026</span></p>
-                        <h3>Introducing Datacuse MCP</h3>
-                        <p>How Syracuse open data, OCPL library workflows, and county, state, and federal sources came together in one MCP server.</p>
-                        <div class="article-links">
-                            <a href="https://www.datacuse.com/projects/datacuse-mcp/">Read full story</a>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="article-card">
-                    <div class="article-placeholder">CITYLINE</div>
-                    <div>
-                        <p class="card-kicker">Data Analysis <span>December 31, 2025</span></p>
-                        <h3>Cityline Snow Request Analysis</h3>
-                        <p>A look at how residents make snow plow service requests to Cityline, even when there is no official option to do so.</p>
-                        <div class="article-links">
-                            <a href="projects/cityline-snow-analysis/">Read story</a>
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="section about-section" id="about">
-            <div class="about-copy">
-                <p class="eyebrow">About DataCuse</p>
-                <h2>Independent work for a more legible Syracuse.</h2>
-            </div>
-            <div class="about-details">
-                <p>DataCuse is built by <a href="https://samedelstein.com" rel="noopener noreferrer">Sam Edelstein</a>, a Syracuse civic technologist and public-board leader. It is an independent project, not an official City of Syracuse or Onondaga County website.</p>
-                <p>Have a dataset, correction, local question, or idea for a useful tool? Source notes and constructive challenges make this work better.</p>
-                <div class="about-actions">
-                    <a class="button primary" href="mailto:sam.i.edelstein@gmail.com?subject=DataCuse%20question">Send a note</a>
-                    <a class="text-link" href="https://github.com/samedelstein" rel="noopener noreferrer">See the work on GitHub &rarr;</a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="site-footer">
-        <div>
-            <a class="brand" href="/">
-                <span class="brand-mark">D</span>
-                <span>Data<span>Cuse</span></span>
-            </a>
-            <p>DataCuse is an independent Syracuse data lab building civic tools, maps, and explainers for the 315.</p>
-        </div>
-        <div class="footer-links">
-            <p>Built for the 315.</p>
-            <a href="https://samedelstein.com" rel="noopener noreferrer">Personal website</a>
-            <a href="https://github.com/samedelstein" rel="noopener noreferrer">GitHub</a>
-            <a href="https://www.linkedin.com/in/samedelstein/" rel="noopener noreferrer">LinkedIn</a>
-        </div>
-        <small>&copy; 2026 DataCuse. All rights reserved.</small>
-    </footer>
+    <article class="lead-story" aria-labelledby="lead-title">
+      <div>
+        <p class="label">Poverty &amp; housing &middot; Report published April 29, 2026</p>
+        <h2 id="lead-title"><a href="projects/below-the-line/">Below the Line 2026</a></h2>
+        <p>How has poverty in Syracuse changed since the original 2018 report? Explore housing costs, work, education, transportation, and comparisons with other cities.</p>
+        <p class="note">The report includes source notes and caveats about COVID-era data. Data periods vary by measure.</p>
+        <a class="read-link" href="projects/below-the-line/">Read the report <span aria-hidden="true">&rarr;</span></a>
+        <div class="source-links"><a href="projects/below-the-line/report/below_the_line_2026_report.pdf">2026 PDF</a><a href="projects/below-the-line/report/below_the_line_2018_original.pdf">Original 2018 PDF</a><a href="https://www.innovatesyracuse.com/blog/povertydata">Original article</a></div>
+      </div>
+      <a class="report-image" href="projects/below-the-line/" tabindex="-1" aria-hidden="true"><img src="public/below_the_line_2026_preview.png" alt="" width="1530" height="1980"></a>
+    </article>
+    <section class="section" id="projects" aria-labelledby="tools-title">
+      <h2 id="tools-title">Tools for local questions</h2>
+      <div class="tool-list">
+        <article class="tool-feature">
+          <figure class="tool-preview">
+            <a href="https://cusesnowplowcoverage.streamlit.app/" tabindex="-1" aria-hidden="true"><img src="public/snow_map.png" alt="" width="1100" height="559" loading="lazy"></a>
+            <figcaption>Saved preview of the snow dashboard; not current storm conditions.</figcaption>
+          </figure>
+          <h3><a href="https://cusesnowplowcoverage.streamlit.app/">See where snowplows have been</a></h3><p>Explore recorded plow coverage on Syracuse residential streets.</p><p class="note">Snow Map &middot; External app; check the data timestamp in the map.</p>
+        </article>
+        <article class="tool-feature">
+          <figure class="tool-preview">
+            <a href="https://ocpllibrarycensus.streamlit.app/" tabindex="-1" aria-hidden="true"><img src="public/library_census.png" alt="" width="637" height="615" loading="lazy"></a>
+            <figcaption>Library locations and Census tracts in the county. Saved app preview.</figcaption>
+          </figure>
+          <h3><a href="https://ocpllibrarycensus.streamlit.app/">Compare communities around libraries</a></h3><p>Explore Census data for the areas around Onondaga County library locations.</p><p class="note">Library Census &middot; External app; Census estimates describe a period, not a live count.</p>
+        </article>
+        <article class="tool-compact"><h3><a href="projects/syracuse-property-atlas/">Look up a Syracuse property</a></h3><p>Search parcels and read matched city records, with Census tract context and links to sources.</p><p class="note">Property Atlas &middot; Partial coverage; records may be incomplete.</p></article>
+        <article class="tool-compact"><h3><a href="projects/cityline-bypass/">Find a Cityline request category</a></h3><p>Describe a service problem and find an available Cityline request path.</p><p class="note">Cityline Workaround &middot; An independent guide to the city's reporting service.</p></article>
+      </div>
+    </section>
+    <section class="section" id="insights" aria-labelledby="stories-title">
+      <h2 id="stories-title">Stories &amp; notes</h2>
+      <div class="story-list">
+        <article><p class="label">Snow &middot; <time datetime="2025-12-31">December 31, 2025</time></p><h3><a href="projects/cityline-snow-analysis/">Residents found a snow-plow workaround.</a></h3><p>What happens when the service-request menu doesn't include the problem a resident needs to report? A look at snow-related requests in Cityline.</p></article>
+        <article><p class="label">Libraries &middot; <time datetime="2026-05">May 2026</time></p><h3><a href="projects/ocpl-library-story/">Library use across Syracuse</a></h3><p>Read the OCPL Library Use Story, with the underlying library dashboard as its source.</p></article>
+        <article><p class="label">Build notes &middot; <time datetime="2026-03-21">March 21, 2026</time></p><h3><a href="projects/datacuse-mcp/">Connecting local data and library tools</a></h3><p>Introducing DataCuse MCP: how one server brings together Syracuse open data, library tasks, and county, state, and federal sources.</p></article>
+      </div>
+    </section>
+    <section class="section" aria-labelledby="research-title">
+      <h2 id="research-title">Research &amp; earlier projects</h2>
+      <p class="section-intro">These projects include prototypes and historical analyses. Read each project's methods and data dates before using its results.</p>
+      <ul class="archive-list">
+        <li><a href="projects/syracuse-water-risk/">Syracuse Water Main Risk Explorer</a><span>Research prototype using public data; includes test results and limitations.</span></li>
+        <li><a href="projects/syracuse-performance-dashboard/">Syracuse Performance Dashboard</a><span>City performance measures.</span></li>
+        <li><a href="projects/cumberland-ave-atlas/">Cumberland Ave Atlas</a><span>Street-scale property research.</span></li>
+        <li><a href="projects/street-quality-atlas/">Street Quality Atlas</a><span>Street-condition research.</span></li>
+      </ul>
+    </section>
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <h2 id="about-title">About DataCuse</h2>
+      <p>I'm <a href="https://samedelstein.com/about/">Sam Edelstein</a>. I build these projects to explore questions about Syracuse and make local information easier to use.</p>
+      <p>DataCuse is independent. It is not an official City of Syracuse or Onondaga County website. My personal site has <a href="https://samedelstein.com/proof/datacuse-open-data-platform/">the story of my earlier work on the city's open-data program</a>.</p>
+      <p>Found an error, a missing source, or a local question worth investigating? <a href="mailto:sam.i.edelstein@gmail.com?subject=DataCuse%20question">Send me a note</a>.</p>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="wrap"><p>&copy; 2026 DataCuse &middot; Syracuse, New York</p><nav aria-label="Elsewhere"><a href="https://samedelstein.com/">Sam Edelstein</a><a href="https://github.com/samedelstein">GitHub</a><a href="mailto:sam.i.edelstein@gmail.com">Email</a></nav></div></footer>
 </body>
 </html>
-

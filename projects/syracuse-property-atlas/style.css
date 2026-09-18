@@ -16,7 +16,7 @@ body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   color: var(--ink);
-  background: linear-gradient(180deg, var(--paper), #fffaf3 46%, #edf3f2);
+  background: #fcfaf5;
 }
 
 a { color: inherit; text-decoration: none; }
@@ -686,4 +686,32 @@ dd {
   .tract-grid {
     grid-template-columns: 1fr;
   }
+}
+
+/* Search and source records lead; generated imagery remains supplementary. */
+a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible { outline: 3px solid var(--orange-dark); outline-offset: 4px; }
+.atlas-intro { max-width: 1220px; margin: 0 auto; padding: 42px clamp(20px, 5vw, 56px) 0; }
+.atlas-intro h1 { font-size: clamp(2rem, 5vw, 3.4rem); line-height: 1.12; }
+.atlas-intro > p { max-width: 760px; line-height: 1.65; }
+.atlas-intro a, .ai-observations a, .record-intro a, .feed-panel a, .site-footer p a { text-decoration: underline; text-underline-offset: 3px; }
+.coverage-note, .byline { color: var(--muted); font-size: .95rem; }
+.atlas-tools { padding-top: 30px; }
+.entry-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.entry-card { box-shadow: none; border-radius: 0; }
+.entry-body { min-height: 0; }
+.entry-body h3 { font-size: 1.2rem; }
+.entry-date { font-size: .85rem; }
+.image-filters { margin-block: 14px; }
+summary { cursor: pointer; font-weight: 700; }
+.image-filters p { font-size: .85rem; }
+.ai-observations { padding-block: 24px; margin-block: 24px; border-block: 1px solid var(--line); line-height: 1.65; }
+.ai-observations > section { max-width: 760px; }
+.record-intro { margin-block: 24px; max-width: 760px; line-height: 1.65; }
+.property-hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.15; }
+.property-image img { max-height: 260px; object-fit: contain; }
+.feed-panel a { overflow-wrap: anywhere; }
+@media (max-width: 700px) {
+  .entry-grid { grid-template-columns: 1fr; }
+  .site-nav { position: static; flex-wrap: wrap; }
+  .nav-links { display: flex; flex-wrap: wrap; gap: 12px; }
 }
