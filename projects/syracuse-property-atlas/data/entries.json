@@ -1,5 +1,101 @@
 [
   {
+    "address": "137 Englert Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The primary entrance to the residence is not clearly visible from this image angle."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "unclear",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image depicts a single-family residence with an attached garage and a well-maintained lawn, appearing to be in generally good exterior condition.",
+      "visible_conditions": [
+        "Single-story residence with white horizontal siding and a stone veneer section on the front facade.",
+        "Attached single-car garage with a white garage door.",
+        "A detached garage structure is partially visible to the left of the main residence.",
+        "The roof appears to be covered with asphalt shingles.",
+        "The lawn is green and appears maintained.",
+        "Trimmed foundation plantings are visible along the front of the house.",
+        "A small cupola-like feature is present on the roof ridge."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 533,
+    "image": "images/parcel-000533.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 78131,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07971533771862,
+    "lon": -76.14835535950468,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-14-060",
+    "published_at": "2026-09-18T23:05:10+00:00",
+    "review_reasons": [],
+    "title": "137 Englert Ave"
+  },
+  {
     "address": "141 Englert Ave",
     "ai_analysis": {
       "available": true,
