@@ -1,5 +1,89 @@
 [
   {
+    "address": "133 Englert Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The large tree in the foreground partially obstructs the view of the roof and front facade."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A single-story residential home with a large mature tree in the front yard, showing a well-maintained lawn and intact siding.",
+      "visible_conditions": [
+        "Siding appears intact and in good condition",
+        "Windows and garage door appear functional and intact",
+        "Lawn is mowed and landscaped with shrubs",
+        "Large mature tree dominates the front yard"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 534,
+    "image": "images/parcel-000534.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 140249,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.079585825456014,
+    "lon": -76.14816918178951,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-14-070",
+    "published_at": "2026-09-18T23:10:42+00:00",
+    "review_reasons": [],
+    "title": "133 Englert Ave"
+  },
+  {
     "address": "137 Englert Ave",
     "ai_analysis": {
       "available": true,
