@@ -1,4 +1,8 @@
 .env
+/node_modules/
+/_preview/
+/content/**/__pycache__/
+/content/**/.ipynb_checkpoints/
 *.env
 projects/syracuse-property-atlas/.env
 projects/syracuse-property-atlas/data/property_atlas.sqlite3
