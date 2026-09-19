@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Are there oak trees on Oak Street? | DataCuse</title>
+  <meta name="description" content="Six oaks, 56 maples, and a spreadsheet investigation into whether Syracuse trees take street names literally.">
+  <link rel="canonical" href="https://www.datacuse.com/stories/oak-street-trees/">
+  <link rel="alternate" type="application/rss+xml" title="DataCuse Stories &amp; Notes" href="https://www.datacuse.com/stories/feed.xml">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="DataCuse">
+  <meta property="og:title" content="Are there oak trees on Oak Street?">
+  <meta property="og:description" content="Six oaks, 56 maples, and a spreadsheet investigation into whether Syracuse trees take street names literally.">
+  <meta property="og:url" content="https://www.datacuse.com/stories/oak-street-trees/">
+  <meta name="twitter:card" content="summary">
+  <meta property="article:published_time" content="2026-09-18">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Are there oak trees on Oak Street?","description":"Six oaks, 56 maples, and a spreadsheet investigation into whether Syracuse trees take street names literally.","datePublished":"2026-09-18","mainEntityOfPage":"https://www.datacuse.com/stories/oak-street-trees/","author":{"@type":"Person","name":"Sam Edelstein","url":"https://samedelstein.com/about/"}}</script>
+  <link rel="stylesheet" href="/public/home.css">
+  <link rel="stylesheet" href="/public/stories.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header"><nav class="wrap navigation" aria-label="Primary"><a class="brand" href="/">Data<span>Cuse</span></a><div><a href="/#projects">Tools</a><a href="/stories/" aria-current="false">Stories</a><a href="/#about">About</a></div></nav></header>
+  <main id="main-content" class="wrap story-wrap"><article><header class="story-heading"><p class="label">Trees &middot; <time datetime="2026-09-18">September 18, 2026</time></p><h1>Are there oak trees on Oak Street?</h1><p class="story-deck">Six oaks, 56 maples, and a spreadsheet investigation into whether Syracuse trees take street names literally.</p><p class="byline">By <a href="https://samedelstein.com/about/">Sam Edelstein</a></p></header><div class="story-body"><p>I’ve been branching out into some very important research. Specifically: are there oak trees on Oak Street?</p>
+<p>Deciding to get to the root of this matter, I checked out the city&#39;s <a href="https://data.syr.gov/datasets/7982e38ea4b545289736a1f42e413632_0/explore">tree inventory on data.syr.gov</a>. The answer was &quot;yes&quot;. The CSV I checked lists <strong>six</strong> oak trees on Oak Street: four red oaks, one swamp white oak, and one black oak.</p>
+<p>Naturally, I branched into related investigations. Using Python to compare tree names with street names, I found 19 whole-word matches: six oaks on Oak Street, six maples on Maple Street, six more on Maple Terrace, and one Japanese tree lilac on Lilac Street.</p>
+<p><a class="story-image" href="assets/trees-pictogram-blog.png" aria-label="Open full-size image: Chart of the number of similarly named trees to the streets where they are located"><img src="assets/trees-pictogram-blog.png" alt="Chart of the number of similarly named trees to the streets where they are located" loading="lazy"></a>
+<em>A street map of trees and a tree chart of streets. I may have taken this too literally.</em></p>
+<p>Some trees understood the assignment.</p>
+<p><a class="story-image" href="assets/trees-map-blog.png" aria-label="Open full-size image: Map of Syracuse showing 19 trees whose common names match their streets, with a pictogram counting six on Oak Street, six on Maple Street, six on Maple Terrace, and one on Lilac Street."><img src="assets/trees-map-blog.png" alt="Map of Syracuse showing 19 trees whose common names match their streets, with a pictogram counting six on Oak Street, six on Maple Street, six on Maple Terrace, and one on Lilac Street." loading="lazy"></a></p>
+<p><em>Each illustrated tree represents a real tree in Syracuse.</em></p>
+<p>If we loosen the rules to include names like Oakwood and Maplehurst, the count rises to 65. But I wanted to see who followed the instructions exactly.</p>
+<p>Then I checked the trees that got lost.</p>
+<p><strong>Oak Street has 56 maples. And six oaks.</strong></p>
+<p>The maples outnumber the oaks by more than nine to one. Oak Street may want to schedule a branding meeting.</p>
+<p><a class="story-image" href="assets/lost-trees-oak-street.png" aria-label="Open full-size image: Map and tree pictogram showing 56 maples and six oaks recorded on Oak Street in Syracuse. Each illustration represents one tree; other tree types on the street are not shown."><img src="assets/lost-trees-oak-street.png" alt="Map and tree pictogram showing 56 maples and six oaks recorded on Oak Street in Syracuse. Each illustration represents one tree; other tree types on the street are not shown." loading="lazy"></a></p>
+<p><em>Oak Street has an identity crisis. Other kinds of trees live there, too; this comparison shows just the maples and oaks.</em></p>
+<p>Meanwhile, 11 oaks are on Butternut Street, eight are on Walnut Place, and four are on Cedar Street. Of the 1,836 oak records in the CSV, 1,830 have addresses somewhere other than Oak Street.</p>
+<p>Some trees read the street signs. Others branch out.</p>
+<hr>
+<p><em>Source and method: <a href="https://data.syr.gov/datasets/7982e38ea4b545289736a1f42e413632_0/explore">City of Syracuse tree inventory, data.syr.gov</a>. Counts reflect the downloaded CSV, not a new field survey. I compared the common-name text before the comma in <code>SPP_COM</code> with <code>STREET</code>, ignoring capitalization; alternate names weren&#39;t reconciled. Map dots use recorded coordinates, with illustrations offset for readability. Tree artwork is AI-generated and symbolic. Basemap © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap contributors</a>.</em></p>
+</div><aside class="story-end"><p><a href="/stories/">More stories about Syracuse</a> &middot; <a href="/stories/feed.xml">Subscribe by RSS</a></p><p class="note">Have a correction or a local question? <a href="mailto:sam.i.edelstein@gmail.com">Send a note.</a></p></aside></article></main>
+  <footer class="site-footer"><div class="wrap"><p>Independent work by <a href="https://samedelstein.com/about/">Sam Edelstein</a></p><nav aria-label="More"><a href="/stories/">All stories</a><a href="/stories/feed.xml">RSS feed</a><a href="mailto:sam.i.edelstein@gmail.com">Contact</a></nav></div></footer>
+</body>
+</html>
