@@ -1,5 +1,118 @@
 [
   {
+    "address": "103 Englert Ave & Court St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Portions of the roof are obscured by glare and trees.",
+        "Dense vegetation obscures parts of the left side of the primary structure."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "unclear",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.35,
+            "width": 0.45,
+            "x": 0.0,
+            "y": 0.35
+          },
+          "confidence": "high",
+          "label": "Dense vegetation",
+          "reason": "Unmanaged growth obscuring part of the structure."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Dense vegetation appears to be obscuring portions of the left side of the primary structure."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property appears to be a single-family residence with a visible front yard and some dense vegetation on the left side of the structure.",
+      "visible_conditions": [
+        "The main structure has horizontal siding.",
+        "A front entry with steps is visible.",
+        "The front yard contains grass and several areas of dense vegetation.",
+        "A riding lawnmower is parked near the front entry.",
+        "The roof is partially visible, but details are obscured by glare and trees."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Dense vegetation appears to be obscuring portions of the left side of the primary structure."
+    ],
+    "id": 542,
+    "image": "images/parcel-000542.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 70074,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.078651753744396,
+    "lon": -76.14645501376786,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-14-150",
+    "published_at": "2026-09-19T22:03:07+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "103 Englert Ave & Court St"
+  },
+  {
     "address": "105 Englert Ave",
     "ai_analysis": {
       "available": true,
