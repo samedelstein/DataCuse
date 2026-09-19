@@ -1,0 +1,101 @@
+{
+  "synthetic_tests": "passed",
+  "sensitivity": [
+    {
+      "tolerance_m": 0,
+      "eligible_names": 1192,
+      "suffix_longer": 232,
+      "shortest_block": {
+        "name": "SOUTH AVENUE",
+        "length_ft": 15.709438501844913,
+        "endpoint_a": "HOVEY STREET",
+        "endpoint_b": "MARGINAL STREET",
+        "intersection_to_intersection": true,
+        "wholly_inside": true,
+        "source_segments": 1,
+        "source_ids": "800051053",
+        "lon": -76.15872385271695,
+        "lat": 43.030864026945714
+      },
+      "shortest_whole_street": {
+        "name": "SPRING LANE",
+        "component": 1,
+        "length_ft": 64.37446400867464,
+        "full_component_ft": 64.37446400867464,
+        "outside_city_ft": 0.0,
+        "wholly_inside": true,
+        "source_segments": 1,
+        "source_ids": "477429983",
+        "lon": -76.15193328588224,
+        "lat": 43.06810160163927,
+        "components_in_city": 1
+      },
+      "noded_pieces": 7372,
+      "ambiguous_grade_crossings": 0
+    },
+    {
+      "tolerance_m": 0.5,
+      "eligible_names": 1192,
+      "suffix_longer": 232,
+      "shortest_block": {
+        "name": "SOUTH AVENUE",
+        "length_ft": 15.709438501844913,
+        "endpoint_a": "HOVEY STREET",
+        "endpoint_b": "MARGINAL STREET",
+        "intersection_to_intersection": true,
+        "wholly_inside": true,
+        "source_segments": 1,
+        "source_ids": "800051053",
+        "lon": -76.15872385271695,
+        "lat": 43.030864026945714
+      },
+      "shortest_whole_street": {
+        "name": "SPRING LANE",
+        "component": 1,
+        "length_ft": 64.37446400867464,
+        "full_component_ft": 64.37446400867464,
+        "outside_city_ft": 0.0,
+        "wholly_inside": true,
+        "source_segments": 1,
+        "source_ids": "477429983",
+        "lon": -76.15193328588224,
+        "lat": 43.06810160163927,
+        "components_in_city": 1
+      },
+      "noded_pieces": 7372,
+      "ambiguous_grade_crossings": 0
+    },
+    {
+      "tolerance_m": 1,
+      "eligible_names": 1192,
+      "suffix_longer": 232,
+      "shortest_block": {
+        "name": "SOUTH AVENUE",
+        "length_ft": 15.709438501844913,
+        "endpoint_a": "HOVEY STREET",
+        "endpoint_b": "MARGINAL STREET",
+        "intersection_to_intersection": true,
+        "wholly_inside": true,
+        "source_segments": 1,
+        "source_ids": "800051053",
+        "lon": -76.15872385271695,
+        "lat": 43.030864026945714
+      },
+      "shortest_whole_street": {
+        "name": "SPRING LANE",
+        "component": 1,
+        "length_ft": 64.37446400867464,
+        "full_component_ft": 64.37446400867464,
+        "outside_city_ft": 0.0,
+        "wholly_inside": true,
+        "source_segments": 1,
+        "source_ids": "477429983",
+        "lon": -76.15193328588224,
+        "lat": 43.06810160163927,
+        "components_in_city": 1
+      },
+      "noded_pieces": 7372,
+      "ambiguous_grade_crossings": 0
+    }
+  ]
+}

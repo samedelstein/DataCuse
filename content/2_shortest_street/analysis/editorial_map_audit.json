@@ -1,0 +1,109 @@
+{
+  "bounds_3857": [
+    -8484345.103360001,
+    5308785.695889999,
+    -8467264.630939998,
+    5325866.168310002
+  ],
+  "main_map_size_px": 1480,
+  "projection": "EPSG:3857",
+  "callouts": [
+    {
+      "name": "FAY ROAD",
+      "detail": "7 letters",
+      "point_3857": [
+        -8482450.30080013,
+        5318331.932900453
+      ],
+      "label_offset_pixels": [
+        25,
+        850
+      ]
+    },
+    {
+      "name": "LEA LANE",
+      "detail": "7 letters",
+      "point_3857": [
+        -8473499.57655013,
+        5323000.7661004495
+      ],
+      "label_offset_pixels": [
+        1080,
+        135
+      ]
+    },
+    {
+      "name": "SPRING LANE",
+      "detail": "~64 ft in state data",
+      "point_3857": [
+        -8477194.436300127,
+        5322343.356450459
+      ],
+      "label_offset_pixels": [
+        290,
+        50
+      ]
+    },
+    {
+      "name": "OAK STREET",
+      "detail": "9 letters \u00b7 1.44 miles",
+      "point_3857": [
+        -8475421.007100128,
+        5321448.476300454
+      ],
+      "label_offset_pixels": [
+        1040,
+        460
+      ]
+    },
+    {
+      "name": "ERIE BOULEVARD WEST",
+      "detail": "4 letters + 9 + direction",
+      "point_3857": [
+        -8480181.674575519,
+        5319548.268736355
+      ],
+      "label_offset_pixels": [
+        20,
+        380
+      ]
+    },
+    {
+      "name": "ERIE BOULEVARD EAST",
+      "detail": "4 letters + 9 + direction",
+      "point_3857": [
+        -8472870.255754793,
+        5319881.819677282
+      ],
+      "label_offset_pixels": [
+        1020,
+        810
+      ]
+    },
+    {
+      "name": "SOUTH AVENUE",
+      "detail": "~16 ft mapped link",
+      "point_3857": [
+        -8477950.358750133,
+        5316670.847100459
+      ],
+      "label_offset_pixels": [
+        410,
+        1095
+      ]
+    }
+  ],
+  "highlighted_names": [
+    "Fay Road",
+    "Lea Lane",
+    "Spring Lane",
+    "Pond Lane",
+    "South Avenue",
+    "Hovey Street",
+    "Marginal Street",
+    "Oak Street",
+    "Erie Boulevard East",
+    "Erie Boulevard West"
+  ],
+  "note": "Line locations are exact source geometries. Label locations are offset with leaders; tiny features have symbolic dots. Lengths were calculated separately in EPSG:26918."
+}

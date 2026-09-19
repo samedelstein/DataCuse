@@ -1,0 +1,1543 @@
+{
+  "tolerance_m": 0.5,
+  "eligible_names": 1192,
+  "excluded": {
+    "route designation rather than street name": 1,
+    "not documented public jurisdiction": 1562,
+    "ramp, freeway, driveway, path, service road or other excluded class": 993,
+    "unnamed": 3,
+    "named driveway, ramp or entrance": 27
+  },
+  "input_roads": 7371,
+  "noded_pieces": 7372,
+  "ambiguous_grade_crossings": 0,
+  "shortest_names": [
+    {
+      "name": "FAY ROAD",
+      "base": "FAY",
+      "suffix": "ROAD",
+      "base_characters": 3,
+      "full_characters": 7,
+      "suffix_characters": 4,
+      "suffix_minus_base": 1
+    },
+    {
+      "name": "LEA LANE",
+      "base": "LEA",
+      "suffix": "LANE",
+      "base_characters": 3,
+      "full_characters": 7,
+      "suffix_characters": 4,
+      "suffix_minus_base": 1
+    },
+    {
+      "name": "AVON ROAD",
+      "base": "AVON",
+      "suffix": "ROAD",
+      "base_characters": 4,
+      "full_characters": 8,
+      "suffix_characters": 4,
+      "suffix_minus_base": 0
+    },
+    {
+      "name": "CROUSE DR",
+      "base": "CROUSE DR",
+      "suffix": "",
+      "base_characters": 8,
+      "full_characters": 8,
+      "suffix_characters": 0,
+      "suffix_minus_base": -8
+    },
+    {
+      "name": "EDNA ROAD",
+      "base": "EDNA",
+      "suffix": "ROAD",
+      "base_characters": 4,
+      "full_characters": 8,
+      "suffix_characters": 4,
+      "suffix_minus_base": 0
+    },
+    {
+      "name": "GAME ROAD",
+      "base": "GAME",
+      "suffix": "ROAD",
+      "base_characters": 4,
+      "full_characters": 8,
+      "suffix_characters": 4,
+      "suffix_minus_base": 0
+    },
+    {
+      "name": "HODES WAY",
+      "base": "HODES",
+      "suffix": "WAY",
+      "base_characters": 5,
+      "full_characters": 8,
+      "suffix_characters": 3,
+      "suffix_minus_base": -2
+    },
+    {
+      "name": "KANE ROAD",
+      "base": "KANE",
+      "suffix": "ROAD",
+      "base_characters": 4,
+      "full_characters": 8,
+      "suffix_characters": 4,
+      "suffix_minus_base": 0
+    },
+    {
+      "name": "OAK PLACE",
+      "base": "OAK",
+      "suffix": "PLACE",
+      "base_characters": 3,
+      "full_characters": 8,
+      "suffix_characters": 5,
+      "suffix_minus_base": 2
+    },
+    {
+      "name": "PARK ROAD",
+      "base": "PARK",
+      "suffix": "ROAD",
+      "base_characters": 4,
+      "full_characters": 8,
+      "suffix_characters": 4,
+      "suffix_minus_base": 0
+    },
+    {
+      "name": "POND LANE",
+      "base": "POND",
+      "suffix": "LANE",
+      "base_characters": 4,
+      "full_characters": 8,
+      "suffix_characters": 4,
+      "suffix_minus_base": 0
+    },
+    {
+      "name": "ROSS PARK",
+      "base": "ROSS",
+      "suffix": "PARK",
+      "base_characters": 4,
+      "full_characters": 8,
+      "suffix_characters": 4,
+      "suffix_minus_base": 0
+    },
+    {
+      "name": "ACORN PATH",
+      "base": "ACORN",
+      "suffix": "PATH",
+      "base_characters": 5,
+      "full_characters": 9,
+      "suffix_characters": 4,
+      "suffix_minus_base": -1
+    },
+    {
+      "name": "AMY STREET",
+      "base": "AMY",
+      "suffix": "STREET",
+      "base_characters": 3,
+      "full_characters": 9,
+      "suffix_characters": 6,
+      "suffix_minus_base": 3
+    },
+    {
+      "name": "ARBOR LANE",
+      "base": "ARBOR",
+      "suffix": "LANE",
+      "base_characters": 5,
+      "full_characters": 9,
+      "suffix_characters": 4,
+      "suffix_minus_base": -1
+    },
+    {
+      "name": "ASH STREET",
+      "base": "ASH",
+      "suffix": "STREET",
+      "base_characters": 3,
+      "full_characters": 9,
+      "suffix_characters": 6,
+      "suffix_minus_base": 3
+    },
+    {
+      "name": "BANK ALLEY",
+      "base": "BANK",
+      "suffix": "ALLEY",
+      "base_characters": 4,
+      "full_characters": 9,
+      "suffix_characters": 5,
+      "suffix_minus_base": 1
+    },
+    {
+      "name": "DUKE DRIVE",
+      "base": "DUKE",
+      "suffix": "DRIVE",
+      "base_characters": 4,
+      "full_characters": 9,
+      "suffix_characters": 5,
+      "suffix_minus_base": 1
+    },
+    {
+      "name": "DYER COURT",
+      "base": "DYER",
+      "suffix": "COURT",
+      "base_characters": 4,
+      "full_characters": 9,
+      "suffix_characters": 5,
+      "suffix_minus_base": 1
+    },
+    {
+      "name": "EDTIM ROAD",
+      "base": "EDTIM",
+      "suffix": "ROAD",
+      "base_characters": 5,
+      "full_characters": 9,
+      "suffix_characters": 4,
+      "suffix_minus_base": -1
+    }
+  ],
+  "shortest_base_names": [
+    {
+      "name": "AMY STREET",
+      "base": "AMY",
+      "suffix": "STREET",
+      "base_characters": 3,
+      "full_characters": 9,
+      "suffix_characters": 6,
+      "suffix_minus_base": 3
+    },
+    {
+      "name": "ASH STREET",
+      "base": "ASH",
+      "suffix": "STREET",
+      "base_characters": 3,
+      "full_characters": 9,
+      "suffix_characters": 6,
+      "suffix_minus_base": 3
+    },
+    {
+      "name": "ELK STREET",
+      "base": "ELK",
+      "suffix": "STREET",
+      "base_characters": 3,
+      "full_characters": 9,
+      "suffix_characters": 6,
+      "suffix_minus_base": 3
+    },
+    {
+      "name": "ELM STREET",
+      "base": "ELM",
+      "suffix": "STREET",
+      "base_characters": 3,
+      "full_characters": 9,
+      "suffix_characters": 6,
+      "suffix_minus_base": 3
+    },
+    {
+      "name": "FAY ROAD",
+      "base": "FAY",
+      "suffix": "ROAD",
+      "base_characters": 3,
+      "full_characters": 7,
+      "suffix_characters": 4,
+      "suffix_minus_base": 1
+    },
+    {
+      "name": "IDA AVENUE",
+      "base": "IDA",
+      "suffix": "AVENUE",
+      "base_characters": 3,
+      "full_characters": 9,
+      "suffix_characters": 6,
+      "suffix_minus_base": 3
+    },
+    {
+      "name": "LEA LANE",
+      "base": "LEA",
+      "suffix": "LANE",
+      "base_characters": 3,
+      "full_characters": 7,
+      "suffix_characters": 4,
+      "suffix_minus_base": 1
+    },
+    {
+      "name": "MAY AVENUE",
+      "base": "MAY",
+      "suffix": "AVENUE",
+      "base_characters": 3,
+      "full_characters": 9,
+      "suffix_characters": 6,
+      "suffix_minus_base": 3
+    },
+    {
+      "name": "NEW STREET",
+      "base": "NEW",
+      "suffix": "STREET",
+      "base_characters": 3,
+      "full_characters": 9,
+      "suffix_characters": 6,
+      "suffix_minus_base": 3
+    },
+    {
+      "name": "OAK PLACE",
+      "base": "OAK",
+      "suffix": "PLACE",
+      "base_characters": 3,
+      "full_characters": 8,
+      "suffix_characters": 5,
+      "suffix_minus_base": 2
+    },
+    {
+      "name": "OAK STREET",
+      "base": "OAK",
+      "suffix": "STREET",
+      "base_characters": 3,
+      "full_characters": 9,
+      "suffix_characters": 6,
+      "suffix_minus_base": 3
+    },
+    {
+      "name": "ROE AVENUE",
+      "base": "ROE",
+      "suffix": "AVENUE",
+      "base_characters": 3,
+      "full_characters": 9,
+      "suffix_characters": 6,
+      "suffix_minus_base": 3
+    },
+    {
+      "name": "AMES AVENUE",
+      "base": "AMES",
+      "suffix": "AVENUE",
+      "base_characters": 4,
+      "full_characters": 10,
+      "suffix_characters": 6,
+      "suffix_minus_base": 2
+    },
+    {
+      "name": "ARCH STREET",
+      "base": "ARCH",
+      "suffix": "STREET",
+      "base_characters": 4,
+      "full_characters": 10,
+      "suffix_characters": 6,
+      "suffix_minus_base": 2
+    },
+    {
+      "name": "AVON ROAD",
+      "base": "AVON",
+      "suffix": "ROAD",
+      "base_characters": 4,
+      "full_characters": 8,
+      "suffix_characters": 4,
+      "suffix_minus_base": 0
+    },
+    {
+      "name": "BALL AVENUE",
+      "base": "BALL",
+      "suffix": "AVENUE",
+      "base_characters": 4,
+      "full_characters": 10,
+      "suffix_characters": 6,
+      "suffix_minus_base": 2
+    },
+    {
+      "name": "BALL CIRCLE",
+      "base": "BALL",
+      "suffix": "CIRCLE",
+      "base_characters": 4,
+      "full_characters": 10,
+      "suffix_characters": 6,
+      "suffix_minus_base": 2
+    },
+    {
+      "name": "BANK ALLEY",
+      "base": "BANK",
+      "suffix": "ALLEY",
+      "base_characters": 4,
+      "full_characters": 9,
+      "suffix_characters": 5,
+      "suffix_minus_base": 1
+    },
+    {
+      "name": "BEAR STREET",
+      "base": "BEAR",
+      "suffix": "STREET",
+      "base_characters": 4,
+      "full_characters": 10,
+      "suffix_characters": 6,
+      "suffix_minus_base": 2
+    },
+    {
+      "name": "BURT STREET",
+      "base": "BURT",
+      "suffix": "STREET",
+      "base_characters": 4,
+      "full_characters": 10,
+      "suffix_characters": 6,
+      "suffix_minus_base": 2
+    }
+  ],
+  "suffix_longer": 232,
+  "shortest_full_names": [
+    {
+      "name": "FAY ROAD",
+      "base": "FAY",
+      "suffix": "ROAD",
+      "base_characters": 3,
+      "full_characters": 7,
+      "suffix_characters": 4,
+      "suffix_minus_base": 1
+    },
+    {
+      "name": "LEA LANE",
+      "base": "LEA",
+      "suffix": "LANE",
+      "base_characters": 3,
+      "full_characters": 7,
+      "suffix_characters": 4,
+      "suffix_minus_base": 1
+    },
+    {
+      "name": "AVON ROAD",
+      "base": "AVON",
+      "suffix": "ROAD",
+      "base_characters": 4,
+      "full_characters": 8,
+      "suffix_characters": 4,
+      "suffix_minus_base": 0
+    },
+    {
+      "name": "CROUSE DR",
+      "base": "CROUSE DR",
+      "suffix": "",
+      "base_characters": 8,
+      "full_characters": 8,
+      "suffix_characters": 0,
+      "suffix_minus_base": -8
+    },
+    {
+      "name": "EDNA ROAD",
+      "base": "EDNA",
+      "suffix": "ROAD",
+      "base_characters": 4,
+      "full_characters": 8,
+      "suffix_characters": 4,
+      "suffix_minus_base": 0
+    },
+    {
+      "name": "GAME ROAD",
+      "base": "GAME",
+      "suffix": "ROAD",
+      "base_characters": 4,
+      "full_characters": 8,
+      "suffix_characters": 4,
+      "suffix_minus_base": 0
+    },
+    {
+      "name": "HODES WAY",
+      "base": "HODES",
+      "suffix": "WAY",
+      "base_characters": 5,
+      "full_characters": 8,
+      "suffix_characters": 3,
+      "suffix_minus_base": -2
+    },
+    {
+      "name": "KANE ROAD",
+      "base": "KANE",
+      "suffix": "ROAD",
+      "base_characters": 4,
+      "full_characters": 8,
+      "suffix_characters": 4,
+      "suffix_minus_base": 0
+    },
+    {
+      "name": "OAK PLACE",
+      "base": "OAK",
+      "suffix": "PLACE",
+      "base_characters": 3,
+      "full_characters": 8,
+      "suffix_characters": 5,
+      "suffix_minus_base": 2
+    },
+    {
+      "name": "PARK ROAD",
+      "base": "PARK",
+      "suffix": "ROAD",
+      "base_characters": 4,
+      "full_characters": 8,
+      "suffix_characters": 4,
+      "suffix_minus_base": 0
+    }
+  ],
+  "largest_suffix_gaps": [
+    {
+      "name": "ERIE BOULEVARD EAST",
+      "base": "ERIE",
+      "suffix": "BOULEVARD",
+      "base_characters": 4,
+      "full_characters": 17,
+      "suffix_characters": 9,
+      "suffix_minus_base": 5
+    },
+    {
+      "name": "ERIE BOULEVARD WEST",
+      "base": "ERIE",
+      "suffix": "BOULEVARD",
+      "base_characters": 4,
+      "full_characters": 17,
+      "suffix_characters": 9,
+      "suffix_minus_base": 5
+    },
+    {
+      "name": "GRANT BOULEVARD",
+      "base": "GRANT",
+      "suffix": "BOULEVARD",
+      "base_characters": 5,
+      "full_characters": 14,
+      "suffix_characters": 9,
+      "suffix_minus_base": 4
+    },
+    {
+      "name": "AMY STREET",
+      "base": "AMY",
+      "suffix": "STREET",
+      "base_characters": 3,
+      "full_characters": 9,
+      "suffix_characters": 6,
+      "suffix_minus_base": 3
+    },
+    {
+      "name": "ASH STREET",
+      "base": "ASH",
+      "suffix": "STREET",
+      "base_characters": 3,
+      "full_characters": 9,
+      "suffix_characters": 6,
+      "suffix_minus_base": 3
+    },
+    {
+      "name": "DOLL PARKWAY",
+      "base": "DOLL",
+      "suffix": "PARKWAY",
+      "base_characters": 4,
+      "full_characters": 11,
+      "suffix_characters": 7,
+      "suffix_minus_base": 3
+    },
+    {
+      "name": "ELK STREET",
+      "base": "ELK",
+      "suffix": "STREET",
+      "base_characters": 3,
+      "full_characters": 9,
+      "suffix_characters": 6,
+      "suffix_minus_base": 3
+    },
+    {
+      "name": "ELM STREET",
+      "base": "ELM",
+      "suffix": "STREET",
+      "base_characters": 3,
+      "full_characters": 9,
+      "suffix_characters": 6,
+      "suffix_minus_base": 3
+    },
+    {
+      "name": "IDA AVENUE",
+      "base": "IDA",
+      "suffix": "AVENUE",
+      "base_characters": 3,
+      "full_characters": 9,
+      "suffix_characters": 6,
+      "suffix_minus_base": 3
+    },
+    {
+      "name": "MAY AVENUE",
+      "base": "MAY",
+      "suffix": "AVENUE",
+      "base_characters": 3,
+      "full_characters": 9,
+      "suffix_characters": 6,
+      "suffix_minus_base": 3
+    }
+  ],
+  "whole_streets": [
+    {
+      "name": "SPRING LANE",
+      "component": 1,
+      "length_ft": 64.37446400867464,
+      "full_component_ft": 64.37446400867464,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "477429983",
+      "lon": -76.15193328588224,
+      "lat": 43.06810160163927,
+      "components_in_city": 1
+    },
+    {
+      "name": "MEADE COURT",
+      "component": 1,
+      "length_ft": 71.29839533393361,
+      "full_component_ft": 71.29839533393361,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "477437062",
+      "lon": -76.16164334499432,
+      "lat": 43.04402264464654,
+      "components_in_city": 1
+    },
+    {
+      "name": "PAGE AVENUE",
+      "component": 1,
+      "length_ft": 75.06430469741078,
+      "full_component_ft": 75.06430469741078,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "482659670",
+      "lon": -76.17281184633738,
+      "lat": 43.03186981025155,
+      "components_in_city": 1
+    },
+    {
+      "name": "WEST LAUREL STREET",
+      "component": 1,
+      "length_ft": 80.93980061305632,
+      "full_component_ft": 80.93980061305632,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "477432982",
+      "lon": -76.15220832357151,
+      "lat": 43.056022088959054,
+      "components_in_city": 1
+    },
+    {
+      "name": "ONONDAGA LAKE PARKWAY",
+      "component": 2,
+      "length_ft": 83.67969656175339,
+      "full_component_ft": 83.67969656175339,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "800042162",
+      "lon": -76.17328833619322,
+      "lat": 43.07534678046664,
+      "components_in_city": 2
+    },
+    {
+      "name": "SOUTH CLINTON STREET",
+      "component": 2,
+      "length_ft": 85.46702791503316,
+      "full_component_ft": 85.46702791503316,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "800067173",
+      "lon": -76.15139364546533,
+      "lat": 43.03650703967142,
+      "components_in_city": 2
+    },
+    {
+      "name": "CORCORAN COURT",
+      "component": 1,
+      "length_ft": 91.70688895163948,
+      "full_component_ft": 91.70688895163948,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "481561674",
+      "lon": -76.16068183316843,
+      "lat": 43.04607610670259,
+      "components_in_city": 1
+    },
+    {
+      "name": "COSTELLO COURT",
+      "component": 1,
+      "length_ft": 94.50532334959179,
+      "full_component_ft": 94.50532334959179,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "477437003",
+      "lon": -76.16086331935786,
+      "lat": 43.04425109016543,
+      "components_in_city": 1
+    },
+    {
+      "name": "WILL COURT",
+      "component": 1,
+      "length_ft": 98.44862929925341,
+      "full_component_ft": 98.44862929925341,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "477436913",
+      "lon": -76.16006026052436,
+      "lat": 43.04445310965559,
+      "components_in_city": 1
+    },
+    {
+      "name": "WEST KIRKPATRICK STREET",
+      "component": 2,
+      "length_ft": 104.5464678785551,
+      "full_component_ft": 104.5464678785551,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "477431325",
+      "lon": -76.15879851237793,
+      "lat": 43.06223247180157,
+      "components_in_city": 2
+    },
+    {
+      "name": "SCHOENECK COURT",
+      "component": 1,
+      "length_ft": 109.3338293627988,
+      "full_component_ft": 109.3338293627988,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "477436589",
+      "lon": -76.16235128561274,
+      "lat": 43.04564664724692,
+      "components_in_city": 1
+    },
+    {
+      "name": "GAIS DRIVE",
+      "component": 1,
+      "length_ft": 110.13889141990768,
+      "full_component_ft": 110.13889141990768,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "477436785",
+      "lon": -76.10135827198371,
+      "lat": 43.04476813380936,
+      "components_in_city": 1
+    },
+    {
+      "name": "SIZER STREET",
+      "component": 1,
+      "length_ft": 111.67992482649325,
+      "full_component_ft": 111.67992482649325,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "506986281",
+      "lon": -76.14343678947495,
+      "lat": 43.03656810561257,
+      "components_in_city": 1
+    },
+    {
+      "name": "GREEN STREET ANNEX",
+      "component": 1,
+      "length_ft": 114.1285951256115,
+      "full_component_ft": 114.1285951256115,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "477433145",
+      "lon": -76.13708058152905,
+      "lat": 43.05553639508923,
+      "components_in_city": 1
+    },
+    {
+      "name": "GALE STREET",
+      "component": 1,
+      "length_ft": 115.14265685297507,
+      "full_component_ft": 115.14265685297507,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "477432616",
+      "lon": -76.11504026486982,
+      "lat": 43.05730011411148,
+      "components_in_city": 1
+    },
+    {
+      "name": "PARK ROAD",
+      "component": 1,
+      "length_ft": 115.6092422861329,
+      "full_component_ft": 115.6092422861329,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "477430585",
+      "lon": -76.13944531640335,
+      "lat": 43.06512612814937,
+      "components_in_city": 1
+    },
+    {
+      "name": "EAST GENESEE STREET",
+      "component": 3,
+      "length_ft": 120.87948950119119,
+      "full_component_ft": 120.87948950119119,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "481561664",
+      "lon": -76.1498554782962,
+      "lat": 43.049713482918335,
+      "components_in_city": 3
+    },
+    {
+      "name": "FOREST EDGE DRIVE",
+      "component": 1,
+      "length_ft": 124.49542183734071,
+      "full_component_ft": 124.49542183734071,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "477442577",
+      "lon": -76.20219209554246,
+      "lat": 43.02375326767756,
+      "components_in_city": 2
+    },
+    {
+      "name": "J STANLEY COYNE CIRCLE",
+      "component": 1,
+      "length_ft": 124.85078372342711,
+      "full_component_ft": 124.85078372342711,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "477439574",
+      "lon": -76.15527881221077,
+      "lat": 43.0361916255585,
+      "components_in_city": 1
+    },
+    {
+      "name": "GRAPE TERRACE",
+      "component": 1,
+      "length_ft": 125.73537639269848,
+      "full_component_ft": 125.73537639269848,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "477439458",
+      "lon": -76.14569633448127,
+      "lat": 43.03639660968903,
+      "components_in_city": 1
+    }
+  ],
+  "blocks": [
+    {
+      "name": "SOUTH AVENUE",
+      "length_ft": 15.709438501844913,
+      "endpoint_a": "HOVEY STREET",
+      "endpoint_b": "MARGINAL STREET",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "800051053",
+      "lon": -76.15872385271695,
+      "lat": 43.030864026945714
+    },
+    {
+      "name": "OAKWOOD AVENUE",
+      "length_ft": 16.178622391838662,
+      "endpoint_a": "EAST RAYNOR AVENUE",
+      "endpoint_b": "TRUTH TERRACE",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "800034376",
+      "lon": -76.14539666904629,
+      "lat": 43.03559862694679
+    },
+    {
+      "name": "NORTH AVENUE",
+      "length_ft": 16.325921039523895,
+      "endpoint_a": "ARNETT AVENUE",
+      "endpoint_b": "EASTWOOD ROAD",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "800048578",
+      "lon": -76.11351446742425,
+      "lat": 43.069816235935384
+    },
+    {
+      "name": "NORTH MCBRIDE STREET",
+      "length_ft": 16.63448808500122,
+      "endpoint_a": "SOUTH MCBRIDE STREET",
+      "endpoint_b": "ERIE BOULEVARD EAST",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "800046408",
+      "lon": -76.1438545455717,
+      "lat": 43.050831835077396
+    },
+    {
+      "name": "BUTTERNUT STREET",
+      "length_ft": 17.14083293400162,
+      "endpoint_a": "NORTH MCBRIDE STREET",
+      "endpoint_b": "NORTH MCBRIDE STREET",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "800037406",
+      "lon": -76.14876277814355,
+      "lat": 43.0591156107392
+    },
+    {
+      "name": "BUTTERNUT STREET",
+      "length_ft": 17.361745478402717,
+      "endpoint_a": "KNAUL STREET",
+      "endpoint_b": "GRASSMAN AVENUE",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "800047528",
+      "lon": -76.14333647906241,
+      "lat": 43.0663907642387
+    },
+    {
+      "name": "SOUTH MCBRIDE STREET",
+      "length_ft": 17.625243718574584,
+      "endpoint_a": "ERIE BOULEVARD EAST",
+      "endpoint_b": "NORTH MCBRIDE STREET",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "477434982",
+      "lon": -76.1438550225771,
+      "lat": 43.05078482459155
+    },
+    {
+      "name": "SUNNYCREST ROAD",
+      "length_ft": 18.5140867190146,
+      "endpoint_a": "LUDDINGTON STREET",
+      "endpoint_b": "LUDDINGTON STREET",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "800052844",
+      "lon": -76.09719300487579,
+      "lat": 43.06224950231908
+    },
+    {
+      "name": "BUTTERNUT STREET",
+      "length_ft": 18.964505475733436,
+      "endpoint_a": "CARBON STREET",
+      "endpoint_b": "SOUTH CARBON STREET",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "477430880",
+      "lon": -76.14335528798776,
+      "lat": 43.064014601842814
+    },
+    {
+      "name": "ROBINEAU ROAD",
+      "length_ft": 20.976156423872354,
+      "endpoint_a": "TWIN HILLS DRIVE",
+      "endpoint_b": "STRATHMORE DRIVE",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "477442748",
+      "lon": -76.17076400480968,
+      "lat": 43.02268239388312
+    },
+    {
+      "name": "JAMES STREET",
+      "length_ft": 21.07467883620936,
+      "endpoint_a": "NORTH COLLINGWOOD AVENUE",
+      "endpoint_b": "SOUTH COLLINGWOOD AVENUE",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "800047558",
+      "lon": -76.10750363459448,
+      "lat": 43.068792875208864
+    },
+    {
+      "name": "TEALL AVENUE",
+      "length_ft": 21.143239739791994,
+      "endpoint_a": "HAWLEY AVENUE",
+      "endpoint_b": "HAWLEY AVENUE",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "477433097",
+      "lon": -76.12203528029467,
+      "lat": 43.055656604058036
+    },
+    {
+      "name": "VALLEY DRIVE",
+      "length_ft": 21.302058420472996,
+      "endpoint_a": "FISH AVENUE",
+      "endpoint_b": "MAXWELL AVENUE",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "800034593",
+      "lon": -76.15505557865606,
+      "lat": 43.00667496548694
+    },
+    {
+      "name": "WHITTIER AVENUE",
+      "length_ft": 21.616740294678102,
+      "endpoint_a": "SOUTH LOWELL AVENUE",
+      "endpoint_b": "SOUTH LOWELL AVENUE",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "800051052",
+      "lon": -76.18013346736804,
+      "lat": 43.0459613175234
+    },
+    {
+      "name": "HIAWATHA BOULEVARD EAST",
+      "length_ft": 22.636626701701577,
+      "endpoint_a": "SIXTH NORTH STREET",
+      "endpoint_b": "SIXTH NORTH STREET",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "800036193",
+      "lon": -76.15877482987365,
+      "lat": 43.08117450754269
+    },
+    {
+      "name": "ONONDAGA AVENUE",
+      "length_ft": 22.788805030703855,
+      "endpoint_a": "PARKVIEW AVENUE",
+      "endpoint_b": "CENTENNIAL DRIVE",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "477442020",
+      "lon": -76.16232132559716,
+      "lat": 43.026552635745986
+    },
+    {
+      "name": "SOUTH SALINA STREET",
+      "length_ft": 22.808069826542102,
+      "endpoint_a": "HILTON ROAD",
+      "endpoint_b": "CONIFER DRIVE",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "800048270",
+      "lon": -76.14415349816281,
+      "lat": 42.990555506499334
+    },
+    {
+      "name": "ROBINEAU ROAD",
+      "length_ft": 23.137598501563232,
+      "endpoint_a": "STRATHMORE DRIVE",
+      "endpoint_b": "TWIN HILLS DRIVE",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "800050423",
+      "lon": -76.17075991073727,
+      "lat": 43.022621936332975
+    },
+    {
+      "name": "TEALL AVENUE",
+      "length_ft": 23.385015860583145,
+      "endpoint_a": "COLUMBUS AVENUE",
+      "endpoint_b": "ERIE BOULEVARD EAST",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "477435406",
+      "lon": -76.1215837919702,
+      "lat": 43.04951712994715
+    },
+    {
+      "name": "WHITTIER AVENUE",
+      "length_ft": 24.061388977834653,
+      "endpoint_a": "SOUTH LOWELL AVENUE",
+      "endpoint_b": "SOUTH LOWELL AVENUE",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "800051057",
+      "lon": -76.18020933009566,
+      "lat": 43.04593245768918
+    }
+  ],
+  "components": [
+    {
+      "name": "LEPAGE PLACE",
+      "component": 1,
+      "length_ft": 0.5516560339598986,
+      "full_component_ft": 1060.6369243409797,
+      "outside_city_ft": 1060.0852683070198,
+      "wholly_inside": false,
+      "source_segments": 3,
+      "source_ids": "477429408;477429421;477429433",
+      "lon": -76.10006524356398,
+      "lat": 43.070818700695476,
+      "components_in_city": 1
+    },
+    {
+      "name": "SOUTH ORCHARD ROAD",
+      "component": 2,
+      "length_ft": 3.167863761394792,
+      "full_component_ft": 1095.6120166657563,
+      "outside_city_ft": 1092.4441529043615,
+      "wholly_inside": false,
+      "source_segments": 2,
+      "source_ids": "477438388;477438778",
+      "lon": -76.20399673687868,
+      "lat": 43.041543127241525,
+      "components_in_city": 2
+    },
+    {
+      "name": "ARDMORE ROAD",
+      "component": 1,
+      "length_ft": 32.13306000558033,
+      "full_component_ft": 890.496920811296,
+      "outside_city_ft": 858.3638608057156,
+      "wholly_inside": false,
+      "source_segments": 4,
+      "source_ids": "477437739;477438104;477438446;477438491",
+      "lon": -76.19886961342387,
+      "lat": 43.041778623944225,
+      "components_in_city": 1
+    },
+    {
+      "name": "YALE AVENUE",
+      "component": 1,
+      "length_ft": 33.50544668114094,
+      "full_component_ft": 2063.28081779073,
+      "outside_city_ft": 2029.7753711095893,
+      "wholly_inside": false,
+      "source_segments": 8,
+      "source_ids": "477439094;477439135;477439196;477439245;477439278;477439295;800049430;800071654",
+      "lon": -76.18822140089516,
+      "lat": 43.03777746566793,
+      "components_in_city": 1
+    },
+    {
+      "name": "LAKEVIEW ROAD",
+      "component": 1,
+      "length_ft": 36.76083719286252,
+      "full_component_ft": 171.35288832833564,
+      "outside_city_ft": 134.59205113547313,
+      "wholly_inside": false,
+      "source_segments": 2,
+      "source_ids": "477437773;477437949",
+      "lon": -76.20131195075965,
+      "lat": 43.041685207258695,
+      "components_in_city": 1
+    },
+    {
+      "name": "WESTMONT ROAD",
+      "component": 1,
+      "length_ft": 36.94910215281733,
+      "full_component_ft": 841.1335145896822,
+      "outside_city_ft": 804.184412436865,
+      "wholly_inside": false,
+      "source_segments": 3,
+      "source_ids": "477437814;477438209;477438412",
+      "lon": -76.20258578188148,
+      "lat": 43.041639952049316,
+      "components_in_city": 1
+    },
+    {
+      "name": "WEST HIGH TERRACE",
+      "component": 1,
+      "length_ft": 51.621798036856404,
+      "full_component_ft": 2807.6111700271654,
+      "outside_city_ft": 2755.989371990309,
+      "wholly_inside": false,
+      "source_segments": 9,
+      "source_ids": "477437761;477437948;477438208;477438387;477438582;477438605;477438620;477438629;477438652",
+      "lon": -76.20068341199887,
+      "lat": 43.041707244921355,
+      "components_in_city": 1
+    },
+    {
+      "name": "DIPPOLD AVENUE",
+      "component": 1,
+      "length_ft": 53.62443401797075,
+      "full_component_ft": 891.3915488145833,
+      "outside_city_ft": 837.7671147966124,
+      "wholly_inside": false,
+      "source_segments": 3,
+      "source_ids": "477426936;477426943;800053107",
+      "lon": -76.1475562368862,
+      "lat": 43.08466071319754,
+      "components_in_city": 1
+    },
+    {
+      "name": "RUGBY ROAD",
+      "component": 3,
+      "length_ft": 54.18917409724233,
+      "full_component_ft": 54.18917409724233,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "504326410",
+      "lon": -76.13293646524288,
+      "lat": 43.067140308229995,
+      "components_in_city": 4
+    },
+    {
+      "name": "RUGBY ROAD",
+      "component": 4,
+      "length_ft": 60.30116009223528,
+      "full_component_ft": 60.30116009223528,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "504326416",
+      "lon": -76.13292035633758,
+      "lat": 43.06691298508002,
+      "components_in_city": 4
+    },
+    {
+      "name": "SPRING LANE",
+      "component": 1,
+      "length_ft": 64.37446400867464,
+      "full_component_ft": 64.37446400867464,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "477429983",
+      "lon": -76.15193328588224,
+      "lat": 43.06810160163927,
+      "components_in_city": 1
+    },
+    {
+      "name": "MONTROSE AVENUE",
+      "component": 1,
+      "length_ft": 65.90956105716802,
+      "full_component_ft": 3209.264257102417,
+      "outside_city_ft": 3143.354696045249,
+      "wholly_inside": false,
+      "source_segments": 9,
+      "source_ids": "477436264;477436619;477436829;477437131;477437685;477437702;477438084;477438414;800049097",
+      "lon": -76.19650373679477,
+      "lat": 43.04194149658587,
+      "components_in_city": 1
+    },
+    {
+      "name": "FOREST EDGE DRIVE",
+      "component": 2,
+      "length_ft": 69.57455712047164,
+      "full_component_ft": 822.5908116834836,
+      "outside_city_ft": 753.0162545630119,
+      "wholly_inside": false,
+      "source_segments": 3,
+      "source_ids": "477442598;477442677;477442680",
+      "lon": -76.20325219655673,
+      "lat": 43.02308597849884,
+      "components_in_city": 2
+    },
+    {
+      "name": "MEADE COURT",
+      "component": 1,
+      "length_ft": 71.29839533393361,
+      "full_component_ft": 71.29839533393361,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "477437062",
+      "lon": -76.16164334499432,
+      "lat": 43.04402264464654,
+      "components_in_city": 1
+    },
+    {
+      "name": "FAY ROAD",
+      "component": 1,
+      "length_ft": 72.78702546443182,
+      "full_component_ft": 4546.020032007696,
+      "outside_city_ft": 4473.233006543263,
+      "wholly_inside": false,
+      "source_segments": 11,
+      "source_ids": "477436851;477437726;477437745;477438024;477438115;477438411;477438534;477438713;477438777;477439241;800049096",
+      "lon": -76.19912663595461,
+      "lat": 43.04181139309289,
+      "components_in_city": 1
+    },
+    {
+      "name": "PAGE AVENUE",
+      "component": 1,
+      "length_ft": 75.06430469741078,
+      "full_component_ft": 75.06430469741078,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "482659670",
+      "lon": -76.17281184633738,
+      "lat": 43.03186981025155,
+      "components_in_city": 1
+    },
+    {
+      "name": "WEST LAUREL STREET",
+      "component": 1,
+      "length_ft": 80.93980061305632,
+      "full_component_ft": 80.93980061305632,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "477432982",
+      "lon": -76.15220832357151,
+      "lat": 43.056022088959054,
+      "components_in_city": 1
+    },
+    {
+      "name": "ONONDAGA LAKE PARKWAY",
+      "component": 2,
+      "length_ft": 83.67969656175339,
+      "full_component_ft": 83.67969656175339,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "800042162",
+      "lon": -76.17328833619322,
+      "lat": 43.07534678046664,
+      "components_in_city": 2
+    },
+    {
+      "name": "SOUTH CLINTON STREET",
+      "component": 2,
+      "length_ft": 85.46702791503316,
+      "full_component_ft": 85.46702791503316,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "800067173",
+      "lon": -76.15139364546533,
+      "lat": 43.03650703967142,
+      "components_in_city": 2
+    },
+    {
+      "name": "CORCORAN COURT",
+      "component": 1,
+      "length_ft": 91.70688895163948,
+      "full_component_ft": 91.70688895163948,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "481561674",
+      "lon": -76.16068183316843,
+      "lat": 43.04607610670259,
+      "components_in_city": 1
+    }
+  ],
+  "totals": [
+    {
+      "name": "LEPAGE PLACE",
+      "length_ft": 0.5516560339598986,
+      "components": 1,
+      "wholly_inside": false
+    },
+    {
+      "name": "ARDMORE ROAD",
+      "length_ft": 32.13306000558033,
+      "components": 1,
+      "wholly_inside": false
+    },
+    {
+      "name": "YALE AVENUE",
+      "length_ft": 33.50544668114094,
+      "components": 1,
+      "wholly_inside": false
+    },
+    {
+      "name": "LAKEVIEW ROAD",
+      "length_ft": 36.76083719286252,
+      "components": 1,
+      "wholly_inside": false
+    },
+    {
+      "name": "WESTMONT ROAD",
+      "length_ft": 36.94910215281733,
+      "components": 1,
+      "wholly_inside": false
+    },
+    {
+      "name": "WEST HIGH TERRACE",
+      "length_ft": 51.621798036856404,
+      "components": 1,
+      "wholly_inside": false
+    },
+    {
+      "name": "DIPPOLD AVENUE",
+      "length_ft": 53.62443401797075,
+      "components": 1,
+      "wholly_inside": false
+    },
+    {
+      "name": "SPRING LANE",
+      "length_ft": 64.37446400867464,
+      "components": 1,
+      "wholly_inside": true
+    },
+    {
+      "name": "MONTROSE AVENUE",
+      "length_ft": 65.90956105716802,
+      "components": 1,
+      "wholly_inside": false
+    },
+    {
+      "name": "MEADE COURT",
+      "length_ft": 71.29839533393361,
+      "components": 1,
+      "wholly_inside": true
+    },
+    {
+      "name": "FAY ROAD",
+      "length_ft": 72.78702546443182,
+      "components": 1,
+      "wholly_inside": false
+    },
+    {
+      "name": "PAGE AVENUE",
+      "length_ft": 75.06430469741078,
+      "components": 1,
+      "wholly_inside": true
+    },
+    {
+      "name": "WEST LAUREL STREET",
+      "length_ft": 80.93980061305632,
+      "components": 1,
+      "wholly_inside": true
+    },
+    {
+      "name": "CORCORAN COURT",
+      "length_ft": 91.70688895163948,
+      "components": 1,
+      "wholly_inside": true
+    },
+    {
+      "name": "COSTELLO COURT",
+      "length_ft": 94.50532334959179,
+      "components": 1,
+      "wholly_inside": true
+    },
+    {
+      "name": "BENHAM AVENUE",
+      "length_ft": 95.5598502308541,
+      "components": 1,
+      "wholly_inside": false
+    },
+    {
+      "name": "WILL COURT",
+      "length_ft": 98.44862929925341,
+      "components": 1,
+      "wholly_inside": true
+    },
+    {
+      "name": "SCHOENECK COURT",
+      "length_ft": 109.3338293627988,
+      "components": 1,
+      "wholly_inside": true
+    },
+    {
+      "name": "GAIS DRIVE",
+      "length_ft": 110.13889141990768,
+      "components": 1,
+      "wholly_inside": true
+    },
+    {
+      "name": "SIZER STREET",
+      "length_ft": 111.67992482649325,
+      "components": 1,
+      "wholly_inside": true
+    }
+  ],
+  "raw": [
+    {
+      "name": "SPAULDING AVENUE",
+      "id": "800049637",
+      "length_ft": 7.343334830089758,
+      "fcc": "A41",
+      "wholly_inside": true,
+      "lon": -76.14694263731164,
+      "lat": 42.98697009440806
+    },
+    {
+      "name": "PINE STREET",
+      "id": "800066545",
+      "length_ft": 9.45376582474151,
+      "fcc": "A41",
+      "wholly_inside": true,
+      "lon": -76.12973572829367,
+      "lat": 43.050186645615554
+    },
+    {
+      "name": "SOUTH BEECH STREET",
+      "id": "800066570",
+      "length_ft": 9.902548459777632,
+      "fcc": "A41",
+      "wholly_inside": true,
+      "lon": -76.1276288622963,
+      "lat": 43.050153054766106
+    },
+    {
+      "name": "WALNUT AVENUE",
+      "id": "800066603",
+      "length_ft": 10.225148784121643,
+      "fcc": "A41",
+      "wholly_inside": true,
+      "lon": -76.132032611779,
+      "lat": 43.05021655245452
+    },
+    {
+      "name": "ONONDAGA CREEK BOULEVARD",
+      "id": "800047584",
+      "length_ft": 11.080825360119766,
+      "fcc": "A41",
+      "wholly_inside": true,
+      "lon": -76.15713217143268,
+      "lat": 43.01513419125072
+    },
+    {
+      "name": "UNIVERSITY AVENUE",
+      "id": "800066616",
+      "length_ft": 11.490342134871105,
+      "fcc": "A41",
+      "wholly_inside": true,
+      "lon": -76.13425056613934,
+      "lat": 43.05024381904201
+    },
+    {
+      "name": "SOUTH CROUSE AVENUE",
+      "id": "800066609",
+      "length_ft": 12.019065220110903,
+      "fcc": "A41",
+      "wholly_inside": true,
+      "lon": -76.13647058572654,
+      "lat": 43.050270144270605
+    },
+    {
+      "name": "OAKWOOD AVENUE",
+      "id": "477453878",
+      "length_ft": 12.167400841225877,
+      "fcc": "A41",
+      "wholly_inside": true,
+      "lon": -76.14555327369754,
+      "lat": 43.037430305855025
+    },
+    {
+      "name": "CATHERINE STREET",
+      "id": "477434613",
+      "length_ft": 12.37612185521212,
+      "fcc": "A41",
+      "wholly_inside": true,
+      "lon": -76.14210781866333,
+      "lat": 43.05148763395942
+    },
+    {
+      "name": "ALMOND STREET",
+      "id": "800065746",
+      "length_ft": 12.625534997638155,
+      "fcc": "A41",
+      "wholly_inside": true,
+      "lon": -76.14212356478274,
+      "lat": 43.05034125827216
+    }
+  ]
+}

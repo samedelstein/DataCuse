@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A transparent screening tool for hospital access and the I-81 Community Grid in Syracuse.">
+  <title>Adams Access Lab | DataCuse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#scenario-map">Skip to map</a>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="DataCuse home"><span>DATA</span>CUSE</a>
+    <p>Independent planning screening tool · Syracuse, NY</p>
+    <button class="print-button" type="button" id="print-brief">Print briefing</button>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">I-81 community grid × hospital access</p>
+      <h1 id="page-title">Adams Access Lab</h1>
+      <p class="lede">A medical-district stress test for the city after the viaduct—and before any decision to cut the Adams Street connection.</p>
+      <p class="disclaimer">The question is not whether one block can close. It is whether people, ambulances, transit, and hospital operations retain dependable alternatives when the whole network changes.</p>
+    </section>
+
+    <section class="story-strip" aria-label="The access question">
+      <article><span>01</span><h2>The network is changing.</h2><p>I-81’s downtown viaduct is being replaced by Business Loop 81 along Almond Street.</p></article>
+      <article><span>02</span><h2>Adams is a choice.</h2><p>Upstate’s expansion proposal would close the block between Elizabeth Blackwell and Irving.</p></article>
+      <article><span>03</span><h2>Access must be proven.</h2><p>Every future must preserve reliable routes to Upstate, Crouse, the VA, and Fire/EMS.</p></article>
+    </section>
+
+    <section class="scenario-section" aria-labelledby="scenario-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">The decision frame</p>
+          <h2 id="scenario-title">Three future networks—not three opinions.</h2>
+        </div>
+        <p id="scenario-summary" class="section-summary"></p>
+      </div>
+      <div class="scenario-controls" role="radiogroup" aria-label="Select an Adams Street scenario" id="scenario-controls"></div>
+    </section>
+
+    <section class="route-planner" aria-labelledby="route-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Personal trip check</p>
+          <h2 id="route-title">Would this closure change my route?</h2>
+        </div>
+        <p class="section-summary">Enter an origin and destination to see the route on the shared map before reviewing the corridor layers.</p>
+      </div>
+      <form id="route-form" class="route-form">
+        <label>Starting point<input id="origin" name="origin" required autocomplete="street-address" placeholder="e.g. Armory Square, Syracuse"></label>
+        <label>Destination<input id="destination" name="destination" required autocomplete="street-address" placeholder="e.g. Upstate University Hospital"></label>
+        <button type="submit">Compare routes</button>
+      </form>
+      <p class="route-help">Suggested destinations: <button type="button" class="text-button" data-destination="Upstate University Hospital, Syracuse, NY">Upstate ED</button> · <button type="button" class="text-button" data-destination="Crouse Hospital, Syracuse, NY">Crouse</button> · <button type="button" class="text-button" data-destination="Syracuse VA Medical Center, Syracuse, NY">VA Medical Center</button></p>
+      <p id="route-status" class="route-status" role="status">Routes are calculated on demand. No live traffic or personal location is stored by this page.</p>
+      <div id="route-results" class="route-results" aria-live="polite"></div>
+      <div id="directions" class="directions"></div>
+      <details class="method-note"><summary>How this route comparison works</summary><p>The open route uses the mapped street network. The closure route removes the exact East Adams block when the street-graph source is available. Time is a free-flow screen, not live navigation or emergency dispatch.</p></details>
+    </section>
+
+    <section class="map-section" aria-labelledby="map-title">
+      <div class="map-toolbar">
+        <div>
+          <p class="eyebrow">The shared network</p>
+          <h2 id="map-title">The medical district cannot have a single point of failure.</h2>
+        </div>
+        <div class="legend" aria-label="Map legend">
+          <span><i class="legend-line route-removed"></i>former I-81 viaduct</span>
+          <span><i class="legend-line route-future"></i>future BL-81 / Almond</span>
+          <span id="trip-legend"><i class="legend-line route-open"></i>Adams-open route <i class="legend-line route-risk"></i>Adams-closed route</span>
+          <span><i class="legend-dot"></i>critical destination</span>
+        </div>
+      </div>
+      <div class="map-story-controls" role="tablist" aria-label="Map story steps">
+        <button type="button" role="tab" aria-selected="true" data-map-story="grid"><b>1</b><span><strong>The regional change</strong> I-81 moves to the Community Grid</span></button>
+        <button type="button" role="tab" aria-selected="false" data-map-story="open"><b>2</b><span><strong>The access baseline</strong> Adams remains connected</span></button>
+        <button type="button" role="tab" aria-selected="false" data-map-story="closed"><b>3</b><span><strong>The decision point</strong> Adams closes at Upstate</span></button>
+      </div>
+      <div class="map-controls"><button type="button" id="zoom-adams" aria-label="Zoom map to proposed East Adams closure">Zoom to Adams proposal</button><button type="button" id="project-corridor-toggle" aria-pressed="false">Show I-81 removal + BL-81 plan</button><button type="button" id="aadt-toggle" aria-pressed="false">Show NYSDOT AADT</button><button type="button" id="fire-toggle" aria-pressed="false">Show historic fire incidents</button><span id="layer-status"></span></div>
+      <div id="scenario-map" role="application" aria-label="Interactive map of hospital access routes in Syracuse"></div>
+      <div class="map-takeaway"><p class="eyebrow" id="map-kicker">Step 1</p><h3 id="map-state">The Community Grid replaces the downtown viaduct with a new street network centered on Almond / BL-81.</h3><p id="map-detail">This is the regional change. It establishes the future network before the City considers a separate decision about one Adams Street block.</p></div>
+      <p class="map-note">Dashed gray marks the former viaduct corridor. Orange marks the future BL-81 / Almond corridor. Historical NYSDOT AADT is available as a separate layer; it is not live congestion.</p>
+    </section>
+
+    <!-- Legacy placement retained only as source history; the live trip checker is above the map. -->
+    <!-- <section class="route-planner" aria-labelledby="route-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Personal trip check</p>
+          <h2 id="route-title">Would this closure change my route?</h2>
+        </div>
+        <p class="section-summary">The comparison removes the proposed Adams block from a local street graph. It is a screening estimate—not live navigation or an emergency dispatch route.</p>
+      </div>
+      <form id="route-form" class="route-form">
+        <label>Starting point<input id="origin" name="origin" required autocomplete="street-address" placeholder="e.g. Armory Square, Syracuse"></label>
+        <label>Destination<input id="destination" name="destination" required autocomplete="street-address" placeholder="e.g. Upstate University Hospital"></label>
+        <button type="submit">Compare routes</button>
+      </form>
+      <p class="route-help">Suggested destinations: <button type="button" class="text-button" data-destination="Upstate University Hospital, Syracuse, NY">Upstate ED</button> · <button type="button" class="text-button" data-destination="Crouse Hospital, Syracuse, NY">Crouse</button> · <button type="button" class="text-button" data-destination="Syracuse VA Medical Center, Syracuse, NY">VA Medical Center</button></p>
+      <p id="route-status" class="route-status" role="status">Routes are calculated on demand. No live traffic or personal location is stored by this page.</p>
+      <div id="route-results" class="route-results" aria-live="polite"></div>
+      <div id="directions" class="directions"></div>
+      <details class="method-note"><summary>How this route comparison works</summary><p>The open route uses the mapped street network. The closure route rebuilds the same local graph with links inside the Adams closure area removed, then finds the shortest permitted driving path. Time uses published/assumed road speeds and does not include live traffic, signals, parking, weather, or emergency-vehicle privileges.</p></details>
+    </section> -->
+
+    <section class="brief-grid" aria-label="Scenario briefing" hidden style="display:none">
+      <article class="brief-card decision-card">
+        <p class="eyebrow">Selected scenario</p>
+        <h2 id="brief-title"></h2>
+        <p id="brief-description"></p>
+        <div class="test-list" id="decision-tests"></div>
+      </article>
+      <article class="brief-card">
+        <p class="eyebrow">What this means on the ground</p>
+        <h2>Every alternate route inherits pressure.</h2>
+        <ul id="operational-focus"></ul>
+      </article>
+      <article class="brief-card">
+        <p class="eyebrow">Evidence gap</p>
+        <h2>What still must be measured</h2>
+        <ul>
+          <li>AM/PM peak turning movements and heavy-vehicle shares at Adams, Harrison, Irving, Crouse, Almond, and ramps.</li>
+          <li>Signal phasing, queue storage, transit running time, and emergency preemption feasibility.</li>
+          <li>Aggregate, privacy-protected EMS/fire demand and response-time reliability by zone and time period.</li>
+          <li>Hospital loading, ambulance bay, pedestrian, ADA, and construction-stage access plans.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="recommendations" aria-labelledby="recommendations-title" hidden style="display:none">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Safeguard package</p>
+          <h2 id="recommendations-title">Make access a requirement, not a mitigation afterthought.</h2>
+        </div>
+      </div>
+      <div class="recommendation-grid" id="recommendations-grid"></div>
+    </section>
+
+    <section class="sources" aria-labelledby="sources-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Evidence ledger</p>
+          <h2 id="sources-title">Sources and refresh rules</h2>
+        </div>
+        <p class="section-summary">Published as a dated snapshot. Refresh after material construction changes or at least quarterly.</p>
+      </div>
+      <div class="source-table-wrap">
+        <table>
+          <thead><tr><th>Source</th><th>Use in this tool</th><th>Status</th></tr></thead>
+          <tbody id="source-table"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Last structured review: September 2, 2026 · Scenario outputs are conditional pending agency data and operational review.</p>
+  </footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="data.js"></script>
+  <script src="network.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

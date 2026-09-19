@@ -27,11 +27,20 @@ jobs:
         with:
           node-version: 20
 
-      # 1) Build the main site (root) as-is (static files already in repo)
+      - name: Install story publishing dependencies
+        run: npm ci --ignore-scripts
+
+      - name: Test story publishing
+        run: npm test
+
+      - name: Build stories, archive, and RSS feed
+        run: npm run build:stories
+
+      # Publish generated pages, never Markdown drafts or authoring templates.
       - name: Prepare Pages folder
         run: |
           mkdir -p _pages
-          rsync -av --exclude='.git' --exclude='node_modules' --exclude='_pages' --exclude='projects/puzzle_ap' ./ _pages/
+          rsync -av --exclude='.git' --exclude='node_modules' --exclude='_pages' --exclude='projects/puzzle_ap' --exclude='/content/' --exclude='/templates/' --exclude='/scripts/' --exclude='/tests/' --exclude='/docs/' --exclude='/_preview/' --exclude='/.codex/' --exclude='/.github/' --exclude='/stories/.generated.json' ./ _pages/
           # We will overwrite the Vite project output into the right subfolder next
 
       # 2) Build the Vite project

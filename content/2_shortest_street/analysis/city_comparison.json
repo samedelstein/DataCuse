@@ -1,0 +1,909 @@
+{
+  "tolerance_m": 0.5,
+  "eligible_names": 1170,
+  "excluded": {},
+  "input_roads": 5158,
+  "noded_pieces": 5190,
+  "ambiguous_grade_crossings": 0,
+  "shortest_names": [
+    {
+      "name": "CD RD",
+      "base": "CD",
+      "suffix": "RD",
+      "base_characters": 2,
+      "full_characters": 4,
+      "suffix_characters": 2,
+      "suffix_minus_base": 0
+    },
+    {
+      "name": "P&C PKWY",
+      "base": "P&C",
+      "suffix": "PKWY",
+      "base_characters": 2,
+      "full_characters": 6,
+      "suffix_characters": 4,
+      "suffix_minus_base": 2
+    },
+    {
+      "name": "AMY ST",
+      "base": "AMY",
+      "suffix": "ST",
+      "base_characters": 3,
+      "full_characters": 5,
+      "suffix_characters": 2,
+      "suffix_minus_base": -1
+    },
+    {
+      "name": "ASH ST",
+      "base": "ASH",
+      "suffix": "ST",
+      "base_characters": 3,
+      "full_characters": 5,
+      "suffix_characters": 2,
+      "suffix_minus_base": -1
+    },
+    {
+      "name": "ELK ST",
+      "base": "ELK",
+      "suffix": "ST",
+      "base_characters": 3,
+      "full_characters": 5,
+      "suffix_characters": 2,
+      "suffix_minus_base": -1
+    },
+    {
+      "name": "ELM ST",
+      "base": "ELM",
+      "suffix": "ST",
+      "base_characters": 3,
+      "full_characters": 5,
+      "suffix_characters": 2,
+      "suffix_minus_base": -1
+    },
+    {
+      "name": "IDA AV",
+      "base": "IDA",
+      "suffix": "AVE",
+      "base_characters": 3,
+      "full_characters": 5,
+      "suffix_characters": 3,
+      "suffix_minus_base": 0
+    },
+    {
+      "name": "LEA LA",
+      "base": "LEA",
+      "suffix": "LN",
+      "base_characters": 3,
+      "full_characters": 5,
+      "suffix_characters": 2,
+      "suffix_minus_base": -1
+    },
+    {
+      "name": "MAY AV",
+      "base": "MAY",
+      "suffix": "AVE",
+      "base_characters": 3,
+      "full_characters": 5,
+      "suffix_characters": 3,
+      "suffix_minus_base": 0
+    },
+    {
+      "name": "NEW ST",
+      "base": "NEW",
+      "suffix": "ST",
+      "base_characters": 3,
+      "full_characters": 5,
+      "suffix_characters": 2,
+      "suffix_minus_base": -1
+    },
+    {
+      "name": "OAK PL",
+      "base": "OAK",
+      "suffix": "PL",
+      "base_characters": 3,
+      "full_characters": 5,
+      "suffix_characters": 2,
+      "suffix_minus_base": -1
+    },
+    {
+      "name": "OAK ST",
+      "base": "OAK",
+      "suffix": "ST",
+      "base_characters": 3,
+      "full_characters": 5,
+      "suffix_characters": 2,
+      "suffix_minus_base": -1
+    },
+    {
+      "name": "ROE AV",
+      "base": "ROE",
+      "suffix": "AVE",
+      "base_characters": 3,
+      "full_characters": 5,
+      "suffix_characters": 3,
+      "suffix_minus_base": 0
+    },
+    {
+      "name": "AMES AV",
+      "base": "AMES",
+      "suffix": "AVE",
+      "base_characters": 4,
+      "full_characters": 6,
+      "suffix_characters": 3,
+      "suffix_minus_base": -1
+    },
+    {
+      "name": "ARCH ST",
+      "base": "ARCH",
+      "suffix": "ST",
+      "base_characters": 4,
+      "full_characters": 6,
+      "suffix_characters": 2,
+      "suffix_minus_base": -2
+    },
+    {
+      "name": "AVON RD",
+      "base": "AVON",
+      "suffix": "RD",
+      "base_characters": 4,
+      "full_characters": 6,
+      "suffix_characters": 2,
+      "suffix_minus_base": -2
+    },
+    {
+      "name": "BALL AV",
+      "base": "BALL",
+      "suffix": "AVE",
+      "base_characters": 4,
+      "full_characters": 6,
+      "suffix_characters": 3,
+      "suffix_minus_base": -1
+    },
+    {
+      "name": "BALL CIR",
+      "base": "BALL",
+      "suffix": "CIR",
+      "base_characters": 4,
+      "full_characters": 7,
+      "suffix_characters": 3,
+      "suffix_minus_base": -1
+    },
+    {
+      "name": "BANK ST",
+      "base": "BANK",
+      "suffix": "ST",
+      "base_characters": 4,
+      "full_characters": 6,
+      "suffix_characters": 2,
+      "suffix_minus_base": -2
+    },
+    {
+      "name": "BEAR ST",
+      "base": "BEAR",
+      "suffix": "ST",
+      "base_characters": 4,
+      "full_characters": 6,
+      "suffix_characters": 2,
+      "suffix_minus_base": -2
+    }
+  ],
+  "suffix_longer": 1,
+  "blocks": [
+    {
+      "name": "GLENCOVE RD",
+      "length_ft": 0.04305865102717431,
+      "endpoint_a": "WOODBINE AV",
+      "endpoint_b": "WOODBINE AV",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "1706",
+      "lon": -76.10962573699838,
+      "lat": 43.06392797215136
+    },
+    {
+      "name": "W TAYLOR ST",
+      "length_ft": 0.04758018685021763,
+      "endpoint_a": "S CLINTON ST",
+      "endpoint_b": "S CLINTON ST",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "3980",
+      "lon": -76.1515418565642,
+      "lat": 43.03897692194147
+    },
+    {
+      "name": "PARK ST",
+      "length_ft": 0.20713371517512374,
+      "endpoint_a": "DEWITT ST",
+      "endpoint_b": "DEWITT ST",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "1013",
+      "lon": -76.13369985253502,
+      "lat": 43.06335426859514
+    },
+    {
+      "name": "TALLMAN ST",
+      "length_ft": 0.21354647755959605,
+      "endpoint_a": "S CLINTON ST",
+      "endpoint_b": "S CLINTON ST",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "3091",
+      "lon": -76.15144810619105,
+      "lat": 43.036406993519655
+    },
+    {
+      "name": "WOODBINE AV",
+      "length_ft": 0.3421073117784978,
+      "endpoint_a": "GLENCOVE RD",
+      "endpoint_b": "GLENCOVE RD",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "1427",
+      "lon": -76.10962567325106,
+      "lat": 43.06392844740303
+    },
+    {
+      "name": "WOODBINE AV",
+      "length_ft": 0.3423781750961342,
+      "endpoint_a": "GLENCOVE RD",
+      "endpoint_b": "GLENCOVE RD",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "1715",
+      "lon": -76.10962585921656,
+      "lat": 43.063928438125096
+    },
+    {
+      "name": "TEALL AV",
+      "length_ft": 0.4491647497024516,
+      "endpoint_a": "MOONEY AV",
+      "endpoint_b": "MOONEY AV",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "1200",
+      "lon": -76.1225235356295,
+      "lat": 43.06273116509669
+    },
+    {
+      "name": "HIXSON AV",
+      "length_ft": 0.44987130003610026,
+      "endpoint_a": "MOONEY AV",
+      "endpoint_b": "MOONEY AV",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "5651",
+      "lon": -76.12008931060976,
+      "lat": 43.06282664213648
+    },
+    {
+      "name": "DEWITT ST",
+      "length_ft": 0.48529589051631766,
+      "endpoint_a": "PARK ST",
+      "endpoint_b": "PARK ST",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "1995",
+      "lon": -76.1336997981234,
+      "lat": 43.06335366769204
+    },
+    {
+      "name": "W TAYLOR ST",
+      "length_ft": 0.5270428004998392,
+      "endpoint_a": "S CLINTON ST",
+      "endpoint_b": "S CLINTON ST",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "3980",
+      "lon": -76.15154291555716,
+      "lat": 43.03897678652894
+    },
+    {
+      "name": "MOONEY AV",
+      "length_ft": 1.0290615945508896,
+      "endpoint_a": "HIXSON AV",
+      "endpoint_b": "HIXSON AV",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "1487",
+      "lon": -76.12008733909121,
+      "lat": 43.062826101245236
+    },
+    {
+      "name": "MOONEY AV",
+      "length_ft": 1.0336685510458985,
+      "endpoint_a": "HIXSON AV",
+      "endpoint_b": "HIXSON AV",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "1259",
+      "lon": -76.12008742671136,
+      "lat": 43.06282732543762
+    },
+    {
+      "name": "BALLANTYNE RD",
+      "length_ft": 1.0352408656177248,
+      "endpoint_a": "SHIRLEY DR",
+      "endpoint_b": "SHIRLEY DR",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "5374",
+      "lon": -76.15522955446484,
+      "lat": 43.0096138593988
+    },
+    {
+      "name": "S CLINTON ST",
+      "length_ft": 1.2477687521004694,
+      "endpoint_a": "W TAYLOR ST",
+      "endpoint_b": "W TAYLOR ST",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "3923",
+      "lon": -76.15154227246508,
+      "lat": 43.03897866553444
+    },
+    {
+      "name": "S CLINTON ST",
+      "length_ft": 1.2548056767549969,
+      "endpoint_a": "W TAYLOR ST",
+      "endpoint_b": "W TAYLOR ST",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "3981",
+      "lon": -76.15154434783291,
+      "lat": 43.03897835066902
+    },
+    {
+      "name": "SHIRLEY DR",
+      "length_ft": 1.2805567914939682,
+      "endpoint_a": "BALLANTYNE RD",
+      "endpoint_b": "BALLANTYNE RD",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "5376",
+      "lon": -76.15522712610567,
+      "lat": 43.009612461451376
+    },
+    {
+      "name": "SHIRLEY DR",
+      "length_ft": 1.2850914153055928,
+      "endpoint_a": "BALLANTYNE RD",
+      "endpoint_b": "BALLANTYNE RD",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "5505",
+      "lon": -76.15523089588584,
+      "lat": 43.00961182352096
+    },
+    {
+      "name": "LINCOLN PARK DR",
+      "length_ft": 22.61539016516057,
+      "endpoint_a": "ROBIN CROFT DR",
+      "endpoint_b": "MATHER ST",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "1296",
+      "lon": -76.1290724914312,
+      "lat": 43.057948468846874
+    },
+    {
+      "name": "S STATE ST",
+      "length_ft": 34.77725962105509,
+      "endpoint_a": "E BORDEN AV",
+      "endpoint_b": "E BORDEN AV",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "4959",
+      "lon": -76.14444550247127,
+      "lat": 43.02819097288776
+    },
+    {
+      "name": "SOUTH AV",
+      "length_ft": 37.873960161515704,
+      "endpoint_a": "ELMHURST AV",
+      "endpoint_b": "HILLVIEW AV",
+      "intersection_to_intersection": true,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "4565",
+      "lon": -76.15949485209165,
+      "lat": 43.02080624305024
+    }
+  ],
+  "components": [
+    {
+      "name": "DUNLAP AV",
+      "component": 1,
+      "length_ft": 1.4680881742523246,
+      "full_component_ft": 841.9394041580559,
+      "outside_city_ft": 840.4713159838036,
+      "wholly_inside": false,
+      "source_segments": 3,
+      "source_ids": "116;85;87",
+      "lon": -76.11183470709878,
+      "lat": 43.075878876827325,
+      "components_in_city": 1
+    },
+    {
+      "name": "LEPAGE PL",
+      "component": 1,
+      "length_ft": 4.6434909807691565,
+      "full_component_ft": 200.4300935565839,
+      "outside_city_ft": 195.78660257581473,
+      "wholly_inside": false,
+      "source_segments": 1,
+      "source_ids": "673",
+      "lon": -76.10007299590718,
+      "lat": 43.070822568667715,
+      "components_in_city": 1
+    },
+    {
+      "name": "BUNKER HILL WAY",
+      "component": 2,
+      "length_ft": 24.152151948325727,
+      "full_component_ft": 24.152151948325727,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "4485",
+      "lon": -76.18295040194948,
+      "lat": 43.0245144092986,
+      "components_in_city": 2
+    },
+    {
+      "name": "ERIE BLVD MEDIAN",
+      "component": 1,
+      "length_ft": 71.16841160471148,
+      "full_component_ft": 71.16841160471148,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "1356",
+      "lon": -76.10111290324875,
+      "lat": 43.05396105756768,
+      "components_in_city": 3
+    },
+    {
+      "name": "SPRING LA",
+      "component": 1,
+      "length_ft": 74.98636378768911,
+      "full_component_ft": 74.98636378768911,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "624",
+      "lon": -76.15194761997822,
+      "lat": 43.06808266225276,
+      "components_in_city": 1
+    },
+    {
+      "name": "WEBSTERS LANDING",
+      "component": 2,
+      "length_ft": 82.81446815527147,
+      "full_component_ft": 82.81446815527147,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "1619",
+      "lon": -76.15421390984102,
+      "lat": 43.054653589488844,
+      "components_in_city": 2
+    },
+    {
+      "name": "PAGE AV",
+      "component": 1,
+      "length_ft": 88.13444732127964,
+      "full_component_ft": 88.13444732127964,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "4581",
+      "lon": -76.17278407192646,
+      "lat": 43.031835789114304,
+      "components_in_city": 1
+    },
+    {
+      "name": "REINMAN RD",
+      "component": 1,
+      "length_ft": 91.04276827265724,
+      "full_component_ft": 91.04276827265724,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "4638",
+      "lon": -76.17654359842157,
+      "lat": 43.01896052967848,
+      "components_in_city": 2
+    },
+    {
+      "name": "W LAUREL ST",
+      "component": 1,
+      "length_ft": 92.50878203369294,
+      "full_component_ft": 92.50878203369294,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "1286",
+      "lon": -76.15222472228693,
+      "lat": 43.05601433534045,
+      "components_in_city": 1
+    },
+    {
+      "name": "ERIE BLVD MEDIAN",
+      "component": 2,
+      "length_ft": 96.6648469855557,
+      "full_component_ft": 96.6648469855557,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "1728",
+      "lon": -76.09683147686134,
+      "lat": 43.054474405862265,
+      "components_in_city": 3
+    },
+    {
+      "name": "CORCORAN CT",
+      "component": 1,
+      "length_ft": 96.7702472150855,
+      "full_component_ft": 96.7702472150855,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "2050",
+      "lon": -76.15995651847228,
+      "lat": 43.04585023320333,
+      "components_in_city": 1
+    },
+    {
+      "name": "SHERMAN ST",
+      "component": 1,
+      "length_ft": 98.44998028214373,
+      "full_component_ft": 98.44998028214373,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "4907",
+      "lon": -76.11363421442937,
+      "lat": 43.025747479275275,
+      "components_in_city": 1
+    },
+    {
+      "name": "GREEN STREET CT",
+      "component": 1,
+      "length_ft": 104.64769985471855,
+      "full_component_ft": 104.64769985471855,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "1192",
+      "lon": -76.13583673895675,
+      "lat": 43.05616705932286,
+      "components_in_city": 1
+    },
+    {
+      "name": "YOUNG PL",
+      "component": 1,
+      "length_ft": 108.70529197117366,
+      "full_component_ft": 108.70529197117366,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "4762",
+      "lon": -76.17116333418149,
+      "lat": 43.02744045916578,
+      "components_in_city": 1
+    },
+    {
+      "name": "UNNAMED STREET",
+      "component": 1,
+      "length_ft": 112.34599231228957,
+      "full_component_ft": 112.34599231228957,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "1095",
+      "lon": -76.09089315085308,
+      "lat": 43.05509143788282,
+      "components_in_city": 3
+    },
+    {
+      "name": "GAGE CT",
+      "component": 1,
+      "length_ft": 112.72878589516186,
+      "full_component_ft": 112.72878589516186,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "3228",
+      "lon": -76.14143677389323,
+      "lat": 43.03967759701292,
+      "components_in_city": 1
+    },
+    {
+      "name": "MORNINGSIDE TER",
+      "component": 1,
+      "length_ft": 114.42918623827302,
+      "full_component_ft": 114.42918623827302,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "4891",
+      "lon": -76.12440087842583,
+      "lat": 43.028602385032144,
+      "components_in_city": 1
+    },
+    {
+      "name": "SCHOENECK CT",
+      "component": 1,
+      "length_ft": 115.36321852039117,
+      "full_component_ft": 115.36321852039117,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "2427",
+      "lon": -76.16237215792268,
+      "lat": 43.045629164050325,
+      "components_in_city": 1
+    },
+    {
+      "name": "FOREST EDGE DR",
+      "component": 1,
+      "length_ft": 115.54384272636227,
+      "full_component_ft": 115.54384272636227,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "4077",
+      "lon": -76.20316605250368,
+      "lat": 43.02309556676276,
+      "components_in_city": 1
+    },
+    {
+      "name": "ERIE BLVD MEDIAN",
+      "component": 3,
+      "length_ft": 115.76385585878126,
+      "full_component_ft": 115.76385585878126,
+      "outside_city_ft": 0.0,
+      "wholly_inside": true,
+      "source_segments": 1,
+      "source_ids": "2711",
+      "lon": -76.12004486432642,
+      "lat": 43.04975803866462,
+      "components_in_city": 3
+    }
+  ],
+  "totals": [
+    {
+      "name": "DUNLAP AV",
+      "length_ft": 1.4680881742523246,
+      "components": 1,
+      "wholly_inside": false
+    },
+    {
+      "name": "LEPAGE PL",
+      "length_ft": 4.6434909807691565,
+      "components": 1,
+      "wholly_inside": false
+    },
+    {
+      "name": "SPRING LA",
+      "length_ft": 74.98636378768911,
+      "components": 1,
+      "wholly_inside": true
+    },
+    {
+      "name": "PAGE AV",
+      "length_ft": 88.13444732127964,
+      "components": 1,
+      "wholly_inside": true
+    },
+    {
+      "name": "W LAUREL ST",
+      "length_ft": 92.50878203369294,
+      "components": 1,
+      "wholly_inside": true
+    },
+    {
+      "name": "CORCORAN CT",
+      "length_ft": 96.7702472150855,
+      "components": 1,
+      "wholly_inside": true
+    },
+    {
+      "name": "SHERMAN ST",
+      "length_ft": 98.44998028214373,
+      "components": 1,
+      "wholly_inside": true
+    },
+    {
+      "name": "GREEN STREET CT",
+      "length_ft": 104.64769985471855,
+      "components": 1,
+      "wholly_inside": true
+    },
+    {
+      "name": "YOUNG PL",
+      "length_ft": 108.70529197117366,
+      "components": 1,
+      "wholly_inside": true
+    },
+    {
+      "name": "GAGE CT",
+      "length_ft": 112.72878589516186,
+      "components": 1,
+      "wholly_inside": true
+    },
+    {
+      "name": "MORNINGSIDE TER",
+      "length_ft": 114.42918623827302,
+      "components": 1,
+      "wholly_inside": true
+    },
+    {
+      "name": "SCHOENECK CT",
+      "length_ft": 115.36321852039117,
+      "components": 1,
+      "wholly_inside": true
+    },
+    {
+      "name": "FOREST EDGE DR",
+      "length_ft": 115.54384272636227,
+      "components": 1,
+      "wholly_inside": true
+    },
+    {
+      "name": "GRAPE TER",
+      "length_ft": 115.87095817145176,
+      "components": 1,
+      "wholly_inside": true
+    },
+    {
+      "name": "TECUMSEH RD",
+      "length_ft": 118.78819896639487,
+      "components": 1,
+      "wholly_inside": true
+    },
+    {
+      "name": "WILL CT",
+      "length_ft": 120.47001279048328,
+      "components": 1,
+      "wholly_inside": true
+    },
+    {
+      "name": "BURNET PARK ENT NORT",
+      "length_ft": 123.4452033172716,
+      "components": 1,
+      "wholly_inside": true
+    },
+    {
+      "name": "GRANVILLE ST",
+      "length_ft": 124.39481662979452,
+      "components": 1,
+      "wholly_inside": false
+    },
+    {
+      "name": "STONE CT",
+      "length_ft": 124.45422500655216,
+      "components": 1,
+      "wholly_inside": true
+    },
+    {
+      "name": "FITCH PL",
+      "length_ft": 126.76780104647409,
+      "components": 1,
+      "wholly_inside": true
+    }
+  ],
+  "raw": [
+    {
+      "name": "LEAVENWORTH AV",
+      "id": "1936",
+      "length_ft": 19.246734053015015,
+      "fcc": "A41",
+      "wholly_inside": true,
+      "lon": -76.16300787668881,
+      "lat": 43.0555212373769
+    },
+    {
+      "name": "E FAYETTE ST",
+      "id": "2719",
+      "length_ft": 20.96969932341402,
+      "fcc": "A40",
+      "wholly_inside": true,
+      "lon": -76.1427988341481,
+      "lat": 43.04857365294465
+    },
+    {
+      "name": "LINCOLN PARK DR",
+      "id": "1296",
+      "length_ft": 22.61539016516057,
+      "fcc": "A40",
+      "wholly_inside": true,
+      "lon": -76.1290724914312,
+      "lat": 43.057948468846874
+    },
+    {
+      "name": "BUNKER HILL WAY",
+      "id": "4485",
+      "length_ft": 24.152151948325727,
+      "fcc": "A40",
+      "wholly_inside": true,
+      "lon": -76.18295040194948,
+      "lat": 43.0245144092986
+    },
+    {
+      "name": "ROCKWOOD PL",
+      "id": "4086",
+      "length_ft": 26.25354331879086,
+      "fcc": "A40",
+      "wholly_inside": true,
+      "lon": -76.19822736344479,
+      "lat": 43.02281909325476
+    },
+    {
+      "name": "S WILBUR AV",
+      "id": "3601",
+      "length_ft": 33.67721573930082,
+      "fcc": "A40",
+      "wholly_inside": true,
+      "lon": -76.17465480493475,
+      "lat": 43.04044931151157
+    },
+    {
+      "name": "S STATE ST",
+      "id": "4959",
+      "length_ft": 34.77725963054488,
+      "fcc": "A40",
+      "wholly_inside": true,
+      "lon": -76.14444550247127,
+      "lat": 43.02819097288774
+    },
+    {
+      "name": "S MCBRIDE ST",
+      "id": "2582",
+      "length_ft": 35.62942286700451,
+      "fcc": "A40",
+      "wholly_inside": true,
+      "lon": -76.14386082145055,
+      "lat": 43.05074315395506
+    },
+    {
+      "name": "S SALINA ST",
+      "id": "3851",
+      "length_ft": 36.79050610354313,
+      "fcc": "A40",
+      "wholly_inside": true,
+      "lon": -76.15029625770032,
+      "lat": 43.03939553814228
+    },
+    {
+      "name": "N GEDDES ST",
+      "id": "1428",
+      "length_ft": 37.62707460568465,
+      "fcc": "A40",
+      "wholly_inside": true,
+      "lon": -76.17045018614328,
+      "lat": 43.05599126109067
+    }
+  ]
+}
