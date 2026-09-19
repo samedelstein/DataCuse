@@ -1,5 +1,89 @@
 [
   {
+    "address": "105 Englert Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Only the front facade is visible from the street view; rear and side conditions cannot be verified."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A single-story residential home with an attached garage, featuring light-colored siding, a manicured lawn, and trimmed foundation hedges.",
+      "visible_conditions": [
+        "Light-colored horizontal siding appears intact and well-maintained",
+        "Asphalt shingle roof appears in stable condition",
+        "Manicured lawn and trimmed foundation shrubs",
+        "Attached garage with multi-pane door appears intact"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 541,
+    "image": "images/parcel-000541.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 57242,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07873409745762,
+    "lon": -76.14693434616142,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-14-140",
+    "published_at": "2026-09-19T21:02:59+00:00",
+    "review_reasons": [],
+    "title": "105 Englert Ave"
+  },
+  {
     "address": "109 Englert Ave",
     "ai_analysis": {
       "available": true,
