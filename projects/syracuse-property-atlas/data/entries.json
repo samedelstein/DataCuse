@@ -1,5 +1,90 @@
 [
   {
+    "address": "112 Martin St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Only the front facade of the property is visible in the image; the sides and rear are obscured from view."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The property is a well-maintained single-family home with a front porch, intact siding, and a manicured lawn.",
+      "visible_conditions": [
+        "The roof shingles appear intact and in good condition.",
+        "The siding and facade show no obvious signs of damage or deterioration.",
+        "The front porch, steps, and lattice skirting appear structurally sound and well-maintained.",
+        "Windows and doors are intact with no visible damage.",
+        "The lawn is mowed, and landscaping includes intentional plantings and hanging flower baskets."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 547,
+    "image": "images/parcel-000547.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 80268,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07847773731654,
+    "lon": -76.14723045452642,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-14-200",
+    "published_at": "2026-09-20T03:02:56+00:00",
+    "review_reasons": [],
+    "title": "112 Martin St"
+  },
+  {
     "address": "1419-23 Court St & Martin St",
     "ai_analysis": {
       "available": true,
