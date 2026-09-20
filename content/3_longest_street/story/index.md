@@ -4,7 +4,7 @@ title: "What's Syracuse's longest street—and where does it really end?"
 summary: "Canal Street goes the distance, one street name repeats itself, and South Salina wins after Erie Boulevard stops getting double credit."
 date: "2026-09-20"
 category: "Streets"
-status: draft
+status: published
 ideaId: "DC003"
 ---
 
