@@ -1,5 +1,89 @@
 [
   {
+    "address": "1435 Court St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Multiple residential structures are visible in the image; the assessment assumes the central light-colored house is the target property based on typical parcel alignment, but absolute confirmation of the house number is not visible from this distance."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-and-a-half-story residential structure with light-colored siding, an enclosed front porch, and a paved driveway, appearing in generally stable condition.",
+      "visible_conditions": [
+        "Light-colored siding appears intact with no major damage visible.",
+        "Enclosed front porch with concrete steps leading to the yard.",
+        "Paved driveway on the right side of the structure.",
+        "Maintained lawn with no significant overgrowth or debris."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 544,
+    "image": "images/parcel-000544.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 63852,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07846095319756,
+    "lon": -76.1467578212367,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-14-170",
+    "published_at": "2026-09-20T00:03:00+00:00",
+    "review_reasons": [],
+    "title": "1435 Court St"
+  },
+  {
     "address": "1437 Court St",
     "ai_analysis": {
       "available": true,
