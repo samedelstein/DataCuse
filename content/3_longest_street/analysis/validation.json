@@ -1,0 +1,32 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "tolerance_m": 0,
+      "names": 1192,
+      "segment_ft": 3358.7904978207334,
+      "salina_miles": 4.657167697268149,
+      "salina_path_difference_m": 1.4293846106738784e-12,
+      "salina_graph_cycles": 0,
+      "erie_path_miles": [
+        3.574884979788933,
+        3.57493786115607,
+        3.571387536169145,
+        3.5714949407085723
+      ]
+    },
+    {
+      "tolerance_m": 1,
+      "names": 1192,
+      "segment_ft": 3358.7904978207334,
+      "salina_miles": 4.657167697268149,
+      "salina_path_difference_m": 0.9735859200514371,
+      "salina_graph_cycles": 1,
+      "erie_path_miles": [
+        3.574884979788933,
+        3.571387536169145
+      ]
+    }
+  ],
+  "notes": "Recomputes from source; noding conserves line length. Distances are map estimates, not field surveys."
+}

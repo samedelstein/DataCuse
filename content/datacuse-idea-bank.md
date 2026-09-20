@@ -2659,4 +2659,54 @@ See the [data guide](datacuse-data-guide.md) for source paths, downloads, access
 
 ## Future additions
 
-No additions yet. Begin with DC366. Record the date added and category, and add a matching tracker row. Do not renumber the 365 IDs above. Document future pitch revisions in the data guide and update the matching tracker title.
+Add new pitches here with a permanent ID, date added, and category, and add a matching tracker row. Do not renumber the 365 IDs above. Document future pitch revisions in the data guide and update the matching tracker title.
+
+### DC366. Which Syracuse street names rhyme?
+
+**Added:** 2026-09-19. **Category:** Streets, names, and the small absurdities of geography.
+
+**Data:** Mixed. **Effort:** Setup. **Sources:** [streets](datacuse-data-guide.md#streets); pronunciation references and local confirmation to collect.
+
+**Start:** Find rhyming pairs and clusters using the name before its street-type suffix. Map the matches and see whether any rhyming streets intersect or sit near each other.
+
+**Watch:** Shared endings such as Street or Road alone do not count. Distinguish exact rhymes from near rhymes and verify local pronunciations rather than relying on spelling.
+
+### DC367. Which streets are named for prominent Syracuse people, including mayors?
+
+**Added:** 2026-09-19. **Category:** Streets, names, and the small absurdities of geography.
+
+**Data:** Research. **Effort:** Project. **Sources:** [streets](datacuse-data-guide.md#streets), [history](datacuse-data-guide.md#history).
+
+**Start:** Build a documented list of local namesakes, starting with mayors and expanding to other notable Syracuse residents. Map their streets and compare who is commemorated and where.
+
+**Watch:** A matching surname is a lead, not proof of the namesake. Verify naming origins in historical records and distinguish original street names from honorary designations.
+
+**Related:** DC012, Which presidents have streets-and which got skipped?
+
+### DC368. Can Syracuse addresses make 867-5309?
+
+**Added:** 2026-09-19. **Category:** Streets, names, and the small absurdities of geography.
+
+**Data:** Research. **Effort:** Setup. **Sources:** [parcels](datacuse-data-guide.md#parcels), [streets](datacuse-data-guide.md#streets); address-point source to locate.
+
+**Start:** Look for actual house numbers 867 and 5309 on different properties, ideally on the same street. If both exist elsewhere in the city, map the closest pair. Also explore which single house number comes closest to 8675309: define a digit-similarity rule and show numeric distance separately.
+
+**Visual:** Two address plaques joined by a map route, with a phone-keypad-style title. Possible headline: Jenny, we found your addresses.
+
+**Watch:** Check city limits, distinguish actual addresses from street address ranges, and verify that candidate properties are houses before describing them that way. Do not assume either number exists. Keep house numbers separate from apartment numbers and ZIP codes.
+
+**Related:** DC369.
+
+### DC369. Where is Syracuse at its most 6-7?
+
+**Added:** 2026-09-19. **Category:** Streets, names, and the small absurdities of geography.
+
+**Data:** Research. **Effort:** Setup. **Sources:** [parcels](datacuse-data-guide.md#parcels), [streets](datacuse-data-guide.md#streets); address-point source to locate.
+
+**Start:** Rank house numbers by occurrences of consecutive 67, then separately by the total digits that are 6 or 7. Find streets with the most qualifying addresses and compare their share of all addresses so longer streets do not automatically dominate. Bonus: find the nearest pair of actual house numbers 6 and 7.
+
+**Visual:** Oversized house-number tiles with matching digits highlighted, plus a map and a street leaderboard. Possible headline: Six appeal.
+
+**Watch:** Define whether the joke means the sequence 67 or either digit before counting; show both as distinct measures. Deduplicate addresses, exclude unit numbers and ZIP codes, report ties, and do not infer occupied houses from address records alone.
+
+**Related:** DC368.

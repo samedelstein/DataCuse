@@ -1,0 +1,1271 @@
+{
+  "snapshot_date": "2026-09-19",
+  "tolerance_m": 0.5,
+  "names": 1192,
+  "excluded": {
+    "route designation rather than street name": 1,
+    "not documented public jurisdiction": 1562,
+    "ramp, freeway, driveway, path, service road or other excluded class": 993,
+    "unnamed": 3,
+    "named driveway, ramp or entrance": 27
+  },
+  "ambiguous_grade_crossings": 0,
+  "longest_names": [
+    {
+      "name": "EAST BRIGHTON AVENUE AVENUE NORTHBOUND",
+      "letters": 34,
+      "source_ids": "477444818"
+    },
+    {
+      "name": "GENANT TO NORTH CLINTON CONNECTOR",
+      "letters": 29,
+      "source_ids": "477430853"
+    },
+    {
+      "name": "WEST STREET ARTERIAL NORTHBOUND",
+      "letters": 28,
+      "source_ids": "477433877;477434023;477434950;477435095;477435235;477435371;477435599;477435880;477435979;477436173;477436772;477437214;477437498;477437677;800036938;800037089;800037119"
+    },
+    {
+      "name": "WEST STREET ARTERIAL SOUTHBOUND",
+      "letters": 28,
+      "source_ids": "477433862;477433944;477434349;477436151;477436551;477437219;477437504;504325349;513530734;800037032"
+    },
+    {
+      "name": "ONONDAGA CREEK BOULEVARD EAST",
+      "letters": 26,
+      "source_ids": "477444013;477444151;477444231;477444490"
+    },
+    {
+      "name": "ELIZABETH BLACKWELL STREET",
+      "letters": 24,
+      "source_ids": "477437435"
+    },
+    {
+      "name": "NORTH COLLINGWOOD AVENUE",
+      "letters": 22,
+      "source_ids": "477428908;477429453;477429813"
+    },
+    {
+      "name": "ONONDAGA CREEK BOULEVARD",
+      "letters": 22,
+      "source_ids": "477443565;477443639;477443710;477443823;477443904;477444115;477444256;477444559;800047584;800047588"
+    },
+    {
+      "name": "SOUTH COLLINGWOOD AVENUE",
+      "letters": 22,
+      "source_ids": "477430356;477430874;477431410;477431906;477432374"
+    },
+    {
+      "name": "HIAWATHA BOULEVARD EAST",
+      "letters": 21,
+      "source_ids": "477427426;477427686;477427866;477428093;477428342;477428600;477428847;477429061;477429228;508421423;508421551;508421553;800036177;800036180;800036183;800036193"
+    }
+  ],
+  "longest_segments": [
+    {
+      "name": "CANAL STREET",
+      "source_id": "477433624",
+      "inside_ft": 3358.7904978207334,
+      "original_ft": 3358.7904978207334,
+      "clipped": false
+    },
+    {
+      "name": "ERIE BOULEVARD WEST",
+      "source_id": "477432942",
+      "inside_ft": 3025.879452886003,
+      "original_ft": 3025.879452886003,
+      "clipped": false
+    },
+    {
+      "name": "VALLEY DRIVE",
+      "source_id": "515167916",
+      "inside_ft": 2514.0525575781317,
+      "original_ft": 2514.0525575781317,
+      "clipped": false
+    },
+    {
+      "name": "ERIE BOULEVARD WEST",
+      "source_id": "477435840",
+      "inside_ft": 2293.6689951439976,
+      "original_ft": 2293.6689951439976,
+      "clipped": false
+    },
+    {
+      "name": "IVY RIDGE ROAD",
+      "source_id": "477444074",
+      "inside_ft": 1967.8209792709195,
+      "original_ft": 1967.8209792709195,
+      "clipped": false
+    },
+    {
+      "name": "JENSEN AVENUE",
+      "source_id": "800097683",
+      "inside_ft": 1933.3695015954067,
+      "original_ft": 1933.3695015954067,
+      "clipped": false
+    },
+    {
+      "name": "HANCOCK DRIVE",
+      "source_id": "477442836",
+      "inside_ft": 1827.2879305181582,
+      "original_ft": 1827.2879305181582,
+      "clipped": false
+    },
+    {
+      "name": "ROBINEAU ROAD",
+      "source_id": "800050420",
+      "inside_ft": 1824.3242490674213,
+      "original_ft": 1824.3242490674213,
+      "clipped": false
+    },
+    {
+      "name": "CHAFFEE AVENUE",
+      "source_id": "477446214",
+      "inside_ft": 1815.2691400648548,
+      "original_ft": 1815.2691400648548,
+      "clipped": false
+    },
+    {
+      "name": "MEADOWBROOK DRIVE",
+      "source_id": "477442058",
+      "inside_ft": 1776.9089756935202,
+      "original_ft": 1776.9089756935202,
+      "clipped": false
+    }
+  ],
+  "total_ranking": [
+    {
+      "name": "ERIE BOULEVARD EAST",
+      "total_ft": 31297.709629361867,
+      "total_miles": 5.927596520712474,
+      "longest_connected_sum_miles": 5.927596520712477,
+      "components": 1,
+      "graph_diameter_miles": 4.20605717286813,
+      "source_features": 77,
+      "split_class_ft": 24861.234682344566
+    },
+    {
+      "name": "SOUTH SALINA STREET",
+      "total_ft": 24589.845441575828,
+      "total_miles": 4.657167697268149,
+      "longest_connected_sum_miles": 4.657167697268148,
+      "components": 1,
+      "graph_diameter_miles": 4.65716769726815,
+      "source_features": 94,
+      "split_class_ft": 0.0
+    },
+    {
+      "name": "EAST GENESEE STREET",
+      "total_ft": 22106.530731786985,
+      "total_miles": 4.186842941626323,
+      "longest_connected_sum_miles": 4.104615739108761,
+      "components": 3,
+      "graph_diameter_miles": 3.902616936902491,
+      "source_features": 74,
+      "split_class_ft": 2098.219475853137
+    },
+    {
+      "name": "MEADOWBROOK DRIVE",
+      "total_ft": 19581.868419544837,
+      "total_miles": 3.7086872006713705,
+      "longest_connected_sum_miles": 3.4772877645869316,
+      "components": 3,
+      "graph_diameter_miles": 3.1960337597931705,
+      "source_features": 53,
+      "split_class_ft": 16319.938298540263
+    },
+    {
+      "name": "BURNET AVENUE",
+      "total_ft": 17154.99257478636,
+      "total_miles": 3.2490516240125684,
+      "longest_connected_sum_miles": 3.249051624012569,
+      "components": 1,
+      "graph_diameter_miles": 3.249051624012568,
+      "source_features": 44,
+      "split_class_ft": 0.0
+    },
+    {
+      "name": "JAMES STREET",
+      "total_ft": 16766.241120311097,
+      "total_miles": 3.1754244546043746,
+      "longest_connected_sum_miles": 3.1754244546043755,
+      "components": 1,
+      "graph_diameter_miles": 3.17533433851777,
+      "source_features": 64,
+      "split_class_ft": 0.0
+    },
+    {
+      "name": "MIDLAND AVENUE",
+      "total_ft": 14750.534638950272,
+      "total_miles": 2.793661863437552,
+      "longest_connected_sum_miles": 2.793661863437551,
+      "components": 1,
+      "graph_diameter_miles": 2.793661863437552,
+      "source_features": 46,
+      "split_class_ft": 0.0
+    },
+    {
+      "name": "GRANT BOULEVARD",
+      "total_ft": 14049.404827993254,
+      "total_miles": 2.660872126513874,
+      "longest_connected_sum_miles": 2.660872126513873,
+      "components": 1,
+      "graph_diameter_miles": 2.5295410412489603,
+      "source_features": 57,
+      "split_class_ft": 421.62720823187703
+    },
+    {
+      "name": "ERIE BOULEVARD WEST",
+      "total_ft": 13877.294445198346,
+      "total_miles": 2.6282754631057474,
+      "longest_connected_sum_miles": 2.6282754631057474,
+      "components": 1,
+      "graph_diameter_miles": 2.628275463105748,
+      "source_features": 25,
+      "split_class_ft": 0.0
+    },
+    {
+      "name": "VALLEY DRIVE",
+      "total_ft": 13357.18406325103,
+      "total_miles": 2.5297697089490585,
+      "longest_connected_sum_miles": 2.5297697089490594,
+      "components": 1,
+      "graph_diameter_miles": 2.529769708949059,
+      "source_features": 39,
+      "split_class_ft": 0.0
+    },
+    {
+      "name": "EAST FAYETTE STREET",
+      "total_ft": 12981.301727622302,
+      "total_miles": 2.458579872655739,
+      "longest_connected_sum_miles": 2.4585798726557395,
+      "components": 1,
+      "graph_diameter_miles": 2.4585798726557395,
+      "source_features": 36,
+      "split_class_ft": 0.0
+    },
+    {
+      "name": "PARK STREET",
+      "total_ft": 12909.351855701012,
+      "total_miles": 2.4449530029736763,
+      "longest_connected_sum_miles": 1.5645173374343833,
+      "components": 2,
+      "graph_diameter_miles": 1.5645173374343833,
+      "source_features": 41,
+      "split_class_ft": 31.228266037813025
+    }
+  ],
+  "graph_diameter_ranking": [
+    {
+      "name": "SOUTH SALINA STREET",
+      "total_ft": 24589.845441575828,
+      "total_miles": 4.657167697268149,
+      "longest_connected_sum_miles": 4.657167697268148,
+      "components": 1,
+      "graph_diameter_miles": 4.65716769726815,
+      "source_features": 94,
+      "split_class_ft": 0.0
+    },
+    {
+      "name": "ERIE BOULEVARD EAST",
+      "total_ft": 31297.709629361867,
+      "total_miles": 5.927596520712474,
+      "longest_connected_sum_miles": 5.927596520712477,
+      "components": 1,
+      "graph_diameter_miles": 4.20605717286813,
+      "source_features": 77,
+      "split_class_ft": 24861.234682344566
+    },
+    {
+      "name": "EAST GENESEE STREET",
+      "total_ft": 22106.530731786985,
+      "total_miles": 4.186842941626323,
+      "longest_connected_sum_miles": 4.104615739108761,
+      "components": 3,
+      "graph_diameter_miles": 3.902616936902491,
+      "source_features": 74,
+      "split_class_ft": 2098.219475853137
+    },
+    {
+      "name": "BURNET AVENUE",
+      "total_ft": 17154.99257478636,
+      "total_miles": 3.2490516240125684,
+      "longest_connected_sum_miles": 3.249051624012569,
+      "components": 1,
+      "graph_diameter_miles": 3.249051624012568,
+      "source_features": 44,
+      "split_class_ft": 0.0
+    },
+    {
+      "name": "MEADOWBROOK DRIVE",
+      "total_ft": 19581.868419544837,
+      "total_miles": 3.7086872006713705,
+      "longest_connected_sum_miles": 3.4772877645869316,
+      "components": 3,
+      "graph_diameter_miles": 3.1960337597931705,
+      "source_features": 53,
+      "split_class_ft": 16319.938298540263
+    },
+    {
+      "name": "JAMES STREET",
+      "total_ft": 16766.241120311097,
+      "total_miles": 3.1754244546043746,
+      "longest_connected_sum_miles": 3.1754244546043755,
+      "components": 1,
+      "graph_diameter_miles": 3.17533433851777,
+      "source_features": 64,
+      "split_class_ft": 0.0
+    },
+    {
+      "name": "MIDLAND AVENUE",
+      "total_ft": 14750.534638950272,
+      "total_miles": 2.793661863437552,
+      "longest_connected_sum_miles": 2.793661863437551,
+      "components": 1,
+      "graph_diameter_miles": 2.793661863437552,
+      "source_features": 46,
+      "split_class_ft": 0.0
+    },
+    {
+      "name": "ERIE BOULEVARD WEST",
+      "total_ft": 13877.294445198346,
+      "total_miles": 2.6282754631057474,
+      "longest_connected_sum_miles": 2.6282754631057474,
+      "components": 1,
+      "graph_diameter_miles": 2.628275463105748,
+      "source_features": 25,
+      "split_class_ft": 0.0
+    },
+    {
+      "name": "VALLEY DRIVE",
+      "total_ft": 13357.18406325103,
+      "total_miles": 2.5297697089490585,
+      "longest_connected_sum_miles": 2.5297697089490594,
+      "components": 1,
+      "graph_diameter_miles": 2.529769708949059,
+      "source_features": 39,
+      "split_class_ft": 0.0
+    },
+    {
+      "name": "GRANT BOULEVARD",
+      "total_ft": 14049.404827993254,
+      "total_miles": 2.660872126513874,
+      "longest_connected_sum_miles": 2.660872126513873,
+      "components": 1,
+      "graph_diameter_miles": 2.5295410412489603,
+      "source_features": 57,
+      "split_class_ft": 421.62720823187703
+    },
+    {
+      "name": "EAST FAYETTE STREET",
+      "total_ft": 12981.301727622302,
+      "total_miles": 2.458579872655739,
+      "longest_connected_sum_miles": 2.4585798726557395,
+      "components": 1,
+      "graph_diameter_miles": 2.4585798726557395,
+      "source_features": 36,
+      "split_class_ft": 0.0
+    },
+    {
+      "name": "LODI STREET",
+      "total_ft": 12444.743605194692,
+      "total_miles": 2.356959016135358,
+      "longest_connected_sum_miles": 2.3569590161353577,
+      "components": 1,
+      "graph_diameter_miles": 2.3569590161353586,
+      "source_features": 37,
+      "split_class_ft": 0.0
+    }
+  ],
+  "reviews": {
+    "SOUTH SALINA STREET": {
+      "name": "SOUTH SALINA STREET",
+      "total_ft": 24589.845441575828,
+      "total_miles": 4.657167697268149,
+      "longest_connected_sum_miles": 4.657167697268148,
+      "components": 1,
+      "graph_diameter_miles": 4.65716769726815,
+      "source_features": 94,
+      "split_class_ft": 0.0,
+      "route_source_ids": [
+        "477435057",
+        "477435349",
+        "477435621",
+        "477436196",
+        "477436842",
+        "477437367",
+        "477437870",
+        "477438074",
+        "477438228",
+        "477438459",
+        "477438495",
+        "477438584",
+        "477438964",
+        "477439020",
+        "477439482",
+        "477439764",
+        "477440429",
+        "477440749",
+        "477441050",
+        "477441093",
+        "477441299",
+        "477441509",
+        "477441681",
+        "477441709",
+        "477441916",
+        "477442118",
+        "477442227",
+        "477442363",
+        "477442517",
+        "477442649",
+        "477442795",
+        "477442832",
+        "477442962",
+        "477443087",
+        "477443240",
+        "477443374",
+        "477443464",
+        "477443567",
+        "477443597",
+        "477443848",
+        "477443978",
+        "477443997",
+        "477444124",
+        "477444224",
+        "477444265",
+        "477444359",
+        "477444388",
+        "477444468",
+        "477444786",
+        "477444880",
+        "477445041",
+        "477445073",
+        "477445280",
+        "477445325",
+        "477445496",
+        "477445547",
+        "477445661",
+        "477445706",
+        "477445744",
+        "477445783",
+        "477445897",
+        "477446215",
+        "477446276",
+        "477446333",
+        "477446431",
+        "477446498",
+        "477446518",
+        "477446605",
+        "477446618",
+        "477446655",
+        "477446709",
+        "477446821",
+        "477446918",
+        "477447082",
+        "477447171",
+        "477447254",
+        "477447265",
+        "477447296",
+        "477447335",
+        "477447414",
+        "509994532",
+        "509994533",
+        "509994537",
+        "509994539",
+        "509998054",
+        "800034248",
+        "800034262",
+        "800034271",
+        "800034275",
+        "800048270",
+        "800048271",
+        "800048983",
+        "800049634",
+        "800066542"
+      ],
+      "endpoints": [
+        [
+          -76.14354178868267,
+          42.984940623688985
+        ],
+        [
+          -76.1521773526866,
+          43.050911635780395
+        ]
+      ],
+      "endpoint_nearby": [
+        [
+          [
+            48.4,
+            "DORWIN AVENUE"
+          ],
+          [
+            102.7,
+            "GARY AVENUE"
+          ],
+          [
+            107.1,
+            "EDNA ROAD"
+          ],
+          [
+            124.9,
+            "PARRISH LANE"
+          ],
+          [
+            137.5,
+            "JACLYN DRIVE"
+          ],
+          [
+            158.3,
+            "PARRISH LANE"
+          ],
+          [
+            239.2,
+            "OAKLEY DRIVE EAST"
+          ],
+          [
+            240.2,
+            "SPAULDING AVENUE"
+          ]
+        ],
+        [
+          [
+            0.0,
+            "ERIE BOULEVARD EAST"
+          ],
+          [
+            0.0,
+            "NORTH SALINA STREET"
+          ],
+          [
+            40.0,
+            "EAST WATER STREET"
+          ],
+          [
+            40.0,
+            "WEST WATER STREET"
+          ],
+          [
+            40.6,
+            "JAMES STREET"
+          ],
+          [
+            40.6,
+            "NORTH SALINA STREET"
+          ],
+          [
+            40.6,
+            "WEST GENESEE STREET"
+          ],
+          [
+            53.0,
+            "EAST GENESEE STREET"
+          ]
+        ]
+      ],
+      "road_classes": {
+        "A21": 77,
+        "A31": 16,
+        "A33": 1
+      },
+      "cycles": 0,
+      "boundary_distances_m": [
+        2.0881442922415301e-10,
+        3206.3518931249987
+      ],
+      "corridor_paths": []
+    },
+    "ONONDAGA CREEK BOULEVARD EAST": {
+      "name": "ONONDAGA CREEK BOULEVARD EAST",
+      "total_ft": 2392.897808235181,
+      "total_miles": 0.4532003424687843,
+      "longest_connected_sum_miles": 0.4532003424687843,
+      "components": 1,
+      "graph_diameter_miles": 0.4532003424687843,
+      "source_features": 4,
+      "split_class_ft": 0.0,
+      "route_source_ids": [
+        "477444013",
+        "477444151",
+        "477444231",
+        "477444490"
+      ],
+      "endpoints": [
+        [
+          -76.1497032630367,
+          43.010666626382815
+        ],
+        [
+          -76.1563923405261,
+          43.01496257495828
+        ]
+      ],
+      "endpoint_nearby": [
+        [
+          [
+            0.0,
+            "CONAN STREET"
+          ],
+          [
+            0.0,
+            "CONAN STREET"
+          ],
+          [
+            22.8,
+            "BALLANTYNE ROAD"
+          ],
+          [
+            22.8,
+            "BALLANTYNE ROAD"
+          ],
+          [
+            24.3,
+            "BALLANTYNE ROAD"
+          ],
+          [
+            39.0,
+            "BALLANTYNE ROAD"
+          ],
+          [
+            45.0,
+            "ONONDAGA CREEK BOULEVARD"
+          ],
+          [
+            45.8,
+            "BALLANTYNE ROAD"
+          ]
+        ],
+        [
+          [
+            0.0,
+            "VALE STREET"
+          ],
+          [
+            33.6,
+            "ONONDAGA CREEK BOULEVARD"
+          ],
+          [
+            40.3,
+            "MEDORA PLACE"
+          ],
+          [
+            40.3,
+            "ONONDAGA CREEK BOULEVARD"
+          ],
+          [
+            62.1,
+            "ONONDAGA CREEK BOULEVARD"
+          ],
+          [
+            64.3,
+            "ONONDAGA CREEK BOULEVARD"
+          ],
+          [
+            79.0,
+            "MEDORA PLACE"
+          ],
+          [
+            85.8,
+            "MEDORA PLACE"
+          ]
+        ]
+      ],
+      "road_classes": {
+        "A41": 4
+      },
+      "cycles": 0,
+      "boundary_distances_m": [
+        906.2969344524307,
+        594.2190402323337
+      ],
+      "corridor_paths": []
+    },
+    "GENANT TO NORTH CLINTON CONNECTOR": {
+      "name": "GENANT TO NORTH CLINTON CONNECTOR",
+      "total_ft": 283.28165022967494,
+      "total_miles": 0.05365182769501419,
+      "longest_connected_sum_miles": 0.05365182769501419,
+      "components": 1,
+      "graph_diameter_miles": 0.05365182769501419,
+      "source_features": 1,
+      "split_class_ft": 0.0,
+      "route_source_ids": [
+        "477430853"
+      ],
+      "endpoints": [
+        [
+          -76.1610553190962,
+          43.064656626223496
+        ],
+        [
+          -76.1617582445178,
+          43.064074620901486
+        ]
+      ],
+      "endpoint_nearby": [
+        [
+          [
+            0.0,
+            "GENANT DRIVE"
+          ],
+          [
+            0.0,
+            "GENANT DRIVE"
+          ],
+          [
+            49.7,
+            "WEST COURT STREET"
+          ],
+          [
+            50.8,
+            "WEST COURT STREET"
+          ],
+          [
+            51.3,
+            "WEST COURT STREET"
+          ],
+          [
+            54.6,
+            "COURT STREET"
+          ],
+          [
+            59.7,
+            "GENANT DRIVE"
+          ],
+          [
+            59.7,
+            "WEST COURT STREET"
+          ]
+        ],
+        [
+          [
+            0.0,
+            "NORTH CLINTON STREET"
+          ],
+          [
+            0.0,
+            "NORTH CLINTON STREET"
+          ],
+          [
+            85.5,
+            "GENANT DRIVE"
+          ],
+          [
+            86.3,
+            "GENANT DRIVE"
+          ],
+          [
+            106.8,
+            "WEST COURT STREET"
+          ],
+          [
+            110.8,
+            "GENANT DRIVE"
+          ],
+          [
+            110.8,
+            "WEST COURT STREET"
+          ],
+          [
+            119.4,
+            "WEST COURT STREET"
+          ]
+        ]
+      ],
+      "road_classes": {
+        "A41": 1
+      },
+      "cycles": 0,
+      "boundary_distances_m": [
+        1595.569950983946,
+        1622.9808930443005
+      ],
+      "corridor_paths": []
+    },
+    "ERIE BOULEVARD EAST": {
+      "name": "ERIE BOULEVARD EAST",
+      "total_ft": 31297.709629361867,
+      "total_miles": 5.927596520712474,
+      "longest_connected_sum_miles": 5.927596520712477,
+      "components": 1,
+      "graph_diameter_miles": 4.20605717286813,
+      "source_features": 77,
+      "split_class_ft": 24861.234682344566,
+      "route_source_ids": [
+        "477433221",
+        "477433274",
+        "477433333",
+        "477433383",
+        "477433496",
+        "477433595",
+        "477433664",
+        "477433759",
+        "477433881",
+        "477433977",
+        "477434419",
+        "477434833",
+        "477434887",
+        "477434891",
+        "477434917",
+        "477434919",
+        "477434923",
+        "477434927",
+        "477434932",
+        "477434942",
+        "477434943",
+        "477434952",
+        "477434970",
+        "477434973",
+        "477434985",
+        "477434996",
+        "477435004",
+        "477435015",
+        "477435025",
+        "477435035",
+        "477435037",
+        "477435106",
+        "477435210",
+        "477435238",
+        "477435285",
+        "477435288",
+        "477435347",
+        "477435480",
+        "477435491",
+        "477435494",
+        "481561063",
+        "481561066",
+        "509997124",
+        "509997409",
+        "800066593"
+      ],
+      "endpoints": [
+        [
+          -76.0831787806911,
+          43.05565217703699
+        ],
+        [
+          -76.0831578391652,
+          43.05549772479979
+        ]
+      ],
+      "endpoint_nearby": [
+        [
+          [
+            0.0,
+            "THOMPSON ROAD"
+          ],
+          [
+            0.0,
+            "THOMPSON ROAD"
+          ],
+          [
+            0.0,
+            "THOMPSON ROAD"
+          ],
+          [
+            7.5,
+            "THOMPSON ROAD"
+          ],
+          [
+            17.2,
+            "THOMPSON ROAD"
+          ],
+          [
+            64.8,
+            "THOMPSON ROAD"
+          ],
+          [
+            74.9,
+            "HEADSON DRIVE"
+          ],
+          [
+            74.9,
+            "THOMPSON ROAD"
+          ]
+        ],
+        [
+          [
+            0.0,
+            "THOMPSON ROAD"
+          ],
+          [
+            0.0,
+            "THOMPSON ROAD"
+          ],
+          [
+            9.7,
+            "THOMPSON ROAD"
+          ],
+          [
+            17.2,
+            "THOMPSON ROAD"
+          ],
+          [
+            17.2,
+            "THOMPSON ROAD"
+          ],
+          [
+            58.8,
+            "HEADSON DRIVE"
+          ],
+          [
+            58.8,
+            "THOMPSON ROAD"
+          ],
+          [
+            82.0,
+            "THOMPSON ROAD"
+          ]
+        ]
+      ],
+      "road_classes": {
+        "A25": 61,
+        "A21": 14,
+        "A40": 2
+      },
+      "cycles": 3,
+      "boundary_distances_m": [
+        0.17283300843722518,
+        0.08470250945882073
+      ],
+      "corridor_paths": [
+        {
+          "miles": 3.574884979788933,
+          "endpoints": [
+            [
+              -76.1521773526866,
+              43.050911635780395
+            ],
+            [
+              -76.0831578391652,
+              43.05549772479979
+            ]
+          ],
+          "source_ids": [
+            "477434887",
+            "477434891",
+            "477434927",
+            "477434932",
+            "477434973",
+            "509997409",
+            "477434917",
+            "477434919",
+            "477434923",
+            "481561066",
+            "481561063",
+            "477434942",
+            "477434952",
+            "477434970",
+            "477434985",
+            "477435004",
+            "477435015",
+            "477435025",
+            "477435035",
+            "477435037",
+            "477435106",
+            "800066593",
+            "477435210",
+            "477435285",
+            "477435491",
+            "477435494",
+            "477435480",
+            "477435347",
+            "477435288",
+            "477435238",
+            "477434996",
+            "477434943",
+            "477434833",
+            "477434419",
+            "477433977",
+            "477433881",
+            "477433759",
+            "477433664",
+            "477433595",
+            "477433496",
+            "477433383",
+            "477433333",
+            "477433274",
+            "477433221",
+            "509997124"
+          ]
+        },
+        {
+          "miles": 3.571387536169145,
+          "endpoints": [
+            [
+              -76.1521773526866,
+              43.050911635780395
+            ],
+            [
+              -76.0831787806911,
+              43.05565217703699
+            ]
+          ],
+          "source_ids": [
+            "477434887",
+            "477434891",
+            "477434927",
+            "477434932",
+            "477434973",
+            "509997409",
+            "477434917",
+            "477434919",
+            "477434923",
+            "481561066",
+            "481561063",
+            "477434942",
+            "477434952",
+            "477434970",
+            "477434985",
+            "477435004",
+            "477435015",
+            "477435025",
+            "477435035",
+            "477435037",
+            "477435106",
+            "800066593",
+            "477435210",
+            "477435285",
+            "477435436",
+            "800066576",
+            "477435367",
+            "477435320",
+            "477435281",
+            "477435191",
+            "477434835",
+            "477434678",
+            "477434431",
+            "800052293",
+            "477434314",
+            "800074809",
+            "800074810",
+            "477433621",
+            "477433566",
+            "477433394",
+            "477433342",
+            "477433192",
+            "477433134",
+            "800048345",
+            "477433119",
+            "477433098"
+          ]
+        }
+      ]
+    },
+    "CANAL STREET": {
+      "name": "CANAL STREET",
+      "total_ft": 7690.267449232348,
+      "total_miles": 1.4564900472030962,
+      "longest_connected_sum_miles": 0.8203554832218963,
+      "components": 2,
+      "graph_diameter_miles": 0.8203554832218967,
+      "source_features": 8,
+      "split_class_ft": 0.0,
+      "route_source_ids": [
+        "477434788",
+        "477434809",
+        "477434822",
+        "477434827",
+        "477434830",
+        "800041721",
+        "800048139"
+      ],
+      "endpoints": [
+        [
+          -76.1376909721928,
+          43.0511833776974
+        ],
+        [
+          -76.1218123018234,
+          43.05244458622549
+        ]
+      ],
+      "endpoint_nearby": [
+        [
+          [
+            49.8,
+            "ERIE BOULEVARD EAST"
+          ],
+          [
+            82.2,
+            "ERIE BOULEVARD EAST"
+          ],
+          [
+            97.6,
+            "EAST WATER STREET"
+          ],
+          [
+            101.2,
+            "NORTH CROUSE AVENUE"
+          ],
+          [
+            101.2,
+            "NORTH CROUSE AVENUE"
+          ],
+          [
+            103.1,
+            "NORTH CROUSE AVENUE"
+          ],
+          [
+            105.0,
+            "NORTH CROUSE AVENUE"
+          ],
+          [
+            111.1,
+            "NORTH CROUSE AVENUE"
+          ]
+        ],
+        [
+          [
+            0.0,
+            "TEALL AVENUE"
+          ],
+          [
+            0.0,
+            "TEALL AVENUE"
+          ],
+          [
+            29.5,
+            "TEALL AVENUE"
+          ],
+          [
+            62.9,
+            "TEALL AVENUE"
+          ],
+          [
+            95.9,
+            "TEALL AVENUE"
+          ],
+          [
+            110.2,
+            "TEALL AVENUE"
+          ],
+          [
+            140.4,
+            "TEALL AVENUE"
+          ],
+          [
+            179.2,
+            "TEALL AVENUE"
+          ]
+        ]
+      ],
+      "road_classes": {
+        "A41": 8
+      },
+      "cycles": 0,
+      "boundary_distances_m": [
+        2642.420104944825,
+        2281.235647390164
+      ],
+      "corridor_paths": []
+    },
+    "EAST BRIGHTON AVENUE AVENUE NORTHBOUND": {
+      "name": "EAST BRIGHTON AVENUE AVENUE NORTHBOUND",
+      "total_ft": 343.08153163253763,
+      "total_miles": 0.06497756280919273,
+      "longest_connected_sum_miles": 0.06497756280919273,
+      "components": 1,
+      "graph_diameter_miles": 0.06497756280919273,
+      "source_features": 1,
+      "split_class_ft": 343.08153163253763,
+      "route_source_ids": [
+        "477444818"
+      ],
+      "endpoints": [
+        [
+          -76.13173872613712,
+          43.008124037152186
+        ],
+        [
+          -76.1323674543095,
+          43.008893828351894
+        ]
+      ],
+      "endpoint_nearby": [
+        [
+          [
+            0.0,
+            "EAST BRIGHTON AVENUE"
+          ],
+          [
+            0.0,
+            "EAST BRIGHTON AVENUE"
+          ],
+          [
+            54.7,
+            "EAST BRIGHTON AVENUE"
+          ],
+          [
+            141.6,
+            "EAST BRIGHTON AVENUE"
+          ],
+          [
+            155.9,
+            "EAST BRIGHTON AVENUE"
+          ],
+          [
+            169.2,
+            "EAST GLEN AVENUE"
+          ],
+          [
+            179.7,
+            "EAST BRIGHTON AVENUE"
+          ],
+          [
+            200.1,
+            "ROCK CUT ROUNDABAOUT"
+          ]
+        ],
+        [
+          [
+            24.6,
+            "EAST BRIGHTON AVENUE"
+          ],
+          [
+            80.1,
+            "EAST BRIGHTON AVENUE"
+          ],
+          [
+            99.7,
+            "EAST BRIGHTON AVENUE"
+          ],
+          [
+            100.5,
+            "EAST GLEN AVENUE"
+          ],
+          [
+            145.5,
+            "EAST BRIGHTON AVENUE"
+          ],
+          [
+            153.3,
+            "EAST BRIGHTON AVENUE"
+          ],
+          [
+            188.1,
+            "EAST GLEN AVENUE"
+          ],
+          [
+            224.5,
+            "EAST GLEN AVENUE"
+          ]
+        ]
+      ],
+      "road_classes": {
+        "A45": 1
+      },
+      "cycles": 0,
+      "boundary_distances_m": [
+        571.6211856962203,
+        653.6630383485762
+      ],
+      "corridor_paths": []
+    }
+  },
+  "hashes": {
+    "streets_nys_current.geojson": "e80376d86a849b1ef8140310548c80d60f83c2101fd63768fbb11e16a57f03b8",
+    "syracuse_boundary.geojson": "34ca60639588575c9d665ed351a92cbbc9898ec710a3568e4ca1cc7ea5c5bd65"
+  }
+}
