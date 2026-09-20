@@ -1,5 +1,90 @@
 [
   {
+    "address": "154 Martin St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "A large blur or smudge on the right side of the image partially obstructs the view of the right side of the structure and entry stairs."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The property is a one-and-a-half-story single-family home with yellow siding, an enclosed front porch, and a well-maintained front garden.",
+      "visible_conditions": [
+        "Yellow siding appears intact and in good condition.",
+        "Asphalt shingle roof appears structurally sound with no obvious missing shingles.",
+        "Enclosed front porch features multiple intact glass windows.",
+        "Wooden entry stairs and railing are visible on the right side of the porch.",
+        "Front yard features dense, intentional landscaping including shrubs, flowers, and a large conical evergreen."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 555,
+    "image": "images/parcel-000555.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 85583,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07929257337516,
+    "lon": -76.14836313200773,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-14-280",
+    "published_at": "2026-09-20T11:03:00+00:00",
+    "review_reasons": [],
+    "title": "154 Martin St"
+  },
+  {
     "address": "150 Martin St",
     "ai_analysis": {
       "available": true,
