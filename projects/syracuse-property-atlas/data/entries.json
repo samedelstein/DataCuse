@@ -1,5 +1,107 @@
 [
   {
+    "address": "114 Martin St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The rear of the property and secondary structures are only partially visible from the street-level view."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.25,
+            "width": 0.44,
+            "x": 0.04,
+            "y": 0.27
+          },
+          "confidence": "high",
+          "label": "roof weathering",
+          "reason": "Significant staining and discoloration visible on the roof shingles."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Roof shingles show significant surface staining or moss/algae growth, which may indicate age or moisture retention."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story single-family home with grey siding, a weathered shingle roof, and a paved driveway leading to a rear garage.",
+      "visible_conditions": [
+        "Significant dark staining and discoloration on the front roof shingles",
+        "Siding appears intact with no major damage",
+        "Windows and doors appear intact",
+        "Lawn and landscaping are maintained"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Roof shingles show significant surface staining or moss/algae growth, which may indicate age or moisture retention."
+    ],
+    "id": 548,
+    "image": "images/parcel-000548.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 83954,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07861011209999,
+    "lon": -76.14738209474052,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-14-210",
+    "published_at": "2026-09-20T04:02:59+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "114 Martin St"
+  },
+  {
     "address": "112 Martin St",
     "ai_analysis": {
       "available": true,
