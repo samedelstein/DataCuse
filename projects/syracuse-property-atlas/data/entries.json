@@ -1,5 +1,156 @@
 [
   {
+    "address": "126 Martin St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.1,
+            "width": 0.3,
+            "x": 0.1,
+            "y": 0.31
+          },
+          "confidence": "high",
+          "label": "Roof staining/discoloration",
+          "reason": "Visible dark staining or discoloration on the asphalt shingles of the main roof slope."
+        },
+        {
+          "bbox": {
+            "height": 0.17,
+            "width": 0.3,
+            "x": 0.15,
+            "y": 0.52
+          },
+          "confidence": "high",
+          "label": "Siding discoloration/staining",
+          "reason": "Visible dirt or staining on the light-colored siding, particularly on lower sections and around the porch area."
+        },
+        {
+          "bbox": {
+            "height": 0.07,
+            "width": 0.4,
+            "x": 0.05,
+            "y": 0.65
+          },
+          "confidence": "high",
+          "label": "Foundation discoloration",
+          "reason": "Noticeable discoloration or staining on the visible foundation wall along the base of the house."
+        },
+        {
+          "bbox": {
+            "height": 0.14,
+            "width": 0.1,
+            "x": 0.05,
+            "y": 0.55
+          },
+          "confidence": "high",
+          "label": "Porch step wear",
+          "reason": "The wooden steps leading to the porch show signs of wear and discoloration."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Visible staining or discoloration on the roof shingles.",
+        "Visible discoloration or dirt on the exterior siding.",
+        "Noticeable discoloration or staining on the foundation wall.",
+        "Wear and discoloration observed on the wooden porch steps."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a single-family home with some areas of discoloration on the roof, siding, and foundation, and wear on the porch steps.",
+      "visible_conditions": [
+        "The property features a single-story structure with a visible attic gable.",
+        "The roof appears to be covered with asphalt shingles, showing some visible staining or discoloration.",
+        "The exterior siding is light-colored, possibly vinyl or painted wood, with some visible dirt or staining, particularly on lower sections.",
+        "Windows appear to be intact, and the front entry includes a wooden porch with steps.",
+        "The foundation wall shows noticeable discoloration or staining.",
+        "The yard features a mowed lawn and some foundation plantings and shrubs.",
+        "A paved driveway runs alongside the house."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Visible staining or discoloration on the roof shingles.",
+      "Image-only flag: Visible discoloration or dirt on the exterior siding.",
+      "Image-only flag: Noticeable discoloration or staining on the foundation wall.",
+      "Image-only flag: Wear and discoloration observed on the wooden porch steps."
+    ],
+    "id": 549,
+    "image": "images/parcel-000549.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 57496,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07872595460709,
+    "lon": -76.14754861607626,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-14-220",
+    "published_at": "2026-09-20T05:03:02+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "126 Martin St"
+  },
+  {
     "address": "114 Martin St",
     "ai_analysis": {
       "available": true,
