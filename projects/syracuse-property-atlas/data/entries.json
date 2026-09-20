@@ -1,5 +1,107 @@
 [
   {
+    "address": "164 Martin St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The rear of the property and the full surface of the roof are not visible from this street-level angle."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.02,
+            "width": 0.09,
+            "x": 0.2,
+            "y": 0.37
+          },
+          "confidence": "high",
+          "label": "damaged fascia or soffit",
+          "reason": "A section of the trim/soffit under the upper roof eave is missing or damaged, leaving an open gap."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Exposed eave/soffit area under the upper roofline which could allow pest entry or water intrusion."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The property is a two-story residential structure with a front ramp, showing some visible damage to the upper roof fascia/soffit area.",
+      "visible_conditions": [
+        "Missing or damaged fascia/soffit trim under the front eave of the upper roof, exposing a dark gap.",
+        "A wooden access ramp is installed at the front entrance.",
+        "Siding appears intact but shows minor weathering.",
+        "The front yard has maintained landscaping and a small lawn area."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Exposed eave/soffit area under the upper roofline which could allow pest entry or water intrusion."
+    ],
+    "id": 558,
+    "image": "images/parcel-000558.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 99923,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07948323191154,
+    "lon": -76.14868657209584,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-14-310",
+    "published_at": "2026-09-20T14:02:58+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "164 Martin St"
+  },
+  {
     "address": "160 Martin St",
     "ai_analysis": {
       "available": true,
