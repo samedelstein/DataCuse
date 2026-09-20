@@ -1,5 +1,90 @@
 [
   {
+    "address": "178 Martin St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The primary residential structure is heavily obscured by a tall wooden privacy fence, preventing a full assessment of the facade, windows, and main entryway."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A residential property with a grey-sided structure and a detached shed, largely obscured by a tall wooden privacy fence and fronted by a maintained lawn.",
+      "visible_conditions": [
+        "A tall wooden privacy fence runs across the front of the property.",
+        "A grey-sided residential structure with a white garage door is visible on the right.",
+        "A small gabled shed is visible behind the fence in the center-left.",
+        "The foreground lawn is mowed and maintained.",
+        "Standard waste bins are parked near the driveway on the right."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 562,
+    "image": "images/parcel-000562.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 80251,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07978542493708,
+    "lon": -76.14912098998386,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-14-350",
+    "published_at": "2026-09-20T23:03:05+00:00",
+    "review_reasons": [],
+    "title": "178 Martin St"
+  },
+  {
     "address": "176 Martin St",
     "ai_analysis": {
       "available": true,
