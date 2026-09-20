@@ -1,5 +1,89 @@
 [
   {
+    "address": "130 Martin St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "A large portion of the left side of the image is heavily blurred, obscuring the adjacent area and any potential property features on that side."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A single-story residential dwelling with an enclosed front porch and a maintained lawn is visible, though a large portion of the left side of the image is heavily blurred.",
+      "visible_conditions": [
+        "Enclosed front porch with multiple intact windows and a central door",
+        "Wooden steps leading to the porch entrance appear stable",
+        "Maintained grass lawn with small foundation plantings",
+        "Siding and roof appear in good condition from the visible angle"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 550,
+    "image": "images/parcel-000550.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 47035,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07882920558236,
+    "lon": -76.14769703773507,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-14-230",
+    "published_at": "2026-09-20T06:02:53+00:00",
+    "review_reasons": [],
+    "title": "130 Martin St"
+  },
+  {
     "address": "126 Martin St",
     "ai_analysis": {
       "available": true,
