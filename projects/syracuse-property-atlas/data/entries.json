@@ -1,5 +1,91 @@
 [
   {
+    "address": "150 Martin St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image is heavily blurred/censored, obscuring the property entirely."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "not_visible",
+        "trash_debris": "unclear",
+        "vegetation_overgrowth": "unclear",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "unclear"
+      },
+      "confidence": "low",
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The property is almost entirely obscured by a large blurred area, preventing any meaningful assessment of the structure or yard.",
+      "visible_conditions": [
+        "A large portion of the image is heavily blurred, obscuring the main property structure.",
+        "A driveway and a large evergreen tree are visible on the right side."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "unclear",
+        "boarded_windows_or_doors": "unclear",
+        "fire_damage_visible": "unclear",
+        "structural_damage_visible": "unclear",
+        "vacancy_signs_visible": "unclear"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Needs human review"
+    ],
+    "id": 554,
+    "image": "images/parcel-000554.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 35242,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07920191479527,
+    "lon": -76.14823280856166,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-14-270",
+    "published_at": "2026-09-20T10:02:54+00:00",
+    "review_reasons": [
+      "AI requested human review"
+    ],
+    "title": "150 Martin St"
+  },
+  {
     "address": "144 Martin St",
     "ai_analysis": {
       "available": true,
