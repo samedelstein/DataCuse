@@ -1,5 +1,77 @@
 [
   {
+    "address": "335 Loma Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "{\n  \"summary\": \"The property appears to be a single-family residence with an attached garage, featuring a well-maintained exterior and yard.\",\n  \"property_type_guess\": \"single_family\",\n  \"visible_conditions\": [\n    \"Single-story residence with light-colored horizontal siding.\",\n    \"Dark-colored roof, possibly asphalt shingles, appears intact.\",\n    \"Windows have white trim and dark shutters.\",\n    \"A white front door is visible with a small stoop and dark railing.\",\n    \"An attached garage with a white garage door is present on the right side of the structure.\",\n    \"The front yard consists of a mowed grass lawn.\",\n    \"Some foundation plantings are visible near the front of the house.\",\n    \"Two dark-colored refuse bins are located near the garage.\"\n  \u306e\u90e8\u5206\u3092\u4fee\u6b63\u3057\u307e\u3057\u305f\u3002\",\n  \"condition_scores\": {\n    \"roof\": \"good\",\n    \"siding_or_facade\": \"good\",\n    \"windows_doors\": \"good\",\n    \"porch_or_entry\": \"good\",\n    \"yard_or_lot\": \"good\",\n    \"trash_debris\": \"none_visible\",\n    \"vegetation_overgrowth\": \"none_visible\"\n  },\n  \"visible_flags\": {\n    \"boarded_windows_or_doors\": \"no\",\n    \"fire_damage_visible\": \"no\",\n    \"structural_damage_visible\": \"no\",\n    \"vacancy_signs_visible\": \"no\",\n    \"active_construction_visible\": \"no\"\n  },\n  \"possible_unrecorded_issues\": [],\n  \"image_annotations\": [],\n  \"needs_human_review\": \"false\",\n  \"confidence\": \"high\",\n  \"caveats\": []\n}",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 569,
+    "image": "images/parcel-000569.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 86793,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08102918783416,
+    "lon": -76.14738311290162,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-15-070",
+    "published_at": "2026-09-21T15:04:04+00:00",
+    "review_reasons": [],
+    "title": "335 Loma Ave"
+  },
+  {
     "address": "538 Cadillac St & Loma Ave",
     "ai_analysis": {
       "available": true,
