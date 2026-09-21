@@ -1,5 +1,77 @@
 [
   {
+    "address": "526 Cadillac St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "{\n  \"summary\": \"The property appears to be a single-family residence with light blue siding, a gray shingle roof, and a well-maintained lawn.\",\n  \"property_type_guess\": \"single_family\",\n  \"visible_conditions\": [\n    \"Light blue horizontal siding is visible on the main structure.\",\n    \"The roof appears to be covered with gray asphalt shingles.\",\n    \"White trim is visible around the windows and the front door.\",\n    \"A small covered front entry features a yellow accent on its gable.\",\n    \"An attached garage with a white door is visible on the left side of the structure.\",\n    \"A paved driveway leads from the street to the garage.\",\n    \"The grass lawn appears to be maintained.\",\n    \"Mature trees are present on the property and in the foreground.\",\n    \"Some foundation plantings are visible along the front of the house.\",\n    \"A red shed is partially visible in the far right background.\",\n    \"A chain-link fence is visible along the left side of the property.\"\n   assays\"\n  ],\n  \"condition_scores\": {\n    \"roof\": \"good\",\n    \"siding_or_facade\": \"good\",\n    \"windows_doors\": \"good\",\n    \"porch_or_entry\": \"good\",\n    \"yard_or_lot\": \"good\",\n    \"trash_debris\": \"none_visible\",\n    \"vegetation_overgrowth\": \"none_visible\"\n  },\n  \"visible_flags\": {\n    \"boarded_windows_or_doors\": \"no\",\n    \"fire_damage_visible\": \"no\",\n    \"structural_damage_visible\": \"no\",\n    \"vacancy_signs_visible\": \"no\",\n    \"active_construction_visible\": \"no\"\n  },\n  \"possible_unrecorded_issues\": [],\n  \"image_annotations\": [],\n  \"needs_human_review\": false,\n  \"confidence\": \"high\",\n  \"caveats\": []\n}",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 567,
+    "image": "images/parcel-000567.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 125973,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08085520474287,
+    "lon": -76.1476853605201,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-15-050",
+    "published_at": "2026-09-21T13:32:51+00:00",
+    "review_reasons": [],
+    "title": "526 Cadillac St"
+  },
+  {
     "address": "520 Cadillac St",
     "ai_analysis": {
       "available": true,
