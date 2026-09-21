@@ -1,5 +1,90 @@
 [
   {
+    "address": "223 Loma Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The building is viewed from a distance across a parking lot, limiting close inspection of the facade, windows, and roof details."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A single-story residential-style building with green shingle siding and a maintained lawn, viewed across an asphalt parking lot.",
+      "visible_conditions": [
+        "Green shingle siding appears intact and uniform",
+        "Single entry door with a small white awning",
+        "One window with a matching white awning",
+        "Maintained grass lawn with neat foundation plantings",
+        "Asphalt parking lot in the foreground"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 577,
+    "image": "images/parcel-000577.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 96683,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08016509255524,
+    "lon": -76.14614025292856,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-15-150",
+    "published_at": "2026-09-21T23:02:57+00:00",
+    "review_reasons": [],
+    "title": "223 Loma Ave"
+  },
+  {
     "address": "301 Loma Ave",
     "ai_analysis": {
       "available": true,
