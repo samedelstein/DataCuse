@@ -1,5 +1,122 @@
 [
   {
+    "address": "538 Cadillac St & Loma Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "This is a street-level exterior image, and there may be issues not visible in the image, such as interior conditions, structural integrity, or maintenance activities not visible from this angle."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.885,
+            "width": 0.773,
+            "x": 0.083,
+            "y": 0.065
+          },
+          "confidence": "high",
+          "label": "Exterior of house",
+          "reason": "A single-family home with a blue exterior, appearing well-maintained and with a visible yard."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "cautious image-only flags not already reflected in known_data"
+      ],
+      "property_type_guess": "single-family",
+      "provider": "ollama:llava:latest",
+      "summary": "A single-family home with a blue exterior, appearing well-maintained and with a visible yard.",
+      "visible_conditions": [
+        "maintained lawn",
+        "paved driveway",
+        "clear exterior"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: cautious image-only flags not already reflected in known_data",
+      "Needs human review"
+    ],
+    "id": 568,
+    "image": "images/parcel-000568.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 88559,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.081138627842094,
+    "lon": -76.14754052846784,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-15-060",
+    "published_at": "2026-09-21T14:06:01+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "538 Cadillac St & Loma Ave"
+  },
+  {
     "address": "526 Cadillac St",
     "ai_analysis": {
       "available": true,
