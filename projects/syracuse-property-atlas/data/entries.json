@@ -1,5 +1,135 @@
 [
   {
+    "address": "612 Cadillac St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "image age not visible, obstructed view due to angle, unclear if the entire property is visible, and potential for other unrecorded issues not evident in this image"
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "good",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "poor",
+        "yard_or_lot": "poor"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.812,
+            "width": 0.314,
+            "x": 0.614,
+            "y": 0.604
+          },
+          "confidence": "high",
+          "label": "damaged window frame",
+          "reason": "damage to window frame"
+        },
+        {
+          "bbox": {
+            "height": 0.909,
+            "width": 0.278,
+            "x": 0.637,
+            "y": 0.801
+          },
+          "confidence": "high",
+          "label": "encroaching vegetation",
+          "reason": "vegetation overgrowth"
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "cautious image-only flags not already reflected in known_data"
+      ],
+      "property_type_guess": "single_family|two_family|multifamily|commercial|mixed_use|vacant_lot|unclear",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows an exterior of a property with visible deterioration and neglect. A window frame appears damaged, and there's a small amount of vegetation encroaching into the foundation area.",
+      "visible_conditions": [
+        "structural damage visible",
+        "vegetation encroaching into foundation",
+        "damaged window frame"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "yes",
+        "vacancy_signs_visible": "yes"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: cautious image-only flags not already reflected in known_data",
+      "Needs human review"
+    ],
+    "id": 590,
+    "image": "images/parcel-000590.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 43633,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08156116826413,
+    "lon": -76.14689258169587,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-16-010",
+    "published_at": "2026-09-22T12:06:19+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue",
+      "structural damage visible",
+      "vacancy signs visible"
+    ],
+    "title": "612 Cadillac St"
+  },
+  {
     "address": "124 Englert Ave",
     "ai_analysis": {
       "available": true,
