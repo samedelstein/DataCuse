@@ -1,5 +1,98 @@
 [
   {
+    "address": "103 St Mary'S Ter",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "A large tree partially obstructs the view of the front facade and entry of the house."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image shows a single-family residence with a well-maintained yard and an attached garage, though a large tree partially obscures the front of the house.",
+      "visible_conditions": [
+        "The property features a two-story single-family home with light-colored siding and dark shutters.",
+        "An attached two-car garage with white doors is visible.",
+        "The front yard contains a large, mature tree and well-maintained lawn and shrubs.",
+        "A paved driveway leads from the street to the garage."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 586,
+    "image": "images/parcel-000586.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 92512,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08032269411723,
+    "lon": -76.14734956802188,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-15-250",
+    "published_at": "2026-09-22T08:03:05+00:00",
+    "review_reasons": [],
+    "title": "103 St Mary'S Ter"
+  },
+  {
     "address": "105 St Mary'S Ter",
     "ai_analysis": {
       "available": true,
