@@ -1,5 +1,101 @@
 [
   {
+    "address": "327 Malverne Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Assessment is based solely on the provided street-level exterior image."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a well-maintained single-family residence with intentional landscaping.",
+      "visible_conditions": [
+        "The property features light blue siding with white trim and black shutters.",
+        "A dark shingled roof is visible, appearing to be in good condition.",
+        "The front entry includes white steps and railings, with a white front door.",
+        "The front yard contains a mowed lawn, various garden beds with flowers, and ornamental shrubs.",
+        "Window boxes with flowers are present on the first-floor windows.",
+        "A paved asphalt driveway leads to a detached garage in the rear.",
+        "A house number '327' is clearly visible above the front door."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 597,
+    "image": "images/parcel-000597.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 72599,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08131726228934,
+    "lon": -76.14614916403607,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-16-080",
+    "published_at": "2026-09-22T19:03:08+00:00",
+    "review_reasons": [],
+    "title": "327 Malverne Dr"
+  },
+  {
     "address": "329 Malverne Dr",
     "ai_analysis": {
       "available": true,
