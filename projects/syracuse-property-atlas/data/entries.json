@@ -1,5 +1,121 @@
 [
   {
+    "address": "313 Malverne Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image is a street-level view and may not reflect current conditions."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.45,
+            "width": 0.4,
+            "x": 0.0,
+            "y": 0.55
+          },
+          "confidence": "high",
+          "label": "Driveway wear",
+          "reason": "Visible cracking and deterioration of the asphalt surface on the driveway."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "The asphalt driveway appears to have visible cracking and wear."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image shows a single-family residence with dark gray siding, a small front porch, and a maintained lawn, with a detached garage visible in the rear.",
+      "visible_conditions": [
+        "A single-story residence with an attic dormer is visible.",
+        "The main structure features dark gray horizontal siding with white trim.",
+        "The gable roof has dark shingles, and no obvious damage is visible from this angle.",
+        "The front entry includes a small overhang and steps, which appear to be painted.",
+        "Multiple windows are present, including a large picture window on the front facade with decorative white trim.",
+        "The grass lawn appears maintained, with trimmed foundation shrubs.",
+        "An asphalt driveway leads to a detached garage located in the rear of the property.",
+        "The asphalt driveway shows visible cracking and wear in the foreground.",
+        "A small collection of decorative items is visible near the front window."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: The asphalt driveway appears to have visible cracking and wear."
+    ],
+    "id": 600,
+    "image": "images/parcel-000600.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 71729,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08109073675399,
+    "lon": -76.14582318850202,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-16-110",
+    "published_at": "2026-09-22T22:03:03+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "313 Malverne Dr"
+  },
+  {
     "address": "317 Malverne Dr",
     "ai_analysis": {
       "available": true,
