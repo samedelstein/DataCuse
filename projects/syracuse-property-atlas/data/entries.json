@@ -1,5 +1,132 @@
 [
   {
+    "address": "104 St Mary'S Ter",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "While the image shows the exterior of the property, it does not provide information about the interior conditions, which could include structural issues, plumbing, electrical systems, or other maintenance-related concerns. Also, the image does not capture potential landscaping issues that might not be immediately visible, such as overgrowth or encroachment on the public right-of-way."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.705,
+            "width": 0.469,
+            "x": 0.173,
+            "y": 0.386
+          },
+          "confidence": "high",
+          "label": "normal lawn",
+          "reason": "The lawn appears to be well-maintained and healthy."
+        },
+        {
+          "bbox": {
+            "height": 0.569,
+            "width": 0.663,
+            "x": 0.209,
+            "y": 0.217
+          },
+          "confidence": "medium",
+          "label": "tree growth",
+          "reason": "The tree in front of the house has a full canopy, which might require regular trimming to prevent overgrowth."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "The image is a before-and-after comparison, so it may not capture any changes or maintenance activities that might not be immediately visible. The property appears to have a well-maintained exterior, but it's important to consider other aspects of property maintenance, such as interior conditions, plumbing, electrical, and foundation issues, which might not be visible from an exterior-only image."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "ollama:llava:latest",
+      "summary": "This is a two-frame image showing a residential property before and after a possible landscaping or maintenance activity. The visible exterior appears to be in good condition with no major issues visible, aside from some minor landscaping concerns that might require attention. The property seems to have a well-maintained lawn and yard area, with no visible overgrowth or structural issues.",
+      "visible_conditions": [
+        "The property is a single-family residence, with a two-car garage. The visible exterior is in good condition with no significant visible issues. The lawn is green and appears to be well-maintained.",
+        "A tree with dense foliage is in front of the house, which might be beneficial for privacy and aesthetics. The roof of the house is in good condition, and the windows and doors do not show any signs of damage or neglect. The driveway is clear, and there are no visible debris, trash, or overgrowth."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: The image is a before-and-after comparison, so it may not capture any changes or maintenance activities that might not be immediately visible. The property appears to have a well-maintained exterior, but it's important to consider other aspects of property maintenance, such as interior conditions, plumbing, electrical, and foundation issues, which might not be visible from an exterior-only image.",
+      "Needs human review"
+    ],
+    "id": 584,
+    "image": "images/parcel-000584.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 99940,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.080176707378435,
+    "lon": -76.14673722166727,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-15-230",
+    "published_at": "2026-09-22T06:07:47+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "104 St Mary'S Ter"
+  },
+  {
     "address": "102 St Mary'S Ter",
     "ai_analysis": {
       "available": true,
