@@ -1,5 +1,88 @@
 [
   {
+    "address": "102 St Mary'S Ter",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "A large ornamental shrub in the foreground significantly obstructs the view of the main structure's lower level, garage doors, and front entry."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A residential property with a paved driveway and a parked silver sedan, partially obscured by a large ornamental reddish-purple shrub in the foreground.",
+      "visible_conditions": [
+        "Paved driveway appears to be in good condition",
+        "Siding and roof on the visible portions of the main structure appear intact",
+        "A large, dense ornamental shrub in the foreground partially obstructs the lower facade and garage area"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 583,
+    "image": "images/parcel-000583.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 89687,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07998940104102,
+    "lon": -76.14685954296884,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-15-220",
+    "published_at": "2026-09-22T05:03:02+00:00",
+    "review_reasons": [],
+    "title": "102 St Mary'S Ter"
+  },
+  {
     "address": "100 St Mary'S Ter",
     "ai_analysis": {
       "available": true,
