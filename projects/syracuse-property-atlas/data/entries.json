@@ -1,5 +1,131 @@
 [
   {
+    "address": "1617 Court St & Loma Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The property is heavily obscured by dense trees and a wooden fence, limiting the visibility of the main structure and its conditions.",
+        "The view may not fully represent the entire parcel."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "unclear",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "low",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.25,
+            "width": 1.0,
+            "x": 0.0,
+            "y": 0.75
+          },
+          "confidence": "medium",
+          "label": "Minor ground debris",
+          "reason": "Small pieces of debris are scattered on the asphalt and the edge of the grass in the foreground."
+        },
+        {
+          "bbox": {
+            "height": 0.2,
+            "width": 1.0,
+            "x": 0.0,
+            "y": 0.6
+          },
+          "confidence": "medium",
+          "label": "Unkempt grass and weeds",
+          "reason": "The grassy strip between the street and the fence appears unmanaged with varying grass heights and some visible weeds."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Minor ground debris visible in the front lot area.",
+        "Unkempt grass and some weeds in the visible front lot area."
+      ],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property's exterior conditions are largely obscured by dense trees and a wooden fence, with only limited views of a structure and the front lot.",
+      "visible_conditions": [
+        "Dense trees and a wooden fence largely obscure the property from street view.",
+        "A portion of a light-colored structure is partially visible behind the fence and trees.",
+        "The front lot area visible from the street has some unkempt grass and minor ground debris."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Minor ground debris visible in the front lot area.",
+      "Image-only flag: Unkempt grass and some weeds in the visible front lot area.",
+      "Needs human review"
+    ],
+    "id": 578,
+    "image": "images/parcel-000578.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 124474,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07939112506604,
+    "lon": -76.14502707369218,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-15-170",
+    "published_at": "2026-09-22T00:03:14+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "1617 Court St & Loma Ave"
+  },
+  {
     "address": "223 Loma Ave",
     "ai_analysis": {
       "available": true,
