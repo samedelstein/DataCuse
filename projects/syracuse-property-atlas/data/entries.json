@@ -1,5 +1,101 @@
 [
   {
+    "address": "333 Malverne Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Sun glare partially obscures a clear view of the roof's condition."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property appears to be a single-family residence with a generally maintained exterior, including a paved driveway and a front porch.",
+      "visible_conditions": [
+        "White siding on the main structure.",
+        "Dark-colored roof shingles are visible, though partially obscured by sun glare.",
+        "A front porch with a railing and an American flag displayed.",
+        "A paved driveway leads to a detached garage at the rear of the property.",
+        "Maintained grass lawn in the front and side yards.",
+        "Some foundation plantings are visible near the house.",
+        "A brick chimney is visible on the roofline."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 595,
+    "image": "images/parcel-000595.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 63532,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08146827921798,
+    "lon": -76.14636648239059,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-16-060",
+    "published_at": "2026-09-22T17:02:57+00:00",
+    "review_reasons": [],
+    "title": "333 Malverne Dr"
+  },
+  {
     "address": "337 Malverne Dr",
     "ai_analysis": {
       "available": true,
