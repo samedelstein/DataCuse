@@ -1,5 +1,100 @@
 [
   {
+    "address": "341 Malverne Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view of the roof is somewhat limited due to the image angle and tree cover."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property appears to be a single-family residence with a two-tone exterior, a mowed lawn, and some foundation plantings, generally appearing maintained.",
+      "visible_conditions": [
+        "The house features a two-tone exterior with white siding on the upper portion and orange or red horizontal siding on the lower section.",
+        "The roof is partially visible and appears to be in fair condition.",
+        "Windows appear intact, with some featuring dark shutters.",
+        "The front yard contains a mowed lawn and what appears to be intentional foundation plantings.",
+        "A paved driveway is visible along the left side of the property.",
+        "Mature trees are present, with one partially obscuring the front of the house."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 593,
+    "image": "images/parcel-000593.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 95876,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08159647516812,
+    "lon": -76.14659992965615,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-16-040",
+    "published_at": "2026-09-22T15:02:55+00:00",
+    "review_reasons": [],
+    "title": "341 Malverne Dr"
+  },
+  {
     "address": "345 Malverne Dr",
     "ai_analysis": {
       "available": true,
