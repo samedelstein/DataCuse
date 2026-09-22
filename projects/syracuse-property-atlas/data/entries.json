@@ -1,5 +1,122 @@
 [
   {
+    "address": "345 Malverne Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Sun glare significantly obscures the roof and some upper portions of the facade, making a full assessment difficult.",
+        "The image appears to be from 2020, so current conditions may differ."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "unclear",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.05,
+            "width": 0.5,
+            "x": 0.45,
+            "y": 0.75
+          },
+          "confidence": "medium",
+          "label": "Siding discoloration/wear",
+          "reason": "Visible discoloration or wear on the lower siding above the foundation."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Possible discoloration or wear visible on the lower portion of the siding, near the foundation.",
+        "The front entry steps may show some signs of wear."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image displays a two-story single-family residence with light-colored siding, a front yard, and an asphalt driveway leading to a detached garage.",
+      "visible_conditions": [
+        "The property features a two-story structure with light brown or tan siding and white window trim and shutters.",
+        "A darker foundation is visible beneath the siding.",
+        "The front yard consists of grass that appears to be maintained.",
+        "An asphalt driveway runs along the left side of the house, leading to a detached garage at the rear of the property.",
+        "Hedges are present along the left side of the driveway, appearing to be trimmed landscaping.",
+        "Steps with a railing lead to the front entry of the house.",
+        "The roof is dark-colored, possibly asphalt shingles, but details are obscured by sun glare."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Possible discoloration or wear visible on the lower portion of the siding, near the foundation.",
+      "Image-only flag: The front entry steps may show some signs of wear."
+    ],
+    "id": 592,
+    "image": "images/parcel-000592.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 66506,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08169480302824,
+    "lon": -76.14669246193043,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-16-030",
+    "published_at": "2026-09-22T14:03:01+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "345 Malverne Dr"
+  },
+  {
     "address": "614 Cadillac St & Malverne Dr",
     "ai_analysis": {
       "available": true,
