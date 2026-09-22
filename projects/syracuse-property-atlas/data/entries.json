@@ -1,5 +1,144 @@
 [
   {
+    "address": "100 St Mary'S Ter",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image is not detailed enough to identify additional issues that might exist, such as maintenance problems not visible in the image or code violations"
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "good",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.693",
+            "width": "0.648",
+            "x": "0.133",
+            "y": "0.306"
+          },
+          "confidence": "high",
+          "label": "Roof in good condition",
+          "reason": "The roof appears to be in good condition with no visible signs of damage or neglect."
+        },
+        {
+          "bbox": {
+            "height": "0.859",
+            "width": "0.591",
+            "x": "0.578",
+            "y": "0.579"
+          },
+          "confidence": "medium",
+          "label": "Fence on right side",
+          "reason": "A fence is visible on the right side of the image."
+        },
+        {
+          "bbox": {
+            "height": "0.859",
+            "width": "0.591",
+            "x": "0.578",
+            "y": "0.579"
+          },
+          "confidence": "medium",
+          "label": "Yard with mix of grass and weeds",
+          "reason": "The yard has a mix of grass and weeds, which indicates that maintenance is needed."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "The image is not detailed enough to identify additional issues that might exist, such as maintenance problems not visible in the image or code violations"
+      ],
+      "property_type_guess": "single_family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a residential property with a yard. The condition of the property appears to be fair, with some maintenance issues evident. The yard has a mix of grass and weeds. A fence is visible on the right side of the image. The roof appears to be in good condition, and there are no clear signs of structural damage or active construction.",
+      "visible_conditions": [
+        "maintained roof",
+        "yard with grass and weeds",
+        "fence on right side"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: The image is not detailed enough to identify additional issues that might exist, such as maintenance problems not visible in the image or code violations",
+      "Needs human review"
+    ],
+    "id": 582,
+    "image": "images/parcel-000582.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 138065,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.079754909552214,
+    "lon": -76.14693373154502,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-15-210",
+    "published_at": "2026-09-22T04:06:55+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "100 St Mary'S Ter"
+  },
+  {
     "address": "116 Englert Ave & St Mary",
     "ai_analysis": {
       "available": true,
