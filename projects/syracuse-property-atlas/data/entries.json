@@ -1,5 +1,124 @@
 [
   {
+    "address": "337 Malverne Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view of the roof is partially obscured by trees, limiting a full assessment.",
+        "The exact location of the debris (on private property versus public right-of-way) is not definitively clear from the image alone, though it is immediately in front of the property."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "unclear",
+        "siding_or_facade": "fair",
+        "trash_debris": "major",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.31",
+            "width": "0.45",
+            "x": "0.00",
+            "y": "0.69"
+          },
+          "confidence": "high",
+          "label": "Debris accumulation",
+          "reason": "A significant pile of discarded materials is visible in the foreground, potentially on the property's edge or public way."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Accumulation of debris visible in the foreground."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image shows a single-family residence with a light-colored facade, a small front porch, and a maintained lawn, though a significant accumulation of debris is visible in the immediate foreground.",
+      "visible_conditions": [
+        "One-and-a-half story single-family residence with a gabled roof.",
+        "Exterior facade appears to be light tan siding or paneling.",
+        "A small front porch with steps leads to a wooden front door.",
+        "Windows are visible on the front facade, with an air conditioning unit installed in one.",
+        "The front yard features a grass lawn and some ornamental plantings, including a small evergreen.",
+        "A low wooden picket fence is present along the front of the property.",
+        "A paved driveway runs along the side of the house.",
+        "A blue recycling bin is visible near the driveway.",
+        "A large pile of what appears to be construction debris or discarded items is visible in the foreground, on the edge of the property or public way."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Accumulation of debris visible in the foreground.",
+      "Needs human review"
+    ],
+    "id": 594,
+    "image": "images/parcel-000594.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 121636,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08154378707768,
+    "lon": -76.14647514197152,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-16-050",
+    "published_at": "2026-09-22T16:03:00+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "337 Malverne Dr"
+  },
+  {
     "address": "341 Malverne Dr",
     "ai_analysis": {
       "available": true,
