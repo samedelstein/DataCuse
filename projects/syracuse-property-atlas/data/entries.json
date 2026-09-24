@@ -1,5 +1,101 @@
 [
   {
+    "address": "307 Malverne Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "unclear",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property appears to be a two-story residential structure with a red upper facade and a white lower facade, featuring a front porch and a well-maintained yard with landscaping.",
+      "visible_conditions": [
+        "The property features a two-story residential structure with a gable roof.",
+        "The upper portion of the facade is red siding, while the lower portion and front porch area are white siding or trim.",
+        "A front porch with multiple windows is visible.",
+        "The roof appears to be a dark shingle type, partially visible from the street.",
+        "A tall, well-maintained evergreen tree is prominently situated in the front yard.",
+        "Shrubs and garden beds are present around the foundation and along the driveway.",
+        "An asphalt driveway extends alongside the house, leading towards a detached garage visible in the rear.",
+        "A concrete walkway leads from the public sidewalk to the front entry.",
+        "A brick chimney is visible on the right side of the structure."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 602,
+    "image": "images/parcel-000602.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 93348,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08093971951548,
+    "lon": -76.14560587281194,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-16-130",
+    "published_at": "2026-09-24T12:02:55+00:00",
+    "review_reasons": [],
+    "title": "307 Malverne Dr"
+  },
+  {
     "address": "309 Malverne Dr",
     "ai_analysis": {
       "available": true,
