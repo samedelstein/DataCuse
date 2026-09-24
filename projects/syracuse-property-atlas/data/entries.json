@@ -1,5 +1,82 @@
 [
   {
+    "address": "301 Malverne Dr & Weldon Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "ollama:llava:latest",
+      "summary": "{\"summary\": \"The image shows a two-story white house with dark roofing. The front yard features a well-maintained lawn with some visible shrubs and a small area of what appears to be a garden or flower bed. There is no visible debris or overgrowth, and the structure looks well-maintained. There are no signs of vacancy, active construction, or structural damage. The windows are visible and clean. The property is situated at an intersection with a clear view of the surrounding area.\", \"property_type_guess\": \"single-family residential\", \"visible_conditions\": [\"good siding or facade\", \"good windows and doors\", \"good roof\", \"good porch or entry\", \"good yard or lot\", \"none_visible|minor|major|unclear|trash_debris|vegetation_overgrowth\", \"none_visible|minor|major|unclear|boarded_windows_or_doors|fire_damage|structural_damage\"], \"visible_flags\": {\"boarded_windows_or_doors\": \"no\", \"fire_damage\": \"no\", \"structural_damage\": \"no\", \"vacancy_signs_visible\": \"no\", \"active_construction_visible\": \"no\"}, \"possible_unrecorded_issues\": [\"none visible\"], \"image_annotations\": [{\"label\": \"none\", \"reason\": \"The property appears to be well-maintained with no visible issues.\", \"bbox\": {\"x\": \"0-1\", \"y\": \"0-1\", \"width\": \"0-1\", \"height\": \"0-1\"}}, \"needs_human_review: true\", \"confidence: high\", \"caveats: \" \n\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 603,
+    "image": "images/parcel-000603.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 81082,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08086421029168,
+    "lon": -76.14549721537055,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-16-140",
+    "published_at": "2026-09-24T13:05:47+00:00",
+    "review_reasons": [],
+    "title": "301 Malverne Dr & Weldon Ave"
+  },
+  {
     "address": "307 Malverne Dr",
     "ai_analysis": {
       "available": true,
