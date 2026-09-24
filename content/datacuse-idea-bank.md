@@ -51,6 +51,9 @@ See the [data guide](datacuse-data-guide.md) for source paths, downloads, access
      **Start:** Download the Syracuse municipal polygon and calculate its area-weighted centroid.
 
      **Watch:** Choose land-only versus full municipal area; centroid differs from visual center.
+
+     **Sam's app idea:** Build a companion web app that uses the visitor's location to show which direction to face the center of Syracuse and how many miles away it is. [Saved feature brief](datacuse-data-guide.md#dc007-companion-app).
+     
 6. Where is its population center?
 
      **Data:** Public. **Effort:** Setup. **Sources:** [census](datacuse-data-guide.md#census), [boundary](datacuse-data-guide.md#boundary).
@@ -66,7 +69,7 @@ See the [data guide](datacuse-data-guide.md) for source paths, downloads, access
 
      **Watch:** The app needs a documented center coordinate; visitors' locations alone do not measure where they think the center is.
 
-     **Sam's app idea:** Build a companion web app that uses the visitor's location to show which direction to face the center of Syracuse and how many miles away it is. [Saved feature brief](datacuse-data-guide.md#dc007-companion-app).
+
 8. Which intersection has the most streets meeting at it?
 
      **Data:** Local. **Effort:** Setup. **Sources:** [streets](datacuse-data-guide.md#streets).

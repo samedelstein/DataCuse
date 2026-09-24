@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "geometry_windows_checked": 642,
+  "toy_cases": [
+    "straight line",
+    "right-angle elbow"
+  ],
+  "checks": [
+    "independent endpoint distance",
+    "independent maximum finite-chord offset",
+    "path length",
+    "name-run length conservation",
+    "name-change counts",
+    "baseline and sensitivity maxima"
+  ]
+}

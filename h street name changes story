@@ -1,0 +1,104 @@
+warning: in the working copy of 'content/datacuse-idea-bank.md', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'stories/.generated.json', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'stories/feed.xml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'stories/index.html', LF will be replaced by CRLF the next time Git touches it
+[1mdiff --git a/content/datacuse-idea-bank.md b/content/datacuse-idea-bank.md[m
+[1mindex 45b9882..5fecd14 100644[m
+[1m--- a/content/datacuse-idea-bank.md[m
+[1m+++ b/content/datacuse-idea-bank.md[m
+[36m@@ -51,6 +51,9 @@[m [mSee the [data guide](datacuse-data-guide.md) for source paths, downloads, access[m
+      **Start:** Download the Syracuse municipal polygon and calculate its area-weighted centroid.[m
+ [m
+      **Watch:** Choose land-only versus full municipal area; centroid differs from visual center.[m
+[32m+[m
+[32m+[m[32m     **Sam's app idea:** Build a companion web app that uses the visitor's location to show which direction to face the center of Syracuse and how many miles away it is. [Saved feature brief](datacuse-data-guide.md#dc007-companion-app).[m
+[32m+[m[41m     [m
+ 6. Where is its population center?[m
+ [m
+      **Data:** Public. **Effort:** Setup. **Sources:** [census](datacuse-data-guide.md#census), [boundary](datacuse-data-guide.md#boundary).[m
+[36m@@ -66,7 +69,7 @@[m [mSee the [data guide](datacuse-data-guide.md) for source paths, downloads, access[m
+ [m
+      **Watch:** The app needs a documented center coordinate; visitors' locations alone do not measure where they think the center is.[m
+ [m
+[31m-     **Sam's app idea:** Build a companion web app that uses the visitor's location to show which direction to face the center of Syracuse and how many miles away it is. [Saved feature brief](datacuse-data-guide.md#dc007-companion-app).[m
+[32m+[m
+ 8. Which intersection has the most streets meeting at it?[m
+ [m
+      **Data:** Local. **Effort:** Setup. **Sources:** [streets](datacuse-data-guide.md#streets).[m
+[1mdiff --git a/content/datacuse-story-tracker.csv b/content/datacuse-story-tracker.csv[m
+[1mindex 1b65064..99896a7 100644[m
+[1m--- a/content/datacuse-story-tracker.csv[m
+[1m+++ b/content/datacuse-story-tracker.csv[m
+[36m@@ -2,7 +2,7 @@[m
+ DC001,"Streets, names, and the small absurdities of geography",Does Oak Street actually have any oak trees?,Published,,"Published on DataCuse; live article verified on 2026-09-18. Numbered post folder contains the story, images, and analysis.",,C:\Users\samie\Projects\datacuse\DataCuse\content\1_oak_street_trees\story\index.md,https://www.datacuse.com/stories/oak-street-trees/,2026-09-18,[m
+ "DC002","Streets, names, and the small absurdities of geography","What is Syracuse’s shortest named street?","Published","","Published on DataCuse; live article verified on 2026-09-19. Covers full-name letter counts, mapped street segments, and connected whole streets; explains the South Avenue junction caveat.","","C:\Users\samie\Projects\datacuse\DataCuse\content\2_shortest_street\story\index.md","https://www.datacuse.com/stories/syracuse-shortest-street/","2026-09-19","DC017"[m
+ "DC003","Streets, names, and the small absurdities of geography","What is its longest street—and where does it really end?","Ready","","Draft and five graphics checked 2026-09-20. Canal Street: longest individual source feature, 3,359 ft. Literal longest name field: East Brighton Avenue Avenue Northbound, 34 letters, with anomaly disclosed. South Salina: 4.66 miles inside Syracuse; Erie carriageways checked separately (5.93 summed versus about 3.57 along corridor). No field or street-sign survey. Unpublished; ready for editorial review.","https://services6.arcgis.com/EbVsqZ18sv1kVJ3k/arcgis/rest/services/NYS_Streets/FeatureServer/0; https://gisservices.its.ny.gov/arcgis/rest/services/NYS_Civil_Boundaries/MapServer/4; snapshot 2026-09-19; NYS 2022 aerial imagery","C:\Users\samie\Projects\datacuse\DataCuse\content\3_longest_street\story\index.md","","","DC002"[m
+[31m-"DC004","Streets, names, and the small absurdities of geography","Which street changes names the most without making you turn?","Idea","","","","","","",""[m
+[32m+[m[32m"DC004","Streets, names, and the small absurdities of geography","Which street changes names the most without making you turn?","Ready","","Revised draft distinguishes whole-path straightness from continuity. Among 218 defined windows, max 2 changes with <=10 m chord departure and <=1% extra distance, 50 m lead-in/out. Monticello South-North-Springbrook: 686.8 m, 0.20% extra, 7.1 m departure; names agree with city map. Tennyson-Burnet Park-Tennyson ties in NYS but city map calls the insert Tennyson. Original 4-change chains curve substantially. 642 geometry windows independently validated; 12 aerial transitions checked; three new graphics. Bounded chain/window search, not a universal record. Unpublished.","NYS Streets and NYS city boundaries, saved 2026-09-19 snapshot; NYS 2022 aerial imagery; analysis/methodology.md","C:\Users\samie\Projects\datacuse\DataCuse\content\4_name_changes\story\index.md","","",""[m
+ "DC005","Streets, names, and the small absurdities of geography","Where is Syracuse’s geographic center?","Idea","","","","","","",""[m
+ "DC006","Streets, names, and the small absurdities of geography","Where is its population center?","Idea","","","","","","",""[m
+ DC007,"Streets, names, and the small absurdities of geography",What location do residents think is the center?,Idea,,Build a companion web app for this post: use the visitor location to show the direction to face the defined center of Syracuse and straight-line distance in miles. Include a compass where supported and a bearing/map fallback. See datacuse-data-guide.md#dc007-companion-app.,,,,,[m
+[1mdiff --git a/index.html b/index.html[m
+[1mindex b17a99b..a545c47 100644[m
+[1m--- a/index.html[m
+[1m+++ b/index.html[m
+[36m@@ -96,8 +96,8 @@[m
+       <p class="section-intro">Small discoveries, curious maps, and stories about Syracuse—one question at a time.</p>[m
+       <div class="story-list">[m
+ <article><p class="label">Streets &middot; <time datetime="2026-09-20">September 20, 2026</time></p><h3><a href="/stories/syracuse-longest-street/">What&#39;s Syracuse&#39;s longest street—and where does it really end?</a></h3><p>Canal Street goes the distance, one street name repeats itself, and South Salina wins after Erie Boulevard stops getting double credit.</p></article>[m
+[32m+[m[32m<article><p class="label">Streets &middot; <time datetime="2026-09-20">September 20, 2026</time></p><h3><a href="/stories/syracuse-street-name-changes/">How many names can a straight road have?</a></h3><p>Monticello South becomes Monticello North, then Springbrook. A ruler test separates Syracuse&#39;s straight stretches from roads that merely keep going.</p></article>[m
+ <article><p class="label">Streets &middot; <time datetime="2026-09-19">September 19, 2026</time></p><h3><a href="/stories/syracuse-shortest-street/">What&#39;s Syracuse&#39;s shortest street?</a></h3><p>Two seven-letter names, one tiny lane, and a mapping wrinkle: Syracuse&#39;s shortest streets take us in three directions.</p></article>[m
+[31m-<article><p class="label">Trees &middot; <time datetime="2026-09-18">September 18, 2026</time></p><h3><a href="/stories/oak-street-trees/">Are there oak trees on Oak Street?</a></h3><p>Six oaks, 56 maples, and a spreadsheet investigation into whether Syracuse trees take street names literally.</p></article>[m
+       </div>[m
+       <p class="source-links"><a href="/stories/">Browse all stories</a><a href="/stories/feed.xml">Subscribe by RSS</a></p>[m
+       <!-- stories:end -->[m
+[1mdiff --git a/stories/.generated.json b/stories/.generated.json[m
+[1mindex 8e77259..aceaca0 100644[m
+[1m--- a/stories/.generated.json[m
+[1m+++ b/stories/.generated.json[m
+[36m@@ -10,5 +10,15 @@[m
+   "stories/syracuse-shortest-street/assets/shortest-names-letterboard.png",[m
+   "stories/syracuse-shortest-street/assets/street-suffixes-long-way.png",[m
+   "stories/syracuse-shortest-street/assets/short-streets-same-ruler.png",[m
+[31m-  "stories/syracuse-shortest-street/assets/oak-street-pieces-and-whole.png"[m
+[32m+[m[32m  "stories/syracuse-shortest-street/assets/oak-street-pieces-and-whole.png",[m
+[32m+[m[32m  "stories/syracuse-longest-street/index.html",[m
+[32m+[m[32m  "stories/syracuse-longest-street/assets/longest-streets-map.png",[m
+[32m+[m[32m  "stories/syracuse-longest-street/assets/longest-single-segment.png",[m
+[32m+[m[32m  "stories/syracuse-longest-street/assets/longest-names-letterboard.png",[m
+[32m+[m[32m  "stories/syracuse-longest-street/assets/erie-double-count.png",[m
+[32m+[m[32m  "stories/syracuse-longest-street/assets/south-salina-endpoints.png",[m
+[32m+[m[32m  "stories/syracuse-street-name-changes/index.html",[m
+[32m+[m[32m  "stories/syracuse-street-name-changes/assets/monticello-straightness.png",[m
+[32m+[m[32m  "stories/syracuse-street-name-changes/assets/tennyson-name-check.png",[m
+[32m+[m[32m  "stories/syracuse-street-name-changes/assets/continuous-versus-straight.png"[m
+ ][m
+[1mdiff --git a/stories/feed.xml b/stories/feed.xml[m
+[1mindex 74818b1..82d100f 100644[m
+[1m--- a/stories/feed.xml[m
+[1m+++ b/stories/feed.xml[m
+[36m@@ -2,6 +2,8 @@[m
+ <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>[m
+ <title>DataCuse Stories &amp; Notes</title><link>https://www.datacuse.com/stories/</link><description>Small discoveries, curious maps, and stories about Syracuse—one question at a time.</description><language>en-us</language>[m
+ <atom:link href="https://www.datacuse.com/stories/feed.xml" rel="self" type="application/rss+xml"/>[m
+[32m+[m[32m<item><title>What&#39;s Syracuse&#39;s longest street—and where does it really end?</title><link>https://www.datacuse.com/stories/syracuse-longest-street/</link><guid isPermaLink="true">https://www.datacuse.com/stories/syracuse-longest-street/</guid><description>Canal Street goes the distance, one street name repeats itself, and South Salina wins after Erie Boulevard stops getting double credit.</description><category>Streets</category><pubDate>Sun, 20 Sep 2026 12:00:00 GMT</pubDate></item>[m
+[32m+[m[32m<item><title>How many names can a straight road have?</title><link>https://www.datacuse.com/stories/syracuse-street-name-changes/</link><guid isPermaLink="true">https://www.datacuse.com/stories/syracuse-street-name-changes/</guid><description>Monticello South becomes Monticello North, then Springbrook. A ruler test separates Syracuse&#39;s straight stretches from roads that merely keep going.</description><category>Streets</category><pubDate>Sun, 20 Sep 2026 12:00:00 GMT</pubDate></item>[m
+ <item><title>What&#39;s Syracuse&#39;s shortest street?</title><link>https://www.datacuse.com/stories/syracuse-shortest-street/</link><guid isPermaLink="true">https://www.datacuse.com/stories/syracuse-shortest-street/</guid><description>Two seven-letter names, one tiny lane, and a mapping wrinkle: Syracuse&#39;s shortest streets take us in three directions.</description><category>Streets</category><pubDate>Sat, 19 Sep 2026 12:00:00 GMT</pubDate></item>[m
+ <item><title>Are there oak trees on Oak Street?</title><link>https://www.datacuse.com/stories/oak-street-trees/</link><guid isPermaLink="true">https://www.datacuse.com/stories/oak-street-trees/</guid><description>Six oaks, 56 maples, and a spreadsheet investigation into whether Syracuse trees take street names literally.</description><category>Trees</category><pubDate>Fri, 18 Sep 2026 12:00:00 GMT</pubDate></item>[m
+ <item><title>Library use across Syracuse</title><link>https://www.datacuse.com/projects/ocpl-library-story/</link><guid isPermaLink="true">https://www.datacuse.com/projects/ocpl-library-story/</guid><description>Read the OCPL Library Use Story, with the underlying library dashboard as its source.</description><category>Libraries</category></item>[m
+[1mdiff --git a/stories/index.html b/stories/index.html[m
+[1mindex 71ad86e..10c83d4 100644[m
+[1m--- a/stories/index.html[m
+[1m+++ b/stories/index.html[m
+[36m@@ -21,7 +21,9 @@[m
+ <body>[m
+   <a class="skip-link" href="#main-content">Skip to main content</a>[m
+   <header class="site-header"><nav class="wrap navigation" aria-label="Primary"><a class="brand" href="/">Data<span>Cuse</span></a><div><a href="/#projects">Tools</a><a href="/stories/" aria-current="page">Stories</a><a href="/#about">About</a></div></nav></header>[m
+[31m-  <main id="main-content" class="wrap story-wrap"><header class="story-heading"><h1>Stories &amp; notes</h1><p class="story-deck">Small discoveries, curious maps, and stories about Syracuse—one question at a time.</p><p><a href="/stories/feed.xml">Subscribe by RSS</a> <span class="note">— add this feed to your preferred reader.</span></p></header><section class="story-list" aria-label="All stories, newest first"><article><p class="label">Streets &middot; <time datetime="2026-09-19">September 19, 2026</time></p><h3><a href="/stories/syracuse-shortest-street/">What&#39;s Syracuse&#39;s shortest street?</a></h3><p>Two seven-letter names, one tiny lane, and a mapping wrinkle: Syracuse&#39;s shortest streets take us in three directions.</p></article>[m
+[32m+[m[32m  <main id="main-content" class="wrap story-wrap"><header class="story-heading"><h1>Stories &amp; notes</h1><p class="story-deck">Small discoveries, curious maps, and stories about Syracuse—one question at a time.</p><p><a href="/stories/feed.xml">Subscribe by RSS</a> <span class="note">— add this feed to your preferred reader.</span></p></header><section class="story-list" aria-label="All stories, newest first"><article><p class="label">Streets &middot; <time datetime="2026-09-20">September 20, 2026</time></p><h3><a href="/stories/syracuse-longest-street/">What&#39;s Syracuse&#39;s longest street—and where does it really end?</a></h3><p>Canal Street goes the distance, one street name repeats itself, and South Salina wins after Erie Boulevard stops getting double credit.</p></article>[m
+[32m+[m[32m<article><p class="label">Streets &middot; <time datetime="2026-09-20">September 20, 2026</time></p><h3><a href="/stories/syracuse-street-name-changes/">How many names can a straight road have?</a></h3><p>Monticello South becomes Monticello North, then Springbrook. A ruler test separates Syracuse&#39;s straight stretches from roads that merely keep going.</p></article>[m
+[32m+[m[32m<article><p class="label">Streets &middot; <time datetime="2026-09-19">September 19, 2026</time></p><h3><a href="/stories/syracuse-shortest-street/">What&#39;s Syracuse&#39;s shortest street?</a></h3><p>Two seven-letter names, one tiny lane, and a mapping wrinkle: Syracuse&#39;s shortest streets take us in three directions.</p></article>[m
+ <article><p class="label">Trees &middot; <time datetime="2026-09-18">September 18, 2026</time></p><h3><a href="/stories/oak-street-trees/">Are there oak trees on Oak Street?</a></h3><p>Six oaks, 56 maples, and a spreadsheet investigation into whether Syracuse trees take street names literally.</p></article>[m
+ <article><p class="label">Libraries &middot; <time datetime="2026-05">May 2026</time></p><h3><a href="/projects/ocpl-library-story/">Library use across Syracuse</a></h3><p>Read the OCPL Library Use Story, with the underlying library dashboard as its source.</p></article>[m
+ <article><p class="label">Poverty &amp; housing &middot; <time datetime="2026-04-29">April 29, 2026</time></p><h3><a href="/projects/below-the-line/">Below the Line 2026</a></h3><p>How has poverty in Syracuse changed since the original 2018 report? Explore housing costs, work, education, transportation, and comparisons with other cities.</p></article>[m

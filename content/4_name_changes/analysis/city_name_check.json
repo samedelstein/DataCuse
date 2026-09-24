@@ -1,0 +1,136 @@
+{
+  "source": "C:\\Users\\samie\\Projects\\datacuse\\DataCuse\\content\\4_name_changes\\analysis\\streets_city_reference.geojson",
+  "sha256": "f799f2bf9e2d1adc6002c1266884a80766fb4f75532f1621cd15d26e2025e7c0",
+  "downloaded": "2026-09-19",
+  "source_url": "https://services6.arcgis.com/bdPqSfflsdgFRVVM/ArcGIS/rest/services/Streets/FeatureServer/0",
+  "audit": [
+    {
+      "names": [
+        "MONTICELLO DRIVE SOUTH",
+        "MONTICELLO DRIVE NORTH",
+        "SPRINGBROOK AVENUE"
+      ],
+      "midpoint_name_checks": [
+        {
+          "nys_name": "MONTICELLO DRIVE SOUTH",
+          "city_name": "MONTICELLO DR S",
+          "city_fid": 5239,
+          "distance_m": 0.710382555997766
+        },
+        {
+          "nys_name": "MONTICELLO DRIVE NORTH",
+          "city_name": "MONTICELLO DR N",
+          "city_fid": 5039,
+          "distance_m": 0.6686387273673681
+        },
+        {
+          "nys_name": "SPRINGBROOK AVENUE",
+          "city_name": "SPRINGBROOK AV",
+          "city_fid": 5296,
+          "distance_m": 0.7960583140943509
+        }
+      ],
+      "matches": [
+        {
+          "name": "MONTICELLO DR N",
+          "id": 5039,
+          "overlap_m": 267.6072907211485
+        },
+        {
+          "name": "ORLANDO AV",
+          "id": 5146,
+          "overlap_m": 10.680626065873025
+        },
+        {
+          "name": "E SENECA TPKE",
+          "id": 5232,
+          "overlap_m": 10.323883254982473
+        },
+        {
+          "name": "MONTICELLO DR N",
+          "id": 5234,
+          "overlap_m": 191.47519783295309
+        },
+        {
+          "name": "MONTICELLO DR S",
+          "id": 5239,
+          "overlap_m": 53.27279553026907
+        },
+        {
+          "name": "E GLEN AV",
+          "id": 5295,
+          "overlap_m": 10.447890147993672
+        },
+        {
+          "name": "SPRINGBROOK AV",
+          "id": 5296,
+          "overlap_m": 60.800437407845074
+        },
+        {
+          "name": "MONTICELLO DR N",
+          "id": 5441,
+          "overlap_m": 129.80895077559288
+        },
+        {
+          "name": "CLARENCE AV",
+          "id": 5443,
+          "overlap_m": 10.584349023165693
+        }
+      ]
+    },
+    {
+      "names": [
+        "TENNYSON AVENUE",
+        "BURNET PARK DRIVE",
+        "TENNYSON AVENUE"
+      ],
+      "midpoint_name_checks": [
+        {
+          "nys_name": "TENNYSON AVENUE",
+          "city_name": "TENNYSON AV",
+          "city_fid": 2250,
+          "distance_m": 0.8879229285152773
+        },
+        {
+          "nys_name": "BURNET PARK DRIVE",
+          "city_name": "TENNYSON AV",
+          "city_fid": 2388,
+          "distance_m": 1.0163790120702383
+        },
+        {
+          "nys_name": "TENNYSON AVENUE",
+          "city_name": "TENNYSON AV",
+          "city_fid": 3113,
+          "distance_m": 0.3543559430546169
+        }
+      ],
+      "matches": [
+        {
+          "name": "TENNYSON AV",
+          "id": 2250,
+          "overlap_m": 71.1412839528343
+        },
+        {
+          "name": "BURNET PARK DR",
+          "id": 2253,
+          "overlap_m": 24.060593777983087
+        },
+        {
+          "name": "TENNYSON AV",
+          "id": 2388,
+          "overlap_m": 34.3192095793996
+        },
+        {
+          "name": "TENNYSON AV",
+          "id": 3113,
+          "overlap_m": 58.367702363741074
+        },
+        {
+          "name": "BURNET PARK DR",
+          "id": 3628,
+          "overlap_m": 16.21963431296068
+        }
+      ]
+    }
+  ]
+}

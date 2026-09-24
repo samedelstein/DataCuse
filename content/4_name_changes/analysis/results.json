@@ -1,0 +1,1330 @@
+{
+  "snapshot": "2026-09-19",
+  "tolerance_m": 0.5,
+  "threshold_degrees": 30,
+  "look_m": 10,
+  "edges": 6224,
+  "chains": 1376,
+  "excluded": {
+    "route designation rather than street name": 1,
+    "not documented public jurisdiction": 1562,
+    "ramp, freeway, driveway, path, service road or other excluded class": 993,
+    "unnamed": 3,
+    "named driveway, ramp or entrance": 27
+  },
+  "ambiguous_grade_contacts": 0,
+  "cycles": [
+    {
+      "names": [
+        "VILLAGE DRIVE"
+      ],
+      "changes": 0,
+      "miles": 0.35773226623523907,
+      "max_join_angle": 15.717583045563877,
+      "cycle": true,
+      "transitions": []
+    }
+  ],
+  "hashes": {
+    "streets_nys_current.geojson": "e80376d86a849b1ef8140310548c80d60f83c2101fd63768fbb11e16a57f03b8",
+    "syracuse_boundary.geojson": "34ca60639588575c9d665ed351a92cbbc9898ec710a3568e4ca1cc7ea5c5bd65"
+  },
+  "top": [
+    {
+      "names": [
+        "CRAWFORD AVENUE",
+        "BROAD STREET",
+        "BERKELEY DRIVE",
+        "OSTROM AVENUE",
+        "COMSTOCK PLACE"
+      ],
+      "changes": 4,
+      "miles": 2.9000966477870183,
+      "max_join_angle": 26.778407757528104,
+      "cycle": false,
+      "transitions": [
+        {
+          "before": "CRAWFORD AVENUE",
+          "after": "BROAD STREET",
+          "angle": 26.778407757528104,
+          "lon": -76.1107579133131,
+          "lat": 43.0310269844787,
+          "before_id": "477440934",
+          "after_id": "477441024"
+        },
+        {
+          "before": "BROAD STREET",
+          "after": "BERKELEY DRIVE",
+          "angle": 23.726846130129122,
+          "lon": -76.1244402863562,
+          "lat": 43.030143628306384,
+          "before_id": "600035974",
+          "after_id": "477441161"
+        },
+        {
+          "before": "BERKELEY DRIVE",
+          "after": "OSTROM AVENUE",
+          "angle": 0.41174692621497944,
+          "lon": -76.1279723237128,
+          "lat": 43.0340466291136,
+          "before_id": "477440185",
+          "after_id": "477440120"
+        },
+        {
+          "before": "OSTROM AVENUE",
+          "after": "COMSTOCK PLACE",
+          "angle": 0.6946472493586773,
+          "lon": -76.1290832396819,
+          "lat": 43.0461166554205,
+          "before_id": "477436667",
+          "after_id": "477436451"
+        }
+      ],
+      "order": 1
+    },
+    {
+      "names": [
+        "STATE FAIR BOULEVARD",
+        "SPENCER STREET",
+        "WEST KIRKPATRICK STREET",
+        "WEST COURT STREET",
+        "COURT STREET"
+      ],
+      "changes": 4,
+      "miles": 2.4979848601141814,
+      "max_join_angle": 16.637541677582266,
+      "cycle": false,
+      "transitions": [
+        {
+          "before": "STATE FAIR BOULEVARD",
+          "after": "SPENCER STREET",
+          "angle": 12.997777157382078,
+          "lon": -76.1806453664855,
+          "lat": 43.05903164400059,
+          "before_id": "510970451",
+          "after_id": "477432063"
+        },
+        {
+          "before": "SPENCER STREET",
+          "after": "WEST KIRKPATRICK STREET",
+          "angle": 16.637541677582266,
+          "lon": -76.17037730208952,
+          "lat": 43.057247636266794,
+          "before_id": "477432597",
+          "after_id": "506021511"
+        },
+        {
+          "before": "WEST KIRKPATRICK STREET",
+          "after": "WEST COURT STREET",
+          "angle": 8.483242497455626,
+          "lon": -76.1611782517462,
+          "lat": 43.0611540081312,
+          "before_id": "507665328",
+          "after_id": "507665325"
+        },
+        {
+          "before": "WEST COURT STREET",
+          "after": "COURT STREET",
+          "angle": 0.31171829767491405,
+          "lon": -76.1604423204244,
+          "lat": 43.0648566290005,
+          "before_id": "477430667",
+          "after_id": "477430642"
+        }
+      ],
+      "order": 2
+    },
+    {
+      "names": [
+        "TOMPKINS STREET",
+        "SOUTH WILBUR AVENUE",
+        "WEST FAYETTE STREET",
+        "EAST FAYETTE STREET"
+      ],
+      "changes": 3,
+      "miles": 4.589720396414167,
+      "max_join_angle": 22.220987140430733,
+      "cycle": false,
+      "transitions": [
+        {
+          "before": "TOMPKINS STREET",
+          "after": "SOUTH WILBUR AVENUE",
+          "angle": 22.220987140430733,
+          "lon": -76.180180277222,
+          "lat": 43.0485676449473,
+          "before_id": "477435764",
+          "after_id": "477435685"
+        },
+        {
+          "before": "SOUTH WILBUR AVENUE",
+          "after": "WEST FAYETTE STREET",
+          "angle": 8.85569272454184,
+          "lon": -76.18002732916341,
+          "lat": 43.04853761487299,
+          "before_id": "477435685",
+          "after_id": "477435809"
+        },
+        {
+          "before": "WEST FAYETTE STREET",
+          "after": "EAST FAYETTE STREET",
+          "angle": 0.17886318046001018,
+          "lon": -76.1522183221517,
+          "lat": 43.04869259930819,
+          "before_id": "477435622",
+          "after_id": "477435628"
+        }
+      ],
+      "order": 3
+    },
+    {
+      "names": [
+        "MCCHESNEY PARK DRIVE",
+        "POND STREET",
+        "NORTH TOWNSEND STREET",
+        "SOUTH TOWNSEND STREET"
+      ],
+      "changes": 3,
+      "miles": 2.6632132352279623,
+      "max_join_angle": 11.20535339889517,
+      "cycle": false,
+      "transitions": [
+        {
+          "before": "MCCHESNEY PARK DRIVE",
+          "after": "POND STREET",
+          "angle": 5.82980736215744,
+          "lon": -76.1460292568309,
+          "lat": 43.07327762537881,
+          "before_id": "477428975",
+          "after_id": "477429107"
+        },
+        {
+          "before": "POND STREET",
+          "after": "NORTH TOWNSEND STREET",
+          "angle": 1.1763480478386146,
+          "lon": -76.1534073502281,
+          "lat": 43.0633675742749,
+          "before_id": "477431010",
+          "after_id": "477431293"
+        },
+        {
+          "before": "NORTH TOWNSEND STREET",
+          "after": "SOUTH TOWNSEND STREET",
+          "angle": 2.4499149831468454,
+          "lon": -76.1455819757695,
+          "lat": 43.05082213187719,
+          "before_id": "509997416",
+          "after_id": "509997479"
+        }
+      ],
+      "order": 4
+    },
+    {
+      "names": [
+        "SOUTH WILBUR AVENUE",
+        "DELAWARE STREET",
+        "WEST ONONDAGA STREET",
+        "TALLMAN STREET"
+      ],
+      "changes": 3,
+      "miles": 2.0514609256715746,
+      "max_join_angle": 18.725950588133603,
+      "cycle": false,
+      "transitions": [
+        {
+          "before": "SOUTH WILBUR AVENUE",
+          "after": "DELAWARE STREET",
+          "angle": 18.725950588133603,
+          "lon": -76.1746323026885,
+          "lat": 43.040385616497986,
+          "before_id": "477438215",
+          "after_id": "477438393"
+        },
+        {
+          "before": "DELAWARE STREET",
+          "after": "WEST ONONDAGA STREET",
+          "angle": 10.302663396764439,
+          "lon": -76.1646383556081,
+          "lat": 43.035512649005184,
+          "before_id": "477439725",
+          "after_id": "477439746"
+        },
+        {
+          "before": "WEST ONONDAGA STREET",
+          "after": "TALLMAN STREET",
+          "angle": 2.8835176128090088,
+          "lon": -76.1643412755571,
+          "lat": 43.03545362794478,
+          "before_id": "477439746",
+          "after_id": "477439756"
+        }
+      ],
+      "order": 5
+    },
+    {
+      "names": [
+        "RENWICK AVENUE",
+        "MARTIN LUTHER KING EAST",
+        "MARTIN LUTHER KING WEST",
+        "HUDSON STREET"
+      ],
+      "changes": 3,
+      "miles": 1.2443825043761791,
+      "max_join_angle": 15.888269647752661,
+      "cycle": false,
+      "transitions": [
+        {
+          "before": "RENWICK AVENUE",
+          "after": "MARTIN LUTHER KING EAST",
+          "angle": 0.01922615394780639,
+          "lon": -76.1428492494712,
+          "lat": 43.034516578274605,
+          "before_id": "477439960",
+          "after_id": "477440005"
+        },
+        {
+          "before": "MARTIN LUTHER KING EAST",
+          "after": "MARTIN LUTHER KING WEST",
+          "angle": 1.7831751455752354,
+          "lon": -76.1488433453411,
+          "lat": 43.033050621263186,
+          "before_id": "800034171",
+          "after_id": "477440549"
+        },
+        {
+          "before": "MARTIN LUTHER KING WEST",
+          "after": "HUDSON STREET",
+          "angle": 15.888269647752661,
+          "lon": -76.1596562604148,
+          "lat": 43.030014599644204,
+          "before_id": "477441190",
+          "after_id": "477441377"
+        }
+      ],
+      "order": 6
+    },
+    {
+      "names": [
+        "WEST FAYETTE STREET",
+        "TENNYSON AVENUE",
+        "BURNET PARK DRIVE",
+        "TENNYSON AVENUE"
+      ],
+      "changes": 3,
+      "miles": 0.5913121946692954,
+      "max_join_angle": 2.458512088818138,
+      "cycle": false,
+      "transitions": [
+        {
+          "before": "WEST FAYETTE STREET",
+          "after": "TENNYSON AVENUE",
+          "angle": 2.075439122431794,
+          "lon": -76.1795052606596,
+          "lat": 43.0480506109472,
+          "before_id": "477435865",
+          "after_id": "477436103"
+        },
+        {
+          "before": "TENNYSON AVENUE",
+          "after": "BURNET PARK DRIVE",
+          "angle": 2.458512088818138,
+          "lon": -76.1850263549048,
+          "lat": 43.045876609641596,
+          "before_id": "477436499",
+          "after_id": "477436542"
+        },
+        {
+          "before": "BURNET PARK DRIVE",
+          "after": "TENNYSON AVENUE",
+          "angle": 0.4148323662472832,
+          "lon": -76.1854993331732,
+          "lat": 43.0456876509216,
+          "before_id": "477436542",
+          "after_id": "477436978"
+        }
+      ],
+      "order": 7
+    },
+    {
+      "names": [
+        "WILSON PLACE",
+        "EAST GIFFORD PARKWAY",
+        "GIFFORD PARKWAY",
+        "EAST GENESEE PARKWAY"
+      ],
+      "changes": 3,
+      "miles": 0.46472109078936785,
+      "max_join_angle": 19.306170493447482,
+      "cycle": false,
+      "transitions": [
+        {
+          "before": "WILSON PLACE",
+          "after": "EAST GIFFORD PARKWAY",
+          "angle": 19.306170493447482,
+          "lon": -76.0842613072023,
+          "lat": 43.04142858601801,
+          "before_id": "477437916",
+          "after_id": "506986299"
+        },
+        {
+          "before": "EAST GIFFORD PARKWAY",
+          "after": "GIFFORD PARKWAY",
+          "angle": 4.297608321578091,
+          "lon": -76.0845673820842,
+          "lat": 43.0414558968898,
+          "before_id": "506986299",
+          "after_id": "506986297"
+        },
+        {
+          "before": "GIFFORD PARKWAY",
+          "after": "EAST GENESEE PARKWAY",
+          "angle": 2.0620215650066567,
+          "lon": -76.0847762332013,
+          "lat": 43.04149974342571,
+          "before_id": "506986297",
+          "after_id": "477437895"
+        }
+      ],
+      "order": 8
+    },
+    {
+      "names": [
+        "VALLEY DRIVE",
+        "GLENWOOD AVENUE",
+        "MCDONALD ROAD"
+      ],
+      "changes": 2,
+      "miles": 3.414811734195548,
+      "max_join_angle": 20.889159469996606,
+      "cycle": false,
+      "transitions": [
+        {
+          "before": "VALLEY DRIVE",
+          "after": "GLENWOOD AVENUE",
+          "angle": 3.251017218611994,
+          "lon": -76.1612833142103,
+          "lat": 43.018494580545294,
+          "before_id": "477443470",
+          "after_id": "477443415"
+        },
+        {
+          "before": "GLENWOOD AVENUE",
+          "after": "MCDONALD ROAD",
+          "angle": 20.889159469996606,
+          "lon": -76.1754962843624,
+          "lat": 43.019520649526896,
+          "before_id": "800038089",
+          "after_id": "477443342"
+        }
+      ],
+      "order": 9
+    },
+    {
+      "names": [
+        "GERE AVENUE",
+        "WEST END DRIVE",
+        "ERIE BOULEVARD WEST"
+      ],
+      "changes": 2,
+      "miles": 2.7219094526527017,
+      "max_join_angle": 21.95010482350336,
+      "cycle": false,
+      "transitions": [
+        {
+          "before": "GERE AVENUE",
+          "after": "WEST END DRIVE",
+          "angle": 18.91192123639696,
+          "lon": -76.1980482542116,
+          "lat": 43.05837764283339,
+          "before_id": "477432331",
+          "after_id": "477432240"
+        },
+        {
+          "before": "WEST END DRIVE",
+          "after": "ERIE BOULEVARD WEST",
+          "angle": 21.95010482350336,
+          "lon": -76.19777631171732,
+          "lat": 43.05911258560249,
+          "before_id": "477432240",
+          "after_id": "477431997"
+        }
+      ],
+      "order": 10
+    },
+    {
+      "names": [
+        "VELASKO ROAD",
+        "SOUTH AVERY AVENUE",
+        "AVERY AVENUE"
+      ],
+      "changes": 2,
+      "miles": 2.4763197987857084,
+      "max_join_angle": 11.736215804352865,
+      "cycle": false,
+      "transitions": [
+        {
+          "before": "VELASKO ROAD",
+          "after": "SOUTH AVERY AVENUE",
+          "angle": 0.43421633311638663,
+          "lon": -76.1881222539028,
+          "lat": 43.0364345751824,
+          "before_id": "477439667",
+          "after_id": "477439435"
+        },
+        {
+          "before": "SOUTH AVERY AVENUE",
+          "after": "AVERY AVENUE",
+          "angle": 1.8777680064890923,
+          "lon": -76.1895523439873,
+          "lat": 43.045048655626,
+          "before_id": "477436787",
+          "after_id": "477436709"
+        }
+      ],
+      "order": 11
+    },
+    {
+      "names": [
+        "NORTH MIDLER AVENUE",
+        "SOUTH MIDLER AVENUE",
+        "SEELEY ROAD"
+      ],
+      "changes": 2,
+      "miles": 2.072740425286513,
+      "max_join_angle": 6.274357972562871,
+      "cycle": false,
+      "transitions": [
+        {
+          "before": "NORTH MIDLER AVENUE",
+          "after": "SOUTH MIDLER AVENUE",
+          "angle": 6.274357972562871,
+          "lon": -76.1052912479909,
+          "lat": 43.068901578021205,
+          "before_id": "477429799",
+          "after_id": "477430321"
+        },
+        {
+          "before": "SOUTH MIDLER AVENUE",
+          "after": "SEELEY ROAD",
+          "angle": 2.7131439094614844,
+          "lon": -76.104086336802,
+          "lat": 43.053523601184395,
+          "before_id": "800066481",
+          "after_id": "477434200"
+        }
+      ],
+      "order": 12
+    },
+    {
+      "names": [
+        "BUTTERNUT STREET",
+        "NORTH FRANKLIN STREET",
+        "SOUTH FRANKLIN STREET"
+      ],
+      "changes": 2,
+      "miles": 1.991976043807739,
+      "max_join_angle": 10.621020229440758,
+      "cycle": false,
+      "transitions": [
+        {
+          "before": "BUTTERNUT STREET",
+          "after": "NORTH FRANKLIN STREET",
+          "angle": 8.885120034149805,
+          "lon": -76.1547043566999,
+          "lat": 43.054749617915796,
+          "before_id": "700000805",
+          "after_id": "477433468"
+        },
+        {
+          "before": "NORTH FRANKLIN STREET",
+          "after": "SOUTH FRANKLIN STREET",
+          "angle": 3.5954334587931944,
+          "lon": -76.1554782930465,
+          "lat": 43.0509546228411,
+          "before_id": "477434865",
+          "after_id": "477435051"
+        }
+      ],
+      "order": 13
+    },
+    {
+      "names": [
+        "DESTINY USA DRIVE",
+        "HARBORSIDE DRIVE",
+        "NBT BANK PARKWAY"
+      ],
+      "changes": 2,
+      "miles": 1.8559252311374583,
+      "max_join_angle": 20.387450100157775,
+      "cycle": false,
+      "transitions": [
+        {
+          "before": "DESTINY USA DRIVE",
+          "after": "HARBORSIDE DRIVE",
+          "angle": 0.7800257030502051,
+          "lon": -76.171077281037,
+          "lat": 43.06727459378639,
+          "before_id": "477454199",
+          "after_id": "600058802"
+        },
+        {
+          "before": "HARBORSIDE DRIVE",
+          "after": "NBT BANK PARKWAY",
+          "angle": 0.6617422691597215,
+          "lon": -76.17095032303621,
+          "lat": 43.074669595403606,
+          "before_id": "477428710",
+          "after_id": "477428696"
+        }
+      ],
+      "order": 14
+    },
+    {
+      "names": [
+        "EAST ADAMS STREET",
+        "WEST ADAMS STREET",
+        "SHONNARD STREET"
+      ],
+      "changes": 2,
+      "miles": 1.372429505045552,
+      "max_join_angle": 23.53895130463759,
+      "cycle": false,
+      "transitions": [
+        {
+          "before": "EAST ADAMS STREET",
+          "after": "WEST ADAMS STREET",
+          "angle": 7.337085097604703,
+          "lon": -76.1515423201375,
+          "lat": 43.042774634854794,
+          "before_id": "477437366",
+          "after_id": "477437526"
+        },
+        {
+          "before": "WEST ADAMS STREET",
+          "after": "SHONNARD STREET",
+          "angle": 23.53895130463759,
+          "lon": -76.1546768251331,
+          "lat": 43.042583905108096,
+          "before_id": "477437541",
+          "after_id": "477437506"
+        }
+      ],
+      "order": 15
+    },
+    {
+      "names": [
+        "NORTH BEECH STREET",
+        "SOUTH BEECH STREET",
+        "MADISON STREET"
+      ],
+      "changes": 2,
+      "miles": 0.9128095346992209,
+      "max_join_angle": 14.19821395156284,
+      "cycle": false,
+      "transitions": [
+        {
+          "before": "NORTH BEECH STREET",
+          "after": "SOUTH BEECH STREET",
+          "angle": 0.24900679237672751,
+          "lon": -76.127623303072,
+          "lat": 43.05041963216809,
+          "before_id": "477435105",
+          "after_id": "477435211"
+        },
+        {
+          "before": "SOUTH BEECH STREET",
+          "after": "MADISON STREET",
+          "angle": 13.376471394367726,
+          "lon": -76.125439269546,
+          "lat": 43.0453606611324,
+          "before_id": "477436647",
+          "after_id": "477436649"
+        }
+      ],
+      "order": 16
+    },
+    {
+      "names": [
+        "WEST STREET ARTERIAL SOUTHBOUND",
+        "SOUTH WEST STREET",
+        "WEST STREET ARTERIAL SOUTHBOUND"
+      ],
+      "changes": 2,
+      "miles": 0.8304192731948172,
+      "max_join_angle": 12.248514751162837,
+      "cycle": false,
+      "transitions": [
+        {
+          "before": "WEST STREET ARTERIAL SOUTHBOUND",
+          "after": "SOUTH WEST STREET",
+          "angle": 1.7131654395492533,
+          "lon": -76.1590293037202,
+          "lat": 43.05041461691409,
+          "before_id": "513530734",
+          "after_id": "477435228"
+        },
+        {
+          "before": "SOUTH WEST STREET",
+          "after": "WEST STREET ARTERIAL SOUTHBOUND",
+          "angle": 12.248514751162837,
+          "lon": -76.1587952997752,
+          "lat": 43.04774865925819,
+          "before_id": "477435936",
+          "after_id": "477436151"
+        }
+      ],
+      "order": 17
+    },
+    {
+      "names": [
+        "MONTICELLO DRIVE SOUTH",
+        "MONTICELLO DRIVE NORTH",
+        "SPRINGBROOK AVENUE"
+      ],
+      "changes": 2,
+      "miles": 0.7820935656963339,
+      "max_join_angle": 2.4933111142268904,
+      "cycle": false,
+      "transitions": [
+        {
+          "before": "MONTICELLO DRIVE SOUTH",
+          "after": "MONTICELLO DRIVE NORTH",
+          "angle": 0.8464025645380459,
+          "lon": -76.13870034799221,
+          "lat": 43.0003135974738,
+          "before_id": "477446020",
+          "after_id": "477445939"
+        },
+        {
+          "before": "MONTICELLO DRIVE NORTH",
+          "after": "SPRINGBROOK AVENUE",
+          "angle": 0.572358365667223,
+          "lon": -76.1386952779007,
+          "lat": 43.0055856015247,
+          "before_id": "477445466",
+          "after_id": "477445283"
+        }
+      ],
+      "order": 18
+    },
+    {
+      "names": [
+        "SUMNER AVENUE",
+        "DORSET ROAD",
+        "CIRCLE ROAD"
+      ],
+      "changes": 2,
+      "miles": 0.6277884135431103,
+      "max_join_angle": 12.543889396563896,
+      "cycle": false,
+      "transitions": [
+        {
+          "before": "SUMNER AVENUE",
+          "after": "DORSET ROAD",
+          "angle": 0.6598625171475995,
+          "lon": -76.1254512431904,
+          "lat": 43.0341686142652,
+          "before_id": "477440081",
+          "after_id": "477440397"
+        },
+        {
+          "before": "DORSET ROAD",
+          "after": "CIRCLE ROAD",
+          "angle": 12.543889396563896,
+          "lon": -76.1277322714109,
+          "lat": 43.03309762564019,
+          "before_id": "477440406",
+          "after_id": "477441068"
+        }
+      ],
+      "order": 19
+    },
+    {
+      "names": [
+        "LAMBRETH LANE",
+        "WINDING RIDGE ROAD",
+        "CHINOOK DRIVE SOUTH"
+      ],
+      "changes": 2,
+      "miles": 0.6099047111755026,
+      "max_join_angle": 24.851851352918235,
+      "cycle": false,
+      "transitions": [
+        {
+          "before": "LAMBRETH LANE",
+          "after": "WINDING RIDGE ROAD",
+          "angle": 9.24460941073869,
+          "lon": -76.1185302566272,
+          "lat": 43.01488163092889,
+          "before_id": "477443909",
+          "after_id": "477443958"
+        },
+        {
+          "before": "WINDING RIDGE ROAD",
+          "after": "CHINOOK DRIVE SOUTH",
+          "angle": 2.3069942859686163,
+          "lon": -76.1205752893378,
+          "lat": 43.01671664301259,
+          "before_id": "477443797",
+          "after_id": "477443671"
+        }
+      ],
+      "order": 20
+    }
+  ],
+  "sensitivity": [
+    {
+      "threshold": 15,
+      "look_m": 10,
+      "chains": 1523,
+      "cycles": 0,
+      "max_changes": 3,
+      "winners": [
+        {
+          "names": [
+            "MCCHESNEY PARK DRIVE",
+            "POND STREET",
+            "NORTH TOWNSEND STREET",
+            "SOUTH TOWNSEND STREET"
+          ],
+          "changes": 3,
+          "miles": 2.6632132352279623,
+          "max_join_angle": 11.20535339889517,
+          "cycle": false,
+          "transitions": [
+            {
+              "before": "MCCHESNEY PARK DRIVE",
+              "after": "POND STREET",
+              "angle": 5.82980736215744,
+              "lon": -76.1460292568309,
+              "lat": 43.07327762537881,
+              "before_id": "477428975",
+              "after_id": "477429107"
+            },
+            {
+              "before": "POND STREET",
+              "after": "NORTH TOWNSEND STREET",
+              "angle": 1.1763480478386146,
+              "lon": -76.1534073502281,
+              "lat": 43.0633675742749,
+              "before_id": "477431010",
+              "after_id": "477431293"
+            },
+            {
+              "before": "NORTH TOWNSEND STREET",
+              "after": "SOUTH TOWNSEND STREET",
+              "angle": 2.4499149831468454,
+              "lon": -76.1455819757695,
+              "lat": 43.05082213187719,
+              "before_id": "509997416",
+              "after_id": "509997479"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "names": [
+            "WEST FAYETTE STREET",
+            "TENNYSON AVENUE",
+            "BURNET PARK DRIVE",
+            "TENNYSON AVENUE"
+          ],
+          "changes": 3,
+          "miles": 0.5913121946692954,
+          "max_join_angle": 2.458512088818138,
+          "cycle": false,
+          "transitions": [
+            {
+              "before": "WEST FAYETTE STREET",
+              "after": "TENNYSON AVENUE",
+              "angle": 2.075439122431794,
+              "lon": -76.1795052606596,
+              "lat": 43.0480506109472,
+              "before_id": "477435865",
+              "after_id": "477436103"
+            },
+            {
+              "before": "TENNYSON AVENUE",
+              "after": "BURNET PARK DRIVE",
+              "angle": 2.458512088818138,
+              "lon": -76.1850263549048,
+              "lat": 43.045876609641596,
+              "before_id": "477436499",
+              "after_id": "477436542"
+            },
+            {
+              "before": "BURNET PARK DRIVE",
+              "after": "TENNYSON AVENUE",
+              "angle": 0.4148323662472832,
+              "lon": -76.1854993331732,
+              "lat": 43.0456876509216,
+              "before_id": "477436542",
+              "after_id": "477436978"
+            }
+          ],
+          "order": 2
+        }
+      ]
+    },
+    {
+      "threshold": 20,
+      "look_m": 10,
+      "chains": 1465,
+      "cycles": 1,
+      "max_changes": 4,
+      "winners": [
+        {
+          "names": [
+            "STATE FAIR BOULEVARD",
+            "SPENCER STREET",
+            "WEST KIRKPATRICK STREET",
+            "WEST COURT STREET",
+            "COURT STREET"
+          ],
+          "changes": 4,
+          "miles": 2.4979848601141814,
+          "max_join_angle": 16.637541677582266,
+          "cycle": false,
+          "transitions": [
+            {
+              "before": "STATE FAIR BOULEVARD",
+              "after": "SPENCER STREET",
+              "angle": 12.997777157382078,
+              "lon": -76.1806453664855,
+              "lat": 43.05903164400059,
+              "before_id": "510970451",
+              "after_id": "477432063"
+            },
+            {
+              "before": "SPENCER STREET",
+              "after": "WEST KIRKPATRICK STREET",
+              "angle": 16.637541677582266,
+              "lon": -76.17037730208952,
+              "lat": 43.057247636266794,
+              "before_id": "477432597",
+              "after_id": "506021511"
+            },
+            {
+              "before": "WEST KIRKPATRICK STREET",
+              "after": "WEST COURT STREET",
+              "angle": 8.483242497455626,
+              "lon": -76.1611782517462,
+              "lat": 43.0611540081312,
+              "before_id": "507665328",
+              "after_id": "507665325"
+            },
+            {
+              "before": "WEST COURT STREET",
+              "after": "COURT STREET",
+              "angle": 0.31171829767491405,
+              "lon": -76.1604423204244,
+              "lat": 43.0648566290005,
+              "before_id": "477430667",
+              "after_id": "477430642"
+            }
+          ],
+          "order": 1
+        }
+      ]
+    },
+    {
+      "threshold": 30,
+      "look_m": 10,
+      "chains": 1376,
+      "cycles": 1,
+      "max_changes": 4,
+      "winners": [
+        {
+          "names": [
+            "CRAWFORD AVENUE",
+            "BROAD STREET",
+            "BERKELEY DRIVE",
+            "OSTROM AVENUE",
+            "COMSTOCK PLACE"
+          ],
+          "changes": 4,
+          "miles": 2.9000966477870183,
+          "max_join_angle": 26.778407757528104,
+          "cycle": false,
+          "transitions": [
+            {
+              "before": "CRAWFORD AVENUE",
+              "after": "BROAD STREET",
+              "angle": 26.778407757528104,
+              "lon": -76.1107579133131,
+              "lat": 43.0310269844787,
+              "before_id": "477440934",
+              "after_id": "477441024"
+            },
+            {
+              "before": "BROAD STREET",
+              "after": "BERKELEY DRIVE",
+              "angle": 23.726846130129122,
+              "lon": -76.1244402863562,
+              "lat": 43.030143628306384,
+              "before_id": "600035974",
+              "after_id": "477441161"
+            },
+            {
+              "before": "BERKELEY DRIVE",
+              "after": "OSTROM AVENUE",
+              "angle": 0.41174692621497944,
+              "lon": -76.1279723237128,
+              "lat": 43.0340466291136,
+              "before_id": "477440185",
+              "after_id": "477440120"
+            },
+            {
+              "before": "OSTROM AVENUE",
+              "after": "COMSTOCK PLACE",
+              "angle": 0.6946472493586773,
+              "lon": -76.1290832396819,
+              "lat": 43.0461166554205,
+              "before_id": "477436667",
+              "after_id": "477436451"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "names": [
+            "STATE FAIR BOULEVARD",
+            "SPENCER STREET",
+            "WEST KIRKPATRICK STREET",
+            "WEST COURT STREET",
+            "COURT STREET"
+          ],
+          "changes": 4,
+          "miles": 2.4979848601141814,
+          "max_join_angle": 16.637541677582266,
+          "cycle": false,
+          "transitions": [
+            {
+              "before": "STATE FAIR BOULEVARD",
+              "after": "SPENCER STREET",
+              "angle": 12.997777157382078,
+              "lon": -76.1806453664855,
+              "lat": 43.05903164400059,
+              "before_id": "510970451",
+              "after_id": "477432063"
+            },
+            {
+              "before": "SPENCER STREET",
+              "after": "WEST KIRKPATRICK STREET",
+              "angle": 16.637541677582266,
+              "lon": -76.17037730208952,
+              "lat": 43.057247636266794,
+              "before_id": "477432597",
+              "after_id": "506021511"
+            },
+            {
+              "before": "WEST KIRKPATRICK STREET",
+              "after": "WEST COURT STREET",
+              "angle": 8.483242497455626,
+              "lon": -76.1611782517462,
+              "lat": 43.0611540081312,
+              "before_id": "507665328",
+              "after_id": "507665325"
+            },
+            {
+              "before": "WEST COURT STREET",
+              "after": "COURT STREET",
+              "angle": 0.31171829767491405,
+              "lon": -76.1604423204244,
+              "lat": 43.0648566290005,
+              "before_id": "477430667",
+              "after_id": "477430642"
+            }
+          ],
+          "order": 2
+        }
+      ]
+    },
+    {
+      "threshold": 45,
+      "look_m": 10,
+      "chains": 1310,
+      "cycles": 4,
+      "max_changes": 4,
+      "winners": [
+        {
+          "names": [
+            "CRAWFORD AVENUE",
+            "BROAD STREET",
+            "BERKELEY DRIVE",
+            "OSTROM AVENUE",
+            "COMSTOCK PLACE"
+          ],
+          "changes": 4,
+          "miles": 2.9000966477870183,
+          "max_join_angle": 26.778407757528104,
+          "cycle": false,
+          "transitions": [
+            {
+              "before": "CRAWFORD AVENUE",
+              "after": "BROAD STREET",
+              "angle": 26.778407757528104,
+              "lon": -76.1107579133131,
+              "lat": 43.0310269844787,
+              "before_id": "477440934",
+              "after_id": "477441024"
+            },
+            {
+              "before": "BROAD STREET",
+              "after": "BERKELEY DRIVE",
+              "angle": 23.726846130129122,
+              "lon": -76.1244402863562,
+              "lat": 43.030143628306384,
+              "before_id": "600035974",
+              "after_id": "477441161"
+            },
+            {
+              "before": "BERKELEY DRIVE",
+              "after": "OSTROM AVENUE",
+              "angle": 0.41174692621497944,
+              "lon": -76.1279723237128,
+              "lat": 43.0340466291136,
+              "before_id": "477440185",
+              "after_id": "477440120"
+            },
+            {
+              "before": "OSTROM AVENUE",
+              "after": "COMSTOCK PLACE",
+              "angle": 0.6946472493586773,
+              "lon": -76.1290832396819,
+              "lat": 43.0461166554205,
+              "before_id": "477436667",
+              "after_id": "477436451"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "names": [
+            "STATE FAIR BOULEVARD",
+            "SPENCER STREET",
+            "WEST KIRKPATRICK STREET",
+            "WEST COURT STREET",
+            "COURT STREET"
+          ],
+          "changes": 4,
+          "miles": 2.4979848601141814,
+          "max_join_angle": 16.637541677582266,
+          "cycle": false,
+          "transitions": [
+            {
+              "before": "STATE FAIR BOULEVARD",
+              "after": "SPENCER STREET",
+              "angle": 12.997777157382078,
+              "lon": -76.1806453664855,
+              "lat": 43.05903164400059,
+              "before_id": "510970451",
+              "after_id": "477432063"
+            },
+            {
+              "before": "SPENCER STREET",
+              "after": "WEST KIRKPATRICK STREET",
+              "angle": 16.637541677582266,
+              "lon": -76.17037730208952,
+              "lat": 43.057247636266794,
+              "before_id": "477432597",
+              "after_id": "506021511"
+            },
+            {
+              "before": "WEST KIRKPATRICK STREET",
+              "after": "WEST COURT STREET",
+              "angle": 8.483242497455626,
+              "lon": -76.1611782517462,
+              "lat": 43.0611540081312,
+              "before_id": "507665328",
+              "after_id": "507665325"
+            },
+            {
+              "before": "WEST COURT STREET",
+              "after": "COURT STREET",
+              "angle": 0.31171829767491405,
+              "lon": -76.1604423204244,
+              "lat": 43.0648566290005,
+              "before_id": "477430667",
+              "after_id": "477430642"
+            }
+          ],
+          "order": 2
+        }
+      ]
+    },
+    {
+      "threshold": 30,
+      "look_m": 5,
+      "chains": 1345,
+      "cycles": 3,
+      "max_changes": 4,
+      "winners": [
+        {
+          "names": [
+            "CRAWFORD AVENUE",
+            "BROAD STREET",
+            "BERKELEY DRIVE",
+            "OSTROM AVENUE",
+            "COMSTOCK PLACE"
+          ],
+          "changes": 4,
+          "miles": 2.9000966477870183,
+          "max_join_angle": 26.77840775484745,
+          "cycle": false,
+          "transitions": [
+            {
+              "before": "CRAWFORD AVENUE",
+              "after": "BROAD STREET",
+              "angle": 26.77840775484745,
+              "lon": -76.1107579133131,
+              "lat": 43.0310269844787,
+              "before_id": "477440934",
+              "after_id": "477441024"
+            },
+            {
+              "before": "BROAD STREET",
+              "after": "BERKELEY DRIVE",
+              "angle": 20.454974021890205,
+              "lon": -76.1244402863562,
+              "lat": 43.030143628306384,
+              "before_id": "600035974",
+              "after_id": "477441161"
+            },
+            {
+              "before": "BERKELEY DRIVE",
+              "after": "OSTROM AVENUE",
+              "angle": 0.41174692617691694,
+              "lon": -76.1279723237128,
+              "lat": 43.0340466291136,
+              "before_id": "477440185",
+              "after_id": "477440120"
+            },
+            {
+              "before": "OSTROM AVENUE",
+              "after": "COMSTOCK PLACE",
+              "angle": 0.6946472492390483,
+              "lon": -76.1290832396819,
+              "lat": 43.0461166554205,
+              "before_id": "477436667",
+              "after_id": "477436451"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "names": [
+            "STATE FAIR BOULEVARD",
+            "SPENCER STREET",
+            "WEST KIRKPATRICK STREET",
+            "WEST COURT STREET",
+            "COURT STREET"
+          ],
+          "changes": 4,
+          "miles": 2.4979848601141814,
+          "max_join_angle": 13.039766362927763,
+          "cycle": false,
+          "transitions": [
+            {
+              "before": "STATE FAIR BOULEVARD",
+              "after": "SPENCER STREET",
+              "angle": 12.997777162721729,
+              "lon": -76.1806453664855,
+              "lat": 43.05903164400059,
+              "before_id": "510970451",
+              "after_id": "477432063"
+            },
+            {
+              "before": "SPENCER STREET",
+              "after": "WEST KIRKPATRICK STREET",
+              "angle": 7.591978663317624,
+              "lon": -76.17037730208952,
+              "lat": 43.057247636266794,
+              "before_id": "477432597",
+              "after_id": "506021511"
+            },
+            {
+              "before": "WEST KIRKPATRICK STREET",
+              "after": "WEST COURT STREET",
+              "angle": 8.483242501923662,
+              "lon": -76.1611782517462,
+              "lat": 43.0611540081312,
+              "before_id": "507665328",
+              "after_id": "507665325"
+            },
+            {
+              "before": "WEST COURT STREET",
+              "after": "COURT STREET",
+              "angle": 0.31171829750888513,
+              "lon": -76.1604423204244,
+              "lat": 43.0648566290005,
+              "before_id": "477430667",
+              "after_id": "477430642"
+            }
+          ],
+          "order": 2
+        }
+      ]
+    },
+    {
+      "threshold": 30,
+      "look_m": 20,
+      "chains": 1407,
+      "cycles": 1,
+      "max_changes": 4,
+      "winners": [
+        {
+          "names": [
+            "STATE FAIR BOULEVARD",
+            "SPENCER STREET",
+            "WEST KIRKPATRICK STREET",
+            "WEST COURT STREET",
+            "COURT STREET"
+          ],
+          "changes": 4,
+          "miles": 2.4979848601141814,
+          "max_join_angle": 20.929214478309206,
+          "cycle": false,
+          "transitions": [
+            {
+              "before": "STATE FAIR BOULEVARD",
+              "after": "SPENCER STREET",
+              "angle": 12.997777157462089,
+              "lon": -76.1806453664855,
+              "lat": 43.05903164400059,
+              "before_id": "510970451",
+              "after_id": "477432063"
+            },
+            {
+              "before": "SPENCER STREET",
+              "after": "WEST KIRKPATRICK STREET",
+              "angle": 20.929214478309206,
+              "lon": -76.17037730208952,
+              "lat": 43.057247636266794,
+              "before_id": "477432597",
+              "after_id": "506021511"
+            },
+            {
+              "before": "WEST KIRKPATRICK STREET",
+              "after": "WEST COURT STREET",
+              "angle": 7.399819441752051,
+              "lon": -76.1611782517462,
+              "lat": 43.0611540081312,
+              "before_id": "507665328",
+              "after_id": "507665325"
+            },
+            {
+              "before": "WEST COURT STREET",
+              "after": "COURT STREET",
+              "angle": 0.3117182976468528,
+              "lon": -76.1604423204244,
+              "lat": 43.0648566290005,
+              "before_id": "477430667",
+              "after_id": "477430642"
+            }
+          ],
+          "order": 1
+        }
+      ]
+    }
+  ]
+}

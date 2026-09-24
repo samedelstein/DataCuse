@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "straight_209_change1",
+    "url": "https://orthos.its.ny.gov/arcgis/rest/services/wms/2022/MapServer/export?bbox=-8475871.352400135%2C5311869.579800461%2C-8475571.352400135%2C5312169.579800461&bboxSR=3857&imageSR=3857&size=800%2C800&format=png&f=image",
+    "bounds_3857": [
+      -8475871.352400135,
+      5311869.579800461,
+      -8475571.352400135,
+      5312169.579800461
+    ],
+    "transition": {
+      "before": "MONTICELLO DRIVE SOUTH",
+      "after": "MONTICELLO DRIVE NORTH",
+      "angle": 0.8464025645380459,
+      "lon": -76.13870034799221,
+      "lat": 43.0003135974738,
+      "before_id": "477446020",
+      "after_id": "477445939"
+    },
+    "retrieved_utc": "2026-09-21T00:31:14.881841+00:00",
+    "imagery_year": 2022
+  },
+  {
+    "slug": "straight_209_change2",
+    "url": "https://orthos.its.ny.gov/arcgis/rest/services/wms/2022/MapServer/export?bbox=-8475870.78800013%2C5312672.071100447%2C-8475570.78800013%2C5312972.071100447&bboxSR=3857&imageSR=3857&size=800%2C800&format=png&f=image",
+    "bounds_3857": [
+      -8475870.78800013,
+      5312672.071100447,
+      -8475570.78800013,
+      5312972.071100447
+    ],
+    "transition": {
+      "before": "MONTICELLO DRIVE NORTH",
+      "after": "SPRINGBROOK AVENUE",
+      "angle": 0.572358365667223,
+      "lon": -76.1386952779007,
+      "lat": 43.0055856015247,
+      "before_id": "477445466",
+      "after_id": "477445283"
+    },
+    "retrieved_utc": "2026-09-21T00:31:14.962207+00:00",
+    "imagery_year": 2022
+  },
+  {
+    "slug": "straight_123_change1",
+    "url": "https://orthos.its.ny.gov/arcgis/rest/services/wms/2022/MapServer/export?bbox=-8481028.33990013%2C5318807.343700447%2C-8480728.33990013%2C5319107.343700447&bboxSR=3857&imageSR=3857&size=800%2C800&format=png&f=image",
+    "bounds_3857": [
+      -8481028.33990013,
+      5318807.343700447,
+      -8480728.33990013,
+      5319107.343700447
+    ],
+    "transition": {
+      "before": "TENNYSON AVENUE",
+      "after": "BURNET PARK DRIVE",
+      "angle": 2.458512088818138,
+      "lon": -76.1850263549048,
+      "lat": 43.045876609641596,
+      "before_id": "477436499",
+      "after_id": "477436542"
+    },
+    "retrieved_utc": "2026-09-21T00:31:15.178491+00:00",
+    "imagery_year": 2022
+  },
+  {
+    "slug": "straight_123_change2",
+    "url": "https://orthos.its.ny.gov/arcgis/rest/services/wms/2022/MapServer/export?bbox=-8481080.991600124%2C5318778.5608004555%2C-8480780.991600124%2C5319078.5608004555&bboxSR=3857&imageSR=3857&size=800%2C800&format=png&f=image",
+    "bounds_3857": [
+      -8481080.991600124,
+      5318778.5608004555,
+      -8480780.991600124,
+      5319078.5608004555
+    ],
+    "transition": {
+      "before": "BURNET PARK DRIVE",
+      "after": "TENNYSON AVENUE",
+      "angle": 0.4148323662472832,
+      "lon": -76.1854993331732,
+      "lat": 43.0456876509216,
+      "before_id": "477436542",
+      "after_id": "477436978"
+    },
+    "retrieved_utc": "2026-09-21T00:31:15.260284+00:00",
+    "imagery_year": 2022
+  }
+]

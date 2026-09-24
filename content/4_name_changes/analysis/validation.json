@@ -1,0 +1,227 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "tolerance_m": 0,
+      "max_changes": 4,
+      "winners": [
+        {
+          "names": [
+            "CRAWFORD AVENUE",
+            "BROAD STREET",
+            "BERKELEY DRIVE",
+            "OSTROM AVENUE",
+            "COMSTOCK PLACE"
+          ],
+          "changes": 4,
+          "miles": 2.9000966477870183,
+          "max_join_angle": 26.778407757528104,
+          "cycle": false,
+          "transitions": [
+            {
+              "before": "CRAWFORD AVENUE",
+              "after": "BROAD STREET",
+              "angle": 26.778407757528104,
+              "lon": -76.1107579133131,
+              "lat": 43.0310269844787,
+              "before_id": "477440934",
+              "after_id": "477441024"
+            },
+            {
+              "before": "BROAD STREET",
+              "after": "BERKELEY DRIVE",
+              "angle": 23.726846130129122,
+              "lon": -76.1244402863562,
+              "lat": 43.030143628306384,
+              "before_id": "600035974",
+              "after_id": "477441161"
+            },
+            {
+              "before": "BERKELEY DRIVE",
+              "after": "OSTROM AVENUE",
+              "angle": 0.41174692621497944,
+              "lon": -76.1279723237128,
+              "lat": 43.0340466291136,
+              "before_id": "477440185",
+              "after_id": "477440120"
+            },
+            {
+              "before": "OSTROM AVENUE",
+              "after": "COMSTOCK PLACE",
+              "angle": 0.6946472493586773,
+              "lon": -76.1290832396819,
+              "lat": 43.0461166554205,
+              "before_id": "477436667",
+              "after_id": "477436451"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "names": [
+            "STATE FAIR BOULEVARD",
+            "SPENCER STREET",
+            "WEST KIRKPATRICK STREET",
+            "WEST COURT STREET",
+            "COURT STREET"
+          ],
+          "changes": 4,
+          "miles": 2.4979848601141814,
+          "max_join_angle": 16.637541677582266,
+          "cycle": false,
+          "transitions": [
+            {
+              "before": "STATE FAIR BOULEVARD",
+              "after": "SPENCER STREET",
+              "angle": 12.997777157382078,
+              "lon": -76.1806453664855,
+              "lat": 43.05903164400059,
+              "before_id": "510970451",
+              "after_id": "477432063"
+            },
+            {
+              "before": "SPENCER STREET",
+              "after": "WEST KIRKPATRICK STREET",
+              "angle": 16.637541677582266,
+              "lon": -76.17037730208952,
+              "lat": 43.057247636266794,
+              "before_id": "477432597",
+              "after_id": "506021511"
+            },
+            {
+              "before": "WEST KIRKPATRICK STREET",
+              "after": "WEST COURT STREET",
+              "angle": 8.483242497455626,
+              "lon": -76.1611782517462,
+              "lat": 43.0611540081312,
+              "before_id": "507665328",
+              "after_id": "507665325"
+            },
+            {
+              "before": "WEST COURT STREET",
+              "after": "COURT STREET",
+              "angle": 0.31171829767491405,
+              "lon": -76.1604423204244,
+              "lat": 43.0648566290005,
+              "before_id": "477430667",
+              "after_id": "477430642"
+            }
+          ],
+          "order": 2
+        }
+      ],
+      "edges": 6224
+    },
+    {
+      "tolerance_m": 1,
+      "max_changes": 4,
+      "winners": [
+        {
+          "names": [
+            "CRAWFORD AVENUE",
+            "BROAD STREET",
+            "BERKELEY DRIVE",
+            "OSTROM AVENUE",
+            "COMSTOCK PLACE"
+          ],
+          "changes": 4,
+          "miles": 2.9000966477870183,
+          "max_join_angle": 26.778407757528104,
+          "cycle": false,
+          "transitions": [
+            {
+              "before": "CRAWFORD AVENUE",
+              "after": "BROAD STREET",
+              "angle": 26.778407757528104,
+              "lon": -76.1107579133131,
+              "lat": 43.0310269844787,
+              "before_id": "477440934",
+              "after_id": "477441024"
+            },
+            {
+              "before": "BROAD STREET",
+              "after": "BERKELEY DRIVE",
+              "angle": 23.726846130129122,
+              "lon": -76.1244402863562,
+              "lat": 43.030143628306384,
+              "before_id": "600035974",
+              "after_id": "477441161"
+            },
+            {
+              "before": "BERKELEY DRIVE",
+              "after": "OSTROM AVENUE",
+              "angle": 0.41174692621497944,
+              "lon": -76.1279723237128,
+              "lat": 43.0340466291136,
+              "before_id": "477440185",
+              "after_id": "477440120"
+            },
+            {
+              "before": "OSTROM AVENUE",
+              "after": "COMSTOCK PLACE",
+              "angle": 0.6946472493586773,
+              "lon": -76.1290832396819,
+              "lat": 43.0461166554205,
+              "before_id": "477436667",
+              "after_id": "477436451"
+            }
+          ],
+          "order": 1
+        },
+        {
+          "names": [
+            "STATE FAIR BOULEVARD",
+            "SPENCER STREET",
+            "WEST KIRKPATRICK STREET",
+            "WEST COURT STREET",
+            "COURT STREET"
+          ],
+          "changes": 4,
+          "miles": 2.4979848601141814,
+          "max_join_angle": 16.637541677582266,
+          "cycle": false,
+          "transitions": [
+            {
+              "before": "STATE FAIR BOULEVARD",
+              "after": "SPENCER STREET",
+              "angle": 12.997777157382078,
+              "lon": -76.1806453664855,
+              "lat": 43.05903164400059,
+              "before_id": "510970451",
+              "after_id": "477432063"
+            },
+            {
+              "before": "SPENCER STREET",
+              "after": "WEST KIRKPATRICK STREET",
+              "angle": 16.637541677582266,
+              "lon": -76.17037730208952,
+              "lat": 43.057247636266794,
+              "before_id": "477432597",
+              "after_id": "506021511"
+            },
+            {
+              "before": "WEST KIRKPATRICK STREET",
+              "after": "WEST COURT STREET",
+              "angle": 8.483242497455626,
+              "lon": -76.1611782517462,
+              "lat": 43.0611540081312,
+              "before_id": "507665328",
+              "after_id": "507665325"
+            },
+            {
+              "before": "WEST COURT STREET",
+              "after": "COURT STREET",
+              "angle": 0.31171829767491405,
+              "lon": -76.1604423204244,
+              "lat": 43.0648566290005,
+              "before_id": "477430667",
+              "after_id": "477430642"
+            }
+          ],
+          "order": 2
+        }
+      ],
+      "edges": 6224
+    }
+  ]
+}

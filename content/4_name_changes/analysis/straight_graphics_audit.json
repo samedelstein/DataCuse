@@ -1,0 +1,84 @@
+{
+  "full_chains": [
+    {
+      "order": 1,
+      "names": [
+        "CRAWFORD AVENUE",
+        "BROAD STREET",
+        "BERKELEY DRIVE",
+        "OSTROM AVENUE",
+        "COMSTOCK PLACE"
+      ],
+      "changes": 4,
+      "max_gap_m": 0.0,
+      "length_m": 4667.253139536151,
+      "chord_m": 1573.583579770163,
+      "ratio": 2.9660026957181698,
+      "max_offset_m": 1618.2794420940675
+    },
+    {
+      "order": 2,
+      "names": [
+        "STATE FAIR BOULEVARD",
+        "SPENCER STREET",
+        "WEST KIRKPATRICK STREET",
+        "WEST COURT STREET",
+        "COURT STREET"
+      ],
+      "changes": 4,
+      "max_gap_m": 0.0,
+      "length_m": 4020.116946715596,
+      "chord_m": 3184.0665255985996,
+      "ratio": 1.2625731637186255,
+      "max_offset_m": 1061.1251706895614
+    }
+  ],
+  "baseline_winners": [
+    {
+      "id": 209,
+      "chain_order": 18,
+      "margin_m": 50,
+      "names": [
+        "MONTICELLO DRIVE SOUTH",
+        "MONTICELLO DRIVE NORTH",
+        "SPRINGBROOK AVENUE"
+      ],
+      "changes": 2,
+      "run_lengths_m": [
+        50.0,
+        586.8030382494408,
+        50.0
+      ],
+      "min_run_m": 50.0,
+      "start_m": 388.75091923624313,
+      "end_m": 1075.553957485684,
+      "length_m": 686.803038249412,
+      "chord_m": 685.4294589978745,
+      "ratio": 1.002003968801612,
+      "max_offset_m": 7.125402601758407
+    },
+    {
+      "id": 123,
+      "chain_order": 7,
+      "margin_m": 50,
+      "names": [
+        "TENNYSON AVENUE",
+        "BURNET PARK DRIVE",
+        "TENNYSON AVENUE"
+      ],
+      "changes": 2,
+      "run_lengths_m": [
+        50.0,
+        43.87234387416083,
+        50.0
+      ],
+      "min_run_m": 43.87234387416083,
+      "start_m": 493.3141043697432,
+      "end_m": 637.186448243904,
+      "length_m": 143.87234387397814,
+      "chord_m": 143.84685516908576,
+      "ratio": 1.000177193341227,
+      "max_offset_m": 1.2739296104366546
+    }
+  ]
+}

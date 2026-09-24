@@ -1,0 +1,40 @@
+{
+  "downloaded_utc": "2026-09-19T18:13:40.890575+00:00",
+  "source_url": "https://services6.arcgis.com/bdPqSfflsdgFRVVM/ArcGIS/rest/services/Streets/FeatureServer/0",
+  "feature_count": 5650,
+  "crs": "EPSG:4326",
+  "coverage": "Full service extent, not clipped to the Syracuse municipal boundary",
+  "filters": "None; not yet screened for public named streets or geometry artifacts",
+  "shapefile_fields": [
+    "FID",
+    "CITYST_ID",
+    "FULLNAME",
+    "PREFIX",
+    "NAME",
+    "TYPE",
+    "SUFFIX",
+    "CFCC",
+    "FNODE_",
+    "TNODE_",
+    "L_F_ADD",
+    "L_T_ADD",
+    "R_F_ADD",
+    "R_T_ADD",
+    "FIPMCD90_L",
+    "FIPMCD90_R",
+    "FIPPLC90_L",
+    "FIPPLC90_R",
+    "BLKSTREET",
+    "ST_FLAG",
+    "LINECODE"
+  ],
+  "format_note": "DBF null strings become blanks; original nulls are preserved in GeoJSON.",
+  "geojson_sha256": "f799f2bf9e2d1adc6002c1266884a80766fb4f75532f1621cd15d26e2025e7c0",
+  "source_editing_info": {
+    "lastEditDate": 1741612634269,
+    "schemaLastEditDate": 1741612634269,
+    "dataLastEditDate": 1680118340751
+  },
+  "measurement": "Coordinates are degrees. Reproject or use ellipsoidal lengths before ranking.",
+  "validation": "All source IDs downloaded; shapefile count, retained attributes and coordinates round-trip checked"
+}
