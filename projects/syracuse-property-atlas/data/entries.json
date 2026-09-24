@@ -1,5 +1,82 @@
 [
   {
+    "address": "336 Loma Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "ollama:llava:latest",
+      "summary": "{\"role\": \"Cautious civic data assistant reviewing public street-level exterior image for a property atlas.\", \"property\": {\"address\": \"336 LOMA AVE\", \"parcel_key\": \"004-16-240\", \"coordinates\": {\"lat\": 43.08136742849643, \"lon\": -76.14676818790475}}, \"known_public_records\": [], \"task\": [\"Describe only visible exterior property conditions from the image.\", \"Compare visible conditions against known_public_records and call out possible image-only issues only when they are plainly visible.\", \"Use cautious language. Do not infer ownership, occupancy, code violations, criminal activity, socioeconomic status, or protected-class information.\", \"Treat maintained lawns, garden beds, shrubs, ornamental grasses, and foundation plantings as normal landscaping, not vegetation overgrowth, even when vegetation is dense, varied in height, or near the foundation.\", \"Do not identify, describe, transcribe, or track people, faces, license plates, or private personal details.\", \"If the property is blocked, image quality is poor, or the view may show the wrong parcel, lower confidence and explain the caveat.\", \"When you flag visible issues, include approximate normalized bounding boxes in image_annotations. Use x, y, width, and height as fractions from 0 to 1 relative to the full image.\", \"Only create bounding boxes for clearly adverse visible property-condition issues, not neutral features, intentional landscaping, people, vehicles, license plates, or unrelated background objects.\", \"Return valid JSON only. Do not wrap it in Markdown.\"], \"schema\": {\"summary\": \"one cautious sentence describing the visible exterior\", \"property_type_guess\": \"single_family|two_family|multifamily|commercial|mixed_use|vacant_lot|unclear\", \"visible_conditions\": [\"specific exterior observations visible in the image\"], \"condition_scores\": {\"roof\": \"good|fair|poor|not_visible|unclear\", \"siding_or_facade\": \"good|fair|poor|not_visible|unclear\", \"windows_doors\": \"good|fair|poor|not_visible|unclear\", \"porch_or_entry\": \"good|fair|poor|not_visible|unclear\", \"yard_or_lot\": \"good|fair|poor|not_visible|unclear\", \"trash_debris\": \"none_visible|minor|major|unclear\", \"vegetation_overgrowth\": \"none_visible|minor|major|unclear\"}, \"visible_flags\": {\"boarded_windows_or_doors\": \"yes|no|unclear\", \"fire_damage_visible\": \"yes|no|unclear\", \"structural_damage_visible\": \"yes|no|unclear\", \"vacancy_signs_visible\": \"yes|no|unclear\", \"active_construction_visible\": \"yes|no|unclear\"}, \"possible_unrecorded_issues\": [\"cautious image-only flags not already reflected in known_data\"], \"image_annotations\": [{\"label\": \"short visible issue label\", \"reason\": \"why this area was marked\", \"bbox\": {\"x\": \"left position as 0-1 fraction of image width\", \"y\": \"top position as 0-1 fraction of image height\", \"width\": \"box width as 0-1 fraction of image width\", \"height\": \"box height as 0-1 fraction of image height\"}, \"confidence\": \"high|medium|low\"}], \"needs_human_review\": \"true|false\", \"confidence\": \"high|medium|low\", \"caveats\": [\"limits such as image age, obstructed view, angle, or uncertainty\"]} \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 613,
+    "image": "images/parcel-000613.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 33211,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08136742849643,
+    "lon": -76.14676818790475,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-16-240",
+    "published_at": "2026-09-24T23:07:22+00:00",
+    "review_reasons": [],
+    "title": "336 Loma Ave"
+  },
+  {
     "address": "334 Loma Ave",
     "ai_analysis": {
       "available": true,
