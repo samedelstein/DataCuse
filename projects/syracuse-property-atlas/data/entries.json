@@ -1,5 +1,122 @@
 [
   {
+    "address": "322 Loma Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image is from 2020 Google Street View, so conditions may have changed."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.04,
+            "width": 0.08,
+            "x": 0.47,
+            "y": 0.28
+          },
+          "confidence": "high",
+          "label": "Faded awning",
+          "reason": "The green awning above the upper window appears faded and shows signs of wear."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "The green awning above the upper window appears faded and possibly has minor wear.",
+        "The white siding/paint on the structure shows some minor discoloration or wear.",
+        "The front lawn has some dry or patchy areas."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image displays a single-family residence with white siding, a dark shingle roof, and an enclosed front porch, appearing to be in generally fair to good condition with some minor visible wear.",
+      "visible_conditions": [
+        "The main structure and enclosed front porch feature white siding or paint.",
+        "A dark shingle roof is visible on the main house.",
+        "Multiple windows are present on the enclosed front porch.",
+        "A concrete walkway leads to the front steps of the porch.",
+        "The front yard consists of a lawn with some patchy areas.",
+        "A green awning is visible above an upper window on the front gable."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: The green awning above the upper window appears faded and possibly has minor wear.",
+      "Image-only flag: The white siding/paint on the structure shows some minor discoloration or wear.",
+      "Image-only flag: The front lawn has some dry or patchy areas."
+    ],
+    "id": 609,
+    "image": "images/parcel-000609.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 69040,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.081020794174904,
+    "lon": -76.14632626679087,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-16-200",
+    "published_at": "2026-09-24T19:03:09+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "322 Loma Ave"
+  },
+  {
     "address": "318 Loma Ave",
     "ai_analysis": {
       "available": true,
