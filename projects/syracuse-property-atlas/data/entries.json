@@ -1,5 +1,120 @@
 [
   {
+    "address": "318 Loma Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "slight tilt to the image"
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "major",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.614,
+            "width": 0.748,
+            "x": 0.448,
+            "y": 0.306
+          },
+          "confidence": "high",
+          "label": "overgrown vegetation",
+          "reason": "excessive vegetation around the front yard and driveway"
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "none_visible",
+        "minor"
+      ],
+      "property_type_guess": "single-family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a residential area with two single-family houses. The house on the left appears to be well-maintained with clear landscaping, while the house on the right has overgrown vegetation around the front yard and driveway. The siding on both houses appears to be in good condition. The neighborhood has neatly trimmed lawns and driveways. There is a slight tilt to the image, indicating it might have been taken from an elevated position or with a tilted camera. There is no visible debris or structural damage. The neighborhood seems to be a typical suburban area. No signs of fire or vacancy are present.",
+      "visible_conditions": [
+        "overgrown vegetation around the front yard and driveway on the right"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: none_visible",
+      "Image-only flag: minor"
+    ],
+    "id": 608,
+    "image": "images/parcel-000608.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 83152,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08094527828968,
+    "lon": -76.14621761868467,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-16-190",
+    "published_at": "2026-09-24T18:05:39+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "318 Loma Ave"
+  },
+  {
     "address": "314 Loma Ave",
     "ai_analysis": {
       "available": true,
