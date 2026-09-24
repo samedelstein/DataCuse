@@ -1,5 +1,103 @@
 [
   {
+    "address": "330 Loma Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The front facade of the property is partially obscured by a large tree.",
+        "The full condition of the roof is not clearly visible due to the viewing angle and tree obstruction."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "unclear",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image shows a residential property with blue/grey siding and a front porch, partially obscured by a large, mature tree in the front yard.",
+      "visible_conditions": [
+        "A residential structure with blue/grey horizontal siding is visible.",
+        "A front porch with wooden railings and steps is present.",
+        "A paved driveway extends along the side of the house.",
+        "A mature deciduous tree is situated in the front yard, partially obscuring the view of the house.",
+        "The lawn in the front yard appears to be maintained.",
+        "A house number '330' is visible on the porch.",
+        "A dark-colored refuse bin is visible near the driveway.",
+        "A small sign is partially visible in the front yard, near the sidewalk."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 611,
+    "image": "images/parcel-000611.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 95901,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08117182564016,
+    "lon": -76.14654356478658,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-16-220",
+    "published_at": "2026-09-24T21:02:56+00:00",
+    "review_reasons": [],
+    "title": "330 Loma Ave"
+  },
+  {
     "address": "326 Loma Ave",
     "ai_analysis": {
       "available": true,
