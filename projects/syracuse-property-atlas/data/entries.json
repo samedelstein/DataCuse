@@ -1,5 +1,77 @@
 [
   {
+    "address": "314 Loma Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "{\n  \"summary\": \"The image displays a single-family residence with light-colored siding, a green-toned roof, and a front porch, situated on a lot with a grass lawn and concrete pathways.\",\n  \"property_type_guess\": \"single_family\",\n  \"visible_conditions\": [\n    \"The structure appears to be a single-story house with an attic dormer.\",\n    \"Exterior siding is light-colored, possibly vinyl or painted wood, showing some areas of discoloration or staining.\",\n    \"The roof appears to be asphalt shingles with a greenish hue, exhibiting some visible wear or possible moss/algae growth.\",\n    \"Windows are present on the front facade, some with awnings.\",\n    \"A front porch with steps and a screen door is visible.\",\n    \"The front yard consists of a grass lawn with concrete walkways and a driveway.\",\n    \"Weeds are visible growing in the cracks of the concrete pathways.\"\n   furlough\n  ],\n  \"condition_scores\": {\n    \"roof\": \"fair\",\n    \"siding_or_facade\": \"fair\",\n    \"windows_doors\": \"fair\",\n    \"porch_or_entry\": \"fair\",\n    \"yard_or_lot\": \"fair\",\n    \"trash_debris\": \"none_visible\",\n    \"vegetation_overgrowth\": \"minor\"\n  },\n  \"visible_flags\": {\n    \"boarded_windows_or_doors\": \"no\",\n    \"fire_damage_visible\": \"no\",\n    \"structural_damage_visible\": \"no\",\n    \"vacancy_signs_visible\": \"no\",\n    \"active_construction_visible\": \"no\"\n  },\n  \"possible_unrecorded_issues\": [\n    \"Visible discoloration or staining on the exterior siding.\",\n    \"Visible wear or possible moss/algae growth on the roof.\",\n    \"Weeds growing in the cracks of the concrete pathways.\"\n  ],\n  \"image_annotations\": [\n    {\n      \"label\": \"Siding discoloration\",\n      \"reason\": \"Visible staining or discoloration on the exterior siding.\",\n      \"bbox\": {\n        \"x\": 0.15,\n        \"y\": 0.4,\n        \"width\": 0.35,\n        \"height\": 0.3\n      },\n      \"confidence\": \"high\"\n    },\n    {\n      \"label\": \"Roof wear/discoloration\",\n      \"reason\": \"Visible wear or possible moss/algae growth on the roof shingles.\",\n      \"bbox\": {\n        \"x\": 0.1,\n        \"y\": 0.25,\n        \"width\": 0.45,\n        \"height\": 0.2\n      },\n      \"confidence\": \"high\"\n    },\n    {\n      \"label\": \"Weeds in concrete cracks\",\n      \"reason\": \"Unmanaged vegetation (weeds) growing in the cracks of the concrete pathways.\",\n      \"bbox\": {\n        \"x\": 0.05,\n        \"y\": 0.7,\n        \"width\": 0.35,\n        \"height\": 0.15\n      },\n      \"confidence\": \"high\"\n    }\n  ],\n  \"needs_human_review\": false,\n  \"confidence\": \"high\",\n  \"caveats\": [\n    \"Image date is from 2021.\"\n  ]\n}",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 607,
+    "image": "images/parcel-000607.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 82776,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08086976193954,
+    "lon": -76.14610897035675,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-16-180",
+    "published_at": "2026-09-24T17:03:03+00:00",
+    "review_reasons": [],
+    "title": "314 Loma Ave"
+  },
+  {
     "address": "308 Loma Ave",
     "ai_analysis": {
       "available": true,
