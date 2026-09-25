@@ -1,5 +1,118 @@
 [
   {
+    "address": "1101 Wadsworth St & Weldon Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The lower portion of the property, including any potential front entry or porch, is largely obscured by a dense hedge."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "unclear",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.31,
+            "width": 1.0,
+            "x": 0.0,
+            "y": 0.69
+          },
+          "confidence": "high",
+          "label": "Minor scattered debris",
+          "reason": "Scattered leaves and small debris are visible on the street and sidewalk edge."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor scattered debris is visible along the street and sidewalk edge."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a residential structure with light-colored siding and a well-maintained hedge along the front, with some minor scattered debris visible near the street.",
+      "visible_conditions": [
+        "The property features light-colored horizontal siding on the main structure.",
+        "The roof appears to be a gable style and in good visible condition.",
+        "Multiple windows are visible with white trim, and one smaller window on the first floor has a distinct red trim.",
+        "A large, dense, and seemingly well-maintained hedge runs along the front of the property, partially obscuring the lower portion of the house.",
+        "The street and a narrow strip of sidewalk are visible in front of the hedge.",
+        "Some scattered leaves and minor debris are visible on the street and sidewalk edge near the curb."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Minor scattered debris is visible along the street and sidewalk edge."
+    ],
+    "id": 629,
+    "image": "images/parcel-000629.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 72956,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0813341397563,
+    "lon": -76.14488945336288,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-17-130",
+    "published_at": "2026-09-25T15:02:59+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1101 Wadsworth St & Weldon Ave"
+  },
+  {
     "address": "1105 Wadsworth St",
     "ai_analysis": {
       "available": true,
