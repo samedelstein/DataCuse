@@ -1,5 +1,130 @@
 [
   {
+    "address": "1133 Wadsworth St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.12,
+            "width": 0.2,
+            "x": 0.35,
+            "y": 0.59
+          },
+          "confidence": "high",
+          "label": "Weeds along driveway",
+          "reason": "Unmanaged vegetation is visible along the edge where the driveway meets the lawn."
+        },
+        {
+          "bbox": {
+            "height": 0.05,
+            "width": 0.7,
+            "x": 0.0,
+            "y": 0.75
+          },
+          "confidence": "high",
+          "label": "Weeds in sidewalk cracks",
+          "reason": "Small unmanaged vegetation is visible growing in cracks within the sidewalk."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor weeds visible along the edges of the paved driveway.",
+        "Minor weeds visible in cracks of the front sidewalk."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property appears to be a single-family residence with a generally maintained exterior, though some minor unmanaged vegetation is visible along the driveway and sidewalk.",
+      "visible_conditions": [
+        "Single-family dwelling with a gabled roof and a dormer.",
+        "Light blue/grey horizontal siding on the lower portion of the structure.",
+        "Covered front porch with columns and steps leading to the entry.",
+        "Asphalt shingle roof appears to be present.",
+        "Grass lawn in the front yard with some foundation plantings.",
+        "Paved driveway leading alongside the house, with a vehicle partially visible.",
+        "Some unmanaged vegetation is visible along the edges of the driveway and in sidewalk cracks."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Minor weeds visible along the edges of the paved driveway.",
+      "Image-only flag: Minor weeds visible in cracks of the front sidewalk."
+    ],
+    "id": 621,
+    "image": "images/parcel-000621.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 79714,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08193821289164,
+    "lon": -76.14575872073718,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-17-050",
+    "published_at": "2026-09-25T07:03:02+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1133 Wadsworth St"
+  },
+  {
     "address": "1137 Wadsworth St",
     "ai_analysis": {
       "available": true,
