@@ -1,0 +1,310 @@
+{
+  "source": "2020 Census DHC P1, P3, P4, P12; all Syracuse 2020 blocks",
+  "groups": [
+    {
+      "id": "all",
+      "label": "All residents",
+      "type": "overall",
+      "fields": [
+        "P1_001N"
+      ],
+      "population": 148620,
+      "populated_blocks": 1614,
+      "longitude": -76.14098645339031,
+      "latitude": 43.04374196562929,
+      "easting": 407065.6426690012,
+      "northing": 4766303.929883885,
+      "distance_from_overall_metres": 0.0,
+      "bearing_from_overall": 180.0,
+      "internal_point_shift_metres": 0.8827131558765451,
+      "largest_block_share": 0.008780783205490512
+    },
+    {
+      "id": "race2",
+      "label": "White alone",
+      "type": "race",
+      "fields": [
+        "P3_002N"
+      ],
+      "population": 71175,
+      "populated_blocks": 1585,
+      "longitude": -76.13889940599336,
+      "latitude": 43.04486031852922,
+      "easting": 407237.32134488726,
+      "northing": 4766425.814941108,
+      "distance_from_overall_metres": 210.60771024682188,
+      "bearing_from_overall": 53.847906304656306,
+      "internal_point_shift_metres": 1.9562473360112114,
+      "largest_block_share": 0.015356515630488234
+    },
+    {
+      "id": "race3",
+      "label": "Black or African American alone",
+      "type": "race",
+      "fields": [
+        "P3_003N"
+      ],
+      "population": 45588,
+      "populated_blocks": 1501,
+      "longitude": -76.14352710021079,
+      "latitude": 43.039828296246725,
+      "easting": 406852.78161084675,
+      "northing": 4765872.1306186225,
+      "distance_from_overall_metres": 481.55637558055787,
+      "bearing_from_overall": 205.46277648622825,
+      "internal_point_shift_metres": 0.643913904013772,
+      "largest_block_share": 0.010507151004650347
+    },
+    {
+      "id": "race4",
+      "label": "American Indian and Alaska Native alone",
+      "type": "race",
+      "fields": [
+        "P3_004N"
+      ],
+      "population": 1408,
+      "populated_blocks": 541,
+      "longitude": -76.14726338153086,
+      "latitude": 43.04396965275693,
+      "easting": 406554.7221585558,
+      "northing": 4766336.184087586,
+      "distance_from_overall_metres": 512.0877227032739,
+      "bearing_from_overall": 272.8334201693572,
+      "internal_point_shift_metres": 1.4913384208076108,
+      "largest_block_share": 0.01065340909090909
+    },
+    {
+      "id": "race5",
+      "label": "Asian alone",
+      "type": "race",
+      "fields": [
+        "P3_005N"
+      ],
+      "population": 10403,
+      "populated_blocks": 882,
+      "longitude": -76.13847329578748,
+      "latitude": 43.051892002426264,
+      "easting": 407282.6209868646,
+      "northing": 4767206.21800855,
+      "distance_from_overall_metres": 928.2833951663889,
+      "bearing_from_overall": 12.74259626100144,
+      "internal_point_shift_metres": 0.25913937736383325,
+      "largest_block_share": 0.037489185811785064
+    },
+    {
+      "id": "race6",
+      "label": "Native Hawaiian and Other Pacific Islander alone",
+      "type": "race",
+      "fields": [
+        "P3_006N"
+      ],
+      "population": 67,
+      "populated_blocks": 38,
+      "longitude": -76.14232185913761,
+      "latitude": 43.03901157105796,
+      "easting": 406949.72241017246,
+      "northing": 4765780.095999389,
+      "distance_from_overall_metres": 536.6642805639021,
+      "bearing_from_overall": 191.69920019830954,
+      "internal_point_shift_metres": 3.2701848110093614,
+      "largest_block_share": 0.29850746268656714
+    },
+    {
+      "id": "race7",
+      "label": "Some Other Race alone",
+      "type": "race",
+      "fields": [
+        "P3_007N"
+      ],
+      "population": 6574,
+      "populated_blocks": 1060,
+      "longitude": -76.1444430709397,
+      "latitude": 43.04311674562249,
+      "easting": 406783.14877272333,
+      "northing": 4766238.331978921,
+      "distance_from_overall_metres": 290.0952714241125,
+      "bearing_from_overall": 256.14819337714493,
+      "internal_point_shift_metres": 0.18247297870994264,
+      "largest_block_share": 0.019014298752662
+    },
+    {
+      "id": "race8",
+      "label": "Two or More Races",
+      "type": "race",
+      "fields": [
+        "P3_008N"
+      ],
+      "population": 13405,
+      "populated_blocks": 1537,
+      "longitude": -76.1430157580148,
+      "latitude": 43.04509486190698,
+      "easting": 406902.39853117196,
+      "northing": 4766456.418968171,
+      "distance_from_overall_metres": 223.45218957845154,
+      "bearing_from_overall": 312.27019266236346,
+      "internal_point_shift_metres": 0.4703309984713787,
+      "largest_block_share": 0.008877284595300261
+    },
+    {
+      "id": "hispanic",
+      "label": "Hispanic or Latino (any race)",
+      "type": "ethnicity",
+      "fields": [
+        "P4_003N"
+      ],
+      "population": 15625,
+      "populated_blocks": 1489,
+      "longitude": -76.14480462935606,
+      "latitude": 43.04424068325361,
+      "easting": 406755.4013719906,
+      "northing": 4766363.547662135,
+      "distance_from_overall_metres": 316.01033530807433,
+      "bearing_from_overall": 280.0988417285375,
+      "internal_point_shift_metres": 0.40425270540296987,
+      "largest_block_share": 0.014464
+    },
+    {
+      "id": "nonhispanic",
+      "label": "Not Hispanic or Latino",
+      "type": "ethnicity",
+      "fields": [
+        "P4_002N"
+      ],
+      "population": 132995,
+      "populated_blocks": 1614,
+      "longitude": -76.14053787650938,
+      "latitude": 43.043683365067075,
+      "easting": 407102.0915600557,
+      "northing": 4766296.925652259,
+      "distance_from_overall_metres": 37.12668482723926,
+      "bearing_from_overall": 100.0988460989768,
+      "internal_point_shift_metres": 0.9843494264864253,
+      "largest_block_share": 0.009737208165720516
+    },
+    {
+      "id": "under18",
+      "label": "Under 18",
+      "type": "age",
+      "fields": [
+        "P12_003N",
+        "P12_004N",
+        "P12_005N",
+        "P12_006N",
+        "P12_027N",
+        "P12_028N",
+        "P12_029N",
+        "P12_030N"
+      ],
+      "population": 31683,
+      "populated_blocks": 1565,
+      "longitude": -76.14500610453686,
+      "latitude": 43.0454747458685,
+      "easting": 406740.8606233396,
+      "northing": 4766500.815065211,
+      "distance_from_overall_metres": 379.910288982885,
+      "bearing_from_overall": 300.44568473238326,
+      "internal_point_shift_metres": 0.9274332587066244,
+      "largest_block_share": 0.006470346873717767
+    },
+    {
+      "id": "18to34",
+      "label": "18-34",
+      "type": "age",
+      "fields": [
+        "P12_007N",
+        "P12_008N",
+        "P12_009N",
+        "P12_010N",
+        "P12_011N",
+        "P12_012N",
+        "P12_031N",
+        "P12_032N",
+        "P12_033N",
+        "P12_034N",
+        "P12_035N",
+        "P12_036N"
+      ],
+      "population": 51602,
+      "populated_blocks": 1580,
+      "longitude": -76.13854922532295,
+      "latitude": 43.042303210846875,
+      "easting": 407261.9915442142,
+      "northing": 4766141.459406438,
+      "distance_from_overall_metres": 254.92693260103744,
+      "bearing_from_overall": 128.82750073036658,
+      "internal_point_shift_metres": 0.3319538129072735,
+      "largest_block_share": 0.02108445409092671
+    },
+    {
+      "id": "35to64",
+      "label": "35-64",
+      "type": "age",
+      "fields": [
+        "P12_013N",
+        "P12_014N",
+        "P12_015N",
+        "P12_016N",
+        "P12_017N",
+        "P12_018N",
+        "P12_019N",
+        "P12_037N",
+        "P12_038N",
+        "P12_039N",
+        "P12_040N",
+        "P12_041N",
+        "P12_042N",
+        "P12_043N"
+      ],
+      "population": 46023,
+      "populated_blocks": 1578,
+      "longitude": -76.14212768611834,
+      "latitude": 43.045490909095356,
+      "easting": 406975.3303634145,
+      "northing": 4766499.415589487,
+      "distance_from_overall_metres": 215.40245870016355,
+      "bearing_from_overall": 334.42471170612026,
+      "internal_point_shift_metres": 0.6425948342268583,
+      "largest_block_share": 0.006127371097060166
+    },
+    {
+      "id": "65plus",
+      "label": "65+",
+      "type": "age",
+      "fields": [
+        "P12_020N",
+        "P12_021N",
+        "P12_022N",
+        "P12_023N",
+        "P12_024N",
+        "P12_025N",
+        "P12_044N",
+        "P12_045N",
+        "P12_046N",
+        "P12_047N",
+        "P12_048N",
+        "P12_049N"
+      ],
+      "population": 19312,
+      "populated_blocks": 1407,
+      "longitude": -76.13818503864483,
+      "latitude": 43.04057536725883,
+      "easting": 407289.05392283155,
+      "northing": 4765949.178938795,
+      "distance_from_overall_metres": 419.36167796466054,
+      "bearing_from_overall": 147.01971571744792,
+      "internal_point_shift_metres": 8.342049134008102,
+      "largest_block_share": 0.056907622203811105
+    }
+  ],
+  "checks": {
+    "block_count": 2109,
+    "all_groups_match_published_city_totals": true,
+    "all_block_partitions_sum_to_block_total": true,
+    "dhc_vs_tigerweb_total_differences": [],
+    "partition_center_recombination_error_metres": {
+      "race": 9.331397911231848e-10,
+      "age": 5.820766091346741e-11,
+      "ethnicity": 0.0
+    }
+  }
+}

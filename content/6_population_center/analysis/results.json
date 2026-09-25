@@ -1,0 +1,274 @@
+{
+  "definition": "Population-weighted mean of geometric polygon centroids for 2020 Census blocks in Syracuse city. Each block population is located at that block centroid.",
+  "vintage": "2020 Census; boundaries January 1, 2020; population Census Day April 1, 2020",
+  "projection": "EPSG:26918",
+  "population": 148620,
+  "candidate_blocks": 2711,
+  "selected_blocks": 2109,
+  "populated_blocks": 1614,
+  "zero_population_blocks": 495,
+  "latitude": 43.04374196562929,
+  "longitude": -76.14098645339031,
+  "easting": 407065.6426690012,
+  "northing": 4766303.929883885,
+  "inside_city": true,
+  "city_total_check": 148620,
+  "selection_checks": {
+    "geometry_repairs": [
+      {
+        "geoid": "360670144002048",
+        "area_change_m2": -1.1641532182693481e-10
+      }
+    ],
+    "partially_overlapping_blocks": [],
+    "union_difference_square_metres": 0.0,
+    "min_selected_overlap_fraction": 0.9999999999999973,
+    "independent_weighted_mean_difference_metres": 0.0
+  },
+  "comparison_with_geographic_center": {
+    "latitude": 43.04068526443205,
+    "longitude": -76.14373201653156,
+    "source": "post 5, full NYS municipal area",
+    "distance_metres": 406.65246967367744,
+    "distance_miles": 0.25268212990738925,
+    "bearing_degrees": 33.376822410177844
+  },
+  "matching_2020_area_centroid": {
+    "longitude": -76.14372516274109,
+    "latitude": 43.04068026430964,
+    "distance_from_post5_metres": 0.7877036420157068
+  },
+  "sensitivity": {
+    "internal_point_mean": {
+      "longitude": -76.14098627708417,
+      "latitude": 43.04374991258344,
+      "difference_metres": 0.8827131558765451
+    },
+    "equal_area_projection": {
+      "longitude": -76.14098637632334,
+      "latitude": 43.04374128089934,
+      "difference_metres": 0.07632786522019576
+    },
+    "populated_block_centroids_outside_own_polygon": 17,
+    "weighted_max_block_radius_metres": 202.0091703420341,
+    "note": "Internal-point and projection comparisons are sensitivity checks, not confidence intervals. Radius is a conservative geometric upper bound assuming all residents are somewhere inside their recorded blocks, not an estimate of actual error."
+  },
+  "nearest_streets": [
+    {
+      "name": "Sarah Loguen Street",
+      "distance_metres": 37.87997736694412,
+      "id": "506021526"
+    },
+    {
+      "name": "Harrison Street",
+      "distance_metres": 53.25899506270037,
+      "id": "506022021"
+    },
+    {
+      "name": "Harrison Street",
+      "distance_metres": 64.0902119890158,
+      "id": "506022018"
+    },
+    {
+      "name": "Harrison Street",
+      "distance_metres": 69.6248797046612,
+      "id": "506021525"
+    },
+    {
+      "name": "Almond Street",
+      "distance_metres": 102.66809951810335,
+      "id": "506021523"
+    },
+    {
+      "name": "Almond Street",
+      "distance_metres": 115.58491520043971,
+      "id": "506021524"
+    },
+    {
+      "name": "East Adams Street",
+      "distance_metres": 116.32948213382379,
+      "id": "507666606"
+    },
+    {
+      "name": "Interstate 81 Northbound",
+      "distance_metres": 120.21877798531835,
+      "id": "477437409"
+    },
+    {
+      "name": "East Adams Street",
+      "distance_metres": 121.77343714764972,
+      "id": "477437436"
+    },
+    {
+      "name": "Harrison Street",
+      "distance_metres": 123.8087886000517,
+      "id": "477436888"
+    },
+    {
+      "name": "Harrison Street to Interstate 81 Northbound",
+      "distance_metres": 123.8087886000517,
+      "id": "508421395"
+    },
+    {
+      "name": "Almond Street",
+      "distance_metres": 123.8087886000517,
+      "id": "509998059"
+    }
+  ],
+  "most_populated_blocks": [
+    {
+      "geoid": "360670061011013",
+      "population": 1305,
+      "area_m2": 291677.4996999992,
+      "easting": 407327.8906275958,
+      "northing": 4762050.193517247,
+      "longitude": -76.13706024916578,
+      "latitude": 43.005476463290336,
+      "internal_x": 407327.8946899068,
+      "internal_y": 4762050.197539608,
+      "equal_area_x": 1598855.6147553162,
+      "equal_area_y": 2391013.9604942566,
+      "overlap_fraction": 1.0000000000000004,
+      "centroid_inside_block": true
+    },
+    {
+      "geoid": "360670061022002",
+      "population": 1111,
+      "area_m2": 589069.0447893601,
+      "easting": 408045.5340657899,
+      "northing": 4760785.131869468,
+      "longitude": -76.1280482409289,
+      "latitude": 42.9941738117272,
+      "internal_x": 408045.5373847121,
+      "internal_y": 4760785.130522364,
+      "equal_area_x": 1599832.531815049,
+      "equal_area_y": 2389930.4899567463,
+      "overlap_fraction": 1.0,
+      "centroid_inside_block": true
+    },
+    {
+      "geoid": "360670043024003",
+      "population": 1090,
+      "area_m2": 113719.49474875855,
+      "easting": 407820.7606156397,
+      "northing": 4765292.8918115245,
+      "longitude": -76.1315500910554,
+      "latitude": 43.03473136305106,
+      "internal_x": 407820.7599422896,
+      "internal_y": 4765292.895924544,
+      "equal_area_x": 1598614.4055421883,
+      "equal_area_y": 2394303.498688596,
+      "overlap_fraction": 1.0,
+      "centroid_inside_block": true
+    },
+    {
+      "geoid": "360670055002001",
+      "population": 1071,
+      "area_m2": 281061.00987168984,
+      "easting": 407349.4469472086,
+      "northing": 4763779.323406315,
+      "longitude": -76.13708301813982,
+      "latitude": 43.02104695414719,
+      "internal_x": 407349.4484942263,
+      "internal_y": 4763779.328478266,
+      "equal_area_x": 1598492.9068607138,
+      "equal_area_y": 2392715.077541106,
+      "overlap_fraction": 1.0,
+      "centroid_inside_block": true
+    },
+    {
+      "geoid": "360670055003000",
+      "population": 1066,
+      "area_m2": 442440.71938477067,
+      "easting": 407852.38279029867,
+      "northing": 4763050.95549384,
+      "longitude": -76.1307914063107,
+      "latitude": 43.01455038812964,
+      "internal_x": 407852.3833223088,
+      "internal_y": 4763050.956805119,
+      "equal_area_x": 1599142.4612238256,
+      "equal_area_y": 2392111.009245632,
+      "overlap_fraction": 1.0,
+      "centroid_inside_block": true
+    },
+    {
+      "geoid": "360670043024010",
+      "population": 986,
+      "area_m2": 24901.56568989655,
+      "easting": 407271.64005924534,
+      "northing": 4765340.346122444,
+      "longitude": -76.13829744309058,
+      "latitude": 43.03509176689895,
+      "internal_x": 407271.6436193822,
+      "internal_y": 4765340.349750734,
+      "equal_area_x": 1598071.0900936653,
+      "equal_area_y": 2394229.3990373104,
+      "overlap_fraction": 0.9999999999999999,
+      "centroid_inside_block": true
+    },
+    {
+      "geoid": "360670043011010",
+      "population": 879,
+      "area_m2": 20704.49017208225,
+      "easting": 407093.37470956537,
+      "northing": 4765696.249927562,
+      "longitude": -76.14054468564272,
+      "latitude": 43.038274271911256,
+      "internal_x": 407093.37358241994,
+      "internal_y": 4765696.253062723,
+      "equal_area_x": 1597819.1664298235,
+      "equal_area_y": 2394539.377081194,
+      "overlap_fraction": 1.0000000000000002,
+      "centroid_inside_block": true
+    },
+    {
+      "geoid": "360670032002023",
+      "population": 867,
+      "area_m2": 77193.72150962864,
+      "easting": 406828.3105995049,
+      "northing": 4766558.033976179,
+      "longitude": -76.14394220438446,
+      "latitude": 43.046000636506925,
+      "internal_x": 406828.31090135645,
+      "internal_y": 4766558.029917191,
+      "equal_area_x": 1597370.7870653386,
+      "equal_area_y": 2395326.549153372,
+      "overlap_fraction": 1.0000000000000004,
+      "centroid_inside_block": true
+    },
+    {
+      "geoid": "360670034002036",
+      "population": 759,
+      "area_m2": 17004.71323504808,
+      "easting": 407385.9502525708,
+      "northing": 4766739.295516761,
+      "longitude": -76.13712709403333,
+      "latitude": 43.04770080317602,
+      "internal_x": 407385.9497618286,
+      "internal_y": 4766739.295170645,
+      "equal_area_x": 1597871.6350206828,
+      "equal_area_y": 2395626.9006104623,
+      "overlap_fraction": 1.0,
+      "centroid_inside_block": true
+    },
+    {
+      "geoid": "360670043022012",
+      "population": 684,
+      "area_m2": 16418.874072720562,
+      "easting": 408010.3975415288,
+      "northing": 4765865.397665115,
+      "longitude": -76.1293171689803,
+      "latitude": 43.03990878375669,
+      "internal_x": 408010.3950390351,
+      "internal_y": 4765865.3995029405,
+      "equal_area_x": 1598671.393617598,
+      "equal_area_y": 2394906.8056296334,
+      "overlap_fraction": 1.0,
+      "centroid_inside_block": true
+    }
+  ],
+  "source_hashes": {
+    "post5_results": "c13bb7cfb3ed336109508c24db28e73d8cf8517a336a0f23ed62969265687720",
+    "nys_streets_context_input": "e80376d86a849b1ef8140310548c80d60f83c2101fd63768fbb11e16a57f03b8"
+  }
+}

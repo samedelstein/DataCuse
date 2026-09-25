@@ -1,0 +1,10 @@
+# Draft review ? September 24, 2026 (America/New_York)
+
+- Evidence: 2,109 city blocks; 1,614 populated; 148,620 people. City boundary fully tiled. Every DHC block total agrees with TIGERweb. All 13 demographic groups match published city totals; race, age and ethnicity partitions each reconstruct the overall center. Saved DHC extracts pass their SHA-256 checks.
+- Vintage: April 1, 2020 population and January 1, 2020 Census geometry; UTC download date September 25 is correctly distinguished from local review date September 24.
+- Editorial: answer appears early; age bands and race-alone categories explained; ethnicity separated; approximation, privacy protection, small-group sensitivity and limits of a mean stated. No current-population, neighborhood-membership or segregation inference.
+- Graphics: all four PNGs opened and visually inspected. Coordinates, counts and distances read from saved results. Race and age views share extent and scale. Labels, leaders, legends and footers checked. Full-size race-map link opened successfully in browser.
+- Technical: 18 existing tests passed; public story build passed and excluded this draft. Draft preview generated at /stories/population-center/. All four images loaded. All analysis scripts compile.
+- Browser: desktop and 390 x 844 phone viewport reviewed. No horizontal document overflow; all image aspect ratios preserved. Keyboard expansion of the details element reveals 3 tables and 13 group rows. Shortened table headings to fit phones and fixed punctuation encoding. Viewport override reset. Local preview left open on port 8015.
+- Publication: not requested. Frontmatter remains draft. No commit or push. `stories/` is unchanged; `_preview/` contains the draft. Link to the geographic-center story assumes that preceding story is available when this one is eventually published.
+- Interpretation limits remain substantive: block centroids replace addresses; the Census modifies counts for confidentiality; the 67-person category is especially sensitive. Sensitivity checks are not error bars. No field survey or causal demographic analysis was performed.

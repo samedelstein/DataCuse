@@ -1,0 +1,55 @@
+{
+  "downloaded_utc": "2026-09-25T01:22:23.282977+00:00",
+  "zip_url": "https://www2.census.gov/programs-surveys/decennial/2020/data/demographic-and-housing-characteristics-file/New_York/ny2020.dhc.zip",
+  "members": {
+    "nygeo2020.dhc": {
+      "compressed": 17151002,
+      "uncompressed": 169347639,
+      "crc32": 394375794,
+      "offset": 565253814,
+      "sha256_uncompressed": "41eb45fd69a8de802b587ec0ac41dd1b7affd85256f62f7541d43b4874da6d43"
+    },
+    "ny000052020.dhc": {
+      "compressed": 29117777,
+      "uncompressed": 198577383,
+      "crc32": 1135663880,
+      "offset": 104663211,
+      "sha256_uncompressed": "267e6d530ee727a00ddb20efdc2a2b19e6886682767f6d366a67d5c8e8b32696"
+    },
+    "ny000062020.dhc": {
+      "compressed": 37020509,
+      "uncompressed": 233904950,
+      "crc32": 1870763475,
+      "offset": 133781061,
+      "sha256_uncompressed": "3de3e466dca31754e90d7e8b67f65f241e9f2f7ae84f3a6e2e9272f3e6377ea6"
+    }
+  },
+  "metadata": {
+    "geoheader-2020-dhc-state.xlsx": {
+      "url": "https://www2.census.gov/programs-surveys/decennial/2020/technical-documentation/complete-tech-docs/demographic-and-housing-characteristics-file-and-demographic-profile/geoheader-2020-dhc-state.xlsx",
+      "sha256": "031a06f83fd8137e46f8e93d81a39a85802c457db25b20efeae31d94aa9a4e32"
+    },
+    "2020-dhc-table-matrix.xlsx": {
+      "url": "https://www2.census.gov/programs-surveys/decennial/2020/technical-documentation/complete-tech-docs/demographic-and-housing-characteristics-file-and-demographic-profile/2020-dhc-table-matrix.xlsx",
+      "sha256": "994834aadb0c6dcab936e686deccfb12b41c301e57885c884ea2c195d12f92a3"
+    },
+    "P3": {
+      "url": "https://api.census.gov/data/2020/dec/dhc/groups/P3.json",
+      "sha256": "4de8990c59506e2a4f78ebf218f16a383eacf46bd9c0a95093ecc237710b1177"
+    },
+    "P4": {
+      "url": "https://api.census.gov/data/2020/dec/dhc/groups/P4.json",
+      "sha256": "8eeea71529ba8027e11cf4402c5ffdadb0adcf8f1fb35f4d7dda65dbd07c1c4e"
+    },
+    "P12": {
+      "url": "https://api.census.gov/data/2020/dec/dhc/groups/P12.json",
+      "sha256": "a0fc12175ac3b22163a11ab61c630475145a2d38174bca987593de3495e0c9f3"
+    }
+  },
+  "extracts": {
+    "dhc_syracuse_counts.csv": "4fdfd4eec05adfa712dda0954b40a4347f4f98604571ee19dff66118d00a72e5",
+    "dhc_syracuse_geography.txt": "727a3c59d958256c5b83f59889256bbb1c61220b2b682d6758de0b1d3a896f51",
+    "dhc_syracuse_segment_5.txt": "e6f85f05fdd2b789d3839e48f7de5778f0cb151d3731baae65f8ec6674b35690",
+    "dhc_syracuse_segment_6.txt": "3f0cbef4b1a7da29018e5576877c25dbf23822d447519878dfa8f794af5e382a"
+  }
+}

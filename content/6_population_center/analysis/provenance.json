@@ -1,0 +1,30 @@
+[
+  {
+    "file": "blocks_metadata.json",
+    "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/Census2020/tigerWMS_Census2020/MapServer/10?f=pjson",
+    "downloaded_utc": "2026-09-25T01:10:50.634513+00:00",
+    "sha256": "dc466bb36d924ae639d1c3c5593d24814a9edbac6518bed517d24d94b84cea11",
+    "bytes": 8166
+  },
+  {
+    "file": "place_metadata.json",
+    "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/Census2020/tigerWMS_Census2020/MapServer/26?f=pjson",
+    "downloaded_utc": "2026-09-25T01:10:50.871313+00:00",
+    "sha256": "09e64e404c6560711909b5c9e69e0781d119de44025ae0e52732e6029d0773e7",
+    "bytes": 8011
+  },
+  {
+    "file": "syracuse_place_2020.geojson",
+    "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/Census2020/tigerWMS_Census2020/MapServer/26/query?where=STATE%3D%2736%27+AND+PLACE%3D%2773000%27&outFields=%2A&outSR=4326&f=geojson",
+    "downloaded_utc": "2026-09-25T01:10:51.106616+00:00",
+    "sha256": "d7bc74ad816e3409c31e511e24b4e02b0ef4ee3086771488198ac7fbe0392ee0",
+    "bytes": 26516
+  },
+  {
+    "file": "blocks_candidate_2020.geojson",
+    "url": "https://tigerweb.geo.census.gov/arcgis/rest/services/Census2020/tigerWMS_Census2020/MapServer/10/query?where=STATE%3D%2736%27+AND+COUNTY%3D%27067%27&geometry=-76.20447600010567%2C42.98416600030028%2C-76.07425600002573%2C43.086102000017405&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=%2A&outSR=4326&f=geojson&orderByFields=GEOID&resultRecordCount=10000",
+    "downloaded_utc": "2026-09-25T01:10:53.529108+00:00",
+    "sha256": "08fc72024537baeca3fb45a1b1ba5957975520d694c466e0d85464cc8b188b67",
+    "bytes": 3343277
+  }
+]
