@@ -1,5 +1,108 @@
 [
   {
+    "address": "350 Loma Ave & Cadillac St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image is taken from inside an enclosed porch, which limits the view of the main structure's exterior walls, roof, and actual yard."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "not_visible",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "unclear"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.2,
+            "width": 0.19,
+            "x": 0.72,
+            "y": 0.42
+          },
+          "confidence": "high",
+          "label": "cracked window pane",
+          "reason": "A diagonal crack is visible in the upper glass pane of the rightmost window."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Cracked window pane on the rightmost window of the enclosed porch"
+      ],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "An enclosed porch with large glass windows looking out onto a street intersection, showing a cracked window pane on the right.",
+      "visible_conditions": [
+        "Enclosed porch structure with painted wood ceiling and painted block lower walls",
+        "Multiple large glass windows looking out towards the street",
+        "A diagonal crack is visible in the upper pane of the rightmost window"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Cracked window pane on the rightmost window of the enclosed porch",
+      "Needs human review"
+    ],
+    "id": 616,
+    "image": "images/parcel-000616.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 54555,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0814954513942,
+    "lon": -76.14714229555742,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-16-270",
+    "published_at": "2026-09-25T02:03:01+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "350 Loma Ave & Cadillac St"
+  },
+  {
     "address": "346 Loma Ave",
     "ai_analysis": {
       "available": true,
