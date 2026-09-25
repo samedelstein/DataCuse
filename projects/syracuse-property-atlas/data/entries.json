@@ -1,5 +1,99 @@
 [
   {
+    "address": "710 Cadillac St & Wadsworth St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The property is completely obscured by dense trees and shrubs, preventing any assessment of its exterior conditions."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "not_visible",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "unclear",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "not_visible"
+      },
+      "confidence": "low",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property's exterior conditions are not visible due to dense vegetation completely obscuring the view.",
+      "visible_conditions": [
+        "The property is entirely obscured by dense trees and shrubs, preventing any view of structures or ground conditions."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "unclear",
+        "boarded_windows_or_doors": "unclear",
+        "fire_damage_visible": "unclear",
+        "structural_damage_visible": "unclear",
+        "vacancy_signs_visible": "unclear"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Needs human review"
+    ],
+    "id": 617,
+    "image": "images/parcel-000617.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 151521,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08215900806038,
+    "lon": -76.1462668827827,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-17-010",
+    "published_at": "2026-09-25T03:11:45+00:00",
+    "review_reasons": [
+      "AI requested human review"
+    ],
+    "title": "710 Cadillac St & Wadsworth St"
+  },
+  {
     "address": "350 Loma Ave & Cadillac St",
     "ai_analysis": {
       "available": true,
