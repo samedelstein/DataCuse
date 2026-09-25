@@ -1,5 +1,117 @@
 [
   {
+    "address": "1141 Wadsworth St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.15,
+            "width": 0.2,
+            "x": 0.05,
+            "y": 0.75
+          },
+          "confidence": "high",
+          "label": "Bags near curb",
+          "reason": "Three large bags, possibly yard waste, are visible near the public way."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Three large bags are visible near the curb, which may be yard waste awaiting collection."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image displays a single-family residence with a light-colored exterior, an attached garage, and a generally maintained front yard.",
+      "visible_conditions": [
+        "A single-family residence with a light-colored siding and a dark-colored roof.",
+        "An attached garage with a light-colored garage door is visible on the right side of the front facade.",
+        "A paved driveway leads to the garage.",
+        "The front yard features a grass lawn, mature trees, and some shrubs.",
+        "A small set of steps leads to the front entry door.",
+        "Three large bags, possibly containing yard waste, are visible near the curb on the left side of the property.",
+        "Two trash or recycling bins are located near the garage."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Three large bags are visible near the curb, which may be yard waste awaiting collection."
+    ],
+    "id": 619,
+    "image": "images/parcel-000619.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 86332,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.082089230371636,
+    "lon": -76.14597604055585,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-17-030",
+    "published_at": "2026-09-25T05:02:59+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1141 Wadsworth St"
+  },
+  {
     "address": "1145 Wadsworth St",
     "ai_analysis": {
       "available": true,
