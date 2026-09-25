@@ -1,5 +1,98 @@
 [
   {
+    "address": "304 Malverne Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a single-family residence with light-colored siding, a visible foundation, and a maintained lawn with landscaping.",
+      "visible_conditions": [
+        "The structure features light-colored horizontal siding on the upper levels and a darker, possibly block or painted foundation on the lower portion.",
+        "Multiple windows are visible, some with blinds.",
+        "The front yard area visible in the image has a mowed, green lawn.",
+        "A deciduous tree with green foliage is situated in the front yard, with some seasonal decorations at its base.",
+        "A paved pathway is visible leading towards the side of the house.",
+        "A bench and some potted plants are visible near the side of the structure."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 631,
+    "image": "images/parcel-000631.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 83460,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08121849109262,
+    "lon": -76.14524533781335,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-17-150",
+    "published_at": "2026-09-25T17:02:59+00:00",
+    "review_reasons": [],
+    "title": "304 Malverne Dr"
+  },
+  {
     "address": "300 Malverne Dr & Weldon Ave",
     "ai_analysis": {
       "available": true,
