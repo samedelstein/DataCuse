@@ -1,5 +1,118 @@
 [
   {
+    "address": "1145 Wadsworth St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "the angle and distance from the subject make it difficult to provide a complete assessment"
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good|fair|poor|not_visible|unclear",
+        "roof": "good|fair|poor|not_visible|unclear",
+        "siding_or_facade": "good|fair|poor|not_visible|unclear",
+        "trash_debris": "none_visible|minor|major|unclear",
+        "vegetation_overgrowth": "none_visible|minor|major|unclear",
+        "windows_doors": "good|fair|poor|not_visible|unclear",
+        "yard_or_lot": "good|fair|poor|not_visible|unclear"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.842,
+            "width": 0.683,
+            "x": 0.383,
+            "y": 0.383
+          },
+          "confidence": "high",
+          "label": "house's exterior",
+          "reason": "good condition"
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "the image is taken at an angle and from a distance, affecting the clarity of details"
+      ],
+      "property_type_guess": "single-family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a single-family house on a street corner. The property has a well-maintained front yard with a lawn, shrubs, and a tree, which appears to be in good condition. The house's exterior is in good condition, with no visible signs of neglect or overgrowth. The windows and siding are in fair condition, and there are no clear indications of fire or structural damage. The porch appears to be in good condition, and there is no debris or overgrown vegetation obstructing the view or the public way. The image quality is poor due to the angle and distance from the subject. The property does not show any signs of neglect, active construction, or vacancy. There are no vehicles or people visible in the image. The image does not show any private personal details.",
+      "visible_conditions": [
+        "good condition of the front yard, house's exterior, windows, siding, and porch"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no|unclear",
+        "boarded_windows_or_doors": "no|unclear",
+        "fire_damage_visible": "no|unclear",
+        "structural_damage_visible": "no|unclear",
+        "vacancy_signs_visible": "no|unclear"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: the image is taken at an angle and from a distance, affecting the clarity of details"
+    ],
+    "id": 618,
+    "image": "images/parcel-000618.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 93712,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0821647385966,
+    "lon": -76.14608470074545,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-17-020",
+    "published_at": "2026-09-25T04:06:23+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1145 Wadsworth St"
+  },
+  {
     "address": "710 Cadillac St & Wadsworth St",
     "ai_analysis": {
       "available": true,
