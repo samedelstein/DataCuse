@@ -19,6 +19,13 @@ export async function publicationFiles(source) {
   const files = new Map([['index.md', markdown]]);
   if (organized) {
     const references = new Set();
+    const front = markdown.replace(/^\uFEFF/, '').match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/);
+    const metadata = front ? parseYaml(front[1]) : {};
+    for (const [key, extension] of [['scripts', 'js'], ['styles', 'css']]) {
+      if (metadata[key] === undefined) continue;
+      if (!Array.isArray(metadata[key]) || metadata[key].some(value => typeof value !== 'string' || !new RegExp(`^\\.\\./images/[a-z0-9_-]+\\.${extension}$`).test(value))) throw new Error(`Invalid ${key}: use ../images/filename.${extension}.`);
+      for (const value of metadata[key]) references.add(value);
+    }
     marked.walkTokens(marked.lexer(markdown), token => {
       if ((token.type === 'image' || token.type === 'link') && token.href.startsWith('../images/')) references.add(token.href);
       else if (token.type === 'image' && !/^(https?:|data:)/.test(token.href)) throw new Error('Local article images must use ../images/filename links.');

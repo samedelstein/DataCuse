@@ -41,11 +41,15 @@ export function parseStory(text, slug, asOf = today()) {
   validateMetadata(data, slug);
   if (data.date > asOf) return null;
   if (!match[2].trim()) throw new Error(`${slug}: published story has no body.`);
+  for (const [key, extension] of [['scripts', 'js'], ['styles', 'css']]) {
+    if (data[key] === undefined) continue;
+    if (!Array.isArray(data[key]) || data[key].some(value => typeof value !== 'string' || !new RegExp(`^(?:\\.\\./images/|assets/)[a-z0-9_-]+\\.${extension}$`).test(value))) throw new Error(`${slug}: invalid ${key}.`);
+  }
   const renderer = new Renderer();
   renderer.image = ({ href, title, text }) => {
     return `<a class="story-image" href="${escape(href)}" aria-label="Open full-size image: ${escape(text)}"><img src="${escape(href)}" alt="${escape(text)}"${title ? ` title="${escape(title)}"` : ''} loading="lazy"></a>`;
   };
-  return { title: data.title.trim(), summary: data.summary.trim(), category: data.category.trim(), date: data.date, ideaId: data.ideaId || '', slug, url: `/stories/${slug}/`, html: marked.parse(match[2], { async: false, renderer }), body: match[2] };
+  return { title: data.title.trim(), summary: data.summary.trim(), category: data.category.trim(), date: data.date, ideaId: data.ideaId || '', scripts: data.scripts || [], styles: data.styles || [], slug, url: `/stories/${slug}/`, html: marked.parse(match[2], { async: false, renderer }), body: match[2] };
 }
 
 export async function readStories(root, asOf = today()) {
@@ -120,13 +124,13 @@ function shell({ title, description, url, body, article }) {
   ${article ? `<meta property="article:published_time" content="${article.date}">` : ''}
   ${structured}
   <link rel="stylesheet" href="/public/home.css">
-  <link rel="stylesheet" href="/public/stories.css">
+  <link rel="stylesheet" href="/public/stories.css">${(article?.styles || []).map(href => `\n  <link rel="stylesheet" href="${escape(href)}">`).join('')}
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
   <header class="site-header"><nav class="wrap navigation" aria-label="Primary"><a class="brand" href="/">Data<span>Cuse</span></a><div><a href="/#projects">Tools</a><a href="/stories/" aria-current="${article ? 'false' : 'page'}">Stories</a><a href="/#about">About</a></div></nav></header>
   <main id="main-content" class="wrap story-wrap">${body}</main>
-  <footer class="site-footer"><div class="wrap"><p>Independent work by <a href="https://samedelstein.com/about/">Sam Edelstein</a></p><nav aria-label="More"><a href="/stories/">All stories</a><a href="/stories/feed.xml">RSS feed</a><a href="mailto:sam.i.edelstein@gmail.com">Contact</a></nav></div></footer>
+  <footer class="site-footer"><div class="wrap"><p>Independent work by <a href="https://samedelstein.com/about/">Sam Edelstein</a></p><nav aria-label="More"><a href="/stories/">All stories</a><a href="/stories/feed.xml">RSS feed</a><a href="mailto:sam.i.edelstein@gmail.com">Contact</a></nav></div></footer>${(article?.scripts || []).map(src => `\n<script src="${escape(src)}" defer></script>`).join('')}
 </body>
 </html>
 `;

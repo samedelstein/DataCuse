@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://gisservices.its.ny.gov/arcgis/rest/services/NYS_Civil_Boundaries/MapServer/4?f=pjson",
+    "file": "boundary_metadata.json",
+    "sha256": "3826d56b6d72e35e79b478d2540c78bf52b47dd867177dba9091a55164702256",
+    "downloaded_utc": "2026-09-24T12:06:28.854625+00:00"
+  },
+  {
+    "url": "https://gisservices.its.ny.gov/arcgis/rest/services/NYS_Civil_Boundaries/MapServer/4/query?where=NAME+%3D+%27Syracuse%27&outFields=%2A&outSR=4326&f=geojson",
+    "file": "syracuse_boundary.geojson",
+    "sha256": "8ea750418fc5b5e4616f8945a1d64bcfbb4c95d31d6281cab8d41f6b65f6d72e",
+    "downloaded_utc": "2026-09-24T12:06:29.116821+00:00"
+  }
+]

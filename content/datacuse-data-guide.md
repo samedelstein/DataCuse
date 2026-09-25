@@ -32,7 +32,9 @@ Use small, honestly bounded investigations when a complete citywide inventory do
 
 **Sam's requested addition:** build a web app as part of the center-of-Syracuse post. When a visitor opens it and chooses to use their location, show which direction they should face to face the center of Syracuse and how many miles away they are.
 
-Proposed implementation brief, for later work:
+**Draft implementation (September 24, 2026):** [Post 5](5_geographic_center/README.md) now combines a private guess-first map, an answer/story accordion, and the location compass on one page. It uses the full municipal-area centroid calculated for DC005. Guesses are not collected. The draft has desktop/mobile browser checks; physical handset GPS/compass testing remains.
+
+Original implementation brief:
 
 - Calculate and document a fixed center coordinate first, linked to DC005. Suggested initial definition: centroid of the selected Syracuse municipal boundary. Decide explicitly whether to exclude water. A population center from DC006 could be a clearly labeled optional comparison.
 - Show distance in **straight-line miles**, the compass direction, and bearing in degrees from north. Do not label it walking or driving distance.
@@ -42,7 +44,7 @@ Proposed implementation brief, for later work:
 - Keep the location calculation on the device by default. No server-side location history is required. Any optional reader-vote feature should collect a separate perceived-center pin with a clear explanation.
 - The app and the original question are related but distinct: “where am I relative to the center?” does not measure “where do residents think the center is?” To answer the original question, optionally ask for a center guess before showing the computed point and label responses as a self-selected sample.
 
-Browser requirements checked against [MDN geolocation documentation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) and [orientation permission documentation](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/requestPermission_static): geolocation requires a secure context and user permission; orientation support and permission requirements vary. This is a saved feature brief, not an implemented app.
+Browser requirements checked against [MDN geolocation documentation](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API) and [orientation permission documentation](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/requestPermission_static): geolocation requires a secure context and user permission; orientation support and permission requirements vary. The feature brief is retained below the draft implementation note for context.
 
 ## DC058 migration-bird starting plan
 

@@ -1,0 +1,122 @@
+{
+  "definition": "Area-weighted centroid of full NYS Syracuse municipal polygon; water inside the boundary is included.",
+  "source": "https://gisservices.its.ny.gov/arcgis/rest/services/NYS_Civil_Boundaries/MapServer/4",
+  "projection": "EPSG:26918 (NAD83 / UTM zone 18N)",
+  "latitude": 43.04068526443205,
+  "longitude": -76.14373201653156,
+  "easting": 406837.38652648946,
+  "northing": 4765967.5249021575,
+  "area_square_miles": 25.63114286875175,
+  "area_square_metres": 66384355.28439038,
+  "inside_city": true,
+  "equal_area_check": {
+    "projection": "EPSG:5070",
+    "latitude": 43.04068437086145,
+    "longitude": -76.14373173550862,
+    "separation_metres": 0.10187695605471107
+  },
+  "independent_centroid_difference_metres": 1.8662795822463695e-09,
+  "source_properties": {
+    "OBJECTID": 55,
+    "NAME": "Syracuse",
+    "MUNI_TYPE": "city",
+    "MUNITYCODE": 1,
+    "COUNTY": "Onondaga",
+    "GNIS_ID": "979539",
+    "FIPS_CODE": "3606773000",
+    "SWIS": "311500",
+    "POP1990": 163860,
+    "POP2000": 147306,
+    "POP2010": 145170,
+    "POP2020": 148620,
+    "DOS_LL": null,
+    "DOSLL_DATE": null,
+    "MAP_SYMBOL": "1",
+    "CALC_SQ_MI": 25.64606602,
+    "DATEMOD": 1521763200000,
+    "SHAPE.AREA": 124407212.096681,
+    "SHAPE.LEN": 71656.20570200929
+  },
+  "nearest_street_segments": [
+    {
+      "name": "South McBride Street",
+      "distance_metres": 21.65711163658535,
+      "id": "477438224"
+    },
+    {
+      "name": "Jackson Street",
+      "distance_metres": 35.372001710424456,
+      "id": "477438223"
+    },
+    {
+      "name": "Jackson Street",
+      "distance_metres": 41.44178470973211,
+      "id": "477438232"
+    },
+    {
+      "name": "South McBride Street",
+      "distance_metres": 41.44178470973211,
+      "id": "477438457"
+    },
+    {
+      "name": "Stewart Court",
+      "distance_metres": 51.090895066102206,
+      "id": "513530326"
+    },
+    {
+      "name": "Jackson Street",
+      "distance_metres": 61.30093306620709,
+      "id": "513530487"
+    },
+    {
+      "name": "Dablon Court",
+      "distance_metres": 90.87071740436505,
+      "id": "513530324"
+    },
+    {
+      "name": "Adams Street to Interstate 81 Southbound",
+      "distance_metres": 91.08057663933272,
+      "id": "507665687"
+    },
+    {
+      "name": "Jackson Street",
+      "distance_metres": 98.34768322171524,
+      "id": "477438234"
+    },
+    {
+      "name": "Radisson Court",
+      "distance_metres": 98.34768322171524,
+      "id": "477438363"
+    },
+    {
+      "name": "Jackson Street",
+      "distance_metres": 99.29482179614752,
+      "id": "477438195"
+    },
+    {
+      "name": "Adams Street to Interstate 81 Southbound",
+      "distance_metres": 99.29482179614752,
+      "id": "477438435"
+    },
+    {
+      "name": "Interstate 81 Southbound",
+      "distance_metres": 99.88390042448223,
+      "id": "477438194"
+    },
+    {
+      "name": "Almond Street",
+      "distance_metres": 104.59675465978007,
+      "id": "506022038"
+    },
+    {
+      "name": "Monroe Street",
+      "distance_metres": 106.72242581918971,
+      "id": "477437791"
+    }
+  ],
+  "street_source": {
+    "file": "../../4_name_changes/analysis/streets_nys_current.geojson",
+    "download_date": "2026-09-19",
+    "sha256": "e80376d86a849b1ef8140310548c80d60f83c2101fd63768fbb11e16a57f03b8"
+  }
+}

@@ -92,3 +92,16 @@ The homepage's latest three stories, complete archive, and RSS feed all come fro
 Publish on DataCuse first. For a selected Medium version, use Medium's **Import a story** with the individual live article URL. Review images and source links, and confirm the canonical URL points to DataCuse. Medium imports are manual and later edits do not synchronize automatically. Keep the DataCuse URL in the tracker's Published URL field and put the Medium URL in Research Notes.
 
 Official references checked September 18, 2026: [Medium import instructions](https://help.medium.com/hc/en-us/articles/214550207-Importing-a-post-to-Medium) and [canonical-link settings](https://help.medium.com/hc/en-us/articles/360033930293-Set-a-canonical-link).
+
+## Interactive story assets
+
+For a story with an inline interaction, list local JavaScript and CSS explicitly in its frontmatter:
+
+```yaml
+scripts:
+  - ../images/center-game.js
+styles:
+  - ../images/center-game.css
+```
+
+The publisher copies these assets and adds deferred script and stylesheet tags to that article only. Use lowercase filenames without spaces and review scripts as trusted editorial code. The canonical prose can use native `<details>` / `<summary>` elements for an answer accordion. Keep important text readable without JavaScript, and avoid revealing a quiz answer in the title or summary.

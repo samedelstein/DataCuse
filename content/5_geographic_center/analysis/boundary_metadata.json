@@ -1,0 +1,247 @@
+{
+ "currentVersion": 10.81,
+ "id": 4,
+ "name": "Cities",
+ "type": "Feature Layer",
+ "description": "Publication Date: March 2026. Updated as needed. Current as of the Publication Date. \n\nA polygon layer of all city boundaries in New York State. The city features and attributes in this layer are the same as those in the Cities_Towns layer in this service. The source data was originally a compilation of U.S. Geological Survey 1:100,000-scale digital vector files and NYS Department of Transportation 1:24,000-scale and 1:75,000-scale digital vector files. Boundaries were revised to 1:24,000-scale positional accuracy and selectively updated based on municipal boundary reviews, court decisions and NYS Department of State Local Law filings for annexations, dissolutions, and incorporations. Currently, boundary changes are made based on NYS Department of State Local Law filings (http://locallaws.dos.ny.gov/). Additional updates and corrections are made as needed in partnership with municipalities.\n\nAdditional metadata, including field descriptions, can be found at the NYS GIS Clearinghouse: https://gis.ny.gov/civil-boundaries.  \n\nSpatial Reference of Source Data:  NAD 1983 UTM Zone 18N. \nSpatial Reference of Map Service:  WGS 1984 Web Mercator Auxiliary Sphere. \n\nThis map service is available to the public. \n\nThe State of New York, acting through the New York State Office of Information Technology Services, makes no representations or warranties, express or implied, with respect to the use of or reliance on the Data provided. The User accepts the Data provided \u201cas is\u201d with no guarantees that it is error free, complete, accurate, current or fit for any particular purpose and assumes all risks associated with its use. The State disclaims any responsibility or legal liability to Users for damages of any kind, relating to the providing of the Data or the use of it. Users should be aware that temporal changes may have occurred since this Data was created. ",
+ "geometryType": "esriGeometryPolygon",
+ "sourceSpatialReference": {
+  "wkid": 102100,
+  "latestWkid": 3857
+ },
+ "copyrightText": "NYS Office of Information Technology Services Geospatial Data Services, nysgis@its.ny.gov, 518-242-5029.",
+ "parentLayer": null,
+ "subLayers": [],
+ "minScale": 0,
+ "maxScale": 0,
+ "drawingInfo": {
+  "renderer": {
+   "type": "simple",
+   "symbol": {
+    "type": "esriSFS",
+    "style": "esriSFSSolid",
+    "color": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "outline": {
+     "type": "esriSLS",
+     "style": "esriSLSSolid",
+     "color": [
+      255,
+      255,
+      51,
+      255
+     ],
+     "width": 1.5
+    }
+   },
+   "label": "",
+   "description": ""
+  },
+  "transparency": 0,
+  "labelingInfo": null
+ },
+ "defaultVisibility": true,
+ "extent": {
+  "xmin": -8834686.9577,
+  "ymin": 4935440.9267,
+  "xmax": -8174097.1845,
+  "ymax": 5581086.567,
+  "spatialReference": {
+   "wkid": 102100,
+   "latestWkid": 3857
+  }
+ },
+ "hasAttachments": false,
+ "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+ "displayField": "NAME",
+ "typeIdField": null,
+ "subtypeFieldName": null,
+ "subtypeField": null,
+ "defaultSubtypeCode": null,
+ "fields": [
+  {
+   "name": "OBJECTID",
+   "type": "esriFieldTypeOID",
+   "alias": "OBJECTID",
+   "domain": null
+  },
+  {
+   "name": "NAME",
+   "type": "esriFieldTypeString",
+   "alias": "NAME",
+   "length": 40,
+   "domain": null
+  },
+  {
+   "name": "MUNI_TYPE",
+   "type": "esriFieldTypeString",
+   "alias": "MUNI_TYPE",
+   "length": 4,
+   "domain": null
+  },
+  {
+   "name": "MUNITYCODE",
+   "type": "esriFieldTypeSmallInteger",
+   "alias": "MUNITYCODE",
+   "domain": null
+  },
+  {
+   "name": "COUNTY",
+   "type": "esriFieldTypeString",
+   "alias": "COUNTY",
+   "length": 50,
+   "domain": null
+  },
+  {
+   "name": "GNIS_ID",
+   "type": "esriFieldTypeString",
+   "alias": "GNIS_ID",
+   "length": 9,
+   "domain": null
+  },
+  {
+   "name": "FIPS_CODE",
+   "type": "esriFieldTypeString",
+   "alias": "FIPS_CODE",
+   "length": 10,
+   "domain": null
+  },
+  {
+   "name": "SWIS",
+   "type": "esriFieldTypeString",
+   "alias": "SWIS",
+   "length": 6,
+   "domain": null
+  },
+  {
+   "name": "POP1990",
+   "type": "esriFieldTypeInteger",
+   "alias": "POP1990",
+   "domain": null
+  },
+  {
+   "name": "POP2000",
+   "type": "esriFieldTypeInteger",
+   "alias": "POP2000",
+   "domain": null
+  },
+  {
+   "name": "POP2010",
+   "type": "esriFieldTypeInteger",
+   "alias": "POP2010",
+   "domain": null
+  },
+  {
+   "name": "POP2020",
+   "type": "esriFieldTypeInteger",
+   "alias": "POP2020",
+   "domain": null
+  },
+  {
+   "name": "DOS_LL",
+   "type": "esriFieldTypeString",
+   "alias": "DOS_LL",
+   "length": 7,
+   "domain": null
+  },
+  {
+   "name": "DOSLL_DATE",
+   "type": "esriFieldTypeDate",
+   "alias": "DOSLL_DATE",
+   "length": 8,
+   "domain": null
+  },
+  {
+   "name": "MAP_SYMBOL",
+   "type": "esriFieldTypeString",
+   "alias": "MAP_SYMBOL",
+   "length": 1,
+   "domain": null
+  },
+  {
+   "name": "CALC_SQ_MI",
+   "type": "esriFieldTypeDouble",
+   "alias": "CALC_SQ_MI",
+   "domain": null
+  },
+  {
+   "name": "DATEMOD",
+   "type": "esriFieldTypeDate",
+   "alias": "DATEMOD",
+   "length": 8,
+   "domain": null
+  },
+  {
+   "name": "SHAPE",
+   "type": "esriFieldTypeGeometry",
+   "alias": "Shape",
+   "domain": null
+  },
+  {
+   "name": "SHAPE.AREA",
+   "type": "esriFieldTypeDouble",
+   "alias": "SHAPE.AREA",
+   "domain": null
+  },
+  {
+   "name": "SHAPE.LEN",
+   "type": "esriFieldTypeDouble",
+   "alias": "SHAPE.LEN",
+   "domain": null
+  }
+ ],
+ "geometryField": {
+  "name": "SHAPE",
+  "type": "esriFieldTypeGeometry",
+  "alias": "Shape"
+ },
+ "indexes": [
+  {
+   "name": "R91033_SDE_ROWID_UK",
+   "fields": "OBJECTID",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  },
+  {
+   "name": "A5348_IX1",
+   "fields": "SHAPE",
+   "isAscending": true,
+   "isUnique": true,
+   "description": ""
+  }
+ ],
+ "subtypes": [],
+ "relationships": [],
+ "canModifyLayer": true,
+ "canScaleSymbols": false,
+ "hasLabels": false,
+ "capabilities": "Map,Query,Data",
+ "maxRecordCount": 1000,
+ "supportsStatistics": true,
+ "supportsAdvancedQueries": true,
+ "supportedQueryFormats": "JSON, geoJSON",
+ "isDataVersioned": false,
+ "ownershipBasedAccessControlForFeatures": {"allowOthersToQuery": true},
+ "useStandardizedQueries": true,
+ "advancedQueryCapabilities": {
+  "useStandardizedQueries": true,
+  "supportsStatistics": true,
+  "supportsHavingClause": true,
+  "supportsCountDistinct": true,
+  "supportsOrderBy": true,
+  "supportsDistinct": true,
+  "supportsPagination": true,
+  "supportsTrueCurve": true,
+  "supportsReturningQueryExtent": true,
+  "supportsQueryWithDistance": true,
+  "supportsSqlExpression": true
+ },
+ "supportsDatumTransformation": true,
+ "dateFieldsTimeReference": null,
+ "supportsCoordinatesQuantization": true
+}

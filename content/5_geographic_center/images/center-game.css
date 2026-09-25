@@ -1,0 +1,22 @@
+
+#center-experience,#center-tool{--paper:#f7f3e8;--ink:#213d32;--muted:#616a5e;--line:#d6d7c9;--rust:#a85632;--teal:#207675;color:var(--ink);font:17px/1.6 Arial,sans-serif}
+#center-experience [hidden],#center-tool [hidden]{display:none!important}
+#center-answer:not([open]) #compass-panel,#center-tool:not([open]) #compass-panel{display:none}
+#center-experience button,#center-tool button{font:inherit;border:1px solid var(--ink);padding:10px 16px;min-height:46px;border-radius:5px;cursor:pointer;background:var(--paper);color:var(--ink)}
+#center-experience button:hover,#center-tool button:hover{background:#e6ebdf}#center-tool button:disabled{opacity:.55;cursor:wait}#center-tool button.primary{background:var(--ink);color:var(--paper)}
+#center-experience :focus-visible,#center-tool :focus-visible,#center-answer>summary:focus-visible{outline:3px solid #a85632;outline-offset:4px}
+#center-experience .map-shell{position:relative;border:1px solid var(--line);background:#f0efe2;border-radius:8px;overflow:hidden}
+#map{display:block;width:100%;aspect-ratio:1;cursor:crosshair;touch-action:manipulation}
+#map text{font-family:Arial,sans-serif;paint-order:stroke;stroke:#f7f3e8;stroke-width:5;stroke-linejoin:round;fill:#213d32}
+#center-experience .map-tools{display:flex;gap:8px;position:absolute;right:12px;top:12px}#center-experience .map-tools button{padding:4px 12px;font-size:20px;min-width:42px}
+#center-experience .legend{display:flex;gap:20px;flex-wrap:wrap;font-size:14px;margin:8px 0}#center-experience .swatch{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:7px;background:var(--rust)}#center-experience .swatch.you{background:var(--teal)}
+#center-experience .note,#center-tool .note{color:var(--muted);font-size:14px}#guess-feedback{font-weight:bold}#map-result{border-left:3px solid #207675;padding:10px 16px;font-weight:bold}
+#center-answer{border-top:1px solid #d6d7c9;border-bottom:1px solid #d6d7c9;margin-top:28px;padding:0 0 16px}
+#center-answer>summary{cursor:pointer;padding:20px 14px;font:bold 23px/1.35 Georgia,serif;background:#e6ebdf;color:#213d32;border-radius:5px}
+#center-answer[open]>summary{margin-bottom:24px}#guess-score{font:bold 22px/1.45 Georgia,serif;padding:18px;background:#f1e7d8;border-radius:5px;margin-bottom:24px}
+#center-tool{border:1px solid var(--line);border-radius:6px;padding:16px;margin:24px 0}#center-tool>summary{font:bold 20px/1.4 Georgia,serif;cursor:pointer}#compass-panel{padding-top:18px}
+#center-tool .actions{display:flex;flex-wrap:wrap;gap:10px}#center-tool .result{border-top:1px solid var(--line);margin-top:20px;padding-top:20px}#center-tool .kicker{font-size:12px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}#center-tool .distance{font:48px/1.1 Georgia,serif;margin:10px 0}#center-tool .direction{font-size:24px;margin:12px 0}
+#center-tool .dial{width:170px;height:170px;border:1px solid var(--line);border-radius:50%;margin:20px auto;position:relative;background:#efeee1}#center-tool .north{position:absolute;top:7px;width:100%;text-align:center;font-weight:bold}#center-tool .arrow{position:absolute;inset:35px;transform-origin:center;transition:transform .15s linear}#center-tool .arrow svg{width:100%;height:100%}#center-tool .dial[data-inactive="true"] .arrow{visibility:hidden}#center-tool .dial[data-inactive="true"]:after{content:attr(data-message);position:absolute;top:72px;width:100%;text-align:center;font-size:14px;color:var(--muted)}
+#center-tool details{border-top:1px solid var(--line);padding:16px 0;margin-top:15px}#center-tool details summary{cursor:pointer;font-weight:bold}#center-tool form{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:15px}#center-tool label{display:block;font-size:14px}#center-tool input{box-sizing:border-box;display:block;width:100%;font:inherit;padding:8px;border:1px solid #869582;border-radius:4px;background:#fffdf7;color:var(--ink)}#center-tool form button{grid-column:1/-1}#error{color:#88381f;font-size:15px}
+@media(max-width:600px){#center-answer>summary{font-size:21px}#center-experience .map-tools{right:8px;top:8px}#center-experience .legend{gap:12px}#center-tool .distance{font-size:40px}#center-tool{padding:12px}}
+@media(prefers-reduced-motion:reduce){#center-tool .arrow{transition:none}}
