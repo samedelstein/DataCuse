@@ -1,5 +1,132 @@
 [
   {
+    "address": "1121 Wadsworth St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The condition of the roof surface is unclear due to sun glare.",
+        "Only the front exterior of the property is visible in the image."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "unclear",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.1,
+            "width": 0.3,
+            "x": 0.45,
+            "y": 0.55
+          },
+          "confidence": "medium",
+          "label": "Siding wear",
+          "reason": "Visible discoloration or wear on the siding panels below the porch windows."
+        },
+        {
+          "bbox": {
+            "height": 0.1,
+            "width": 0.3,
+            "x": 0.45,
+            "y": 0.45
+          },
+          "confidence": "medium",
+          "label": "Porch window condition",
+          "reason": "Windows on the enclosed porch appear to have minor dirt or wear, affecting clarity."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor discoloration or wear is observed on the siding panels below the windows of the enclosed front porch.",
+        "Some windows on the enclosed porch appear to have minor dirt or wear, which slightly affects their clarity."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property appears to be a single-family residence with a generally maintained exterior, featuring an enclosed front porch and a mowed lawn.",
+      "visible_conditions": [
+        "White siding is visible on the main structure and the enclosed front porch.",
+        "A gabled roofline is present, though the specific condition of the roof surface is obscured by sun glare.",
+        "An enclosed front porch with multiple windows and a central entry door is visible.",
+        "A concrete walkway leads from the public sidewalk to the porch steps.",
+        "The front lawn appears mowed, and a small, staked tree is planted in the yard.",
+        "A paved driveway is visible to the left side of the house, extending towards the rear."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Minor discoloration or wear is observed on the siding panels below the windows of the enclosed front porch.",
+      "Image-only flag: Some windows on the enclosed porch appear to have minor dirt or wear, which slightly affects their clarity."
+    ],
+    "id": 624,
+    "image": "images/parcel-000624.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 81146,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08171168608142,
+    "lon": -76.14543274362418,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-17-080",
+    "published_at": "2026-09-25T10:04:00+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1121 Wadsworth St"
+  },
+  {
     "address": "1127 Wadsworth St",
     "ai_analysis": {
       "available": true,
