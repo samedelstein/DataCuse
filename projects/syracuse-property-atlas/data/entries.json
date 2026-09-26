@@ -1,5 +1,137 @@
 [
   {
+    "address": "1130 Wadsworth St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "good",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "major",
+        "windows_doors": "fair",
+        "yard_or_lot": "poor"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.45",
+            "width": "1.0",
+            "x": "0.0",
+            "y": "0.55"
+          },
+          "confidence": "high",
+          "label": "Vegetation Overgrowth",
+          "reason": "Tall grass and weeds are clearly evident, overtaking most of the front lawn and near the foundation."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Major vegetation overgrowth is visible in the front yard, which could be consistent with a vacant property."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property features a multi-story residential structure with visible vegetation overgrowth in the front yard and some general wear on the exterior.",
+      "visible_conditions": [
+        "Multi-story residential structure with light-colored siding.",
+        "Asphalt shingle roof appears generally intact.",
+        "Multiple windows, some appearing older, with visible window-mounted air conditioning units.",
+        "Front yard exhibits significant unmanaged grass and weeds.",
+        "A detached two-car garage is visible to the right of the main structure.",
+        "A portable basketball hoop is present in the foreground."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Image-only flag: Major vegetation overgrowth is visible in the front yard, which could be consistent with a vacant property.",
+      "Needs human review"
+    ],
+    "id": 655,
+    "image": "images/parcel-000655.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 97653,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08217309588243,
+    "lon": -76.14517613054208,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.08207733,
+          "Longitude": -76.14510575,
+          "ObjectId": 490,
+          "Owner": "Charles Lilly",
+          "OwnerAddress": "841 Gwen Lane Cortland, NY 13045",
+          "PropertyAddress": "1126-28 Wadsworth St & Chatham Pl",
+          "SBL": "004.-18-12.0",
+          "VPR_result": "VPR - Valid / Year 1",
+          "VPR_valid": "Y",
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": "2026-03-12",
+          "completion_type_name": "VPR Cert Issued - Plan A",
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": "2027-03-12"
+        }
+      ]
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-18-130",
+    "published_at": "2026-09-26T17:03:57+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "1130 Wadsworth St"
+  },
+  {
     "address": "1126-28 Wadsworth St & Chatham Pl",
     "ai_analysis": {
       "available": true,
