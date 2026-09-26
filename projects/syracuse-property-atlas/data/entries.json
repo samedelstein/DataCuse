@@ -1,5 +1,118 @@
 [
   {
+    "address": "812 Cadillac St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The main house roof is largely obscured by a large tree."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "not_visible",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.3,
+            "width": 0.6,
+            "x": 0.4,
+            "y": 0.5
+          },
+          "confidence": "high",
+          "label": "Driveway wear",
+          "reason": "Visible cracking and deterioration of the paved driveway surface."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Driveway appears to have cracking and wear."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property features a two-story residential structure with a detached garage, a maintained lawn, and a paved driveway that shows some visible wear.",
+      "visible_conditions": [
+        "Two-story residential structure with light-colored siding.",
+        "Detached garage with light-colored siding and a gable roof.",
+        "Front porch with white railings.",
+        "Maintained grass lawn with a large deciduous tree in the front yard.",
+        "Paved driveway exhibiting visible cracking and surface wear.",
+        "Wooden fence visible along a side property line."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Driveway appears to have cracking and wear."
+    ],
+    "id": 644,
+    "image": "images/parcel-000644.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 141063,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08254436514541,
+    "lon": -76.14525937910987,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-18-020",
+    "published_at": "2026-09-26T06:03:26+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "812 Cadillac St"
+  },
+  {
     "address": "806 Cadillac St",
     "ai_analysis": {
       "available": true,
