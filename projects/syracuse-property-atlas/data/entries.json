@@ -1,5 +1,129 @@
 [
   {
+    "address": "101 Chatham Pl",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "View of the roof is partially obstructed by a large tree.",
+        "The visible exterior conditions, including a maintained lawn and a parked vehicle, do not overtly suggest vacancy, which may differ from the known public record of a vacant property."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "unclear",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Visible conditions, such as a maintained lawn and a parked vehicle, do not overtly suggest a vacant status, which may warrant further review given the known public record."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property appears to be a single-family residence with a maintained lawn and a vehicle parked in the driveway.",
+      "visible_conditions": [
+        "Single-family residential structure.",
+        "Light-colored siding, possibly vinyl or aluminum, appears to be in fair condition.",
+        "Front porch with steps and railing visible.",
+        "Windows on the front facade appear intact.",
+        "Lawn appears to be maintained.",
+        "A vehicle is parked in the driveway.",
+        "A large tree partially obstructs the view of the left side and roof."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Image-only flag: Visible conditions, such as a maintained lawn and a parked vehicle, do not overtly suggest a vacant status, which may warrant further review given the known public record.",
+      "Needs human review"
+    ],
+    "id": 653,
+    "image": "images/parcel-000653.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 114010,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08230247586153,
+    "lon": -76.14503683878067,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.08207733,
+          "Longitude": -76.14510575,
+          "ObjectId": 490,
+          "Owner": "Charles Lilly",
+          "OwnerAddress": "841 Gwen Lane Cortland, NY 13045",
+          "PropertyAddress": "1126-28 Wadsworth St & Chatham Pl",
+          "SBL": "004.-18-12.0",
+          "VPR_result": "VPR - Valid / Year 1",
+          "VPR_valid": "Y",
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": "2026-03-12",
+          "completion_type_name": "VPR Cert Issued - Plan A",
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": "2027-03-12"
+        }
+      ]
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-18-110",
+    "published_at": "2026-09-26T15:02:56+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "101 Chatham Pl"
+  },
+  {
     "address": "103 Chatham Pl",
     "ai_analysis": {
       "available": true,
