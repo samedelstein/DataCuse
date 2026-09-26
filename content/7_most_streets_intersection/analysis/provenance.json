@@ -1,0 +1,45 @@
+{
+  "inputs": {
+    "content\\4_name_changes\\analysis\\streets_nys_current.geojson": {
+      "sha256": "e80376d86a849b1ef8140310548c80d60f83c2101fd63768fbb11e16a57f03b8"
+    },
+    "content\\4_name_changes\\analysis\\syracuse_boundary.geojson": {
+      "sha256": "34ca60639588575c9d665ed351a92cbbc9898ec710a3568e4ca1cc7ea5c5bd65"
+    },
+    "content\\4_name_changes\\analysis\\street_network.py": {
+      "sha256": "322276df824d5bdb43f2eccbb85870758d7573d1fca20a5bf8dc4d58822d8f67"
+    },
+    "content\\4_name_changes\\analysis\\streets_city_reference.geojson": {
+      "sha256": "f799f2bf9e2d1adc6002c1266884a80766fb4f75532f1621cd15d26e2025e7c0"
+    }
+  },
+  "snapshot_date": "2026-09-19",
+  "primary_tolerance_metres": 1,
+  "eligible_input_parts": 7371,
+  "excluded": {
+    "route designation rather than street name": 1,
+    "not documented public jurisdiction": 1562,
+    "ramp, freeway, driveway, path, service road or other excluded class": 993,
+    "unnamed": 3,
+    "named driveway, ramp or entrance": 27
+  },
+  "projection": "EPSG:26918",
+  "source_provenance": {
+    "downloaded_utc": "2026-09-19T18:22:32.507626+00:00",
+    "streets_url": "https://services6.arcgis.com/EbVsqZ18sv1kVJ3k/arcgis/rest/services/NYS_Streets/FeatureServer/0",
+    "boundary_url": "https://gisservices.its.ny.gov/arcgis/rest/services/NYS_Civil_Boundaries/MapServer/4",
+    "selection": {
+      "geometry": "-76.25,42.97,-76.04,43.13",
+      "geometryType": "esriGeometryEnvelope",
+      "inSR": 4326,
+      "spatialRel": "esriSpatialRelIntersects",
+      "where": "1=1"
+    },
+    "feature_count": 20652,
+    "editingInfo": {
+      "lastEditDate": 1789121040466,
+      "schemaLastEditDate": 1789121040466,
+      "dataLastEditDate": 1789120082211
+    }
+  }
+}

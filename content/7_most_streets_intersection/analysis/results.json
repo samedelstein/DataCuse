@@ -1,0 +1,497 @@
+{
+  "six_way": {
+    "node": 4826,
+    "longitude": -76.1566896954616,
+    "latitude": 43.06487385929589,
+    "x": 405818.93494340876,
+    "y": 4768668.153847671,
+    "arms": 6,
+    "name_count": 3,
+    "names": [
+      "KIRKPATRICK STREET",
+      "LODI STREET",
+      "NORTH SALINA STREET"
+    ],
+    "incident": [
+      {
+        "id": "477430613",
+        "name": "LODI STREET",
+        "edge": 2411,
+        "end": 0,
+        "bearing": 310.52422216097335,
+        "length_m": 146.70919415872515,
+        "z": 0
+      },
+      {
+        "id": "477430612",
+        "name": "NORTH SALINA STREET",
+        "edge": 2412,
+        "end": 0,
+        "bearing": 325.3361350742543,
+        "length_m": 161.80614562669936,
+        "z": 0
+      },
+      {
+        "id": "477430629",
+        "name": "KIRKPATRICK STREET",
+        "edge": 2413,
+        "end": 0,
+        "bearing": 46.148421399469775,
+        "length_m": 152.96906332077432,
+        "z": 0
+      },
+      {
+        "id": "477430919",
+        "name": "KIRKPATRICK STREET",
+        "edge": 2416,
+        "end": 1,
+        "bearing": 190.2630507498652,
+        "length_m": 134.5002009405989,
+        "z": 0
+      },
+      {
+        "id": "477430734",
+        "name": "LODI STREET",
+        "edge": 2425,
+        "end": 1,
+        "bearing": 96.70158321080321,
+        "length_m": 102.32430984432861,
+        "z": 0
+      },
+      {
+        "id": "477430825",
+        "name": "NORTH SALINA STREET",
+        "edge": 2427,
+        "end": 1,
+        "bearing": 147.23716128319148,
+        "length_m": 93.31947602793466,
+        "z": 0
+      }
+    ],
+    "cluster_diameter_m": 0.0
+  },
+  "seven_line": {
+    "node": 4169,
+    "longitude": -76.1671063843248,
+    "latitude": 43.0706484734901,
+    "x": 404979.6908103438,
+    "y": 4769321.177921333,
+    "arms": 7,
+    "name_count": 4,
+    "names": [
+      "HIAWATHA BOULEVARD EAST",
+      "HIAWATHA BOULEVARD WEST",
+      "LODI STREET",
+      "NORTH SALINA STREET"
+    ],
+    "incident": [
+      {
+        "id": "509995729",
+        "name": "LODI STREET",
+        "edge": 2084,
+        "end": 1,
+        "bearing": 163.93302654132202,
+        "length_m": 124.1356637460758,
+        "z": 0
+      },
+      {
+        "id": "508421423",
+        "name": "HIAWATHA BOULEVARD EAST",
+        "edge": 2174,
+        "end": 0,
+        "bearing": 64.00580520246132,
+        "length_m": 149.04633731507937,
+        "z": 0
+      },
+      {
+        "id": "508421553",
+        "name": "HIAWATHA BOULEVARD EAST",
+        "edge": 2175,
+        "end": 0,
+        "bearing": 21.94279092037696,
+        "length_m": 90.41604210985768,
+        "z": 0
+      },
+      {
+        "id": "508421444",
+        "name": "HIAWATHA BOULEVARD WEST",
+        "edge": 2176,
+        "end": 0,
+        "bearing": 194.2021947341839,
+        "length_m": 94.84894624244589,
+        "z": 0
+      },
+      {
+        "id": "508421413",
+        "name": "HIAWATHA BOULEVARD WEST",
+        "edge": 2177,
+        "end": 0,
+        "bearing": 232.46678717558882,
+        "length_m": 83.39814520902621,
+        "z": 0
+      },
+      {
+        "id": "508421671",
+        "name": "NORTH SALINA STREET",
+        "edge": 2178,
+        "end": 1,
+        "bearing": 107.37018178292595,
+        "length_m": 73.94891534598372,
+        "z": 0
+      },
+      {
+        "id": "508421416",
+        "name": "NORTH SALINA STREET",
+        "edge": 2179,
+        "end": 1,
+        "bearing": 142.78797939698651,
+        "length_m": 74.2012365690918,
+        "z": 0
+      }
+    ],
+    "cluster_diameter_m": 0.0
+  },
+  "four_name_leaders": [
+    {
+      "node": 4169,
+      "longitude": -76.1671063843248,
+      "latitude": 43.0706484734901,
+      "x": 404979.6908103438,
+      "y": 4769321.177921333,
+      "arms": 7,
+      "name_count": 4,
+      "names": [
+        "HIAWATHA BOULEVARD EAST",
+        "HIAWATHA BOULEVARD WEST",
+        "LODI STREET",
+        "NORTH SALINA STREET"
+      ],
+      "incident": [
+        {
+          "id": "509995729",
+          "name": "LODI STREET",
+          "edge": 2084,
+          "end": 1,
+          "bearing": 163.93302654132202,
+          "length_m": 124.1356637460758,
+          "z": 0
+        },
+        {
+          "id": "508421423",
+          "name": "HIAWATHA BOULEVARD EAST",
+          "edge": 2174,
+          "end": 0,
+          "bearing": 64.00580520246132,
+          "length_m": 149.04633731507937,
+          "z": 0
+        },
+        {
+          "id": "508421553",
+          "name": "HIAWATHA BOULEVARD EAST",
+          "edge": 2175,
+          "end": 0,
+          "bearing": 21.94279092037696,
+          "length_m": 90.41604210985768,
+          "z": 0
+        },
+        {
+          "id": "508421444",
+          "name": "HIAWATHA BOULEVARD WEST",
+          "edge": 2176,
+          "end": 0,
+          "bearing": 194.2021947341839,
+          "length_m": 94.84894624244589,
+          "z": 0
+        },
+        {
+          "id": "508421413",
+          "name": "HIAWATHA BOULEVARD WEST",
+          "edge": 2177,
+          "end": 0,
+          "bearing": 232.46678717558882,
+          "length_m": 83.39814520902621,
+          "z": 0
+        },
+        {
+          "id": "508421671",
+          "name": "NORTH SALINA STREET",
+          "edge": 2178,
+          "end": 1,
+          "bearing": 107.37018178292595,
+          "length_m": 73.94891534598372,
+          "z": 0
+        },
+        {
+          "id": "508421416",
+          "name": "NORTH SALINA STREET",
+          "edge": 2179,
+          "end": 1,
+          "bearing": 142.78797939698651,
+          "length_m": 74.2012365690918,
+          "z": 0
+        }
+      ],
+      "cluster_diameter_m": 0.0
+    },
+    {
+      "node": 7442,
+      "longitude": -76.0935772553135,
+      "latitude": 43.0393666011021,
+      "x": 410920.8669406584,
+      "y": 4765766.6394167915,
+      "arms": 5,
+      "name_count": 4,
+      "names": [
+        "EDGEMONT DRIVE",
+        "ENFIELD PLACE",
+        "EUCLID AVENUE",
+        "KIMBER ROAD"
+      ],
+      "incident": [
+        {
+          "id": "477438503",
+          "name": "KIMBER ROAD",
+          "edge": 3629,
+          "end": 1,
+          "bearing": 337.95954578236564,
+          "length_m": 280.13040491982207,
+          "z": 0
+        },
+        {
+          "id": "477438891",
+          "name": "EUCLID AVENUE",
+          "edge": 3719,
+          "end": 1,
+          "bearing": 235.40999884971933,
+          "length_m": 145.06727380374176,
+          "z": 0
+        },
+        {
+          "id": "477438560",
+          "name": "EDGEMONT DRIVE",
+          "edge": 3720,
+          "end": 0,
+          "bearing": 83.75091465255554,
+          "length_m": 331.66509453402915,
+          "z": 0
+        },
+        {
+          "id": "477438475",
+          "name": "ENFIELD PLACE",
+          "edge": 3721,
+          "end": 0,
+          "bearing": 46.26417390838818,
+          "length_m": 180.66473271103843,
+          "z": 0
+        },
+        {
+          "id": "477438923",
+          "name": "KIMBER ROAD",
+          "edge": 3722,
+          "end": 0,
+          "bearing": 169.84401881437307,
+          "length_m": 129.64775991295053,
+          "z": 0
+        }
+      ],
+      "cluster_diameter_m": 0.0
+    },
+    {
+      "node": 11899,
+      "longitude": -76.1546768251331,
+      "latitude": 43.042583905108096,
+      "x": 405948.77002596564,
+      "y": 4766190.5763559295,
+      "arms": 5,
+      "name_count": 4,
+      "names": [
+        "SEYMOUR STREET",
+        "SHONNARD STREET",
+        "WEST ADAMS STREET",
+        "WEST ONONDAGA STREET"
+      ],
+      "incident": [
+        {
+          "id": "477437541",
+          "name": "WEST ADAMS STREET",
+          "edge": 5949,
+          "end": 1,
+          "bearing": 105.58949345403006,
+          "length_m": 27.933632616762683,
+          "z": 0
+        },
+        {
+          "id": "477437454",
+          "name": "SEYMOUR STREET",
+          "edge": 5956,
+          "end": 0,
+          "bearing": 302.5923676818689,
+          "length_m": 114.64067832899518,
+          "z": 0
+        },
+        {
+          "id": "477437506",
+          "name": "SHONNARD STREET",
+          "edge": 5957,
+          "end": 0,
+          "bearing": 267.65122488868684,
+          "length_m": 87.39322684073372,
+          "z": 0
+        },
+        {
+          "id": "509997008",
+          "name": "WEST ONONDAGA STREET",
+          "edge": 5958,
+          "end": 0,
+          "bearing": 226.71350823137504,
+          "length_m": 64.65420142582305,
+          "z": 0
+        },
+        {
+          "id": "477437427",
+          "name": "WEST ONONDAGA STREET",
+          "edge": 5959,
+          "end": 1,
+          "bearing": 45.838605109103334,
+          "length_m": 81.11187253097704,
+          "z": 0
+        }
+      ],
+      "cluster_diameter_m": 0.0
+    },
+    {
+      "node": 11956,
+      "longitude": -76.1522598854033,
+      "latitude": 43.0443329941324,
+      "x": 406148.3040854426,
+      "y": 4766382.1084640315,
+      "arms": 5,
+      "name_count": 4,
+      "names": [
+        "EAST ONONDAGA STREET",
+        "HARRISON STREET",
+        "SOUTH SALINA STREET",
+        "WEST ONONDAGA STREET"
+      ],
+      "incident": [
+        {
+          "id": "477436842",
+          "name": "SOUTH SALINA STREET",
+          "edge": 5830,
+          "end": 1,
+          "bearing": 358.01636829402617,
+          "length_m": 301.2155725987612,
+          "z": 0
+        },
+        {
+          "id": "477437367",
+          "name": "SOUTH SALINA STREET",
+          "edge": 5977,
+          "end": 0,
+          "bearing": 158.8774041783966,
+          "length_m": 182.75167856915908,
+          "z": 0
+        },
+        {
+          "id": "477437142",
+          "name": "WEST ONONDAGA STREET",
+          "edge": 5978,
+          "end": 0,
+          "bearing": 227.2096490628029,
+          "length_m": 112.03747882262694,
+          "z": 0
+        },
+        {
+          "id": "477436860",
+          "name": "EAST ONONDAGA STREET",
+          "edge": 5979,
+          "end": 0,
+          "bearing": 17.82994428633592,
+          "length_m": 176.87789527125042,
+          "z": 0
+        },
+        {
+          "id": "477436920",
+          "name": "HARRISON STREET",
+          "edge": 5980,
+          "end": 0,
+          "bearing": 90.03599427392246,
+          "length_m": 114.38092273849124,
+          "z": 0
+        }
+      ],
+      "cluster_diameter_m": 0.0
+    },
+    {
+      "node": 6944,
+      "longitude": -76.0827372515424,
+      "latitude": 43.043989605242004,
+      "x": 411810.48714019946,
+      "y": 4766268.579541739,
+      "arms": 4,
+      "name_count": 4,
+      "names": [
+        "DEMONG DRIVE",
+        "MANOR DRIVE",
+        "RADCLIFFE ROAD",
+        "SALT SPRINGS ROAD"
+      ],
+      "incident": [
+        {
+          "id": "477437138",
+          "name": "DEMONG DRIVE",
+          "edge": 3468,
+          "end": 1,
+          "bearing": 252.4423435738187,
+          "length_m": 128.42927215279252,
+          "z": 0
+        },
+        {
+          "id": "477437047",
+          "name": "SALT SPRINGS ROAD",
+          "edge": 3470,
+          "end": 1,
+          "bearing": 315.6384477297124,
+          "length_m": 180.50768888291162,
+          "z": 0
+        },
+        {
+          "id": "477437897",
+          "name": "MANOR DRIVE",
+          "edge": 3472,
+          "end": 0,
+          "bearing": 160.86185376774284,
+          "length_m": 281.2208348405816,
+          "z": 0
+        },
+        {
+          "id": "477437046",
+          "name": "RADCLIFFE ROAD",
+          "edge": 3473,
+          "end": 0,
+          "bearing": 75.44486256866499,
+          "length_m": 54.90370160898103,
+          "z": 0
+        }
+      ],
+      "cluster_diameter_m": 0.0
+    }
+  ],
+  "interpretation": "Six distinct surface-street approaches at North Salina/Lodi/Kirkpatrick is the clearest reviewed winner under a single-junction definition. Full street names instead top out at four, with ties. Wide clustering is not accepted as a count of one junction.",
+  "reviewed_approaches": {
+    "six_way": {
+      "node": 4826,
+      "approaches": 6,
+      "names": 3,
+      "basis": "2022 NYS imagery plus independent city node 661; six separate corridors"
+    },
+    "seven_line": {
+      "node": 4169,
+      "source_lines": 7,
+      "approaches": 4,
+      "names": 4,
+      "basis": "2022 imagery and city node 389: pairs of Hiawatha East, Hiawatha West and North Salina lines each represent one approach; Lodi is single"
+    },
+    "four_name_candidates": "All five primary leaders inspected in 2022 aerial imagery. City names agree at four; Seymour/Shonnard/West Adams/West Onondaga differs in older city topology."
+  }
+}

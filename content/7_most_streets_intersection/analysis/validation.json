@@ -1,0 +1,30 @@
+{
+  "endpoint_only_intersections": 2910,
+  "endpoint_only_max_lines": 7,
+  "endpoint_only_max_names": 4,
+  "six_way_exact_endpoints_agree": true,
+  "city_six_way_agrees": true,
+  "stable_top_two_from_0_through_5_metres": true,
+  "z_level_endpoint_counts": {
+    "0": 14300,
+    "1": 442
+  },
+  "strict_graph_intersections": 2910,
+  "name_leaders": 5,
+  "manual_review": {
+    "six_way": {
+      "node": 4826,
+      "approaches": 6,
+      "names": 3,
+      "basis": "2022 NYS imagery plus independent city node 661; six separate corridors"
+    },
+    "seven_line": {
+      "node": 4169,
+      "source_lines": 7,
+      "approaches": 4,
+      "names": 4,
+      "basis": "2022 imagery and city node 389: pairs of Hiawatha East, Hiawatha West and North Salina lines each represent one approach; Lodi is single"
+    },
+    "four_name_candidates": "All five primary leaders inspected in 2022 aerial imagery. City names agree at four; Seymour/Shonnard/West Adams/West Onondaga differs in older city topology."
+  }
+}

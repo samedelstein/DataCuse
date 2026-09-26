@@ -1,0 +1,11 @@
+# DC008 draft review - September 25, 2026
+
+Evidence: checked the full primary ranking, all five four-name leaders, and both six-or-more-line candidates (six distinct locations). Inspected all six official 2022 aerial overlays. City topology independently gives a unique maximum of six at North Salina/Lodi/Kirkpatrick; state raw maximum seven at Hiawatha is four reviewed approaches. All source hashes match. Independent original-endpoint grouping agrees on the leaders. Exact, 1 m, 3 m and 5 m rules leave the same top two candidates; wider clustering is disclosed as a different grouping rule. No universal claim for every possible junction complex.
+
+Editorial: approaches and distinct full names are defined separately; East/West name treatment stated. All five state four-name ties available in expandable notes. Older city disagreement at Seymour/Shonnard/West Adams/West Onondaga is disclosed. Dates distinguish 2026 street snapshots and 2022 aerials. No fabricated field visit, traffic or crash claim.
+
+Visual: three graphics rendered from saved results and true geography, each inspected. Highlighted streets continue through source-segment breaks. Arm numbers and colors agree with the saved audit. Same-scale comparison panels, north arrows, scale bars, source notes, text margins and alt text checked. Aerial overlay uses the exact saved export bounds.
+
+Technical: all analysis scripts compile; all 18 repository tests pass. The actual public builder passes in a temporary copy and excludes this draft; 5 previously published Markdown stories build there. No unrelated generated public files changed. The story-specific preview includes all three images and leaves source status draft. Desktop (1592 px) and phone (390 x 844) browser review completed: images load, aspect ratios preserved, no horizontal overflow. Enter expands the details element to five entries. The full-size comparison image opens. Viewport override reset, draft preview left open on port 8015.
+
+Status: Ready for editorial review, unpublished, uncommitted. No push or deployment. `stories/` remains untouched; `_preview/stories/syracuse-most-streets-intersection/` holds the review page. Material limits are retained in methodology.md and the article, especially dated imagery, source-defined names, current-condition uncertainty, and the boundary of a single junction.
