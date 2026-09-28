@@ -1,5 +1,128 @@
 [
   {
+    "address": "110 Harford Rd",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "poor",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "poor",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.17,
+            "width": 0.15,
+            "x": 0.45,
+            "y": 0.58
+          },
+          "confidence": "high",
+          "label": "Peeling paint on porch",
+          "reason": "The wooden steps and railings of the front porch exhibit significant peeling paint and visible wear."
+        },
+        {
+          "bbox": {
+            "height": 0.2,
+            "width": 0.12,
+            "x": 0.47,
+            "y": 0.44
+          },
+          "confidence": "high",
+          "label": "Peeling paint on entry trim",
+          "reason": "The trim around the front door and the door itself, as well as the adjacent window frame, show signs of peeling paint and deterioration."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Peeling paint visible on the front porch steps and railings",
+        "Deterioration and peeling paint observed around the front door and window trim"
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image displays a single-family residence with light blue siding, a front porch, and a maintained lawn, exhibiting some visible wear on the porch structure and front entry area.",
+      "visible_conditions": [
+        "Single-story structure with a visible attic gable",
+        "Light blue exterior siding, appearing somewhat faded in areas",
+        "Front porch with wooden steps and railings",
+        "Maintained green lawn with ornamental shrubs and foundation plantings",
+        "Visible power lines overhead"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Peeling paint visible on the front porch steps and railings",
+      "Image-only flag: Deterioration and peeling paint observed around the front door and window trim"
+    ],
+    "id": 661,
+    "image": "images/parcel-000661.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 76108,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08182147842492,
+    "lon": -76.143115623698,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-19-030",
+    "published_at": "2026-09-28T03:03:08+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "110 Harford Rd"
+  },
+  {
     "address": "106 Harford Rd",
     "ai_analysis": {
       "available": true,
