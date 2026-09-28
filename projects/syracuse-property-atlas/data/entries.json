@@ -1,5 +1,121 @@
 [
   {
+    "address": "141 Harford Rd",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.35,
+            "width": 0.2,
+            "x": 0.65,
+            "y": 0.4
+          },
+          "confidence": "high",
+          "label": "Dense vegetation near structure",
+          "reason": "A large, dense shrub or tree is growing very close to the right side of the house, potentially encroaching upon the structure."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Significant dense vegetation appears to be growing in close proximity to the right side of the main structure, which may warrant further inspection."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property appears to be a single-family residence with blue siding and an attached garage, featuring a maintained front yard, though some dense vegetation is visible near the right side of the structure.",
+      "visible_conditions": [
+        "The primary structure features blue siding and white trim.",
+        "An attached garage with a white door is visible on the left side of the front facade.",
+        "An asphalt driveway leads to the garage.",
+        "The front yard consists of a grass lawn that appears to be maintained.",
+        "Some mature trees are present on the property and in the surrounding area.",
+        "A large, dense shrub or tree is growing very close to the right side of the house, potentially touching the structure.",
+        "Windows and doors appear to be intact and in fair condition.",
+        "The roof is partially visible and appears to be in fair condition from the visible sections.",
+        "The front entry area is visible and appears functional."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "742",
+        "Median gross rent": "103800",
+        "Median household income": "68021",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.0",
+        "Renter-occupied share": "65.8",
+        "Total population": "1599",
+        "Vacancy rate": "8.1"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2023 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Significant dense vegetation appears to be growing in close proximity to the right side of the main structure, which may warrant further inspection.",
+      "Needs human review"
+    ],
+    "id": 680,
+    "image": "images/parcel-000680.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 88662,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.082214695849,
+    "lon": -76.14427875800038,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-20-040",
+    "published_at": "2026-09-28T22:03:37+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "141 Harford Rd"
+  },
+  {
     "address": "145 Harford Rd & Chatham Pl",
     "ai_analysis": {
       "available": true,
