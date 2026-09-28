@@ -1,5 +1,82 @@
 [
   {
+    "address": "150 Harford Rd",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "ollama:llava:latest",
+      "summary": "{\"summary\": \"The image shows a single-family house on a quiet residential street with a maintained lawn and a car parked in the driveway. The property is currently listed on a real estate platform.\", \"property_type_guess\": \"single-family\", \"visible_conditions\": [\"maintained lawn\", \"car parked in the driveway\"], \"condition_scores\": {\"roof\": \"good\", \"siding_or_facade\": \"good\", \"windows_doors\": \"good\", \"porch_or_entry\": \"good\", \"yard_or_lot\": \"good\", \"trash_debris\": \"none_visible\", \"vegetation_overgrowth\": \"none_visible\", \"boarded_windows_or_doors\": \"no\", \"fire_damage_visible\": \"no\", \"structural_damage_visible\": \"no\", \"vacancy_signs_visible\": \"no\", \"active_construction_visible\": \"no\"}, \"possible_unrecorded_issues\": [\"image age, obstructed view, angle\"], \"image_annotations\": [{\"label\": \"maintained lawn\", \"reason\": \"normal landscaping\", \"bbox\": {\"x\": \"0.000-0.256,0.356-0.775,0.919-0.998\", \"confidence\": \"high\"}, \"confidence\": \"high\", \"caveats\": [\"image may be outdated, view may be obstructed, angle may not provide full visibility of property condition\"]} \n\n] \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 671,
+    "image": "images/parcel-000671.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 94538,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.082724454529874,
+    "lon": -76.14403095492118,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-19-130",
+    "published_at": "2026-09-28T13:05:26+00:00",
+    "review_reasons": [],
+    "title": "150 Harford Rd"
+  },
+  {
     "address": "148 Harford Rd",
     "ai_analysis": {
       "available": true,
