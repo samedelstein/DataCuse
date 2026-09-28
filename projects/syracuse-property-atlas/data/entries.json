@@ -1,5 +1,99 @@
 [
   {
+    "address": "136 Harford Rd",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image displays a two-story residential structure with white siding and a well-maintained front yard featuring both lawn and garden beds.",
+      "visible_conditions": [
+        "The primary structure is a two-story house with a gabled roof.",
+        "The exterior walls appear to be covered in white siding, possibly vinyl or aluminum.",
+        "The roof appears to be covered with asphalt shingles, generally intact.",
+        "Windows are visible on the front facade, appearing to be double-hung style.",
+        "A small covered entry porch is present at the front of the house.",
+        "The front yard consists of a mowed lawn area and densely planted garden beds with various shrubs and perennial plants.",
+        "A paved driveway is visible to the left of the property, partially obscured by a parked vehicle."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 667,
+    "image": "images/parcel-000667.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 85372,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08236326514942,
+    "lon": -76.14366481921017,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-19-090",
+    "published_at": "2026-09-28T09:02:54+00:00",
+    "review_reasons": [],
+    "title": "136 Harford Rd"
+  },
+  {
     "address": "130 Harford Rd",
     "ai_analysis": {
       "available": true,
