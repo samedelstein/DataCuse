@@ -1,5 +1,122 @@
 [
   {
+    "address": "902 Cadillac St & Harford Rd",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view of the property's main structure is partially obstructed by a large tree and the front arbor/gate.",
+        "The right side of the property and the rear are largely obscured by a white wall/fence and other structures, limiting a full assessment."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.2,
+            "width": 0.3,
+            "x": 0.0,
+            "y": 0.6
+          },
+          "confidence": "high",
+          "label": "Damaged Picket Fence",
+          "reason": "Several pickets on the white fence appear to be missing or broken in the lower left section."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Damage or missing sections observed on the front white picket fence."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "A two-story residential structure with light green siding is partially visible behind a white picket fence and a large tree, with some visible wear on the fence.",
+      "visible_conditions": [
+        "A two-story residential structure with light green siding is visible.",
+        "A gabled roof with asphalt shingles is partially visible.",
+        "White-framed windows appear to be intact.",
+        "A white picket fence runs along the front of the property, showing some missing or damaged pickets.",
+        "A decorative arbor with a metal gate marks the entry point.",
+        "A large, mature tree is prominent in the front yard.",
+        "A blue recycling bin is visible near the entry."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Damage or missing sections observed on the front white picket fence.",
+      "Needs human review"
+    ],
+    "id": 675,
+    "image": "images/parcel-000675.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 81192,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08311406466488,
+    "lon": -76.14458968563153,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-19-170",
+    "published_at": "2026-09-28T17:03:21+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "902 Cadillac St & Harford Rd"
+  },
+  {
     "address": "208 Harford Rd",
     "ai_analysis": {
       "available": true,
