@@ -1,5 +1,119 @@
 [
   {
+    "address": "142 Harford Rd",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The roof and some upper portions of the structure are obscured by mature trees."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "not_visible",
+        "siding_or_facade": "good",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.1,
+            "width": 0.2,
+            "x": 0.35,
+            "y": 0.9
+          },
+          "confidence": "high",
+          "label": "Minor debris",
+          "reason": "A cardboard box and other items are visible in the foreground near the street."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor trash or debris is visible in the foreground near the street."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property appears to be a residential structure with light-colored siding, a paved driveway, and a maintained lawn, partially obscured by mature trees.",
+      "visible_conditions": [
+        "Light-colored siding is visible on the main structure.",
+        "A paved driveway is present, with two vehicles parked.",
+        "The lawn area appears to be maintained and green.",
+        "Several mature trees with foliage are on the property, some showing early autumn coloration.",
+        "A white railing is visible near what appears to be an entry area.",
+        "A wooden fence is visible along the left side of the property.",
+        "A brown cardboard box and some other items are visible in the foreground near the street."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Minor trash or debris is visible in the foreground near the street."
+    ],
+    "id": 669,
+    "image": "images/parcel-000669.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 123909,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0825438600766,
+    "lon": -76.14384788652826,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-19-110",
+    "published_at": "2026-09-28T11:03:05+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "142 Harford Rd"
+  },
+  {
     "address": "138 Harford Rd",
     "ai_analysis": {
       "available": true,
