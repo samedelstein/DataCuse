@@ -1,5 +1,116 @@
 [
   {
+    "address": "906 Cadillac St & City Line",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "1",
+            "width": "1",
+            "x": "0-1",
+            "y": "0-1"
+          },
+          "confidence": "high",
+          "label": "None",
+          "reason": "There are no issues visible in the image. The property appears to be well-maintained and in good condition."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "None of the visible issues are apparent."
+      ],
+      "property_type_guess": "single-family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image displays an exterior view of a single-family house on a residential street. The property shows a well-maintained exterior with a tidy lawn, neatly trimmed hedges, and a clear view of the front yard and house facade.",
+      "visible_conditions": [
+        "None of the visible conditions are issues. The property appears to be in good condition."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: None of the visible issues are apparent."
+    ],
+    "id": 676,
+    "image": "images/parcel-000676.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 101574,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08322377774934,
+    "lon": -76.14445002062106,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-19-180",
+    "published_at": "2026-09-28T18:05:20+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "906 Cadillac St & City Line"
+  },
+  {
     "address": "902 Cadillac St & Harford Rd",
     "ai_analysis": {
       "available": true,
