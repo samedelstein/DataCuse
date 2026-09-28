@@ -1,5 +1,89 @@
 [
   {
+    "address": "100 Harford Rd & Ardmore Pl &",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "A utility pole and overhead wires in the foreground partially obstruct the view of the property."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows a multi-story residential building with light green siding, an attached garage, a paved driveway with a parked vehicle, and a fenced yard with garden elements.",
+      "visible_conditions": [
+        "Light green siding on the main structure and garage appears intact with some minor weathering.",
+        "A paved driveway is visible with a white SUV parked on it.",
+        "A chain-link fence encloses a yard area containing brick-lined garden beds and green grass.",
+        "A utility pole and overhead wires are prominent in the foreground."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 659,
+    "image": "images/parcel-000659.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 104046,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0816473946417,
+    "lon": -76.14293914637275,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-19-010",
+    "published_at": "2026-09-28T01:03:03+00:00",
+    "review_reasons": [],
+    "title": "100 Harford Rd & Ardmore Pl &"
+  },
+  {
     "address": "1140 Wadsworth St & Cadillac S",
     "ai_analysis": {
       "available": true,
