@@ -1,5 +1,116 @@
 [
   {
+    "address": "122 Harford Rd",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.14",
+            "width": "0.14",
+            "x": "0-0.14",
+            "y": "0-0.14"
+          },
+          "confidence": "high",
+          "label": "none_visible",
+          "reason": "The image shows no visible adverse property conditions as per the instructions."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "cautious image-only flags not already reflected in known_data"
+      ],
+      "property_type_guess": "two-family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a two-family home with a well-maintained exterior, including a tidy yard and landscaping.",
+      "visible_conditions": [
+        "specific exterior observations visible in the image"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: cautious image-only flags not already reflected in known_data"
+    ],
+    "id": 664,
+    "image": "images/parcel-000664.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 68837,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08209237247822,
+    "lon": -76.14339022036668,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-19-060",
+    "published_at": "2026-09-28T06:06:21+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "122 Harford Rd"
+  },
+  {
     "address": "118 Harford Rd",
     "ai_analysis": {
       "available": true,
