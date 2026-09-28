@@ -1,5 +1,142 @@
 [
   {
+    "address": "208 Harford Rd",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "image age, obstructed view, angle, or uncertainty"
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0-1 fraction of image height",
+            "width": "0-1 fraction of image width",
+            "x": "0-1 fraction of image width",
+            "y": "0-1 fraction of image height"
+          },
+          "confidence": "high",
+          "label": "maintained lawn and garden",
+          "reason": "normal landscaping"
+        },
+        {
+          "bbox": {
+            "height": "0-1 fraction of image height",
+            "width": "0-1 fraction of image width",
+            "x": "0-1 fraction of image width",
+            "y": "0-1 fraction of image height"
+          },
+          "confidence": "medium",
+          "label": "image quality issues",
+          "reason": "distortion and angle of the photo"
+        },
+        {
+          "bbox": {
+            "height": "0-1 fraction of image height",
+            "width": "0-1 fraction of image width",
+            "x": "0-1 fraction of image width",
+            "y": "0-1 fraction of image height"
+          },
+          "confidence": "low",
+          "label": "view from wrong parcel",
+          "reason": "possible due to the angle of the photo"
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "cautious image-only flags such as potential distortion from the angle or quality of the photo, the view may be from the wrong parcel, and the image does not show the entire property"
+      ],
+      "property_type_guess": "single_family",
+      "provider": "ollama:llava:latest",
+      "summary": "The property appears to be well-maintained with a clean and manicured lawn and garden areas. There is no visible fire damage, structural damage, or any sign of vacancy. However, the quality of the image is not high, with some distortion and the angle of the photo may make it difficult to assess certain details. The image does not show the entire property and the view may be from the wrong parcel.",
+      "visible_conditions": [
+        "maintained lawns, garden beds, shrubs, ornamental grasses, and foundation plantings as normal landscaping"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: cautious image-only flags such as potential distortion from the angle or quality of the photo, the view may be from the wrong parcel, and the image does not show the entire property",
+      "Needs human review"
+    ],
+    "id": 674,
+    "image": "images/parcel-000674.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 83709,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08301071886942,
+    "lon": -76.14432322087754,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-19-160",
+    "published_at": "2026-09-28T16:06:01+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "208 Harford Rd"
+  },
+  {
     "address": "204 Harford Rd",
     "ai_analysis": {
       "available": true,
