@@ -1,5 +1,128 @@
 [
   {
+    "address": "113 Harford Rd",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "View of the property is partially obstructed by a utility pole and a parked car.",
+        "The image-only assessment of occupancy status differs from the known public record."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Visible conditions suggest the property may not be vacant, which differs from the known public record indicating a vacant property."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property shows a red-painted house with an enclosed front porch, a maintained lawn, and some landscaping.",
+      "visible_conditions": [
+        "Red painted exterior walls with white trim",
+        "Enclosed front porch/sunroom with multiple windows",
+        "Green lawn appears mowed and maintained",
+        "Dense green shrubbery/landscaping present near the front of the house",
+        "Windows appear intact",
+        "Roof is partially visible and appears to be in fair condition"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Image-only flag: Visible conditions suggest the property may not be vacant, which differs from the known public record indicating a vacant property.",
+      "Needs human review"
+    ],
+    "id": 687,
+    "image": "images/parcel-000687.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 86700,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.081573319752785,
+    "lon": -76.14370496237149,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.08148676,
+          "Longitude": -76.1436155,
+          "ObjectId": 878,
+          "Owner": "Devi Consulting Agency LLC",
+          "OwnerAddress": "15 Birch Rd Syracuse, NY 13209",
+          "PropertyAddress": "109 Harford Rd",
+          "SBL": "004.-20-12.0",
+          "VPR_result": "VPR - Valid / Year 1",
+          "VPR_valid": "Y",
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": "2025-07-16",
+          "completion_type_name": "VPR Cert Issued - Plan A",
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": "2026-07-16"
+        }
+      ]
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-20-110",
+    "published_at": "2026-09-29T05:03:04+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "113 Harford Rd"
+  },
+  {
     "address": "117 Harford Rd",
     "ai_analysis": {
       "available": true,
