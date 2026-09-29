@@ -1,5 +1,98 @@
 [
   {
+    "address": "1054-56 Wadsworth St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a well-maintained two-story residence with a front porch and established landscaping.",
+      "visible_conditions": [
+        "The structure is a two-story building with white siding.",
+        "A prominent front porch with white columns is visible.",
+        "The roof appears to be a dark shingle type, generally intact.",
+        "Windows appear to be present and intact, some with dark shutters.",
+        "The front yard features maintained grass and shrubs.",
+        "No significant accumulation of trash or debris is visible."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 698,
+    "image": "images/parcel-000698.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 68768,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.081609350908366,
+    "lon": -76.14424820244892,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-20-220",
+    "published_at": "2026-09-29T16:02:58+00:00",
+    "review_reasons": [],
+    "title": "1054-56 Wadsworth St"
+  },
+  {
     "address": "1050-52 Wadsworth St",
     "ai_analysis": {
       "available": true,
