@@ -1,5 +1,133 @@
 [
   {
+    "address": "1042-44 Wadsworth St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view of the property is partially obscured by a large tree.",
+        "The roof and upper portions of the structure are not clearly visible due to tree cover and image angle."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "not_visible",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.05,
+            "width": 0.06,
+            "x": 0.3,
+            "y": 0.69
+          },
+          "confidence": "high",
+          "label": "White container on sidewalk",
+          "reason": "A white container, possibly a bucket or discarded item, is visible on the public sidewalk."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a residential structure with a front porch, exhibiting some general wear and a somewhat unkempt front yard, with a large tree partially obscuring the view.",
+      "visible_conditions": [
+        "White residential structure with a front porch and steps.",
+        "Light-colored siding appears generally intact, though some areas show minor discoloration or wear.",
+        "Windows and doors appear to be present and intact.",
+        "Front yard grass is somewhat patchy and appears to be in fair condition.",
+        "A large deciduous tree partially obscures the view of the property's upper sections and roof.",
+        "A white container is visible on the public sidewalk near the curb."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record"
+    ],
+    "id": 695,
+    "image": "images/parcel-000695.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 137811,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08136891118162,
+    "lon": -76.14393998403385,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.08148676,
+          "Longitude": -76.1436155,
+          "ObjectId": 878,
+          "Owner": "Devi Consulting Agency LLC",
+          "OwnerAddress": "15 Birch Rd Syracuse, NY 13209",
+          "PropertyAddress": "109 Harford Rd",
+          "SBL": "004.-20-12.0",
+          "VPR_result": "VPR - Valid / Year 1",
+          "VPR_valid": "Y",
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": "2025-07-16",
+          "completion_type_name": "VPR Cert Issued - Plan A",
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": "2026-07-16"
+        }
+      ]
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-20-190",
+    "published_at": "2026-09-29T13:03:07+00:00",
+    "review_reasons": [],
+    "title": "1042-44 Wadsworth St"
+  },
+  {
     "address": "1038-40 Wadsworth St",
     "ai_analysis": {
       "available": true,
