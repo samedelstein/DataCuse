@@ -1,5 +1,164 @@
 [
   {
+    "address": "105-07 Harford Rd",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "image age or obstructed view may impact the accuracy of the visible conditions"
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not visible or unclear",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.680429,
+            "width": 0.389966,
+            "x": 0.1103792,
+            "y": 0.575899
+          },
+          "confidence": "medium",
+          "label": "roof",
+          "reason": "the roof appears to be in fair condition, with some wear visible"
+        },
+        {
+          "bbox": {
+            "height": 0.783667,
+            "width": 0.716037,
+            "x": 0.610656,
+            "y": 0.589063
+          },
+          "confidence": "high",
+          "label": "overgrown vegetation",
+          "reason": "the yard has overgrown vegetation near the foundation"
+        },
+        {
+          "bbox": {
+            "height": 0.844282,
+            "width": 0.846322,
+            "x": 0.448668,
+            "y": 0.590779
+          },
+          "confidence": "medium",
+          "label": "yard",
+          "reason": "the yard appears to be unkempt with overgrown vegetation"
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "image quality may be poor",
+        "the view may show a different property if it is misidentified"
+      ],
+      "property_type_guess": "single_family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image depicts a single-family residential property with an unkempt yard and minor visible issues, such as the roof's wear and the presence of vegetation near the foundation.",
+      "visible_conditions": [
+        "the roof appears to be in fair condition, with some wear visible",
+        "the yard has overgrown vegetation near the foundation"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Image-only flag: image quality may be poor",
+      "Image-only flag: the view may show a different property if it is misidentified",
+      "Needs human review"
+    ],
+    "id": 689,
+    "image": "images/parcel-000689.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 82669,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08139433323957,
+    "lon": -76.14351639052495,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.08148676,
+          "Longitude": -76.1436155,
+          "ObjectId": 878,
+          "Owner": "Devi Consulting Agency LLC",
+          "OwnerAddress": "15 Birch Rd Syracuse, NY 13209",
+          "PropertyAddress": "109 Harford Rd",
+          "SBL": "004.-20-12.0",
+          "VPR_result": "VPR - Valid / Year 1",
+          "VPR_valid": "Y",
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": "2025-07-16",
+          "completion_type_name": "VPR Cert Issued - Plan A",
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": "2026-07-16"
+        }
+      ]
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-20-130",
+    "published_at": "2026-09-29T07:06:28+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "105-07 Harford Rd"
+  },
+  {
     "address": "109 Harford Rd",
     "ai_analysis": {
       "available": true,
