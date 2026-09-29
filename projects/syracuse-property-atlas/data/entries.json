@@ -1,5 +1,122 @@
 [
   {
+    "address": "1116 Wadsworth St & Chatham Pl",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "View of the property is partially obstructed by a vehicle and a utility pole.",
+        "The image primarily shows the side of the main residence and a detached garage.",
+        "Image capture date is 2020."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "good",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property features a multi-story residence with horizontal siding and a detached two-bay garage, appearing generally maintained from the visible exterior.",
+      "visible_conditions": [
+        "Multi-story residence with light-colored horizontal siding.",
+        "Detached two-bay garage with siding similar to the main residence and brown garage doors.",
+        "Asphalt shingle roofs are visible on both the main residence and the garage.",
+        "A red-stained wooden deck with railing is visible on the side/rear of the main residence.",
+        "Visible windows appear intact.",
+        "A grass lawn and mature trees and shrubs are present on the property."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record"
+    ],
+    "id": 703,
+    "image": "images/parcel-000703.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 76714,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0819329829374,
+    "lon": -76.14482903876086,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.08207733,
+          "Longitude": -76.14510575,
+          "ObjectId": 490,
+          "Owner": "Charles Lilly",
+          "OwnerAddress": "841 Gwen Lane Cortland, NY 13045",
+          "PropertyAddress": "1126-28 Wadsworth St & Chatham Pl",
+          "SBL": "004.-18-12.0",
+          "VPR_result": "VPR - Valid / Year 1",
+          "VPR_valid": "Y",
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": "2026-03-12",
+          "completion_type_name": "VPR Cert Issued - Plan A",
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": "2027-03-12"
+        }
+      ]
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-20-270",
+    "published_at": "2026-09-29T21:03:00+00:00",
+    "review_reasons": [],
+    "title": "1116 Wadsworth St & Chatham Pl"
+  },
+  {
     "address": "1112 Wadsworth St",
     "ai_analysis": {
       "available": true,
