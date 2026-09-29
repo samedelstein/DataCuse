@@ -1,5 +1,109 @@
 [
   {
+    "address": "1104 Wadsworth St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.567,
+            "width": 0.676,
+            "x": 0.336,
+            "y": 0.335
+          },
+          "confidence": "high",
+          "label": "front porch of house",
+          "reason": "visible front porch of house, no signs of disrepair or damage."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        {
+          "label": "cautious image-only flags not already reflected in known_data",
+          "reason": "The image is clear, and there is no sign of active construction or hazardous debris. The view is unobstructed, and the property appears to be in good condition."
+        }
+      ],
+      "property_type_guess": "single-family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a two-story residential house with a visible front yard and sidewalk. The property appears to be in good condition, with a well-maintained lawn and landscaping.",
+      "visible_conditions": [
+        "The house is of a two-story structure with a brick facade and a visible front porch. The roof appears to be in good condition with no signs of damage or disrepair. There are no visible exterior signs of active construction or any hazardous debris.",
+        "The yard is well-maintained with a lawn and garden beds. There are no visible signs of overgrowth, vandalism, or neglect.",
+        "The sidewalk and driveway are visible and appear to be in good condition, without any litter, debris, or signs of disrepair. There is no visible exterior sign of boarded windows, fire damage, or structural damage. The image does not provide sufficient information to determine if there are visible exterior signs of vacancy or active construction. There is no visible exterior sign of structural damage. The image appears to show the correct property, with no visible sign of a neighboring property or an adverse condition.",
+        "trash_debris: 'none_visible|minor|major|unclear'",
+        "vegetation_overgrowth: 'none_visible|minor|major|unclear'"
+      ],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: {'label': 'cautious image-only flags not already reflected in known_data', 'reason': 'The image is clear, and there is no sign of active construction or hazardous debris. The view is unobstructed, and the property appears to be in good condition.'}"
+    ],
+    "id": 700,
+    "image": "images/parcel-000700.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 63111,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.081779776329896,
+    "lon": -76.14445540905251,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-20-240",
+    "published_at": "2026-09-29T18:05:40+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1104 Wadsworth St"
+  },
+  {
     "address": "1100 Wadsworth St",
     "ai_analysis": {
       "available": true,
