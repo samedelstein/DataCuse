@@ -1,5 +1,151 @@
 [
   {
+    "address": "133 Harford Rd",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image only shows the front of the property and may not capture all aspects of the property, such as the backyard or any features not visible from the front. The image may not capture all visible issues, such as interior conditions, utility issues, or issues with the property's history."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: The read operation timed out",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.633,
+            "width": 0.617,
+            "x": 0.175,
+            "y": 0.376
+          },
+          "confidence": "high",
+          "label": "Well-maintained lawn",
+          "reason": "The lawn is neatly trimmed and there is no visible overgrowth or debris."
+        },
+        {
+          "bbox": {
+            "height": 0.633,
+            "width": 0.77,
+            "x": 0.491,
+            "y": 0.491
+          },
+          "confidence": "high",
+          "label": "Car parked in driveway",
+          "reason": "The car is parked in the driveway and appears to be in good condition."
+        },
+        {
+          "bbox": {
+            "height": 0.633,
+            "width": 0.77,
+            "x": 0.491,
+            "y": 0.491
+          },
+          "confidence": "high",
+          "label": "Closed garage door",
+          "reason": "The garage door is closed."
+        },
+        {
+          "bbox": {
+            "height": 0.633,
+            "width": 0.617,
+            "x": 0.175,
+            "y": 0.376
+          },
+          "confidence": "high",
+          "label": "Sunny day",
+          "reason": "The sky is clear and the sun is shining."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "There may be issues related to the property that are not visible in the image, such as interior conditions, utility issues, or issues with the property's history. Additionally, the image may not capture all aspects of the property, such as the condition of the backyard or any features not visible from the front."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a single-family home with a front yard, a driveway, and a garage. The house has a well-maintained lawn and a garage. There is a car parked in the driveway. The sky is clear and the sun is shining. The image appears to be a real estate listing or a street-level view of a property for sale or rent.",
+      "visible_conditions": [
+        "The house has a well-maintained exterior. The lawn is neatly trimmed. The driveway is clear. The car parked in the driveway is in good condition. The garage door is closed. There are no visible signs of structural damage or fire damage. The yard is clear of any visible debris or overgrowth. The windows and doors are visible and appear to be in good condition. The property is not boarded up or vacant, and there are no visible signs of active construction. The image does not show any obvious issues that would require human review beyond the scope of this task."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: There may be issues related to the property that are not visible in the image, such as interior conditions, utility issues, or issues with the property's history. Additionally, the image may not capture all aspects of the property, such as the condition of the backyard or any features not visible from the front."
+    ],
+    "id": 682,
+    "image": "images/parcel-000682.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 84518,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.081998393585145,
+    "lon": -76.14420155214069,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-20-060",
+    "published_at": "2026-09-29T00:09:46+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "133 Harford Rd"
+  },
+  {
     "address": "137 Harford Rd",
     "ai_analysis": {
       "available": true,
