@@ -1,5 +1,111 @@
 [
   {
+    "address": "121 Harford Rd",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The primary structure is almost entirely obscured by a large tree and intense sun glare, preventing a reliable assessment of the building's exterior condition."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "unclear",
+        "roof": "not_visible",
+        "siding_or_facade": "unclear",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "good"
+      },
+      "confidence": "low",
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A street-level view of a residential property that is heavily obscured by a large mature tree and sun glare, with a neighboring house visible to the right.",
+      "visible_conditions": [
+        "A large mature tree in the front yard heavily blocks the view of the primary structure.",
+        "The front yard lawn appears mowed and maintained.",
+        "A paved driveway is visible on the right side of the property."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "unclear",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Needs human review"
+    ],
+    "id": 685,
+    "image": "images/parcel-000685.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 81667,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.081743859230215,
+    "lon": -76.14389414977853,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.08148676,
+          "Longitude": -76.1436155,
+          "ObjectId": 878,
+          "Owner": "Devi Consulting Agency LLC",
+          "OwnerAddress": "15 Birch Rd Syracuse, NY 13209",
+          "PropertyAddress": "109 Harford Rd",
+          "SBL": "004.-20-12.0",
+          "VPR_result": "VPR - Valid / Year 1",
+          "VPR_valid": "Y",
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": "2025-07-16",
+          "completion_type_name": "VPR Cert Issued - Plan A",
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": "2026-07-16"
+        }
+      ]
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-20-090",
+    "published_at": "2026-09-29T03:03:01+00:00",
+    "review_reasons": [
+      "AI requested human review"
+    ],
+    "title": "121 Harford Rd"
+  },
+  {
     "address": "125 Harford Rd",
     "ai_analysis": {
       "available": true,
