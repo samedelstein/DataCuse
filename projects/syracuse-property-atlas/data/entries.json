@@ -1,5 +1,162 @@
 [
   {
+    "address": "1038-40 Wadsworth St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Portions of the roof and upper facade are obscured by mature trees, limiting a full assessment.",
+        "The image does not provide clear indicators of occupancy status."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "unclear",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.4,
+            "width": 0.5,
+            "x": 0.35,
+            "y": 0.25
+          },
+          "confidence": "medium",
+          "label": "Siding wear/discoloration",
+          "reason": "Visible discoloration and general wear on the exterior siding of the main structure."
+        },
+        {
+          "bbox": {
+            "height": 0.2,
+            "width": 0.5,
+            "x": 0.3,
+            "y": 0.7
+          },
+          "confidence": "medium",
+          "label": "Uneven lawn growth",
+          "reason": "Areas of the front lawn appear to have uneven growth and some bare patches, suggesting minor unmanaged growth."
+        },
+        {
+          "bbox": {
+            "height": 0.05,
+            "width": 0.1,
+            "x": 0.75,
+            "y": 0.65
+          },
+          "confidence": "medium",
+          "label": "Lower wall/foundation wear",
+          "reason": "Possible peeling paint or surface wear visible on the lower section of the exterior wall near the driveway."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "No visible signs of vacancy are apparent in the image, which may differ from the public record indicating a vacant property."
+      ],
+      "property_type_guess": "multifamily",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image displays a large residential structure with white siding and a front porch, situated on a lot with mature trees and a paved driveway, showing some general exterior wear.",
+      "visible_conditions": [
+        "Large residential structure with white siding, possibly vinyl or painted wood.",
+        "Multiple windows are visible, some with screens.",
+        "A front porch area with steps is present.",
+        "Mature trees and shrubs are planted in the front yard.",
+        "A paved driveway is visible on the right side of the property.",
+        "Some areas of the siding appear discolored or show general wear.",
+        "The front lawn exhibits some areas of uneven growth or bare patches.",
+        "A dark-colored shingle roof is partially visible through tree cover."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Image-only flag: No visible signs of vacancy are apparent in the image, which may differ from the public record indicating a vacant property."
+    ],
+    "id": 694,
+    "image": "images/parcel-000694.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 105649,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08128876472268,
+    "lon": -76.14383724543573,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.08148676,
+          "Longitude": -76.1436155,
+          "ObjectId": 878,
+          "Owner": "Devi Consulting Agency LLC",
+          "OwnerAddress": "15 Birch Rd Syracuse, NY 13209",
+          "PropertyAddress": "109 Harford Rd",
+          "SBL": "004.-20-12.0",
+          "VPR_result": "VPR - Valid / Year 1",
+          "VPR_valid": "Y",
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": "2025-07-16",
+          "completion_type_name": "VPR Cert Issued - Plan A",
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": "2026-07-16"
+        }
+      ]
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-20-180",
+    "published_at": "2026-09-29T12:03:09+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1038-40 Wadsworth St"
+  },
+  {
     "address": "1034-36 Wadsworth St",
     "ai_analysis": {
       "available": true,
