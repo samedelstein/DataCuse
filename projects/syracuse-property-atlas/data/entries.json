@@ -1,5 +1,77 @@
 [
   {
+    "address": "1911 Court St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "{\n  \"summary\": \"The property's exterior is largely obscured by dense tree foliage, making a comprehensive assessment of the main structure difficult.\",\n  \"property_type_guess\": \"single_family\",\n  \"visible_conditions\": [\n    \"A portion of a light-colored residential structure is visible behind dense trees.\",\n    \"A detached garage structure with two bays is visible towards the rear of the property.\",\n    \"The front yard appears to be a mown lawn with mature trees and some shrubs.\",\n    \"A blue bin is visible near the front of the house.\"\n   furlough\"\n  ],\n  \"condition_scores\": {\n    \"roof\": \"not_visible\",\n    \"siding_or_facade\": \"unclear\",\n    \"windows_doors\": \"unclear\",\n    \"porch_or_entry\": \"unclear\",\n    \"yard_or_lot\": \"good\",\n    \"trash_debris\": \"none_visible\",\n    \"vegetation_overgrowth\": \"none_visible\"\n  },\n  \"visible_flags\": {\n    \"boarded_windows_or_doors\": \"no\",\n    \"fire_damage_visible\": \"no\",\n    \"structural_damage_visible\": \"no\",\n    \"vacancy_signs_visible\": \"no\",\n    \"active_construction_visible\": \"no\"\n  },\n  \"possible_unrecorded_issues\": [],\n  \"image_annotations\": [],\n  \"needs_human_review\": \"true\",\n  \"confidence\": \"low\",\n  \"caveats\": [\n    \"The majority of the main structure is heavily obscured by dense tree foliage, limiting the visibility of exterior conditions.\",\n    \"The image angle and obstruction make it difficult to fully assess the property.\"\n  ]\n}",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 707,
+    "image": "images/parcel-000707.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 145465,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08090738392112,
+    "lon": -76.14263580223437,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-21-040",
+    "published_at": "2026-09-30T01:03:07+00:00",
+    "review_reasons": [],
+    "title": "1911 Court St"
+  },
+  {
     "address": "2001 Court St",
     "ai_analysis": {
       "available": true,
