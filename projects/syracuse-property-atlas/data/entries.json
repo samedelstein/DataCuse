@@ -1,5 +1,119 @@
 [
   {
+    "address": "1901 Court St & Wadsworth St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Portions of the roof and upper facade are obscured by mature trees."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.25,
+            "width": 0.25,
+            "x": 0.45,
+            "y": 0.4
+          },
+          "confidence": "high",
+          "label": "Paint wear/discoloration",
+          "reason": "Visible areas of paint wear or discoloration on the white facade, particularly near the base."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Apparent paint wear or discoloration is visible on the lower portion of the white facade section."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image shows a large residential property with a dark gray main facade and a white turret-like section, featuring a maintained lawn and mature trees.",
+      "visible_conditions": [
+        "The building features a dark gray painted facade on the main section and a white painted facade on a side turret-like extension.",
+        "The roof appears to be covered with asphalt shingles, visible in gray tones.",
+        "Multiple windows are visible, some with white trim, and one window on the front facade contains an air conditioning unit.",
+        "A small covered entry with a red door is present on the left side of the front facade.",
+        "The front yard consists of a mowed grass lawn with some foundation plantings and dense, tall ornamental grasses on the right side.",
+        "Two white Adirondack-style chairs are placed on the lawn near the main entrance.",
+        "A small, possibly open-sided, shed or structure is visible to the far left of the main building."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Apparent paint wear or discoloration is visible on the lower portion of the white facade section."
+    ],
+    "id": 710,
+    "image": "images/parcel-000710.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 110529,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08050744994656,
+    "lon": -76.14295687964884,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-21-070",
+    "published_at": "2026-09-30T04:03:08+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1901 Court St & Wadsworth St"
+  },
+  {
     "address": "1905 Court St",
     "ai_analysis": {
       "available": true,
