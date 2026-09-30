@@ -1,5 +1,123 @@
 [
   {
+    "address": "1905 Court St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image is taken from a single angle and may not capture the entire front of the property, which could potentially affect its condition. The visible portion of the property looks well-maintained but a full review would be needed for an accurate assessment."
+      ],
+      "condition_scores": {
+        "doors": "not_visible",
+        "porch": "not_visible",
+        "roof": "good",
+        "siding": "not_visible",
+        "windows": "not_visible",
+        "yard": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.779,
+            "width": 0.436,
+            "x": 0.209,
+            "y": 0.625
+          },
+          "confidence": "high",
+          "label": "Vacancy sign",
+          "reason": "Indicates the property is vacant, which could potentially affect its condition."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "The image does not show the full front of the property, so any issues not visible might be unrecorded."
+      ],
+      "property_type_guess": "single-family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a single-family home with a visible exterior. The roof appears to be in good condition, siding is not visible, windows are not visible, doors are not visible, and the yard looks well-maintained with no visible overgrowth or issues.",
+      "visible_conditions": [
+        "roof",
+        "siding",
+        "windows",
+        "doors",
+        "porch",
+        "yard"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "yes"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: The image does not show the full front of the property, so any issues not visible might be unrecorded."
+    ],
+    "id": 709,
+    "image": "images/parcel-000709.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 94195,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08059535105324,
+    "lon": -76.14281977335911,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-21-060",
+    "published_at": "2026-09-30T03:05:25+00:00",
+    "review_reasons": [
+      "Possible image-only issue",
+      "vacancy signs visible"
+    ],
+    "title": "1905 Court St"
+  },
+  {
     "address": "1907 Court St",
     "ai_analysis": {
       "available": true,
