@@ -1,5 +1,82 @@
 [
   {
+    "address": "1907 Court St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "ollama:llava:latest",
+      "summary": "{\"summary\": \"The image shows a street-level view of a property with a clear sky and a vehicle parked on the side of the street.\", \"property_type_guess\": \"single-family\", \"visible_conditions\": [\"The property has a well-maintained front lawn, and the windows appear to be in good condition\"], \"condition_scores\": {\"roof\": \"good\", \"siding_or_facade\": \"good\", \"windows_doors\": \"good\", \"porch_or_entry\": \"good\", \"yard_or_lot\": \"good\", \"trash_debris\": \"none_visible\", \"vegetation_overgrowth\": \"none_visible\", \"visible_flags\": {\"boarded_windows_or_doors\": \"no\", \"fire_damage_visible\": \"no\", \"structural_damage_visible\": \"no\", \"vacancy_signs_visible\": \"no\", \"active_construction_visible\": \"no\"}, \"possible_unrecorded_issues\": [\"The image is clear and there are no visible issues that are not already reflected in the known data\"], \"image_annotations\": [{\"label\": \"Lawn is well-maintained\", \"reason\": \"Lawn appears to be trimmed and well-maintained\", \"bbox\": {\"x\": \"0.552\", \"y\": \"0.364\", \"width\": \"0.660\", \"height\": \"0.640\"}, \"confidence\": \"high\"}, {\"label\": \"Vehicle parked on street\", \"reason\": \"Vehicle is visible and parked on the side of the street\", \"bbox\": {\"x\": \"0.552\", \"y\": \"0.364\", \"width\": \"0.660\", \"height\": \"0.640\"}, \"confidence\": \"high\"}], \"needs_human_review\": \"false\", \"confidence\": \"high\", \"caveats\": [\"The image appears to be of good quality, and the angle and framing provide a clear view of the property and its immediate surroundings\"]} \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 708,
+    "image": "images/parcel-000708.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 122743,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08069591798648,
+    "lon": -76.14273962305067,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-21-050",
+    "published_at": "2026-09-30T02:06:01+00:00",
+    "review_reasons": [],
+    "title": "1907 Court St"
+  },
+  {
     "address": "1911 Court St",
     "ai_analysis": {
       "available": true,
