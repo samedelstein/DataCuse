@@ -1,5 +1,161 @@
 [
   {
+    "address": "1018 Wadsworth St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view of the property is partially obstructed by a large tree on the left and a parked vehicle in the foreground."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.2",
+            "width": "0.09",
+            "x": "0.795",
+            "y": "0.49"
+          },
+          "confidence": "high",
+          "label": "Peeling paint/discoloration",
+          "reason": "Visible peeling paint or discoloration on the trim around the front door."
+        },
+        {
+          "bbox": {
+            "height": "0.15",
+            "width": "0.05",
+            "x": "0.705",
+            "y": "0.505"
+          },
+          "confidence": "high",
+          "label": "Worn shutters",
+          "reason": "Decorative shutters show signs of wear, discoloration, or peeling paint."
+        },
+        {
+          "bbox": {
+            "height": "0.15",
+            "width": "0.05",
+            "x": "0.505",
+            "y": "0.505"
+          },
+          "confidence": "high",
+          "label": "Worn shutters",
+          "reason": "Decorative shutters show signs of wear, discoloration, or peeling paint."
+        },
+        {
+          "bbox": {
+            "height": "0.15",
+            "width": "0.05",
+            "x": "0.405",
+            "y": "0.505"
+          },
+          "confidence": "high",
+          "label": "Worn shutters",
+          "reason": "Decorative shutters show signs of wear, discoloration, or peeling paint."
+        },
+        {
+          "bbox": {
+            "height": "0.2",
+            "width": "0.1",
+            "x": "0.805",
+            "y": "0.605"
+          },
+          "confidence": "high",
+          "label": "Peeling paint on railing",
+          "reason": "The wooden railing of the front porch shows visible peeling paint or discoloration."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Peeling paint or discoloration is visible on the front door trim, decorative shutters, and porch railing."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property appears to be a single-family residence with visible signs of wear on exterior trim and some decorative elements.",
+      "visible_conditions": [
+        "White horizontal siding on the main structure appears generally intact.",
+        "The roof is covered with asphalt shingles, showing some signs of age but no obvious damage.",
+        "Exterior trim around the front door and windows, as well as decorative shutters, show signs of peeling paint or discoloration.",
+        "The porch railing exhibits peeling paint or discoloration.",
+        "The lawn appears maintained with some fallen leaves, and intentional landscaping shrubs are present."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Peeling paint or discoloration is visible on the front door trim, decorative shutters, and porch railing."
+    ],
+    "id": 713,
+    "image": "images/parcel-000713.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 131038,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08088351592011,
+    "lon": -76.14327212888773,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-21-100",
+    "published_at": "2026-09-30T07:03:14+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1018 Wadsworth St"
+  },
+  {
     "address": "1016 Wadsworth St",
     "ai_analysis": {
       "available": true,
