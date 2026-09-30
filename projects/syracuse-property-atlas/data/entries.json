@@ -1,5 +1,144 @@
 [
   {
+    "address": "124 Ardmore Pl & City Line",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The roof condition is not clearly visible due to tree coverage and image angle."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "not_visible",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.4,
+            "width": 0.5,
+            "x": 0.45,
+            "y": 0.55
+          },
+          "confidence": "high",
+          "label": "Driveway cracks and weeds",
+          "reason": "The asphalt driveway shows multiple cracks and weeds growing through them, indicating wear."
+        },
+        {
+          "bbox": {
+            "height": 0.15,
+            "width": 0.3,
+            "x": 0.25,
+            "y": 0.6
+          },
+          "confidence": "high",
+          "label": "Worn foundation and stoop",
+          "reason": "The concrete foundation and front stoop appear worn, with discoloration and possible surface deterioration."
+        },
+        {
+          "bbox": {
+            "height": 0.05,
+            "width": 0.3,
+            "x": 0.25,
+            "y": 0.65
+          },
+          "confidence": "high",
+          "label": "Foundation vegetation",
+          "reason": "Some unmanaged vegetation, appearing as weeds, is visible along the base of the house."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "The asphalt driveway exhibits multiple cracks with some vegetation growing through them.",
+        "The concrete front stoop and visible foundation show signs of wear, discoloration, and possible surface deterioration.",
+        "Minor unmanaged vegetation is present along the base of the house."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image shows a single-story residential structure with light-colored siding, a visible front entry, and a grass lawn, partially obscured by a large tree.",
+      "visible_conditions": [
+        "A single-story residential structure with light-colored siding is visible.",
+        "The property features an asphalt driveway with visible cracks and some vegetation growth.",
+        "A concrete front stoop with metal railings provides access to the main entry.",
+        "The grass lawn in the front appears generally maintained.",
+        "Some unmanaged vegetation is visible along the foundation of the house and within the driveway cracks.",
+        "A large tree trunk and canopy partially obscure the view of the property from the left side."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: The asphalt driveway exhibits multiple cracks with some vegetation growing through them.",
+      "Image-only flag: The concrete front stoop and visible foundation show signs of wear, discoloration, and possible surface deterioration.",
+      "Image-only flag: Minor unmanaged vegetation is present along the base of the house."
+    ],
+    "id": 720,
+    "image": "images/parcel-000720.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 135601,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0814034808203,
+    "lon": -76.1425449443438,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-21-170",
+    "published_at": "2026-09-30T14:03:05+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "124 Ardmore Pl & City Line"
+  },
+  {
     "address": "122 Ardmore Pl",
     "ai_analysis": {
       "available": true,
