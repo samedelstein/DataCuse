@@ -1,5 +1,101 @@
 [
   {
+    "address": "239 Malverne Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Sun glare partially obscures the roof and upper facade details."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a two-story residence with yellow siding and a front enclosed porch, situated on a lot with maintained landscaping.",
+      "visible_conditions": [
+        "The main structure is a two-story house with yellow siding.",
+        "The roof appears to be dark-colored and in generally fair condition, though some details are obscured by sun glare.",
+        "The front of the house features an enclosed porch with multiple windows and a white railing system leading to the entry.",
+        "Windows on the upper story appear intact.",
+        "The front yard has a mowed lawn and a hedge-like shrub planting along the front of the house.",
+        "A paved driveway is visible to the left of the property, leading to a detached garage in the rear.",
+        "No significant trash or debris is visible in the immediate vicinity of the property."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 748,
+    "image": "images/parcel-000748.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 67106,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.080486664067784,
+    "lon": -76.14495393215779,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-23-040",
+    "published_at": "2026-10-01T19:03:06+00:00",
+    "review_reasons": [],
+    "title": "239 Malverne Dr"
+  },
+  {
     "address": "241 Malverne Dr",
     "ai_analysis": {
       "available": true,
