@@ -1,5 +1,122 @@
 [
   {
+    "address": "249 Malverne Dr & Weldon Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image is taken from an angle, which could limit the visibility of the property. The foliage in the foreground partially obstructs the view of the house, driveway, and any potential issues. The image may not show the entire property, and there may be details that are not visible, such as the backyard, the condition of the foundation, or any interior or structural details. "
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "box height as 0-1 fraction of image height",
+            "width": "box width as 0-1 fraction of image width",
+            "x": "left position as 0-1 fraction of image width",
+            "y": "top position as 0-1 fraction of image height"
+          },
+          "confidence": "high",
+          "label": "lawn is well-maintained with some bare spots",
+          "reason": "The image shows a well-maintained lawn, but there are some areas where the grass is not fully green, which could be due to seasonal changes or a recent disturbance. The bare spots are relatively small and scattered."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "cautious image-only flags not already reflected in known_data",
+        "caveats"
+      ],
+      "property_type_guess": "single-family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a single-family residence with a lawn and a driveway. The lawn appears to be well-maintained, and there is no visible overgrowth or debris. The driveway is not clearly visible, but the lawn has a few bare spots, which could be due to seasonal changes. The house itself is not fully visible due to the angle of the photo and the presence of foliage in the foreground.",
+      "visible_conditions": [
+        "lawn is well-maintained with some bare spots"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: cautious image-only flags not already reflected in known_data",
+      "Image-only flag: caveats",
+      "Needs human review"
+    ],
+    "id": 745,
+    "image": "images/parcel-000745.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 156151,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08071319225608,
+    "lon": -76.14527990152916,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-23-010",
+    "published_at": "2026-10-01T16:05:46+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "249 Malverne Dr & Weldon Ave"
+  },
+  {
     "address": "248 Malverne Dr & Weldon Ave",
     "ai_analysis": {
       "available": true,
