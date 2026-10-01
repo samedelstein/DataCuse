@@ -1,5 +1,209 @@
 [
   {
+    "address": "226 Malverne Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "x": "0.172,0.230,0.652,0.402"
+          },
+          "confidence": "high",
+          "label": "Roof",
+          "reason": "The roof is in good condition and appears to be in good repair."
+        },
+        {
+          "bbox": {
+            "x": "0.172,0.230,0.652,0.402"
+          },
+          "confidence": "high",
+          "label": "Siding or Facade",
+          "reason": "The exterior walls of the house appear to be in good condition, with no visible signs of damage or wear."
+        },
+        {
+          "bbox": {
+            "x": "0.172,0.230,0.652,0.402"
+          },
+          "confidence": "high",
+          "label": "Windows and Doors",
+          "reason": "The visible windows and door of the house appear to be in good condition."
+        },
+        {
+          "bbox": {
+            "x": "0.172,0.230,0.652,0.402"
+          },
+          "confidence": "high",
+          "label": "Porch or Entry",
+          "reason": "The porch and entry areas of the house appear to be in good condition."
+        },
+        {
+          "bbox": {
+            "x": "0.172,0.230,0.652,0.402"
+          },
+          "confidence": "high",
+          "label": "Yard or Lot",
+          "reason": "The yard area of the house appears to be well-maintained."
+        },
+        {
+          "bbox": {
+            "x": "0.172,0.230,0.652,0.402"
+          },
+          "confidence": "high",
+          "label": "Trash or Debris",
+          "reason": "There is no visible trash or debris in the front yard area of the house."
+        },
+        {
+          "bbox": {
+            "x": "0.172,0.230,0.652,0.402"
+          },
+          "confidence": "high",
+          "label": "Vegetation Overgrowth",
+          "reason": "There is no visible overgrowth of vegetation in the front yard area of the house."
+        },
+        {
+          "bbox": {
+            "x": "0.172,0.230,0.652,0.402"
+          },
+          "confidence": "low",
+          "label": "Boarded Windows or Doors",
+          "reason": "The image does not provide enough information to determine if there are any boarded windows or doors on the property."
+        },
+        {
+          "bbox": {
+            "x": "0.172,0.230,0.652,0.402"
+          },
+          "confidence": "low",
+          "label": "Fire Damage",
+          "reason": "The image does not provide enough information to determine if there is any fire damage on the property."
+        },
+        {
+          "bbox": {
+            "x": "0.172,0.230,0.652,0.402"
+          },
+          "confidence": "low",
+          "label": "Structural Damage",
+          "reason": "The image does not provide enough information to determine if there is any structural damage on the property."
+        },
+        {
+          "bbox": {
+            "x": "0.172,0.230,0.652,0.402"
+          },
+          "confidence": "low",
+          "label": "Vacancy Signs",
+          "reason": "The image does not provide enough information to determine if there are any vacancy signs on the property."
+        },
+        {
+          "bbox": {
+            "x": "0.172,0.230,0.652,0.402"
+          },
+          "confidence": "low",
+          "label": "Active Construction",
+          "reason": "The image does not provide enough information to determine if there is any active construction on the property."
+        },
+        {
+          "bbox": {
+            "x": "0.172,0.230,0.652,0.402"
+          },
+          "confidence": "medium",
+          "label": "Image Quality",
+          "reason": "The image quality is not very high, which may make it difficult to see certain details clearly."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "The image quality is not very high, which may make it difficult to see certain details clearly."
+      ],
+      "property_type_guess": "single-family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a two-story residential house with a front lawn and yard area. The property appears to be well-maintained with visible landscaping and a healthy tree in the front yard. The house has a red door, and the exterior of the house appears to be in good condition with no visible issues.",
+      "visible_conditions": [
+        "specific exterior observations visible in the image"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: The image quality is not very high, which may make it difficult to see certain details clearly."
+    ],
+    "id": 739,
+    "image": "images/parcel-000739.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 123611,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08059615838553,
+    "lon": -76.14431717050027,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-22-190",
+    "published_at": "2026-10-01T10:08:01+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "226 Malverne Dr"
+  },
+  {
     "address": "218 Malverne Dr",
     "ai_analysis": {
       "available": true,
