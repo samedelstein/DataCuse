@@ -1,5 +1,107 @@
 [
   {
+    "address": "214 Malverne Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image shows the front facade clearly, but side and rear yards are not fully visible."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.2,
+            "width": 0.58,
+            "x": 0.16,
+            "y": 0.58
+          },
+          "confidence": "medium",
+          "label": "overgrown vegetation",
+          "reason": "Tall, unmanaged weeds and dense growth along the front foundation of the structure."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Unmanaged tall weeds and vegetation growing along the front foundation, partially obscuring the lower portion of the enclosed porch."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A single-family home with a gabled roof, enclosed front porch, and a front yard featuring dense foundation vegetation.",
+      "visible_conditions": [
+        "Enclosed front porch with multiple windows",
+        "Front steps with handrail on the left side",
+        "Dense vegetation and weeds along the front foundation of the house",
+        "Asphalt shingle roof showing some weathering"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Unmanaged tall weeds and vegetation growing along the front foundation, partially obscuring the lower portion of the enclosed porch."
+    ],
+    "id": 737,
+    "image": "images/parcel-000737.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 85455,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08030545081082,
+    "lon": -76.14392684016869,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-22-170",
+    "published_at": "2026-10-01T07:03:07+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "214 Malverne Dr"
+  },
+  {
     "address": "1801 Court St & Malverne Dr",
     "ai_analysis": {
       "available": true,
