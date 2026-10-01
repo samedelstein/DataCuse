@@ -1,5 +1,120 @@
 [
   {
+    "address": "1801 Court St & Malverne Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image is current and taken from a direct street view, but some details like the presence of a fence or specific landscape maintenance might be difficult to discern without additional context.  "
+      ],
+      "condition_scores": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "structural_damage_visible": "no",
+        "trash_debris": "none_visible",
+        "vacancy_signs_visible": "no",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.839",
+            "width": "0.592",
+            "x": "0.062",
+            "y": "0.251"
+          },
+          "confidence": "high",
+          "label": "Front yard landscaping",
+          "reason": "visible exterior condition"
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "cautious image-only flags not already reflected in known_data"
+      ],
+      "property_type_guess": "single_family",
+      "provider": "ollama:llava:latest",
+      "summary": "A single-family house with a white exterior and a landscaped front yard. The property appears well-maintained with no visible exterior issues.",
+      "visible_conditions": [
+        "clean and maintained front yard with a mix of trees, shrubs, and lawn",
+        "well-maintained house exterior with no visible signs of damage or neglect"
+      ],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: cautious image-only flags not already reflected in known_data",
+      "Needs human review"
+    ],
+    "id": 736,
+    "image": "images/parcel-000736.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 87323,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0800808044203,
+    "lon": -76.14377799815085,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-22-160",
+    "published_at": "2026-10-01T06:06:51+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "1801 Court St & Malverne Dr"
+  },
+  {
     "address": "1805 Court St",
     "ai_analysis": {
       "available": true,
