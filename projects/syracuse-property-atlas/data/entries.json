@@ -1,5 +1,188 @@
 [
   {
+    "address": "219 Malverne Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image is of standard quality, taken during the day with clear visibility. There are no signs of damage, neglect, or overgrowth. The image does not provide any context about the property's occupancy, code violations, or protected class information. There is no text or personal details visible in the image. The image may not be up to date, as it is a single image and does not provide information on when the photo was taken. The image does not show any vehicles, license plates, or unrelated background objects that could be mistaken for exterior conditions. The image does not include any visible flags that may suggest an exterior-condition issue that is not visible in the image. The image does not show any visible signs of vacancy, fire damage, structural damage, or active construction. The image does not show any visible vegetation overgrowth."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.881,
+            "width": 0.722,
+            "x": 0.237,
+            "y": 0.618
+          },
+          "confidence": "high",
+          "label": "yard_or_lot",
+          "reason": "The lawn and yard are well-maintained."
+        },
+        {
+          "bbox": {
+            "height": 0.839,
+            "width": 0.686,
+            "x": 0.186,
+            "y": 0.577
+          },
+          "confidence": "high",
+          "label": "roof",
+          "reason": "The roof appears to be in good condition."
+        },
+        {
+          "bbox": {
+            "height": 0.839,
+            "width": 0.686,
+            "x": 0.186,
+            "y": 0.577
+          },
+          "confidence": "high",
+          "label": "windows_doors",
+          "reason": "The windows and doors appear to be in good condition."
+        },
+        {
+          "bbox": {
+            "height": 0.839,
+            "width": 0.686,
+            "x": 0.186,
+            "y": 0.577
+          },
+          "confidence": "high",
+          "label": "siding_or_facade",
+          "reason": "The siding or facade appears to be in good condition."
+        },
+        {
+          "bbox": {
+            "height": 0.839,
+            "width": 0.686,
+            "x": 0.186,
+            "y": 0.577
+          },
+          "confidence": "high",
+          "label": "porch_or_entry",
+          "reason": "The porch and entry area appear to be in good condition."
+        },
+        {
+          "bbox": {
+            "height": 0.881,
+            "width": 0.722,
+            "x": 0.237,
+            "y": 0.618
+          },
+          "confidence": "high",
+          "label": "trash_debris",
+          "reason": "There is no visible debris or trash in the image."
+        },
+        {
+          "bbox": {
+            "height": 0.881,
+            "width": 0.722,
+            "x": 0.237,
+            "y": 0.618
+          },
+          "confidence": "high",
+          "label": "vegetation_overgrowth",
+          "reason": "There is no visible overgrowth in the image."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "none"
+      ],
+      "property_type_guess": "single_family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a residential property at 219 Malverne Dr. The property appears to be a single-family home with visible exterior conditions. The visible conditions include a well-maintained yard, a driveway, a sidewalk, and a clear view of the sky. The front of the home features a small porch and a garage. There is a red stop sign visible at the corner of the driveway and the sidewalk. The image does not show any visible signs of damage, neglect, or overgrowth, and it seems to be taken during the day with natural lighting. There is no visible text or identifying features that provide additional context about the property.",
+      "visible_conditions": [
+        "well-maintained lawn and yard",
+        "clear view of the sky",
+        "clear visible exterior conditions"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: none",
+      "Needs human review"
+    ],
+    "id": 753,
+    "image": "images/parcel-000753.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 68104,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08010911526908,
+    "lon": -76.14441065561886,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-23-090",
+    "published_at": "2026-10-02T00:07:42+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "219 Malverne Dr"
+  },
+  {
     "address": "223 Malverne Dr",
     "ai_analysis": {
       "available": true,
