@@ -1,5 +1,100 @@
 [
   {
+    "address": "215 Malverne Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image is of good quality and provides a clear view of the property. There are no visible issues, such as overgrown vegetation or debris accumulation, that are not reflected in the known_data. The image appears to be up-to-date and accurately represents the property as seen at the time of the photo. There are no visible flags that suggest issues not already recorded, such as vacancy, active construction, or structural damage. The image does not show any obstructed views, unusual angles, or areas of uncertainty that would require further human review. "
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a single-family home with a well-maintained exterior. The property is clearly visible and seems to be in good condition.",
+      "visible_conditions": [
+        "specific exterior observations visible in the image"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 754,
+    "image": "images/parcel-000754.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 64322,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08001383565937,
+    "lon": -76.14432251872574,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-23-100",
+    "published_at": "2026-10-02T01:06:01+00:00",
+    "review_reasons": [],
+    "title": "215 Malverne Dr"
+  },
+  {
     "address": "219 Malverne Dr",
     "ai_analysis": {
       "available": true,
