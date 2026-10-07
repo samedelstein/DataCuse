@@ -1,5 +1,74 @@
 [
   {
+    "address": "214 Loma Ave",
+    "ai_analysis": {
+      "available": false,
+      "failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        },
+        {
+          "note": "Ollama vision request failed: timed out",
+          "provider": "ollama:llava:latest"
+        }
+      ],
+      "note": "All vision providers failed."
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 763,
+    "image": "images/parcel-000763.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 92223,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08026562941423,
+    "lon": -76.14523979406674,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-23-190",
+    "published_at": "2026-10-07T03:13:01+00:00",
+    "review_reasons": [
+      "AI analysis unavailable"
+    ],
+    "title": "214 Loma Ave"
+  },
+  {
     "address": "210-12 Loma Ave",
     "ai_analysis": {
       "active_construction_visible": "no",
