@@ -1,5 +1,107 @@
 [
   {
+    "address": "117 Hood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view of the main structure's sides and rear is obstructed by trees and adjacent structures."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "good",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.05,
+            "width": 0.28,
+            "x": 0.36,
+            "y": 0.66
+          },
+          "confidence": "high",
+          "label": "Foundation wall deterioration",
+          "reason": "Visible peeling, cracking, or spalling on the lower foundation wall of the enclosed porch."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Deteriorating parging or peeling paint on the front porch foundation wall"
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A single-story residential structure with an enclosed front porch, showing some surface deterioration on the lower foundation wall.",
+      "visible_conditions": [
+        "Enclosed front porch with multiple intact windows",
+        "Asphalt shingle roof appears in stable condition from this angle",
+        "Peeling paint or deteriorating parging on the lower foundation wall of the porch",
+        "Maintained grass lawn with standard landscaping and adjacent trees"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Deteriorating parging or peeling paint on the front porch foundation wall"
+    ],
+    "id": 780,
+    "image": "images/parcel-000780.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 86471,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07314062170178,
+    "lon": -76.14322540325705,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-01-130",
+    "published_at": "2026-10-07T20:03:42+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "117 Hood Ave"
+  },
+  {
     "address": "121 Hood Ave",
     "ai_analysis": {
       "available": true,
