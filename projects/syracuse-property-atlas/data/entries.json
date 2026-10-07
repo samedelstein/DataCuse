@@ -1,5 +1,77 @@
 [
   {
+    "address": "161 Hood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "{\n  \"summary\": \"The exterior of the property at 161 Hood Ave appears to be a single-family residence with light-colored siding and a dark shingle roof, generally appearing maintained.\",\n  \"property_type_guess\": \"single_family\",\n  \"visible_conditions\": [\n    \"The structure has light-colored siding, which appears generally intact.\",\n    \"The roof is dark-shingled and appears to be in a generally good state.\",\n    \"Windows and doors appear present and intact.\",\n    \"A front porch with steps and a railing is visible, showing some minor wear on the steps.\",\n    \"The front yard contains grass and some ornamental shrubs.\",\n    \"A paved driveway leads to a detached garage at the rear.\",\n    \"Standard household bins are visible near the side of the house.\"\n  \u4fac],\n  \"condition_scores\": {\n    \"roof\": \"good\",\n    \"siding_or_facade\": \"good\",\n    \"windows_doors\": \"good\",\n    \"porch_or_entry\": \"good\",\n    \"yard_or_lot\": \"good\",\n    \"trash_debris\": \"none_visible\",\n    \"vegetation_overgrowth\": \"none_visible\"\n  },\n  \"visible_flags\": {\n    \"boarded_windows_or_doors\": \"no\",\n    \"fire_damage_visible\": \"no\",\n    \"structural_damage_visible\": \"no\",\n    \"vacancy_signs_visible\": \"no\",\n    \"active_construction_visible\": \"no\"\n  },\n  \"possible_unrecorded_issues\": [],\n  \"image_annotations\": [],\n  \"needs_human_review\": false,\n  \"confidence\": \"high\",\n  \"caveats\": []\n}",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 769,
+    "image": "images/parcel-000769.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 81032,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.074007052872105,
+    "lon": -76.1446184220075,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-01-020",
+    "published_at": "2026-10-07T09:03:17+00:00",
+    "review_reasons": [],
+    "title": "161 Hood Ave"
+  },
+  {
     "address": "169 Hood Ave & Mc Chesney Par",
     "ai_analysis": {
       "available": true,
