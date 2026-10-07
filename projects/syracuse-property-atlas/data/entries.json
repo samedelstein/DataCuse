@@ -1,5 +1,90 @@
 [
   {
+    "address": "153-55 Hood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Analysis is limited to the front exterior visible from the street-level perspective.",
+        "The rear and sides of the structure are not fully visible."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "good",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-and-a-half-story multi-family residential building with white siding, an enclosed second-story porch, and a small front yard with young trees.",
+      "visible_conditions": [
+        "White siding appears intact with minor weathering.",
+        "Windows on all visible levels appear intact and unbroken.",
+        "Front entry steps and railings appear functional and in fair condition.",
+        "The front yard features maintained grass and young trees/shrubs."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 771,
+    "image": "images/parcel-000771.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 88260,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07384041137576,
+    "lon": -76.14437746710426,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-01-040",
+    "published_at": "2026-10-07T11:02:52+00:00",
+    "review_reasons": [],
+    "title": "153-55 Hood Ave"
+  },
+  {
     "address": "157 Hood Ave",
     "ai_analysis": {
       "available": true,
