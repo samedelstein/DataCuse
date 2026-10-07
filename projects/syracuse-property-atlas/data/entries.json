@@ -1,5 +1,124 @@
 [
   {
+    "address": "121 Hood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "unclear visibility of the siding and facade",
+        "unclear visibility of the windows and doors"
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "poor"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.941,
+            "width": 0.559,
+            "x": 0.153,
+            "y": 0.485
+          },
+          "confidence": "high",
+          "label": "overgrown lawn",
+          "reason": "the lawn appears to be well-maintained overall but is currently overgrown in places"
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "unclear visibility of the siding and facade",
+        "unclear visibility of the windows and doors"
+      ],
+      "property_type_guess": "single-family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a single-family house with visible conditions that suggest moderate maintenance, including the overgrown lawn and the presence of a small white vehicle in the driveway.",
+      "visible_conditions": [
+        "overgrown lawn",
+        "white vehicle in the driveway"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: unclear visibility of the siding and facade",
+      "Image-only flag: unclear visibility of the windows and doors",
+      "Needs human review"
+    ],
+    "id": 779,
+    "image": "images/parcel-000779.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 87323,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.073182344048554,
+    "lon": -76.14339107992362,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-01-120",
+    "published_at": "2026-10-07T19:05:46+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "121 Hood Ave"
+  },
+  {
     "address": "125 Hood Ave",
     "ai_analysis": {
       "available": true,
