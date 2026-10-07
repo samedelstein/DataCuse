@@ -1,5 +1,120 @@
 [
   {
+    "address": "216 Loma Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "image age, potential obstruction of view"
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.618,
+            "width": 0.758,
+            "x": 0.152,
+            "y": 0.362
+          },
+          "confidence": "high",
+          "label": "front yard",
+          "reason": "maintained grass and lawn area"
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "image quality, potential obstruction of view"
+      ],
+      "property_type_guess": "single_family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a residential property with a visible lawn area, a house number sign, and a parked car. The front yard appears to have a mix of grass and some taller plants. The car is parked on the street. The view is slightly obstructed, and there are no immediately obvious visible issues.",
+      "visible_conditions": [
+        "normal exterior conditions"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: image quality, potential obstruction of view",
+      "Needs human review"
+    ],
+    "id": 764,
+    "image": "images/parcel-000764.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 30686,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08034114640816,
+    "lon": -76.14534844026025,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-23-200",
+    "published_at": "2026-10-07T04:05:26+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "216 Loma Ave"
+  },
+  {
     "address": "214 Loma Ave",
     "ai_analysis": {
       "available": false,
