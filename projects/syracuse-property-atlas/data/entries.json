@@ -1,5 +1,121 @@
 [
   {
+    "address": "210-12 Loma Ave",
+    "ai_analysis": {
+      "active_construction_visible": "no",
+      "available": true,
+      "boarded_windows_or_doors": "no",
+      "caveats": [
+        "the image resolution might not be sufficient to accurately assess the roof condition"
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "fire_damage_visible": "no",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.362,
+            "width": 0.59,
+            "x": 0.261,
+            "y": 0.176
+          },
+          "confidence": "high",
+          "label": "roof condition",
+          "reason": "the roof is clearly visible and shows no signs of damage or maintenance needs"
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "the image quality might be better to assess the roof condition"
+      ],
+      "property_type_guess": "single-family",
+      "provider": "ollama:llava:latest",
+      "structural_damage_visible": "no",
+      "summary": "The image shows a single-family house with a green exterior. The lawn appears well-maintained, and there are no visible issues such as structural damage or boarded-up windows.",
+      "trash_debris": "none_visible",
+      "vacancy_signs_visible": "no",
+      "vegetation_overgrowth": "none_visible",
+      "visible_conditions": [
+        "good siding",
+        "good windows",
+        "good doors",
+        "good porch",
+        "good yard"
+      ],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: the image quality might be better to assess the roof condition"
+    ],
+    "id": 762,
+    "image": "images/parcel-000762.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 87727,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08019011267832,
+    "lon": -76.1451311483832,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-23-180",
+    "published_at": "2026-10-07T02:05:29+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "210-12 Loma Ave"
+  },
+  {
     "address": "208 Loma Ave",
     "ai_analysis": {
       "available": true,
