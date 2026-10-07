@@ -1,5 +1,104 @@
 [
   {
+    "address": "220 Loma Ave & Weldon Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view of the property is significantly obstructed by a large tree and a dense hedge, limiting a comprehensive assessment of the exterior conditions.",
+        "The roof and primary entry are not visible in the image."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "low",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a residential structure, partially obscured by dense trees and a large hedge, with visible portions suggesting fair to good condition.",
+      "visible_conditions": [
+        "A portion of a residential building with brick siding on the lower section and white siding on the upper section is visible on the right side of the image.",
+        "One window is partially visible on the right side of the building.",
+        "A large, dense hedge runs across the lower portion of the image, obscuring the view of the property's foundation and lower exterior.",
+        "A large tree with a full canopy dominates the left and central parts of the image, significantly obscuring the view of the property.",
+        "The visible ground area in the foreground appears to be a maintained lawn."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Needs human review"
+    ],
+    "id": 767,
+    "image": "images/parcel-000767.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 152920,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08049218008622,
+    "lon": -76.14556573320257,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-23-220",
+    "published_at": "2026-10-07T07:02:59+00:00",
+    "review_reasons": [
+      "AI requested human review"
+    ],
+    "title": "220 Loma Ave & Weldon Ave"
+  },
+  {
     "address": "635 Seventh North St Rear",
     "ai_analysis": {
       "available": true,
