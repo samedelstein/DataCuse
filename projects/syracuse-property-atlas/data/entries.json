@@ -1,5 +1,104 @@
 [
   {
+    "address": "218 Loma Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "good|fair|poor|not_visible|unclear",
+        "roof": "good|fair|poor|not_visible|unclear",
+        "siding_or_facade": "good|fair|poor|not_visible|unclear",
+        "trash_debris": "none_visible|minor|major|unclear",
+        "vegetation_overgrowth": "none_visible|minor|major|unclear",
+        "windows_doors": "good|fair|poor|not_visible|unclear",
+        "yard_or_lot": "good|fair|poor|not_visible|unclear"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "No visible exterior issues"
+      ],
+      "property_type_guess": "single_family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a house with a tree and a bush in the front yard. The front yard appears to be well-maintained.",
+      "visible_conditions": [
+        "The house is visible and seems to be well-maintained"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no|unclear",
+        "boarded_windows_or_doors": "no|unclear",
+        "fire_damage_visible": "no|unclear",
+        "structural_damage_visible": "no|unclear",
+        "vacancy_signs_visible": "no|unclear"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "708",
+        "Median gross rent": "110100",
+        "Median household income": "74716",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "18.7",
+        "Renter-occupied share": "64.3",
+        "Total population": "1606",
+        "Vacancy rate": "6.6"
+      },
+      "name": "Census Tract 3; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000300",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: No visible exterior issues"
+    ],
+    "id": 765,
+    "image": "images/parcel-000765.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 152656,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08041666347918,
+    "lon": -76.14545708671946,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "004-23-210",
+    "published_at": "2026-10-07T05:05:14+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "218 Loma Ave"
+  },
+  {
     "address": "216 Loma Ave",
     "ai_analysis": {
       "available": true,
