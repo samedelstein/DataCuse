@@ -1,5 +1,150 @@
 [
   {
+    "address": "109 Hood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image provides a street-level view, which may not show the entire property or all roof surfaces.",
+        "The exact age of the image is not specified."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "poor"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.15,
+            "width": 0.55,
+            "x": 0.35,
+            "y": 0.65
+          },
+          "confidence": "high",
+          "label": "Unmanaged vegetation",
+          "reason": "Sparse ground cover and unmanaged growth are visible along the low fence in the front area."
+        },
+        {
+          "bbox": {
+            "height": 0.15,
+            "width": 0.5,
+            "x": 0.4,
+            "y": 0.8
+          },
+          "confidence": "medium",
+          "label": "Scattered brush/debris",
+          "reason": "An accumulation of brush and debris is visible in the immediate foreground."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Unmanaged vegetation and sparse ground cover in the front area are visible, which could be consistent with a property not actively maintained."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a two-story residential structure with light blue siding and a front area exhibiting sparse ground cover and some unmanaged vegetation.",
+      "visible_conditions": [
+        "The property is a two-story residential building.",
+        "The exterior features light blue horizontal siding, which appears to be in fair condition with some visible discoloration.",
+        "Windows are visible on the front facade and appear intact.",
+        "A small covered entry is present on the right side of the front of the structure.",
+        "The area in front of the property, behind a low black fence, has sparse ground cover and some unmanaged vegetation.",
+        "Two large waste bins are visible on the left side of the property's apparent frontage.",
+        "Some scattered brush and debris are visible in the immediate foreground, adjacent to the property's visible area."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Image-only flag: Unmanaged vegetation and sparse ground cover in the front area are visible, which could be consistent with a property not actively maintained."
+    ],
+    "id": 781,
+    "image": "images/parcel-000781.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 70811,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.073094380377256,
+    "lon": -76.14283347723612,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.07339238,
+          "Longitude": -76.14273506,
+          "ObjectId": 927,
+          "Owner": "Christopher Tysco",
+          "OwnerAddress": "1601 Butternut St Syracuse, NY 13208",
+          "PropertyAddress": "1601 Butternut St & Hood Ave",
+          "SBL": "005.-02-45.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": null
+        }
+      ]
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-01-140",
+    "published_at": "2026-10-07T21:04:07+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "109 Hood Ave"
+  },
+  {
     "address": "117 Hood Ave",
     "ai_analysis": {
       "available": true,
