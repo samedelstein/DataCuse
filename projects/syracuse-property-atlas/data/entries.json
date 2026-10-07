@@ -1,5 +1,130 @@
 [
   {
+    "address": "125 Hood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.42,
+            "width": 0.6,
+            "x": 0.0,
+            "y": 0.58
+          },
+          "confidence": "high",
+          "label": "Driveway cracking",
+          "reason": "Visible cracks and wear in the paved driveway surface."
+        },
+        {
+          "bbox": {
+            "height": 0.2,
+            "width": 0.2,
+            "x": 0.72,
+            "y": 0.62
+          },
+          "confidence": "high",
+          "label": "Worn porch",
+          "reason": "The wooden steps and railing of the porch show signs of wear."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "The paved driveway shows some visible cracking and wear.",
+        "The wooden porch steps and railing appear worn."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property features a multi-story residential structure with light-colored siding and a visible porch, situated on a lot with a paved driveway and established landscaping.",
+      "visible_conditions": [
+        "Multi-story residential structure with light-colored siding.",
+        "Gabled roof visible.",
+        "Multiple windows, including bay windows on the front facade.",
+        "A wooden porch with steps and railing is visible on the right side.",
+        "Paved driveway leading to the rear of the property.",
+        "Grass lawn with mature shrubs and trees as landscaping.",
+        "Two dark-colored bins are visible near the driveway."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: The paved driveway shows some visible cracking and wear.",
+      "Image-only flag: The wooden porch steps and railing appear worn."
+    ],
+    "id": 778,
+    "image": "images/parcel-000778.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 93533,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07328290548078,
+    "lon": -76.14350863804262,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-01-110",
+    "published_at": "2026-10-07T18:03:05+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "125 Hood Ave"
+  },
+  {
     "address": "129 Hood Ave",
     "ai_analysis": {
       "available": true,
