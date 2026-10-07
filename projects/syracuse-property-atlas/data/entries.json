@@ -1,5 +1,118 @@
 [
   {
+    "address": "129 Hood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image appears to be of good quality and does not show any signs of damage or neglect. There are no indications of the presence of hazardous materials or debris. The image provides a clear and unobstructed view of the property and the surrounding area. The angle of the photo is consistent with a typical perspective one might expect for a real estate image, allowing for a clear view of the property's condition and features. There are no visible people or personal items in the image that could be used to infer the occupancy or identity of the residents. The property's condition appears to be consistent with the surrounding neighborhood, which seems to be well-maintained. There are no visible issues with the house's exterior that would warrant further investigation or attention. The image does not show any signs of active construction or any materials that are in disrepair. The house is bordered by a well-maintained lawn and garden, which adds to the overall appearance of the property. The image does not show any visible signs of disrepair or neglect that would require further attention or investigation."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good|fair|poor|not_visible|unclear",
+        "roof": "good|fair|poor|not_visible|unclear",
+        "siding_or_facade": "good|fair|poor|not_visible|unclear",
+        "trash_debris": "none_visible|minor|major|unclear",
+        "vegetation_overgrowth": "none_visible|minor|major|unclear",
+        "windows_doors": "good|fair|poor|not_visible|unclear",
+        "yard_or_lot": "good|fair|poor|not_visible|unclear"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "box height as 0-1 fraction of image height",
+            "width": "box width as 0-1 fraction of image width",
+            "x": "left position as 0-1 fraction of image width",
+            "y": "top position as 0-1 fraction of image height"
+          },
+          "confidence": "high",
+          "label": "short visible issue label",
+          "reason": "why this area was marked"
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "cautious image-only flags not already reflected in known_data"
+      ],
+      "property_type_guess": "single-family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a two-story residential house with a well-maintained lawn and garden. There are no visible exterior conditions that would indicate disrepair or neglect in the image provided. All elements of the property appear to be in good condition and are consistent with a well-kept suburban home.",
+      "visible_conditions": [
+        "specific exterior observations visible in the image"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: cautious image-only flags not already reflected in known_data"
+    ],
+    "id": 777,
+    "image": "images/parcel-000777.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 108716,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07334048279957,
+    "lon": -76.14365461085437,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-01-100",
+    "published_at": "2026-10-07T17:06:46+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "129 Hood Ave"
+  },
+  {
     "address": "133 Hood Ave",
     "ai_analysis": {
       "available": true,
