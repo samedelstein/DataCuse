@@ -1,5 +1,118 @@
 [
   {
+    "address": "141-43 Hood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.15,
+            "width": 0.35,
+            "x": 0.25,
+            "y": 0.5
+          },
+          "confidence": "high",
+          "label": "Driveway cracking",
+          "reason": "Visible cracks and unevenness in the asphalt surface of the driveway."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "The asphalt driveway exhibits visible cracking and some unevenness."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of this two-story residence appears to be in generally fair to good condition, featuring a light green siding and a front porch with an enclosed upper-level balcony.",
+      "visible_conditions": [
+        "Two-story structure with light green siding and white trim.",
+        "Front porch with white railings and two entry doors.",
+        "Enclosed upper-level balcony/sunroom with multiple windows.",
+        "Gable roof with dark shingles and a visible chimney.",
+        "Foundation plantings are present along the front of the house.",
+        "An asphalt driveway runs along the left side of the property.",
+        "The front yard consists of grass, which appears somewhat sparse in areas.",
+        "Visible utility lines are present above the property."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: The asphalt driveway exhibits visible cracking and some unevenness."
+    ],
+    "id": 774,
+    "image": "images/parcel-000774.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 98621,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07359044743362,
+    "lon": -76.14401603781818,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-01-070",
+    "published_at": "2026-10-07T14:03:10+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "141-43 Hood Ave"
+  },
+  {
     "address": "145 Hood Ave",
     "ai_analysis": {
       "available": true,
