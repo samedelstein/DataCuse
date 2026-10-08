@@ -1,5 +1,90 @@
 [
   {
+    "address": "1308 Court St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view is from across the street, which limits the ability to inspect fine details of the facade, roof, and windows.",
+        "A utility pole and overhead wires partially obstruct the view of the front of the house."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A well-maintained Dutch Colonial style residential property with a neat lawn and paved driveway, showing no obvious exterior defects from the street.",
+      "visible_conditions": [
+        "Light green siding appears intact and in good condition.",
+        "Enclosed front porch windows appear intact.",
+        "Lawn is mowed and landscaping is maintained.",
+        "Paved driveway is clear and in good condition."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 806,
+    "image": "images/parcel-000806.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 86079,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07706765774916,
+    "lon": -76.14807481392464,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-02-020",
+    "published_at": "2026-10-08T22:02:50+00:00",
+    "review_reasons": [],
+    "title": "1308 Court St"
+  },
+  {
     "address": "1300 Court St & Hood Ave",
     "ai_analysis": {
       "available": true,
