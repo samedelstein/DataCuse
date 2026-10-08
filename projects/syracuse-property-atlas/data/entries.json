@@ -1,5 +1,91 @@
 [
   {
+    "address": "114 Mcchesney Park Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The roof is only partially visible due to the steep angle of the street-level view.",
+        "Rear and side elevations of the structure are not fully visible from this perspective."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential building with a front-facing double entry, light-colored siding, brick support columns, and a gravel parking area.",
+      "visible_conditions": [
+        "Two front entry doors are visible on the left side of the ground floor.",
+        "The facade features a mix of light-colored siding and brick pillars on the lower level.",
+        "Windows on both levels appear intact with no visible breakage or boarding.",
+        "A gravel and paved driveway area is located in front of the structure.",
+        "A wooden fence runs along the right side of the property boundary."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 804,
+    "image": "images/parcel-000804.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 110043,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.073714979202926,
+    "lon": -76.14550275995515,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-01-380",
+    "published_at": "2026-10-08T20:02:53+00:00",
+    "review_reasons": [],
+    "title": "114 Mcchesney Park Dr"
+  },
+  {
     "address": "2238 Grant Blvd & Mcchesney Pk",
     "ai_analysis": {
       "available": true,
