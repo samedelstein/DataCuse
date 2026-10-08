@@ -1,5 +1,94 @@
 [
   {
+    "address": "2234-36 Grant Blvd",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "A large digital blur block covers the center of the image, completely obscuring the primary structure.",
+        "Mature trees further obstruct the view of any buildings on the parcel."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "unclear",
+        "roof": "unclear",
+        "siding_or_facade": "unclear",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "unclear",
+        "yard_or_lot": "good"
+      },
+      "confidence": "low",
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The property is almost entirely obscured by a large blurred area in the center of the image and mature trees, leaving only portions of the yard and a sliver of a structure visible.",
+      "visible_conditions": [
+        "A large portion of the center image is digitally blurred, obscuring the main structure.",
+        "A maintained lawn with a mature deciduous tree in a bordered bed is visible on the left.",
+        "A large evergreen tree is visible on the right.",
+        "A chain-link fence runs along the foreground."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "unclear",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "unclear",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Needs human review"
+    ],
+    "id": 802,
+    "image": "images/parcel-000802.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 71929,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0735069259518,
+    "lon": -76.14556411098822,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-01-360",
+    "published_at": "2026-10-08T18:02:52+00:00",
+    "review_reasons": [
+      "AI requested human review"
+    ],
+    "title": "2234-36 Grant Blvd"
+  },
+  {
     "address": "2228-30 Grant Blvd",
     "ai_analysis": {
       "available": true,
