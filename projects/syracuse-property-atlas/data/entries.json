@@ -1,5 +1,101 @@
 [
   {
+    "address": "2224 Grant Blvd",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The left side of the property is partially obscured by a blur in the image, limiting a complete view of that section."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a well-maintained single-family residence with a front porch and landscaping.",
+      "visible_conditions": [
+        "The property features a two-story structure with a gambrel-style roofline and white siding.",
+        "A front porch with steps leads to the main entry.",
+        "The visible roof appears to be light-colored and in good condition.",
+        "The siding appears clean and intact.",
+        "Windows visible on the front facade appear to be in good condition.",
+        "The yard includes a paved walkway, lawn areas, and maintained foundation plantings and shrubs.",
+        "A paved driveway is visible to the right of the house."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 800,
+    "image": "images/parcel-000800.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 56312,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07358107053823,
+    "lon": -76.1452774625517,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-01-340",
+    "published_at": "2026-10-08T16:03:01+00:00",
+    "review_reasons": [],
+    "title": "2224 Grant Blvd"
+  },
+  {
     "address": "2222 Grant Blvd",
     "ai_analysis": {
       "available": true,
