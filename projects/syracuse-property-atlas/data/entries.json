@@ -1,5 +1,91 @@
 [
   {
+    "address": "2210 Grant Blvd",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "A large utility pole in the foreground partially obstructs the view of the property.",
+        "Significant sun glare above the main roofline limits clear visibility of the upper roof and facade details.",
+        "Multiple structures are visible in the frame, which may cause ambiguity regarding the exact parcel boundaries."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential property with light-colored siding and a front porch, partially obstructed by a utility pole and sun glare, appearing in generally fair condition with a maintained yard.",
+      "visible_conditions": [
+        "Light-colored siding on the main structure appears intact with no major damage visible.",
+        "The brick facade on the adjacent structure to the left appears stable.",
+        "The front porch and entryway show no obvious signs of structural failure.",
+        "The yard is maintained with mowed grass and seasonal decorations."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 796,
+    "image": "images/parcel-000796.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 60214,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07359021598694,
+    "lon": -76.14464717105746,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-01-300",
+    "published_at": "2026-10-08T12:02:53+00:00",
+    "review_reasons": [],
+    "title": "2210 Grant Blvd"
+  },
+  {
     "address": "2206 Grant Blvd",
     "ai_analysis": {
       "available": true,
