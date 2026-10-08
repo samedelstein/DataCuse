@@ -1,5 +1,90 @@
 [
   {
+    "address": "2024-26 Grant Blvd To Hood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image shows multiple structures and a shared parking area, making it difficult to determine which specific building corresponds to the parcel key.",
+        "The main entryways of the background buildings are obscured from this angle."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows a paved parking area with parked vehicles, a detached garage, and residential structures in the background under clear daylight.",
+      "visible_conditions": [
+        "Paved parking area with multiple parked vehicles",
+        "Detached garage with a white garage door",
+        "Residential structures visible in the background with intact siding and roofs",
+        "Mature trees and standard residential landscaping"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 787,
+    "image": "images/parcel-000787.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 84730,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.073041546378846,
+    "lon": -76.14318936403784,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-01-210",
+    "published_at": "2026-10-08T03:02:54+00:00",
+    "review_reasons": [],
+    "title": "2024-26 Grant Blvd To Hood Ave"
+  },
+  {
     "address": "2018 Grant Blvd To Hood Ave",
     "ai_analysis": {
       "available": true,
