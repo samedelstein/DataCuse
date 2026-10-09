@@ -1,5 +1,115 @@
 [
   {
+    "address": "316 Burdick Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The assessment is limited to the front exterior visible from the street-level perspective.",
+        "Rear and side yards, as well as the roof's back slope, are not visible."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential building with an enclosed front porch, maintained foundation plantings, and a clear front yard.",
+      "visible_conditions": [
+        "The roof shingles appear intact with no obvious missing sections from this angle.",
+        "The siding is light-colored and appears to be in generally stable condition.",
+        "The enclosed front porch has intact windows and a clear entryway with steps and handrails.",
+        "The front yard features mowed grass and established foundation shrubs."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record"
+    ],
+    "id": 819,
+    "image": "images/parcel-000819.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 79670,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.077627946166615,
+    "lon": -76.1554561168273,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07797434,
+          "Longitude": -76.15550336,
+          "NeedsRR": "Yes",
+          "ObjectId": 991,
+          "PropertyAddress": "355 Willumae Dr",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-17-09.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Susan Hartnagle",
+          "valid_until": null,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-17-320",
+    "published_at": "2026-10-09T11:02:51+00:00",
+    "review_reasons": [],
+    "title": "316 Burdick Ave"
+  },
+  {
     "address": "635 Seventh North St & Bear T",
     "ai_analysis": {
       "available": true,
