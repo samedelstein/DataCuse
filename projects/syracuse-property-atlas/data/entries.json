@@ -1,5 +1,121 @@
 [
   {
+    "address": "297 Ross Pk",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view of the left side of the main building is partially obscured by mature trees and landscaping.",
+        "The image is taken from a distance, limiting detailed inspection of the roof and upper trim."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.03,
+            "width": 0.08,
+            "x": 0.71,
+            "y": 0.35
+          },
+          "confidence": "medium",
+          "label": "deteriorated roofline trim",
+          "reason": "Apparent gap or missing trim piece along the fascia/soffit line of the main building"
+        },
+        {
+          "bbox": {
+            "height": 0.08,
+            "width": 0.32,
+            "x": 0.01,
+            "y": 0.48
+          },
+          "confidence": "medium",
+          "label": "weathered garage roof",
+          "reason": "Detached garage roof shows signs of weathering, moss, or discoloration"
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor deterioration or gap in the fascia/soffit trim near the roofline of the main structure",
+        "Weathered shingles on the detached garage roof"
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential building with a detached garage, showing some minor exterior wear on the roofline trim and the garage roof.",
+      "visible_conditions": [
+        "Possible minor trim or soffit deterioration along the main roofline",
+        "Weathered shingles with moss or discoloration on the detached garage roof",
+        "Standard residential yard with mature trees and foundation plantings",
+        "Standard household trash and recycling bins stored near the garage driveway"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Minor deterioration or gap in the fascia/soffit trim near the roofline of the main structure",
+      "Image-only flag: Weathered shingles on the detached garage roof"
+    ],
+    "id": 809,
+    "image": "images/parcel-000809.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 98802,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.077266438317274,
+    "lon": -76.14741858413984,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-02-050",
+    "published_at": "2026-10-09T01:02:56+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "297 Ross Pk"
+  },
+  {
     "address": "1318 Court St",
     "ai_analysis": {
       "available": true,
