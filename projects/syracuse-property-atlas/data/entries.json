@@ -1,5 +1,82 @@
 [
   {
+    "address": "227 Ross Pk",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "ollama:llava:latest",
+      "summary": "{\"summary\": \"This image depicts a two-story residential house with a white exterior on a suburban street. The property appears to be well-maintained with a neatly trimmed lawn, a paved driveway, and a small front yard with a few shrubs.\", \"property_type_guess\": \"single-family residence\", \"visible_conditions\": [\"front yard is well-maintained\", \"driveway is clean and paved\", \"house exterior is in good condition\"], \"condition_scores\": {\"roof\": \"good\", \"siding_or_facade\": \"good\", \"windows_doors\": \"good\", \"porch_or_entry\": \"good\", \"yard_or_lot\": \"good\", \"trash_debris\": \"none_visible\", \"vegetation_overgrowth\": \"none_visible\"}, \"visible_flags\": {\"boarded_windows_or_doors\": \"no\", \"fire_damage_visible\": \"no\", \"structural_damage_visible\": \"no\", \"vacancy_signs_visible\": \"no\", \"active_construction_visible\": \"no\"}, \"possible_unrecorded_issues\": [\"The image appears to be a clear, well-lit photograph taken during the day, which suggests that there may be no unrecorded issues visible in the current state of the property. However, it is important to note that image quality, angle, and the view itself can sometimes hide potential issues that might not be visible from this perspective.\"], \"image_annotations\": [{\"label\": \"Front yard is well-maintained\", \"reason\": \"The grass is neatly trimmed and the shrubs are well-pruned.\", \"bbox\": {\"x\": 0.515, \"y\": 0.345, \"width\": 0.803, \"height\": 0.683}, \"confidence\": \"high\"}, {\"label\": \"Driveway is clean and paved\", \"reason\": \"The driveway is clear of debris and has been recently paved.\", \"bbox\": {\"x\": 0.515, \"y\": 0.345, \"width\": 0.803, \"height\": 0.683}, \"confidence\": \"high\"}, {\"label\": \"House exterior is in good condition\", \"reason\": \"There are no visible signs of damage, wear, or neglect. The siding is clean, the windows are clear, and there are no indications of disrepair.\", \"bbox\": {\"x\": 0.121, \"y\": 0.333, \"width\": 0.769, \"height\": 0.859}, \"confidence\": \"high\"}], \"needs_human_review\": \"false\", \"confidence\": \"high\", \"caveats\": [\"It is important to note that while the image seems clear, it is still possible that certain aspects of the property might not be visible from this perspective, such as the back yard, the roof, or any potential issues inside the house.\" \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 817,
+    "image": "images/parcel-000817.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 80446,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07587847267113,
+    "lon": -76.1457997803932,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-02-170",
+    "published_at": "2026-10-09T09:06:44+00:00",
+    "review_reasons": [],
+    "title": "227 Ross Pk"
+  },
+  {
     "address": "310-12 Burdick Ave",
     "ai_analysis": {
       "available": true,
