@@ -1,5 +1,117 @@
 [
   {
+    "address": "1001 Hiawatha Blvd E & Sixth N",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "good",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "poor"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.35,
+            "width": 1.0,
+            "x": 0.0,
+            "y": 0.45
+          },
+          "confidence": "high",
+          "label": "Unmaintained lot surface",
+          "reason": "The front lot consists primarily of gravel and dirt with sparse, unmanaged vegetation, rather than a maintained lawn or paved surface."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "The front lot appears to be unmaintained, consisting of gravel and dirt with sparse vegetation rather than a landscaped area."
+      ],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a commercial-style building with a dark gray facade and a gravel and dirt lot in the foreground.",
+      "visible_conditions": [
+        "The building features a dark gray, possibly painted, brick or block facade.",
+        "Multiple windows with white frames and interior coverings are visible on the front facade.",
+        "A central entry door with a small, rounded canopy and steps leads into the building.",
+        "The roof appears to be a flat, blue-colored membrane or coating.",
+        "The lot directly in front of the building is primarily composed of gravel and dirt, with sparse patches of grass and weeds.",
+        "A utility pole with transformers is situated to the right side of the building.",
+        "An American flag on a pole is visible to the left of the building."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "816",
+        "Median gross rent": "353800",
+        "Median household income": "91696",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "11.3",
+        "Renter-occupied share": "7.8",
+        "Total population": "1225",
+        "Vacancy rate": "2.8"
+      },
+      "name": "Census Tract 1; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000100",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: The front lot appears to be unmaintained, consisting of gravel and dirt with sparse vegetation rather than a landscaped area."
+    ],
+    "id": 826,
+    "image": "images/parcel-000826.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 65139,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08163951328236,
+    "lon": -76.15888199448311,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "0011-01-070",
+    "published_at": "2026-10-11T12:03:03+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1001 Hiawatha Blvd E & Sixth N"
+  },
+  {
     "address": "217 Ross Pk",
     "ai_analysis": {
       "available": true,
