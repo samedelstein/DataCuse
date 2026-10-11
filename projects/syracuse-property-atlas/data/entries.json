@@ -1,5 +1,120 @@
 [
   {
+    "address": "380 Sixth North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image primarily shows a large lot used for vehicle storage, with no main building structure clearly visible for the given address. The property type is inferred from the visible use."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "not_visible",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.25,
+            "width": 0.9,
+            "x": 0.0,
+            "y": 0.45
+          },
+          "confidence": "high",
+          "label": "Unmanaged ground vegetation",
+          "reason": "Areas of unmanaged grass and weeds are visible along the lot's edges and within the gravel surface."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "The property appears to be utilized as a commercial vehicle storage lot.",
+        "Minor unmanaged ground vegetation is visible in various parts of the lot."
+      ],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image displays a large, unpaved lot primarily used for parking numerous school buses, with a chain-link fence and some areas of unmanaged ground vegetation.",
+      "visible_conditions": [
+        "A large, unpaved or gravel lot is visible.",
+        "Numerous yellow school buses are parked on the lot.",
+        "A chain-link fence with various signs is present along what appears to be the front of the property.",
+        "Some areas of unmanaged ground vegetation are visible, particularly along the fence line and within parts of the lot.",
+        "Trees are visible in the background and along the perimeter of the property.",
+        "No primary building structure for the address is clearly visible in the image."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "816",
+        "Median gross rent": "353800",
+        "Median household income": "91696",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "11.3",
+        "Renter-occupied share": "7.8",
+        "Total population": "1225",
+        "Vacancy rate": "2.8"
+      },
+      "name": "Census Tract 1; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000100",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: The property appears to be utilized as a commercial vehicle storage lot.",
+      "Image-only flag: Minor unmanaged ground vegetation is visible in various parts of the lot."
+    ],
+    "id": 837,
+    "image": "images/parcel-000837.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 64607,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08287324712453,
+    "lon": -76.16209123755922,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "0011-01-110",
+    "published_at": "2026-10-11T23:03:07+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "380 Sixth North St"
+  },
+  {
     "address": "177 Ross Pk",
     "ai_analysis": {
       "available": true,
