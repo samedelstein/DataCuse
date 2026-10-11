@@ -1,5 +1,120 @@
 [
   {
+    "address": "304 Sixth North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "A vehicle is parked in front of the property, partially obscuring the lower portion of the facade."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.45,
+            "width": 0.92,
+            "x": 0.04,
+            "y": 0.34
+          },
+          "confidence": "high",
+          "label": "Facade discoloration/wear",
+          "reason": "Visible areas of discoloration and possible peeling paint or surface wear on the building's exterior."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Visible discoloration and minor surface wear on the building facade."
+      ],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image displays a single-story commercial-style building with a light-colored facade, multiple entryways, and windows, showing some visible discoloration and surface wear.",
+      "visible_conditions": [
+        "The building is a single-story structure.",
+        "The facade appears to be a light tan or brown material.",
+        "There are multiple windows, some with vertical blinds visible.",
+        "Several entry doors are present along the facade.",
+        "The roof appears to be a flat type.",
+        "Some discoloration and surface wear are visible on the facade.",
+        "A small area of ground cover or landscaping is visible near the foundation on the right side of the building.",
+        "The area directly in front of the building is paved, likely a sidewalk or parking area."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "816",
+        "Median gross rent": "353800",
+        "Median household income": "91696",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "11.3",
+        "Renter-occupied share": "7.8",
+        "Total population": "1225",
+        "Vacancy rate": "2.8"
+      },
+      "name": "Census Tract 1; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000100",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Visible discoloration and minor surface wear on the building facade."
+    ],
+    "id": 829,
+    "image": "images/parcel-000829.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 52862,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.081674074920834,
+    "lon": -76.15935339483117,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "0011-01-080",
+    "published_at": "2026-10-11T15:03:05+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "304 Sixth North St"
+  },
+  {
     "address": "215 Ross Pk",
     "ai_analysis": {
       "available": true,
