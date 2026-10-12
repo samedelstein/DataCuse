@@ -1,5 +1,93 @@
 [
   {
+    "address": "1134 Lemoyne Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Main structure is largely obscured by tree foliage and distance, preventing detailed evaluation of building exterior condition."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "unclear",
+        "siding_or_facade": "unclear",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "unclear",
+        "yard_or_lot": "good"
+      },
+      "confidence": "low",
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The property features a well-maintained lawn and paved driveway, though the primary residential structure is largely obscured by mature foliage.",
+      "visible_conditions": [
+        "Paved asphalt driveway in good condition",
+        "Mowed lawn and manicured grass area",
+        "Large mature trees partially obscuring the primary dwelling facade",
+        "Basketball hoop installed near the edge of the driveway"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Needs human review"
+    ],
+    "id": 853,
+    "image": "images/parcel-000853.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 124848,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.079019811021766,
+    "lon": -76.15462350580182,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-18-051",
+    "published_at": "2026-10-12T15:02:54+00:00",
+    "review_reasons": [
+      "AI requested human review"
+    ],
+    "title": "1134 Lemoyne Ave"
+  },
+  {
     "address": "151 Ross Pk",
     "ai_analysis": {
       "available": true,
