@@ -1,5 +1,147 @@
 [
   {
+    "address": "837-935 Hiawatha Blvd E & Sixth N",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view of the property is partially obstructed by railroad tank cars and a utility pole, limiting a full assessment.",
+        "The image likely shows only a segment of a larger property, given the address range."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "unclear",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "major",
+        "windows_doors": "poor",
+        "yard_or_lot": "poor"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.08,
+            "width": 0.05,
+            "x": 0.25,
+            "y": 0.5
+          },
+          "confidence": "high",
+          "label": "Boarded or covered window",
+          "reason": "A window opening appears to be covered with a light-colored material, suggesting it is boarded up or otherwise secured."
+        },
+        {
+          "bbox": {
+            "height": 0.1,
+            "width": 1.0,
+            "x": 0.0,
+            "y": 0.65
+          },
+          "confidence": "high",
+          "label": "Unmanaged vegetation",
+          "reason": "Tall grass and weeds are clearly visible growing unmanaged in the area between the railroad tracks and the building."
+        },
+        {
+          "bbox": {
+            "height": 0.08,
+            "width": 0.05,
+            "x": 0.78,
+            "y": 0.5
+          },
+          "confidence": "medium",
+          "label": "Potentially damaged window frame",
+          "reason": "A window opening on the right side of the building appears dark, possibly indicating a rusted or damaged frame."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Visible boarded or covered window opening.",
+        "Significant unmanaged vegetation in the lot area."
+      ],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible portion of the property appears to be a brick commercial or industrial building adjacent to railroad tracks, exhibiting some unmanaged vegetation and a possibly boarded window.",
+      "visible_conditions": [
+        "A long, red brick building is visible, partially obscured by railroad tank cars.",
+        "The roof appears to be flat, with some structural elements visible on top, possibly related to old signage or equipment.",
+        "One window opening on the left side of the building appears to be covered or boarded with a light-colored material.",
+        "Another window opening on the right side of the building appears dark, possibly indicating a rusted frame or a dark covering.",
+        "A white door and a large white garage door are visible on the building's facade.",
+        "Unmanaged vegetation, consisting of tall grass and weeds, is present in the area between the railroad tracks and the building.",
+        "Railroad tracks and two large tank cars are in the foreground, partially obscuring the view of the building."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "yes",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "816",
+        "Median gross rent": "353800",
+        "Median household income": "91696",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "11.3",
+        "Renter-occupied share": "7.8",
+        "Total population": "1225",
+        "Vacancy rate": "2.8"
+      },
+      "name": "Census Tract 1; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000100",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Visible boarded or covered window opening.",
+      "Image-only flag: Significant unmanaged vegetation in the lot area.",
+      "Needs human review"
+    ],
+    "id": 850,
+    "image": "images/parcel-000850.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 61224,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08062330391342,
+    "lon": -76.15994937077042,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "0011-01-151",
+    "published_at": "2026-10-12T12:03:01+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue",
+      "boarded windows or doors"
+    ],
+    "title": "837-935 Hiawatha Blvd E & Sixth N"
+  },
+  {
     "address": "155 Ross Pk",
     "ai_analysis": {
       "available": true,
