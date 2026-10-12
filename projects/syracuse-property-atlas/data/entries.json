@@ -1,5 +1,119 @@
 [
   {
+    "address": "143 Ross Pk",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image may not show the full property, and there could be unrecorded issues not visible in this angle."
+      ],
+      "condition_scores": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "structural_damage_visible": "no",
+        "trash_debris": "none_visible",
+        "vacancy_signs_visible": "no",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.985",
+            "width": "0.994",
+            "x": "0.000",
+            "y": "0.459"
+          },
+          "confidence": "high",
+          "label": "None",
+          "reason": "no visible issues from the image"
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "cautious image-only flags not already reflected in known_data"
+      ],
+      "property_type_guess": "single_family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a two-story residential house with a visible driveway. The property appears to be well-maintained, with no visible issues.",
+      "visible_conditions": [
+        "specific exterior observations visible in the image"
+      ],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: cautious image-only flags not already reflected in known_data",
+      "Needs human review"
+    ],
+    "id": 858,
+    "image": "images/parcel-000858.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 84369,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.074697661898384,
+    "lon": -76.14397256621926,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-02-310",
+    "published_at": "2026-10-12T20:05:54+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "143 Ross Pk"
+  },
+  {
     "address": "829 Hiawatha Blvd E",
     "ai_analysis": {
       "available": true,
