@@ -1,5 +1,126 @@
 [
   {
+    "address": "1144 Lemoyne Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The age of the image is not specified, which may affect the visibility of certain conditions.",
+        "The view is clear, but the image may not represent the full property or be taken at a time when certain conditions were not visible (e.g., during winter, at night)."
+      ],
+      "condition_scores": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "yes",
+        "fire_damage_visible": "no",
+        "porch_or_entry": "unclear",
+        "roof": "good",
+        "siding_or_facade": "fair",
+        "structural_damage_visible": "no",
+        "trash_debris": "none_visible",
+        "vacancy_signs_visible": "no",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "unclear",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "1",
+            "width": "1",
+            "x": "0-1",
+            "y": "0-1"
+          },
+          "confidence": "high",
+          "label": "Exterior",
+          "reason": "The image is clear and the property appears to be maintained."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "The exterior conditions of the windows, doors, and porch or entry are not clearly visible in this image."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image depicts a residential property with a green exterior. There are several visible exterior conditions:",
+      "visible_conditions": [
+        "The property's roof appears to be in good condition.",
+        "The siding is in fair condition with signs of age and weathering.",
+        "There are visible signs of exterior maintenance, such as boarded-up windows.",
+        "The yard is landscaped with a well-maintained lawn and garden areas.",
+        "There is no visible trash, debris, or overgrown vegetation.",
+        "The exterior condition of the porch or entry is not clearly visible.",
+        "Structural damage, fire damage, or active construction is not visible in this image.",
+        "There are no visible signs indicating vacancy, fire damage, or active construction.",
+        "The view is clear and there are no obvious image-only issues."
+      ],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: The exterior conditions of the windows, doors, and porch or entry are not clearly visible in this image."
+    ],
+    "id": 856,
+    "image": "images/parcel-000856.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 130195,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.079238080798014,
+    "lon": -76.15464296303895,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-18-061",
+    "published_at": "2026-10-12T18:06:40+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1144 Lemoyne Ave"
+  },
+  {
     "address": "149 Ross Pk",
     "ai_analysis": {
       "available": true,
