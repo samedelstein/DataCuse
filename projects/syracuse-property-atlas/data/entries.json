@@ -1,5 +1,82 @@
 [
   {
+    "address": "163 Ross Pk",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "ollama:llava:latest",
+      "summary": "{\"summary\": \"The visible exterior of a single-family home is shown in the images, with a focus on the front yard and the front of the house. The roof appears to be in good condition, the siding seems to be in fair condition, and the windows and doors are in good condition. The porch and the yard are in good condition, and there is no visible trash or debris. There are no visible issues with the roof, siding, windows, doors, porch, or yard. The visible exterior of the house appears to be well-maintained. However, it is important to note that some areas may not be fully visible in the images, and there might be issues that are not apparent due to the angle, lighting, or obstructions in the view. Additionally, without additional context or knowledge of local regulations or property conditions, it is not possible to determine if any issues are present that may not be immediately visible in the images.\", \"property_type_guess\": \"single_family\", \"visible_conditions\": [\"roof: good\", \"siding: fair\", \"windows and doors: good\", \"porch: good\", \"yard: good\"], \"condition_scores\": {\"roof\": \"good\", \"siding_or_facade\": \"fair\", \"windows_doors\": \"good\", \"porch_or_entry\": \"good\", \"yard_or_lot\": \"good\"}, \"trash_debris\": \"none_visible\", \"vegetation_overgrowth\": \"none_visible\", \"boarded_windows_or_doors\": \"no\", \"fire_damage_visible\": \"no\", \"structural_damage_visible\": \"no\", \"vacancy_signs_visible\": \"no\", \"active_construction_visible\": \"no\", \"possible_unrecorded_issues\": [\"image age, obstructed view, angle, or uncertainty\"], \"image_annotations\": [{\"label\": \"none_visible\", \"reason\": \"Images do not show any visible issues\", \"bbox\": {\"x\": \"0.000,0.000,0.998,0.988\"}, \"confidence\": \"high\"}, {\"label\": \"none_visible\", \"reason\": \"Images do not show any visible issues\", \"bbox\": {\"x\": \"0.000,0.000,0.998,0.988\"}, \"confidence\": \"high\"}, \"needs_human_review: true\", \"confidence: high\", \"caveats: \" \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 843,
+    "image": "images/parcel-000843.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 63610,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07511188324482,
+    "lon": -76.14457151378139,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-02-260",
+    "published_at": "2026-10-12T05:06:42+00:00",
+    "review_reasons": [],
+    "title": "163 Ross Pk"
+  },
+  {
     "address": "1102 Lemoyne Ave & Willumae Dr",
     "ai_analysis": {
       "available": true,
