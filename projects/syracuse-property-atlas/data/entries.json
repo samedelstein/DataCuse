@@ -1,5 +1,116 @@
 [
   {
+    "address": "1102 Lemoyne Ave & Willumae Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 1,
+            "width": 1,
+            "x": 0,
+            "y": 0
+          },
+          "confidence": "high",
+          "label": "none",
+          "reason": "There are no visible issues that require annotation."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "The image is recent and unobstructed, providing a clear view of the property. There are no caveats."
+      ],
+      "property_type_guess": "single-family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a property at 1102 LEMOYNE AVE & WILLUMAE DR. The yard is well-maintained, with a neat lawn and decorative plants. The house has visible windows, a clear driveway, and a tidy front entry area. No visible signs of neglect or overgrowth are present.",
+      "visible_conditions": [
+        "specific exterior observations visible in the image"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: The image is recent and unobstructed, providing a clear view of the property. There are no caveats."
+    ],
+    "id": 842,
+    "image": "images/parcel-000842.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 88289,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07865994392254,
+    "lon": -76.15595377628424,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-18-010",
+    "published_at": "2026-10-12T04:05:56+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1102 Lemoyne Ave & Willumae Dr"
+  },
+  {
     "address": "369-79 Sixth North St",
     "ai_analysis": {
       "available": true,
