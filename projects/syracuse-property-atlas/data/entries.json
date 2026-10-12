@@ -1,5 +1,127 @@
 [
   {
+    "address": "1154 Lemoyne Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "image age, obstructed view, angle, or uncertainty"
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not visible",
+        "roof": "good",
+        "siding_or_facade": "fair",
+        "trash_debris": "none visible",
+        "vegetation_overgrowth": "none visible",
+        "windows_doors": "not visible",
+        "yard_or_lot": "normal (snow-covered lawn)"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.827,
+            "width": 0.703,
+            "x": 0.247,
+            "y": 0.533
+          },
+          "confidence": "high",
+          "label": "driveway",
+          "reason": "clear of debris, no signs of active construction or structural damage, and no visible signs of fire damage"
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "cautious image-only flags not already reflected in known_data"
+      ],
+      "property_type_guess": "single_family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a residential property with a visible driveway leading to a garage door. The driveway appears to be clear of debris. The house has a two-tone siding with the upper section in a darker shade and the lower section in a lighter shade. The lawn is covered with snow, indicating recent winter weather. There are no visible windows or doors, which might suggest vacancy or an interior light that is on. The overall condition of the exterior suggests it could be in a dormant state or a location that experiences harsh winters. The roof appears to be intact without any visible signs of damage. There is a tree to the left of the property, which adds to the suburban setting. There are no overt signs of active construction or fire damage. The image's angle does not allow for the full assessment of the front yard, and the image quality might limit the clarity of some features.",
+      "visible_conditions": [
+        "roof: intact with no visible damage",
+        "siding: two-tone, with the upper section in a darker shade and the lower section in a lighter shade",
+        "windows/doors: not visible",
+        "porch/or entry: not visible",
+        "yard/or lot: covered with snow, suggesting recent winter weather",
+        "trash/debris: none visible",
+        "vegetation overgrowth: none visible"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "yes"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: cautious image-only flags not already reflected in known_data",
+      "Needs human review"
+    ],
+    "id": 859,
+    "image": "images/parcel-000859.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 90853,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.079388916630194,
+    "lon": -76.15434665150791,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-18-070",
+    "published_at": "2026-10-12T21:07:31+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue",
+      "vacancy signs visible"
+    ],
+    "title": "1154 Lemoyne Ave"
+  },
+  {
     "address": "143 Ross Pk",
     "ai_analysis": {
       "available": true,
