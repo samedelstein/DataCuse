@@ -1,5 +1,129 @@
 [
   {
+    "address": "133 Ross Pk",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.62,
+            "width": 0.4,
+            "x": 0.0,
+            "y": 0.38
+          },
+          "confidence": "high",
+          "label": "Driveway wear and cracking",
+          "reason": "The paved driveway shows visible cracking and general surface wear."
+        },
+        {
+          "bbox": {
+            "height": 0.1,
+            "width": 0.4,
+            "x": 0.5,
+            "y": 0.6
+          },
+          "confidence": "high",
+          "label": "Porch facade discoloration",
+          "reason": "The lower stone/brick veneer wall of the front porch exhibits visible discoloration or staining."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Driveway surface appears worn with visible cracking.",
+        "Porch facade shows signs of discoloration or staining."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "A single-family residence is visible with a maintained lawn and a driveway, showing some minor wear on the driveway surface and discoloration on the porch facade.",
+      "visible_conditions": [
+        "A two-story single-family residence with light-colored siding is visible.",
+        "The property features a front porch with columns and a low, light-colored stone or brick veneer wall.",
+        "A paved driveway runs along the left side of the house, extending towards a garage structure in the rear.",
+        "The front lawn appears to be mowed and maintained.",
+        "Some discoloration or staining is visible on the lower portion of the porch facade.",
+        "The driveway surface shows signs of wear and some cracking."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Driveway surface appears worn with visible cracking.",
+      "Image-only flag: Porch facade shows signs of discoloration or staining."
+    ],
+    "id": 864,
+    "image": "images/parcel-000864.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 63629,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0745319725539,
+    "lon": -76.14373298901165,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-02-330",
+    "published_at": "2026-10-13T02:03:03+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "133 Ross Pk"
+  },
+  {
     "address": "823 Hiawatha Blvd E",
     "ai_analysis": {
       "available": true,
