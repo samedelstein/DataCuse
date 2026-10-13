@@ -1,5 +1,127 @@
 [
   {
+    "address": "118 Bellshire Ln",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.813,
+            "width": 0.445,
+            "x": 0.481,
+            "y": 0.781
+          },
+          "confidence": "high",
+          "label": "The black basketball hoop is in the driveway",
+          "reason": "It is a notable feature"
+        },
+        {
+          "bbox": {
+            "height": 0.816,
+            "width": 0.46,
+            "x": 0.389,
+            "y": 0.776
+          },
+          "confidence": "high",
+          "label": "The house is painted white",
+          "reason": "It is a notable feature"
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "unclear visibility of the roof's condition"
+      ],
+      "property_type_guess": "single-family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a two-story house with a white exterior, a black basketball hoop in the driveway, and a neatly kept front lawn. The house appears well-maintained with no obvious visible issues.",
+      "visible_conditions": [
+        "good condition"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: unclear visibility of the roof's condition"
+    ],
+    "id": 880,
+    "image": "images/parcel-000880.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 134595,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07909012298945,
+    "lon": -76.15400832168093,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-18-140",
+    "published_at": "2026-10-13T18:06:11+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "118 Bellshire Ln"
+  },
+  {
     "address": "117 Ross Pk",
     "ai_analysis": {
       "available": true,
