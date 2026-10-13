@@ -1,5 +1,120 @@
 [
   {
+    "address": "125 Ross Pk",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "unclear",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.828,
+            "width": 0.768,
+            "x": 0.565,
+            "y": 0.543
+          },
+          "confidence": "low",
+          "label": "Vehicle partially obstructing view of property",
+          "reason": "car visible in image obscuring visibility of property details"
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Cautious image-only flags not already reflected in known_data"
+      ],
+      "property_type_guess": "single_family",
+      "provider": "ollama:llava:latest",
+      "summary": "Exterior of single-family home in suburban area, with well-maintained lawn and landscaping.",
+      "visible_conditions": [
+        "Roof appears to be in good condition with no visible damage or debris.",
+        "Siding or facade is in good condition with no visible damage or debris.",
+        "Windows and doors are in good condition with no visible damage or debris.",
+        "Porch or entry is not fully visible, but no visible signs of disrepair or neglect.",
+        "Lawn and landscaping appear to be well-maintained with no visible signs of overgrowth or neglect"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Cautious image-only flags not already reflected in known_data",
+      "Needs human review"
+    ],
+    "id": 870,
+    "image": "images/parcel-000870.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 138054,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.074366282350624,
+    "lon": -76.14349341358927,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-02-350",
+    "published_at": "2026-10-13T08:06:01+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "125 Ross Pk"
+  },
+  {
     "address": "815 Hiawatha Blvd E Rear",
     "ai_analysis": {
       "available": true,
