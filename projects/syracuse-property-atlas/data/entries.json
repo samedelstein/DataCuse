@@ -1,5 +1,117 @@
 [
   {
+    "address": "801-07 Hiawatha Blvd E & Fourth",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view of the primary building structure is partially obstructed by a large pile of wood material and a billboard in the foreground."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.3,
+            "width": 0.5,
+            "x": 0.25,
+            "y": 0.45
+          },
+          "confidence": "high",
+          "label": "Wood material pile",
+          "reason": "Large accumulation of unorganized wood material."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "A substantial pile of wood material is visible on the property."
+      ],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image displays a commercial or industrial property with a large pile of wood material in the foreground, partially obstructing the view of a low-rise building and adjacent storage-like structures.",
+      "visible_conditions": [
+        "A large pile of cut wood or similar material is present in the foreground.",
+        "A low-rise commercial-style building with a flat roof is partially visible behind the wood pile.",
+        "Several garage-door style units are visible to the right of the main building.",
+        "The ground in the foreground has some grassy areas and a paved or gravel area.",
+        "A billboard and a utility pole are in the immediate foreground."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "816",
+        "Median gross rent": "353800",
+        "Median household income": "91696",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "11.3",
+        "Renter-occupied share": "7.8",
+        "Total population": "1225",
+        "Vacancy rate": "2.8"
+      },
+      "name": "Census Tract 1; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000100",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: A substantial pile of wood material is visible on the property."
+    ],
+    "id": 872,
+    "image": "images/parcel-000872.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 36845,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07903087512217,
+    "lon": -76.16067508590766,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "0011-01-270",
+    "published_at": "2026-10-13T10:03:04+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "801-07 Hiawatha Blvd E & Fourth"
+  },
+  {
     "address": "100-06 Bellshire Lane & 7Th Nort",
     "ai_analysis": {
       "available": true,
