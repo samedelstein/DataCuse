@@ -1,5 +1,98 @@
 [
   {
+    "address": "119 Ross Pk",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property appears to be a single-family residence with a well-maintained exterior, including a manicured lawn and landscaping.",
+      "visible_conditions": [
+        "The main structure is a two-story house with white siding and a light-colored roof.",
+        "A covered porch or entry area is visible at the front of the house.",
+        "Windows appear to be intact, with a bay window feature on the ground floor.",
+        "The front yard features a mowed lawn and ornamental plantings, including what appear to be rose bushes and potted flowers.",
+        "A paved driveway extends along the side of the house, leading to a detached garage at the rear.",
+        "The garage appears to be a single-story structure with white siding and a light-colored roof."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 876,
+    "image": "images/parcel-000876.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 74776,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07420059146568,
+    "lon": -76.14325383921388,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-02-370",
+    "published_at": "2026-10-13T14:02:51+00:00",
+    "review_reasons": [],
+    "title": "119 Ross Pk"
+  },
+  {
     "address": "843 Hiawatha Blvd E Rear",
     "ai_analysis": {
       "available": true,
