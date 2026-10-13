@@ -1,5 +1,77 @@
 [
   {
+    "address": "1625 Butternut St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "{\n  \"summary\": \"The image displays a single-family residence with white siding, a front porch, and a mature tree in the front yard, with some areas of the lawn appearing dry or patchy.\",\n  \"property_type_guess\": \"single_family\",\n  \"visible_conditions\": [\n    \"A single-story residential structure with white siding is visible.\",\n    \"A front porch with steps leads to the main entry.\",\n    \"A mature deciduous tree is situated in the front yard, partially obscuring the view of the house.\",\n    \"The front lawn shows some areas of dry or patchy grass.\",\n    \"A paved driveway is visible to the left of the main structure.\",\n    \"Some foundation plantings are present.\"\n   furlough\"\n  ],\n  \"condition_scores\": {\n    \"roof\": \"fair\",\n    \"siding_or_facade\": \"fair\",\n    \"windows_doors\": \"fair\",\n    \"porch_or_entry\": \"fair\",\n    \"yard_or_lot\": \"fair\",\n    \"trash_debris\": \"none_visible\",\n    \"vegetation_overgrowth\": \"none_visible\"\n  },\n  \"visible_flags\": {\n    \"boarded_windows_or_doors\": \"no\",\n    \"fire_damage_visible\": \"no\",\n    \"structural_damage_visible\": \"no\",\n    \"vacancy_signs_visible\": \"no\",\n    \"active_construction_visible\": \"no\"\n  },\n  \"possible_unrecorded_issues\": [\n    \"The front lawn appears to have some dry or patchy areas.\"\n  ],\n  \"image_annotations\": [],\n  \"needs_human_review\": false,\n  \"confidence\": \"medium\",\n  \"caveats\": [\n    \"The view of the property's facade is partially obstructed by a large tree.\",\n    \"Image quality and angle limit detailed assessment of some exterior elements.\"\n  ]\n}",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 884,
+    "image": "images/parcel-000884.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 97333,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07399197258564,
+    "lon": -76.14277781893279,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-02-400",
+    "published_at": "2026-10-13T23:03:05+00:00",
+    "review_reasons": [],
+    "title": "1625 Butternut St"
+  },
+  {
     "address": "122 Bellshire Ln",
     "ai_analysis": {
       "available": true,
