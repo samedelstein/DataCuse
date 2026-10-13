@@ -1,5 +1,101 @@
 [
   {
+    "address": "843 Hiawatha Blvd E Rear",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image explicitly states 'Sorry, we have no imagery here,' preventing any assessment of visible exterior property conditions."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "not_visible",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "not_visible"
+      },
+      "confidence": "low",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "No exterior property conditions are visible as the image explicitly states that no imagery is available for this location.",
+      "visible_conditions": [],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "816",
+        "Median gross rent": "353800",
+        "Median household income": "91696",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "11.3",
+        "Renter-occupied share": "7.8",
+        "Total population": "1225",
+        "Vacancy rate": "2.8"
+      },
+      "name": "Census Tract 1; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000100",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image needs rerun",
+      "Needs human review"
+    ],
+    "id": 875,
+    "image": "images/parcel-000875.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 8837,
+      "needs_rerun": true,
+      "warnings": [
+        "Image file is unexpectedly small."
+      ]
+    },
+    "lat": 43.08066979356886,
+    "lon": -76.16216244466816,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "0011-01-280",
+    "published_at": "2026-10-13T13:02:52+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Image needs rerun"
+    ],
+    "title": "843 Hiawatha Blvd E Rear"
+  },
+  {
     "address": "110 Bellshire Ln",
     "ai_analysis": {
       "available": true,
