@@ -1,5 +1,118 @@
 [
   {
+    "address": "1172 Lemoyne Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.65,
+            "width": 0.43,
+            "x": 0.166,
+            "y": 0.286
+          },
+          "confidence": "high",
+          "label": "driveway",
+          "reason": "visible condition"
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "image age or obstructed view could affect visibility"
+      ],
+      "property_type_guess": "single_family|two_family|multifamily|commercial|mixed_use|vacant_lot|unclear",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a residential street view of a property with a visible exterior. The visible conditions include a paved driveway, a fence, and a yard with some vegetation. The image is of a fair quality with some distortion at the edges. There are no visible boarded-up windows or doors, fire damage, structural damage, vacancy signs, or active construction.",
+      "visible_conditions": [
+        "paved driveway",
+        "fence",
+        "yard with vegetation"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: image age or obstructed view could affect visibility"
+    ],
+    "id": 865,
+    "image": "images/parcel-000865.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 49645,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.079636242823746,
+    "lon": -76.15372862535803,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-18-090",
+    "published_at": "2026-10-13T03:06:17+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1172 Lemoyne Ave"
+  },
+  {
     "address": "133 Ross Pk",
     "ai_analysis": {
       "available": true,
