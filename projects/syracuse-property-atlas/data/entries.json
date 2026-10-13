@@ -1,5 +1,77 @@
 [
   {
+    "address": "114 Bellshire Ln",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "{\n  \"summary\": \"The visible exterior of the property appears to be a well-maintained single-family residence with a mix of siding and brick facade, a neatly kept lawn, and intentional landscaping.\",\n  \"property_type_guess\": \"single_family\",\n  \"visible_conditions\": [\n    \"Two-story structure with an attached garage.\",\n    \"Upper story features white horizontal siding, while the lower story has brick veneer.\",\n    \"Roof appears to be dark-colored shingles, generally in good condition.\",\n    \"Windows are visible and appear intact, some with dark shutters.\",\n    \"Front entry area is visible with plantings.\",\n    \"Lawn is green and appears mowed.\",\n    \"Foundation plantings and garden beds are present and appear maintained.\",\n    \"A utility trailer is parked on the lawn.\"\n   furlough\",\n  \"condition_scores\": {\n    \"roof\": \"good\",\n    \"siding_or_facade\": \"good\",\n    \"windows_doors\": \"good\",\n    \"porch_or_entry\": \"good\",\n    \"yard_or_lot\": \"good\",\n    \"trash_debris\": \"none_visible\",\n    \"vegetation_overgrowth\": \"none_visible\"\n  },\n  \"visible_flags\": {\n    \"boarded_windows_or_doors\": \"no\",\n    \"fire_damage_visible\": \"no\",\n    \"structural_damage_visible\": \"no\",\n    \"vacancy_signs_visible\": \"no\",\n    \"active_construction_visible\": \"no\"\n  },\n  \"possible_unrecorded_issues\": [],\n  \"image_annotations\": [],\n  \"needs_human_review\": \"false\",\n  \"confidence\": \"high\",\n  \"caveats\": [\n    \"The image date is 2020, so current conditions may differ.\",\n    \"A vehicle partially obstructs the view of the driveway and the immediate foreground.\"\n  ]\n}",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 877,
+    "image": "images/parcel-000877.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 72617,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.079246226414085,
+    "lon": -76.15392958127948,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-18-130",
+    "published_at": "2026-10-13T15:02:53+00:00",
+    "review_reasons": [],
+    "title": "114 Bellshire Ln"
+  },
+  {
     "address": "119 Ross Pk",
     "ai_analysis": {
       "available": true,
