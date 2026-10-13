@@ -1,5 +1,107 @@
 [
   {
+    "address": "819 Hiawatha Blvd E Rear",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "ollama:llava:latest",
+      "summary": "{\"summary\": \"The image shows a property on Hiawatha Blvd E, with a well-maintained lawn and a healthy tree with yellowish leaves, suggesting it is late autumn or early spring. The tree appears to be in good condition with no visible signs of pests or disease. The lawn is kept short and is clear of debris. There are no visible issues in the image that would require further investigation.\", \"property_type_guess\": \"single-family|two-family|multifamily|commercial|mixed-use|vacant-lot|unclear\", \"visible_conditions\": [\"The property is well-maintained\", \"The lawn is kept short and is clear of debris\", \"The tree appears to be in good condition with no visible signs of pests or disease\"], \"condition_scores\": {\"roof\": \"good\", \"siding_or_facade\": \"good\", \"windows_doors\": \"good\", \"porch_or_entry\": \"good\", \"yard_or_lot\": \"good\", \"trash_debris\": \"none_visible\", \"vegetation_overgrowth\": \"none_visible\"}, \"visible_flags\": {\"boarded_windows_or_doors\": \"no\", \"fire_damage_visible\": \"no\", \"structural_damage_visible\": \"no\", \"vacancy_signs_visible\": \"no\", \"active_construction_visible\": \"no\"}, \"possible_unrecorded_issues\": [\"It is possible that the property could be vacant or undergoing maintenance, but there is no visible evidence of this in the image.\", \"image_annotations: 1. The tree is healthy with yellowish leaves, which indicates it is either late autumn or early spring. 2. The lawn is well-maintained and clear of debris. 3. There are no visible issues in the image that would require further investigation.\", \"needs_human_review: false\", \"confidence: high\", \"caveats: 1. The image is of good quality, providing a clear view of the property. 2. There are no obstructions in the image that would limit visibility, such as trees or bushes.\" \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "816",
+        "Median gross rent": "353800",
+        "Median household income": "91696",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "11.3",
+        "Renter-occupied share": "7.8",
+        "Total population": "1225",
+        "Vacancy rate": "2.8"
+      },
+      "name": "Census Tract 1; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000100",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record"
+    ],
+    "id": 866,
+    "image": "images/parcel-000866.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 124690,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07952122314675,
+    "lon": -76.16043229822976,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.0797366,
+          "Longitude": -76.160294,
+          "NeedsRR": "Yes",
+          "ObjectId": 192,
+          "PropertyAddress": "829 Hiawatha Blvd E",
+          "RR_app_received": null,
+          "RR_contact_name": "Mark Dayger",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "001.1-01-22.0",
+          "SHAPE": null,
+          "completion_date": 1420934400000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1420934400000,
+          "pc_owner": "Valiant Real Estate USA Inc",
+          "valid_until": 1515628800000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "0011-01-250",
+    "published_at": "2026-10-13T04:06:45+00:00",
+    "review_reasons": [],
+    "title": "819 Hiawatha Blvd E Rear"
+  },
+  {
     "address": "1172 Lemoyne Ave",
     "ai_analysis": {
       "available": true,
