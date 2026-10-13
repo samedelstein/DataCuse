@@ -1,5 +1,132 @@
 [
   {
+    "address": "311 Fourth North St Rear",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image provides a limited view, primarily showing a retaining wall and dense vegetation.",
+        "No primary structure associated with the address '311 FOURTH NORTH ST REAR' is clearly visible, making a full property assessment difficult.",
+        "The dense vegetation behind the wall makes it unclear if it is unmanaged overgrowth or natural landscaping for a rear lot."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "unclear",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "unclear",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "poor"
+      },
+      "confidence": "low",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.30",
+            "width": "1.00",
+            "x": "0.00",
+            "y": "0.30"
+          },
+          "confidence": "high",
+          "label": "Retaining wall deterioration",
+          "reason": "The concrete or stucco retaining wall shows significant cracking, spalling, and peeling finish, indicating a deteriorated condition."
+        },
+        {
+          "bbox": {
+            "height": "0.10",
+            "width": "0.20",
+            "x": "0.40",
+            "y": "0.50"
+          },
+          "confidence": "high",
+          "label": "Ground debris",
+          "reason": "Scattered items of debris are visible on the unpaved ground in front of the retaining wall."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Deterioration of the visible retaining wall.",
+        "Accumulation of debris on the ground."
+      ],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image primarily shows a deteriorating retaining wall and an unkempt ground area with scattered debris, with dense trees visible behind the wall, and no primary structure for the property is clearly visible.",
+      "visible_conditions": [
+        "A concrete or stucco retaining wall is visible, exhibiting signs of cracking, spalling, and peeling finish.",
+        "The ground area in front of the retaining wall is unpaved and appears unkempt with scattered debris.",
+        "Dense trees and other vegetation are visible behind the retaining wall, obscuring any potential structures."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "816",
+        "Median gross rent": "353800",
+        "Median household income": "91696",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "11.3",
+        "Renter-occupied share": "7.8",
+        "Total population": "1225",
+        "Vacancy rate": "2.8"
+      },
+      "name": "Census Tract 1; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000100",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Deterioration of the visible retaining wall.",
+      "Image-only flag: Accumulation of debris on the ground.",
+      "Needs human review"
+    ],
+    "id": 882,
+    "image": "images/parcel-000882.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 92860,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07913153370407,
+    "lon": -76.16200793114545,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "0011-01-300",
+    "published_at": "2026-10-13T21:03:04+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "311 Fourth North St Rear"
+  },
+  {
     "address": "1629 Butternut St & Ross Park",
     "ai_analysis": {
       "available": true,
