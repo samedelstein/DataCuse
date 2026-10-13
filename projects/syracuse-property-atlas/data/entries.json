@@ -1,5 +1,99 @@
 [
   {
+    "address": "1629 Butternut St & Ross Park",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a single-family residence with yellow siding and a generally well-maintained front yard.",
+      "visible_conditions": [
+        "A single-story structure with yellow horizontal siding is visible.",
+        "The roof appears to be covered with dark shingles.",
+        "An enclosed porch or sunroom with white trim is present on the front of the structure.",
+        "Windows on the main section of the house have dark shutters.",
+        "The front yard features a maintained lawn with some ornamental shrubs and garden decor.",
+        "A black lamppost is situated in the front yard.",
+        "A white downspout is visible on the front facade of the enclosed porch."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 881,
+    "image": "images/parcel-000881.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 55241,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07411407953056,
+    "lon": -76.14275784997447,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-02-390",
+    "published_at": "2026-10-13T20:02:58+00:00",
+    "review_reasons": [],
+    "title": "1629 Butternut St & Ross Park"
+  },
+  {
     "address": "118 Bellshire Ln",
     "ai_analysis": {
       "available": true,
