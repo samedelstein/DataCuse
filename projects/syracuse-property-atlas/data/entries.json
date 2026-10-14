@@ -1,5 +1,122 @@
 [
   {
+    "address": "1607 Butternut St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "View of the property is partially obstructed by a large tree.",
+        "Image quality and angle limit full assessment of all exterior conditions."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property appears to be a residential structure with a front porch, partially obscured by a large tree, and exhibits some visible wear.",
+      "visible_conditions": [
+        "Light-colored siding is visible on the main structure.",
+        "A front porch with wooden railings and stairs is present.",
+        "A chain-link fence runs along the front of the property.",
+        "A large tree is situated in the front yard, partially obstructing the view of the house.",
+        "The roof is partially visible with dark shingles.",
+        "A blue pot is visible on the porch steps.",
+        "A trash bin is visible behind the fence near the side of the house."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record"
+    ],
+    "id": 895,
+    "image": "images/parcel-000895.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 81894,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07351161733736,
+    "lon": -76.14270589860777,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.07339238,
+          "Longitude": -76.14273506,
+          "ObjectId": 927,
+          "Owner": "Christopher Tysco",
+          "OwnerAddress": "1601 Butternut St Syracuse, NY 13208",
+          "PropertyAddress": "1601 Butternut St & Hood Ave",
+          "SBL": "005.-02-45.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": null
+        }
+      ]
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-02-440",
+    "published_at": "2026-10-14T10:03:03+00:00",
+    "review_reasons": [],
+    "title": "1607 Butternut St"
+  },
+  {
     "address": "2083 Park St",
     "ai_analysis": {
       "available": true,
