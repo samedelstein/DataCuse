@@ -1,5 +1,118 @@
 [
   {
+    "address": "1621-23 Butternut St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image is current, and the view is clear. There are no obstructed views or uncertainties in the visible conditions."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good|fair|poor|not_visible|unclear",
+        "roof": "good|fair|poor|not_visible|unclear",
+        "siding_or_facade": "good|fair|poor|not_visible|unclear",
+        "trash_debris": "none_visible|minor|major|unclear",
+        "vegetation_overgrowth": "none_visible|minor|major|unclear",
+        "windows_doors": "good|fair|poor|not_visible|unclear",
+        "yard_or_lot": "good|fair|poor|not_visible|unclear"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "1",
+            "width": "1",
+            "x": "0",
+            "y": "0"
+          },
+          "confidence": "high",
+          "label": "none",
+          "reason": "The image does not show any visible issues, and there are no immediate signs of neglect or disrepair."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "none"
+      ],
+      "property_type_guess": "single_family|two_family|multifamily|commercial|mixed_use|vacant_lot|unclear",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a residential street with houses and some landscaping. The exterior of the properties appears to be in good condition, with no visible signs of neglect or disrepair. The houses have siding and are situated on a road with some foliage. There is no visible trash or debris, and the yards are mostly neatly trimmed. The porch areas are visible but do not indicate any immediate issues. There are no visible boards on windows or doors, and there is no structural damage or fire damage visible. The view is clear and not obstructed.",
+      "visible_conditions": [
+        "specific exterior observations visible in the image"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no|unclear",
+        "boarded_windows_or_doors": "no|unclear",
+        "fire_damage_visible": "no|unclear",
+        "structural_damage_visible": "no|unclear",
+        "vacancy_signs_visible": "no|unclear"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: none"
+    ],
+    "id": 887,
+    "image": "images/parcel-000887.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 52162,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07386066226228,
+    "lon": -76.14289354288535,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-02-410",
+    "published_at": "2026-10-14T02:06:41+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1621-23 Butternut St"
+  },
+  {
     "address": "129 Bellshire Ln",
     "ai_analysis": {
       "available": true,
