@@ -1,5 +1,104 @@
 [
   {
+    "address": "1962 Salina St N",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image does not appear to show the property at 1962 SALINA ST N.",
+        "The view is from an elevated position, primarily showing railroad tracks and a natural landscape.",
+        "No identifiable structures or specific property features are visible to assess conditions."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "not_visible",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "not_visible"
+      },
+      "confidence": "low",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The provided image does not clearly show a specific property at the given address, primarily depicting a landscape with railroad tracks and natural vegetation.",
+      "visible_conditions": [
+        "The image appears to be taken from an elevated perspective, showing a concrete barrier in the foreground.",
+        "Multiple sets of railroad tracks are visible, running through an area with bare trees and dry, tall grasses.",
+        "A body of water is visible in the distance, beyond a line of trees.",
+        "No identifiable structures or specific property features related to a street address are visible."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "816",
+        "Median gross rent": "353800",
+        "Median household income": "91696",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "11.3",
+        "Renter-occupied share": "7.8",
+        "Total population": "1225",
+        "Vacancy rate": "2.8"
+      },
+      "name": "Census Tract 1; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000100",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Needs human review"
+    ],
+    "id": 888,
+    "image": "images/parcel-000888.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 30733,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07431062315817,
+    "lon": -76.17252789327198,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "0012-01-011",
+    "published_at": "2026-10-14T03:03:04+00:00",
+    "review_reasons": [
+      "AI requested human review"
+    ],
+    "title": "1962 Salina St N"
+  },
+  {
     "address": "1621-23 Butternut St",
     "ai_analysis": {
       "available": true,
