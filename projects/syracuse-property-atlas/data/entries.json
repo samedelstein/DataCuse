@@ -1,5 +1,155 @@
 [
   {
+    "address": "1601 Butternut St & Hood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.3,
+            "width": 0.1,
+            "x": 0.55,
+            "y": 0.35
+          },
+          "confidence": "high",
+          "label": "Vegetation on structure",
+          "reason": "A vine is growing on the stone chimney and wall, which can be an adverse condition for masonry."
+        },
+        {
+          "bbox": {
+            "height": 0.35,
+            "width": 0.9,
+            "x": 0.0,
+            "y": 0.55
+          },
+          "confidence": "high",
+          "label": "Unkempt yard",
+          "reason": "The grass in the front yard appears uneven and unmanaged, with varying heights and some bare patches."
+        },
+        {
+          "bbox": {
+            "height": 0.15,
+            "width": 0.12,
+            "x": 0.38,
+            "y": 0.6
+          },
+          "confidence": "high",
+          "label": "Weathered basement entry structure",
+          "reason": "A small, rough wooden structure covering a basement entry appears weathered and somewhat deteriorated."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property features a two-story residential structure with a detached garage, exhibiting some signs of weathering and unmanaged vegetation.",
+      "visible_conditions": [
+        "A two-story residential structure with light-colored siding and stone accents is visible.",
+        "A detached garage structure is present to the left of the main building.",
+        "The asphalt shingle roof appears generally intact, though some discoloration or moss is visible on parts of the surface.",
+        "The siding and stone elements of the main structure show signs of weathering.",
+        "Windows appear mostly intact, consistent with older styles.",
+        "A vine is growing on a portion of the stone chimney and an adjacent wall section.",
+        "The front yard contains grass that appears somewhat unkempt, with varying heights and some bare patches.",
+        "A small, weathered wooden structure covers a basement-level entry.",
+        "No significant accumulation of trash or debris is plainly visible."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record"
+    ],
+    "id": 898,
+    "image": "images/parcel-000898.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 81928,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07339120573148,
+    "lon": -76.14269398481306,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": [
+        {
+          "Latitude": 43.07339238,
+          "Longitude": -76.14273506,
+          "ObjectId": 927,
+          "Owner": "Christopher Tysco",
+          "OwnerAddress": "1601 Butternut St Syracuse, NY 13208",
+          "PropertyAddress": "1601 Butternut St & Hood Ave",
+          "SBL": "005.-02-45.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": null
+        }
+      ]
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-02-450",
+    "published_at": "2026-10-14T14:03:04+00:00",
+    "review_reasons": [],
+    "title": "1601 Butternut St & Hood Ave"
+  },
+  {
     "address": "2083 Park St Rear",
     "ai_analysis": {
       "available": true,
