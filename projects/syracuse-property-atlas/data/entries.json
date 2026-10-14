@@ -1,5 +1,125 @@
 [
   {
+    "address": "121-25 Bellshire Ln",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image is clear and taken from a street level angle. There is no visible obstruction or angle distortion",
+        "The property appears to be residential and not a commercial or mixed-use property, based on the typical architecture and lack of visible commercial signage or zoning information"
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "1",
+            "width": "1",
+            "x": "0-1",
+            "y": "0-1"
+          },
+          "confidence": "high",
+          "label": "Good condition",
+          "reason": "No visible issues"
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "none_visible"
+      ],
+      "property_type_guess": "single-family",
+      "provider": "ollama:llava:latest",
+      "summary": "The visible exterior of the property appears to be in good condition, with no immediately apparent issues.",
+      "visible_conditions": [
+        "The lawn is well-maintained, with no visible weeds or overgrowth.",
+        "The roof appears to be in good condition with no visible damage.",
+        "The siding of the house is in good condition with no visible damage or wear.",
+        "The windows and doors are clean and in good condition with no visible damage or wear.",
+        "There are no visible signs of vacancy or active construction",
+        "The yard is not overgrown and does not obstruct any parts of the property",
+        "There is no visible debris or trash in the yard or driveway"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: none_visible"
+    ],
+    "id": 889,
+    "image": "images/parcel-000889.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 55423,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.078633101090595,
+    "lon": -76.15371459862895,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-18-170",
+    "published_at": "2026-10-14T04:06:32+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "121-25 Bellshire Ln"
+  },
+  {
     "address": "1962 Salina St N",
     "ai_analysis": {
       "available": true,
