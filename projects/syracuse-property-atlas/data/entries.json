@@ -1,5 +1,117 @@
 [
   {
+    "address": "129 Bellshire Ln",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The primary structure is partially obscured by dense trees and shrubs, limiting a full exterior assessment."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.17,
+            "width": 0.55,
+            "x": 0.25,
+            "y": 0.58
+          },
+          "confidence": "high",
+          "label": "Items near street",
+          "reason": "Bags and a piece of furniture/equipment are visible on the asphalt near the public way."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Presence of bags and a piece of furniture/equipment near the street."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a single-family residence with maintained landscaping, though some items are visible near the street.",
+      "visible_conditions": [
+        "A single-family style residence is partially visible behind mature trees and shrubs.",
+        "The lawn appears to be maintained.",
+        "Dense, mature landscaping, including large trees and a hedge, is present across the front of the property.",
+        "Portions of the roof and siding appear to be in fair to good condition.",
+        "Several items, including what appear to be bags and a piece of furniture or equipment, are visible on the asphalt near the street."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Presence of bags and a piece of furniture/equipment near the street."
+    ],
+    "id": 886,
+    "image": "images/parcel-000886.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 90261,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07856895907007,
+    "lon": -76.15414846308475,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-18-160",
+    "published_at": "2026-10-14T01:03:01+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "129 Bellshire Ln"
+  },
+  {
     "address": "Hiawatha Blvd E",
     "ai_analysis": {
       "available": true,
