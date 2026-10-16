@@ -1,5 +1,114 @@
 [
   {
+    "address": "2027 Park St & Hiawatha Blvd E",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "While the building appears to be well-maintained, the time of day or recent events could affect the activity in the parking lot."
+      ],
+      "condition_scores": {},
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.871",
+            "width": "0.753",
+            "x": "0.259",
+            "y": "0.696"
+          },
+          "confidence": "medium",
+          "label": "Visible issue label",
+          "reason": "The image shows an empty parking lot, which could indicate a recent holiday or time of day when there is typically less activity, but without any context, this is a limited observation."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "The image shows an empty parking lot, which could indicate a recent holiday or time of day when there is typically less activity, but without any context, this is a limited observation."
+      ],
+      "property_type_guess": "commercial",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a large retail store with a clear sky and visible exterior conditions.",
+      "visible_conditions": [
+        "The building is made of concrete blocks, and there is a clear glass storefront with a sign above it. The entrance is protected by a security gate. The parking lot is empty, and no vehicles are visible in the image. The landscaping around the building is well-maintained, with no signs of overgrowth or disrepair.",
+        "condition_scores: roof: good; siding/or facade: good; windows/doors: good; porch/or entry: good; yard/or lot: good; trash/debris: none_visible; vegetation_overgrowth: none_visible"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "yes"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "816",
+        "Median gross rent": "353800",
+        "Median household income": "91696",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "11.3",
+        "Renter-occupied share": "7.8",
+        "Total population": "1225",
+        "Vacancy rate": "2.8"
+      },
+      "name": "Census Tract 1; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000100",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: The image shows an empty parking lot, which could indicate a recent holiday or time of day when there is typically less activity, but without any context, this is a limited observation.",
+      "Needs human review"
+    ],
+    "id": 900,
+    "image": "images/parcel-000900.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 59094,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07188901306438,
+    "lon": -76.16772465180892,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "0012-01-051",
+    "published_at": "2026-10-16T01:07:17+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue",
+      "vacancy signs visible"
+    ],
+    "title": "2027 Park St & Hiawatha Blvd E"
+  },
+  {
     "address": "109 Bellshire Ln",
     "ai_analysis": {
       "available": true,
