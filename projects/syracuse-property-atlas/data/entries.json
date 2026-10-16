@@ -1,5 +1,131 @@
 [
   {
+    "address": "255 Seventh North St & Bellshire",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.65,
+            "width": 0.72,
+            "x": 0.14,
+            "y": 0.14
+          },
+          "confidence": "high",
+          "label": "Siding discoloration/wear",
+          "reason": "The white horizontal siding exhibits widespread discoloration and signs of wear, potentially indicating a need for exterior maintenance."
+        },
+        {
+          "bbox": {
+            "height": 0.09,
+            "width": 0.72,
+            "x": 0.14,
+            "y": 0.79
+          },
+          "confidence": "high",
+          "label": "Foundation discoloration/wear",
+          "reason": "The visible foundation appears discolored and shows signs of surface wear or possible patching."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Siding appears to have discoloration and wear, potentially indicating a need for exterior maintenance or repainting.",
+        "The visible foundation shows discoloration and possible surface wear.",
+        "The roof appears aged, which may suggest future maintenance considerations."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image displays a two-story residential structure with white horizontal siding, an asphalt shingle roof, and a visible foundation, situated on a grassy lot.",
+      "visible_conditions": [
+        "The structure features white horizontal siding that exhibits areas of discoloration and possible wear.",
+        "The roof appears to be an asphalt shingle type, showing signs of age and some discoloration.",
+        "Windows are visible on both levels, some appearing older in style.",
+        "The foundation is visible and shows some discoloration and possible surface wear.",
+        "The surrounding yard consists of a maintained grassy area.",
+        "A small shrub is visible near the right side of the structure."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Siding appears to have discoloration and wear, potentially indicating a need for exterior maintenance or repainting.",
+      "Image-only flag: The visible foundation shows discoloration and possible surface wear.",
+      "Image-only flag: The roof appears aged, which may suggest future maintenance considerations."
+    ],
+    "id": 901,
+    "image": "images/parcel-000901.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 74026,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07931936304364,
+    "lon": -76.15304903755725,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-18-210",
+    "published_at": "2026-10-16T02:03:04+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "255 Seventh North St & Bellshire"
+  },
+  {
     "address": "2027 Park St & Hiawatha Blvd E",
     "ai_analysis": {
       "available": true,
