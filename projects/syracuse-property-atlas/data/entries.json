@@ -1,5 +1,111 @@
 [
   {
+    "address": "120 Hood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The visible house number on the property ('1201') differs from the provided address ('120'), which may indicate a potential parcel identification uncertainty.",
+        "The roof is largely not visible from the image angle."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "not_visible",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "The visible house number '1201' on the property appears to differ from the provided address '120 HOOD AVE'.",
+        "Visible exterior siding appears to have some areas of minor discoloration or wear.",
+        "Window frames appear to show some signs of age."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image displays a single-family residence with white siding, a maintained front yard, and visible concrete steps leading to the front entry.",
+      "visible_conditions": [
+        "The primary structure features white siding.",
+        "A bank of windows is visible across the front facade.",
+        "The front yard consists of a grass lawn and trimmed foundation shrubs.",
+        "Concrete steps with a handrail lead to the front entry.",
+        "A paved driveway is visible to the left of the main structure.",
+        "A house number '1201' is visible near the front door."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: The visible house number '1201' on the property appears to differ from the provided address '120 HOOD AVE'.",
+      "Image-only flag: Visible exterior siding appears to have some areas of minor discoloration or wear.",
+      "Image-only flag: Window frames appear to show some signs of age."
+    ],
+    "id": 904,
+    "image": "images/parcel-000904.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 70843,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07366352958313,
+    "lon": -76.14306604837894,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-02-470",
+    "published_at": "2026-10-19T14:26:46+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "120 Hood Ave"
+  },
+  {
     "address": "2061 Park St Rear",
     "ai_analysis": {
       "available": true,
