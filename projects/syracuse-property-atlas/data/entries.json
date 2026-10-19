@@ -1,5 +1,77 @@
 [
   {
+    "address": "1966 Salina St N Rear & Jnct R",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "{\n  \"summary\": \"The image primarily shows a street, a curb, a chain-link fence, railroad tracks, and dense vegetation, with a power transmission tower visible in the background.\",\n  \"property_type_guess\": \"vacant_lot\",\n  \"visible_conditions\": [\n    \"A paved street and curb are visible in the foreground.\",\n    \"A chain-link fence runs parallel to the street, separating it from railroad tracks.\",\n    \"Multiple railroad tracks are present behind the fence, surrounded by gravel ballast.\",\n    \"Dense green vegetation, including trees and shrubs, is visible behind the railroad tracks.\",\n    \"A large metal power transmission tower is visible in the background, partially obscured by trees.\"\n   furlough\",\n  \"condition_scores\": {\n    \"roof\": \"not_visible\",\n    \"siding_or_facade\": \"not_visible\",\n    \"windows_doors\": \"not_visible\",\n    \"porch_or_entry\": \"not_visible\",\n    \"yard_or_lot\": \"unclear\",\n    \"trash_debris\": \"none_visible\",\n    \"vegetation_overgrowth\": \"unclear\"\n  },\n  \"visible_flags\": {\n    \"boarded_windows_or_doors\": \"no\",\n    \"fire_damage_visible\": \"no\",\n    \"structural_damage_visible\": \"no\",\n    \"vacancy_signs_visible\": \"no\",\n    \"active_construction_visible\": \"no\"\n  },\n  \"possible_unrecorded_issues\": [],\n  \"image_annotations\": [],\n  \"needs_human_review\": \"true\",\n  \"confidence\": \"low\",\n  \"caveats\": [\n    \"The image does not clearly show a primary structure associated with a typical property address.\",\n    \"The view appears to be of an undeveloped area, possibly a rear lot or right-of-way adjacent to railroad tracks and a power transmission line.\",\n    \"It is unclear what specific portion of the parcel '1966 SALINA ST N REAR & JNCT R' is depicted or intended for assessment.\",\n    \"The dense vegetation is consistent with an undeveloped area, making assessment of 'yard_or_lot' and 'vegetation_overgrowth' ambiguous in the context of a maintained property.\"\n  ]\n}",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "816",
+        "Median gross rent": "353800",
+        "Median household income": "91696",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "11.3",
+        "Renter-occupied share": "7.8",
+        "Total population": "1225",
+        "Vacancy rate": "2.8"
+      },
+      "name": "Census Tract 1; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000100",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 906,
+    "image": "images/parcel-000906.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 91394,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07369499488337,
+    "lon": -76.17346802822775,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "0012-01-100",
+    "published_at": "2026-10-19T20:57:58+00:00",
+    "review_reasons": [],
+    "title": "1966 Salina St N Rear & Jnct R"
+  },
+  {
     "address": "249 Seventh North St",
     "ai_analysis": {
       "available": true,
