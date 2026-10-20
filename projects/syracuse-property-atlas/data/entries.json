@@ -1,5 +1,146 @@
 [
   {
+    "address": "239 Seventh North St & Turtle",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "View of the property is partially obstructed by a large tree and a parked vehicle.",
+        "The rear and left side of the property are not fully visible from this image angle."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.4,
+            "width": 0.5,
+            "x": 0.0,
+            "y": 0.55
+          },
+          "confidence": "high",
+          "label": "Driveway cracking",
+          "reason": "Visible cracks and wear in the asphalt driveway surface."
+        },
+        {
+          "bbox": {
+            "height": 0.2,
+            "width": 0.3,
+            "x": 0.45,
+            "y": 0.6
+          },
+          "confidence": "medium",
+          "label": "Patchy lawn",
+          "reason": "Areas of the lawn show sparse or discolored grass."
+        },
+        {
+          "bbox": {
+            "height": 0.1,
+            "width": 0.08,
+            "x": 0.65,
+            "y": 0.45
+          },
+          "confidence": "high",
+          "label": "Dirty window pane",
+          "reason": "Visible dirt or streaking on a window pane."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor cracking visible in the asphalt driveway.",
+        "Some areas of the lawn appear patchy.",
+        "One window pane appears to have visible dirt or streaking."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a single-family residence with brown siding and a partially visible shingle roof, situated on a lot with a paved driveway and a large tree.",
+      "visible_conditions": [
+        "Single-story residence with an attached garage.",
+        "Brown shake-style siding appears generally intact.",
+        "Multiple windows with white trim are visible.",
+        "Asphalt driveway shows some minor cracking.",
+        "Lawn area appears somewhat patchy in places.",
+        "A large deciduous tree is present in the front yard.",
+        "A basketball hoop is attached to the garage."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Minor cracking visible in the asphalt driveway.",
+      "Image-only flag: Some areas of the lawn appear patchy.",
+      "Image-only flag: One window pane appears to have visible dirt or streaking."
+    ],
+    "id": 911,
+    "image": "images/parcel-000911.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 112668,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.079008140152986,
+    "lon": -76.15260051313005,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-18-240",
+    "published_at": "2026-10-20T22:31:04+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "239 Seventh North St & Turtle"
+  },
+  {
     "address": "2201 Park St Rear",
     "ai_analysis": {
       "available": true,
