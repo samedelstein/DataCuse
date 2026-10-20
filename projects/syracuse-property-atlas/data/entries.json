@@ -1,5 +1,102 @@
 [
   {
+    "address": "132 Hood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The roof is largely obscured by trees and the image angle, limiting a full assessment of its condition."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "unclear",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property appears to be a single-family residence with visible landscaping and a paved driveway.",
+      "visible_conditions": [
+        "Single-family residence with a brick lower facade and light-colored siding on the upper levels.",
+        "Multiple windows are visible on the front facade.",
+        "A front porch with stairs and a railing leads to the entry.",
+        "The front yard features a maintained lawn, mature evergreen trees, and various shrubs.",
+        "A paved driveway is present on the right side of the property, with a red vehicle parked.",
+        "An American flag is displayed near the front porch.",
+        "A small sapling is planted in the front yard.",
+        "A white bucket or container is visible near the sidewalk."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 912,
+    "image": "images/parcel-000912.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 103260,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07388822390262,
+    "lon": -76.14342940663838,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-02-500",
+    "published_at": "2026-10-20T23:03:07+00:00",
+    "review_reasons": [],
+    "title": "132 Hood Ave"
+  },
+  {
     "address": "239 Seventh North St & Turtle",
     "ai_analysis": {
       "available": true,
