@@ -1,5 +1,91 @@
 [
   {
+    "address": "701 Hiawatha Blvd E & Grant B",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Street-level view restricts full inspection of the roof.",
+        "Interior and rear exterior conditions cannot be evaluated."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "not_visible",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "Single-story brick commercial structure with garage bay doors and an attached tall brick chimney stack, surrounded by paved asphalt parking.",
+      "visible_conditions": [
+        "Red brick masonry facade appears intact with no major visible structural cracks.",
+        "Multiple garage doors and a commercial entry door visible on the front elevation.",
+        "Paved asphalt forecourt appears clear and intact.",
+        "Tall brick smokestack attached to the right side of the building.",
+        "Low-slope flat roof is largely hidden from street-level perspective."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "816",
+        "Median gross rent": "353800",
+        "Median household income": "91696",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "11.3",
+        "Renter-occupied share": "7.8",
+        "Total population": "1225",
+        "Vacancy rate": "2.8"
+      },
+      "name": "Census Tract 1; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000100",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 919,
+    "image": "images/parcel-000919.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 30629,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.078406426857754,
+    "lon": -76.16141288092287,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "0012-02-010",
+    "published_at": "2026-10-21T15:03:04+00:00",
+    "review_reasons": [],
+    "title": "701 Hiawatha Blvd E & Grant B"
+  },
+  {
     "address": "1137 Turtle St",
     "ai_analysis": {
       "available": true,
