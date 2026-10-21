@@ -1,5 +1,77 @@
 [
   {
+    "address": "140 Hood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "{\n  \"summary\": \"The visible exterior of the property at 140 HOOD AVE appears to be a single-family residence with a white exterior, an enclosed front porch, and an integrated garage, showing some signs of general wear.\",\n  \"property_type_guess\": \"single_family\",\n  \"visible_conditions\": [\n    \"The property features a white exterior, possibly painted brick or block on the lower level and siding on the upper gable.\",\n    \"An enclosed front porch is visible, accessed by an exterior staircase with a metal railing.\",\n    \"An integrated garage and an additional entry door are located on the ground level beneath the porch.\",\n    \"An asphalt driveway provides access to the garage.\",\n    \"The front yard consists of a grass lawn, which appears to be maintained.\",\n    \"Recycling bins are visible near the garage entrance, appearing to be ordinary household items.\",\n    \"A large evergreen tree is situated behind the property, contributing to the landscape.\"\n  \u0442\u043e],\n  \"condition_scores\": {\n    \"roof\": \"not_visible\",\n    \"siding_or_facade\": \"fair\",\n    \"windows_doors\": \"fair\",\n    \"porch_or_entry\": \"fair\",\n    \"yard_or_lot\": \"good\",\n    \"trash_debris\": \"none_visible\",\n    \"vegetation_overgrowth\": \"none_visible\"\n  },\n  \"visible_flags\": {\n    \"boarded_windows_or_doors\": \"no\",\n    \"fire_damage_visible\": \"no\",\n    \"structural_damage_visible\": \"no\",\n    \"vacancy_signs_visible\": \"no\",\n    \"active_construction_visible\": \"no\"\n  },\n  \"possible_unrecorded_issues\": [\n    \"Visible wear and possible surface rust on the metal railing of the front stairs.\",\n    \"Minor cracking and surface wear observed on the asphalt driveway.\"\n  ],\n  \"image_annotations\": [\n    {\n      \"label\": \"Railing wear\",\n      \"reason\": \"Visible wear and possible surface rust on the metal railing of the front stairs.\",\n      \"bbox\": {\n        \"x\": \"0.05\",\n        \"y\": \"0.40\",\n        \"width\": \"0.30\",\n        \"height\": \"0.25\"\n      },\n      \"confidence\": \"high\"\n    },\n    {\n      \"label\": \"Driveway wear\",\n      \"reason\": \"Minor cracking and surface wear observed on the asphalt driveway.\",\n      \"bbox\": {\n        \"x\": \"0.00\",\n        \"y\": \"0.65\",\n        \"width\": \"0.50\",\n        \"height\": \"0.30\"\n      },\n      \"confidence\": \"high\"\n    }\n  ],\n  \"needs_human_review\": \"false\",\n  \"confidence\": \"high\",\n  \"caveats\": []\n}",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 917,
+    "image": "images/parcel-000917.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 91099,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07405391442578,
+    "lon": -76.14366898027991,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-02-520",
+    "published_at": "2026-10-21T13:03:11+00:00",
+    "review_reasons": [],
+    "title": "140 Hood Ave"
+  },
+  {
     "address": "2223 Park St Rear",
     "ai_analysis": {
       "available": true,
