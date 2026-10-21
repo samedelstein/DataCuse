@@ -1,5 +1,120 @@
 [
   {
+    "address": "2223 Park St Rear",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view of the property is heavily obstructed by dense vegetation.",
+        "No discernible structures associated with a property are visible in the image.",
+        "It is unclear if this image accurately represents the primary structure or a rear/undeveloped portion of the parcel."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "not_visible",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "major",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "poor"
+      },
+      "confidence": "low",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.7,
+            "width": 1.0,
+            "x": 0.0,
+            "y": 0.3
+          },
+          "confidence": "high",
+          "label": "Vegetation Overgrowth",
+          "reason": "Dense, unmanaged vegetation, including tall grasses, weeds, and shrubs, covers a significant portion of the visible area."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Extensive vegetation overgrowth suggests a potentially unmaintained lot or area."
+      ],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior primarily consists of dense, unmanaged vegetation and trees, with no discernible structures associated with a property.",
+      "visible_conditions": [
+        "Dense trees and shrubs are visible across the image.",
+        "Tall grasses and weeds cover much of the ground area.",
+        "A utility pole or sign structure is visible on the right side.",
+        "No discernible buildings, paved areas, or other typical property structures are visible."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "816",
+        "Median gross rent": "353800",
+        "Median household income": "91696",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "11.3",
+        "Renter-occupied share": "7.8",
+        "Total population": "1225",
+        "Vacancy rate": "2.8"
+      },
+      "name": "Census Tract 1; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000100",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Extensive vegetation overgrowth suggests a potentially unmaintained lot or area.",
+      "Needs human review"
+    ],
+    "id": 916,
+    "image": "images/parcel-000916.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 142348,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07450034796679,
+    "lon": -76.17399499059363,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "0012-01-130",
+    "published_at": "2026-10-21T12:03:13+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "2223 Park St Rear"
+  },
+  {
     "address": "1143 Turtle St",
     "ai_analysis": {
       "available": true,
