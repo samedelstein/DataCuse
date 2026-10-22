@@ -1,5 +1,132 @@
 [
   {
+    "address": "513 Hiawatha Blvd E & Tex Simone Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The roof is largely not visible due to the image angle.",
+        "The view of the property is partially obstructed by a utility pole and a chain-link fence in the foreground."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "good",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.4,
+            "width": 1.0,
+            "x": 0.0,
+            "y": 0.6
+          },
+          "confidence": "medium",
+          "label": "Vegetation overgrowth",
+          "reason": "Grass and weeds in the foreground appear tall and unmanaged."
+        },
+        {
+          "bbox": {
+            "height": 0.2,
+            "width": 0.75,
+            "x": 0.25,
+            "y": 0.5
+          },
+          "confidence": "medium",
+          "label": "Pavement cracking",
+          "reason": "The paved area between the grass and the building shows visible cracks and deterioration."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor vegetation overgrowth in the grassy foreground area.",
+        "Cracking and wear observed on the paved surface near the building."
+      ],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a large commercial or industrial building with red metal siding, situated behind a chain-link fence, with a grassy foreground and a paved area near the structure.",
+      "visible_conditions": [
+        "Large, single-story building with red corrugated metal siding.",
+        "Multiple loading dock doors and a few smaller windows are visible on the facade.",
+        "A chain-link fence runs across the front of the property.",
+        "The foreground consists of a grassy area, which appears somewhat unkempt.",
+        "A paved area is visible between the grassy foreground and the building, showing some cracking and wear.",
+        "Two large dumpsters are visible near the building's rear or side entrance."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "816",
+        "Median gross rent": "353800",
+        "Median household income": "91696",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "11.3",
+        "Renter-occupied share": "7.8",
+        "Total population": "1225",
+        "Vacancy rate": "2.8"
+      },
+      "name": "Census Tract 1; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000100",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Minor vegetation overgrowth in the grassy foreground area.",
+      "Image-only flag: Cracking and wear observed on the paved surface near the building."
+    ],
+    "id": 928,
+    "image": "images/parcel-000928.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 83082,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07584433192426,
+    "lon": -76.16365475877666,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "0012-2-041",
+    "published_at": "2026-10-22T19:02:54+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "513 Hiawatha Blvd E & Tex Simone Dr"
+  },
+  {
     "address": "152 Hood Ave",
     "ai_analysis": {
       "available": true,
