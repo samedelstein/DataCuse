@@ -1,5 +1,90 @@
 [
   {
+    "address": "429 Hiawatha Blvd E",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "View is limited to one elevation from across the street.",
+        "Roof and primary entrance details are not clearly visible from street level."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The visible property consists of a single-story commercial building with a masonry block facade and a well-maintained grassy lawn along the street frontage.",
+      "visible_conditions": [
+        "Single-story concrete block commercial structure with flat roofline",
+        "Commercial signage attached to the exterior wall reading 'Kitchen Express Inc.'",
+        "Mowed lawn area sloping down to the curb",
+        "Overhead utility lines and pole present in front of the building"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "816",
+        "Median gross rent": "353800",
+        "Median household income": "91696",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "11.3",
+        "Renter-occupied share": "7.8",
+        "Total population": "1225",
+        "Vacancy rate": "2.8"
+      },
+      "name": "Census Tract 1; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000100",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 931,
+    "image": "images/parcel-000931.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 55299,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07510763088937,
+    "lon": -76.16385723232959,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "0012-02-060",
+    "published_at": "2026-10-23T08:00:54+00:00",
+    "review_reasons": [],
+    "title": "429 Hiawatha Blvd E"
+  },
+  {
     "address": "156 Hood Ave",
     "ai_analysis": {
       "available": true,
