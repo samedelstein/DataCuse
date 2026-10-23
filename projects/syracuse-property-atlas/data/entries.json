@@ -1,5 +1,77 @@
 [
   {
+    "address": "156 Hood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "{\n  \"summary\": \"The visible exterior of the property appears to be a multi-level residence with an attached garage, exhibiting some areas of wear on the siding and roof, and some unmanaged vegetation along the driveway and in the yard.\",\n  \"property_type_guess\": \"single_family\",\n  \"visible_conditions\": [\n    \"The property features a multi-level structure with light blue siding on the upper sections and a brick lower level, including an attached garage.\",\n    \"The roof exhibits some visible discoloration or possible organic growth on its surface.\",\n    \"Sections of the light blue siding appear to show signs of wear, such as possible peeling paint or fading.\",\n    \"Windows and doors appear to be present and generally intact, though some frames may show minor wear.\",\n    \"A porch or entry area with railings is visible on the side of the structure.\",\n    \"The yard area includes a concrete pad and an asphalt driveway, with some areas of unmanaged grass and weeds along the driveway edges and in the foreground.\",\n    \"A single black trash bin is visible near the garage, consistent with ordinary household items.\"\n  \u4fac,\n  \"condition_scores\": {\n    \"roof\": \"fair\",\n    \"siding_or_facade\": \"fair\",\n    \"windows_doors\": \"fair\",\n    \"porch_or_entry\": \"fair\",\n    \"yard_or_lot\": \"fair\",\n    \"trash_debris\": \"none_visible\",\n    \"vegetation_overgrowth\": \"minor\"\n  },\n  \"visible_flags\": {\n    \"boarded_windows_or_doors\": \"no\",\n    \"fire_damage_visible\": \"no\",\n    \"structural_damage_visible\": \"no\",\n    \"vacancy_signs_visible\": \"no\",\n    \"active_construction_visible\": \"no\"\n  },\n  \"possible_unrecorded_issues\": [\n    \"Apparent discoloration or possible organic growth on roof shingles.\",\n    \"Visible wear or possible peeling paint on sections of the light blue siding.\",\n    \"Areas of unmanaged grass and weeds along the driveway and in the foreground.\"\n  ],\n  \"image_annotations\": [\n    {\n      \"label\": \"Roof discoloration\",\n      \"reason\": \"Visible discoloration or possible organic growth on the roof surface.\",\n      \"bbox\": {\n        \"x\": 0.05,\n        \"y\": 0.05,\n        \"width\": 0.50,\n        \"height\": 0.25\n      },\n      \"confidence\": \"high\"\n    },\n    {\n      \"label\": \"Siding wear\",\n      \"reason\": \"Sections of light blue siding appear to show signs of wear or possible peeling paint.\",\n      \"bbox\": {\n        \"x\": 0.05,\n        \"y\": 0.30,\n        \"width\": 0.45,\n        \"height\": 0.20\n      },\n      \"confidence\": \"high\"\n    },\n    {\n      \"label\": \"Unmanaged vegetation\",\n      \"reason\": \"Areas of unmanaged grass and weeds are visible along the right side of the driveway and in the foreground.\",\n      \"bbox\": {\n        \"x\": 0.55,\n        \"y\": 0.65,\n        \"width\": 0.45,\n        \"height\": 0.35\n      },\n      \"confidence\": \"high\"\n    },\n    {\n      \"label\": \"Unmanaged vegetation\",\n      \"reason\": \"Unmanaged growth is visible along the retaining wall on the left side of the driveway.\",\n      \"bbox\": {\n        \"x\": 0.30,\n        \"y\": 0.60,\n        \"width\": 0.20,\n        \"height\": 0.15\n      },\n      \"confidence\": \"high\"\n    }\n  ],\n  \"needs_human_review\": false,\n  \"confidence\": \"high\",\n  \"caveats\": [\n    \"The image provides a street-level view, which may limit the visibility of the entire roof or rear sections of the property.\",\n    \"The image appears to be from Google Street View, so its age is unknown, and conditions may have changed since it was captured.\"\n  ]\n}",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 930,
+    "image": "images/parcel-000930.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 77912,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.074385293249065,
+    "lon": -76.14414813119649,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-02-560",
+    "published_at": "2026-10-23T01:03:35+00:00",
+    "review_reasons": [],
+    "title": "156 Hood Ave"
+  },
+  {
     "address": "1113 Turtle St",
     "ai_analysis": {
       "available": true,
