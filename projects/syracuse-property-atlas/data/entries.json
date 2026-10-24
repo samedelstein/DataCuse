@@ -1,5 +1,118 @@
 [
   {
+    "address": "217-301 Hiawatha Blvd E",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image primarily shows a vacant lot, with no primary structures visible on the immediate parcel area.",
+        "Distant background structures are not assessed as part of this parcel."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "not_visible",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.25,
+            "width": 0.5,
+            "x": 0.01,
+            "y": 0.55
+          },
+          "confidence": "high",
+          "label": "Unmanaged vegetation",
+          "reason": "Patches of tall grass and weeds are visible in the lot, particularly behind the fence."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor unmanaged vegetation is present in various parts of the lot."
+      ],
+      "property_type_guess": "vacant_lot",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image primarily depicts a large, mostly gravel and unpaved lot with some areas of unmanaged vegetation, enclosed by a chain-link fence.",
+      "visible_conditions": [
+        "Large gravel and unpaved lot in the foreground and mid-ground",
+        "Patches of unmanaged grass and weeds are visible within the lot, particularly behind a fence on the left side",
+        "A chain-link fence is visible along a portion of what appears to be the property perimeter",
+        "A 'No Parking' sign and a yellow A-frame sign are present near the foreground",
+        "Distant industrial-style buildings and an elevated structure are visible in the background, which are likely not part of the immediate parcel"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "816",
+        "Median gross rent": "353800",
+        "Median household income": "91696",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "11.3",
+        "Renter-occupied share": "7.8",
+        "Total population": "1225",
+        "Vacancy rate": "2.8"
+      },
+      "name": "Census Tract 1; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000100",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Minor unmanaged vegetation is present in various parts of the lot."
+    ],
+    "id": 940,
+    "image": "images/parcel-000940.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 46095,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.072818051899745,
+    "lon": -76.16562159144073,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "0012-02-0911",
+    "published_at": "2026-10-24T21:03:03+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "217-301 Hiawatha Blvd E"
+  },
+  {
     "address": "168 Hood Ave",
     "ai_analysis": {
       "available": true,
