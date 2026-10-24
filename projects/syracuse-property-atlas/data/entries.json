@@ -1,5 +1,91 @@
 [
   {
+    "address": "314 Willumae Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Street-level perspective offers limited visibility of rear and side roof/exterior slopes.",
+        "Exact property boundary lines cannot be verified solely from street imagery."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A street-level view shows a well-maintained single-family residential property with light siding, a pitched shingled roof, an enclosed front porch, and a manicured lawn.",
+      "visible_conditions": [
+        "Light-colored exterior siding appears intact and well-maintained.",
+        "Asphalt shingle roof appears structurally sound with no visible missing shingles from street view.",
+        "Enclosed front porch area with visible entry steps and railings.",
+        "Mowed lawn, trimmed foundation plantings, and paved driveway.",
+        "Standard curbside trash or recycling container positioned near the driveway side."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 941,
+    "image": "images/parcel-000941.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 86328,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.077977578716336,
+    "lon": -76.1539426804313,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-18-340",
+    "published_at": "2026-10-24T22:03:41+00:00",
+    "review_reasons": [],
+    "title": "314 Willumae Dr"
+  },
+  {
     "address": "217-301 Hiawatha Blvd E",
     "ai_analysis": {
       "available": true,
