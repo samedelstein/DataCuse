@@ -1,5 +1,117 @@
 [
   {
+    "address": "160 Hood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "A large tree partially obscures the view of the roof and upper facade of the property."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "unclear",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.45,
+            "width": 1.0,
+            "x": 0.0,
+            "y": 0.55
+          },
+          "confidence": "high",
+          "label": "Vegetation overgrowth",
+          "reason": "Areas of taller grass and weeds are visible in the front lawn, particularly near the sidewalk and the base of the house."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor vegetation overgrowth in the front yard."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image displays a two-story residential property with a covered front porch, a yellow-sided first floor, and a white-sided upper dormer, with some areas of taller grass and weeds in the front yard.",
+      "visible_conditions": [
+        "The property features a two-story structure with a prominent front porch.",
+        "The first floor of the house is clad in yellow siding, while the upper dormer and porch railing appear to have white siding.",
+        "The front yard consists of a grassy area, with some sections exhibiting taller grass and weeds.",
+        "A large tree partially obscures the view of the upper portion of the house and roof.",
+        "A street sign is visible in the front yard near the sidewalk."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Minor vegetation overgrowth in the front yard."
+    ],
+    "id": 933,
+    "image": "images/parcel-000933.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 116535,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07446813755216,
+    "lon": -76.14426791979476,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-02-570",
+    "published_at": "2026-10-24T00:06:20+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "160 Hood Ave"
+  },
+  {
     "address": "300 Willumae Dr & Turtle St",
     "ai_analysis": {
       "available": true,
