@@ -1,5 +1,77 @@
 [
   {
+    "address": "304 Willumae Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "{\n  \"summary\": \"The visible exterior of the property appears to be a single-family residence with white siding and a stone chimney, situated on a lot with a grass lawn and a concrete driveway.\",\n  \"property_type_guess\": \"single_family\",\n  \"visible_conditions\": [\n    \"Single-story residence with an attic gable and a prominent stone-clad chimney on the front facade.\",\n    \"The main structure features white horizontal siding.\",\n    \"The roof appears to be covered with asphalt shingles.\",\n    \"The front entry includes dark steps and a railing.\",\n    \"Landscaping consists of shrubs and a grass lawn, with some areas of sparse grass or bare soil.\",\n    \"A concrete driveway runs along the right side of the property, showing signs of cracking and deterioration.\"\n  \u4fac],\n  \"condition_scores\": {\n    \"roof\": \"good\",\n    \"siding_or_facade\": \"good\",\n    \"windows_doors\": \"good\",\n    \"porch_or_entry\": \"fair\",\n    \"yard_or_lot\": \"fair\",\n    \"trash_debris\": \"none_visible\",\n    \"vegetation_overgrowth\": \"none_visible\"\n  },\n  \"visible_flags\": {\n    \"boarded_windows_or_doors\": \"no\",\n    \"fire_damage_visible\": \"no\",\n    \"structural_damage_visible\": \"no\",\n    \"vacancy_signs_visible\": \"no\",\n    \"active_construction_visible\": \"no\"\n  },\n  \"possible_unrecorded_issues\": [\n    \"Deterioration and cracking observed in the concrete driveway.\",\n    \"Some bare patches are visible in the front lawn.\",\n    \"Minor wear on the front entry steps.\"\n  ],\n  \"image_annotations\": [\n    {\n      \"label\": \"Driveway deterioration\",\n      \"reason\": \"The concrete driveway shows multiple cracks and signs of breaking apart in sections.\",\n      \"bbox\": {\n        \"x\": 0.35,\n        \"y\": 0.55,\n        \"width\": 0.4,\n        \"height\": 0.3\n      },\n      \"confidence\": \"high\"\n    },\n    {\n      \"label\": \"Lawn bare patches\",\n      \"reason\": \"Several areas of the front lawn show sparse grass or bare soil.\",\n      \"bbox\": {\n        \"x\": 0.05,\n        \"y\": 0.65,\n        \"width\": 0.2,\n        \"height\": 0.15\n      },\n      \"confidence\": \"high\"\n    }\n  ],\n  \"needs_human_review\": \"false\",\n  \"confidence\": \"high\",\n  \"caveats\": [\n    \"The image provides a street-level view, limiting visibility of the rear or sides of the property.\",\n    \"The condition of the roof is assessed from a ground-level perspective.\"\n  ]\n}",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 935,
+    "image": "images/parcel-000935.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 76591,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07790188760198,
+    "lon": -76.15361554352326,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-18-320",
+    "published_at": "2026-10-24T16:52:13+00:00",
+    "review_reasons": [],
+    "title": "304 Willumae Dr"
+  },
+  {
     "address": "419 Hiawatha Blvd E",
     "ai_analysis": {
       "available": true,
