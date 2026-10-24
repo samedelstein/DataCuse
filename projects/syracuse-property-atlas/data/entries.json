@@ -1,5 +1,77 @@
 [
   {
+    "address": "419 Hiawatha Blvd E",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "{\n  \"summary\": \"The visible exterior of this commercial or industrial property features a block building with some facade discoloration and a yard with minor unmanaged vegetation.\",\n  \"property_type_guess\": \"commercial\",\n  \"visible_conditions\": [\n    \"Single-story commercial or industrial building constructed of concrete blocks.\",\n    \"Facade exhibits some discoloration or staining, particularly on lower sections.\",\n    \"Building has small windows and a large roll-up bay door.\",\n    \"Property is enclosed by a chain-link fence with a gate.\",\n    \"The lot includes grassy areas and paved sections.\",\n    \"Grass in the yard appears somewhat unmanaged in areas.\",\n    \"A large black dumpster is visible near the building.\"\n  \",\n  \"condition_scores\": {\n    \"roof\": \"unclear\",\n    \"siding_or_facade\": \"fair\",\n    \"windows_doors\": \"good\",\n    \"porch_or_entry\": \"good\",\n    \"yard_or_lot\": \"fair\",\n    \"trash_debris\": \"none_visible\",\n    \"vegetation_overgrowth\": \"minor\"\n  },\n  \"visible_flags\": {\n    \"boarded_windows_or_doors\": \"no\",\n    \"fire_damage_visible\": \"no\",\n    \"structural_damage_visible\": \"no\",\n    \"vacancy_signs_visible\": \"no\",\n    \"active_construction_visible\": \"no\"\n  },\n  \"possible_unrecorded_issues\": [\n    \"Minor discoloration or staining visible on the building's facade.\",\n    \"Minor unmanaged vegetation in the yard area.\"\n  ],\n  \"image_annotations\": [\n    {\n      \"label\": \"Facade discoloration\",\n      \"reason\": \"Visible staining or discoloration on the concrete block facade.\",\n      \"bbox\": {\n        \"x\": 0.05,\n        \"y\": 0.45,\n        \"width\": 0.45,\n        \"height\": 0.25\n      },\n      \"confidence\": \"high\"\n    },\n    {\n      \"label\": \"Unmanaged vegetation\",\n      \"reason\": \"Grass in the foreground and near the fence appears taller and less uniform than a regularly maintained lawn.\",\n      \"bbox\": {\n        \"x\": 0.0,\n        \"y\": 0.6,\n        \"width\": 0.5,\n        \"height\": 0.4\n      },\n      \"confidence\": \"medium\"\n    }\n  ],\n  \"needs_human_review\": \"false\",\n  \"confidence\": \"high\",\n  \"caveats\": []\n}",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "816",
+        "Median gross rent": "353800",
+        "Median household income": "91696",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "11.3",
+        "Renter-occupied share": "7.8",
+        "Total population": "1225",
+        "Vacancy rate": "2.8"
+      },
+      "name": "Census Tract 1; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000100",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 934,
+    "image": "images/parcel-000934.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 57701,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07468750762258,
+    "lon": -76.16420795322544,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "0012-02-070",
+    "published_at": "2026-10-24T08:01:00+00:00",
+    "review_reasons": [],
+    "title": "419 Hiawatha Blvd E"
+  },
+  {
     "address": "160 Hood Ave",
     "ai_analysis": {
       "available": true,
