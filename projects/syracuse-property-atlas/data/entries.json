@@ -1,5 +1,90 @@
 [
   {
+    "address": "405 Hiawatha Blvd E",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Image is an extreme close-up of a single surface, making it impossible to assess the property layout, roof, facade, or yard."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "unclear",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "unclear",
+        "yard_or_lot": "not_visible"
+      },
+      "confidence": "low",
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The view is extremely obstructed, showing only a close-up of a white corrugated metal shutter or panel, preventing evaluation of the property exterior.",
+      "visible_conditions": [
+        "Image displays a tight close-up view of a white horizontal corrugated surface."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "unclear",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "816",
+        "Median gross rent": "353800",
+        "Median household income": "91696",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "11.3",
+        "Renter-occupied share": "7.8",
+        "Total population": "1225",
+        "Vacancy rate": "2.8"
+      },
+      "name": "Census Tract 1; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000100",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Needs human review"
+    ],
+    "id": 937,
+    "image": "images/parcel-000937.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 40977,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07410993829267,
+    "lon": -76.16478745225808,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "0012-02-080",
+    "published_at": "2026-10-24T18:02:54+00:00",
+    "review_reasons": [
+      "AI requested human review"
+    ],
+    "title": "405 Hiawatha Blvd E"
+  },
+  {
     "address": "164 Hood Ave",
     "ai_analysis": {
       "available": true,
