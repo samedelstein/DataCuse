@@ -1,5 +1,132 @@
 [
   {
+    "address": "310 Willumae Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image is from 2020, so current conditions may differ."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.45,
+            "width": 0.5,
+            "x": 0.0,
+            "y": 0.55
+          },
+          "confidence": "high",
+          "label": "Driveway cracks and weeds",
+          "reason": "Paved driveway shows visible cracking and weed growth within the cracks."
+        },
+        {
+          "bbox": {
+            "height": 0.25,
+            "width": 0.4,
+            "x": 0.05,
+            "y": 0.45
+          },
+          "confidence": "medium",
+          "label": "Siding discoloration",
+          "reason": "Portions of the white exterior siding appear to have dirt or discoloration."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Visible cracking and weed growth in the paved driveway",
+        "Some areas of discoloration or dirt on the exterior siding"
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property features a two-story house with white siding and a covered front porch, with some areas showing discoloration and a paved driveway exhibiting cracks and minor weed growth.",
+      "visible_conditions": [
+        "Two-story structure with white exterior siding",
+        "Covered front porch with brick pillars",
+        "Asphalt shingle roof visible in sections",
+        "Paved driveway leading to a detached garage at the rear of the property",
+        "Front yard with a lawn and some foundation plantings",
+        "Visible discoloration or dirt on portions of the white siding",
+        "Cracks and some weed growth observed in the paved driveway"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Visible cracking and weed growth in the paved driveway",
+      "Image-only flag: Some areas of discoloration or dirt on the exterior siding"
+    ],
+    "id": 938,
+    "image": "images/parcel-000938.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 84260,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07795614136877,
+    "lon": -76.15377416799592,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-18-330",
+    "published_at": "2026-10-24T19:03:00+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "310 Willumae Dr"
+  },
+  {
     "address": "405 Hiawatha Blvd E",
     "ai_analysis": {
       "available": true,
