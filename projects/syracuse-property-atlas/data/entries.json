@@ -1,5 +1,160 @@
 [
   {
+    "address": "212 Hood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image provides a street-level view, limiting visibility of the rear and some side aspects of the property."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.15,
+            "width": 0.1,
+            "x": 0.45,
+            "y": 0.55
+          },
+          "confidence": "high",
+          "label": "Chipping paint on stairs",
+          "reason": "The red paint on the porch stairs appears to be chipping."
+        },
+        {
+          "bbox": {
+            "height": 0.1,
+            "width": 0.2,
+            "x": 0.25,
+            "y": 0.6
+          },
+          "confidence": "high",
+          "label": "Foundation discoloration/staining",
+          "reason": "The lower foundation/skirt area of the house shows visible discoloration or staining."
+        },
+        {
+          "bbox": {
+            "height": 0.15,
+            "width": 0.8,
+            "x": 0.0,
+            "y": 0.7
+          },
+          "confidence": "high",
+          "label": "Unmanaged lawn vegetation",
+          "reason": "Portions of the front lawn exhibit taller grass and weeds, indicating minor overgrowth."
+        },
+        {
+          "bbox": {
+            "height": 0.25,
+            "width": 0.15,
+            "x": 0.7,
+            "y": 0.5
+          },
+          "confidence": "high",
+          "label": "Unmanaged shrub",
+          "reason": "A shrub on the right side of the property appears to be unmanaged."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Chipping paint is visible on the red porch stairs.",
+        "Discoloration or staining is present on the lower foundation/skirt of the house.",
+        "Areas of the front lawn show unmanaged grass and weeds.",
+        "An unmanaged shrub is visible on the right side of the property."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property features a two-story residential structure with white siding, a front porch with red-painted stairs, a paved driveway, and a grassy front yard.",
+      "visible_conditions": [
+        "The property has a two-story residential structure with white siding.",
+        "A gable roof is visible at the front of the structure.",
+        "There is a front porch with a white entry door and metal railings.",
+        "The porch is accessed by red-painted wooden stairs, which show signs of chipping paint.",
+        "Some discoloration or staining is visible on the lower foundation or skirt area of the house.",
+        "Windows appear to be present and intact.",
+        "A paved driveway is located on the right side of the property.",
+        "The front yard is primarily grass, with some areas exhibiting taller grass or weeds.",
+        "A shrub on the right side of the property appears somewhat unmanaged."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Chipping paint is visible on the red porch stairs.",
+      "Image-only flag: Discoloration or staining is present on the lower foundation/skirt of the house.",
+      "Image-only flag: Areas of the front lawn show unmanaged grass and weeds.",
+      "Image-only flag: An unmanaged shrub is visible on the right side of the property."
+    ],
+    "id": 966,
+    "image": "images/parcel-000966.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 81026,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07540431051376,
+    "lon": -76.1457497276812,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-02-680",
+    "published_at": "2026-10-25T23:04:13+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "212 Hood Ave"
+  },
+  {
     "address": "2152 Park St Rear",
     "ai_analysis": {
       "available": true,
