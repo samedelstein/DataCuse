@@ -1,5 +1,154 @@
 [
   {
+    "address": "2028 Park St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image does not provide a clear view of the building's facade, making it difficult to assess the condition of the siding or facade with certainty.",
+        "The image does not show the entire lot or building, and the angle of the photo may not fully capture all areas of the property."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good|fair|poor|not_visible|unclear",
+        "roof": "good|fair|poor|not_visible|unclear",
+        "siding_or_facade": "good|fair|poor|not_visible|unclear",
+        "trash_debris": "none_visible|minor|major|unclear",
+        "vegetation_overgrowth": "none_visible|minor|major|unclear",
+        "windows_doors": "good|fair|poor|not_visible|unclear",
+        "yard_or_lot": "good|fair|poor|not_visible|unclear"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.738",
+            "width": "0.541",
+            "x": "0.459",
+            "y": "0.616"
+          },
+          "confidence": "high",
+          "label": "well-maintained parking lot",
+          "reason": "The lot is clean and free of any visible signs of disrepair or neglect"
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "cautious image-only flags not already reflected in known_data"
+      ],
+      "property_type_guess": "commercial|mixed-use|vacant lot|unclear",
+      "provider": "ollama:llava:latest",
+      "summary": "The image depicts an exterior view of a property, specifically a parking lot and a building. The property appears to be well-maintained with no visible signs of disrepair or neglect.",
+      "visible_conditions": [
+        "the parking lot is paved and appears to be clean and well-maintained",
+        "the building has visible signs of use, including awnings and a storefront, but does not show any signs of disrepair or neglect"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no|unclear",
+        "boarded_windows_or_doors": "no|unclear",
+        "fire_damage_visible": "no|unclear",
+        "structural_damage_visible": "no|unclear",
+        "vacancy_signs_visible": "no|unclear"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "816",
+        "Median gross rent": "353800",
+        "Median household income": "91696",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "11.3",
+        "Renter-occupied share": "7.8",
+        "Total population": "1225",
+        "Vacancy rate": "2.8"
+      },
+      "name": "Census Tract 1; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000100",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Unfit properties: 1 matching record",
+      "Image-only flag: cautious image-only flags not already reflected in known_data",
+      "Needs human review"
+    ],
+    "id": 959,
+    "image": "images/parcel-000959.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 49244,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07287133508109,
+    "lon": -76.16732389030737,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [
+        {
+          "Latitude": 43.07276834,
+          "Longitude": -76.16733512,
+          "ObjectId": 140,
+          "SBL": "001.2-02-15.6",
+          "Vacant": null,
+          "address": "2028 Park St",
+          "area_involved": "Premises ",
+          "article": "A structure is unfit for human occupancy whenever such structure is unsafe, unlawful or, because of the degree to which the structure is in disrepair or lacks maintenance, is unsanitary, vermin or rat infested, contains filth and contamination, or lacks ventilation, illumination, sanitary or heating facilities or other essential equipment required by this code, or because the location of the structure consti\ntutes a hazard to the occupants of the structure or to the public.",
+          "comp_close_date": -2208988800000,
+          "comp_open_date": 1738024343960,
+          "comp_status": "Certificate: Admin Review",
+          "complaint_number": "CU2025-0060",
+          "complaint_type_name": "Cert of Use - Restaurant",
+          "comply_by_date": 1739872576000,
+          "corrective_action": "The structure is unlawful due to being occupied contrary to law.  Apply for and obtain a Certificate of Use.  ",
+          "department_name": "Certificate of Use",
+          "owner_address": "200 Salina St ",
+          "owner_city": "Liverpool",
+          "owner_name": "CNY Regional Mrkt",
+          "owner_state": "NY",
+          "owner_zip_code": "13088",
+          "parcel_id": 56,
+          "status_date": 1738576576387,
+          "status_type_name": "Open",
+          "violation": "2020 PMCNYS - Section 107.1.3 - Structure Unfit for Human Occupancy",
+          "violation_date": 1738576576387,
+          "violation_number": "2025-01648",
+          "zip": 13208
+        }
+      ],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "0012-02-156",
+    "published_at": "2026-10-25T16:06:27+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "2028 Park St"
+  },
+  {
     "address": "342 Willumae Dr",
     "ai_analysis": {
       "available": true,
