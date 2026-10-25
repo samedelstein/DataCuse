@@ -1,5 +1,99 @@
 [
   {
+    "address": "2152 Park St Rear",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image quality is poor and blurry, making it impossible to discern any property details.",
+        "The view appears to be from a moving vehicle, and no specific property is clearly visible or identifiable.",
+        "It is unclear if the image shows the correct parcel due to the lack of visible property features."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "not_visible",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "not_visible"
+      },
+      "confidence": "low",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The provided image is blurry and does not clearly show the exterior of a property, making it difficult to assess any specific conditions.",
+      "visible_conditions": [],
+      "visible_flags": {
+        "active_construction_visible": "unclear",
+        "boarded_windows_or_doors": "unclear",
+        "fire_damage_visible": "unclear",
+        "structural_damage_visible": "unclear",
+        "vacancy_signs_visible": "unclear"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "816",
+        "Median gross rent": "353800",
+        "Median household income": "91696",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "11.3",
+        "Renter-occupied share": "7.8",
+        "Total population": "1225",
+        "Vacancy rate": "2.8"
+      },
+      "name": "Census Tract 1; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000100",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Needs human review"
+    ],
+    "id": 965,
+    "image": "images/parcel-000965.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 23036,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.074529790688786,
+    "lon": -76.17027195439539,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "0012-02-162/3",
+    "published_at": "2026-10-25T22:02:54+00:00",
+    "review_reasons": [
+      "AI requested human review"
+    ],
+    "title": "2152 Park St Rear"
+  },
+  {
     "address": "350 Willumae Dr",
     "ai_analysis": {
       "available": true,
