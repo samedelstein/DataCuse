@@ -1,5 +1,116 @@
 [
   {
+    "address": "320 Willumae Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.22,
+            "width": 0.4,
+            "x": 0.05,
+            "y": 0.68
+          },
+          "confidence": "high",
+          "label": "Brush pile",
+          "reason": "A significant accumulation of cut branches and brush is visible in the foreground of the property's yard."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "A pile of cut brush or branches is visible in the front yard area."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image displays a single-family residence with white siding, a visible front yard, and a notable pile of cut brush or branches in the foreground.",
+      "visible_conditions": [
+        "The property features a single-story structure with white siding and a visible roofline.",
+        "Multiple windows are visible on the front facade.",
+        "A front walkway leads towards the entry.",
+        "The lawn appears generally maintained.",
+        "Mature trees are present on the property and in the surrounding area.",
+        "A significant pile of cut brush or branches is visible in the foreground of the yard."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: A pile of cut brush or branches is visible in the front yard area."
+    ],
+    "id": 944,
+    "image": "images/parcel-000944.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 136688,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.078072135295244,
+    "lon": -76.15407585730779,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-18-350",
+    "published_at": "2026-10-25T01:02:57+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "320 Willumae Dr"
+  },
+  {
     "address": "170 Hood Ave",
     "ai_analysis": {
       "available": true,
