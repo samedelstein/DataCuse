@@ -1,5 +1,90 @@
 [
   {
+    "address": "350 Willumae Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Assessment is based on a front exterior street-level view; rear elevation and interior condition cannot be seen.",
+        "Roof slope is partially obscured due to camera angle."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The property is a two-story single-family residential structure with white exterior siding, an intact pitched shingle roof with skylights, an enclosed front porch, and well-maintained lawn and landscaping.",
+      "visible_conditions": [
+        "White siding on the primary facade appears intact and well-maintained.",
+        "Pitched shingle roof with twin skylights shows no visible missing shingles or structural sag.",
+        "Upper-floor windows and enclosed front porch windows appear intact and in good repair.",
+        "Front lawn is mowed and surrounded by pruned hedges and ornamental evergreen trees."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 964,
+    "image": "images/parcel-000964.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 91299,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.078486880696595,
+    "lon": -76.1551102717934,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-18-420",
+    "published_at": "2026-10-25T21:02:58+00:00",
+    "review_reasons": [],
+    "title": "350 Willumae Dr"
+  },
+  {
     "address": "208 Hood Ave",
     "ai_analysis": {
       "available": true,
