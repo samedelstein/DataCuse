@@ -1,5 +1,94 @@
 [
   {
+    "address": "2024 Park St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Significant portion of the lower and right frame is obstructed by the vehicle capturing the image.",
+        "The target building is located at a considerable distance, preventing a clear assessment of exterior building features.",
+        "Exact parcel alignment cannot be confirmed from this camera angle."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "unclear",
+        "siding_or_facade": "unclear",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "unclear",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "low",
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The property view is distant and largely obstructed by the recording vehicle's hood and windshield, showing a small commercial or storage building set back from an open lot.",
+      "visible_conditions": [
+        "Distant view of a small one-story metal or clad commercial structure in the background",
+        "Open unpaved lot area in front of the structure",
+        "Foreground is dominated by the windshield and reflection of the camera vehicle"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "unclear",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "816",
+        "Median gross rent": "353800",
+        "Median household income": "91696",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "11.3",
+        "Renter-occupied share": "7.8",
+        "Total population": "1225",
+        "Vacancy rate": "2.8"
+      },
+      "name": "Census Tract 1; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000100",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Needs human review"
+    ],
+    "id": 950,
+    "image": "images/parcel-000950.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 34507,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07242453760047,
+    "lon": -76.16684602656785,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "0012-02-140",
+    "published_at": "2026-10-25T07:02:56+00:00",
+    "review_reasons": [
+      "AI requested human review"
+    ],
+    "title": "2024 Park St"
+  },
+  {
     "address": "328 Willumae Dr",
     "ai_analysis": {
       "available": true,
