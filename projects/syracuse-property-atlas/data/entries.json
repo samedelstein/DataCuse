@@ -1,5 +1,116 @@
 [
   {
+    "address": "182 Hood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.25",
+            "width": "0.45",
+            "x": "0.0",
+            "y": "0.56"
+          },
+          "confidence": "high",
+          "label": "Unmanaged vegetation",
+          "reason": "Area of the front yard with taller, unkempt grass and possibly weeds, indicating minor vegetation overgrowth."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor unmanaged vegetation visible in parts of the front yard."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image displays a single-family residence with a brick facade on the lower level and dormers, featuring a sloped front yard with a mix of maintained and somewhat unmanaged vegetation.",
+      "visible_conditions": [
+        "The main structure features a brick facade on the lower level and what appears to be siding on the upper dormer sections.",
+        "The roof is dark-colored, possibly asphalt shingles, and appears generally intact.",
+        "Windows and doors appear to be present and intact.",
+        "A set of concrete steps with metal railings leads to a covered front entry.",
+        "The front yard is sloped, with a paved driveway leading to a basement-level garage.",
+        "Some areas of the front yard, particularly on the left side, show taller, unmanaged grass and vegetation."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Minor unmanaged vegetation visible in parts of the front yard."
+    ],
+    "id": 951,
+    "image": "images/parcel-000951.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 95019,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.074965201641426,
+    "lon": -76.14498665791186,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-02-630",
+    "published_at": "2026-10-25T08:02:59+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "182 Hood Ave"
+  },
+  {
     "address": "2024 Park St",
     "ai_analysis": {
       "available": true,
