@@ -1,5 +1,91 @@
 [
   {
+    "address": "216 Hood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Street-level view offers limited sightlines to rear and side walls.",
+        "Roof surfaces are partially obscured by distance and angle."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential structure with light siding, a shingle roof, a paved driveway, and front entrance steps on a sloped lawn.",
+      "visible_conditions": [
+        "Shingle roof appears visually intact from street angle.",
+        "Light-colored exterior siding appears complete and intact.",
+        "Front entrance features brick and concrete steps with a handrail leading up a sloped yard.",
+        "Paved asphalt driveway runs alongside the residence.",
+        "Sloped front yard with standard grass lawn and small shrubs."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 968,
+    "image": "images/parcel-000968.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 84639,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07545186617672,
+    "lon": -76.1458558462822,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "005-02-690",
+    "published_at": "2026-10-26T01:02:53+00:00",
+    "review_reasons": [],
+    "title": "216 Hood Ave"
+  },
+  {
     "address": "354 Willumae Dr",
     "ai_analysis": {
       "available": true,
