@@ -1,5 +1,93 @@
 [
   {
+    "address": "124 Stedman St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "No structures are visible in the camera view.",
+        "Dense tree cover and sloped bank obscure any potential features further back on the parcel."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "not_visible",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "unclear"
+      },
+      "confidence": "low",
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "vacant_lot",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows a wooded slope with mature trees and natural foliage, with no visible building structure.",
+      "visible_conditions": [
+        "Sloped woodland terrain with mature trees and dense underbrush.",
+        "Fallen branches and natural forest ground cover.",
+        "No visible structural improvements or buildings."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Needs human review"
+    ],
+    "id": 980,
+    "image": "images/parcel-000980.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 160106,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07962895068558,
+    "lon": -76.15550245458611,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-19-020",
+    "published_at": "2026-10-26T18:04:14+00:00",
+    "review_reasons": [
+      "AI requested human review"
+    ],
+    "title": "124 Stedman St"
+  },
+  {
     "address": "232 Hood Ave",
     "ai_analysis": {
       "available": true,
