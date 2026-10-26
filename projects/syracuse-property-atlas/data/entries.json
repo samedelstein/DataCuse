@@ -1,5 +1,118 @@
 [
   {
+    "address": "1900 Spring St & City Line",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "the image shows only a small portion of the property, and the overgrown area could be part of an adjacent property not visible in the image"
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good|fair|poor|not_visible|unclear",
+        "roof": "good|fair|poor|not_visible|unclear",
+        "siding_or_facade": "good|fair|poor|not_visible|unclear",
+        "trash_debris": "none_visible|minor|major|unclear",
+        "vegetation_overgrowth": "minor|unclear",
+        "windows_doors": "good|fair|poor|not_visible|unclear",
+        "yard_or_lot": "good|fair|poor|not_visible|unclear"
+      },
+      "confidence": "low",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.856,
+            "width": 0.742,
+            "x": 0.422,
+            "y": 0.504
+          },
+          "confidence": "low",
+          "label": "overgrown area",
+          "reason": "natural or neglected growth"
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "the right-side overgrown area might indicate neglect or natural growth, but without more information, it is difficult to draw a conclusion"
+      ],
+      "property_type_guess": "commercial|mixed-use|vacant-lot|unclear",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a view of a highway overpass with an overgrown area and some minor visible issues, but no major adverse conditions are immediately evident. The overgrown area could be due to a lack of maintenance or natural growth. The road appears to be clear and unobstructed.",
+      "visible_conditions": [
+        "overgrown vegetation area on right side"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no|unclear",
+        "boarded_windows_or_doors": "no|unclear",
+        "fire_damage_visible": "no|unclear",
+        "structural_damage_visible": "no|unclear",
+        "vacancy_signs_visible": "yes|unclear"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "816",
+        "Median gross rent": "353800",
+        "Median household income": "91696",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "11.3",
+        "Renter-occupied share": "7.8",
+        "Total population": "1225",
+        "Vacancy rate": "2.8"
+      },
+      "name": "Census Tract 1; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000100",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: the right-side overgrown area might indicate neglect or natural growth, but without more information, it is difficult to draw a conclusion"
+    ],
+    "id": 975,
+    "image": "images/parcel-000975.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 46644,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0769300384984,
+    "lon": -76.17100981493637,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "0012-02-200",
+    "published_at": "2026-10-26T08:07:05+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1900 Spring St & City Line"
+  },
+  {
     "address": "364 Willumae Dr",
     "ai_analysis": {
       "available": true,
