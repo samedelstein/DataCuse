@@ -1,5 +1,90 @@
 [
   {
+    "address": "364 Willumae Dr",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "A large foreground tree foliage and trunk partially block direct line of sight to portions of the roof and front facade."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The property appears to be a well-maintained two-story single-family home with light-colored siding, a grassy lawn, and a paved driveway, partially shaded by large mature trees.",
+      "visible_conditions": [
+        "Light-colored horizontal siding appears intact and in good condition.",
+        "Visible windows on front facade appear intact.",
+        "Front lawn is mowed and maintained.",
+        "Asphalt driveway runs alongside the property.",
+        "Large mature tree in front yard partially obstructs the facade view."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 974,
+    "image": "images/parcel-000974.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 138906,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0786657037802,
+    "lon": -76.15558570284611,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-18-450",
+    "published_at": "2026-10-26T07:02:52+00:00",
+    "review_reasons": [],
+    "title": "364 Willumae Dr"
+  },
+  {
     "address": "224 Hood Ave",
     "ai_analysis": {
       "available": true,
