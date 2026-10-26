@@ -1,5 +1,120 @@
 [
   {
+    "address": "120 Stedman St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The primary structure associated with the parcel is not visible in the image due to dense vegetation.",
+        "The image primarily depicts a heavily wooded and overgrown lot, limiting the assessment of specific property features."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "not_visible",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "major",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "poor"
+      },
+      "confidence": "low",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.2,
+            "width": 0.33,
+            "x": 0.67,
+            "y": 0.8
+          },
+          "confidence": "high",
+          "label": "Miscellaneous debris",
+          "reason": "A visible accumulation of discarded materials, including cardboard and other items, is present on the lot."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Dense, unmanaged vegetation appears to cover the majority of the visible lot area, obstructing the view of any potential structures.",
+        "An accumulation of miscellaneous debris is visible on the property."
+      ],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image primarily displays a heavily vegetated and overgrown lot, with no clear view of a primary structure, and some debris visible in the foreground.",
+      "visible_conditions": [
+        "The visible area of the property appears to be heavily covered with dense, unmanaged vegetation, including numerous trees and undergrowth.",
+        "A pile of miscellaneous debris, which includes items resembling cardboard and other discarded materials, is visible in the lower right portion of the image.",
+        "No primary structure associated with the parcel is discernible due to the dense vegetation."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Dense, unmanaged vegetation appears to cover the majority of the visible lot area, obstructing the view of any potential structures.",
+      "Image-only flag: An accumulation of miscellaneous debris is visible on the property.",
+      "Needs human review"
+    ],
+    "id": 977,
+    "image": "images/parcel-000977.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 160355,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07951537241565,
+    "lon": -76.1556291618222,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "osm": {
+      "available": false,
+      "features": [],
+      "note": "OpenStreetMap lookup failed: HTTP Error 406: Not Acceptable"
+    },
+    "parcel_key": "003-19-010",
+    "published_at": "2026-10-26T10:02:57+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "120 Stedman St"
+  },
+  {
     "address": "228 Hood Ave",
     "ai_analysis": {
       "available": true,
