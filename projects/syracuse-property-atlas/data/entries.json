@@ -1,5 +1,127 @@
 [
   {
+    "address": "208 Stedman St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Dense foliage and tree cover completely block the view of any potential structures on the parcel, making full assessment impossible from this camera angle."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "not_visible",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "unclear",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "unclear"
+      },
+      "confidence": "low",
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "vacant_lot",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The view from the street shows a heavily wooded area obscured by dense trees and foliage, with no visible main structure clear in the frame.",
+      "visible_conditions": [
+        "Dense tree canopy, brush, and leaf litter obscure the parcel from street level",
+        "No main building or structure is clearly visible through the foliage"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "unclear",
+        "fire_damage_visible": "unclear",
+        "structural_damage_visible": "unclear",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Code violations: 1 matching record",
+      "Needs human review"
+    ],
+    "id": 987,
+    "image": "images/parcel-000987.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 161954,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.079918546070395,
+    "lon": -76.15509708589798,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07996842,
+          "Longitude": -76.15515675,
+          "Neighborhood": null,
+          "ObjectId": 145108,
+          "SBL": "003.-19-06.1",
+          "Vacant": null,
+          "complaint_address": "208 Stedman St",
+          "complaint_number": "2022-01517",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1648563819000,
+          "inspector_id": 910,
+          "issued_to": "Beverly Robinson",
+          "issued_to_address": "208 Stedman St ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1646749276227,
+          "status_date": 1648684800000,
+          "status_type_name": "Closed",
+          "violation": "SPCC-Sec. 27-133 Registration",
+          "violation_date": 1646749419283,
+          "violation_id": 127870,
+          "violation_number": "2022-03444"
+        }
+      ],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-10-27T11:46:47+00:00",
+      "rental_registry": "2026-10-27T11:46:47+00:00",
+      "unfit_properties": "2026-10-27T11:46:47+00:00",
+      "vacant_properties": "2026-10-27T11:46:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-10-27T16:02:52+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "003-19-061",
+    "published_at": "2026-10-27T16:04:22+00:00",
+    "review_reasons": [
+      "AI requested human review"
+    ],
+    "title": "208 Stedman St"
+  },
+  {
     "address": "244 Hood Ave",
     "ai_analysis": {
       "available": true,
