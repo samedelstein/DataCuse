@@ -1,5 +1,125 @@
 [
   {
+    "address": "132 Stedman St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "low",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.857,
+            "width": 0.65,
+            "x": 0.296,
+            "y": 0.614
+          },
+          "confidence": "low",
+          "label": "Fallen leaves on lawn",
+          "reason": "A small portion of the lawn is covered with fallen leaves, indicating the photo was taken during the fall season."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Image quality may be poor due to the angle of the photo or if it is not a clear fall day, which could affect visibility of exterior conditions. There are no visible signs of abandonment, illegal dumping, or other adverse conditions that would require human review."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows an exterior view of a property, possibly a single-family residence, with a focus on the front yard area. The property appears to be on a residential street and is surrounded by trees and shrubs, which suggest it is a well-maintained area. The lawn is partially covered with fallen leaves, indicating the photo was taken during the fall season. There is no visible structural damage, overgrown vegetation, or evidence of neglect that would require human review.",
+      "visible_conditions": [
+        "The lawn is partially covered with fallen leaves"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Image quality may be poor due to the angle of the photo or if it is not a clear fall day, which could affect visibility of exterior conditions. There are no visible signs of abandonment, illegal dumping, or other adverse conditions that would require human review."
+    ],
+    "id": 984,
+    "image": "images/parcel-000984.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 155585,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.079870525376286,
+    "lon": -76.15533282619877,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-10-27T11:46:47+00:00",
+      "rental_registry": "2026-10-27T11:46:47+00:00",
+      "unfit_properties": "2026-10-27T11:46:47+00:00",
+      "vacant_properties": "2026-10-27T11:46:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-10-27T13:05:45+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "003-19-031",
+    "published_at": "2026-10-27T13:07:17+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "132 Stedman St"
+  },
+  {
     "address": "240 Hood Ave",
     "ai_analysis": {
       "available": true,
