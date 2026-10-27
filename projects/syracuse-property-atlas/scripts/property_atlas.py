@@ -8,7 +8,6 @@ import base64
 import datetime as dt
 import html
 import json
-import math
 import os
 import re
 import shutil
@@ -131,12 +130,13 @@ ADDRESS_FIELDS = (
     "situs_address",
     "prop_address",
     "property_address",
+    "propertyaddress",
+    "complaint_address",
     "location",
     "street_address",
     "full_address",
     "fulladdres",
     "fulladdress",
-    "mailadd",
 )
 PARCEL_ID_FIELDS = (
     "sbl",
@@ -144,7 +144,6 @@ PARCEL_ID_FIELDS = (
     "taxid",
     "parcel_id",
     "parcelid",
-    "objectid",
     "swis_sbl_id",
     "print_key",
     "account",
@@ -204,10 +203,14 @@ def fetch_arcgis_geojson(feed: dict[str, str], page_size: int = 1000, limit: int
             "where": "1=1",
             "outFields": "*",
             "f": "geojson",
+            "outSR": "4326",
+            "orderByFields": "ObjectId ASC",
             "resultOffset": offset,
             "resultRecordCount": count,
         }
         data = request_json(feed["url"], params=params)
+        if data.get("error") or not isinstance(data.get("features"), list):
+            raise RuntimeError(f"{feed['name']}: invalid ArcGIS response: {data.get('error', 'missing features')}")
         batch = data.get("features", [])
         features.extend(batch)
         print(f"{feed['name']}: fetched {len(features)} records", flush=True)
@@ -215,7 +218,7 @@ def fetch_arcgis_geojson(feed: dict[str, str], page_size: int = 1000, limit: int
             return features[:limit]
         if not batch:
             return features
-        if len(batch) < count and not data.get("exceededTransferLimit"):
+        if len(batch) < count and not (data.get("exceededTransferLimit") or data.get("properties", {}).get("exceededTransferLimit")):
             return features
         offset += len(batch)
         time.sleep(0.15)
@@ -239,6 +242,8 @@ def fetch_arcgis_json(feed: dict[str, str], page_size: int = 1000, limit: int | 
             "resultRecordCount": count,
         }
         data = request_json(feed["url"], params=params, timeout=180)
+        if data.get("error") or not isinstance(data.get("features"), list):
+            raise RuntimeError(f"{feed['name']}: invalid ArcGIS response: {data.get('error', 'missing features')}")
         batch = data.get("features", [])
         features.extend(batch)
         print(f"{feed['name']}: fetched {len(features)} records", flush=True)
@@ -286,6 +291,12 @@ def init_db(conn: sqlite3.Connection) -> None:
         CREATE INDEX IF NOT EXISTS idx_parcels_address ON parcels(address);
         CREATE INDEX IF NOT EXISTS idx_feed_records_name_key ON feed_records(feed_name, parcel_key);
         CREATE INDEX IF NOT EXISTS idx_feed_records_name_address ON feed_records(feed_name, address);
+        CREATE TABLE IF NOT EXISTS feed_sync (
+            feed_name TEXT PRIMARY KEY,
+            refreshed_at TEXT NOT NULL,
+            record_count INTEGER NOT NULL,
+            complete INTEGER NOT NULL
+        );
         """
     )
     conn.commit()
@@ -301,7 +312,7 @@ def normalized_address(properties: dict) -> str:
     lower = {str(k).lower(): v for k, v in properties.items()}
     for field in ADDRESS_FIELDS:
         value = lower.get(field)
-        if value:
+        if value and normalize_text(value):
             return normalize_text(value)
 
     number = lower.get("st_num") or lower.get("stnum") or lower.get("addressnum") or lower.get("street_num") or lower.get("house_num") or lower.get("housenum")
@@ -316,7 +327,7 @@ def parcel_key(properties: dict) -> str:
     lower = {str(k).lower(): v for k, v in properties.items()}
     for field in PARCEL_ID_FIELDS:
         value = lower.get(field)
-        if value not in (None, ""):
+        if value not in (None, "") and normalize_text(value):
             return normalize_text(value)
     return ""
 
@@ -399,10 +410,19 @@ def seed_parcels(conn: sqlite3.Connection, limit: int | None = None) -> int:
 
 
 def refresh_open_data(conn: sqlite3.Connection, limit: int | None = None) -> dict[str, int]:
+    if limit is not None and limit <= 0:
+        raise ValueError("--limit must be positive")
     counts: dict[str, int] = {}
     now = utc_now()
     for feed in OPEN_DATA_FEEDS:
+        count_result = request_json(feed["url"], {"where": "1=1", "returnCountOnly": "true", "f": "json"})
+        if "count" not in count_result:
+            raise RuntimeError(f"{feed['name']}: could not verify source record count")
+        expected = min(count_result["count"], limit) if limit is not None else count_result["count"]
         features = fetch_arcgis_geojson(feed, limit=limit)
+        ids = [source_object_id(feature.get("properties") or {}) for feature in features]
+        if len(features) != expected or len(set(ids)) != len(ids) or any(not id_ for id_ in ids):
+            raise RuntimeError(f"{feed['name']}: incomplete or duplicate results ({len(features)} records; expected {expected}); keeping cached feeds")
         conn.execute("DELETE FROM feed_records WHERE feed_name = ?", (feed["name"],))
         for feature in features:
             props = feature.get("properties") or {}
@@ -427,18 +447,20 @@ def refresh_open_data(conn: sqlite3.Connection, limit: int | None = None) -> dic
                 ),
             )
         counts[feed["name"]] = len(features)
+        conn.execute(
+            "INSERT OR REPLACE INTO feed_sync VALUES (?, ?, ?, ?)",
+            (feed["name"], now, len(features), int(limit is None)),
+        )
     conn.commit()
     return counts
 
 
-def distance_meters(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
-    radius = 6371000
-    phi1 = math.radians(lat1)
-    phi2 = math.radians(lat2)
-    delta_phi = math.radians(lat2 - lat1)
-    delta_lambda = math.radians(lon2 - lon1)
-    a = math.sin(delta_phi / 2) ** 2 + math.cos(phi1) * math.cos(phi2) * math.sin(delta_lambda / 2) ** 2
-    return radius * 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
+def feeds_need_refresh(conn: sqlite3.Connection) -> bool:
+    cutoff = (dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=7)).isoformat()
+    synced = {row[0] for row in conn.execute(
+        "SELECT feed_name FROM feed_sync WHERE complete = 1 AND refreshed_at >= ?", (cutoff,)
+    )}
+    return any(feed["name"] not in synced for feed in OPEN_DATA_FEEDS)
 
 
 def matching_records(conn: sqlite3.Connection, parcel: sqlite3.Row) -> dict[str, list[dict]]:
@@ -448,31 +470,17 @@ def matching_records(conn: sqlite3.Connection, parcel: sqlite3.Row) -> dict[str,
         if parcel["parcel_key"]:
             records.extend(
                 conn.execute(
-                    "SELECT * FROM feed_records WHERE feed_name = ? AND parcel_key = ? LIMIT 20",
+                    "SELECT * FROM feed_records WHERE feed_name = ? AND parcel_key = ? ORDER BY id",
                     (feed["name"], parcel["parcel_key"]),
                 ).fetchall()
             )
         if parcel["address"]:
             records.extend(
                 conn.execute(
-                    "SELECT * FROM feed_records WHERE feed_name = ? AND address = ? LIMIT 20",
-                    (feed["name"], parcel["address"]),
+                    "SELECT * FROM feed_records WHERE feed_name = ? AND address = ? AND (parcel_key = '' OR ? = '' OR parcel_key = ?) ORDER BY id",
+                    (feed["name"], parcel["address"], parcel["parcel_key"], parcel["parcel_key"]),
                 ).fetchall()
             )
-        if parcel["lat"] is not None and parcel["lon"] is not None:
-            nearby = conn.execute(
-                """
-                SELECT * FROM feed_records
-                WHERE feed_name = ? AND lat BETWEEN ? AND ? AND lon BETWEEN ? AND ?
-                LIMIT 100
-                """,
-                (feed["name"], parcel["lat"] - 0.0005, parcel["lat"] + 0.0005, parcel["lon"] - 0.0005, parcel["lon"] + 0.0005),
-            ).fetchall()
-            for record in nearby:
-                if record["lat"] is not None and record["lon"] is not None:
-                    if distance_meters(parcel["lat"], parcel["lon"], record["lat"], record["lon"]) <= 40:
-                        records.append(record)
-
         seen: set[int] = set()
         packed: list[dict] = []
         for record in records:
@@ -876,13 +884,9 @@ def lookup_census_tract(lat: float, lon: float) -> dict:
         }
 
 
-def osm_context(parcel: sqlite3.Row) -> dict:
-    if parcel["lat"] is None or parcel["lon"] is None:
-        return {"available": False, "note": "Parcel has no coordinates.", "features": []}
-    radius = int(os.getenv("OSM_RADIUS_METERS", "60"))
-    query = textwrap.dedent(
+def osm_selection(parcel: sqlite3.Row | dict, radius: int) -> str:
+    return textwrap.dedent(
         f"""
-        [out:json][timeout:25];
         (
           way(around:{radius},{parcel['lat']},{parcel['lon']})["building"];
           way(around:{radius},{parcel['lat']},{parcel['lon']})["landuse"];
@@ -890,16 +894,33 @@ def osm_context(parcel: sqlite3.Row) -> dict:
           node(around:{radius},{parcel['lat']},{parcel['lon']})["shop"];
           node(around:{radius},{parcel['lat']},{parcel['lon']})["historic"];
         );
-        out tags center 20;
         """
     ).strip()
-    endpoint = os.getenv("OVERPASS_URL", "https://overpass-api.de/api/interpreter")
-    try:
-        data = post_json(endpoint, {"data": query}, timeout=45, form=True)
-    except Exception as exc:
-        return {"available": False, "note": f"OpenStreetMap lookup failed: {exc}", "features": []}
+
+
+def query_overpass(query: str) -> tuple[dict, str]:
+    endpoints = [os.getenv("OVERPASS_URL", "https://overpass-api.de/api/interpreter")]
+    endpoints.extend(os.getenv("OVERPASS_FALLBACK_URLS", "https://overpass.private.coffee/api/interpreter").split(","))
+    errors = []
+    for endpoint in dict.fromkeys(url.strip() for url in endpoints if url.strip()):
+        try:
+            data = post_json(endpoint, {"data": query}, headers={
+                "Accept": "application/json",
+                "Referer": "https://www.datacuse.com/projects/syracuse-property-atlas/",
+            }, timeout=60, form=True)
+            if data.get("remark") or not isinstance(data.get("elements"), list):
+                raise ValueError(data.get("remark") or "Missing elements in Overpass response")
+            return data, endpoint
+        except (urllib.error.URLError, OSError, ValueError) as exc:
+            errors.append(f"{urllib.parse.urlparse(endpoint).hostname}: {exc}")
+            if isinstance(exc, urllib.error.HTTPError) and exc.code in (406, 429):
+                time.sleep(30)
+    raise RuntimeError("; ".join(errors))
+
+
+def osm_result(elements: list[dict], radius: int, endpoint: str) -> dict:
     features = []
-    for element in data.get("elements", [])[:20]:
+    for element in elements[:20]:
         tags = element.get("tags", {})
         features.append(
             {
@@ -917,10 +938,45 @@ def osm_context(parcel: sqlite3.Row) -> dict:
     return {
         "available": True,
         "radius_meters": radius,
+        "fetched_at": utc_now(),
+        "source": endpoint,
         "features": features,
         "summary": summarize_osm_features(features),
         "notable_features": notable_osm_features(features),
     }
+
+
+def osm_context(parcel: sqlite3.Row | dict) -> dict:
+    radius = int(os.getenv("OSM_RADIUS_METERS", "60"))
+    failure = {"available": False, "radius_meters": radius, "features": [], "checked_at": utc_now()}
+    if parcel["lat"] is None or parcel["lon"] is None:
+        return {**failure, "note": "Parcel has no coordinates."}
+    try:
+        query = "[out:json][timeout:25];\n" + osm_selection(parcel, radius) + "\nout tags center 20;"
+        data, endpoint = query_overpass(query)
+        return osm_result(data["elements"], radius, endpoint)
+    except RuntimeError as exc:
+        return {**failure, "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.", "error": str(exc)}
+
+
+def osm_context_batch(parcels: list[dict]) -> list[dict]:
+    """Use count markers to keep each parcel's results separate in one request."""
+    radius = int(os.getenv("OSM_RADIUS_METERS", "60"))
+    query = "[out:json][timeout:45];\n" + "\n".join(
+        osm_selection(parcel, radius) + "\nout count; out tags center 20;" for parcel in parcels
+    )
+    data, endpoint = query_overpass(query)
+    groups: list[list[dict]] = []
+    for element in data["elements"]:
+        if element.get("type") == "count":
+            groups.append([])
+        elif not groups:
+            raise RuntimeError("Overpass batch is missing its first parcel marker")
+        else:
+            groups[-1].append(element)
+    if len(groups) != len(parcels):
+        raise RuntimeError("Overpass returned an incomplete batch; keeping existing data")
+    return [osm_result(elements, radius, endpoint) for elements in groups]
 
 
 def summarize_osm_features(features: list[dict]) -> dict:
@@ -988,7 +1044,9 @@ def load_entries() -> list[dict]:
 
 def save_entries(entries: list[dict]) -> None:
     ENTRIES_PATH.parent.mkdir(parents=True, exist_ok=True)
-    ENTRIES_PATH.write_text(json.dumps(entries, indent=2, sort_keys=True), encoding="utf-8")
+    temporary = ENTRIES_PATH.with_suffix(".json.tmp")
+    temporary.write_text(json.dumps(entries, indent=2, sort_keys=True), encoding="utf-8")
+    temporary.replace(ENTRIES_PATH)
 
 
 def property_url(entry_id: int | str) -> str:
@@ -1139,6 +1197,7 @@ def publish_parcel(conn: sqlite3.Connection, parcel: sqlite3.Row) -> dict:
         "image_note": image_error,
         "image_quality": image_status,
         "open_data": matches,
+        "open_data_refreshed_at": {row[0]: row[1] for row in conn.execute("SELECT feed_name, refreshed_at FROM feed_sync")},
         "census_tract": census,
         "osm": osm,
         "ai_analysis": ai,
@@ -1186,7 +1245,10 @@ def list_html(values: object) -> str:
 
 def osm_summary_html(osm: dict) -> str:
     if not osm.get("available"):
-        return f"<p>{html.escape(osm.get('note') or 'No nearby OSM features returned.')}</p>"
+        note = osm.get("note") or "Nearby map data is temporarily unavailable."
+        if note.startswith("OpenStreetMap lookup failed:"):
+            note = "Nearby map data is temporarily unavailable. This does not mean there are no mapped features."
+        return f"<p>{html.escape(note)}</p>"
 
     summary = osm.get("summary") or summarize_osm_features(osm.get("features") or [])
     notable = osm.get("notable_features") or notable_osm_features(osm.get("features") or [])
@@ -1496,11 +1558,14 @@ def property_page_html(entry: dict) -> str:
     feeds = []
     for feed in OPEN_DATA_FEEDS:
         records = entry.get("open_data", {}).get(feed["name"], [])
+        refreshed_at = entry.get("open_data_refreshed_at", {}).get(feed["name"])
+        freshness = f"<p>Records refreshed {html.escape(refreshed_at[:10])}.</p>" if refreshed_at else "<p>Feed refresh date not recorded.</p>"
         feeds.append(
             f"""
             <section class="feed-panel">
                 <h4>{html.escape(feed["label"])} <span>{len(records)}</span></h4>
                 {record_preview(records)}
+                {freshness}
                 <p><a href="{html.escape(feed['url'])}">Source: {html.escape(feed['label'])}</a></p>
             </section>
             """
@@ -1532,6 +1597,7 @@ def property_page_html(entry: dict) -> str:
     ) or f"<p>{html.escape(census.get('note') or 'No ACS tract context available.')}</p>"
     osm = entry.get("osm", {})
     osm_html = osm_summary_html(osm)
+    osm_radius_html = f"<p>{html.escape(str(osm['radius_meters']))} meter search radius</p>" if osm.get("radius_meters") else ""
     image = entry.get("image")
     image_html = f'<img src="../../{html.escape(image)}" alt="Street View image for {html.escape(entry["title"])}">' if image else '<div class="image-missing">No Street View image</div>'
     return f"""<!DOCTYPE html>
@@ -1563,7 +1629,7 @@ def property_page_html(entry: dict) -> str:
       </header>
       <section class="record-intro">
         <h2>City records</h2>
-        <p>Matches use parcel IDs, normalized addresses, or nearby coordinates. Confirm a match against the source record before relying on it. Publication dates are not source-data dates.</p>
+        <p>Matches use parcel IDs or normalized property addresses. Nearby properties are not treated as matches. Records may include historical or closed cases; check each record's status and dates. Publication dates are not source-data dates.</p>
       </section>
       <div class="feed-grid">{''.join(feeds)}</div>
       <details class="ai-observations">
@@ -1599,7 +1665,7 @@ def property_page_html(entry: dict) -> str:
         </section>
         <section>
           <h4>OpenStreetMap nearby</h4>
-          <p>{html.escape(str(osm.get("radius_meters") or ""))} meter search radius</p>
+          {osm_radius_html}
           {osm_html}
         </section>
       </div>
@@ -1640,7 +1706,7 @@ def cmd_run_once(args: argparse.Namespace) -> None:
         if conn.execute("SELECT COUNT(*) FROM parcels WHERE published_at IS NULL").fetchone()[0] == 0:
             print("No unpublished parcels found; seeding any missing parcels from the parcel feed.")
             seed_parcels(conn, limit=args.limit)
-        if args.refresh_open_data or conn.execute("SELECT COUNT(*) FROM feed_records").fetchone()[0] == 0:
+        if args.refresh_open_data or feeds_need_refresh(conn):
             print("Refreshing open-data feeds.")
             refresh_open_data(conn, limit=args.limit)
         if args.id or args.address:
@@ -1654,6 +1720,47 @@ def cmd_run_once(args: argparse.Namespace) -> None:
 def cmd_build(args: argparse.Namespace) -> None:
     build_site(load_entries())
     print(f"Built {SITE_DIR / 'index.html'}")
+
+
+def cmd_repair_entries(args: argparse.Namespace) -> None:
+    """Refresh records in published entries without rerunning paid image/AI APIs."""
+    lock = ROOT / "data" / "hourly.lock"
+    with lock.open("x", encoding="utf-8") as handle:
+        handle.write(utc_now())
+    try:
+        entries = load_entries()
+        with sqlite3.connect(DB_PATH) as conn:
+            conn.row_factory = sqlite3.Row
+            init_db(conn)
+            if feeds_need_refresh(conn):
+                raise RuntimeError("Run refresh-open-data without --limit before repairing entries.")
+            refreshed = {row[0]: row[1] for row in conn.execute("SELECT feed_name, refreshed_at FROM feed_sync")}
+            for entry in entries:
+                parcel = conn.execute("SELECT * FROM parcels WHERE id = ?", (entry["id"],)).fetchone()
+                if parcel is None:
+                    raise RuntimeError(f"Missing parcel for published entry {entry['id']}")
+                entry["open_data"] = matching_records(conn, parcel)
+                entry["open_data_refreshed_at"] = refreshed
+                entry["flags"] = issue_flags(entry["open_data"], entry.get("ai_analysis") or {}, entry.get("image_quality"))
+                entry["review_reasons"] = review_reasons(entry)
+        save_entries(entries)
+        print(f"Re-matched city records for {len(entries)} published entries.", flush=True)
+        try:
+            if args.retry_osm:
+                failed = [entry for entry in entries if not entry.get("osm", {}).get("available") and entry.get("lat") is not None and entry.get("lon") is not None]
+                for start in range(0, len(failed), 20):
+                    batch = failed[start:start + 20]
+                    results = osm_context_batch(batch)
+                    for entry, result in zip(batch, results):
+                        entry["osm"] = result
+                    save_entries(entries)
+                    print(f"Repaired OpenStreetMap for {min(start + 20, len(failed))}/{len(failed)} entries.", flush=True)
+                    if start + 20 < len(failed):
+                        time.sleep(2)
+        finally:
+            build_site(entries)
+    finally:
+        lock.unlink()
 
 
 def cmd_status(args: argparse.Namespace) -> None:
@@ -1761,6 +1868,10 @@ def main() -> None:
 
     build = sub.add_parser("build-site", help="Rebuild the static website from entries.json.")
     build.set_defaults(func=cmd_build)
+
+    repair = sub.add_parser("repair-entries", help="Re-match published entries using complete cached feeds; preserve images, AI, and publication dates.")
+    repair.add_argument("--retry-osm", action="store_true", help="Retry failed OSM lookups in batches, saving progress after each batch.")
+    repair.set_defaults(func=cmd_repair_entries)
 
     status = sub.add_parser("status", help="Show local database counts.")
     status.set_defaults(func=cmd_status)

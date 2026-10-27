@@ -26,6 +26,26 @@ python scripts\property_atlas.py run-once
 
 Run `python scripts\property_atlas.py --help` for commands.
 
+City feeds are refreshed automatically when their last complete import is more than seven days old. Imports verify source counts and unique record IDs before replacing cached data. Limited test imports are marked incomplete and trigger a full refresh on the next normal run. Property matching uses parcel IDs and normalized property addresses; a nearby property's records are not attached by distance alone.
+
+To refresh the feeds and repair already published entries:
+
+```powershell
+python scripts\property_atlas.py refresh-open-data
+python scripts\property_atlas.py repair-entries --retry-osm
+```
+
+The repair preserves publication dates, images, and existing AI analysis. It updates city-record matches and their refresh dates, retries only failed OpenStreetMap lookups in batches of 20, and rebuilds the static pages. Completed batches are saved, so the command can be rerun after a service outage. It uses the hourly runner's lock file to avoid overlapping publication. These commands do not commit or push the site.
+
+OpenStreetMap requests identify the project, accept JSON, and fall back from the main Overpass server to the Private.coffee instance. Responses containing an Overpass runtime error are treated as failures, including partial results. HTTP 406/429 responses trigger a 30-second pause. Configure `OVERPASS_URL` and the comma-separated `OVERPASS_FALLBACK_URLS` to select other servers. Failed lookups retain the requested radius and diagnostics, while pages show an availability message.
+
+Run the Python regression checks (no additional packages required):
+
+```powershell
+python -m unittest discover -s scripts -p "test_*.py"
+python scripts\property_atlas.py build-site
+```
+
 For a fully free local run, leave `PROPERTY_IMAGE_PROVIDER` unset and install a local vision-capable Ollama model. Image analysis will run only when an image source is available.
 
 For hosted vision with local fallback, set `VISION_PROVIDER_CHAIN`. The recommended chain tries Gemini 3.5 Flash, then Gemini 2.5 Flash, then local Ollama.

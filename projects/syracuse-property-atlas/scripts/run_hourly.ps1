@@ -46,6 +46,9 @@ try {
             $AtlasArgs += @("--address", $Address)
         }
         python @AtlasArgs
+        if ($LASTEXITCODE -ne 0) {
+            throw "Atlas generation failed with exit code $LASTEXITCODE."
+        }
     }
     finally {
         Pop-Location
