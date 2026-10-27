@@ -1,5 +1,144 @@
 [
   {
+    "address": "216 Stedman St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "View of the main structure is almost entirely blocked by dense trees and bushes.",
+        "Parcel boundaries are unclear from this camera position."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "unclear",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "major",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "poor"
+      },
+      "confidence": "low",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.72",
+            "width": "0.85",
+            "x": "0.12",
+            "y": "0.22"
+          },
+          "confidence": "high",
+          "label": "vegetation overgrowth",
+          "reason": "Dense, unmanaged brush and foliage heavily cover the terrain and obstruct views of the property."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Extensive vegetation overgrowth obscuring the lot and potential walkways or entryways."
+      ],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The street-level view shows a sloped lot heavily covered with mature trees and dense overgrown brush, obstructing full view of any primary structure.",
+      "visible_conditions": [
+        "Heavy vegetation, dense shrubs, and mature trees obscure most of the property lot.",
+        "A small portion of a light-colored exterior structure is visible on the far left edge of the frame."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "unclear",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Code violations: 1 matching record",
+      "Image-only flag: Extensive vegetation overgrowth obscuring the lot and potential walkways or entryways.",
+      "Needs human review"
+    ],
+    "id": 992,
+    "image": "images/parcel-000992.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 160643,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08011868198168,
+    "lon": -76.15489991001559,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.08014946,
+          "Longitude": -76.15496612,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 150119,
+          "SBL": "003.-19-08.0",
+          "Vacant": null,
+          "complaint_address": "216 Stedman St",
+          "complaint_number": "2020-08464",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1591891975000,
+          "inspector_id": 497,
+          "issued_to": "John T. Fleming & Susan M. Jenks",
+          "issued_to_address": "220 Stedman St ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1589817991383,
+          "status_date": 1599782400000,
+          "status_type_name": "Closed",
+          "violation": "SPCC-Sec. 27-133 Registration",
+          "violation_date": 1589818375210,
+          "violation_id": 94190,
+          "violation_number": "97885"
+        }
+      ],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-10-27T11:46:47+00:00",
+      "rental_registry": "2026-10-27T11:46:47+00:00",
+      "unfit_properties": "2026-10-27T11:46:47+00:00",
+      "vacant_properties": "2026-10-27T11:46:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-10-27T21:02:56+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "003-19-080",
+    "published_at": "2026-10-27T21:04:27+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "216 Stedman St"
+  },
+  {
     "address": "245 Tex Simone Dr",
     "ai_analysis": {
       "available": true,
