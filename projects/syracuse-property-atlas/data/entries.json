@@ -1,5 +1,100 @@
 [
   {
+    "address": "220 Stedman St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Heavy tree canopy and foliage obscure the roof and large portions of the upper facade.",
+        "Elevated position on sloped lot limits street-level visibility of entryways."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "not_visible",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A residential property situated on a sloped lot with terraced wooden retaining walls and mature evergreen trees partially obscuring the main structure.",
+      "visible_conditions": [
+        "Light-colored siding visible on main structure",
+        "Terraced timber retaining walls along front yard slope",
+        "Concrete or stone steps with handrail leading up the grade",
+        "Mature trees partially block direct view of roof and main structure",
+        "Fallen leaves distributed across the yard and parking area"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 995,
+    "image": "images/parcel-000995.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 151825,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.080250769524554,
+    "lon": -76.15489744848253,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-10-27T11:46:47+00:00",
+      "rental_registry": "2026-10-27T11:46:47+00:00",
+      "unfit_properties": "2026-10-27T11:46:47+00:00",
+      "vacant_properties": "2026-10-27T11:46:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-10-28T10:49:22+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "003-19-090",
+    "published_at": "2026-10-28T10:50:53+00:00",
+    "review_reasons": [],
+    "title": "220 Stedman St"
+  },
+  {
     "address": "211 Nbt Bank Pkwy",
     "ai_analysis": {
       "available": true,
