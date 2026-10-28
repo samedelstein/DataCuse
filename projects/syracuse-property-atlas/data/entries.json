@@ -1,5 +1,98 @@
 [
   {
+    "address": "1815 Salina St N & Hiawatha Bl",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "View primarily captures a parking lot with multiple adjacent commercial properties, making specific parcel boundaries unclear from this perspective."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The street-level view shows a commercial parking area surrounded by commercial and industrial buildings with no obvious exterior damage.",
+      "visible_conditions": [
+        "Paved parking lot with multiple parked vehicles",
+        "Single-story commercial buildings visible in the foreground and midground",
+        "Multi-story brick commercial structure visible in the background",
+        "Exterior facades and signage appear intact with no obvious structural defects"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1127",
+        "Median gross rent": "65900",
+        "Median household income": "36639",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "48.6",
+        "Renter-occupied share": "6.7",
+        "Total population": "2133",
+        "Vacancy rate": "16.0"
+      },
+      "name": "Census Tract 5.01; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000501",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 997,
+    "image": "images/parcel-000997.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 58865,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.070228212030685,
+    "lon": -76.16675901107547,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-10-27T11:46:47+00:00",
+      "rental_registry": "2026-10-27T11:46:47+00:00",
+      "unfit_properties": "2026-10-27T11:46:47+00:00",
+      "vacant_properties": "2026-10-27T11:46:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-10-28T12:02:51+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "002-01-010",
+    "published_at": "2026-10-28T12:04:22+00:00",
+    "review_reasons": [],
+    "title": "1815 Salina St N & Hiawatha Bl"
+  },
+  {
     "address": "256 Hood Ave",
     "ai_analysis": {
       "available": true,
