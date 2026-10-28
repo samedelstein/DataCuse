@@ -1,5 +1,128 @@
 [
   {
+    "address": "101 Wolf St & Lodi St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view of the main building is from a distance and partially obstructed by trees and a fence, limiting detailed assessment of some building features.",
+        "The exact boundaries of the parcel are not discernible from the image, making it difficult to confirm if the entire grassy area is part of the property."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "unclear",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.105,
+            "width": 0.26,
+            "x": 0.448,
+            "y": 0.595
+          },
+          "confidence": "high",
+          "label": "Deteriorated fence",
+          "reason": "The fence appears to be in a state of disrepair, with missing or damaged sections."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Deteriorated fence visible in front of the main building."
+      ],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a multi-story brick building with a large, maintained grassy area in the foreground, though a deteriorated fence is present near the building.",
+      "visible_conditions": [
+        "Multi-story brick building visible in the background.",
+        "A sign with 'WOLF ST' is visible on the building.",
+        "A large grassy lot is in the foreground, appearing maintained.",
+        "A deteriorated fence is visible in front of the main building.",
+        "Paved areas or parking lots are visible to the left of the main building.",
+        "Trees and other vegetation are present but do not appear overgrown."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1127",
+        "Median gross rent": "65900",
+        "Median household income": "36639",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "48.6",
+        "Renter-occupied share": "6.7",
+        "Total population": "2133",
+        "Vacancy rate": "16.0"
+      },
+      "name": "Census Tract 5.01; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000501",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Deteriorated fence visible in front of the main building."
+    ],
+    "id": 1008,
+    "image": "images/parcel-001008.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 63831,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.06953123819882,
+    "lon": -76.16637549600912,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-10-27T11:46:47+00:00",
+      "rental_registry": "2026-10-27T11:46:47+00:00",
+      "unfit_properties": "2026-10-27T11:46:47+00:00",
+      "vacant_properties": "2026-10-27T11:46:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-10-28T23:03:01+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "002-01-070",
+    "published_at": "2026-10-28T23:04:32+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "101 Wolf St & Lodi St"
+  },
+  {
     "address": "321-23 Seventh North St",
     "ai_analysis": {
       "available": true,
