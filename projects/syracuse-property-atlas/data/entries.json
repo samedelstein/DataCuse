@@ -1,5 +1,123 @@
 [
   {
+    "address": "232 Stedman St & Seventh N St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Exact parcel lines are unclear from street view, making it difficult to confirm if all visible structures belong to the same property key."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The visible property features a well-maintained lawn area with a central wooden gazebo, flanked by a single-story home on the left and a shed on the right.",
+      "visible_conditions": [
+        "Lawn is mowed and maintained",
+        "Central wooden gazebo structure appears intact",
+        "Single-story home on the left shows intact roof shingles and exterior siding",
+        "Small accessory shed visible on the right side of the lot"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record"
+    ],
+    "id": 998,
+    "image": "images/parcel-000998.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 110810,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08054855384304,
+    "lon": -76.15491661810874,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.08057432,
+          "Longitude": -76.15490881,
+          "NeedsRR": "Yes",
+          "ObjectId": 1744,
+          "PropertyAddress": "232 Stedman St & Seventh N St",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-19-10.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "James Piazza",
+          "valid_until": null,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-10-27T11:46:47+00:00",
+      "rental_registry": "2026-10-27T11:46:47+00:00",
+      "unfit_properties": "2026-10-27T11:46:47+00:00",
+      "vacant_properties": "2026-10-27T11:46:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-10-28T13:02:54+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "003-19-100",
+    "published_at": "2026-10-28T13:04:25+00:00",
+    "review_reasons": [],
+    "title": "232 Stedman St & Seventh N St"
+  },
+  {
     "address": "1815 Salina St N & Hiawatha Bl",
     "ai_analysis": {
       "available": true,
