@@ -1,5 +1,151 @@
 [
   {
+    "address": "331 Seventh North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Street-level front perspective hides the rear elevation, side yards, and rear roof slopes.",
+        "Known code violation details cannot be verified from a single front-facing exterior image."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows a well-maintained two-story residential structure with light siding, an enclosed front porch area, intact windows, and a mowed front lawn.",
+      "visible_conditions": [
+        "Light-colored siding appears complete and free of major visible structural defects.",
+        "Asphalt shingle roof appears intact and in fair to good condition from the street view.",
+        "Windows and front entry structure are intact with no visible boarding or breakage.",
+        "Front lawn is mowed and maintained with no visible overgrown vegetation blocking entries or walkways."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Code violations: 1 matching record"
+    ],
+    "id": 1001,
+    "image": "images/parcel-001001.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 88241,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08050578913668,
+    "lon": -76.15478310659437,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.08047841,
+          "Longitude": -76.15482565,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 70867,
+          "SBL": "003.-19-11.0",
+          "Vacant": null,
+          "complaint_address": "331 Seventh North St",
+          "complaint_number": "2026-00536",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1771844632000,
+          "inspector_id": 1222,
+          "issued_to": "James Piazza",
+          "issued_to_address": "108 Sedgwick Dr ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13203",
+          "open_date": 1769511792750,
+          "status_date": 1774828800000,
+          "status_type_name": "Closed",
+          "violation": "SPCC-Sec. 27-133 Registration",
+          "violation_date": 1769511832363,
+          "violation_id": 211866,
+          "violation_number": "2026-01356"
+        }
+      ],
+      "rental_registry": [
+        {
+          "Latitude": 43.08047841,
+          "Longitude": -76.15482565,
+          "NeedsRR": "Yes",
+          "ObjectId": 1747,
+          "PropertyAddress": "331 Seventh North St",
+          "RR_app_received": 1773792000000,
+          "RR_contact_name": "James Piazza",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "Yes",
+          "SBL": "003.-19-11.0",
+          "SHAPE": null,
+          "completion_date": 1773792000000,
+          "completion_type_name": "Family Based Exemption Granted",
+          "inspect_period": 1773792000000,
+          "pc_owner": "James Piazza",
+          "valid_until": 1868486400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-10-27T11:46:47+00:00",
+      "rental_registry": "2026-10-27T11:46:47+00:00",
+      "unfit_properties": "2026-10-27T11:46:47+00:00",
+      "vacant_properties": "2026-10-27T11:46:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-10-28T16:03:08+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "003-19-110",
+    "published_at": "2026-10-28T16:04:39+00:00",
+    "review_reasons": [],
+    "title": "331 Seventh North St"
+  },
+  {
     "address": "1721 Salina St N",
     "ai_analysis": {
       "available": true,
