@@ -1,5 +1,164 @@
 [
   {
+    "address": "1721 Salina St N",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.25,
+            "width": 0.6,
+            "x": 0.35,
+            "y": 0.45
+          },
+          "confidence": "high",
+          "label": "Cracked Pavement",
+          "reason": "Visible cracking and unevenness in the paved parking lot."
+        },
+        {
+          "bbox": {
+            "height": 0.35,
+            "width": 1.0,
+            "x": 0.0,
+            "y": 0.65
+          },
+          "confidence": "high",
+          "label": "Unmanaged Vegetation/Debris",
+          "reason": "Areas of unmanaged grass/weeds and scattered debris in the unpaved sections of the lot."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Cracked and uneven paved surfaces in the parking lot.",
+        "Areas of unmanaged vegetation and scattered debris in the unpaved sections of the lot."
+      ],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property features a commercial building with blue siding and a large paved lot, which exhibits some cracking and areas of unmanaged vegetation.",
+      "visible_conditions": [
+        "A commercial building with blue siding and multiple garage bay doors is visible.",
+        "The property features a large paved parking area, which appears to have some cracking and scattered gravel/dirt.",
+        "A grassy area with mature trees is present on the left side of the lot.",
+        "Some unmanaged grass and weeds are visible in the unpaved sections of the lot.",
+        "Several vehicles are parked on the lot."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1127",
+        "Median gross rent": "65900",
+        "Median household income": "36639",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "48.6",
+        "Renter-occupied share": "6.7",
+        "Total population": "2133",
+        "Vacancy rate": "16.0"
+      },
+      "name": "Census Tract 5.01; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000501",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Code violations: 1 matching record",
+      "Image-only flag: Cracked and uneven paved surfaces in the parking lot.",
+      "Image-only flag: Areas of unmanaged vegetation and scattered debris in the unpaved sections of the lot."
+    ],
+    "id": 1000,
+    "image": "images/parcel-001000.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 70262,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07005956283082,
+    "lon": -76.16628757807099,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07003267,
+          "Longitude": -76.1663177,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 65403,
+          "SBL": "002.-01-02.0",
+          "Vacant": null,
+          "complaint_address": "1721 Salina St N",
+          "complaint_number": "2026-01664",
+          "complaint_type_name": "Property Maintenance-Ext",
+          "complaint_zip": 13208,
+          "comply_by_date": 1774280589000,
+          "inspector_id": 1222,
+          "issued_to": "Emad Realty LLC",
+          "issued_to_address": "501 Mallard Dr ",
+          "issued_to_city": "Camillus",
+          "issued_to_zip": "13031",
+          "open_date": 1773330075433,
+          "status_date": 1774224000000,
+          "status_type_name": "Closed",
+          "violation": "SPCC - Section 27-72 (e) -Trash & Debris",
+          "violation_date": 1773330189017,
+          "violation_id": 214255,
+          "violation_number": "2026-03749"
+        }
+      ],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-10-27T11:46:47+00:00",
+      "rental_registry": "2026-10-27T11:46:47+00:00",
+      "unfit_properties": "2026-10-27T11:46:47+00:00",
+      "vacant_properties": "2026-10-27T11:46:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-10-28T15:03:18+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "002-01-020",
+    "published_at": "2026-10-28T15:04:48+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1721 Salina St N"
+  },
+  {
     "address": "260 Hood Ave",
     "ai_analysis": {
       "available": true,
