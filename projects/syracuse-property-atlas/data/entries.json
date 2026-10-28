@@ -1,5 +1,98 @@
 [
   {
+    "address": "256 Hood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Assessment is limited to the street-facing front elevation and visible portion of the driveway side; rear and secondary side structures are not fully visible."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The property is a two-story residential building featuring light-colored siding, an enclosed front porch area, an intact shingled roof, and a paved driveway leading to a rear garage.",
+      "visible_conditions": [
+        "Two-story residential building with light-colored siding and gable roof.",
+        "Enclosed front entry porch with glass windows and central door.",
+        "Paved driveway running along the side of the property toward a detached garage.",
+        "Front yard features maintained grass, small shrubs, and foundation plantings."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 996,
+    "image": "images/parcel-000996.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 80998,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.076205065585256,
+    "lon": -76.14694476986028,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-10-27T11:46:47+00:00",
+      "rental_registry": "2026-10-27T11:46:47+00:00",
+      "unfit_properties": "2026-10-27T11:46:47+00:00",
+      "vacant_properties": "2026-10-27T11:46:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-10-28T11:02:55+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "005-02-790",
+    "published_at": "2026-10-28T11:04:25+00:00",
+    "review_reasons": [],
+    "title": "256 Hood Ave"
+  },
+  {
     "address": "220 Stedman St",
     "ai_analysis": {
       "available": true,
