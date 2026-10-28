@@ -1,5 +1,129 @@
 [
   {
+    "address": "260 Hood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Exact parcel alignment between adjacent structures is not explicitly marked.",
+        "The known public record code violation is not clearly identifiable on the front exterior visible from the street.",
+        "Rear elevation and side yards are partially obscured or not visible."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "Street view shows a two-story residential building with intact light siding, clean front entry steps, and a well-maintained lawn alongside a paved driveway.",
+      "visible_conditions": [
+        "Exterior siding appears intact with no major damage visible from street view.",
+        "Asphalt shingle roof appears structurally sound with no visible missing shingles.",
+        "Windows and doors appear unbroken and functional.",
+        "Front porch and brick entry steps appear intact.",
+        "Lawn and foundation plantings are trimmed and maintained."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Code violations: 1 matching record"
+    ],
+    "id": 999,
+    "image": "images/parcel-000999.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 76039,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0762893316078,
+    "lon": -76.14702920178928,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07625877,
+          "Longitude": -76.14708867,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 69520,
+          "SBL": "005.-02-80.0",
+          "Vacant": null,
+          "complaint_address": "260 Hood Ave",
+          "complaint_number": "2026-01018",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1773316315000,
+          "inspector_id": 1222,
+          "issued_to": "Van Phan",
+          "issued_to_address": "907 Park St",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1770894732100,
+          "status_date": 1772582400000,
+          "status_type_name": "Closed",
+          "violation": "SPCC-Sec. 27-133 Registration",
+          "violation_date": 1770897115817,
+          "violation_id": 212893,
+          "violation_number": "2026-02383"
+        }
+      ],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-10-27T11:46:47+00:00",
+      "rental_registry": "2026-10-27T11:46:47+00:00",
+      "unfit_properties": "2026-10-27T11:46:47+00:00",
+      "vacant_properties": "2026-10-27T11:46:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-10-28T14:03:18+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "005-02-800",
+    "published_at": "2026-10-28T14:04:49+00:00",
+    "review_reasons": [],
+    "title": "260 Hood Ave"
+  },
+  {
     "address": "232 Stedman St & Seventh N St",
     "ai_analysis": {
       "available": true,
