@@ -1,5 +1,118 @@
 [
   {
+    "address": "321-23 Seventh North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "View is limited to the front street-level elevation.",
+        "Multiple structures are visible along the shared driveway, and exact parcel boundaries are unclear from the image alone."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.06",
+            "width": "0.07",
+            "x": "0.01",
+            "y": "0.42"
+          },
+          "confidence": "medium",
+          "label": "Boarded opening",
+          "reason": "Wooden board or paneling covering window or door opening on the left structure."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Covered or boarded opening on the structure on the left side of the driveway."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows a multi-story residential building with light siding and an enclosed porch, alongside an asphalt driveway and an adjacent structure, observed from a street-level perspective.",
+      "visible_conditions": [
+        "Primary structure on the right features light horizontal siding and an enclosed front porch with large windows.",
+        "Roof shingles on visible structures appear intact with no major missing sections.",
+        "Adjacent structure on the left shows covered or boarded opening on the lower level.",
+        "Asphalt driveway between structures displays minor surface cracking and light weed growth along seams."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "yes",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Covered or boarded opening on the structure on the left side of the driveway."
+    ],
+    "id": 1007,
+    "image": "images/parcel-001007.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 82087,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.080354896671466,
+    "lon": -76.1545656310499,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-10-27T11:46:47+00:00",
+      "rental_registry": "2026-10-27T11:46:47+00:00",
+      "unfit_properties": "2026-10-27T11:46:47+00:00",
+      "vacant_properties": "2026-10-27T11:46:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-10-28T22:02:57+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "003-19-130",
+    "published_at": "2026-10-28T22:04:28+00:00",
+    "review_reasons": [
+      "Possible image-only issue",
+      "boarded windows or doors"
+    ],
+    "title": "321-23 Seventh North St"
+  },
+  {
     "address": "268 Hood Ave",
     "ai_analysis": {
       "available": true,
