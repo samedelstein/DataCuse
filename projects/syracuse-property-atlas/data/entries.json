@@ -1,5 +1,98 @@
 [
   {
+    "address": "211 Nbt Bank Pkwy",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Only a single high exterior wall of the structure is visible from this distance and angle.",
+        "Roof surface, building entrances, and windows are not clearly visible."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A large commercial building featuring a light-colored metal siding facade facing a large paved parking area.",
+      "visible_conditions": [
+        "Large vertical metal siding facade appears intact and in good overall physical condition.",
+        "Extensive paved asphalt/concrete lot in the foreground with a parked motorcoach.",
+        "Ground shows light moisture/snow residue with no visible structural debris or damage."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "816",
+        "Median gross rent": "353800",
+        "Median household income": "91696",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "11.3",
+        "Renter-occupied share": "7.8",
+        "Total population": "1225",
+        "Vacancy rate": "2.8"
+      },
+      "name": "Census Tract 1; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000100",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 994,
+    "image": "images/parcel-000994.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 46853,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.076880314487575,
+    "lon": -76.16825619109645,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-10-27T11:46:47+00:00",
+      "rental_registry": "2026-10-27T11:46:47+00:00",
+      "unfit_properties": "2026-10-27T11:46:47+00:00",
+      "vacant_properties": "2026-10-27T11:46:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-10-28T07:42:35+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "0012-02-260",
+    "published_at": "2026-10-28T07:44:07+00:00",
+    "review_reasons": [],
+    "title": "211 Nbt Bank Pkwy"
+  },
+  {
     "address": "252 Hood Ave",
     "ai_analysis": {
       "available": true,
