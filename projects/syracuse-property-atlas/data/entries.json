@@ -1,5 +1,98 @@
 [
   {
+    "address": "103 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Street-view perspective shows an open lot without a clear primary structure on the immediate site.",
+        "Exact parcel boundaries cannot be verified solely from street-level imagery."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "not_visible",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "vacant_lot",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The view shows an open grassy parcel with scattered mature trees and distant background commercial or mixed-use structures.",
+      "visible_conditions": [
+        "Open grass lot appears maintained with trimmed grass.",
+        "Scattered trees present on and adjacent to the lot.",
+        "Fencing and commercial buildings visible in the far background."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1127",
+        "Median gross rent": "65900",
+        "Median household income": "36639",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "48.6",
+        "Renter-occupied share": "6.7",
+        "Total population": "2133",
+        "Vacancy rate": "16.0"
+      },
+      "name": "Census Tract 5.01; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000501",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 1005,
+    "image": "images/parcel-001005.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 77842,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.069302381529056,
+    "lon": -76.1662048350813,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-10-27T11:46:47+00:00",
+      "rental_registry": "2026-10-27T11:46:47+00:00",
+      "unfit_properties": "2026-10-27T11:46:47+00:00",
+      "vacant_properties": "2026-10-27T11:46:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-10-28T20:02:52+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "002-01-060",
+    "published_at": "2026-10-28T20:04:24+00:00",
+    "review_reasons": [],
+    "title": "103 Wolf St"
+  },
+  {
     "address": "327 Seventh North St",
     "ai_analysis": {
       "available": true,
