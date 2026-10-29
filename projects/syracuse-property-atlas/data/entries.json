@@ -1,5 +1,358 @@
 [
   {
+    "address": "317-19 Seventh North St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image appears to be of recent vintage, and the view is not obstructed, allowing for a clear assessment of the visible conditions. The image quality is good, and there is no visible issue not already recorded in the known public records."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.766",
+            "width": "0.928",
+            "x": "0.057",
+            "y": "0.177"
+          },
+          "confidence": "high",
+          "label": "The house has a visible front yard",
+          "reason": "It is a typical residential property with a front yard visible in the image"
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "No visible issues not already recorded in the known public records"
+      ],
+      "property_type_guess": "single_family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a two-story residential building with a visible front yard. There are no overt signs of disrepair or neglect, and no abandoned or discarded items. The exterior appears to be well-maintained, with the landscaping and yard being typical for a suburban home. There is a car parked in the driveway and what looks like a whiteboard in the window, suggesting that the property is inhabited. No visible issues or code violations are evident in the image.",
+      "visible_conditions": [
+        "The yard and landscaping are well-maintained with no overt signs of neglect or disrepair",
+        "There are no visible issues such as debris, fire damage, or structural damage",
+        "The exterior of the house shows no signs of disrepair or neglect",
+        "There are no visible issues related to vegetation overgrowth"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "FCC Census Block API"
+    },
+    "flags": [
+      "Vacant properties: 1 matching record",
+      "Code violations: 7 matching records",
+      "Unfit properties: 1 matching record",
+      "Image-only flag: No visible issues not already recorded in the known public records"
+    ],
+    "id": 1011,
+    "image": "images/parcel-001011.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 91106,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08023936502183,
+    "lon": -76.15449899919585,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.08025207,
+          "Longitude": -76.15449943,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 141988,
+          "SBL": "003.-19-14.0",
+          "Vacant": "Residential",
+          "complaint_address": "317-19 Seventh North St",
+          "complaint_number": "2022-10229",
+          "complaint_type_name": "Vacant House",
+          "complaint_zip": 13208,
+          "comply_by_date": 1671202096000,
+          "inspector_id": 1222,
+          "issued_to": "deleted contact",
+          "issued_to_address": "Missing Contact ID : 63152",
+          "issued_to_city": null,
+          "issued_to_zip": null,
+          "open_date": 1669631215207,
+          "status_date": 1669819696687,
+          "status_type_name": "Open",
+          "violation": "2020 PMCNYS - Section 504.3 - Plumbing system hazards",
+          "violation_date": 1669819696687,
+          "violation_id": 146301,
+          "violation_number": "2022-21999"
+        },
+        {
+          "Latitude": 43.08025207,
+          "Longitude": -76.15449943,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 141989,
+          "SBL": "003.-19-14.0",
+          "Vacant": "Residential",
+          "complaint_address": "317-19 Seventh North St",
+          "complaint_number": "2022-10229",
+          "complaint_type_name": "Vacant House",
+          "complaint_zip": 13208,
+          "comply_by_date": 1670510553000,
+          "inspector_id": 1222,
+          "issued_to": "deleted contact",
+          "issued_to_address": "Missing Contact ID : 63152",
+          "issued_to_city": null,
+          "issued_to_zip": null,
+          "open_date": 1669631215207,
+          "status_date": 1669819353233,
+          "status_type_name": "Open",
+          "violation": "SPCC - Section 27-72 (f) - Overgrowth",
+          "violation_date": 1669819607590,
+          "violation_id": 146300,
+          "violation_number": "2022-21998"
+        },
+        {
+          "Latitude": 43.08025207,
+          "Longitude": -76.15449943,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 141990,
+          "SBL": "003.-19-14.0",
+          "Vacant": "Residential",
+          "complaint_address": "317-19 Seventh North St",
+          "complaint_number": "2022-10229",
+          "complaint_type_name": "Vacant House",
+          "complaint_zip": 13208,
+          "comply_by_date": 1670510553000,
+          "inspector_id": 1222,
+          "issued_to": "deleted contact",
+          "issued_to_address": "Missing Contact ID : 63152",
+          "issued_to_city": null,
+          "issued_to_zip": null,
+          "open_date": 1669631215207,
+          "status_date": 1673308800000,
+          "status_type_name": "Closed",
+          "violation": "2020 PMCNYS - Section 308.1 - Accumulation of rubbish or garbage",
+          "violation_date": 1669819353233,
+          "violation_id": 146299,
+          "violation_number": "2022-21997"
+        },
+        {
+          "Latitude": 43.08025207,
+          "Longitude": -76.15449943,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 141991,
+          "SBL": "003.-19-14.0",
+          "Vacant": "Residential",
+          "complaint_address": "317-19 Seventh North St",
+          "complaint_number": "2022-10229",
+          "complaint_type_name": "Vacant House",
+          "complaint_zip": 13208,
+          "comply_by_date": 1671201459000,
+          "inspector_id": 1222,
+          "issued_to": "deleted contact",
+          "issued_to_address": "Missing Contact ID : 63152",
+          "issued_to_city": null,
+          "issued_to_zip": null,
+          "open_date": 1669631215207,
+          "status_date": 1669819059143,
+          "status_type_name": "Open",
+          "violation": "2020 PMCNYS - Section 304.5 - Foundation Walls",
+          "violation_date": 1669819059143,
+          "violation_id": 146297,
+          "violation_number": "2022-21995"
+        },
+        {
+          "Latitude": 43.08025207,
+          "Longitude": -76.15449943,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 141992,
+          "SBL": "003.-19-14.0",
+          "Vacant": "Residential",
+          "complaint_address": "317-19 Seventh North St",
+          "complaint_number": "2022-10229",
+          "complaint_type_name": "Vacant House",
+          "complaint_zip": 13208,
+          "comply_by_date": 1671201295000,
+          "inspector_id": 1222,
+          "issued_to": "deleted contact",
+          "issued_to_address": "Missing Contact ID : 63152",
+          "issued_to_city": null,
+          "issued_to_zip": null,
+          "open_date": 1669631215207,
+          "status_date": 1669818895827,
+          "status_type_name": "Open",
+          "violation": "2020 PMCNYS - Section 304.10 Stairways, decks, porches, and balconies",
+          "violation_date": 1669818895827,
+          "violation_id": 146294,
+          "violation_number": "2022-21992"
+        },
+        {
+          "Latitude": 43.08025207,
+          "Longitude": -76.15449943,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 141993,
+          "SBL": "003.-19-14.0",
+          "Vacant": "Residential",
+          "complaint_address": "317-19 Seventh North St",
+          "complaint_number": "2022-10229",
+          "complaint_type_name": "Vacant House",
+          "complaint_zip": 13208,
+          "comply_by_date": 1670423346000,
+          "inspector_id": 1222,
+          "issued_to": "deleted contact",
+          "issued_to_address": "Missing Contact ID : 619081",
+          "issued_to_city": null,
+          "issued_to_zip": null,
+          "open_date": 1669631215207,
+          "status_date": 1669818546720,
+          "status_type_name": "Open",
+          "violation": "2020 PMCNYS - Section 107.1.3 - Structure Unfit for Human Occupancy",
+          "violation_date": 1669818546713,
+          "violation_id": 146291,
+          "violation_number": "2022-21989"
+        },
+        {
+          "Latitude": 43.08025207,
+          "Longitude": -76.15449943,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 141994,
+          "SBL": "003.-19-14.0",
+          "Vacant": "Residential",
+          "complaint_address": "317-19 Seventh North St",
+          "complaint_number": "2022-06783",
+          "complaint_type_name": "Overgrowth: Private, Occ",
+          "complaint_zip": 13208,
+          "comply_by_date": 1659369747000,
+          "inspector_id": 969,
+          "issued_to": "Mark & Roxanne Goodson",
+          "issued_to_address": "317-19 Seventh North St ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1658397765230,
+          "status_date": 1658764947000,
+          "status_type_name": "Open",
+          "violation": "SPCC - Section 27-72 (f) - Overgrowth",
+          "violation_date": 1658505747210,
+          "violation_id": 138126,
+          "violation_number": "2022-13777"
+        }
+      ],
+      "rental_registry": [],
+      "unfit_properties": [
+        {
+          "Latitude": 43.08025207,
+          "Longitude": -76.15449943,
+          "ObjectId": 383,
+          "SBL": "003.-19-14.0",
+          "Vacant": null,
+          "address": "317-19 Seventh North St",
+          "area_involved": "House",
+          "article": "A structure is unfit for human occupancy whenever such structure is unsafe, unlawful or, because of the degree to which the structure is in disrepair or lacks maintenance, is unsanitary, vermin or rat infested, contains filth and contamination, or lacks ventilation, illumination, sanitary or heating facilities or other essential equipment required by this code, or because the location of the structure consti\ntutes a hazard to the occupants of the structure or to the public.",
+          "comp_close_date": -2208988800000,
+          "comp_open_date": 1669631215207,
+          "comp_status": "Open",
+          "complaint_number": "2022-10229",
+          "complaint_type_name": "Vacant House",
+          "comply_by_date": 1670423346000,
+          "corrective_action": "House is unfit due to no plumbing",
+          "department_name": "Vacant Properties",
+          "owner_address": "5963 Pony Ln ",
+          "owner_city": "Cicero",
+          "owner_name": "Clarence Goodson",
+          "owner_state": "NY",
+          "owner_zip_code": "13039",
+          "parcel_id": 901,
+          "status_date": 1669818546720,
+          "status_type_name": "Open",
+          "violation": "2020 PMCNYS - Section 107.1.3 - Structure Unfit for Human Occupancy",
+          "violation_date": 1669818546713,
+          "violation_number": "2022-21989",
+          "zip": 13208
+        }
+      ],
+      "vacant_properties": [
+        {
+          "Latitude": 43.08025207,
+          "Longitude": -76.15449943,
+          "ObjectId": 1315,
+          "Owner": "GSPDC",
+          "OwnerAddress": "1941 S Salina St Ste Syracuse, NY 13205",
+          "PropertyAddress": "317-19 Seventh North St",
+          "SBL": "003.-19-14.0",
+          "VPR_result": null,
+          "VPR_valid": null,
+          "Vacant": "Residential",
+          "Zip": 13208,
+          "completion_date": null,
+          "completion_type_name": null,
+          "neighborhood": "Court-Woodlawn",
+          "valid_until": null
+        }
+      ]
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-10-27T11:46:47+00:00",
+      "rental_registry": "2026-10-27T11:46:47+00:00",
+      "unfit_properties": "2026-10-27T11:46:47+00:00",
+      "vacant_properties": "2026-10-27T11:46:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-10-29T12:07:04+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "003-19-140",
+    "published_at": "2026-10-29T12:08:34+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "317-19 Seventh North St"
+  },
+  {
     "address": "2802-10 Lodi St",
     "ai_analysis": {
       "available": true,
