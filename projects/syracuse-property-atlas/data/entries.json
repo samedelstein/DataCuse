@@ -1,5 +1,86 @@
 [
   {
+    "address": "278 Hood Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "{\n  \"summary\": \"The property appears to be a single-family residence with generally good exterior conditions, though some minor vegetation overgrowth is visible in the yard and along the foundation.\",\n  \"property_type_guess\": \"single_family\",\n  \"visible_conditions\": [\n    \"The house features white siding and a light-colored shingle roof.\",\n    \"A wooden porch with steps and railings leads to the front entry.\",\n    \"Windows appear intact throughout the visible portions of the structure.\",\n    \"The front yard contains grass, but also exhibits areas of unmanaged growth, particularly along the foundation and near the sidewalk.\"\n   furlough\",\n  \"condition_scores\": {\n    \"roof\": \"good\",\n    \"siding_or_facade\": \"good\",\n    \"windows_doors\": \"good\",\n    \"porch_or_entry\": \"fair\",\n    \"yard_or_lot\": \"fair\",\n    \"trash_debris\": \"none_visible\",\n    \"vegetation_overgrowth\": \"minor\"\n  },\n  \"visible_flags\": {\n    \"boarded_windows_or_doors\": \"no\",\n    \"fire_damage_visible\": \"no\",\n    \"structural_damage_visible\": \"no\",\n    \"vacancy_signs_visible\": \"no\",\n    \"active_construction_visible\": \"no\"\n  },\n  \"possible_unrecorded_issues\": [\n    \"Minor vegetation overgrowth in the front yard and along the foundation.\",\n    \"Weathering and minor discoloration observed on the wooden porch steps and railings.\"\n  ],\n  \"image_annotations\": [\n    {\n      \"label\": \"Vegetation overgrowth\",\n      \"reason\": \"Taller, unmanaged vegetation is visible along the left side of the house foundation.\",\n      \"bbox\": {\n        \"x\": 0.25,\n        \"y\": 0.58,\n        \"width\": 0.1,\n        \"height\": 0.07\n      },\n      \"confidence\": \"high\"\n    },\n    {\n      \"label\": \"Vegetation overgrowth\",\n      \"reason\": \"Taller, unmanaged vegetation is visible along the right side of the house foundation.\",\n      \"bbox\": {\n        \"x\": 0.6,\n        \"y\": 0.58,\n        \"width\": 0.1,\n        \"height\": 0.07\n      },\n      \"confidence\": \"high\"\n    },\n    {\n      \"label\": \"Vegetation overgrowth\",\n      \"reason\": \"Patches of taller grass and weeds are visible in the front lawn area, particularly near the sidewalk.\",\n      \"bbox\": {\n        \"x\": 0.25,\n        \"y\": 0.68,\n        \"width\": 0.45,\n        \"height\": 0.07\n      },\n      \"confidence\": \"high\"\n    }\n  ],\n  \"needs_human_review\": false,\n  \"confidence\": \"high\",\n  \"caveats\": []\n}",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "FCC Census Block API"
+    },
+    "flags": [],
+    "id": 1012,
+    "image": "images/parcel-001012.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 82702,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.076581661410884,
+    "lon": -76.14748924177823,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-10-27T11:46:47+00:00",
+      "rental_registry": "2026-10-27T11:46:47+00:00",
+      "unfit_properties": "2026-10-27T11:46:47+00:00",
+      "vacant_properties": "2026-10-27T11:46:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-10-29T13:05:03+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "005-02-840",
+    "published_at": "2026-10-29T13:06:33+00:00",
+    "review_reasons": [],
+    "title": "278 Hood Ave"
+  },
+  {
     "address": "317-19 Seventh North St",
     "ai_analysis": {
       "available": true,
