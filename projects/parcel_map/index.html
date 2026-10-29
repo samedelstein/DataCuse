@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#153f3a">
+  <meta name="description" content="Nine years of Syracuse, parcel by parcel. Explore the places that changed, the neighborhoods that endured, and the stories inside the records.">
+  <title>Syracuse, Parcel by Parcel · DataCuse</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to the story</a>
+  <header class="site-header">
+    <a class="brand" href="../../"><span class="brand-mark" aria-hidden="true">▦</span> DATA<span>CUSE</span></a>
+    <nav aria-label="Main navigation"><a href="#continuity">The story</a><a href="#explore">Explore the map</a><a href="#methods">About the data <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-square"></span> A CITY IN 13 SNAPSHOTS · 2017—2026</p>
+        <h1 id="hero-title">Syracuse,<br>parcel by<br><em>parcel.</em></h1>
+        <p class="hero-deck">A city changes one address at a time.<br>Some places find a new purpose. Others hold<br class="desktop-only"> onto the character of a neighborhood.</p>
+        <p class="hero-small">Nine years of property records. Thousands of small stories.<br>Start with the city. Find your own corner of it.</p>
+        <div class="hero-actions"><a class="button light" href="#explore">Find your block <span aria-hidden="true">↗</span></a><a class="text-link" href="#continuity">Follow the story ↓</a></div>
+      </div>
+      <div class="hero-map"><span class="map-kicker">SYRACUSE, NEW YORK</span><img src="data/city.svg" alt="A pattern of Syracuse parcel locations. Peach marks cells containing a changed recorded land use; green marks the remaining parcel locations." fetchpriority="high"><div class="hero-map-key"><span><i class="swatch same"></i>The familiar fabric</span><span><i class="swatch changed"></i>A different recorded use</span></div><span class="north" aria-hidden="true">N<br>↑</span></div>
+      <div class="hero-bottom"><span>AN EXPLORATION BY DATACUSE</span><span>SCROLL TO READ <span aria-hidden="true">↓</span></span></div>
+    </section>
+
+    <div class="facts-strip" id="headline-stats" aria-live="polite"><p>Reading the parcel archive…</p></div>
+    <p id="load-error" class="error wrap" role="alert" hidden></p>
+
+    <section id="continuity" class="chapter wrap">
+      <div class="chapter-heading"><p class="eyebrow">01 / THE CITY THAT STAYED</p><h2>Change is only<br>half the story.</h2><p>Look past the biggest projects and a familiar city remains: streets of houses, two-family homes, and the older buildings that give a neighborhood its shape.</p></div>
+      <div class="continuity-grid">
+        <article class="stat-panel"><span class="eyebrow">EASTWOOD · SAME RECORDED USE</span><strong id="eastwood-rate">—</strong><p id="eastwood-detail">Comparing the same tax IDs in 2017 and 2026.</p><div class="waffle" id="continuity-waffle" aria-hidden="true"></div><p class="small">Continuity of land use does not mean the same residents, owners, or building conditions.</p><button class="text-button" data-neighborhood="EASTWOOD">Look closer at Eastwood ↗</button></article>
+        <article class="age-panel"><p class="eyebrow">THE AGE OF THE CITY</p><h3>Older places.<br>Present-day Syracuse.</h3><p id="age-intro"></p><div id="age-chart" class="bar-chart"></div><p class="small">Construction years are recorded attributes, not verified building histories. Unknown years stay in the picture.</p></article>
+      </div>
+    </section>
+
+    <section id="explore" class="explorer-section">
+      <div class="wrap"><div class="chapter-heading"><p class="eyebrow">02 / WHAT CHANGED ON YOUR BLOCK?</p><h2>A closer look changes<br>the picture.</h2><p>Choose two snapshots. Search an address, pick a neighborhood, or click a parcel. Each dot is a property record; zoom in to see the latest available parcel outlines.</p></div></div>
+      <div class="explorer-shell">
+        <div class="map-toolbar">
+          <div class="search-control"><label for="address-search">FIND AN ADDRESS</label><input id="address-search" type="search" placeholder="Try 720 Van Rensselaer St" autocomplete="off" aria-controls="search-results"><ul id="search-results" class="search-results" aria-label="Matching addresses" hidden></ul></div>
+          <div><label for="neighborhood">NEIGHBORHOOD</label><select id="neighborhood"><option value="">All Syracuse</option></select></div>
+          <div><label for="from-snapshot">FROM</label><select id="from-snapshot"></select></div>
+          <div><label for="to-snapshot">TO</label><select id="to-snapshot"></select></div>
+          <div><label for="lens">COMPARE</label><select id="lens"><option value="use">Land use</option><option value="value">Assessed value</option><option value="owner">Owner names (not sales)</option><option value="units">Housing units</option></select></div>
+        </div>
+        <div class="archive-controls"><div><label for="vacancy-filter">VACANCY THROUGHOUT THE ARCHIVE</label><select id="vacancy-filter"><option value="">All properties</option><option value="land">Vacant land in every usable snapshot</option><option value="building">Vacant-building flag in every usable snapshot</option></select></div><p id="vacancy-scope" class="small">This filter checks the entire 2017–2026 archive, independently of the two comparison dates.</p></div>
+        <p id="comparison-adjustment" class="comparison-adjustment" role="status" hidden></p>
+        <div class="map-layout">
+          <div class="map-area"><canvas id="parcel-map" tabindex="0" role="img" aria-label="Interactive parcel map. Use arrow keys to pan, plus and minus to zoom. Search and the parcel list provide an alternative to clicking."></canvas><div class="map-tools"><button id="zoom-in" aria-label="Zoom in">+</button><button id="zoom-out" aria-label="Zoom out">−</button><button id="reset-map" aria-label="Fit selected area">↺</button></div><div class="map-caption"><span>SYRACUSE · PARCEL RECORDS</span><span id="map-scale"></span></div><div id="map-tooltip" hidden></div><div class="map-legend" id="map-legend"></div><div class="map-progress" id="map-progress" role="status">Loading parcel locations…</div></div>
+          <aside class="map-sidebar" aria-label="Comparison and parcel details"><div id="comparison-summary" aria-live="polite"></div><div id="filter-chip" hidden></div><div id="property-detail"><p class="eyebrow">EVERY PARCEL HAS A TIMELINE</p><h3>Find a place<br>you know.</h3><p>Select a property to follow its recorded history across the archive.</p><button class="text-button featured-trigger" data-parcel="31150011700000010010050000">Start at 720 Van Rensselaer St ↗</button></div></aside>
+        </div>
+        <div class="explorer-notes"><p id="comparison-note"></p><p>Outlines show the latest available geometry for each tax ID. Missing or changed IDs do not establish construction, demolition, or sale.</p></div>
+        <details class="parcel-list"><summary>Browse the parcels in this view <span id="list-count"></span></summary><div id="parcel-list-body"></div><div class="pagination"><button id="previous-page">← Previous</button><span id="page-label"></span><button id="next-page">Next →</button></div></details>
+      </div>
+    </section>
+
+    <section id="vacancy" class="chapter wrap">
+      <div class="chapter-heading"><p class="eyebrow">03 / VACANT LAND HAS MORE THAN ONE STORY</p><h2>An empty lot.<br>Many possible next chapters.</h2><p>A parcel can become housing, a park, or parking. It can also remain vacant land. Follow the recorded paths between 2017 and 2026.</p></div>
+      <div class="vacancy-layout"><div class="vacancy-origin"><span class="eyebrow">2017 → 2026</span><h3>Vacant land</h3><p>Same tax ID.<br>A new use—or a familiar one.</p><span class="branch-arrow" aria-hidden="true">→</span></div><div id="vacancy-branches" class="vacancy-branches"></div></div>
+      <div class="vacancy-foot"><div><strong id="homes-to-vacant">—</strong><p>single- and two-family records became vacant-land records.</p></div><p>These are recorded classifications, not verified demolition or construction counts. Click a path to find its parcels on the map.</p></div>
+      <div class="persistent-cards">
+        <article><p class="eyebrow">VACANT LAND / THROUGHOUT THE ARCHIVE</p><strong id="persistent-land-count">—</strong><h3>The lots that stayed vacant.</h3><p id="persistent-land-description"></p><button class="text-button" id="persistent-vacancy" data-persistent="land">Explore persistently vacant land ↗</button></article>
+        <article><p class="eyebrow">VACANT BUILDINGS / THROUGHOUT THE ARCHIVE</p><strong id="persistent-building-count">—</strong><h3>A building, a different kind of vacancy.</h3><p id="persistent-building-description"></p><button class="text-button" data-persistent="building">Explore persistently flagged buildings ↗</button></article>
+      </div><p class="small">“Throughout” means every available snapshot with the relevant field, not verified continuous vacancy between observations. August 2024 has neither field. Missing records or blank flags do not qualify.</p>
+    </section>
+
+    <section id="biographies" class="biography-section"><div class="wrap">
+      <div class="chapter-heading"><p class="eyebrow">04 / THE MANY LIVES OF ONE ADDRESS</p><h2>Three places.<br>Three kinds of change.</h2><p>The records offer clues. These timelines show when a different classification first appears in the files—not the date a building opened or work began.</p></div>
+      <div class="story-cards">
+        <article class="story-card"><div class="parcel-portrait" id="portrait-0"><span class="portrait-number">01</span></div><div class="story-body"><p class="eyebrow">LAKEFRONT / HOUSING</p><h3>A different scale<br>of possibility.</h3><h4>720 Van Rensselaer St</h4><p>From vacant land to commercial to apartment: a parcel whose recorded role changed dramatically. By Q1 2024, the file records 112 housing units.</p><ol class="mini-timeline"><li><span>2017</span>Vacant land</li><li><span>2018</span>Commercial</li><li><span>2020</span>Apartment</li><li><span>2024</span>112 recorded units</li></ol><button class="text-button featured-trigger" data-parcel="31150011700000010010050000">Open the property timeline ↗</button></div></article>
+        <article class="story-card"><div class="parcel-portrait" id="portrait-1"><span class="portrait-number">02</span></div><div class="story-body"><p class="eyebrow">TIPP HILL / PUBLIC SPACE</p><h3>A change with<br>room to breathe.</h3><h4>410 Grand Ave</h4><p>Development is not the only way land finds a new purpose. This record shifts from vacant land to parks between the 2020 and 2023 snapshots.</p><ol class="mini-timeline"><li><span>2017</span>Vacant land</li><li><span>2020</span>Still vacant land</li><li class="gap"><span>2020–23</span>No snapshots in between</li><li><span>2023</span>Parks</li></ol><button class="text-button featured-trigger" data-parcel="31150009800200010050030000">Open the property timeline ↗</button></div></article>
+        <article class="story-card"><div class="parcel-portrait" id="portrait-2"><span class="portrait-number">03</span></div><div class="story-body"><p class="eyebrow">MEADOWBROOK / ONE HOME</p><h3>The quieter<br>kind of change.</h3><h4>108 Woodside Dr</h4><p>A city also changes in increments of one. This parcel moves from vacant land to single-family use between July 2018 and October 2019.</p><ol class="mini-timeline"><li><span>2017</span>Vacant land</li><li><span>Jul 2018</span>Vacant land</li><li><span>Oct 2019</span>Single family</li><li><span>2020</span>1 recorded unit</li></ol><button class="text-button featured-trigger" data-parcel="31150004300000010030000000">Open the property timeline ↗</button></div></article>
+      </div>
+    </div></section>
+
+    <section id="neighbors" class="chapter wrap"><div class="chapter-heading"><p class="eyebrow">05 / NEIGHBORHOOD COUSINS</p><h2>Across town.<br>Something in common.</h2><p>Compare the fabric of two neighborhoods. The same measures, side by side—without turning places into a ranking.</p></div><div class="neighborhood-pair"><article><label for="compare-a">FIRST NEIGHBORHOOD</label><select id="compare-a"></select><div id="neighborhood-a"></div></article><article><label for="compare-b">SECOND NEIGHBORHOOD</label><select id="compare-b"></select><div id="neighborhood-b"></div></article></div><p class="small">Latest recorded neighborhood assignments are held fixed for matched-parcel comparisons. Tax blocks and street-address groups are available inside each property timeline; neither necessarily describes a physical city block.</p></section>
+
+    <section id="methods" class="methods wrap"><p class="eyebrow">READING THE RECORDS</p><h2>A snapshot is a clue.<br>It isn’t the whole story.</h2><div class="method-grid"><div><h3>Thirteen files. Uneven intervals.</h3><p>The archive runs from August 2017 to October 2026, with no snapshots between Q1 2020 and November 2023. Dates describe the supplied exports. Changes may have happened earlier.</p><h3>The neighborhood moved on paper.</h3><p>Between January and October 2026, 556 matching records change from Meadowbrook to Salt Springs. Holding neighborhood assignments fixed keeps that shift from masquerading as development.</p></div><div><h3>Same ID, comparable fields.</h3><p>Comparisons join string-valued tax IDs. Duplicate IDs are excluded for the affected snapshot. Missing values remain unknown. The August 2024 export lacks most story attributes.</p><h3>Use the right measure.</h3><p>Assessed values are not sale prices. Recorded owner-name changes do not prove a sale. Early unit counts are inconsistent, so unit comparisons start with usable later files. Vacant land and a vacant building are different classifications.</p></div></div><details><summary>Source files, field coverage, and comparison notes</summary><div id="source-table"></div></details><p class="small">The map uses the latest available location and outline for each tax ID; it does not reconstruct parcel splits or mergers. Unmatched records are shown separately. The opening illustration groups nearby parcel locations for readability. Original field values and snapshot references are available in each property timeline.</p></section>
+  </main>
+  <footer class="site-footer wrap"><a class="brand" href="../../">DATA<span>CUSE</span></a><p>A closer look at Syracuse.<br>Built from the local parcel archive · 2017–2026</p><a href="#main">Back to the beginning ↑</a></footer>
+  <noscript><p class="error">Enable JavaScript to explore the map and property records. The story text and source GeoJSON files remain available in this directory.</p></noscript>
+</body>
+</html>

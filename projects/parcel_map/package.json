@@ -1,0 +1,13 @@
+{
+  "name": "syracuse-parcel-by-parcel",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:data": "python scripts/build_data.py",
+    "build": "node scripts/build.mjs",
+    "lint": "node --check app.js && node --check model.js && node --check scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs && python -m unittest discover -s tests -p test_*.py",
+    "dev": "python -m http.server 4173 --bind 127.0.0.1",
+    "preview": "python -m http.server 4173 --bind 127.0.0.1 --directory dist"
+  }
+}
