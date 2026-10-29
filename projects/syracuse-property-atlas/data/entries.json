@@ -1,5 +1,247 @@
 [
   {
+    "address": "1800 Salina St N & Exchange St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Only a single side exterior wall is visible from this street-level view.",
+        "Specific details regarding active usage or interior state cannot be determined from this angle."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.20",
+            "width": "0.08",
+            "x": "0.50",
+            "y": "0.50"
+          },
+          "confidence": "medium",
+          "label": "wall staining",
+          "reason": "Visible dark moisture staining and discoloration on concrete block wall beneath utility apparatus"
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Exterior wall staining and moisture marks below utility line conduit."
+      ],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows the side exterior of a commercial concrete block building with utility attachments, a metal roll-up door, a single service door, and minor weed growth along the perimeter.",
+      "visible_conditions": [
+        "Concrete block exterior wall shows dark staining and discoloration beneath utility conduit attachments.",
+        "Metal overhead roll-up garage door shows visible surface rust and weathering.",
+        "A single metal service door is visible adjacent to a painted patch on the block wall.",
+        "Asphalt shingle roof appears structurally intact from street level view.",
+        "Weeds and sparse unmanaged vegetation are visible growing along the gravel border at the base of the structure."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Code violations: 5 matching records",
+      "Image-only flag: Exterior wall staining and moisture marks below utility line conduit.",
+      "Needs human review"
+    ],
+    "id": 1016,
+    "image": "images/parcel-001016.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 79531,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07077060411799,
+    "lon": -76.16639850993454,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07070448,
+          "Longitude": -76.16641124,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 80658,
+          "SBL": "002.-02-01.0",
+          "Vacant": null,
+          "complaint_address": "1800 Salina St N & Exchange St",
+          "complaint_number": "2025-08847",
+          "complaint_type_name": "Property Maintenance-Ext",
+          "complaint_zip": 13208,
+          "comply_by_date": 1761835125000,
+          "inspector_id": 1221,
+          "issued_to": "Realty Bodow",
+          "issued_to_address": "1925 Park St ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1760452585350,
+          "status_date": 1780444800000,
+          "status_type_name": "Closed",
+          "violation": "SPCC - Section 27-73 (a) - Exterior Surfaces",
+          "violation_date": 1760452725277,
+          "violation_id": 207369,
+          "violation_number": "2025-18942"
+        },
+        {
+          "Latitude": 43.07070448,
+          "Longitude": -76.16641124,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 80659,
+          "SBL": "002.-02-01.0",
+          "Vacant": null,
+          "complaint_address": "1800 Salina St N & Exchange St",
+          "complaint_number": "2021-04580",
+          "complaint_type_name": "Improper storage",
+          "complaint_zip": 13208,
+          "comply_by_date": 1614331218000,
+          "inspector_id": 676,
+          "issued_to": "Realty Bodow",
+          "issued_to_address": "1925 Park St ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1613469701923,
+          "status_date": 1618963200000,
+          "status_type_name": "Closed",
+          "violation": "2020 FCNYS- 6109.2 Exposure Hazards",
+          "violation_date": 1613726418010,
+          "violation_id": 105538,
+          "violation_number": "2021-02360"
+        },
+        {
+          "Latitude": 43.07070448,
+          "Longitude": -76.16641124,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 80660,
+          "SBL": "002.-02-01.0",
+          "Vacant": null,
+          "complaint_address": "1800 Salina St N & Exchange St",
+          "complaint_number": "2021-04440",
+          "complaint_type_name": "Sprinkler System",
+          "complaint_zip": 13208,
+          "comply_by_date": 1614592506000,
+          "inspector_id": 676,
+          "issued_to": "Realty Bodow",
+          "issued_to_address": "1925 Park St ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1613037259127,
+          "status_date": 1778716800000,
+          "status_type_name": "Closed",
+          "violation": "2020 FCNYS- - 903.5 - Testing and maintenance",
+          "violation_date": 1613037461137,
+          "violation_id": 105126,
+          "violation_number": "2021-01943"
+        },
+        {
+          "Latitude": 43.07070448,
+          "Longitude": -76.16641124,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 80661,
+          "SBL": "002.-02-01.0",
+          "Vacant": null,
+          "complaint_address": "1800 Salina St N & Exchange St",
+          "complaint_number": "2021-04440",
+          "complaint_type_name": "Sprinkler System",
+          "complaint_zip": 13208,
+          "comply_by_date": 1614592506000,
+          "inspector_id": 676,
+          "issued_to": "Realty Bodow",
+          "issued_to_address": "1925 Park St ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1613037259127,
+          "status_date": 1778716800000,
+          "status_type_name": "Closed",
+          "violation": "2020 PMCNYS - Section 704.1 - Inspection, testing, and maintenance ",
+          "violation_date": 1613037432543,
+          "violation_id": 105125,
+          "violation_number": "2021-01942"
+        },
+        {
+          "Latitude": 43.07070448,
+          "Longitude": -76.16641124,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 80662,
+          "SBL": "002.-02-01.0",
+          "Vacant": null,
+          "complaint_address": "1800 Salina St N & Exchange St",
+          "complaint_number": "2021-04440",
+          "complaint_type_name": "Sprinkler System",
+          "complaint_zip": 13208,
+          "comply_by_date": 1614592506000,
+          "inspector_id": 676,
+          "issued_to": "Realty Bodow",
+          "issued_to_address": "1925 Park St ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1613037259127,
+          "status_date": 1778716800000,
+          "status_type_name": "Closed",
+          "violation": "SPCC - Section 27-43 (g) - Maintained System",
+          "violation_date": 1613037306817,
+          "violation_id": 105124,
+          "violation_number": "2021-01941"
+        }
+      ],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-10-27T11:46:47+00:00",
+      "rental_registry": "2026-10-27T11:46:47+00:00",
+      "unfit_properties": "2026-10-27T11:46:47+00:00",
+      "vacant_properties": "2026-10-27T11:46:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-10-29T20:03:24+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "002-02-010",
+    "published_at": "2026-10-29T20:04:54+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "1800 Salina St N & Exchange St"
+  },
+  {
     "address": "282 Hood Ave",
     "ai_analysis": {
       "available": true,
