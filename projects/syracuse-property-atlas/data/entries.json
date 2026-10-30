@@ -1,5 +1,113 @@
 [
   {
+    "address": "1167-69 Lemoyne Ave & Seventh Nor",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view of the property is significantly obstructed by large bare trees, making it difficult to assess any potential primary structure on the parcel.",
+        "The image appears to primarily show a vacant lot or a lot where the main building is not clearly visible.",
+        "The exact boundaries of the parcel are not clearly discernible from the image."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "not_visible",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "low",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "vacant_lot",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The image primarily shows a lot with bare trees and some ground vegetation, with a structure partially obscured in the background.",
+      "visible_conditions": [
+        "A large, mostly clear lot with bare deciduous trees.",
+        "Ground appears to be grass with scattered leaves.",
+        "A wooden fence is visible on the left side of the lot.",
+        "A dark-colored structure is partially visible behind trees and a fence in the background, but details are largely obscured."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Needs human review"
+    ],
+    "id": 1017,
+    "image": "images/parcel-001017.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 94045,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.08011279260408,
+    "lon": -76.15402503466188,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-10-27T11:46:47+00:00",
+      "rental_registry": "2026-10-27T11:46:47+00:00",
+      "unfit_properties": "2026-10-27T11:46:47+00:00",
+      "vacant_properties": "2026-10-27T11:46:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-10-29T23:50:32+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "003-19-160",
+    "published_at": "2026-10-30T05:49:38+00:00",
+    "review_reasons": [
+      "AI requested human review"
+    ],
+    "title": "1167-69 Lemoyne Ave & Seventh Nor"
+  },
+  {
     "address": "1800 Salina St N & Exchange St",
     "ai_analysis": {
       "available": true,
