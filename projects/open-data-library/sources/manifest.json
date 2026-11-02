@@ -1,0 +1,55 @@
+[
+  {
+    "title": "2026 City Budget Workbook",
+    "format": "XLSX",
+    "source_page": "https://www.syr.gov/Departments/Auditor-Office",
+    "download": "https://www.syr.gov/files/content/public/v/113/departments/auditor-office/2026-city-budget-workbook.xlsx",
+    "page_stated_release": "2026-04-21",
+    "verification": "Official page and link inspected; workbook binary not parsed.",
+    "significance": "Multi-year financial information outside the portal's titled budget series.",
+    "http_status": 200,
+    "local_file": "2026-city-budget-workbook.xlsx",
+    "sha256": "9e8a27547425d5729e8802b208309df2e845b60cb08a44d1f3239c02beb866f3",
+    "bytes": 780273,
+    "checked_at": "2026-11-02T00:06:34.395411+00:00"
+  },
+  {
+    "title": "2025 City Budget Workbook",
+    "format": "XLSX",
+    "source_page": "https://www.syr.gov/Departments/Auditor-Office",
+    "download": "https://www.syr.gov/files/sharedassets/public/v/2/departments/audit/documents/audits/2025-audits/2025-city-budget-workbook.xlsx",
+    "page_stated_release": "2025-04-22",
+    "verification": "Official page and link inspected; workbook binary not parsed. Direct retrieval returned an access error.",
+    "http_status": 200,
+    "local_file": "2025-city-budget-workbook.xlsx",
+    "sha256": "9049845485f2e4e9b993ff2e3c3c0c8b8547912d53cfb2dcf93d0ab6a044ccd0",
+    "bytes": 788299,
+    "checked_at": "2026-11-02T00:06:35.337731+00:00"
+  },
+  {
+    "title": "Water reports, 2019–2025",
+    "format": "PDF",
+    "source_page": "https://www.syr.gov/Departments/Water/Water-Data-and-Reports",
+    "download": "https://www.syr.gov/files/sharedassets/public/v/1/departments/water/documents/reports/water-quality-annual-reports/quality-annual-report-2025.pdf",
+    "verification": "Official index inspected. Text of the linked 63-page 2025 water-quality report was inspected, including tables of sampling and measurements.",
+    "significance": "Three recurring report series; different observations from portal water-main-break records.",
+    "http_status": 200,
+    "local_file": "quality-annual-report-2025.pdf",
+    "sha256": "988a602bb50172e2c47a1c57549bb2bf4090a1b3bd4f77c09dea581c91040ef6",
+    "bytes": 5911649,
+    "checked_at": "2026-11-02T00:06:35.885707+00:00"
+  },
+  {
+    "title": "Right-to-Know CRB output, October 2026",
+    "format": "ZIP",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "download": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "verification": "Official page and link inspected; ZIP contents not inspected. Internal file formats and columns are unknown.",
+    "significance": "Downloadable data outputs alongside special reports.",
+    "http_status": 200,
+    "local_file": "right-to-know-crb-output-10-2026.zip",
+    "sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "bytes": 1107422,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00"
+  }
+]

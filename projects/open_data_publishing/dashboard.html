@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Syracuse open data dashboard | DataCuse</title>
+  <meta name="description" content="Explore Syracuse's current catalog, update schedules, changing columns, historical links, and public services outside the portal.">
+  <link rel="canonical" href="https://www.datacuse.com/projects/open_data_publishing/dashboard.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DataCuse">
+  <meta property="og:title" content="Syracuse open data, examined">
+  <meta property="og:description" content="Explore the catalog, changing columns, old links, and services beyond the portal.">
+  <meta property="og:url" content="https://www.datacuse.com/projects/open_data_publishing/dashboard.html">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#fcfaf5">
+  <link rel="stylesheet" href="styles.css?v=20261028">
+  <script src="data/catalog-data.js" defer></script>
+  <script src="data/evidence-data.js" defer></script>
+  <script src="app.js?v=20261102" defer></script>
+  <script src="dashboard.js?v=20261028" defer></script>
+</head>
+<body class="dashboard-page">
+  <a class="skip-link" href="#main">Skip to dashboard</a>
+  <header class="masthead"><a class="brand" href="https://www.datacuse.com/">Data<span>Cuse</span></a><nav aria-label="Main"><a href="index.html">Story</a><a href="dashboard.html" aria-current="page">Dashboard</a><a href="https://www.datacuse.com/">All projects</a></nav></header>
+  <main id="main">
+    <header class="hero"><p class="eyebrow">SYRACUSE / OPEN DATA</p><h1>Explore the evidence.</h1><p class="snapshot" id="snapshot"></p></header>
+    <section class="stats" id="stats" aria-label="Catalog at a glance"></section>
+    <nav class="section-nav" aria-label="Explore a topic"><a id="nav-history" href="#history">Creation dates</a><a id="nav-maintenance" href="#maintenance">Updates</a><a id="nav-series" href="#series">Coverage</a><a id="nav-schema" href="#schema">Columns</a><a id="nav-archive" href="#archive">Old links</a><a id="nav-services" href="#services">Services</a><a id="nav-explorer" href="#explorer">All datasets</a><a id="nav-methods" href="#methods">Methods</a></nav>
+    <noscript><p>Enable JavaScript to view the charts and tables, or <a href="data/datasets.csv">download the catalog CSV</a>.</p></noscript>
+
+    <section class="section dashboard-panel" id="history" aria-labelledby="history-heading">
+      <div class="section-heading"><h2 id="history-heading">When the entries still available were created</h2><a href="data/datasets.csv" download>Download CSV ↓</a></div>
+      <p class="section-intro">Start with the 136 dataset entries still in the October 27, 2026 catalog, then group them by date. Previously listed entries are missing, and no complete publication and removal history was recovered. These bars exclude those missing entries; they do not count everything published in each year. The default uses item creation dates, which can differ from first public release.</p>
+      <div class="chart-controls"><label for="date-measure">Date measure<select id="date-measure"><option value="created">Item creation date</option><option value="published">Metadata publication date</option></select></label><label for="chart-view">View<select id="chart-view"><option value="annual">Entries by year</option><option value="cumulative">Cumulative surviving entries</option></select></label><label class="check"><input id="same-period" type="checkbox"> Compare the same period each year</label></div>
+      <div class="chart-card"><div class="chart-title"><h3 id="chart-title">Still-listed dataset entries by creation year</h3><span id="chart-unit">STILL-LISTED ENTRIES</span></div><div id="annual-chart" class="annual-chart"></div><p id="chart-caption" class="caption"></p></div>
+      <details><summary>How to read these counts</summary><p id="trend"></p><p>The default 2023 bar includes 15 assessment-roll backfills. Zero in 2020 means no surviving entries have that creation year. The 75 old links are a separate sample, not additions to these bars. Metadata publication dates change the grouping, not the inventory.</p></details>
+      <div class="heatmap-card"><h3>By month</h3><p class="caption">Select a month, then <a href="#explorer">view its datasets</a>. Uses the date measure above; future months are blank.</p><div id="heatmap" class="heatmap"></div><p id="month-status" class="caption" aria-live="polite"></p></div>
+    </section>
+
+    <section class="section dashboard-panel" id="maintenance" aria-labelledby="maintenance-heading">
+      <h2 id="maintenance-heading">Publishing is not the same as updating.</h2>
+      <p class="section-intro">Schedules are declarations. Edit dates show the latest reported change—not a refresh history or the dates covered by the records.</p>
+      <div class="two-col"><div class="chart-card"><h3>Declared update schedule</h3><div id="frequency-chart"></div></div><div class="chart-card"><h3>Time since reported data edit</h3><div id="freshness-chart"></div></div></div>
+      <p class="caption" id="maintenance-note"></p><p><a href="index.html#continuity">Read about the permit and crime interruptions →</a></p>
+    </section>
+
+    <section class="section dashboard-panel" id="series" aria-labelledby="series-heading">
+      <h2 id="series-heading">Which years are covered?</h2>
+      <p class="section-intro">Years named in current dataset titles. “Range” marks a multi-year file. A blank is not proof nothing was published; a filled cell does not prove full-year coverage.</p>
+      <div class="table-wrap" id="series-table"></div>
+      <p class="caption">Assessment final rolls extend back to 2007. The 2025 Part 1 crime file is incomplete. Fire files labeled 2022–2024 appear in the separate <a href="#services">service directory</a>.</p>
+    </section>
+
+    <section class="section dashboard-panel" id="schema" aria-labelledby="schema-heading">
+      <h2 id="schema-heading">Follow the columns.</h2>
+      <p class="section-intro">Choose a reviewed comparison or any two datasets. These are editions available now, not historic versions of one file.</p>
+      <div class="filters"><label for="comparison-select">Reviewed comparison<select id="comparison-select"></select></label><label for="schema-before" class="search-label">Earlier / left dataset<select id="schema-before"></select></label><label for="schema-after" class="search-label">Later / right dataset<select id="schema-after"></select></label></div>
+      <article id="comparison-note" class="reading-note" aria-live="polite"></article>
+      <div id="schema-totals" class="schema-totals"></div>
+      <div class="two-col"><div class="chart-card"><h3>Only in the left schema</h3><ul id="fields-before" class="field-list"></ul></div><div class="chart-card"><h3>Only in the right schema</h3><ul id="fields-after" class="field-list"></ul></div></div>
+      <details><summary>Shared fields and type changes</summary><div id="fields-common" class="table-wrap"></div></details>
+      <p class="caption">Names match without case sensitivity. Renames may appear on both lists. Counts include technical fields; presence does not establish completeness. <a href="data/schema-fields.csv" download>Download field definitions ↓</a></p>
+    </section>
+
+    <section class="section dashboard-panel" id="archive" aria-labelledby="archive-heading">
+      <h2 id="archive-heading">What happened to the old links?</h2>
+      <p class="section-intro" id="history-summary"></p>
+      <p class="reading-note">An API error does not prove deletion. Capture dates establish earlier existence, not creation or removal dates. This partial sample includes maps and pages.</p>
+      <div class="filters"><label for="history-search" class="search-label">Find an item<input type="search" id="history-search" placeholder="Lead, snowplow, grants…"></label><label for="history-status">Current status<select id="history-status"><option value="">All statuses</option><option>Permission denied</option><option>Missing or inaccessible</option><option>Public item, absent from feed</option></select></label></div>
+      <p id="history-count" class="caption" aria-live="polite"></p><div class="table-wrap"><table><thead><tr><th>Historical item</th><th>Archived capture</th><th>Current API result</th><th>Evidence</th></tr></thead><tbody id="history-rows"></tbody></table></div>
+      <p class="caption"><a href="data/historical-items.csv" download>Download historical checks ↓</a> · No complete retirement log was obtained.</p>
+    </section>
+
+    <section class="section dashboard-panel" id="services" aria-labelledby="services-heading">
+      <h2 id="services-heading">Beyond the portal.</h2>
+      <p class="section-intro" id="directory-summary"></p>
+      <p class="reading-note">Services can be copies, views, or map components. “No match” is not evidence of withholding; a listed service is not guaranteed to be a complete, queryable dataset.</p>
+      <div class="filters"><label for="service-search" class="search-label">Search services and layers<input type="search" id="service-search" placeholder="Fire, lead, housing…"></label><label for="service-status">Catalog match<select id="service-status"><option value="">All services</option><option value="unmatched">No portal dataset match</option><option value="matched">Matched to portal</option><option value="unavailable">Metadata unavailable</option></select></label></div>
+      <p id="service-count" class="caption" aria-live="polite"></p><div class="table-wrap"><table><thead><tr><th>Service / layers</th><th>Catalog match</th><th>Metadata access</th><th>Layers + tables</th></tr></thead><tbody id="service-rows"></tbody></table></div>
+      <p class="caption"><a href="data/service-directory.csv" download>Download directory comparison ↓</a> · <a href="index.html#beyond">Spreadsheets and reports on syr.gov</a> · <a href="index.html#agents">AI readiness findings</a></p>
+    </section>
+
+    <section class="section dashboard-panel" id="explorer" aria-labelledby="explorer-heading">
+      <div class="section-heading"><h2 id="explorer-heading">Every dataset, with its dates.</h2><button id="reset" class="text-button">Reset filters</button></div>
+      <div class="filters"><label for="search" class="search-label">Search datasets<input id="search" type="search" placeholder="Parcels, crime, budget…"></label><label for="year-filter">Year<select id="year-filter"><option value="">All years</option></select></label><label for="frequency-filter">Update schedule<select id="frequency-filter"><option value="">All schedules</option></select></label><label for="sort">Sort by<select id="sort"><option value="newest">Newest entry</option><option value="oldest">Oldest entry</option><option value="edited">Latest data edit</option><option value="title">Dataset name</option></select></label></div>
+      <p id="result-count" class="caption" aria-live="polite"></p><div class="table-wrap"><table><thead><tr><th>Dataset</th><th>Item created</th><th>Publication date</th><th>Data last edited</th><th>Declared schedule</th></tr></thead><tbody id="dataset-rows"></tbody></table></div>
+      <p class="caption">Year and month filters follow the <a href="#history">selected date measure</a>. <a href="data/datasets.csv" download>Download all entries ↓</a></p>
+    </section>
+
+    <section class="section dashboard-panel methods" id="methods" aria-labelledby="methods-heading">
+      <h2 id="methods-heading">What the numbers mean.</h2>
+      <details open><summary>What counts as a dataset?</summary><p id="scope-note"></p><p>Annual editions, hosted views, and replacement items count separately. Download formats do not. Service-directory counts use containers, not unique subjects.</p><details><summary>Excluded catalog entries</summary><div id="excluded" class="excluded-list"></div></details></details>
+      <details><summary>Which dates are used?</summary><p>Creation means the ArcGIS item's timestamp, not necessarily its first public release. The publication measure uses formal publication, then formal creation, then item creation. Item timestamps use UTC; unzoned formal dates retain their written date.</p><p>Data-edit age uses the layer's <code>editingInfo.dataLastEditDate</code>. Zero or missing values are unknown. It measures an edit, not record coverage or refresh reliability.</p><p id="date-note"></p></details>
+      <details><summary>Can this show all creations, including deleted items?</summary><p>No. Both date measures use the current catalog. The historical-link sample cannot fill the gaps: it is incomplete, mixes item types, and usually lacks creation dates. Archived page timestamps found in this review describe the portal itself, not the individual datasets.</p><p>A complete history would need creation, sharing, and deletion records from the city, potentially including older saved exports. Future snapshots can record changes observed between checks.</p></details>
+      <details><summary>What do older accounts establish?</summary><p>The city <a href="https://www.innovatesyracuse.com/blog/datacuse">launched the portal in 2017</a> and <a href="https://www.syr.gov/News/City-News/City-2023/2023-03-03-City-News-1130">reported 29 additions during 2022 and early 2023</a>. A <a href="https://www.hks.harvard.edu/faculty-research/policy-topics/cities-communities/nicolas-diaz-mpp-2020-creating-better-access-data">2024 interview described more than 100 datasets</a>. These support expansion, but their counting methods differ. They are not an annual inventory series.</p></details>
+      <div class="downloads"><a href="RESEARCH.md">Evidence ledger</a><a href="README.md">Reproduce the analysis</a><a href="data/catalog-analysis.json" download>Catalog JSON</a><a href="data/evidence.json" download>Extended evidence JSON</a><a href="data/off-portal-resources.json" download>Website sources</a></div>
+      <p class="caption">Sources: <a href="https://data.syr.gov/api/feed/dcat-us/1.1.json">city catalog</a>, <a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/ArcGIS/rest/services">service directory</a>, archived pages, and linked metadata. <a href="https://doc.esri.com/en/arcgis-hub/latest/build/manage-content-items.html">Esri's date and frequency documentation.</a> Saved snapshot, not a live monitor.</p>
+    </section>
+  </main>
+  <footer><span>DataCuse · Independent civic data research</span><a href="index.html">Read the story</a><a href="https://www.datacuse.com/">All projects</a></footer>
+</body>
+</html>

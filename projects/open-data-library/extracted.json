@@ -1,0 +1,4641 @@
+[
+  {
+    "id": "budget-2026-general-fund",
+    "title": "General Fund · 2026 budget workbook",
+    "description": "Searchable values from the Auditor’s workbook, with fiscal-year labels, row context, and exact source cells.",
+    "topic": "City finances",
+    "family": "Budget workbooks",
+    "source_url": "https://www.syr.gov/files/content/public/v/113/departments/auditor-office/2026-city-budget-workbook.xlsx",
+    "source_page": "https://www.syr.gov/Departments/Auditor-Office",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:34.395411+00:00",
+    "coverage": "2021–2027 fiscal years; mixed actual/budget/estimate/proposed",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026",
+      "2027"
+    ],
+    "fields": [
+      {
+        "name": "sheet",
+        "alias": "sheet",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_row",
+        "alias": "source row",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "source_cell",
+        "alias": "source cell",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label",
+        "alias": "label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label_column",
+        "alias": "label column",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "section_path",
+        "alias": "section path",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "period_label",
+        "alias": "period label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "fiscal_year",
+        "alias": "fiscal year",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "value_type",
+        "alias": "value type",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "value",
+        "alias": "value",
+        "type": "number",
+        "nullable": true
+      },
+      {
+        "name": "source_formula",
+        "alias": "source formula",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_number_format",
+        "alias": "source number format",
+        "type": "string",
+        "nullable": true
+      }
+    ],
+    "record_count": 7240,
+    "source_sha256": "9e8a27547425d5729e8802b208309df2e845b60cb08a44d1f3239c02beb866f3",
+    "download_sha256": "c5969193afa2c79ac38c0fcd58d311b47e2297dcdf026ae425e043359c17295c",
+    "download": "downloads/budget-2026-general-fund.csv",
+    "original": "sources/2026-city-budget-workbook.xlsx",
+    "limitations": [
+      "DataCuse extraction. Values and source rounding are preserved.",
+      "Includes totals, subtotals and detail. Do not sum all rows.",
+      "Actual, Budget, Estimate and Proposed are distinct measures; editions overlap.",
+      "Read source number formats and row labels for units; not every financial cell is additive.",
+      "Blank means no cached source value. Source formulas are text, not recalculated.",
+      "Auditor notes that source figures can differ due to rounding and mathematical errors."
+    ],
+    "provenance": {
+      "workbook": "2026-city-budget-workbook.xlsx",
+      "sheet": "General Fund",
+      "version_note": "Version 2",
+      "notes": "sources/2026-budget-notes.txt",
+      "method": "OOXML cached numeric values, one source cell per row; no formulas recalculated; blank values retained.",
+      "excluded_sheets": [
+        "Instructions & Notes (preserved as text)",
+        "City Rates (different units; original only)"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 7240,
+      "column_count": 12,
+      "source_cells_checked": 7240,
+      "cached_formula_values_preserved": 753
+    }
+  },
+  {
+    "id": "budget-2026-water-fund",
+    "title": "Water Fund · 2026 budget workbook",
+    "description": "Searchable values from the Auditor’s workbook, with fiscal-year labels, row context, and exact source cells.",
+    "topic": "City finances",
+    "family": "Budget workbooks",
+    "source_url": "https://www.syr.gov/files/content/public/v/113/departments/auditor-office/2026-city-budget-workbook.xlsx",
+    "source_page": "https://www.syr.gov/Departments/Auditor-Office",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:34.395411+00:00",
+    "coverage": "2021–2027 fiscal years; mixed actual/budget/estimate/proposed",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026",
+      "2027"
+    ],
+    "fields": [
+      {
+        "name": "sheet",
+        "alias": "sheet",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_row",
+        "alias": "source row",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "source_cell",
+        "alias": "source cell",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label",
+        "alias": "label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label_column",
+        "alias": "label column",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "section_path",
+        "alias": "section path",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "period_label",
+        "alias": "period label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "fiscal_year",
+        "alias": "fiscal year",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "value_type",
+        "alias": "value type",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "value",
+        "alias": "value",
+        "type": "number",
+        "nullable": true
+      },
+      {
+        "name": "source_formula",
+        "alias": "source formula",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_number_format",
+        "alias": "source number format",
+        "type": "string",
+        "nullable": true
+      }
+    ],
+    "record_count": 952,
+    "source_sha256": "9e8a27547425d5729e8802b208309df2e845b60cb08a44d1f3239c02beb866f3",
+    "download_sha256": "8fb1aeed709189fc387068e4280a65474b7eb8aa99c1dfe78231095aeb2fa5f1",
+    "download": "downloads/budget-2026-water-fund.csv",
+    "original": "sources/2026-city-budget-workbook.xlsx",
+    "limitations": [
+      "DataCuse extraction. Values and source rounding are preserved.",
+      "Includes totals, subtotals and detail. Do not sum all rows.",
+      "Actual, Budget, Estimate and Proposed are distinct measures; editions overlap.",
+      "Read source number formats and row labels for units; not every financial cell is additive.",
+      "Blank means no cached source value. Source formulas are text, not recalculated.",
+      "Auditor notes that source figures can differ due to rounding and mathematical errors."
+    ],
+    "provenance": {
+      "workbook": "2026-city-budget-workbook.xlsx",
+      "sheet": "Water Fund",
+      "version_note": "Version 2",
+      "notes": "sources/2026-budget-notes.txt",
+      "method": "OOXML cached numeric values, one source cell per row; no formulas recalculated; blank values retained.",
+      "excluded_sheets": [
+        "Instructions & Notes (preserved as text)",
+        "City Rates (different units; original only)"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 952,
+      "column_count": 12,
+      "source_cells_checked": 952,
+      "cached_formula_values_preserved": 46
+    }
+  },
+  {
+    "id": "budget-2026-sewer-fund",
+    "title": "Sewer Fund · 2026 budget workbook",
+    "description": "Searchable values from the Auditor’s workbook, with fiscal-year labels, row context, and exact source cells.",
+    "topic": "City finances",
+    "family": "Budget workbooks",
+    "source_url": "https://www.syr.gov/files/content/public/v/113/departments/auditor-office/2026-city-budget-workbook.xlsx",
+    "source_page": "https://www.syr.gov/Departments/Auditor-Office",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:34.395411+00:00",
+    "coverage": "2021–2027 fiscal years; mixed actual/budget/estimate/proposed",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026",
+      "2027"
+    ],
+    "fields": [
+      {
+        "name": "sheet",
+        "alias": "sheet",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_row",
+        "alias": "source row",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "source_cell",
+        "alias": "source cell",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label",
+        "alias": "label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label_column",
+        "alias": "label column",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "section_path",
+        "alias": "section path",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "period_label",
+        "alias": "period label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "fiscal_year",
+        "alias": "fiscal year",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "value_type",
+        "alias": "value type",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "value",
+        "alias": "value",
+        "type": "number",
+        "nullable": true
+      },
+      {
+        "name": "source_formula",
+        "alias": "source formula",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_number_format",
+        "alias": "source number format",
+        "type": "string",
+        "nullable": true
+      }
+    ],
+    "record_count": 328,
+    "source_sha256": "9e8a27547425d5729e8802b208309df2e845b60cb08a44d1f3239c02beb866f3",
+    "download_sha256": "d6aec9e0861717d2c01cf196f23acf82760ddb07bf262aaab6c9878bc206be9d",
+    "download": "downloads/budget-2026-sewer-fund.csv",
+    "original": "sources/2026-city-budget-workbook.xlsx",
+    "limitations": [
+      "DataCuse extraction. Values and source rounding are preserved.",
+      "Includes totals, subtotals and detail. Do not sum all rows.",
+      "Actual, Budget, Estimate and Proposed are distinct measures; editions overlap.",
+      "Read source number formats and row labels for units; not every financial cell is additive.",
+      "Blank means no cached source value. Source formulas are text, not recalculated.",
+      "Auditor notes that source figures can differ due to rounding and mathematical errors."
+    ],
+    "provenance": {
+      "workbook": "2026-city-budget-workbook.xlsx",
+      "sheet": "Sewer Fund",
+      "version_note": "Version 2",
+      "notes": "sources/2026-budget-notes.txt",
+      "method": "OOXML cached numeric values, one source cell per row; no formulas recalculated; blank values retained.",
+      "excluded_sheets": [
+        "Instructions & Notes (preserved as text)",
+        "City Rates (different units; original only)"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 328,
+      "column_count": 12,
+      "source_cells_checked": 328,
+      "cached_formula_values_preserved": 10
+    }
+  },
+  {
+    "id": "budget-2026-sidewalk-fund",
+    "title": "Sidewalk Fund · 2026 budget workbook",
+    "description": "Searchable values from the Auditor’s workbook, with fiscal-year labels, row context, and exact source cells.",
+    "topic": "City finances",
+    "family": "Budget workbooks",
+    "source_url": "https://www.syr.gov/files/content/public/v/113/departments/auditor-office/2026-city-budget-workbook.xlsx",
+    "source_page": "https://www.syr.gov/Departments/Auditor-Office",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:34.395411+00:00",
+    "coverage": "2021–2027 fiscal years; mixed actual/budget/estimate/proposed",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026",
+      "2027"
+    ],
+    "fields": [
+      {
+        "name": "sheet",
+        "alias": "sheet",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_row",
+        "alias": "source row",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "source_cell",
+        "alias": "source cell",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label",
+        "alias": "label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label_column",
+        "alias": "label column",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "section_path",
+        "alias": "section path",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "period_label",
+        "alias": "period label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "fiscal_year",
+        "alias": "fiscal year",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "value_type",
+        "alias": "value type",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "value",
+        "alias": "value",
+        "type": "number",
+        "nullable": true
+      },
+      {
+        "name": "source_formula",
+        "alias": "source formula",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_number_format",
+        "alias": "source number format",
+        "type": "string",
+        "nullable": true
+      }
+    ],
+    "record_count": 176,
+    "source_sha256": "9e8a27547425d5729e8802b208309df2e845b60cb08a44d1f3239c02beb866f3",
+    "download_sha256": "9a1bb5d43b21c11859d23db055f4cb8092d707968e6986c57e3dfd22b5859e9f",
+    "download": "downloads/budget-2026-sidewalk-fund.csv",
+    "original": "sources/2026-city-budget-workbook.xlsx",
+    "limitations": [
+      "DataCuse extraction. Values and source rounding are preserved.",
+      "Includes totals, subtotals and detail. Do not sum all rows.",
+      "Actual, Budget, Estimate and Proposed are distinct measures; editions overlap.",
+      "Read source number formats and row labels for units; not every financial cell is additive.",
+      "Blank means no cached source value. Source formulas are text, not recalculated.",
+      "Auditor notes that source figures can differ due to rounding and mathematical errors."
+    ],
+    "provenance": {
+      "workbook": "2026-city-budget-workbook.xlsx",
+      "sheet": "Sidewalk Fund",
+      "version_note": "Version 2",
+      "notes": "sources/2026-budget-notes.txt",
+      "method": "OOXML cached numeric values, one source cell per row; no formulas recalculated; blank values retained.",
+      "excluded_sheets": [
+        "Instructions & Notes (preserved as text)",
+        "City Rates (different units; original only)"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 176,
+      "column_count": 12,
+      "source_cells_checked": 176,
+      "cached_formula_values_preserved": 10
+    }
+  },
+  {
+    "id": "budget-2026-crouse-marshall-special",
+    "title": "Crouse Marshall Special · 2026 budget workbook",
+    "description": "Searchable values from the Auditor’s workbook, with fiscal-year labels, row context, and exact source cells.",
+    "topic": "City finances",
+    "family": "Budget workbooks",
+    "source_url": "https://www.syr.gov/files/content/public/v/113/departments/auditor-office/2026-city-budget-workbook.xlsx",
+    "source_page": "https://www.syr.gov/Departments/Auditor-Office",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:34.395411+00:00",
+    "coverage": "2021–2027 fiscal years; mixed actual/budget/estimate/proposed",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026",
+      "2027"
+    ],
+    "fields": [
+      {
+        "name": "sheet",
+        "alias": "sheet",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_row",
+        "alias": "source row",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "source_cell",
+        "alias": "source cell",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label",
+        "alias": "label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label_column",
+        "alias": "label column",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "section_path",
+        "alias": "section path",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "period_label",
+        "alias": "period label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "fiscal_year",
+        "alias": "fiscal year",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "value_type",
+        "alias": "value type",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "value",
+        "alias": "value",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "source_formula",
+        "alias": "source formula",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_number_format",
+        "alias": "source number format",
+        "type": "string",
+        "nullable": true
+      }
+    ],
+    "record_count": 264,
+    "source_sha256": "9e8a27547425d5729e8802b208309df2e845b60cb08a44d1f3239c02beb866f3",
+    "download_sha256": "86a839fdfe7767094b96c24cc244acdd43fbf62c3db5f66a8a2086b1f8ce272b",
+    "download": "downloads/budget-2026-crouse-marshall-special.csv",
+    "original": "sources/2026-city-budget-workbook.xlsx",
+    "limitations": [
+      "DataCuse extraction. Values and source rounding are preserved.",
+      "Includes totals, subtotals and detail. Do not sum all rows.",
+      "Actual, Budget, Estimate and Proposed are distinct measures; editions overlap.",
+      "Read source number formats and row labels for units; not every financial cell is additive.",
+      "Blank means no cached source value. Source formulas are text, not recalculated.",
+      "Auditor notes that source figures can differ due to rounding and mathematical errors."
+    ],
+    "provenance": {
+      "workbook": "2026-city-budget-workbook.xlsx",
+      "sheet": "Crouse Marshall Special",
+      "version_note": "Version 2",
+      "notes": "sources/2026-budget-notes.txt",
+      "method": "OOXML cached numeric values, one source cell per row; no formulas recalculated; blank values retained.",
+      "excluded_sheets": [
+        "Instructions & Notes (preserved as text)",
+        "City Rates (different units; original only)"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 264,
+      "column_count": 12,
+      "source_cells_checked": 264,
+      "cached_formula_values_preserved": 31
+    }
+  },
+  {
+    "id": "budget-2026-downtown-special",
+    "title": "Downtown Special · 2026 budget workbook",
+    "description": "Searchable values from the Auditor’s workbook, with fiscal-year labels, row context, and exact source cells.",
+    "topic": "City finances",
+    "family": "Budget workbooks",
+    "source_url": "https://www.syr.gov/files/content/public/v/113/departments/auditor-office/2026-city-budget-workbook.xlsx",
+    "source_page": "https://www.syr.gov/Departments/Auditor-Office",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:34.395411+00:00",
+    "coverage": "2021–2027 fiscal years; mixed actual/budget/estimate/proposed",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026",
+      "2027"
+    ],
+    "fields": [
+      {
+        "name": "sheet",
+        "alias": "sheet",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_row",
+        "alias": "source row",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "source_cell",
+        "alias": "source cell",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label",
+        "alias": "label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label_column",
+        "alias": "label column",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "section_path",
+        "alias": "section path",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "period_label",
+        "alias": "period label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "fiscal_year",
+        "alias": "fiscal year",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "value_type",
+        "alias": "value type",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "value",
+        "alias": "value",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "source_formula",
+        "alias": "source formula",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_number_format",
+        "alias": "source number format",
+        "type": "string",
+        "nullable": true
+      }
+    ],
+    "record_count": 448,
+    "source_sha256": "9e8a27547425d5729e8802b208309df2e845b60cb08a44d1f3239c02beb866f3",
+    "download_sha256": "54243b8e2b7aac61cfaf6a48c5579b6a7da1ac02c1bd965c89bb891b08857ee8",
+    "download": "downloads/budget-2026-downtown-special.csv",
+    "original": "sources/2026-city-budget-workbook.xlsx",
+    "limitations": [
+      "DataCuse extraction. Values and source rounding are preserved.",
+      "Includes totals, subtotals and detail. Do not sum all rows.",
+      "Actual, Budget, Estimate and Proposed are distinct measures; editions overlap.",
+      "Read source number formats and row labels for units; not every financial cell is additive.",
+      "Blank means no cached source value. Source formulas are text, not recalculated.",
+      "Auditor notes that source figures can differ due to rounding and mathematical errors."
+    ],
+    "provenance": {
+      "workbook": "2026-city-budget-workbook.xlsx",
+      "sheet": "Downtown Special",
+      "version_note": "Version 2",
+      "notes": "sources/2026-budget-notes.txt",
+      "method": "OOXML cached numeric values, one source cell per row; no formulas recalculated; blank values retained.",
+      "excluded_sheets": [
+        "Instructions & Notes (preserved as text)",
+        "City Rates (different units; original only)"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 448,
+      "column_count": 12,
+      "source_cells_checked": 448,
+      "cached_formula_values_preserved": 33
+    }
+  },
+  {
+    "id": "budget-2026-debt-service",
+    "title": "Debt Service · 2026 budget workbook",
+    "description": "Searchable values from the Auditor’s workbook, with fiscal-year labels, row context, and exact source cells.",
+    "topic": "City finances",
+    "family": "Budget workbooks",
+    "source_url": "https://www.syr.gov/files/content/public/v/113/departments/auditor-office/2026-city-budget-workbook.xlsx",
+    "source_page": "https://www.syr.gov/Departments/Auditor-Office",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:34.395411+00:00",
+    "coverage": "2021–2027 fiscal years; mixed actual/budget/estimate/proposed",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026",
+      "2027"
+    ],
+    "fields": [
+      {
+        "name": "sheet",
+        "alias": "sheet",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_row",
+        "alias": "source row",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "source_cell",
+        "alias": "source cell",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label",
+        "alias": "label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label_column",
+        "alias": "label column",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "section_path",
+        "alias": "section path",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "period_label",
+        "alias": "period label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "fiscal_year",
+        "alias": "fiscal year",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "value_type",
+        "alias": "value type",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "value",
+        "alias": "value",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_formula",
+        "alias": "source formula",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_number_format",
+        "alias": "source number format",
+        "type": "string",
+        "nullable": true
+      }
+    ],
+    "record_count": 368,
+    "source_sha256": "9e8a27547425d5729e8802b208309df2e845b60cb08a44d1f3239c02beb866f3",
+    "download_sha256": "fb53ad4a2490ed9e377edc9507ee48e5abd4421760c35ad866390c6bf66317b1",
+    "download": "downloads/budget-2026-debt-service.csv",
+    "original": "sources/2026-city-budget-workbook.xlsx",
+    "limitations": [
+      "DataCuse extraction. Values and source rounding are preserved.",
+      "Includes totals, subtotals and detail. Do not sum all rows.",
+      "Actual, Budget, Estimate and Proposed are distinct measures; editions overlap.",
+      "Read source number formats and row labels for units; not every financial cell is additive.",
+      "Blank means no cached source value. Source formulas are text, not recalculated.",
+      "Auditor notes that source figures can differ due to rounding and mathematical errors."
+    ],
+    "provenance": {
+      "workbook": "2026-city-budget-workbook.xlsx",
+      "sheet": "Debt Service",
+      "version_note": "Version 2",
+      "notes": "sources/2026-budget-notes.txt",
+      "method": "OOXML cached numeric values, one source cell per row; no formulas recalculated; blank values retained.",
+      "excluded_sheets": [
+        "Instructions & Notes (preserved as text)",
+        "City Rates (different units; original only)"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 368,
+      "column_count": 12,
+      "source_cells_checked": 368,
+      "cached_formula_values_preserved": 38
+    }
+  },
+  {
+    "id": "budget-2025-general-fund",
+    "title": "General Fund · 2025 budget workbook",
+    "description": "Searchable values from the Auditor’s workbook, with fiscal-year labels, row context, and exact source cells.",
+    "topic": "City finances",
+    "family": "Budget workbooks",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/2/departments/audit/documents/audits/2025-audits/2025-city-budget-workbook.xlsx",
+    "source_page": "https://www.syr.gov/Departments/Auditor-Office",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:35.337731+00:00",
+    "coverage": "2020–2026 fiscal years; mixed actual/budget/estimate/proposed",
+    "years": [
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "sheet",
+        "alias": "sheet",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_row",
+        "alias": "source row",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "source_cell",
+        "alias": "source cell",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label",
+        "alias": "label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label_column",
+        "alias": "label column",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "section_path",
+        "alias": "section path",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "period_label",
+        "alias": "period label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "fiscal_year",
+        "alias": "fiscal year",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "value_type",
+        "alias": "value type",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "value",
+        "alias": "value",
+        "type": "number",
+        "nullable": true
+      },
+      {
+        "name": "source_formula",
+        "alias": "source formula",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_number_format",
+        "alias": "source number format",
+        "type": "string",
+        "nullable": true
+      }
+    ],
+    "record_count": 7616,
+    "source_sha256": "9049845485f2e4e9b993ff2e3c3c0c8b8547912d53cfb2dcf93d0ab6a044ccd0",
+    "download_sha256": "6f9a5bb048a72df15b4e87722b56fcb13616414e8e1cc6b47a0e15cbd38c919e",
+    "download": "downloads/budget-2025-general-fund.csv",
+    "original": "sources/2025-city-budget-workbook.xlsx",
+    "limitations": [
+      "DataCuse extraction. Values and source rounding are preserved.",
+      "Includes totals, subtotals and detail. Do not sum all rows.",
+      "Actual, Budget, Estimate and Proposed are distinct measures; editions overlap.",
+      "Read source number formats and row labels for units; not every financial cell is additive.",
+      "Blank means no cached source value. Source formulas are text, not recalculated.",
+      "Auditor notes that source figures can differ due to rounding and mathematical errors."
+    ],
+    "provenance": {
+      "workbook": "2025-city-budget-workbook.xlsx",
+      "sheet": "General Fund",
+      "version_note": "Version 1",
+      "notes": "sources/2025-budget-notes.txt",
+      "method": "OOXML cached numeric values, one source cell per row; no formulas recalculated; blank values retained.",
+      "excluded_sheets": [
+        "Instructions & Notes (preserved as text)",
+        "City Rates (different units; original only)"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 7616,
+      "column_count": 12,
+      "source_cells_checked": 7616,
+      "cached_formula_values_preserved": 406
+    }
+  },
+  {
+    "id": "budget-2025-water-fund",
+    "title": "Water Fund · 2025 budget workbook",
+    "description": "Searchable values from the Auditor’s workbook, with fiscal-year labels, row context, and exact source cells.",
+    "topic": "City finances",
+    "family": "Budget workbooks",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/2/departments/audit/documents/audits/2025-audits/2025-city-budget-workbook.xlsx",
+    "source_page": "https://www.syr.gov/Departments/Auditor-Office",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:35.337731+00:00",
+    "coverage": "2020–2026 fiscal years; mixed actual/budget/estimate/proposed",
+    "years": [
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "sheet",
+        "alias": "sheet",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_row",
+        "alias": "source row",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "source_cell",
+        "alias": "source cell",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label",
+        "alias": "label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label_column",
+        "alias": "label column",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "section_path",
+        "alias": "section path",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "period_label",
+        "alias": "period label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "fiscal_year",
+        "alias": "fiscal year",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "value_type",
+        "alias": "value type",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "value",
+        "alias": "value",
+        "type": "number",
+        "nullable": true
+      },
+      {
+        "name": "source_formula",
+        "alias": "source formula",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_number_format",
+        "alias": "source number format",
+        "type": "string",
+        "nullable": true
+      }
+    ],
+    "record_count": 984,
+    "source_sha256": "9049845485f2e4e9b993ff2e3c3c0c8b8547912d53cfb2dcf93d0ab6a044ccd0",
+    "download_sha256": "b413f40d44de41b9a8456f8d67b7f71f0500fd8a10c01358e6c6cbf5cd42b132",
+    "download": "downloads/budget-2025-water-fund.csv",
+    "original": "sources/2025-city-budget-workbook.xlsx",
+    "limitations": [
+      "DataCuse extraction. Values and source rounding are preserved.",
+      "Includes totals, subtotals and detail. Do not sum all rows.",
+      "Actual, Budget, Estimate and Proposed are distinct measures; editions overlap.",
+      "Read source number formats and row labels for units; not every financial cell is additive.",
+      "Blank means no cached source value. Source formulas are text, not recalculated.",
+      "Auditor notes that source figures can differ due to rounding and mathematical errors."
+    ],
+    "provenance": {
+      "workbook": "2025-city-budget-workbook.xlsx",
+      "sheet": "Water Fund",
+      "version_note": "Version 1",
+      "notes": "sources/2025-budget-notes.txt",
+      "method": "OOXML cached numeric values, one source cell per row; no formulas recalculated; blank values retained.",
+      "excluded_sheets": [
+        "Instructions & Notes (preserved as text)",
+        "City Rates (different units; original only)"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 984,
+      "column_count": 12,
+      "source_cells_checked": 984,
+      "cached_formula_values_preserved": 83
+    }
+  },
+  {
+    "id": "budget-2025-sidewalk-fund",
+    "title": "Sidewalk Fund · 2025 budget workbook",
+    "description": "Searchable values from the Auditor’s workbook, with fiscal-year labels, row context, and exact source cells.",
+    "topic": "City finances",
+    "family": "Budget workbooks",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/2/departments/audit/documents/audits/2025-audits/2025-city-budget-workbook.xlsx",
+    "source_page": "https://www.syr.gov/Departments/Auditor-Office",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:35.337731+00:00",
+    "coverage": "2020–2026 fiscal years; mixed actual/budget/estimate/proposed",
+    "years": [
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "sheet",
+        "alias": "sheet",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_row",
+        "alias": "source row",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "source_cell",
+        "alias": "source cell",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label",
+        "alias": "label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label_column",
+        "alias": "label column",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "section_path",
+        "alias": "section path",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "period_label",
+        "alias": "period label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "fiscal_year",
+        "alias": "fiscal year",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "value_type",
+        "alias": "value type",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "value",
+        "alias": "value",
+        "type": "number",
+        "nullable": true
+      },
+      {
+        "name": "source_formula",
+        "alias": "source formula",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_number_format",
+        "alias": "source number format",
+        "type": "string",
+        "nullable": true
+      }
+    ],
+    "record_count": 176,
+    "source_sha256": "9049845485f2e4e9b993ff2e3c3c0c8b8547912d53cfb2dcf93d0ab6a044ccd0",
+    "download_sha256": "44944ce9c72160f2b0e5fc192353d97fffbb7874a86b301c9d8d000ab5f460c9",
+    "download": "downloads/budget-2025-sidewalk-fund.csv",
+    "original": "sources/2025-city-budget-workbook.xlsx",
+    "limitations": [
+      "DataCuse extraction. Values and source rounding are preserved.",
+      "Includes totals, subtotals and detail. Do not sum all rows.",
+      "Actual, Budget, Estimate and Proposed are distinct measures; editions overlap.",
+      "Read source number formats and row labels for units; not every financial cell is additive.",
+      "Blank means no cached source value. Source formulas are text, not recalculated.",
+      "Auditor notes that source figures can differ due to rounding and mathematical errors."
+    ],
+    "provenance": {
+      "workbook": "2025-city-budget-workbook.xlsx",
+      "sheet": "Sidewalk Fund",
+      "version_note": "Version 1",
+      "notes": "sources/2025-budget-notes.txt",
+      "method": "OOXML cached numeric values, one source cell per row; no formulas recalculated; blank values retained.",
+      "excluded_sheets": [
+        "Instructions & Notes (preserved as text)",
+        "City Rates (different units; original only)"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 176,
+      "column_count": 12,
+      "source_cells_checked": 176,
+      "cached_formula_values_preserved": 15
+    }
+  },
+  {
+    "id": "budget-2025-sewer-fund",
+    "title": "Sewer Fund · 2025 budget workbook",
+    "description": "Searchable values from the Auditor’s workbook, with fiscal-year labels, row context, and exact source cells.",
+    "topic": "City finances",
+    "family": "Budget workbooks",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/2/departments/audit/documents/audits/2025-audits/2025-city-budget-workbook.xlsx",
+    "source_page": "https://www.syr.gov/Departments/Auditor-Office",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:35.337731+00:00",
+    "coverage": "2020–2026 fiscal years; mixed actual/budget/estimate/proposed",
+    "years": [
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "sheet",
+        "alias": "sheet",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_row",
+        "alias": "source row",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "source_cell",
+        "alias": "source cell",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label",
+        "alias": "label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label_column",
+        "alias": "label column",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "section_path",
+        "alias": "section path",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "period_label",
+        "alias": "period label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "fiscal_year",
+        "alias": "fiscal year",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "value_type",
+        "alias": "value type",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "value",
+        "alias": "value",
+        "type": "number",
+        "nullable": true
+      },
+      {
+        "name": "source_formula",
+        "alias": "source formula",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_number_format",
+        "alias": "source number format",
+        "type": "string",
+        "nullable": true
+      }
+    ],
+    "record_count": 336,
+    "source_sha256": "9049845485f2e4e9b993ff2e3c3c0c8b8547912d53cfb2dcf93d0ab6a044ccd0",
+    "download_sha256": "ea6d7f6fd53d70f69afd67fe8fed7d7453a87ff9194389b1ad2f4f922410269d",
+    "download": "downloads/budget-2025-sewer-fund.csv",
+    "original": "sources/2025-city-budget-workbook.xlsx",
+    "limitations": [
+      "DataCuse extraction. Values and source rounding are preserved.",
+      "Includes totals, subtotals and detail. Do not sum all rows.",
+      "Actual, Budget, Estimate and Proposed are distinct measures; editions overlap.",
+      "Read source number formats and row labels for units; not every financial cell is additive.",
+      "Blank means no cached source value. Source formulas are text, not recalculated.",
+      "Auditor notes that source figures can differ due to rounding and mathematical errors."
+    ],
+    "provenance": {
+      "workbook": "2025-city-budget-workbook.xlsx",
+      "sheet": "Sewer Fund",
+      "version_note": "Version 1",
+      "notes": "sources/2025-budget-notes.txt",
+      "method": "OOXML cached numeric values, one source cell per row; no formulas recalculated; blank values retained.",
+      "excluded_sheets": [
+        "Instructions & Notes (preserved as text)",
+        "City Rates (different units; original only)"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 336,
+      "column_count": 12,
+      "source_cells_checked": 336,
+      "cached_formula_values_preserved": 14
+    }
+  },
+  {
+    "id": "budget-2025-crouse-marshall-special",
+    "title": "Crouse Marshall Special · 2025 budget workbook",
+    "description": "Searchable values from the Auditor’s workbook, with fiscal-year labels, row context, and exact source cells.",
+    "topic": "City finances",
+    "family": "Budget workbooks",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/2/departments/audit/documents/audits/2025-audits/2025-city-budget-workbook.xlsx",
+    "source_page": "https://www.syr.gov/Departments/Auditor-Office",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:35.337731+00:00",
+    "coverage": "2020–2026 fiscal years; mixed actual/budget/estimate/proposed",
+    "years": [
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "sheet",
+        "alias": "sheet",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_row",
+        "alias": "source row",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "source_cell",
+        "alias": "source cell",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label",
+        "alias": "label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label_column",
+        "alias": "label column",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "section_path",
+        "alias": "section path",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "period_label",
+        "alias": "period label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "fiscal_year",
+        "alias": "fiscal year",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "value_type",
+        "alias": "value type",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "value",
+        "alias": "value",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "source_formula",
+        "alias": "source formula",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_number_format",
+        "alias": "source number format",
+        "type": "string",
+        "nullable": true
+      }
+    ],
+    "record_count": 280,
+    "source_sha256": "9049845485f2e4e9b993ff2e3c3c0c8b8547912d53cfb2dcf93d0ab6a044ccd0",
+    "download_sha256": "995351ac08e42b759a2eb6ba703acd8d65cba6e2e282ad4d416114305ee2acf9",
+    "download": "downloads/budget-2025-crouse-marshall-special.csv",
+    "original": "sources/2025-city-budget-workbook.xlsx",
+    "limitations": [
+      "DataCuse extraction. Values and source rounding are preserved.",
+      "Includes totals, subtotals and detail. Do not sum all rows.",
+      "Actual, Budget, Estimate and Proposed are distinct measures; editions overlap.",
+      "Read source number formats and row labels for units; not every financial cell is additive.",
+      "Blank means no cached source value. Source formulas are text, not recalculated.",
+      "Auditor notes that source figures can differ due to rounding and mathematical errors."
+    ],
+    "provenance": {
+      "workbook": "2025-city-budget-workbook.xlsx",
+      "sheet": "Crouse Marshall Special",
+      "version_note": "Version 1",
+      "notes": "sources/2025-budget-notes.txt",
+      "method": "OOXML cached numeric values, one source cell per row; no formulas recalculated; blank values retained.",
+      "excluded_sheets": [
+        "Instructions & Notes (preserved as text)",
+        "City Rates (different units; original only)"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 280,
+      "column_count": 12,
+      "source_cells_checked": 280,
+      "cached_formula_values_preserved": 19
+    }
+  },
+  {
+    "id": "budget-2025-downtown-special",
+    "title": "Downtown Special · 2025 budget workbook",
+    "description": "Searchable values from the Auditor’s workbook, with fiscal-year labels, row context, and exact source cells.",
+    "topic": "City finances",
+    "family": "Budget workbooks",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/2/departments/audit/documents/audits/2025-audits/2025-city-budget-workbook.xlsx",
+    "source_page": "https://www.syr.gov/Departments/Auditor-Office",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:35.337731+00:00",
+    "coverage": "2020–2026 fiscal years; mixed actual/budget/estimate/proposed",
+    "years": [
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "sheet",
+        "alias": "sheet",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_row",
+        "alias": "source row",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "source_cell",
+        "alias": "source cell",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label",
+        "alias": "label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label_column",
+        "alias": "label column",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "section_path",
+        "alias": "section path",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "period_label",
+        "alias": "period label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "fiscal_year",
+        "alias": "fiscal year",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "value_type",
+        "alias": "value type",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "value",
+        "alias": "value",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "source_formula",
+        "alias": "source formula",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_number_format",
+        "alias": "source number format",
+        "type": "string",
+        "nullable": true
+      }
+    ],
+    "record_count": 504,
+    "source_sha256": "9049845485f2e4e9b993ff2e3c3c0c8b8547912d53cfb2dcf93d0ab6a044ccd0",
+    "download_sha256": "3a7d8fee2e44e94d0203a6b175f2d716bf2b7f0fd8017c7ffe79cc5ebfc2c1ed",
+    "download": "downloads/budget-2025-downtown-special.csv",
+    "original": "sources/2025-city-budget-workbook.xlsx",
+    "limitations": [
+      "DataCuse extraction. Values and source rounding are preserved.",
+      "Includes totals, subtotals and detail. Do not sum all rows.",
+      "Actual, Budget, Estimate and Proposed are distinct measures; editions overlap.",
+      "Read source number formats and row labels for units; not every financial cell is additive.",
+      "Blank means no cached source value. Source formulas are text, not recalculated.",
+      "Auditor notes that source figures can differ due to rounding and mathematical errors."
+    ],
+    "provenance": {
+      "workbook": "2025-city-budget-workbook.xlsx",
+      "sheet": "Downtown Special",
+      "version_note": "Version 1",
+      "notes": "sources/2025-budget-notes.txt",
+      "method": "OOXML cached numeric values, one source cell per row; no formulas recalculated; blank values retained.",
+      "excluded_sheets": [
+        "Instructions & Notes (preserved as text)",
+        "City Rates (different units; original only)"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 504,
+      "column_count": 12,
+      "source_cells_checked": 504,
+      "cached_formula_values_preserved": 23
+    }
+  },
+  {
+    "id": "budget-2025-debt-service",
+    "title": "Debt Service · 2025 budget workbook",
+    "description": "Searchable values from the Auditor’s workbook, with fiscal-year labels, row context, and exact source cells.",
+    "topic": "City finances",
+    "family": "Budget workbooks",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/2/departments/audit/documents/audits/2025-audits/2025-city-budget-workbook.xlsx",
+    "source_page": "https://www.syr.gov/Departments/Auditor-Office",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:35.337731+00:00",
+    "coverage": "2020–2026 fiscal years; mixed actual/budget/estimate/proposed",
+    "years": [
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "sheet",
+        "alias": "sheet",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_row",
+        "alias": "source row",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "source_cell",
+        "alias": "source cell",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label",
+        "alias": "label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "label_column",
+        "alias": "label column",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "section_path",
+        "alias": "section path",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "period_label",
+        "alias": "period label",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "fiscal_year",
+        "alias": "fiscal year",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "value_type",
+        "alias": "value type",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "value",
+        "alias": "value",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_formula",
+        "alias": "source formula",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_number_format",
+        "alias": "source number format",
+        "type": "string",
+        "nullable": true
+      }
+    ],
+    "record_count": 329,
+    "source_sha256": "9049845485f2e4e9b993ff2e3c3c0c8b8547912d53cfb2dcf93d0ab6a044ccd0",
+    "download_sha256": "8feb94979c05e4765607b4c26e1fe96b1eb428cd99cef907ea220b489098150c",
+    "download": "downloads/budget-2025-debt-service.csv",
+    "original": "sources/2025-city-budget-workbook.xlsx",
+    "limitations": [
+      "DataCuse extraction. Values and source rounding are preserved.",
+      "Includes totals, subtotals and detail. Do not sum all rows.",
+      "Actual, Budget, Estimate and Proposed are distinct measures; editions overlap.",
+      "Read source number formats and row labels for units; not every financial cell is additive.",
+      "Blank means no cached source value. Source formulas are text, not recalculated.",
+      "Auditor notes that source figures can differ due to rounding and mathematical errors."
+    ],
+    "provenance": {
+      "workbook": "2025-city-budget-workbook.xlsx",
+      "sheet": "Debt Service",
+      "version_note": "Version 1",
+      "notes": "sources/2025-budget-notes.txt",
+      "method": "OOXML cached numeric values, one source cell per row; no formulas recalculated; blank values retained.",
+      "excluded_sheets": [
+        "Instructions & Notes (preserved as text)",
+        "City Rates (different units; original only)"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 329,
+      "column_count": 12,
+      "source_cells_checked": 329,
+      "cached_formula_values_preserved": 27
+    }
+  },
+  {
+    "id": "water-2025-monthly-turbidity",
+    "title": "Raw water turbidity · 2025",
+    "description": "Monthly maximum, minimum and average turbidity for each Skaneateles raw-water intake.",
+    "topic": "Water & environment",
+    "family": "Water quality report · 2025",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/departments/water/documents/reports/water-quality-annual-reports/quality-annual-report-2025.pdf",
+    "source_page": "https://www.syr.gov/Departments/Water/Water-Data-and-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:35.885707+00:00",
+    "coverage": "January–December 2025",
+    "years": [
+      "2025"
+    ],
+    "fields": [
+      {
+        "name": "year",
+        "alias": "year",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "month",
+        "alias": "month",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "month_name",
+        "alias": "month name",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "intake",
+        "alias": "intake",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "maximum",
+        "alias": "maximum",
+        "type": "number",
+        "nullable": true
+      },
+      {
+        "name": "minimum",
+        "alias": "minimum",
+        "type": "number",
+        "nullable": true
+      },
+      {
+        "name": "average",
+        "alias": "average",
+        "type": "number",
+        "nullable": true
+      },
+      {
+        "name": "unit",
+        "alias": "unit",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_table",
+        "alias": "source table",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "pdf_page",
+        "alias": "pdf page",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "printed_page",
+        "alias": "printed page",
+        "type": "integer",
+        "nullable": true
+      }
+    ],
+    "record_count": 24,
+    "source_sha256": "988a602bb50172e2c47a1c57549bb2bf4090a1b3bd4f77c09dea581c91040ef6",
+    "download_sha256": "d606d5bce58786333f55dbaa41b0591df7b2ea6a06302042a9ec1e0a8667c91e",
+    "download": "downloads/water-2025-monthly-turbidity.csv",
+    "original": "sources/quality-annual-report-2025.pdf",
+    "limitations": [
+      "DataCuse extraction of Table 8 only; this is raw intake water, not a tap-water compliance assessment.",
+      "The reported cumulative averages are 0.49 NTU (intake 1) and 0.67 NTU (intake 2); these are not recomputed from the rounded monthly values."
+    ],
+    "provenance": {
+      "pdf_page": 16,
+      "printed_page": "10",
+      "table": 8,
+      "method": "Text-layer extraction; month rows and six measurement columns verified against rendered table.",
+      "cumulative_average_ntu": {
+        "intake_1": "0.49",
+        "intake_2": "0.67"
+      }
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 24,
+      "column_count": 11,
+      "monthly_ranges_valid": true
+    }
+  },
+  {
+    "id": "water-2025-table-19",
+    "title": "Trihalomethanes · 2025",
+    "description": "Four sites and the report’s quarterly averages, with units and source table references.",
+    "topic": "Water & environment",
+    "family": "Water quality report · 2025",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/departments/water/documents/reports/water-quality-annual-reports/quality-annual-report-2025.pdf",
+    "source_page": "https://www.syr.gov/Departments/Water/Water-Data-and-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:35.885707+00:00",
+    "coverage": "Four sampling dates in 2025",
+    "years": [
+      "2025"
+    ],
+    "fields": [
+      {
+        "name": "sample_date",
+        "alias": "sample date",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "site_as_printed",
+        "alias": "site as printed",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "measure",
+        "alias": "measure",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "value",
+        "alias": "value",
+        "type": "number",
+        "nullable": true
+      },
+      {
+        "name": "unit",
+        "alias": "unit",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "row_type",
+        "alias": "row type",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_table",
+        "alias": "source table",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "pdf_page",
+        "alias": "pdf page",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "printed_page",
+        "alias": "printed page",
+        "type": "integer",
+        "nullable": true
+      }
+    ],
+    "record_count": 20,
+    "source_sha256": "988a602bb50172e2c47a1c57549bb2bf4090a1b3bd4f77c09dea581c91040ef6",
+    "download_sha256": "6fbff59c7af39e3e8344b79969da2f0d59fa95fae7040091353dd7fdaf9690ac",
+    "download": "downloads/water-2025-table-19.csv",
+    "original": "sources/quality-annual-report-2025.pdf",
+    "limitations": [
+      "DataCuse extraction. Reported site values and quarterly averages are separate row types.",
+      "Site address is preserved as printed: Table 19 says 4000 East Genesee; Table 20 says 400 East Genesee. No silent correction.",
+      "This table alone cannot establish current water safety."
+    ],
+    "provenance": {
+      "pdf_page": 31,
+      "printed_page": "25",
+      "table": 19,
+      "method": "Text-layer extraction with fixed table, dates, column counts and source-page review.",
+      "locational_annual_averages_ug_l": {
+        "4000 East Genesee St.": "28.99",
+        "Fuel Hub Truck Stop": "28.54",
+        "Functional Comm. Corp.": "29.10",
+        "McChesney Center": "25.77"
+      },
+      "footnote": "40/30 Certification Exemption per Disinfection Byproducts Rules: <40 ug/L"
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 20,
+      "column_count": 9
+    }
+  },
+  {
+    "id": "water-2025-table-20",
+    "title": "Haloacetic acids (5) · 2025",
+    "description": "Four sites and the report’s quarterly averages, with units and source table references.",
+    "topic": "Water & environment",
+    "family": "Water quality report · 2025",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/departments/water/documents/reports/water-quality-annual-reports/quality-annual-report-2025.pdf",
+    "source_page": "https://www.syr.gov/Departments/Water/Water-Data-and-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:35.885707+00:00",
+    "coverage": "Four sampling dates in 2025",
+    "years": [
+      "2025"
+    ],
+    "fields": [
+      {
+        "name": "sample_date",
+        "alias": "sample date",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "site_as_printed",
+        "alias": "site as printed",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "measure",
+        "alias": "measure",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "value",
+        "alias": "value",
+        "type": "number",
+        "nullable": true
+      },
+      {
+        "name": "unit",
+        "alias": "unit",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "row_type",
+        "alias": "row type",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "source_table",
+        "alias": "source table",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "pdf_page",
+        "alias": "pdf page",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "printed_page",
+        "alias": "printed page",
+        "type": "integer",
+        "nullable": true
+      }
+    ],
+    "record_count": 20,
+    "source_sha256": "988a602bb50172e2c47a1c57549bb2bf4090a1b3bd4f77c09dea581c91040ef6",
+    "download_sha256": "6e8e88fc8a8f3a46f87a172db487296a89abe44aee86542a8df97fd6d142e196",
+    "download": "downloads/water-2025-table-20.csv",
+    "original": "sources/quality-annual-report-2025.pdf",
+    "limitations": [
+      "DataCuse extraction. Reported site values and quarterly averages are separate row types.",
+      "Site address is preserved as printed: Table 19 says 4000 East Genesee; Table 20 says 400 East Genesee. No silent correction.",
+      "This table alone cannot establish current water safety."
+    ],
+    "provenance": {
+      "pdf_page": 31,
+      "printed_page": "25",
+      "table": 20,
+      "method": "Text-layer extraction with fixed table, dates, column counts and source-page review.",
+      "locational_annual_averages_ug_l": {
+        "400 East Genesee St.": "19.48",
+        "Fuel Hub Truck Stop": "17.85",
+        "Functional Comm. Corp.": "19.25",
+        "McChesney Center": "17.88"
+      },
+      "footnote": "No table-specific footnote printed."
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 20,
+      "column_count": 9
+    }
+  },
+  {
+    "id": "crb-right-to-know-data-joined-cleaned",
+    "title": "Right to Know · Right to Know Data Joined Cleaned",
+    "description": "An individually downloadable table from the Citizen Review Board’s October 2026 Right-to-Know archive.",
+    "topic": "Public safety",
+    "family": "CRB Right to Know · October 2026",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00",
+    "coverage": "2021 Q3–2026 Q1 in joined file; summary subsets vary",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "source_row_index",
+        "alias": "source row index",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "rtk_quarter",
+        "alias": "rtk quarter",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "annual",
+        "alias": "annual",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "quart",
+        "alias": "quart",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "district",
+        "alias": "district",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "start_level",
+        "alias": "start level",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "end_level",
+        "alias": "end level",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "age",
+        "alias": "age",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "age_group",
+        "alias": "age group",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "sex",
+        "alias": "sex",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "race",
+        "alias": "race",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "ethnicity",
+        "alias": "ethnicity",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "arrest_type",
+        "alias": "arrest type",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "card_offered",
+        "alias": "card offered",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "card_response",
+        "alias": "card response",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "consent_requested",
+        "alias": "consent requested",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "consent_response",
+        "alias": "consent response",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "use_of_force",
+        "alias": "use of force",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "reason",
+        "alias": "reason",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "vt_stop",
+        "alias": "vt stop",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "other",
+        "alias": "other",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "match_suspect_description",
+        "alias": "match suspect description",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "prox_to_crime",
+        "alias": "prox to crime",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "concealing_possession_weapon",
+        "alias": "concealing possession weapon",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "casing_victim_location",
+        "alias": "casing victim location",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "drug_transaction",
+        "alias": "drug transaction",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "frisk",
+        "alias": "frisk",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "crime_pattern",
+        "alias": "crime pattern",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "lookout",
+        "alias": "lookout",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "last_reason_cutoff",
+        "alias": "last reason cutoff",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "missing_reason",
+        "alias": "missing reason",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "reason_na",
+        "alias": "reason na",
+        "type": "integer",
+        "nullable": true
+      }
+    ],
+    "record_count": 22947,
+    "source_sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "download_sha256": "ba90e079c09f1687352a68fdd75608521f52595ff55782687fb6f63937deb89a",
+    "download": "downloads/crb-right-to-know-data-joined-cleaned.csv",
+    "original": "sources/right-to-know-crb-output-10-2026.zip",
+    "limitations": [
+      "City-authored CSV extracted from ZIP. Only the unnamed index header was renamed source_row_index.",
+      "NA is preserved as the source missing-value marker; it does not mean no or zero.",
+      "Summary files overlap. Do not add their totals or infer population rates.",
+      "Category codes are preserved without guessed expansions."
+    ],
+    "provenance": {
+      "archive_member": "Spreadsheets/Right_to_Know_Data_Joined_Cleaned.csv",
+      "archive_member_sha256": "961732fadbfaf673969706bdfac8c1b1555c6a4f163c6d7be500b8f6dd443cca",
+      "method": "CSV parsed and written with identical field values; empty index header renamed.",
+      "joined_rows": 22947,
+      "quarters_present": [
+        "2021 Q3",
+        "2021 Q4",
+        "2022 Q1",
+        "2022 Q2",
+        "2022 Q3",
+        "2022 Q4",
+        "2023 Q1",
+        "2023 Q2",
+        "2023 Q3",
+        "2023 Q4",
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4",
+        "2026 Q1"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 22947,
+      "column_count": 32
+    }
+  },
+  {
+    "id": "crb-rtk-age-count",
+    "title": "Right to Know · age count",
+    "description": "An individually downloadable table from the Citizen Review Board’s October 2026 Right-to-Know archive.",
+    "topic": "Public safety",
+    "family": "CRB Right to Know · October 2026",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00",
+    "coverage": "2021 Q3–2026 Q1 in joined file; summary subsets vary",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "source_row_index",
+        "alias": "source row index",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "age",
+        "alias": "age",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "n",
+        "alias": "n",
+        "type": "integer",
+        "nullable": true
+      }
+    ],
+    "record_count": 92,
+    "source_sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "download_sha256": "8f85af4a173d8aee22dad64a6c0f28496e3f4c9fbda62b79cb5aa17c035b1d32",
+    "download": "downloads/crb-rtk-age-count.csv",
+    "original": "sources/right-to-know-crb-output-10-2026.zip",
+    "limitations": [
+      "City-authored CSV extracted from ZIP. Only the unnamed index header was renamed source_row_index.",
+      "NA is preserved as the source missing-value marker; it does not mean no or zero.",
+      "Summary files overlap. Do not add their totals or infer population rates.",
+      "Category codes are preserved without guessed expansions."
+    ],
+    "provenance": {
+      "archive_member": "Spreadsheets/rtk_age_count.csv",
+      "archive_member_sha256": "7269c30e5062d86d20043366d695cbaceceaa7225ffb33cc44230dccb79cc079",
+      "method": "CSV parsed and written with identical field values; empty index header renamed.",
+      "joined_rows": 22947,
+      "quarters_present": [
+        "2021 Q3",
+        "2021 Q4",
+        "2022 Q1",
+        "2022 Q2",
+        "2022 Q3",
+        "2022 Q4",
+        "2023 Q1",
+        "2023 Q2",
+        "2023 Q3",
+        "2023 Q4",
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4",
+        "2026 Q1"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 92,
+      "column_count": 3,
+      "sum_n": 22947,
+      "equals_joined_row_count": true
+    }
+  },
+  {
+    "id": "crb-rtk-age-na-count",
+    "title": "Right to Know · age na count",
+    "description": "An individually downloadable table from the Citizen Review Board’s October 2026 Right-to-Know archive.",
+    "topic": "Public safety",
+    "family": "CRB Right to Know · October 2026",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00",
+    "coverage": "2021 Q3–2026 Q1 in joined file; summary subsets vary",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "source_row_index",
+        "alias": "source row index",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "rtk_quarter",
+        "alias": "rtk quarter",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "age_percentage",
+        "alias": "age percentage",
+        "type": "number",
+        "nullable": true
+      }
+    ],
+    "record_count": 19,
+    "source_sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "download_sha256": "3d38de9b2b346d6a670ad6459839da213cd8c603031a7f5d4ba5cae6fc6603ca",
+    "download": "downloads/crb-rtk-age-na-count.csv",
+    "original": "sources/right-to-know-crb-output-10-2026.zip",
+    "limitations": [
+      "City-authored CSV extracted from ZIP. Only the unnamed index header was renamed source_row_index.",
+      "NA is preserved as the source missing-value marker; it does not mean no or zero.",
+      "Summary files overlap. Do not add their totals or infer population rates.",
+      "Category codes are preserved without guessed expansions."
+    ],
+    "provenance": {
+      "archive_member": "Spreadsheets/rtk_age_na_count.csv",
+      "archive_member_sha256": "6af7835869e0f78f00dc176585c69caec32e47013d27f776f3e6ae6cba1e78b9",
+      "method": "CSV parsed and written with identical field values; empty index header renamed.",
+      "joined_rows": 22947,
+      "quarters_present": [
+        "2021 Q3",
+        "2021 Q4",
+        "2022 Q1",
+        "2022 Q2",
+        "2022 Q3",
+        "2022 Q4",
+        "2023 Q1",
+        "2023 Q2",
+        "2023 Q3",
+        "2023 Q4",
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4",
+        "2026 Q1"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 19,
+      "column_count": 3
+    }
+  },
+  {
+    "id": "crb-rtk-arrest-count",
+    "title": "Right to Know · arrest count",
+    "description": "An individually downloadable table from the Citizen Review Board’s October 2026 Right-to-Know archive.",
+    "topic": "Public safety",
+    "family": "CRB Right to Know · October 2026",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00",
+    "coverage": "2021 Q3–2026 Q1 in joined file; summary subsets vary",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "source_row_index",
+        "alias": "source row index",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "arrest_type",
+        "alias": "arrest type",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "n",
+        "alias": "n",
+        "type": "integer",
+        "nullable": true
+      }
+    ],
+    "record_count": 4,
+    "source_sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "download_sha256": "69d8ca67d72456cdae027c1041fea09b991794dc7a5b9c7435cf24f259e17cd0",
+    "download": "downloads/crb-rtk-arrest-count.csv",
+    "original": "sources/right-to-know-crb-output-10-2026.zip",
+    "limitations": [
+      "City-authored CSV extracted from ZIP. Only the unnamed index header was renamed source_row_index.",
+      "NA is preserved as the source missing-value marker; it does not mean no or zero.",
+      "Summary files overlap. Do not add their totals or infer population rates.",
+      "Category codes are preserved without guessed expansions."
+    ],
+    "provenance": {
+      "archive_member": "Spreadsheets/rtk_arrest_count.csv",
+      "archive_member_sha256": "69bd64696ece438ce9c4e95ff0b7981ff9844ed790469e2c84e2c8a71c6bec52",
+      "method": "CSV parsed and written with identical field values; empty index header renamed.",
+      "joined_rows": 22947,
+      "quarters_present": [
+        "2021 Q3",
+        "2021 Q4",
+        "2022 Q1",
+        "2022 Q2",
+        "2022 Q3",
+        "2022 Q4",
+        "2023 Q1",
+        "2023 Q2",
+        "2023 Q3",
+        "2023 Q4",
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4",
+        "2026 Q1"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 4,
+      "column_count": 3,
+      "sum_n": 22947,
+      "equals_joined_row_count": true
+    }
+  },
+  {
+    "id": "crb-rtk-card-count",
+    "title": "Right to Know · card count",
+    "description": "An individually downloadable table from the Citizen Review Board’s October 2026 Right-to-Know archive.",
+    "topic": "Public safety",
+    "family": "CRB Right to Know · October 2026",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00",
+    "coverage": "2021 Q3–2026 Q1 in joined file; summary subsets vary",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "source_row_index",
+        "alias": "source row index",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "card_offered",
+        "alias": "card offered",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "n",
+        "alias": "n",
+        "type": "integer",
+        "nullable": true
+      }
+    ],
+    "record_count": 3,
+    "source_sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "download_sha256": "17559511a2f833848ef79a961bedcec678979ac1f29b5647fb352a5a6744c5a1",
+    "download": "downloads/crb-rtk-card-count.csv",
+    "original": "sources/right-to-know-crb-output-10-2026.zip",
+    "limitations": [
+      "City-authored CSV extracted from ZIP. Only the unnamed index header was renamed source_row_index.",
+      "NA is preserved as the source missing-value marker; it does not mean no or zero.",
+      "Summary files overlap. Do not add their totals or infer population rates.",
+      "Category codes are preserved without guessed expansions."
+    ],
+    "provenance": {
+      "archive_member": "Spreadsheets/rtk_card_count.csv",
+      "archive_member_sha256": "7f2e4f98105650c78881195948392cf04d0cab49524dd8aaa925a14fed926325",
+      "method": "CSV parsed and written with identical field values; empty index header renamed.",
+      "joined_rows": 22947,
+      "quarters_present": [
+        "2021 Q3",
+        "2021 Q4",
+        "2022 Q1",
+        "2022 Q2",
+        "2022 Q3",
+        "2022 Q4",
+        "2023 Q1",
+        "2023 Q2",
+        "2023 Q3",
+        "2023 Q4",
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4",
+        "2026 Q1"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 3,
+      "column_count": 3,
+      "sum_n": 22947,
+      "equals_joined_row_count": true
+    }
+  },
+  {
+    "id": "crb-rtk-card-na-count",
+    "title": "Right to Know · card na count",
+    "description": "An individually downloadable table from the Citizen Review Board’s October 2026 Right-to-Know archive.",
+    "topic": "Public safety",
+    "family": "CRB Right to Know · October 2026",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00",
+    "coverage": "2021 Q3–2026 Q1 in joined file; summary subsets vary",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "source_row_index",
+        "alias": "source row index",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "rtk_quarter",
+        "alias": "rtk quarter",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "card_percentage",
+        "alias": "card percentage",
+        "type": "number",
+        "nullable": true
+      }
+    ],
+    "record_count": 19,
+    "source_sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "download_sha256": "e0948dcadc1adaba094e0567fdb8b46c649925b8b8dd803095eb2e6a251691c5",
+    "download": "downloads/crb-rtk-card-na-count.csv",
+    "original": "sources/right-to-know-crb-output-10-2026.zip",
+    "limitations": [
+      "City-authored CSV extracted from ZIP. Only the unnamed index header was renamed source_row_index.",
+      "NA is preserved as the source missing-value marker; it does not mean no or zero.",
+      "Summary files overlap. Do not add their totals or infer population rates.",
+      "Category codes are preserved without guessed expansions."
+    ],
+    "provenance": {
+      "archive_member": "Spreadsheets/rtk_card_na_count.csv",
+      "archive_member_sha256": "8915f859bcf6fbafd9e2ca73e6d29052cdc25633fe9aa1753fce3d4dd1111cc8",
+      "method": "CSV parsed and written with identical field values; empty index header renamed.",
+      "joined_rows": 22947,
+      "quarters_present": [
+        "2021 Q3",
+        "2021 Q4",
+        "2022 Q1",
+        "2022 Q2",
+        "2022 Q3",
+        "2022 Q4",
+        "2023 Q1",
+        "2023 Q2",
+        "2023 Q3",
+        "2023 Q4",
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4",
+        "2026 Q1"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 19,
+      "column_count": 3
+    }
+  },
+  {
+    "id": "crb-rtk-card-response-count",
+    "title": "Right to Know · card response count",
+    "description": "An individually downloadable table from the Citizen Review Board’s October 2026 Right-to-Know archive.",
+    "topic": "Public safety",
+    "family": "CRB Right to Know · October 2026",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00",
+    "coverage": "2021 Q3–2026 Q1 in joined file; summary subsets vary",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "source_row_index",
+        "alias": "source row index",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "card_offered",
+        "alias": "card offered",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "card_response",
+        "alias": "card response",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "n",
+        "alias": "n",
+        "type": "integer",
+        "nullable": true
+      }
+    ],
+    "record_count": 4,
+    "source_sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "download_sha256": "73510710731f6cd5d2ad47089558f7e6ea32fa8e23d045e4f2cc39b457ed8efa",
+    "download": "downloads/crb-rtk-card-response-count.csv",
+    "original": "sources/right-to-know-crb-output-10-2026.zip",
+    "limitations": [
+      "City-authored CSV extracted from ZIP. Only the unnamed index header was renamed source_row_index.",
+      "NA is preserved as the source missing-value marker; it does not mean no or zero.",
+      "Summary files overlap. Do not add their totals or infer population rates.",
+      "Category codes are preserved without guessed expansions."
+    ],
+    "provenance": {
+      "archive_member": "Spreadsheets/rtk_card_response_count.csv",
+      "archive_member_sha256": "7d2380d21de35eb8e9540602bac0540f212fe6082e98dd9b8a3d818a6cc418db",
+      "method": "CSV parsed and written with identical field values; empty index header renamed.",
+      "joined_rows": 22947,
+      "quarters_present": [
+        "2021 Q3",
+        "2021 Q4",
+        "2022 Q1",
+        "2022 Q2",
+        "2022 Q3",
+        "2022 Q4",
+        "2023 Q1",
+        "2023 Q2",
+        "2023 Q3",
+        "2023 Q4",
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4",
+        "2026 Q1"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 4,
+      "column_count": 4,
+      "sum_n": 22947,
+      "equals_joined_row_count": true
+    }
+  },
+  {
+    "id": "crb-rtk-consent-count",
+    "title": "Right to Know · consent count",
+    "description": "An individually downloadable table from the Citizen Review Board’s October 2026 Right-to-Know archive.",
+    "topic": "Public safety",
+    "family": "CRB Right to Know · October 2026",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00",
+    "coverage": "2021 Q3–2026 Q1 in joined file; summary subsets vary",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "source_row_index",
+        "alias": "source row index",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "consent_requested",
+        "alias": "consent requested",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "n",
+        "alias": "n",
+        "type": "integer",
+        "nullable": true
+      }
+    ],
+    "record_count": 3,
+    "source_sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "download_sha256": "a5f0e108c7f233859455ba332ac20553188d7beb0df089eff28d6c8eb96889f2",
+    "download": "downloads/crb-rtk-consent-count.csv",
+    "original": "sources/right-to-know-crb-output-10-2026.zip",
+    "limitations": [
+      "City-authored CSV extracted from ZIP. Only the unnamed index header was renamed source_row_index.",
+      "NA is preserved as the source missing-value marker; it does not mean no or zero.",
+      "Summary files overlap. Do not add their totals or infer population rates.",
+      "Category codes are preserved without guessed expansions."
+    ],
+    "provenance": {
+      "archive_member": "Spreadsheets/rtk_consent_count.csv",
+      "archive_member_sha256": "6b6e1d75168df3b16dd0f51ff8bef421c9134d2d4ade5bc53a6b9fcf57dfcc54",
+      "method": "CSV parsed and written with identical field values; empty index header renamed.",
+      "joined_rows": 22947,
+      "quarters_present": [
+        "2021 Q3",
+        "2021 Q4",
+        "2022 Q1",
+        "2022 Q2",
+        "2022 Q3",
+        "2022 Q4",
+        "2023 Q1",
+        "2023 Q2",
+        "2023 Q3",
+        "2023 Q4",
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4",
+        "2026 Q1"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 3,
+      "column_count": 3,
+      "sum_n": 22947,
+      "equals_joined_row_count": true
+    }
+  },
+  {
+    "id": "crb-rtk-consent-na-count",
+    "title": "Right to Know · consent na count",
+    "description": "An individually downloadable table from the Citizen Review Board’s October 2026 Right-to-Know archive.",
+    "topic": "Public safety",
+    "family": "CRB Right to Know · October 2026",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00",
+    "coverage": "2021 Q3–2026 Q1 in joined file; summary subsets vary",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "source_row_index",
+        "alias": "source row index",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "rtk_quarter",
+        "alias": "rtk quarter",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "consent_percentage",
+        "alias": "consent percentage",
+        "type": "number",
+        "nullable": true
+      }
+    ],
+    "record_count": 19,
+    "source_sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "download_sha256": "90d05c8911c16fc68d79681a4f4559cac31cb0fce87d91f43c60a816b4f1dbc9",
+    "download": "downloads/crb-rtk-consent-na-count.csv",
+    "original": "sources/right-to-know-crb-output-10-2026.zip",
+    "limitations": [
+      "City-authored CSV extracted from ZIP. Only the unnamed index header was renamed source_row_index.",
+      "NA is preserved as the source missing-value marker; it does not mean no or zero.",
+      "Summary files overlap. Do not add their totals or infer population rates.",
+      "Category codes are preserved without guessed expansions."
+    ],
+    "provenance": {
+      "archive_member": "Spreadsheets/rtk_consent_na_count.csv",
+      "archive_member_sha256": "8ca6ee32beccece84fbd633a7136896b1a5d4431ab45f5edd3914846720f853c",
+      "method": "CSV parsed and written with identical field values; empty index header renamed.",
+      "joined_rows": 22947,
+      "quarters_present": [
+        "2021 Q3",
+        "2021 Q4",
+        "2022 Q1",
+        "2022 Q2",
+        "2022 Q3",
+        "2022 Q4",
+        "2023 Q1",
+        "2023 Q2",
+        "2023 Q3",
+        "2023 Q4",
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4",
+        "2026 Q1"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 19,
+      "column_count": 3
+    }
+  },
+  {
+    "id": "crb-rtk-consent-response-count",
+    "title": "Right to Know · consent response count",
+    "description": "An individually downloadable table from the Citizen Review Board’s October 2026 Right-to-Know archive.",
+    "topic": "Public safety",
+    "family": "CRB Right to Know · October 2026",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00",
+    "coverage": "2021 Q3–2026 Q1 in joined file; summary subsets vary",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "source_row_index",
+        "alias": "source row index",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "consent_requested",
+        "alias": "consent requested",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "consent_response",
+        "alias": "consent response",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "n",
+        "alias": "n",
+        "type": "integer",
+        "nullable": true
+      }
+    ],
+    "record_count": 4,
+    "source_sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "download_sha256": "7a296bbb35d7199f104c828edd02f60ba18ee7d0d07ad868b214f692b898943e",
+    "download": "downloads/crb-rtk-consent-response-count.csv",
+    "original": "sources/right-to-know-crb-output-10-2026.zip",
+    "limitations": [
+      "City-authored CSV extracted from ZIP. Only the unnamed index header was renamed source_row_index.",
+      "NA is preserved as the source missing-value marker; it does not mean no or zero.",
+      "Summary files overlap. Do not add their totals or infer population rates.",
+      "Category codes are preserved without guessed expansions."
+    ],
+    "provenance": {
+      "archive_member": "Spreadsheets/rtk_consent_response_count.csv",
+      "archive_member_sha256": "a3a195a706264702a2ea1f9553767acad1130fba297cfa1b8c081797e84b21ae",
+      "method": "CSV parsed and written with identical field values; empty index header renamed.",
+      "joined_rows": 22947,
+      "quarters_present": [
+        "2021 Q3",
+        "2021 Q4",
+        "2022 Q1",
+        "2022 Q2",
+        "2022 Q3",
+        "2022 Q4",
+        "2023 Q1",
+        "2023 Q2",
+        "2023 Q3",
+        "2023 Q4",
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4",
+        "2026 Q1"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 4,
+      "column_count": 4,
+      "sum_n": 22947,
+      "equals_joined_row_count": true
+    }
+  },
+  {
+    "id": "crb-rtk-demographic-profile",
+    "title": "Right to Know · demographic profile",
+    "description": "An individually downloadable table from the Citizen Review Board’s October 2026 Right-to-Know archive.",
+    "topic": "Public safety",
+    "family": "CRB Right to Know · October 2026",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00",
+    "coverage": "2021 Q3–2026 Q1 in joined file; summary subsets vary",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "source_row_index",
+        "alias": "source row index",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "group",
+        "alias": "group",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "n",
+        "alias": "n",
+        "type": "integer",
+        "nullable": true
+      }
+    ],
+    "record_count": 15,
+    "source_sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "download_sha256": "0f3903fc7453486eae73e4cfd110744d99e0b154d6e6a66b568a1da29c58054e",
+    "download": "downloads/crb-rtk-demographic-profile.csv",
+    "original": "sources/right-to-know-crb-output-10-2026.zip",
+    "limitations": [
+      "City-authored CSV extracted from ZIP. Only the unnamed index header was renamed source_row_index.",
+      "NA is preserved as the source missing-value marker; it does not mean no or zero.",
+      "Summary files overlap. Do not add their totals or infer population rates.",
+      "Category codes are preserved without guessed expansions."
+    ],
+    "provenance": {
+      "archive_member": "Spreadsheets/rtk_demographic_profile.csv",
+      "archive_member_sha256": "aee5be968de04061475bd6e1990f0e9493c40968b3b913c18f85886a418a94c2",
+      "method": "CSV parsed and written with identical field values; empty index header renamed.",
+      "joined_rows": 22947,
+      "quarters_present": [
+        "2021 Q3",
+        "2021 Q4",
+        "2022 Q1",
+        "2022 Q2",
+        "2022 Q3",
+        "2022 Q4",
+        "2023 Q1",
+        "2023 Q2",
+        "2023 Q3",
+        "2023 Q4",
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4",
+        "2026 Q1"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 15,
+      "column_count": 3,
+      "sum_n": 18267,
+      "equals_joined_row_count": false
+    }
+  },
+  {
+    "id": "crb-rtk-end-level-count",
+    "title": "Right to Know · end level count",
+    "description": "An individually downloadable table from the Citizen Review Board’s October 2026 Right-to-Know archive.",
+    "topic": "Public safety",
+    "family": "CRB Right to Know · October 2026",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00",
+    "coverage": "2021 Q3–2026 Q1 in joined file; summary subsets vary",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "source_row_index",
+        "alias": "source row index",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "end_level",
+        "alias": "end level",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "n",
+        "alias": "n",
+        "type": "integer",
+        "nullable": true
+      }
+    ],
+    "record_count": 5,
+    "source_sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "download_sha256": "5185141bd8baa7c64f1452093bce271053fecfa753e4767abd5e5fc37f7053f6",
+    "download": "downloads/crb-rtk-end-level-count.csv",
+    "original": "sources/right-to-know-crb-output-10-2026.zip",
+    "limitations": [
+      "City-authored CSV extracted from ZIP. Only the unnamed index header was renamed source_row_index.",
+      "NA is preserved as the source missing-value marker; it does not mean no or zero.",
+      "Summary files overlap. Do not add their totals or infer population rates.",
+      "Category codes are preserved without guessed expansions."
+    ],
+    "provenance": {
+      "archive_member": "Spreadsheets/rtk_end_level_count.csv",
+      "archive_member_sha256": "9778dc9c06fc1eafb82879df334008c9836fb67cd849df6d355c2739201a3b44",
+      "method": "CSV parsed and written with identical field values; empty index header renamed.",
+      "joined_rows": 22947,
+      "quarters_present": [
+        "2021 Q3",
+        "2021 Q4",
+        "2022 Q1",
+        "2022 Q2",
+        "2022 Q3",
+        "2022 Q4",
+        "2023 Q1",
+        "2023 Q2",
+        "2023 Q3",
+        "2023 Q4",
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4",
+        "2026 Q1"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 5,
+      "column_count": 3,
+      "sum_n": 22947,
+      "equals_joined_row_count": true
+    }
+  },
+  {
+    "id": "crb-rtk-level-count",
+    "title": "Right to Know · level count",
+    "description": "An individually downloadable table from the Citizen Review Board’s October 2026 Right-to-Know archive.",
+    "topic": "Public safety",
+    "family": "CRB Right to Know · October 2026",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00",
+    "coverage": "2021 Q3–2026 Q1 in joined file; summary subsets vary",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "source_row_index",
+        "alias": "source row index",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "start_level",
+        "alias": "start level",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "end_level",
+        "alias": "end level",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "n",
+        "alias": "n",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "percentage",
+        "alias": "percentage",
+        "type": "number",
+        "nullable": true
+      }
+    ],
+    "record_count": 19,
+    "source_sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "download_sha256": "5a7e132db5250548683cc2be4a12b07767bfc042b993eb9cbfb392ed29cc39c0",
+    "download": "downloads/crb-rtk-level-count.csv",
+    "original": "sources/right-to-know-crb-output-10-2026.zip",
+    "limitations": [
+      "City-authored CSV extracted from ZIP. Only the unnamed index header was renamed source_row_index.",
+      "NA is preserved as the source missing-value marker; it does not mean no or zero.",
+      "Summary files overlap. Do not add their totals or infer population rates.",
+      "Category codes are preserved without guessed expansions."
+    ],
+    "provenance": {
+      "archive_member": "Spreadsheets/rtk_level_count.csv",
+      "archive_member_sha256": "2c2fb324110c86ef98fffadde537da24d4aa45488606fecaed65f857936873d2",
+      "method": "CSV parsed and written with identical field values; empty index header renamed.",
+      "joined_rows": 22947,
+      "quarters_present": [
+        "2021 Q3",
+        "2021 Q4",
+        "2022 Q1",
+        "2022 Q2",
+        "2022 Q3",
+        "2022 Q4",
+        "2023 Q1",
+        "2023 Q2",
+        "2023 Q3",
+        "2023 Q4",
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4",
+        "2026 Q1"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 19,
+      "column_count": 5,
+      "sum_n": 22947,
+      "equals_joined_row_count": true
+    }
+  },
+  {
+    "id": "crb-rtk-level-na-count",
+    "title": "Right to Know · level na count",
+    "description": "An individually downloadable table from the Citizen Review Board’s October 2026 Right-to-Know archive.",
+    "topic": "Public safety",
+    "family": "CRB Right to Know · October 2026",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00",
+    "coverage": "2021 Q3–2026 Q1 in joined file; summary subsets vary",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "source_row_index",
+        "alias": "source row index",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "rtk_quarter",
+        "alias": "rtk quarter",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "level_percentage",
+        "alias": "level percentage",
+        "type": "number",
+        "nullable": true
+      }
+    ],
+    "record_count": 19,
+    "source_sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "download_sha256": "1652a59ed43c2d9e02e97b91673bb4e0b99418797bfbac4aff0f1ab3734623e4",
+    "download": "downloads/crb-rtk-level-na-count.csv",
+    "original": "sources/right-to-know-crb-output-10-2026.zip",
+    "limitations": [
+      "City-authored CSV extracted from ZIP. Only the unnamed index header was renamed source_row_index.",
+      "NA is preserved as the source missing-value marker; it does not mean no or zero.",
+      "Summary files overlap. Do not add their totals or infer population rates.",
+      "Category codes are preserved without guessed expansions."
+    ],
+    "provenance": {
+      "archive_member": "Spreadsheets/rtk_level_na_count.csv",
+      "archive_member_sha256": "b986e1560bbd28f25a120fd21b957c50bf541dedf37cda699eda1b5ef6d8496c",
+      "method": "CSV parsed and written with identical field values; empty index header renamed.",
+      "joined_rows": 22947,
+      "quarters_present": [
+        "2021 Q3",
+        "2021 Q4",
+        "2022 Q1",
+        "2022 Q2",
+        "2022 Q3",
+        "2022 Q4",
+        "2023 Q1",
+        "2023 Q2",
+        "2023 Q3",
+        "2023 Q4",
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4",
+        "2026 Q1"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 19,
+      "column_count": 3
+    }
+  },
+  {
+    "id": "crb-rtk-na-count",
+    "title": "Right to Know · na count",
+    "description": "An individually downloadable table from the Citizen Review Board’s October 2026 Right-to-Know archive.",
+    "topic": "Public safety",
+    "family": "CRB Right to Know · October 2026",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00",
+    "coverage": "2021 Q3–2026 Q1 in joined file; summary subsets vary",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "source_row_index",
+        "alias": "source row index",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "rtk_quarter",
+        "alias": "rtk quarter",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "age_percentage",
+        "alias": "age percentage",
+        "type": "number",
+        "nullable": true
+      },
+      {
+        "name": "card_percentage",
+        "alias": "card percentage",
+        "type": "number",
+        "nullable": true
+      },
+      {
+        "name": "consent_percentage",
+        "alias": "consent percentage",
+        "type": "number",
+        "nullable": true
+      },
+      {
+        "name": "level_percentage",
+        "alias": "level percentage",
+        "type": "number",
+        "nullable": true
+      },
+      {
+        "name": "race_percentage",
+        "alias": "race percentage",
+        "type": "number",
+        "nullable": true
+      },
+      {
+        "name": "sex_percentage",
+        "alias": "sex percentage",
+        "type": "number",
+        "nullable": true
+      },
+      {
+        "name": "uof_percentage",
+        "alias": "uof percentage",
+        "type": "number",
+        "nullable": true
+      },
+      {
+        "name": "reason_percentage",
+        "alias": "reason percentage",
+        "type": "number",
+        "nullable": true
+      }
+    ],
+    "record_count": 19,
+    "source_sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "download_sha256": "faee9e03e7ffde1917efa52fbb7b9e6c844d308a3236179e60d4176e16b3b550",
+    "download": "downloads/crb-rtk-na-count.csv",
+    "original": "sources/right-to-know-crb-output-10-2026.zip",
+    "limitations": [
+      "City-authored CSV extracted from ZIP. Only the unnamed index header was renamed source_row_index.",
+      "NA is preserved as the source missing-value marker; it does not mean no or zero.",
+      "Summary files overlap. Do not add their totals or infer population rates.",
+      "Category codes are preserved without guessed expansions."
+    ],
+    "provenance": {
+      "archive_member": "Spreadsheets/rtk_na_count.csv",
+      "archive_member_sha256": "d9b92e25b776bede2c8d336cc33c5461c311ebdff61443537416ba5e4688236a",
+      "method": "CSV parsed and written with identical field values; empty index header renamed.",
+      "joined_rows": 22947,
+      "quarters_present": [
+        "2021 Q3",
+        "2021 Q4",
+        "2022 Q1",
+        "2022 Q2",
+        "2022 Q3",
+        "2022 Q4",
+        "2023 Q1",
+        "2023 Q2",
+        "2023 Q3",
+        "2023 Q4",
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4",
+        "2026 Q1"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 19,
+      "column_count": 10
+    }
+  },
+  {
+    "id": "crb-rtk-race-count",
+    "title": "Right to Know · race count",
+    "description": "An individually downloadable table from the Citizen Review Board’s October 2026 Right-to-Know archive.",
+    "topic": "Public safety",
+    "family": "CRB Right to Know · October 2026",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00",
+    "coverage": "2021 Q3–2026 Q1 in joined file; summary subsets vary",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "source_row_index",
+        "alias": "source row index",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "race",
+        "alias": "race",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "n",
+        "alias": "n",
+        "type": "integer",
+        "nullable": true
+      }
+    ],
+    "record_count": 11,
+    "source_sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "download_sha256": "9f1fb91f246a640098491d7540e4fecce1d698dc2abe9d4b49e5aae7380d57c3",
+    "download": "downloads/crb-rtk-race-count.csv",
+    "original": "sources/right-to-know-crb-output-10-2026.zip",
+    "limitations": [
+      "City-authored CSV extracted from ZIP. Only the unnamed index header was renamed source_row_index.",
+      "NA is preserved as the source missing-value marker; it does not mean no or zero.",
+      "Summary files overlap. Do not add their totals or infer population rates.",
+      "Category codes are preserved without guessed expansions."
+    ],
+    "provenance": {
+      "archive_member": "Spreadsheets/rtk_race_count.csv",
+      "archive_member_sha256": "f4e5f27dfa16f6d4ca3c6dba81b35160321eb011699871b8457a103a7d78277a",
+      "method": "CSV parsed and written with identical field values; empty index header renamed.",
+      "joined_rows": 22947,
+      "quarters_present": [
+        "2021 Q3",
+        "2021 Q4",
+        "2022 Q1",
+        "2022 Q2",
+        "2022 Q3",
+        "2022 Q4",
+        "2023 Q1",
+        "2023 Q2",
+        "2023 Q3",
+        "2023 Q4",
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4",
+        "2026 Q1"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 11,
+      "column_count": 3,
+      "sum_n": 22947,
+      "equals_joined_row_count": true
+    }
+  },
+  {
+    "id": "crb-rtk-race-na-count",
+    "title": "Right to Know · race na count",
+    "description": "An individually downloadable table from the Citizen Review Board’s October 2026 Right-to-Know archive.",
+    "topic": "Public safety",
+    "family": "CRB Right to Know · October 2026",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00",
+    "coverage": "2021 Q3–2026 Q1 in joined file; summary subsets vary",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "source_row_index",
+        "alias": "source row index",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "rtk_quarter",
+        "alias": "rtk quarter",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "race_percentage",
+        "alias": "race percentage",
+        "type": "number",
+        "nullable": true
+      }
+    ],
+    "record_count": 19,
+    "source_sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "download_sha256": "f3bed8a50ce1bdcaf98261d65595e69e9a802c57fd2b1c5c65aff556e53f4a90",
+    "download": "downloads/crb-rtk-race-na-count.csv",
+    "original": "sources/right-to-know-crb-output-10-2026.zip",
+    "limitations": [
+      "City-authored CSV extracted from ZIP. Only the unnamed index header was renamed source_row_index.",
+      "NA is preserved as the source missing-value marker; it does not mean no or zero.",
+      "Summary files overlap. Do not add their totals or infer population rates.",
+      "Category codes are preserved without guessed expansions."
+    ],
+    "provenance": {
+      "archive_member": "Spreadsheets/rtk_race_na_count.csv",
+      "archive_member_sha256": "4749f8ee4e47962b7f8b7f68b4cda945df8ea7bfa71f82803b068cce074dcfe3",
+      "method": "CSV parsed and written with identical field values; empty index header renamed.",
+      "joined_rows": 22947,
+      "quarters_present": [
+        "2021 Q3",
+        "2021 Q4",
+        "2022 Q1",
+        "2022 Q2",
+        "2022 Q3",
+        "2022 Q4",
+        "2023 Q1",
+        "2023 Q2",
+        "2023 Q3",
+        "2023 Q4",
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4",
+        "2026 Q1"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 19,
+      "column_count": 3
+    }
+  },
+  {
+    "id": "crb-rtk-reason-count",
+    "title": "Right to Know · reason count",
+    "description": "An individually downloadable table from the Citizen Review Board’s October 2026 Right-to-Know archive.",
+    "topic": "Public safety",
+    "family": "CRB Right to Know · October 2026",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00",
+    "coverage": "2021 Q3–2026 Q1 in joined file; summary subsets vary",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "source_row_index",
+        "alias": "source row index",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "type",
+        "alias": "type",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "value",
+        "alias": "value",
+        "type": "integer",
+        "nullable": true
+      }
+    ],
+    "record_count": 11,
+    "source_sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "download_sha256": "4216617a8e9e062d5077ea85411f6aa32f8d12439449e8d6829048babb88b5ad",
+    "download": "downloads/crb-rtk-reason-count.csv",
+    "original": "sources/right-to-know-crb-output-10-2026.zip",
+    "limitations": [
+      "City-authored CSV extracted from ZIP. Only the unnamed index header was renamed source_row_index.",
+      "NA is preserved as the source missing-value marker; it does not mean no or zero.",
+      "Summary files overlap. Do not add their totals or infer population rates.",
+      "Category codes are preserved without guessed expansions."
+    ],
+    "provenance": {
+      "archive_member": "Spreadsheets/rtk_reason_count.csv",
+      "archive_member_sha256": "44d8e93bc288651e4ad0abae6205763a0c71a8cf60a37cd429deb77f4d52830a",
+      "method": "CSV parsed and written with identical field values; empty index header renamed.",
+      "joined_rows": 22947,
+      "quarters_present": [
+        "2021 Q3",
+        "2021 Q4",
+        "2022 Q1",
+        "2022 Q2",
+        "2022 Q3",
+        "2022 Q4",
+        "2023 Q1",
+        "2023 Q2",
+        "2023 Q3",
+        "2023 Q4",
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4",
+        "2026 Q1"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 11,
+      "column_count": 3
+    }
+  },
+  {
+    "id": "crb-rtk-reason-na-count",
+    "title": "Right to Know · reason na count",
+    "description": "An individually downloadable table from the Citizen Review Board’s October 2026 Right-to-Know archive.",
+    "topic": "Public safety",
+    "family": "CRB Right to Know · October 2026",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00",
+    "coverage": "2021 Q3–2026 Q1 in joined file; summary subsets vary",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "source_row_index",
+        "alias": "source row index",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "rtk_quarter",
+        "alias": "rtk quarter",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "reason_percentage",
+        "alias": "reason percentage",
+        "type": "number",
+        "nullable": true
+      }
+    ],
+    "record_count": 19,
+    "source_sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "download_sha256": "f04a2516cc54d7bdd34944a42ec36ae8fcd2e956771b8c843c95f2da0403c79f",
+    "download": "downloads/crb-rtk-reason-na-count.csv",
+    "original": "sources/right-to-know-crb-output-10-2026.zip",
+    "limitations": [
+      "City-authored CSV extracted from ZIP. Only the unnamed index header was renamed source_row_index.",
+      "NA is preserved as the source missing-value marker; it does not mean no or zero.",
+      "Summary files overlap. Do not add their totals or infer population rates.",
+      "Category codes are preserved without guessed expansions."
+    ],
+    "provenance": {
+      "archive_member": "Spreadsheets/rtk_reason_na_count.csv",
+      "archive_member_sha256": "655ed941503f3988ef37514b1213146142e4d2060b2d122e45303eb8efd8b72c",
+      "method": "CSV parsed and written with identical field values; empty index header renamed.",
+      "joined_rows": 22947,
+      "quarters_present": [
+        "2021 Q3",
+        "2021 Q4",
+        "2022 Q1",
+        "2022 Q2",
+        "2022 Q3",
+        "2022 Q4",
+        "2023 Q1",
+        "2023 Q2",
+        "2023 Q3",
+        "2023 Q4",
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4",
+        "2026 Q1"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 19,
+      "column_count": 3
+    }
+  },
+  {
+    "id": "crb-rtk-sex-count",
+    "title": "Right to Know · sex count",
+    "description": "An individually downloadable table from the Citizen Review Board’s October 2026 Right-to-Know archive.",
+    "topic": "Public safety",
+    "family": "CRB Right to Know · October 2026",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00",
+    "coverage": "2021 Q3–2026 Q1 in joined file; summary subsets vary",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "source_row_index",
+        "alias": "source row index",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "sex",
+        "alias": "sex",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "n",
+        "alias": "n",
+        "type": "integer",
+        "nullable": true
+      }
+    ],
+    "record_count": 5,
+    "source_sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "download_sha256": "587c57cbc54af261e7ad0aa1f12e0b7b9c485d20221cd509c4dae9886b36ad12",
+    "download": "downloads/crb-rtk-sex-count.csv",
+    "original": "sources/right-to-know-crb-output-10-2026.zip",
+    "limitations": [
+      "City-authored CSV extracted from ZIP. Only the unnamed index header was renamed source_row_index.",
+      "NA is preserved as the source missing-value marker; it does not mean no or zero.",
+      "Summary files overlap. Do not add their totals or infer population rates.",
+      "Category codes are preserved without guessed expansions."
+    ],
+    "provenance": {
+      "archive_member": "Spreadsheets/rtk_sex_count.csv",
+      "archive_member_sha256": "1a6f9517bf7189ee11faaa090b681a96b4afddf09f0a94d39f621fc2d5362ebc",
+      "method": "CSV parsed and written with identical field values; empty index header renamed.",
+      "joined_rows": 22947,
+      "quarters_present": [
+        "2021 Q3",
+        "2021 Q4",
+        "2022 Q1",
+        "2022 Q2",
+        "2022 Q3",
+        "2022 Q4",
+        "2023 Q1",
+        "2023 Q2",
+        "2023 Q3",
+        "2023 Q4",
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4",
+        "2026 Q1"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 5,
+      "column_count": 3,
+      "sum_n": 22947,
+      "equals_joined_row_count": true
+    }
+  },
+  {
+    "id": "crb-rtk-sex-na-count",
+    "title": "Right to Know · sex na count",
+    "description": "An individually downloadable table from the Citizen Review Board’s October 2026 Right-to-Know archive.",
+    "topic": "Public safety",
+    "family": "CRB Right to Know · October 2026",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00",
+    "coverage": "2021 Q3–2026 Q1 in joined file; summary subsets vary",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "source_row_index",
+        "alias": "source row index",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "rtk_quarter",
+        "alias": "rtk quarter",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "sex_percentage",
+        "alias": "sex percentage",
+        "type": "number",
+        "nullable": true
+      }
+    ],
+    "record_count": 19,
+    "source_sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "download_sha256": "d9a2686a5270081260427f46909dad83b5b3cdcefc56da951f803c7361cb799c",
+    "download": "downloads/crb-rtk-sex-na-count.csv",
+    "original": "sources/right-to-know-crb-output-10-2026.zip",
+    "limitations": [
+      "City-authored CSV extracted from ZIP. Only the unnamed index header was renamed source_row_index.",
+      "NA is preserved as the source missing-value marker; it does not mean no or zero.",
+      "Summary files overlap. Do not add their totals or infer population rates.",
+      "Category codes are preserved without guessed expansions."
+    ],
+    "provenance": {
+      "archive_member": "Spreadsheets/rtk_sex_na_count.csv",
+      "archive_member_sha256": "b2685a2f60b29732d06eff8b6e7cc6b479e0a45e4d80526152fbfa37314b94f5",
+      "method": "CSV parsed and written with identical field values; empty index header renamed.",
+      "joined_rows": 22947,
+      "quarters_present": [
+        "2021 Q3",
+        "2021 Q4",
+        "2022 Q1",
+        "2022 Q2",
+        "2022 Q3",
+        "2022 Q4",
+        "2023 Q1",
+        "2023 Q2",
+        "2023 Q3",
+        "2023 Q4",
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4",
+        "2026 Q1"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 19,
+      "column_count": 3
+    }
+  },
+  {
+    "id": "crb-rtk-start-level-count",
+    "title": "Right to Know · start level count",
+    "description": "An individually downloadable table from the Citizen Review Board’s October 2026 Right-to-Know archive.",
+    "topic": "Public safety",
+    "family": "CRB Right to Know · October 2026",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00",
+    "coverage": "2021 Q3–2026 Q1 in joined file; summary subsets vary",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "source_row_index",
+        "alias": "source row index",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "start_level",
+        "alias": "start level",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "n",
+        "alias": "n",
+        "type": "integer",
+        "nullable": true
+      }
+    ],
+    "record_count": 4,
+    "source_sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "download_sha256": "c59673ee213c40516dad974cbaf557f90a92d02876fee07f765500260f79848e",
+    "download": "downloads/crb-rtk-start-level-count.csv",
+    "original": "sources/right-to-know-crb-output-10-2026.zip",
+    "limitations": [
+      "City-authored CSV extracted from ZIP. Only the unnamed index header was renamed source_row_index.",
+      "NA is preserved as the source missing-value marker; it does not mean no or zero.",
+      "Summary files overlap. Do not add their totals or infer population rates.",
+      "Category codes are preserved without guessed expansions."
+    ],
+    "provenance": {
+      "archive_member": "Spreadsheets/rtk_start_level_count.csv",
+      "archive_member_sha256": "ebd3de46621bfa3a91fcbaf2dcf01638c3767bd9638bb42ab3221f164767cf7c",
+      "method": "CSV parsed and written with identical field values; empty index header renamed.",
+      "joined_rows": 22947,
+      "quarters_present": [
+        "2021 Q3",
+        "2021 Q4",
+        "2022 Q1",
+        "2022 Q2",
+        "2022 Q3",
+        "2022 Q4",
+        "2023 Q1",
+        "2023 Q2",
+        "2023 Q3",
+        "2023 Q4",
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4",
+        "2026 Q1"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 4,
+      "column_count": 3,
+      "sum_n": 22947,
+      "equals_joined_row_count": true
+    }
+  },
+  {
+    "id": "crb-rtk-uof-count",
+    "title": "Right to Know · uof count",
+    "description": "An individually downloadable table from the Citizen Review Board’s October 2026 Right-to-Know archive.",
+    "topic": "Public safety",
+    "family": "CRB Right to Know · October 2026",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00",
+    "coverage": "2021 Q3–2026 Q1 in joined file; summary subsets vary",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "source_row_index",
+        "alias": "source row index",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "use_of_force",
+        "alias": "use of force",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "n",
+        "alias": "n",
+        "type": "integer",
+        "nullable": true
+      }
+    ],
+    "record_count": 3,
+    "source_sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "download_sha256": "378772586645bcb7c5b255fb99188d95466d72d44c7dcc671d7d29fcae73d66b",
+    "download": "downloads/crb-rtk-uof-count.csv",
+    "original": "sources/right-to-know-crb-output-10-2026.zip",
+    "limitations": [
+      "City-authored CSV extracted from ZIP. Only the unnamed index header was renamed source_row_index.",
+      "NA is preserved as the source missing-value marker; it does not mean no or zero.",
+      "Summary files overlap. Do not add their totals or infer population rates.",
+      "Category codes are preserved without guessed expansions."
+    ],
+    "provenance": {
+      "archive_member": "Spreadsheets/rtk_uof_count.csv",
+      "archive_member_sha256": "03552a1daa3f0069a2d86af4666523f99b5f342a488741dc0eeac13c07d70755",
+      "method": "CSV parsed and written with identical field values; empty index header renamed.",
+      "joined_rows": 22947,
+      "quarters_present": [
+        "2021 Q3",
+        "2021 Q4",
+        "2022 Q1",
+        "2022 Q2",
+        "2022 Q3",
+        "2022 Q4",
+        "2023 Q1",
+        "2023 Q2",
+        "2023 Q3",
+        "2023 Q4",
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4",
+        "2026 Q1"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 3,
+      "column_count": 3,
+      "sum_n": 22947,
+      "equals_joined_row_count": true
+    }
+  },
+  {
+    "id": "crb-rtk-uof-na-count",
+    "title": "Right to Know · uof na count",
+    "description": "An individually downloadable table from the Citizen Review Board’s October 2026 Right-to-Know archive.",
+    "topic": "Public safety",
+    "family": "CRB Right to Know · October 2026",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00",
+    "coverage": "2021 Q3–2026 Q1 in joined file; summary subsets vary",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "source_row_index",
+        "alias": "source row index",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "rtk_quarter",
+        "alias": "rtk quarter",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "uof_percentage",
+        "alias": "uof percentage",
+        "type": "number",
+        "nullable": true
+      }
+    ],
+    "record_count": 19,
+    "source_sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "download_sha256": "0837d565642d55d907985873bcb1d920ee7618b1b471e39a17eace10cafffcf3",
+    "download": "downloads/crb-rtk-uof-na-count.csv",
+    "original": "sources/right-to-know-crb-output-10-2026.zip",
+    "limitations": [
+      "City-authored CSV extracted from ZIP. Only the unnamed index header was renamed source_row_index.",
+      "NA is preserved as the source missing-value marker; it does not mean no or zero.",
+      "Summary files overlap. Do not add their totals or infer population rates.",
+      "Category codes are preserved without guessed expansions."
+    ],
+    "provenance": {
+      "archive_member": "Spreadsheets/rtk_uof_na_count.csv",
+      "archive_member_sha256": "1d0dbb486332015228477a8c0f55ff021896cd7f3c15b54eb411ecb864bac709",
+      "method": "CSV parsed and written with identical field values; empty index header renamed.",
+      "joined_rows": 22947,
+      "quarters_present": [
+        "2021 Q3",
+        "2021 Q4",
+        "2022 Q1",
+        "2022 Q2",
+        "2022 Q3",
+        "2022 Q4",
+        "2023 Q1",
+        "2023 Q2",
+        "2023 Q3",
+        "2023 Q4",
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4",
+        "2026 Q1"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 19,
+      "column_count": 3
+    }
+  },
+  {
+    "id": "crb-rtk-uof-yes-count",
+    "title": "Right to Know · uof yes count",
+    "description": "An individually downloadable table from the Citizen Review Board’s October 2026 Right-to-Know archive.",
+    "topic": "Public safety",
+    "family": "CRB Right to Know · October 2026",
+    "source_url": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+    "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+    "format": "CSV",
+    "membership": "document-source-no-match",
+    "match_method": "Source file URL compared with official catalog. Related topics can exist in other datasets.",
+    "availability": "available",
+    "curated": true,
+    "checked_at": "2026-11-02T00:06:36.589200+00:00",
+    "coverage": "2021 Q3–2026 Q1 in joined file; summary subsets vary",
+    "years": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+    ],
+    "fields": [
+      {
+        "name": "source_row_index",
+        "alias": "source row index",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "rtk_quarter",
+        "alias": "rtk quarter",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "use_of_force",
+        "alias": "use of force",
+        "type": "string",
+        "nullable": true
+      },
+      {
+        "name": "n.x",
+        "alias": "n.x",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "n.y",
+        "alias": "n.y",
+        "type": "integer",
+        "nullable": true
+      },
+      {
+        "name": "yes_percentage",
+        "alias": "yes percentage",
+        "type": "number",
+        "nullable": true
+      }
+    ],
+    "record_count": 19,
+    "source_sha256": "03c551eaa8dc09c789ef5a7384fc5113dff4d01006aa96415b1462ae30987836",
+    "download_sha256": "9a6f58399b049523503135e78c0e5e28e39fb7fe6bcf2852ea49f44004f33658",
+    "download": "downloads/crb-rtk-uof-yes-count.csv",
+    "original": "sources/right-to-know-crb-output-10-2026.zip",
+    "limitations": [
+      "City-authored CSV extracted from ZIP. Only the unnamed index header was renamed source_row_index.",
+      "NA is preserved as the source missing-value marker; it does not mean no or zero.",
+      "Summary files overlap. Do not add their totals or infer population rates.",
+      "Category codes are preserved without guessed expansions."
+    ],
+    "provenance": {
+      "archive_member": "Spreadsheets/rtk_uof_yes_count.csv",
+      "archive_member_sha256": "206292f2b8a7125fdd8bf1dfc04b1b772da9a35d20c42e42531e98cc3257d66a",
+      "method": "CSV parsed and written with identical field values; empty index header renamed.",
+      "joined_rows": 22947,
+      "quarters_present": [
+        "2021 Q3",
+        "2021 Q4",
+        "2022 Q1",
+        "2022 Q2",
+        "2022 Q3",
+        "2022 Q4",
+        "2023 Q1",
+        "2023 Q2",
+        "2023 Q3",
+        "2023 Q4",
+        "2024 Q1",
+        "2024 Q2",
+        "2024 Q3",
+        "2024 Q4",
+        "2025 Q1",
+        "2025 Q2",
+        "2025 Q3",
+        "2025 Q4",
+        "2026 Q1"
+      ]
+    },
+    "validation": {
+      "csv_round_trip": true,
+      "source_sha256_verified": true,
+      "row_count": 19,
+      "column_count": 6
+    }
+  }
+]

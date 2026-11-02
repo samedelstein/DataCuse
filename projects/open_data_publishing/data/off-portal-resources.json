@@ -1,0 +1,62 @@
+{
+  "checked_on": "2026-10-27",
+  "scope": "Representative discovery sample from search and official city pages, not an exhaustive website inventory. Listed files were compared with the current catalog text; topic overlap is possible.",
+  "searches": ["site:syr.gov filetype:csv", "site:syr.gov \".csv\" download", "site:syr.gov filetype:xlsx", "site:syr.gov filetype:pdf data"],
+  "csv_finding": "No standalone syr.gov-hosted CSV confirmed by these searches. This does not establish that none exists.",
+  "resources": [
+    {
+      "title": "2026 City Budget Workbook",
+      "format": "XLSX",
+      "source_page": "https://www.syr.gov/Departments/Auditor-Office",
+      "download": "https://www.syr.gov/files/content/public/v/113/departments/auditor-office/2026-city-budget-workbook.xlsx",
+      "page_stated_release": "2026-04-21",
+      "verification": "Official page and link inspected; workbook binary not parsed.",
+      "significance": "Multi-year financial information outside the portal's titled budget series."
+    },
+    {
+      "title": "2025 City Budget Workbook",
+      "format": "XLSX",
+      "source_page": "https://www.syr.gov/Departments/Auditor-Office",
+      "download": "https://www.syr.gov/files/sharedassets/public/v/2/departments/audit/documents/audits/2025-audits/2025-city-budget-workbook.xlsx",
+      "page_stated_release": "2025-04-22",
+      "verification": "Official page and link inspected; workbook binary not parsed. Direct retrieval returned an access error."
+    },
+    {
+      "title": "Water reports, 2019–2025",
+      "format": "PDF",
+      "source_page": "https://www.syr.gov/Departments/Water/Water-Data-and-Reports",
+      "download": "https://www.syr.gov/files/sharedassets/public/v/1/departments/water/documents/reports/water-quality-annual-reports/quality-annual-report-2025.pdf",
+      "verification": "Official index inspected. Text of the linked 63-page 2025 water-quality report was inspected, including tables of sampling and measurements.",
+      "significance": "Three recurring report series; different observations from portal water-main-break records."
+    },
+    {
+      "title": "Right-to-Know CRB output, October 2026",
+      "format": "ZIP",
+      "source_page": "https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports",
+      "download": "https://www.syr.gov/files/sharedassets/public/v/1/1-boards-and-commissions/crb/documents/special-reports/right-to-know-crb-output-10-2026.zip",
+      "verification": "Official page and link inspected; ZIP contents not inspected. Internal file formats and columns are unknown.",
+      "significance": "Downloadable data outputs alongside special reports."
+    },
+    {
+      "title": "City Budget documents",
+      "format": "Document index",
+      "source_page": "https://www.syr.gov/Departments/Budget/City-Budget",
+      "verification": "Official page lists FY2026–27 and FY2025–26 materials and earlier years. Individual files not exhaustively inspected.",
+      "significance": "Newer budget publication trail than the portal's latest titled FY2024–25 budget edition."
+    },
+    {
+      "title": "Police annual reports",
+      "format": "Report index",
+      "source_page": "https://www.syr.gov/Departments/Police/Public-Information/Annual-Reports",
+      "verification": "Official index inspected; contents not exhaustively parsed.",
+      "significance": "Separate reporting route; reports do not replace an incident-level feed."
+    },
+    {
+      "title": "SIDA Financials and Annual Reports",
+      "format": "Document index",
+      "source_page": "https://www.syr.gov/Boards-and-Commissions/Municipal-Boards/SIDA/SIDA-Financials-Annual-Reports",
+      "verification": "Official index inspected; contents not exhaustively parsed.",
+      "significance": "Recurring financial and organizational information outside the portal's dataset inventory."
+    }
+  ]
+}

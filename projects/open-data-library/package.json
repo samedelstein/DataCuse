@@ -1,0 +1,11 @@
+{
+  "name": "datacuse-open-data-library",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "python scripts/build.py",
+    "lint": "node --check app.js",
+    "test": "python -m unittest discover -s tests -v && node --test tests/search.test.mjs",
+    "dev": "python -m http.server 8766 --bind 127.0.0.1"
+  }
+}

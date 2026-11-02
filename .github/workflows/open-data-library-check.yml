@@ -1,0 +1,40 @@
+name: Check open data library
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    defaults:
+      run:
+        working-directory: projects/open-data-library
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install extraction dependency
+        run: python -m pip install -r requirements.txt
+      - name: Validate approved snapshot
+        run: |
+          npm run lint
+          npm test
+          npm run build
+      - name: Collect candidate changes
+        run: python scripts/refresh.py --output candidate
+      - name: Upload candidate and report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: open-data-library-candidate
+          path: projects/open-data-library/candidate/
+          if-no-files-found: warn
+          retention-days: 14

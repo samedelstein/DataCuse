@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Syracuse's open data has a discovery problem | DataCuse</title>
+  <meta name="description" content="Useful Syracuse data sits outside the open-data portal. Inside it, some feeds stall and some editions lose detail. An independent review of the evidence.">
+  <link rel="canonical" href="https://www.datacuse.com/projects/open_data_publishing/">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="DataCuse">
+  <meta property="og:title" content="Syracuse's open data has a discovery problem">
+  <meta property="og:description" content="A look at what residents can find, compare, and reuse—and what the catalog cannot tell us.">
+  <meta property="og:url" content="https://www.datacuse.com/projects/open_data_publishing/">
+  <meta name="twitter:card" content="summary">
+  <meta name="theme-color" content="#fcfaf5">
+  <link rel="stylesheet" href="styles.css?v=20261028">
+  <script src="data/catalog-data.js" defer></script>
+  <script src="data/evidence-data.js" defer></script>
+  <script src="story.js?v=20261028" defer></script>
+</head>
+<body class="story-page">
+<a class="skip-link" href="#main">Skip to story</a>
+<header class="masthead"><a class="brand" href="https://www.datacuse.com/">Data<span>Cuse</span></a><nav aria-label="Main"><a href="index.html" aria-current="page">Story</a><a href="dashboard.html">Dashboard</a><a href="https://www.datacuse.com/">All projects</a></nav></header>
+<main id="main">
+  <header class="hero story-hero">
+    <p class="eyebrow">PUBLIC DATA / SYRACUSE</p>
+    <h1>Syracuse's open data has a discovery problem.</h1>
+    <p class="intro">Useful city data sits outside the portal. Inside it, some feeds stall and some editions lose detail.</p>
+    <p class="byline">Independent work by <a href="https://samedelstein.com/about/">Sam Edelstein</a> · Data checked October 27, 2026</p>
+  </header>
+  <div class="stats story-stats" aria-label="The review at a glance">
+    <div class="stat"><strong>136</strong><span>Portal dataset entries</span><p>Confirmed feature-service items.</p></div>
+    <div class="stat"><strong>218</strong><span>Services without a portal match</span><p>Publicly listed; not necessarily unique datasets.</p></div>
+    <div class="stat"><strong>75</strong><span>Historical links checked</span><p>Absent from the feed; not proven deletions.</p></div>
+  </div>
+  <p class="story-lead">The portal is one doorway into Syracuse's data. It isn't the whole building. A review of its catalog, service directory, old links, and department pages found valuable records scattered across several entrances.</p>
+  <p class="story-action"><a class="read-link" href="dashboard.html">Explore the dashboard →</a><a href="../open-data-library/">Search additional city data →</a><a href="#methods">Sources &amp; downloads</a></p>
+
+  <section class="chapter" id="publishing">
+    <div class="chapter-heading"><p class="eyebrow">THE RECORD</p><h2>A history of what remains.</h2></div>
+    <div class="chapter-body">
+      <p>Syracuse <a href="https://www.innovatesyracuse.com/blog/datacuse">launched its portal in 2017</a>. Some previously listed dataset entries no longer appear in its catalog. Archived pages preserve traces, but this review did not recover a complete record of what was published and later removed, archived, or made private—or when and why.</p>
+      <p><strong>The chart starts with the 136 dataset entries still available in the October 27, 2026 catalog, then groups them by creation year.</strong> Entries missing from that snapshot are missing from the bars. This is not a count of everything published in each year.</p>
+      <div class="chart-card"><h3>When currently available dataset entries were created</h3><div class="annual-chart" id="story-cohorts" aria-label="Dataset entries still in the October 27, 2026 catalog, grouped by creation year"></div><p class="caption">Counts only entries still listed on October 27, 2026. Historical entries absent from this catalog are excluded. Uses ArcGIS item creation dates; the original public-release date may differ. *2026 is partial.</p></div>
+      <p><strong>Read 2023's bar as: 36 entries available at the snapshot were created in 2023.</strong> Fifteen are assessment-roll backfills covering earlier years. Zero in 2020 means no entries in this snapshot carry that creation year; it does not mean nothing was published then.</p>
+      <p>Without the missing publication and removal history, these bars cannot establish annual publishing totals or a slowdown. <a href="dashboard.html#history">Compare dates and equal periods.</a></p>
+    </div>
+  </section>
+
+  <section class="chapter" id="continuity">
+    <div class="chapter-heading"><p class="eyebrow">THE UPKEEP</p><h2>Some series hold. Some feeds stall.</h2></div>
+    <div class="chapter-body">
+      <p><strong>The good:</strong> assessment final rolls cover every year from 2007–2026. Pavement ratings run continuously from 2020–2025. All five datasets declaring daily updates show October 27 edits, though one check cannot prove daily reliability.</p>
+      <p><strong>The interruptions:</strong> <a href="https://data.syr.gov/datasets/cf857fb2f72a448c8ef712cc667768c4_0/about">Permit Requests</a> carries a November 2025 technical-problem notice. Its latest issue date is August 16, 2025. The <a href="https://data.syr.gov/datasets/92bcecf4355140a98b9bba3cd8ecdca2_0/about">2025 Part 1 crime file</a> has a similar notice and just 33 records, dated January 1–5.</p>
+      <p><strong>The unanswered question:</strong> the <a href="https://data.syr.gov/datasets/6c1981e96f1940a99b201482c3b7b6a9_0/about">SYRCityline file</a> is titled through January 2025 despite a monthly update declaration. Its description gives no interruption reason. Newer information may exist on SeeClickFix.</p>
+      <p class="caption">Old is not automatically neglected: 70 datasets declare no planned updates, often appropriately for historical editions. <a href="dashboard.html#maintenance">See schedules and edit dates.</a></p>
+    </div>
+  </section>
+
+  <section class="chapter" id="detail">
+    <div class="chapter-heading"><p class="eyebrow">THE DETAIL</p><h2>A public file can tell you less.</h2></div>
+    <div class="chapter-body">
+      <a class="comparison-card" href="dashboard.html?compare=permits#schema"><span>PERMIT EDITIONS / FIELDS</span><strong>16 <b>→</b> 9</strong><p>The newer file has no equivalent named fields for valuation, payment, application date, or status. It adds owner and work description. Both editions remain available; their scopes and workflows differ.</p><small>Compare the columns →</small></a>
+      <a class="comparison-card" href="dashboard.html?compare=parcel-dip#schema"><span>PARCELS / Q1 → Q3 → Q4 2024</span><strong>62 <b>→</b> 27 <b>→</b> 69</strong><p>Ownership and assessed values disappear from the Q3 edition, then return in Q4. No explanation was found in the reviewed descriptions.</p><small>Inspect the dip and recovery →</small></a>
+      <p class="caption">These compare editions available now, not past versions of one file. Counts include technical columns; fewer fields do not always mean less information. <a href="dashboard.html?compare=parcel-latest#schema">One later parcel change illustrates why.</a></p>
+    </div>
+  </section>
+
+  <section class="chapter" id="disappearing">
+    <div class="chapter-heading"><p class="eyebrow">THE OLD LINKS</p><h2>Gone from view. Reason unclear.</h2></div>
+    <div class="chapter-body">
+      <p>Of 75 archived item links absent from today's feed, <strong>54 return permission denied, 16 return missing or inaccessible, and five remain public.</strong> The sample includes maps and pages as well as datasets.</p>
+      <div id="historical-cases" class="historical-cases"></div>
+      <p>These links document entries missing from the current catalog. The reviewed sources do not establish whether each was deleted, archived, made private, or replaced—or when and why. An archived page is evidence of an earlier listing, not a complete removal record. <a href="dashboard.html#archive">Inspect all 75 checks.</a></p>
+    </div>
+  </section>
+
+  <section class="chapter" id="beyond">
+    <div class="chapter-heading"><p class="eyebrow">THE OTHER ENTRANCES</p><h2>Public, but hard to discover.</h2></div>
+    <div class="chapter-body">
+      <p>The <a href="https://services6.arcgis.com/bdPqSfflsdgFRVVM/ArcGIS/rest/services">city's ArcGIS directory</a> lists 350 services. <strong>218 have no matching portal dataset link.</strong> Some are copies, views, or map components; they are not 218 additional unique datasets.</p>
+      <p>Several unmatched layers return data: fire files labeled 2022–2024, housing certificates, and potholes filled in 2018. Their completeness and comparability are unverified. <a href="dashboard.html#services">Search the directory.</a></p>
+      <p>Department pages add more: <a href="https://www.syr.gov/Departments/Auditor-Office">2025 and 2026 budget workbooks</a>, <a href="https://www.syr.gov/Departments/Water/Water-Data-and-Reports">annual water reports</a>, and <a href="https://www.syr.gov/Departments/Citizen-Review-Board-CRB/CRB-Reports">Right-to-Know data ZIPs</a>. The portal's latest titled budget edition is FY2024–25.</p>
+      <p class="caption">The October 27 searches found XLSX, PDF, and ZIP links; no standalone syr.gov-hosted CSV was confirmed. This was not a full website inventory. Workbook and ZIP contents were not parsed for that snapshot. <a href="data/off-portal-resources.json">See the source inventory.</a></p>
+      <p><strong>Now easier to use:</strong> the independent <a href="../open-data-library/">DataCuse Open Data Library</a> brings these sources together. It includes 42 downloadable tables from the budget workbooks, water report, and CRB archive, plus a searchable directory of additional ArcGIS layers. Each entry links to its source and explains its limits. Library sources were checked November 1.</p>
+    </div>
+  </section>
+
+  <section class="chapter" id="agents">
+    <div class="chapter-heading"><p class="eyebrow">THE AI TEST</p><h2>Can an agent make sense of it?</h2></div>
+    <div class="chapter-body">
+      <p><strong>There is a foundation:</strong> machine-readable catalogs, queryable APIs, and dictionary links. The city even publishes a <a href="https://github.com/CityofSyracuse/code-violations-chatbot">code-violations chatbot schema</a>.</p>
+      <p>But that schema requests <code>owner_name</code>, a field absent from the current layer. The catalog's contact-email field contains an unresolved template placeholder. Outage notices sit in prose, and replacement histories are hard to follow.</p>
+      <p>Better discovery, dated status notices, clear coverage periods, and versioned fields would help both residents and software. The chatbot finding is a contract mismatch—not a tested failure of a deployed bot.</p>
+      <p><strong>Bring your own assistant:</strong> the library's <a href="../open-data-library/for-ai/">AI-agent guide</a> provides a compact catalog, field definitions, source links, and copyable prompts. Start there to find data, check its coverage, and ask questions grounded in the source.</p>
+    </div>
+  </section>
+
+  <section class="chapter methods" id="methods">
+    <div class="chapter-heading"><p class="eyebrow">SOURCES &amp; METHOD</p><h2>Follow the evidence.</h2></div>
+    <div class="chapter-body">
+      <p>Based on the October 27, 2026 <a href="https://data.syr.gov/api/feed/dcat-us/1.1.json">public catalog</a>, ArcGIS metadata, archived pages, aggregate queries, and official city sources. We count unique Feature Service items, including separate annual editions. This is a saved snapshot, not a live monitor.</p>
+      <p><a class="read-link" href="dashboard.html">Explore the dashboard →</a></p>
+      <details><summary>Downloads and research notes</summary><div class="downloads"><a href="data/datasets.csv" download>Portal inventory</a><a href="data/service-directory.csv" download>Service directory</a><a href="data/historical-items.csv" download>Historical checks</a><a href="data/schema-fields.csv" download>Field definitions</a><a href="RESEARCH.md">Evidence ledger</a><a href="README.md">Reproduce the analysis</a></div></details>
+    </div>
+  </section>
+</main>
+<footer><span>DataCuse · Independent civic data research</span><a href="https://www.datacuse.com/">All projects</a><a href="#main">Back to top ↑</a></footer>
+</body>
+</html>
