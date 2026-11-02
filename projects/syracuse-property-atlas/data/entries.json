@@ -1,5 +1,126 @@
 [
   {
+    "address": "217-21 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Flat roof structure is not fully visible from street level.",
+        "Known public code violation record cannot be confirmed from exterior street view imagery alone."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "mixed_use",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The street-level exterior of the two-story brick building at 217-21 Wolf St appears structurally sound and well-maintained.",
+      "visible_conditions": [
+        "Brick upper facade and tiled ground floor storefront facade appear intact.",
+        "Glass doors labeled 217, 219, and 221 and upper windows show no visible damage or board-ups.",
+        "Concrete sidewalk along the property perimeter is clear of debris and vegetation."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Code violations: 1 matching record"
+    ],
+    "id": 1027,
+    "image": "images/parcel-001027.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 69859,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.070320310711864,
+    "lon": -76.16522221141156,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07031843,
+          "Longitude": -76.16525712,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 39889,
+          "SBL": "002.-03-03.0",
+          "Vacant": null,
+          "complaint_address": "217-21 Wolf St",
+          "complaint_number": "2026-04664",
+          "complaint_type_name": "Complaint Reqst - General",
+          "complaint_zip": 13208,
+          "comply_by_date": 1782988189000,
+          "inspector_id": 908,
+          "issued_to": "Nicholas A Angarano",
+          "issued_to_address": "210 Wolf St",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1781519234820,
+          "status_date": 1781519389517,
+          "status_type_name": "Open",
+          "violation": "2025 FCNYS - Section 102.3 - Change of Use or Occupancy",
+          "violation_date": 1781519389517,
+          "violation_id": 219988,
+          "violation_number": "2026-09499"
+        }
+      ],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-10-27T11:46:47+00:00",
+      "rental_registry": "2026-10-27T11:46:47+00:00",
+      "unfit_properties": "2026-10-27T11:46:47+00:00",
+      "vacant_properties": "2026-10-27T11:46:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-02T07:02:55+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "002-03-030",
+    "published_at": "2026-11-02T07:04:26+00:00",
+    "review_reasons": [],
+    "title": "217-21 Wolf St"
+  },
+  {
     "address": "1400 Court St & Ross Park",
     "ai_analysis": {
       "available": true,
