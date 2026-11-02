@@ -1,5 +1,154 @@
 [
   {
+    "address": "1400 Court St & Ross Park",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The image is of good quality, and there are no obstructed views or uncertainties about the property or its conditions."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none",
+        "vegetation_overgrowth": "none",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.985,
+            "width": 0.998,
+            "x": 0.0,
+            "y": 0.0
+          },
+          "confidence": "high",
+          "label": "none",
+          "reason": "The image is clear and there are no visible issues"
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "none"
+      ],
+      "property_type_guess": "single-family",
+      "provider": "ollama:llava:latest",
+      "summary": "The image shows a single-family house with a well-maintained exterior. The house has a white exterior with a dark roof. The front yard is tidy with a neatly trimmed lawn and a variety of shrubs. The windows and doors appear to be in good condition. There are no visible signs of active construction or structural damage. The house has a small porch with a bench, and there is a vehicle parked on the driveway. The image quality is good, and there are no obvious signs of code violations or other exterior issues.",
+      "visible_conditions": [
+        "none"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Code violations: 1 matching record",
+      "Image-only flag: none"
+    ],
+    "id": 1026,
+    "image": "images/parcel-001026.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 81066,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07760204079446,
+    "lon": -76.14725585662961,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07759732,
+          "Longitude": -76.14729378,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 152707,
+          "SBL": "005.-03-01.0",
+          "Vacant": null,
+          "complaint_address": "1400 Court St & Ross Park",
+          "complaint_number": "2018-16141",
+          "complaint_type_name": "Property Maintenance-Ext",
+          "complaint_zip": 13208,
+          "comply_by_date": 1528886767000,
+          "inspector_id": 227,
+          "issued_to": "Michael & Zaklina Nocevski",
+          "issued_to_address": "2992 Nabil St",
+          "issued_to_city": "Baldwinsville",
+          "issued_to_zip": "13027",
+          "open_date": 1527676997920,
+          "status_date": 1528934400000,
+          "status_type_name": "Closed",
+          "violation": "2015 IMPC - Section 308.1 Accumulation",
+          "violation_date": 1527677162883,
+          "violation_id": 75668,
+          "violation_number": "79316"
+        }
+      ],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-10-27T11:46:47+00:00",
+      "rental_registry": "2026-10-27T11:46:47+00:00",
+      "unfit_properties": "2026-10-27T11:46:47+00:00",
+      "vacant_properties": "2026-10-27T11:46:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-02T06:05:46+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "005-03-010",
+    "published_at": "2026-11-02T06:07:18+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1400 Court St & Ross Park"
+  },
+  {
     "address": "225 Wolf St",
     "ai_analysis": {
       "available": true,
