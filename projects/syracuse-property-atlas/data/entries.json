@@ -1,5 +1,219 @@
 [
   {
+    "address": "1139 Lemoyne Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The dense vegetation on the front of the property obscures a clear view of the lower facade and front entry, limiting a complete condition assessment."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.25,
+            "width": 0.55,
+            "x": 0.0,
+            "y": 0.45
+          },
+          "confidence": "high",
+          "label": "Dense Vine Growth",
+          "reason": "Extensive vines covering the front fence and growing onto the lower facade of the house."
+        },
+        {
+          "bbox": {
+            "height": 0.1,
+            "width": 0.6,
+            "x": 0.0,
+            "y": 0.65
+          },
+          "confidence": "high",
+          "label": "Unmanaged Curbline Vegetation",
+          "reason": "Weeds and unkempt grass visible in the strip between the sidewalk and the street."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Dense vine growth covering the front fence and potentially encroaching on the lower facade of the structure, which may warrant attention.",
+        "Unmanaged vegetation in the tree lawn area between the sidewalk and the street."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property at 1139 Lemoyne Ave shows a two-story structure with white siding, a gambrel-style roof, and dense vine growth covering the front fence and parts of the lower facade.",
+      "visible_conditions": [
+        "Two-story residential structure with white siding.",
+        "Gambrel-style roof with dormers.",
+        "Front yard features a chain-link fence largely covered by dense green vines.",
+        "Some vines appear to be growing onto the lower portion of the house facade.",
+        "A small gate provides access to the front entry area.",
+        "The area between the sidewalk and the street has some unmanaged grass and weeds.",
+        "Visible windows appear intact."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Code violations: 2 matching records",
+      "Image-only flag: Dense vine growth covering the front fence and potentially encroaching on the lower facade of the structure, which may warrant attention.",
+      "Image-only flag: Unmanaged vegetation in the tree lawn area between the sidewalk and the street.",
+      "Needs human review"
+    ],
+    "id": 1041,
+    "image": "images/parcel-001041.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 80170,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.079721454091604,
+    "lon": -76.1550549682391,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07967487,
+          "Longitude": -76.15503237,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 147789,
+          "SBL": "003.-19-24.0",
+          "Vacant": null,
+          "complaint_address": "1139 Lemoyne Ave",
+          "complaint_number": "2021-15252",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1626182096000,
+          "inspector_id": 705,
+          "issued_to": "Patricia Massey",
+          "issued_to_address": "PO Box 3633",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13220",
+          "open_date": 1623071622213,
+          "status_date": 1632873600000,
+          "status_type_name": "Closed",
+          "violation": "SPCC-Sec. 27-133 Registration",
+          "violation_date": 1623071696987,
+          "violation_id": 111679,
+          "violation_number": "2021-08545"
+        },
+        {
+          "Latitude": 43.07967487,
+          "Longitude": -76.15503237,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 147792,
+          "SBL": "003.-19-24.0",
+          "Vacant": null,
+          "complaint_address": "1139 Lemoyne Ave",
+          "complaint_number": "2019-26551",
+          "complaint_type_name": "Property Maintenance-Int",
+          "complaint_zip": 13208,
+          "comply_by_date": 1572016818000,
+          "inspector_id": 241,
+          "issued_to": "Gladwin Thornhill",
+          "issued_to_address": "1663 Brooklyn Ave ",
+          "issued_to_city": "Brooklyn",
+          "issued_to_zip": "11210",
+          "open_date": 1569582550793,
+          "status_date": 1572307200000,
+          "status_type_name": "Closed",
+          "violation": "2015 IMPC - 305.3 - Interior Surfaces",
+          "violation_date": 1570029618900,
+          "violation_id": 88690,
+          "violation_number": "92419"
+        }
+      ],
+      "rental_registry": [
+        {
+          "Latitude": 43.07967487,
+          "Longitude": -76.15503237,
+          "NeedsRR": "Yes",
+          "ObjectId": 1766,
+          "PropertyAddress": "1139 Lemoyne Ave",
+          "RR_app_received": null,
+          "RR_contact_name": "Patricia Ann Massey",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-19-24.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1730419200000,
+          "pc_owner": "Patricia Ann Massey",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-10-27T11:46:47+00:00",
+      "rental_registry": "2026-10-27T11:46:47+00:00",
+      "unfit_properties": "2026-10-27T11:46:47+00:00",
+      "vacant_properties": "2026-10-27T11:46:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-02T22:03:06+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "003-19-240",
+    "published_at": "2026-11-02T22:04:37+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "1139 Lemoyne Ave"
+  },
+  {
     "address": "281-87 Dale St",
     "ai_analysis": {
       "available": true,
