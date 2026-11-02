@@ -1,5 +1,268 @@
 [
   {
+    "address": "1141 Lemoyne Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Image shows adjacent structures in close proximity, parcel boundaries are not explicitly defined.",
+        "Seasonal fall leaf cover conceals portions of the ground surface."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.06,
+            "width": 0.08,
+            "x": 0.69,
+            "y": 0.76
+          },
+          "confidence": "medium",
+          "label": "paint containers on lawn",
+          "reason": "Multiple paint containers/buckets are situated on the front yard lawn."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor outdoor storage or debris consisting of paint containers on the lawn."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The subject property appears to be a two-story residential building with green shingle siding in intact condition, with seasonal leaf cover and paint containers visible in the front yard area.",
+      "visible_conditions": [
+        "Teal-green shingle siding is intact without visible structural damage.",
+        "Enclosed porch and windows appear intact with no visible breakage.",
+        "Seasonal leaf accumulation across lawn area.",
+        "Paint containers/buckets sitting on the front lawn area."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Code violations: 5 matching records",
+      "Image-only flag: Minor outdoor storage or debris consisting of paint containers on the lawn."
+    ],
+    "id": 1038,
+    "image": "images/parcel-001038.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 76320,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07972595885934,
+    "lon": -76.1548745127773,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.0797315,
+          "Longitude": -76.1549101,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 95080,
+          "SBL": "003.-19-23.0",
+          "Vacant": null,
+          "complaint_address": "1141 Lemoyne Ave",
+          "complaint_number": "2025-05641",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1758274153000,
+          "inspector_id": 1222,
+          "issued_to": "LRSJ LLC",
+          "issued_to_address": "PO Box 12",
+          "issued_to_city": "Manlius",
+          "issued_to_zip": "13104",
+          "open_date": 1750411652967,
+          "status_date": 1756891753000,
+          "status_type_name": "Open",
+          "violation": "SPCC-Sec. 27-133 Registration",
+          "violation_date": 1750411753980,
+          "violation_id": 200207,
+          "violation_number": "2025-11731"
+        },
+        {
+          "Latitude": 43.0797315,
+          "Longitude": -76.1549101,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 95083,
+          "SBL": "003.-19-23.0",
+          "Vacant": null,
+          "complaint_address": "1141 Lemoyne Ave",
+          "complaint_number": "2021-22662",
+          "complaint_type_name": "Property Maintenance-Ext",
+          "complaint_zip": 13208,
+          "comply_by_date": 1634055159000,
+          "inspector_id": 908,
+          "issued_to": "LRSJ LLC",
+          "issued_to_address": "8435 Prestwick Dr ",
+          "issued_to_city": "Manlius",
+          "issued_to_zip": "13104",
+          "open_date": 1633450321107,
+          "status_date": 1633996800000,
+          "status_type_name": "Closed",
+          "violation": "SPCC - Section 27-72 (f) - Overgrowth",
+          "violation_date": 1633450359863,
+          "violation_id": 119667,
+          "violation_number": "2021-16604"
+        },
+        {
+          "Latitude": 43.0797315,
+          "Longitude": -76.1549101,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 95086,
+          "SBL": "003.-19-23.0",
+          "Vacant": null,
+          "complaint_address": "1141 Lemoyne Ave",
+          "complaint_number": "V2021-0780",
+          "complaint_type_name": "Vacant House",
+          "complaint_zip": 13208,
+          "comply_by_date": 1629799234000,
+          "inspector_id": 705,
+          "issued_to": "LRSJ LLC",
+          "issued_to_address": "8435 Prestwick Dr ",
+          "issued_to_city": "Manlius",
+          "issued_to_zip": "13104",
+          "open_date": 1629194322257,
+          "status_date": 1629763200000,
+          "status_type_name": "Closed",
+          "violation": "2020 PMCNYS - Section 302.4 - Weeds",
+          "violation_date": 1629194434027,
+          "violation_id": 116489,
+          "violation_number": "2021-13395"
+        },
+        {
+          "Latitude": 43.0797315,
+          "Longitude": -76.1549101,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 95089,
+          "SBL": "003.-19-23.0",
+          "Vacant": null,
+          "complaint_address": "1141 Lemoyne Ave",
+          "complaint_number": "V2021-0505",
+          "complaint_type_name": "Vacant House",
+          "complaint_zip": 13208,
+          "comply_by_date": 1622127823000,
+          "inspector_id": 705,
+          "issued_to": "LRSJ LLC",
+          "issued_to_address": "8435 Prestwick Dr ",
+          "issued_to_city": "Manlius",
+          "issued_to_zip": "13104",
+          "open_date": 1621468800000,
+          "status_date": 1625529600000,
+          "status_type_name": "Closed",
+          "violation": "SPCC - Section 27-72 (f) - Overgrowth",
+          "violation_date": 1621523023960,
+          "violation_id": 110820,
+          "violation_number": "2021-07679"
+        },
+        {
+          "Latitude": 43.0797315,
+          "Longitude": -76.1549101,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 95095,
+          "SBL": "003.-19-23.0",
+          "Vacant": null,
+          "complaint_address": "1141 Lemoyne Ave",
+          "complaint_number": "V2020-0610",
+          "complaint_type_name": "Vacant House",
+          "complaint_zip": 13208,
+          "comply_by_date": 1591947971000,
+          "inspector_id": 814,
+          "issued_to": "Mary Jane Godlewski",
+          "issued_to_address": "4453 Southwd Hts Dr",
+          "issued_to_city": "Jamesville",
+          "issued_to_zip": "13078",
+          "open_date": 1591315200000,
+          "status_date": 1591343171000,
+          "status_type_name": "Closed",
+          "violation": "SPCC - Section 27-72 (f) - Overgrowth",
+          "violation_date": 1591343171000,
+          "violation_id": 95091,
+          "violation_number": "98763"
+        }
+      ],
+      "rental_registry": [
+        {
+          "Latitude": 43.0797315,
+          "Longitude": -76.1549101,
+          "NeedsRR": "Yes",
+          "ObjectId": 1762,
+          "PropertyAddress": "1141 Lemoyne Ave",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-19-23.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "LRSJ LLC",
+          "valid_until": null,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-10-27T11:46:47+00:00",
+      "rental_registry": "2026-10-27T11:46:47+00:00",
+      "unfit_properties": "2026-10-27T11:46:47+00:00",
+      "vacant_properties": "2026-10-27T11:46:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-02T19:02:57+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "003-19-230",
+    "published_at": "2026-11-02T19:04:29+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1141 Lemoyne Ave"
+  },
+  {
     "address": "1424 Court St & Dale St",
     "ai_analysis": {
       "available": true,
