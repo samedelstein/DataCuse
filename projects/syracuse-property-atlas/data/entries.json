@@ -1,5 +1,204 @@
 [
   {
+    "address": "1145 Lemoyne Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Wide street view includes multiple adjacent properties; analysis assumes the center structure corresponds to the target address.",
+        "Seasonal leaf cover obscures portions of the ground.",
+        "Main entry door is partially obscured by front yard plantings."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "unclear",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows a two-story residential building with light-colored siding, intact windows, and a small front lawn with seasonal leaf accumulation.",
+      "visible_conditions": [
+        "Two-story home with light yellow or cream-colored siding",
+        "Gabled shingle roof visible from street angle",
+        "Double-hung windows on upper and lower floors appear intact",
+        "Window air conditioning unit installed in an upper-floor window",
+        "Small evergreen tree planted in the front yard area",
+        "Ground covered with dormant grass and scattered fallen leaves"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Code violations: 3 matching records"
+    ],
+    "id": 1035,
+    "image": "images/parcel-001035.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 107113,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07978340927455,
+    "lon": -76.15477000328526,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07979088,
+          "Longitude": -76.15480804,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 96992,
+          "SBL": "003.-19-22.0",
+          "Vacant": null,
+          "complaint_address": "1145 Lemoyne Ave",
+          "complaint_number": "2025-05401",
+          "complaint_type_name": "Property Maintenance-Ext",
+          "complaint_zip": 13208,
+          "comply_by_date": 1750347830000,
+          "inspector_id": 1221,
+          "issued_to": "Saif Odah",
+          "issued_to_address": "1146 Lemoyne Ave ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1749656158167,
+          "status_date": 1750377600000,
+          "status_type_name": "Closed",
+          "violation": "SPCC - Section 27-72 (f) - Overgrowth",
+          "violation_date": 1749656630173,
+          "violation_id": 199676,
+          "violation_number": "2025-11197"
+        },
+        {
+          "Latitude": 43.07979088,
+          "Longitude": -76.15480804,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 96993,
+          "SBL": "003.-19-22.0",
+          "Vacant": null,
+          "complaint_address": "1145 Lemoyne Ave",
+          "complaint_number": "2022-10853",
+          "complaint_type_name": "Property Maintenance-Ext",
+          "complaint_zip": 13208,
+          "comply_by_date": 1672935523000,
+          "inspector_id": 497,
+          "issued_to": "NYTX Properties LLC",
+          "issued_to_address": "5744 Helen Dr",
+          "issued_to_city": "Denison",
+          "issued_to_zip": "75020",
+          "open_date": 1671553085510,
+          "status_date": 1672876800000,
+          "status_type_name": "Closed",
+          "violation": "Section 105.2 Building Permits",
+          "violation_date": 1671553123780,
+          "violation_id": 147424,
+          "violation_number": "2022-23132"
+        },
+        {
+          "Latitude": 43.07979088,
+          "Longitude": -76.15480804,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 96994,
+          "SBL": "003.-19-22.0",
+          "Vacant": null,
+          "complaint_address": "1145 Lemoyne Ave",
+          "complaint_number": "2022-07742",
+          "complaint_type_name": "Trash/Debris-Private, Occ",
+          "complaint_zip": 13208,
+          "comply_by_date": 1662737062000,
+          "inspector_id": 969,
+          "issued_to": "Eric Boster",
+          "issued_to_address": "1145 Lemoyne Ave ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1661331547557,
+          "status_date": 1662681600000,
+          "status_type_name": "Closed",
+          "violation": "SPCC - Section 27-72 (e) -Trash & Debris",
+          "violation_date": 1662045862717,
+          "violation_id": 140720,
+          "violation_number": "2022-16388"
+        }
+      ],
+      "rental_registry": [
+        {
+          "Latitude": 43.07979088,
+          "Longitude": -76.15480804,
+          "NeedsRR": "Yes",
+          "ObjectId": 1759,
+          "PropertyAddress": "1145 Lemoyne Ave",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-19-22.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Saif Odah",
+          "valid_until": null,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-10-27T11:46:47+00:00",
+      "rental_registry": "2026-10-27T11:46:47+00:00",
+      "unfit_properties": "2026-10-27T11:46:47+00:00",
+      "vacant_properties": "2026-10-27T11:46:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-02T15:02:55+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "003-19-220",
+    "published_at": "2026-11-02T15:04:26+00:00",
+    "review_reasons": [],
+    "title": "1145 Lemoyne Ave"
+  },
+  {
     "address": "1420 Court St",
     "ai_analysis": {
       "available": true,
