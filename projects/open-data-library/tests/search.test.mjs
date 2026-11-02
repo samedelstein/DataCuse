@@ -13,9 +13,11 @@ test('year, subject and format intersect',()=>{
   assert.equal(result.length,3);
   assert.equal(filterRows(rows,{q:'nothingmatchesxyz',scope:'all'}).length,0);
 });
-test('official and unavailable records leave selected collection',()=>{
+test('official sources join default search and can be filtered separately',()=>{
   const source=rows[0];
   const variants=[{...source,id:'official',membership:'official-catalog'},{...source,id:'offline',availability:'unavailable'},{...source,id:'good'}];
-  assert.deepEqual(filterRows(variants,{scope:'curated'}).map(r=>r.id),['good']);
+  assert.deepEqual(filterRows(variants,{scope:'curated'}).map(r=>r.id),['official','good']);
+  assert.deepEqual(filterRows(variants,{scope:'official'}).map(r=>r.id),['official']);
+  assert.deepEqual(filterRows(variants,{scope:'additional'}).map(r=>r.id),['good']);
   assert.equal(filterRows(variants,{scope:'all',availability:'unavailable'}).length,1);
 });

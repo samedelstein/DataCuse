@@ -987,6 +987,70 @@
     "fields": "Work_Type Work_Type WR_Species WR_Species Work_Comments___Species Work_Comments___Species Work_Comments___Location Work_Comments___Location Address Address Street Street Side Side Site Site On_Street On_Street From_Street From_Street To_Street To_Street Site_ID Site_ID X X Y Y Latitude Latitude Longitude Longitude Species Species Area Area CEJST CEJST ARPA ARPA Census_Tract Census_Tract Planted_By Planted_By Stock Stock DAC_Area DAC_Area FID FID"
   },
   {
+    "id": "arcgis-c5f401cf52de12bd-0",
+    "title": "3rd Grade ELA Proficiency Levels by Census Block (SCSD 2024)",
+    "topic": "City & neighborhoods",
+    "family": "3rd grade ela proficiency levels by census block 2024",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2024 (source title; completeness unverified)",
+    "years": [
+      "2024"
+    ],
+    "description": "Data Dictionary: Label Definition Definition Source Census_Tract The Census Tract that this data is regarding Syracuse City School District (SCSD) Poverty_NotProficient The percentage of total students (poverty and non-poverty) who are both",
+    "fields": "FID FID Cnss_Tr Census_Tract NnPv_NP NonPoverty_NotProficient NnPvr_P NonPoverty_Proficient NnPvrtP NonPovertyPercentage Pvrt_NP Poverty_NotProficient Pvrty_P Poverty_Proficient PvrtyPr Poverty_Percentage StdntCn Student_Count Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-5c8c6a5bc7e451f9-0",
+    "title": "3rd Grade ELA Proficiency Levels by Census Block (SCSD 2025)",
+    "topic": "City & neighborhoods",
+    "family": "3rd grade ela proficiency levels by census block 2025",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2025 (source title; completeness unverified)",
+    "years": [
+      "2025"
+    ],
+    "description": "Data Dictionary: Label Definition Definition Source Census_Tract The Census Tract that this data is regarding Syracuse City School District (SCSD) Poverty_NotProficient The percentage of total students (poverty and non-poverty) who are both",
+    "fields": "FID FID Cnss_Tr Census_Tract NnPv_NP NonPoverty_NotProficent NnPvr_P NonPoverty_Proficent NnPvrtP NonPovertyPercentage Pvrt_NP Poverty_NotProficent Pvrty_P Poverty_Proficent PvrtyPr PovertyPercentage Stdnt_C Student_Count Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-6c470cb1f540818a-0",
+    "title": "3rd Grade ELA Proficiency Levels by Census Block (SCSD 2022)",
+    "topic": "City & neighborhoods",
+    "family": "3rd grade ela proficiency levels by census block scsd 2022",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2022 (source title; completeness unverified)",
+    "years": [
+      "2022"
+    ],
+    "description": "Data Dictionary: Label Definition Definition Source Census_Tract The Census Tract that this data is regarding Syracuse City School District (SCSD) Poverty_NotProficient The percentage of total students (poverty and non-poverty) who are both",
+    "fields": "OBJECTID_1 OBJECTID_1 Census_Tract Census_Tract Poverty_NotReady Poverty_NotProficient Poverty_Ready Poverty_Proficient PovertyPercentage PovertyPercentage NonPoverty_NotReady NonPoverty_NotProficient NonPoverty_Ready NonPoverty_Proficient NonPovertyPercentage NonPovertyPercentage Grand_Total Grand_Total StudentCount StudentCount Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-36ae6acdd31f2f2c-0",
+    "title": "3rd Grade ELA Proficiency Levels by Census Block (SCSD 2023)",
+    "topic": "City & neighborhoods",
+    "family": "3rd grade ela proficiency levels by census block scsd 2023",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2023 (source title; completeness unverified)",
+    "years": [
+      "2023"
+    ],
+    "description": "Data Dictionary: Label Definition Definition Source Census_Tract The Census Tract that this data is regarding Syracuse City School District (SCSD) Poverty_NotProficient The percentage of total students (poverty and non-poverty) who are both",
+    "fields": "OBJECTID_1 OBJECTID_1 Census_Tract Census_Tract Poverty_NotProficient Poverty_NotProficient Poverty_Proficient Poverty_Proficient PovertyPercentage PovertyPercentage NonPoverty_NotProficient NonPoverty_NotProficient NonPoverty_Proficient NonPoverty_Proficient NonPovertyPercentage NonPovertyPercentage Student_Count StudentCount Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
     "id": "arcgis-0c92fccf123b02cf-0",
     "title": "ab2058",
     "topic": "City & neighborhoods",
@@ -1073,6 +1137,374 @@
     "fields": "PARK PARK ART_MONUMENT_PLAQUE_NAME ART/MONUMENT/PLAQUE NAME ART_MONUMENT_PLAQUE_TYPE ART/MONUMENT/PLAQUE TYPE YEAR YEAR PLAQUE_OR_MONUMENT_TEXT PLAQUE/MONUMENT TEXT LAT LAT LONG LONG IMAGE_1 IMAGE FID FID ArtMonPlaqueID ArtMonPlaqueID"
   },
   {
+    "id": "arcgis-74fef6caca088fd3-0",
+    "title": "Assessment Final Roll (2007)",
+    "topic": "City & neighborhoods",
+    "family": "assessment final roll 2007 ",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2007 (source title; completeness unverified)",
+    "years": [
+      "2007"
+    ],
+    "description": "County: Onondaga City: Syracuse Statewide Information System Code (SWIS): 311500 Valuation Date: JAN 01, 2007 Taxable Status Date: JAN 01, 2007 Uniform Percent of Value: 090.50% Data Dictionary: Label Definition Definition Source SBL Sectio",
+    "fields": "SBL SBL Property_Address Property_Address Property_City Property_City Dimensions Dimensions Property_Class Property_Class Prop_Class_Description Prop_Class_Description Primary_Owner Primary_Owner Secondary_Owner Secondary_Owner Owner_Address Owner_Address PO_Box PO_Box School_Taxable School_Taxable Municipality_Taxable Municipality_Taxable County_Taxable County_Taxable Total_Assessment Total_Assessment Exemption_1_Description Exemption_1_Description Exemption_1_Amt Exemption_1_Amt ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-36bee518dd9b98d1-0",
+    "title": "Assessment Final Roll (2008)",
+    "topic": "City & neighborhoods",
+    "family": "assessment final roll 2008 ",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2008 (source title; completeness unverified)",
+    "years": [
+      "2008"
+    ],
+    "description": "County: Onondaga City: Syracuse Statewide Information System Code (SWIS): 311500 Valuation Date: JAN 01, 2008 Taxable Status Date: JAN 01, 2008 Uniform Percent of Value: 089.00% Data Dictionary: Label Definition Definition Source SBL Sectio",
+    "fields": "SBL SBL Property_Address Property_Address Property_City Property_City Dimensions Dimensions Property_Class Property_Class Prop_Class_Description Prop_Class_Description Primary_Owner Primary_Owner Secondary_Owner Secondary_Owner Owner_Address Owner_Address PO_Box PO_Box School_Taxable School_Taxable Municipality_Taxable Municipality_Taxable County_Taxable County_Taxable Total_Assessment Total_Assessment Exemption_1_Description Exemption_1_Description Exemption_1_Amt Exemption_1_Amt Exemption_2_Description Exemption_2_Description Exemption_2_Amt Exemption_2_Amt Exemption_3_Description Exemption_3_Description Exemption_3_Amt Exemption_3_Amt Exemption_4_Description Exemption_4_Description Exemption_4_Amt Exemption_4_Amt Exemption_5_Description Exemption_5_Description Exemption_5_Amt Exemption_5_Amt Exemption_6_Description Exemption_6_Description Exemption_6_Amt Exemption_6_Amt Exemption_7_Description Exemption_7_Description Exemption_7_Amt Exemption_7_Amt ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-b11f6a3a0695f60f-0",
+    "title": "Assessment Final Roll (2009)",
+    "topic": "City & neighborhoods",
+    "family": "assessment final roll 2009 ",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2009 (source title; completeness unverified)",
+    "years": [
+      "2009"
+    ],
+    "description": "County: Onondaga City: Syracuse Statewide Information System Code (SWIS): 311500 Valuation Date: JAN 01, 2009 Taxable Status Date: JAN 01, 2009 Uniform Percent of Value: 084.50% Data Dictionary: Label Definition Definition Source SBL Sectio",
+    "fields": "SBL SBL Property_Address Property_Address Property_City Property_City Dimensions Dimensions Property_Class Property_Class Prop_Class_Description Prop_Class_Description Primary_Owner Primary_Owner Secondary_Owner Secondary_Owner Owner_Address Owner_Address PO_Box PO_Box School_Taxable School_Taxable Municipality_Taxable Municipality_Taxable County_Taxable County_Taxable Total_Assessment Total_Assessment Exemption_1_Description Exemption_1_Description Exemption_1_Amt Exemption_1_Amt Exemption_2_Description Exemption_2_Description Exemption_2_Amt Exemption_2_Amt Exemption_3_Description Exemption_3_Description Exemption_3_Amt Exemption_3_Amt Exemption_4_Description Exemption_4_Description Exemption_4_Amt Exemption_4_Amt Exemption_5_Description Exemption_5_Description Exemption_5_Amt Exemption_5_Amt Exemption_6_Description Exemption_6_Description Exemption_6_Amt Exemption_6_Amt Exemption_7_Description Exemption_7_Description Exemption_7_Amt Exemption_7_Amt Exemption_8_Description Exemption_8_Description Exemption_8_Amt Exemption_8_Amt ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-1efd1ff54a9110bb-0",
+    "title": "Assessment Final Roll (2010)",
+    "topic": "City & neighborhoods",
+    "family": "assessment final roll 2010 ",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2010 (source title; completeness unverified)",
+    "years": [
+      "2010"
+    ],
+    "description": "County: Onondaga City: Syracuse Statewide Information System Code (SWIS): 311500 Valuation Date: JAN 01, 2010 Taxable Status Date: JAN 01, 2010 Uniform Percent of Value: 084.50% Data Dictionary: Label Definition Definition Source SBL Sectio",
+    "fields": "SBL SBL Property_Address Property_Address Property_City Property_City Dimensions Dimensions Property_Class Property_Class Prop_Class_Description Prop_Class_Description Primary_Owner Primary_Owner Secondary_Owner Secondary_Owner Owner_Address Owner_Address PO_Box PO_Box School_Taxable School_Taxable Municipality_Taxable Municipality_Taxable County_Taxable County_Taxable Total_Assessment Total_Assessment Exemption_1_Description Exemption_1_Description Exemption_1_Amt Exemption_1_Amt Exemption_2_Description Exemption_2_Description Exemption_2_Amt Exemption_2_Amt Exemption_3_Description Exemption_3_Description Exemption_3_Amt Exemption_3_Amt Exemption_4_Description Exemption_4_Description Exemption_4_Amt Exemption_4_Amt Exemption_5_Description Exemption_5_Description Exemption_5_Amt Exemption_5_Amt Exemption_6_Description Exemption_6_Description Exemption_6_Amt Exemption_6_Amt ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-4024f7923496a2fa-0",
+    "title": "Assessment Final Roll (2011)",
+    "topic": "City & neighborhoods",
+    "family": "assessment final roll 2011 ",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2011 (source title; completeness unverified)",
+    "years": [
+      "2011"
+    ],
+    "description": "County: Onondaga City: Syracuse Statewide Information System Code (SWIS): 311500 Valuation Date: JAN 01, 2011 Taxable Status Date: JAN 01, 2011 Uniform Percent of Value: 084.50% Data Dictionary: Label Definition Definition Source SBL Sectio",
+    "fields": "SBL SBL Property_Address Property_Address Property_City Property_City Dimensions Dimensions Property_Class Property_Class Prop_Class_Description Prop_Class_Description Primary_Owner Primary_Owner Secondary_Owner Secondary_Owner Owner_Address Owner_Address PO_Box PO_Box School_Taxable School_Taxable Municipality_Taxable Municipality_Taxable County_Taxable County_Taxable Total_Assessment Total_Assessment Exemption_1_Description Exemption_1_Description Exemption_1_Amt Exemption_1_Amt Exemption_2_Description Exemption_2_Description Exemption_2_Amt Exemption_2_Amt Exemption_3_Description Exemption_3_Description Exemption_3_Amt Exemption_3_Amt Exemption_4_Description Exemption_4_Description Exemption_4_Amt Exemption_4_Amt Exemption_5_Description Exemption_5_Description Exemption_5_Amt Exemption_5_Amt Exemption_6_Description Exemption_6_Description Exemption_6_Amt Exemption_6_Amt ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-43b508a90f0966e4-0",
+    "title": "Assessment Final Roll (2012)",
+    "topic": "City & neighborhoods",
+    "family": "assessment final roll 2012 ",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2012 (source title; completeness unverified)",
+    "years": [
+      "2012"
+    ],
+    "description": "County: Onondaga City: Syracuse Statewide Information System Code (SWIS): 311500 Valuation Date: JAN 01, 2012 Taxable Status Date: JAN 01, 2012 Uniform Percent of Value: 084.50% Data Dictionary: Label Definition Definition Source SBL Sectio",
+    "fields": "SBL SBL Property_Address Property_Address Property_City Property_City Dimensions Dimensions Property_Class Property_Class Prop_Class_Description Prop_Class_Description Primary_Owner Primary_Owner Secondary_Owner Secondary_Owner Owner_Address Owner_Address PO_Box PO_Box School_Taxable School_Taxable Municipality_Taxable Municipality_Taxable County_Taxable County_Taxable Total_Assessment Total_Assessment Exemption_1_Description Exemption_1_Description Exemption_1_Amt Exemption_1_Amt Exemption_2_Description Exemption_2_Description Exemption_2_Amt Exemption_2_Amt Exemption_3_Description Exemption_3_Description Exemption_3_Amt Exemption_3_Amt Exemption_4_Description Exemption_4_Description Exemption_4_Amt Exemption_4_Amt Exemption_5_Description Exemption_5_Description Exemption_5_Amt Exemption_5_Amt Exemption_6_Description Exemption_6_Description Exemption_6_Amt Exemption_6_Amt ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-aa613b7854fbab26-0",
+    "title": "Assessment Final Roll (2013)",
+    "topic": "City & neighborhoods",
+    "family": "assessment final roll 2013 ",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2013 (source title; completeness unverified)",
+    "years": [
+      "2013"
+    ],
+    "description": "County: Onondaga City: Syracuse Statewide Information System Code (SWIS): 311500 Valuation Date: JAN 01, 2013 Taxable Status Date: JAN 01, 2013 Uniform Percent of Value: 082.00% Data Dictionary: Label Definition Definition Source SBL Sectio",
+    "fields": "SBL SBL Property_Address Property_Address Property_City Property_City Dimensions Dimensions Property_Class Property_Class Prop_Class_Description Prop_Class_Description Primary_Owner Primary_Owner Secondary_Owner Secondary_Owner Owner_Address Owner_Address PO_Box PO_Box School_Taxable School_Taxable Municipality_Taxable Municipality_Taxable County_Taxable County_Taxable Total_Assessment Total_Assessment Exemption_1_Description Exemption_1_Description Exemption_1_Amt Exemption_1_Amt Exemption_2_Description Exemption_2_Description Exemption_2_Amt Exemption_2_Amt Exemption_3_Description Exemption_3_Description Exemption_3_Amt Exemption_3_Amt Exemption_4_Description Exemption_4_Description Exemption_4_Amt Exemption_4_Amt Exemption_5_Description Exemption_5_Description Exemption_5_Amt Exemption_5_Amt Exemption_6_Description Exemption_6_Description Exemption_6_Amt Exemption_6_Amt ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-b358c67c0d4c931f-0",
+    "title": "Assessment Final Roll (2014)",
+    "topic": "City & neighborhoods",
+    "family": "assessment final roll 2014 ",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2014 (source title; completeness unverified)",
+    "years": [
+      "2014"
+    ],
+    "description": "County: Onondaga City: Syracuse Statewide Information System Code (SWIS): 311500 Valuation Date: JAN 01, 2014 Taxable Status Date: JAN 01, 2014 Uniform Percent of Value: 081.50% Data Dictionary: Label Definition Definition Source SBL Sectio",
+    "fields": "SBL SBL Property_Address Property_Address Property_City Property_City Dimensions Dimensions Property_Class Property_Class Prop_Class_Description Prop_Class_Description Primary_Owner Primary_Owner Secondary_Owner Secondary_Owner Owner_Address Owner_Address PO_Box PO_Box School_Taxable School_Taxable Municipality_Taxable Municipality_Taxable County_Taxable County_Taxable Total_Assessment Total_Assessment Exemption_1_Description Exemption_1_Description Exemption_1_Amt Exemption_1_Amt Exemption_2_Description Exemption_2_Description Exemption_2_Amt Exemption_2_Amt Exemption_3_Description Exemption_3_Description Exemption_3_Amt Exemption_3_Amt Exemption_4_Description Exemption_4_Description Exemption_4_Amt Exemption_4_Amt Exemption_5_Description Exemption_5_Description Exemption_5_Amt Exemption_5_Amt Exemption_6_Description Exemption_6_Description Exemption_6_Amt Exemption_6_Amt ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-be0cc2c918cc0933-0",
+    "title": "Assessment Final Roll (2015)",
+    "topic": "City & neighborhoods",
+    "family": "assessment final roll 2015 ",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2015 (source title; completeness unverified)",
+    "years": [
+      "2015"
+    ],
+    "description": "County: Onondaga City: Syracuse Statewide Information System Code (SWIS): 311500 Valuation Date: JAN 01, 2015 Taxable Status Date: JAN 01, 2015 Uniform Percent of Value: 081.50% Data Dictionary: Label Definition Definition Source SBL Sectio",
+    "fields": "SBL SBL Property_Address Property_Address Property_City Property_City Dimensions Dimensions Property_Class Property_Class Prop_Class_Description Prop_Class_Description Primary_Owner Primary_Owner Secondary_Owner Secondary_Owner Owner_Address Owner_Address PO_Box PO_Box School_Taxable School_Taxable Municipality_Taxable Municipality_Taxable County_Taxable County_Taxable Total_Assessment Total_Assessment Exemption_1_Description Exemption_1_Description Exemption_1_Amt Exemption_1_Amt Exemption_2_Description Exemption_2_Description Exemption_2_Amt Exemption_2_Amt Exemption_3_Description Exemption_3_Description Exemption_3_Amt Exemption_3_Amt Exemption_4_Description Exemption_4_Description Exemption_4_Amt Exemption_4_Amt Exemption_5_Description Exemption_5_Description Exemption_5_Amt Exemption_5_Amt Exemption_6_Description Exemption_6_Description Exemption_6_Amt Exemption_6_Amt ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-1a31b987152a38ab-0",
+    "title": "Assessment Final Roll (2016)",
+    "topic": "City & neighborhoods",
+    "family": "assessment final roll 2016 ",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2016 (source title; completeness unverified)",
+    "years": [
+      "2016"
+    ],
+    "description": "County: Onondaga City: Syracuse Statewide Information System Code (SWIS): 311500 Valuation Date: JAN 01, 2016 Taxable Status Date: JAN 01, 2016 Uniform Percent of Value: 080.50% Data Dictionary: Label Definition Definition Source SBL Sectio",
+    "fields": "SBL SBL Property_Address Property_Address Property_City Property_City Dimensions Dimensions Property_Class Property_Class Prop_Class_Description Prop_Class_Description Primary_Owner Primary_Owner Secondary_Owner Secondary_Owner Owner_Address Owner_Address PO_Box PO_Box School_Taxable School_Taxable Municipality_Taxable Municipality_Taxable County_Taxable County_Taxable Total_Assessment Total_Assessment Exemption_1_Description Exemption_1_Description Exemption_1_Amt Exemption_1_Amt Exemption_2_Description Exemption_2_Description Exemption_2_Amt Exemption_2_Amt Exemption_3_Description Exemption_3_Description Exemption_3_Amt Exemption_3_Amt Exemption_4_Description Exemption_4_Description Exemption_4_Amt Exemption_4_Amt Exemption_5_Description Exemption_5_Description Exemption_5_Amt Exemption_5_Amt Exemption_6_Description Exemption_6_Description Exemption_6_Amt Exemption_6_Amt ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-55fa137aed5b4e2c-0",
+    "title": "Assessment Final Roll (2017)",
+    "topic": "City & neighborhoods",
+    "family": "assessment final roll 2017 ",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2017 (source title; completeness unverified)",
+    "years": [
+      "2017"
+    ],
+    "description": "County: Onondaga City: Syracuse Statewide Information System Code (SWIS): 311500 Valuation Date: JAN 01, 2017 Taxable Status Date: JAN 01, 2017 Uniform Percent of Value: 080.00% Data Dictionary: Label Definition Definition Source SBL Sectio",
+    "fields": "SBL SBL Property_Address Property_Address Property_City Property_City Dimensions Dimensions Property_Class Property_Class Prop_Class_Description Prop_Class_Description Primary_Owner Primary_Owner Secondary_Owner Secondary_Owner Owner_Address Owner_Address PO_Box PO_Box School_Taxable School_Taxable Municipality_Taxable Municipality_Taxable County_Taxable County_Taxable Total_Assessment Total_Assessment Exemption_1_Description Exemption_1_Description Exemption_1_Amt Exemption_1_Amt Exemption_2_Description Exemption_2_Description Exemption_2_Amt Exemption_2_Amt Exemption_3_Description Exemption_3_Description Exemption_3_Amt Exemption_3_Amt Exemption_4_Description Exemption_4_Description Exemption_4_Amt Exemption_4_Amt Exemption_5_Description Exemption_5_Description Exemption_5_Amt Exemption_5_Amt Exemption_6_Description Exemption_6_Description Exemption_6_Amt Exemption_6_Amt ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-45656a2c83e0f2f4-0",
+    "title": "Assessment Final Roll (2018)",
+    "topic": "City & neighborhoods",
+    "family": "assessment final roll 2018 ",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2018 (source title; completeness unverified)",
+    "years": [
+      "2018"
+    ],
+    "description": "County: Onondaga City: Syracuse Statewide Information System Code (SWIS): 311500 Valuation Date: JAN 01, 2018 Taxable Status Date: JAN 01, 2018 Uniform Percent of Value: 080.00% Data Dictionary: Label Definition Definition Source SBL Sectio",
+    "fields": "SBL SBL Property_Address Property_Address Property_City Property_City Dimensions Dimensions Property_Class Property_Class Prop_Class_Description Prop_Class_Description Primary_Owner Primary_Owner Secondary_Owner Secondary_Owner Owner_Address Owner_Address PO_Box PO_Box School_Taxable School_Taxable Municipality_Taxable Municipality_Taxable County_Taxable County_Taxable Total_Assessment Total_Assessment Exemption_1_Description Exemption_1_Description Exemption_1_Amt Exemption_1_Amt Exemption_2_Description Exemption_2_Description Exemption_2_Amt Exemption_2_Amt Exemption_3_Description Exemption_3_Description Exemption_3_Amt Exemption_3_Amt Exemption_4_Description Exemption_4_Description Exemption_4_Amt Exemption_4_Amt Exemption_5_Description Exemption_5_Description Exemption_5_Amt Exemption_5_Amt Exemption_6_Description Exemption_6_Description Exemption_6_Amt Exemption_6_Amt ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-6fe64215adf72524-0",
+    "title": "Assessment Final Roll (2019)",
+    "topic": "City & neighborhoods",
+    "family": "assessment final roll 2019 ",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2019 (source title; completeness unverified)",
+    "years": [
+      "2019"
+    ],
+    "description": "County: Onondaga City: Syracuse Statewide Information System Code (SWIS): 311500 Valuation Date: JAN 01, 2019 Taxable Status Date: JAN 01, 2019 Uniform Percent of Value: 78.00% Data Dictionary: Label Definition Definition Source SBL Section",
+    "fields": "SBL SBL Property_Address Property_Address Property_City Property_City Dimensions Dimensions Property_Class Property_Class Prop_Class_Description Prop_Class_Description Primary_Owner Primary_Owner Secondary_Owner Secondary_Owner Owner_Address Owner_Address PO_Box PO_Box School_Taxable School_Taxable Municipality_Taxable Municipality_Taxable County_Taxable County_Taxable Total_Assessment Total_Assessment Exemption_1_Description Exemption_1_Description Exemption_1_Amt Exemption_1_Amt Exemption_2_Description Exemption_2_Description Exemption_2_Amt Exemption_2_Amt Exemption_3_Description Exemption_3_Description Exemption_3_Amt Exemption_3_Amt Exemption_4_Description Exemption_4_Description Exemption_4_Amt Exemption_4_Amt Exemption_5_Description Exemption_5_Description Exemption_5_Amt Exemption_5_Amt Exemption_6_Description Exemption_6_Description Exemption_6_Amt Exemption_6_Amt Exemption_7_Description Exemption_7_Description Exemption_7_Amt Exemption_7_Amt ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-efd4a0b786077c5b-0",
+    "title": "Assessment Final Roll (2020)",
+    "topic": "City & neighborhoods",
+    "family": "assessment final roll 2020 ",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2020 (source title; completeness unverified)",
+    "years": [
+      "2020"
+    ],
+    "description": "County: Onondaga City: Syracuse Statewide Information System Code (SWIS): 311500 Valuation Date: JAN 01, 2020 Taxable Status Date: JAN 01, 2020 Uniform Percent of Value: 075.00% Data Dictionary: Label Definition Definition Source SBL Sectio",
+    "fields": "SBL SBL Property_Address Property_Address Property_City Property_City Dimensions Dimensions Property_Class Property_Class Prop_Class_Description Prop_Class_Description Primary_Owner Primary_Owner Secondary_Owner Secondary_Owner Owner_Address Owner_Address PO_Box PO_Box School_Taxable School_Taxable Municipality_Taxable Municipality_Taxable County_Taxable County_Taxable Total_Assessment Total_Assessment Exemption_1_Description Exemption_1_Description Exemption_1_Amt Exemption_1_Amt Exemption_2_Description Exemption_2_Description Exemption_2_Amt Exemption_2_Amt Exemption_3_Description Exemption_3_Description Exemption_3_Amt Exemption_3_Amt Exemption_4_Description Exemption_4_Description Exemption_4_Amt Exemption_4_Amt Exemption_5_Description Exemption_5_Description Exemption_5_Amt Exemption_5_Amt Exemption_6_Description Exemption_6_Description Exemption_6_Amt Exemption_6_Amt Exemption_7_Description Exemption_7_Description Exemption_7_Amt Exemption_7_Amt ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-ad1a3b0a24f0144b-0",
+    "title": "Assessment Final Roll (2021)",
+    "topic": "City & neighborhoods",
+    "family": "assessment final roll 2021 ",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2021 (source title; completeness unverified)",
+    "years": [
+      "2021"
+    ],
+    "description": "County: Onondaga City: Syracuse Statewide Information System Code (SWIS): 311500 Valuation Date: JAN 01, 2021 Taxable Status Date: JAN 01, 2021 Uniform Percent of Value: 074.50% Data Dictionary: Label Definition Definition Source SBL Sectio",
+    "fields": "SBL SBL Property_Address Property_Address Property_City Property_City Dimensions Dimensions Property_Class Property_Class Prop_Class_Description Prop_Class_Description Primary_Owner Primary_Owner Secondary_Owner Secondary_Owner Owner_Address Owner_Address PO_Box PO_Box School_Taxable School_Taxable Municipality_Taxable Municipality_Taxable County_Taxable County_Taxable Total_Assessment Total_Assessment Exemption_1_Description Exemption_1_Description Exemption_1_Amt Exemption_1_Amt Exemption_2_Description Exemption_2_Description Exemption_2_Amt Exemption_2_Amt Exemption_3_Description Exemption_3_Description Exemption_3_Amt Exemption_3_Amt Exemption_4_Description Exemption_4_Description Exemption_4_Amt Exemption_4_Amt Exemption_5_Description Exemption_5_Description Exemption_5_Amt Exemption_5_Amt Exemption_6_Description Exemption_6_Description Exemption_6_Amt Exemption_6_Amt Exemption_7_Description Exemption_7_Description Exemption_7_Amt Exemption_7_Amt ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-cc4ae32b82971515-0",
+    "title": "Assessment Final Roll (2022)",
+    "topic": "City & neighborhoods",
+    "family": "assessment final roll 2022 ",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2022 (source title; completeness unverified)",
+    "years": [
+      "2022"
+    ],
+    "description": "County: Onondaga City: Syracuse Statewide Information System Code (SWIS): 311500 Valuation Date: JAN 01, 2022 Taxable Status Date: JAN 01, 2022 Uniform Percent of Value: 069.00% Data Dictionary: Label Definition Definition Source SBL Sectio",
+    "fields": "SBL SBL Property_Address Property_Address Property_City Property_City Dimensions Dimensions Property_Class Property_Class Prop_Class_Description Prop_Class_Description Primary_Owner Primary_Owner Secondary_Owner Secondary_Owner Owner_Address Owner_Address PO_Box PO_Box School_Taxable School_Taxable Municipality_Taxable Municipality_Taxable County_Taxable County_Taxable Total_Assessment Total_Assessment Exemption_1_Description Exemption_1_Description Exemption_1_Amt Exemption_1_Amt Exemption_2_Description Exemption_2_Description Exemption_2_Amt Exemption_2_Amt Exemption_3_Description Exemption_3_Description Exemption_3_Amt Exemption_3_Amt Exemption_4_Description Exemption_4_Description Exemption_4_Amt Exemption_4_Amt Exemption_5_Description Exemption_5_Description Exemption_5_Amt Exemption_5_Amt Exemption_6_Description Exemption_6_Description Exemption_6_Amt Exemption_6_Amt ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-999a12b32425023e-0",
+    "title": "Assessment Final Roll (2024)",
+    "topic": "City & neighborhoods",
+    "family": "assessment final roll 2024 ",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2024 (source title; completeness unverified)",
+    "years": [
+      "2024"
+    ],
+    "description": "County: Onondaga City : Syracuse Statewide Information System Code (SWIS): 311500 Valuation Date : JAN 01, 2024 Taxable Status Date: JAN 01, 2024 Uniform Percent of Value: 062.50% Data Dictionary: Label Definition Definition Source SBL Sect",
+    "fields": "SBL SBL Property_Address Property_Address Property_City Property_City Dimensions Dimensions Property_Class Property_Class Prop_Class_Description Prop_Class_Description Primary_Owner Primary_Owner Secondary_Owner Secondary_Owner Owner_Address Owner_Address PO_Box PO_Box School_Taxable School_Taxable Municipality_Taxable Municipality_Taxable County_Taxable County_Taxable Total_Assessment Total_Assessment Exemption_1_Description Exemption_1_Description Exemption_1_Amt Exemption_1_Amt Exemption_2_Description Exemption_2_Description Exemption_2_Amt Exemption_2_Amt Exemption_3_Description Exemption_3_Description Exemption_3_Amt Exemption_3_Amt Exemption_4_Description Exemption_4_Description Exemption_4_Amt Exemption_4_Amt Exemption_5_Description Exemption_5_Description Exemption_5_Amt Exemption_5_Amt Exemption_6_Description Exemption_6_Description Exemption_6_Amt Exemption_6_Amt ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-416b7445bd823c5b-0",
+    "title": "Assessment Final Roll (2025)",
+    "topic": "City & neighborhoods",
+    "family": "assessment final roll 2025 ",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2025 (source title; completeness unverified)",
+    "years": [
+      "2025"
+    ],
+    "description": "County: Onondaga City : Syracuse Statewide Information System Code (SWIS): 311500 Valuation Date : JAN 01, 2025 Taxable Status Date: JAN 01, 2025 Uniform Percent of Value: 057.50% Data Dictionary: Label Definition Definition Source SBL Sect",
+    "fields": "SBL SBL Property_Address Property_Address Property_City Property_City Dimensions Dimensions Property_Class Property_Class Prop_Class_Description Prop_Class_Description Primary_Owner Primary_Owner Secondary_Owner Secondary_Owner Owner_Address Owner_Address PO_Box PO_Box School_Taxable School_Taxable Municipality_Taxable Municipality_Taxable County_Taxable County_Taxable Total_Assessment Total_Assessment Exemption_1_Description Exemption_1_Description Exemption_1_Amt Exemption_1_Amt Exemption_2_Description Exemption_2_Description Exemption_2_Amt Exemption_2_Amt Exemption_3_Description Exemption_3_Description Exemption_3_Amt Exemption_3_Amt Exemption_4_Description Exemption_4_Description Exemption_4_Amt Exemption_4_Amt Exemption_5_Description Exemption_5_Description Exemption_5_Amt Exemption_5_Amt Exemption_6_Description Exemption_6_Description Exemption_6_Amt Exemption_6_Amt ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-cb179cc3c133b181-0",
+    "title": "Assessment Final Roll (2026)",
+    "topic": "City & neighborhoods",
+    "family": "assessment final roll 2026 ",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2026 (source title; completeness unverified)",
+    "years": [
+      "2026"
+    ],
+    "description": "County: Onondaga City: Syracuse Statewide Information System Code (SWIS): 311500 Valuation Date: JAN 01, 2026 Taxable Status Date: JAN 01, 2026 Uniform Percent of Value: 052.00 Data Dictionary: Label Definition Definition Source SBL Section",
+    "fields": "SBL SBL Property_Address Property_Address Property_City Property_City Dimensions Dimensions Property_Class Property_Class Prop_Class_Description Prop_Class_Description Primary_Owner Primary_Owner Secondary_Owner Secondary_Owner Owner_Address Owner_Address PO_Box PO_Box School_Taxable School_Taxable Municipality_Taxable Municipality_Taxable County_Taxable County_Taxable Total_Assessment Total_Assessment Exemption_1_Description Exemption_1_Description Exemption_1_Amt Exemption_1_Amt Exemption_2_Description Exemption_2_Description Exemption_2_Amt Exemption_2_Amt Exemption_3_Description Exemption_3_Description Exemption_3_Amt Exemption_3_Amt Exemption_4_Description Exemption_4_Description Exemption_4_Amt Exemption_4_Amt Exemption_5_Description Exemption_5_Description Exemption_5_Amt Exemption_5_Amt Exemption_6_Description Exemption_6_Description Exemption_6_Amt Exemption_6_Amt ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-16bf4263e5e10ed9-0",
+    "title": "Assessment Tentative Roll (2023)",
+    "topic": "City & neighborhoods",
+    "family": "assessment tentative roll (2023)",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2023 (source title; completeness unverified)",
+    "years": [
+      "2023"
+    ],
+    "description": "County: Onondaga City: Syracuse Statewide Information System Code (SWIS): 311500 Valuation Date: JAN 01, 2023 Taxable Status Date: JAN 01, 2023 Uniform Percent of Value: 064.50% Data Dictionary: Label Definition Definition Source SBL Sectio",
+    "fields": "SBL SBL Property_Address Property_Address Property_City Property_City Dimensions Dimensions Property_Class Property_Class Prop_Class_Description Prop_Class_Description Primary_Owner Primary_Owner Secondary_Owner Secondary_Owner Owner_Address Owner_Address PO_Box PO_Box School_Taxable School_Taxable Municipality_Taxable Municipality_Taxable County_Taxable County_Taxable Total_Assessment Total_Assessment Exemption_1_Description Exemption_1_Description Exemption_1_Amt Exemption_1_Amt Exemption_2_Description Exemption_2_Description Exemption_2_Amt Exemption_2_Amt Exemption_3_Description Exemption_3_Description Exemption_3_Amt Exemption_3_Amt Exemption_4_Description Exemption_4_Description Exemption_4_Amt Exemption_4_Amt Exemption_5_Description Exemption_5_Description Exemption_5_Amt Exemption_5_Amt Exemption_6_Description Exemption_6_Description Exemption_6_Amt Exemption_6_Amt ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-c6bcaacc990b9c8a-0",
+    "title": "Assessment Tentative Roll (2024)",
+    "topic": "City & neighborhoods",
+    "family": "assessment tentative roll 2024 ",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2024 (source title; completeness unverified)",
+    "years": [
+      "2024"
+    ],
+    "description": "County: Onondaga City : Syracuse Statewide Information System Code (SWIS): 311500 Valuation Date : JAN 01, 2024 Taxable Status Date: JAN 01, 2024 Uniform Percent of Value: 062.50% Data Dictionary: Label Definition Definition Source SBL Sect",
+    "fields": "SBL SBL Property_Address Property_Address Property_City Property_City Dimensions Dimensions Property_Class Property_Class Prop_Class_Description Prop_Class_Description Primary_Owner Primary_Owner Secondary_Owner Secondary_Owner Owner_Address Owner_Address PO_Box PO_Box School_Taxable School_Taxable Municipality_Taxable Municipality_Taxable County_Taxable County_Taxable Total_Assessment Total_Assessment Exemption_1_Description Exemption_1_Description Exemption_1_Amt Exemption_1_Amt Exemption_2_Description Exemption_2_Description Exemption_2_Amt Exemption_2_Amt Exemption_3_Description Exemption_3_Description Exemption_3_Amt Exemption_3_Amt Exemption_4_Description Exemption_4_Description Exemption_4_Amt Exemption_4_Amt Exemption_5_Description Exemption_5_Description Exemption_5_Amt Exemption_5_Amt Exemption_6_Description Exemption_6_Description Exemption_6_Amt Exemption_6_Amt ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-a9f13fee42110143-0",
+    "title": "Assessment Tentative Roll (2025)",
+    "topic": "City & neighborhoods",
+    "family": "assessment tentative roll 2025 ",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2025 (source title; completeness unverified)",
+    "years": [
+      "2025"
+    ],
+    "description": "County: Onondaga City : Syracuse Statewide Information System Code (SWIS): 311500 Valuation Date : JAN 01, 2025 Taxable Status Date: JAN 01, 2025 Uniform Percent of Value: 057.50% Data Dictionary: Label Definition Definition Source SBL Sect",
+    "fields": "SBL SBL Property_Address Property_Address Property_City Property_City Dimensions Dimensions Property_Class Property_Class Prop_Class_Description Prop_Class_Description Primary_Owner Primary_Owner Secondary_Owner Secondary_Owner Owner_Address Owner_Address PO_Box PO_Box School_Taxable School_Taxable Municipality_Taxable Municipality_Taxable County_Taxable County_Taxable Total_Assessment Total_Assessment Exemption_1_Description Exemption_1_Description Exemption_1_Amt Exemption_1_Amt Exemption_2_Description Exemption_2_Description Exemption_2_Amt Exemption_2_Amt Exemption_3_Description Exemption_3_Description Exemption_3_Amt Exemption_3_Amt Exemption_4_Description Exemption_4_Description Exemption_4_Amt Exemption_4_Amt Exemption_5_Description Exemption_5_Description Exemption_5_Amt Exemption_5_Amt Exemption_6_Description Exemption_6_Description Exemption_6_Amt Exemption_6_Amt ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-9e61600745062b1a-0",
+    "title": "Assessment Tentative Roll (2026)",
+    "topic": "City & neighborhoods",
+    "family": "assessment tentative roll 2026 ",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2026 (source title; completeness unverified)",
+    "years": [
+      "2026"
+    ],
+    "description": "County: Onondaga City : Syracuse Statewide Information System Code (SWIS): 311500 Valuation Date : JAN 01, 2026 Taxable Status Date: JAN 01, 2026 Uniform Percent of Value: 052.00% Data Dictionary: Label Definition Definition Source SBL Sect",
+    "fields": "SBL SBL Property_Address Property_Address Property_City Property_City Dimensions Dimensions Property_Class Property_Class Prop_Class_Description Prop_Class_Description Primary_Owner Primary_Owner Secondary_Owner Secondary_Owner Owner_Address Owner_Address PO_Box PO_Box School_Taxable School_Taxable Municipality_Taxable Municipality_Taxable County_Taxable County_Taxable Total_Assessment Total_Assessment Exemption_1_Description Exemption_1_Description Exemption_1_Amt Exemption_1_Amt Exemption_2_Description Exemption_2_Description Exemption_2_Amt Exemption_2_Amt Exemption_3_Description Exemption_3_Description Exemption_3_Amt Exemption_3_Amt Exemption_4_Description Exemption_4_Description Exemption_4_Amt Exemption_4_Amt Exemption_5_Description Exemption_5_Description Exemption_5_Amt Exemption_5_Amt Exemption_6_Description Exemption_6_Description Exemption_6_Amt Exemption_6_Amt ObjectId ObjectId"
+  },
+  {
     "id": "arcgis-f28a8bc65a071aa1-0",
     "title": "BCP EligibleAreas",
     "topic": "City & neighborhoods",
@@ -1085,6 +1517,38 @@
     "years": [],
     "description": "Public ArcGIS layer. The source provides no description; scope needs review.",
     "fields": "OBJECTID OBJECTID Area2023_1 Area2023_1 Shape_Leng Shape_Leng Type2023_1 Type2023_1 Shape_Le_1 Shape_Le_1 Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-0483cafe8b4acc24-0",
+    "title": "Greater Syracuse Bike Suitability Ratings (2020)",
+    "topic": "City & neighborhoods",
+    "family": "bikesuitability v2",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2020 (source title; completeness unverified)",
+    "years": [
+      "2020"
+    ],
+    "description": "Bike Suitability Ratings were collected by SMTC staff in 2019. You can access the app built by SMTC at Bike Suitability Map of Greater Syracuse (2020) . Disclaimer: The data is for planning purposes only, and the SMTC does not guarantee the",
+    "fields": "OBJECTID OBJECTID NAME NAME Bike_Suitability_19 Bike Suitability Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-057c4657498b5b4a-0",
+    "title": "Building Energy Benchmarking Report 2017",
+    "topic": "City & neighborhoods",
+    "family": "building energy benchmarking report 2017",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2017 (source title; completeness unverified)",
+    "years": [
+      "2017"
+    ],
+    "description": "This dataset is for informational purposes only. The City does not guarantee the accuracy of this data. Data Dictionary: Label Definition Property Name Name of the property Parent_Property_Name Parent property name Year Ending Year Ending S",
+    "fields": "Property_Name Property Name Parent_Property_Name Parent Property Name Year_Ending Year Ending Site_EUI__kBtu_ft__ Site EUI (kBtu/ft²) Address_1 Address 1 City City State_Province State/Province Postal_Code Postal Code Property_GFA___Self_Reported__ft__ Property GFA - Self-Reported (ft²) Largest_Property_Use_Type Largest Property Use Type Electricity_Use___Grid_Purchase__kWh_ Electricity Use - Grid Purchase (kWh) Natural_Gas_Use__therms_ Natural Gas Use (therms) ENERGY_STAR_Score ENERGY STAR Score Weather_Normalized_Source_Energy_Use__kBtu_ Weather Normalized Source Energy Use (kBtu) Total_GHG_Emissions__Metric_Tons_CO2e_ Total GHG Emissions (Metric Tons CO2e) Benchmarking_Compliance_Status Benchmarking Compliance Status Exemption_Reason Exemption Reason FID FID"
   },
   {
     "id": "arcgis-d0366455d201cb81-0",
@@ -1149,6 +1613,22 @@
     ],
     "description": "main.\"CCS_Services_zip_summary_2026-08_2026-10-27\"",
     "fields": "fid fid ZIP_Name ZIP_Name AREA AREA PERIMETER PERIMETER ZIP_ ZIP_ ZIP_ID ZIP_ID ZIP ZIP NAME NAME ac_team_dispatched ac_team_dispatched caller_abruptly_disconnected_outcome_undecided_unable_to_locate caller_abruptly_disconnected_outcome_undecided_unable_to_locate dispatched_250_unit dispatched_250_unit dispatched_ems dispatched_ems dispatched_law_enforcement dispatched_law_enforcement dispatched_scipp dispatched_scipp mco_consultation mco_consultation mco_dispatched mco_dispatched mco_dispatched_helio mco_dispatched_helio mco_dispatched_liberty_resources mco_dispatched_liberty_resources mco_dispatched_st_josephs mco_dispatched_st_josephs outbound_attempt outbound_attempt telephonic_de_escalation telephonic_de_escalation undefined undefined total total summ_dispatched_mco summ_dispatched_mco Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-40fdc24c44d60e20-0",
+    "title": "Syracuse Census Tracts (2020)",
+    "topic": "City & neighborhoods",
+    "family": "census tracts in syracuse ny - 2020",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2020 (source title; completeness unverified)",
+    "years": [
+      "2020"
+    ],
+    "description": "Description: The TIGER/Line shapefiles and related database files (.dbf) are an extract of selected geographic and cartographic information from the U.S. Census Bureau's Master Address File / Topologically Integrated Geographic Encoding and",
+    "fields": "FID FID STATEFP20 STATEFP20 COUNTYFP20 COUNTYFP20 TRACTCE20 TRACTCE20 GEOID20 GEOID20 NAME20 NAME20 NAMELSAD20 NAMELSAD20 MTFCC20 MTFCC20 FUNCSTAT20 FUNCSTAT20 ALAND20 ALAND20 AWATER20 AWATER20 INTPTLAT20 INTPTLAT20 INTPTLON20 INTPTLON20 Shape__Area Shape__Area Shape__Length Shape__Length"
   },
   {
     "id": "arcgis-78f36aefac1a3ab0-0",
@@ -1417,6 +1897,20 @@
     "fields": "FID FID Id Id Name Name Shape__Area Shape__Area Shape__Length Shape__Length"
   },
   {
+    "id": "arcgis-fbe6c8479092cc15-0",
+    "title": "City of Syracuse Wards",
+    "topic": "City & neighborhoods",
+    "family": "city of syracuse wards",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "See publisher description; record-level date range not verified",
+    "years": [],
+    "description": "The Onondaga County Election District geographic dataset was last updated by the Syracuse-Onondaga County Planning Agency (SOCPA) in February, 2013. The shapefile consists of polygon features representing election districts in Onondaga Coun",
+    "fields": "FID FID CITY_WARD CITY_WARD Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
     "id": "arcgis-6e0940d8e60e8acc-0",
     "title": "City Outline",
     "topic": "City & neighborhoods",
@@ -1459,6 +1953,23 @@
     ],
     "description": "2025 Syracuse Parcel base file (Z:\\Data\\Syracuse\\Parcels2024\\QPD_2025-01-02_L1-ODP.shp) filtered where LU_Parcel is equal to \"Municipl park\" or \"County park\". Park labels were manually assigned. L1 of the QPD is okay to share publicly.",
     "fields": "FID FID SBL SBL FullAddres FullAddres Zip Zip LU_parcel LU_parcel PRK_NAME PRK_NAME Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-05375dca48aaa864-0",
+    "title": "Cityline Calls for Service (2017 - 2019)",
+    "topic": "City & neighborhoods",
+    "family": "cityline calls for service",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2017, 2019 (source title; completeness unverified)",
+    "years": [
+      "2017",
+      "2019"
+    ],
+    "description": "This is a list of all the calls for service to Cityline. This dataset was last updated on 10/28/2019. For a more up to date Cityline dataset, go to this link: SYRCityline Requests (2021-Present) Data Dictionary: Label Definition Identifier ",
+    "fields": "complaint_number complaint_number open_date open_date close_date close_date complaint_type_name complaint_type_name status_type_name status_type_name department_name department_name received_via_type_name received_via_type_name identifier identifier number number address address zip zip location location nearest_address nearest_address nearest_address1 nearest_address1 cross_street_1 cross_street_1 cross_street_2 cross_street_2 user_defined_action_type_name user_defined_action_type_name ObjectId ObjectId"
   },
   {
     "id": "arcgis-980c4db71bde536d-0",
@@ -1557,6 +2068,22 @@
     "years": [],
     "description": "This layer represents a modified version of Z:\\Data\\Syracuse\\Boundaries\\DOCE_Catchments\\Catchments_2022-05-13.shp. The following additions were made based on edits sent from Ryan Shiel to Rose Tardiff via email on September 13, 2022:Matt Ja",
     "fields": "OBJECTID OBJECTID Area Area_Comm Insp_Comm Insp_Comm Insp_Electric Insp_Electric Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-c9e1ae08b10ef2e3-0",
+    "title": "3rd Grade ELA Proficiency Levels by Census Block (SCSD 2021)",
+    "topic": "City & neighborhoods",
+    "family": "copy of scsd grade3 ela proficiency 2021(v2) (1)",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2021 (source title; completeness unverified)",
+    "years": [
+      "2021"
+    ],
+    "description": "Data Dictionary: Label Definition Definition Source Census_Tract The Census Tract that this data is regarding Syracuse City School District (SCSD) Poverty_NotProficient The percentage of total students (poverty and non-poverty) who are both",
+    "fields": "CensusTract CensusTract Poverty_NotProficient Poverty_NotProficient Poverty_Proficient Poverty_Proficient PovertyPercentage PovertyPercentage NonPoverty_NotProficient NonPoverty_NotProficient NonPoverty_Proficient NonPoverty_Proficient NonPovertyPercentage NonPovertyPercentage StudentCount StudentCount FID FID"
   },
   {
     "id": "arcgis-e867ca6438414c48-2",
@@ -1915,6 +2442,20 @@
     "fields": "FID FID DateModifi DateModifi NYSStreetI NYSStreetI LeftFromAd LeftFromAd LeftToAddr LeftToAddr RightFromA RightFromA RightToAdd RightToAdd CompleteSt CompleteSt PreModifie PreModifie PreDirecti PreDirecti PreType PreType SeparatorE SeparatorE StreetName StreetName PostType PostType PostDirect PostDirect PostModifi PostModifi SHIELD SHIELD HighwayNum HighwayNum Navigation Navigation JURISDICTI JURISDICTI FCC FCC ACC ACC SPEED SPEED OneWay OneWay FromZlev FromZlev ToZlev ToZlev FromToDire FromToDire ToFromDire ToFromDire FromToCost FromToCost ToFromCost ToFromCost LeftStateN LeftStateN RightState RightState LeftCounty LeftCounty RightCount RightCount LeftPostal LeftPostal RightPosta RightPosta LeftZipNam LeftZipNam RightZipNa RightZipNa LeftCityTo LeftCityTo RightCityT RightCityT LeftPlaceN LeftPlaceN RightPlace RightPlace LeftGNIS LeftGNIS RightGNIS RightGNIS LeftCensus LeftCensus RightCensu RightCensu GeometryAc GeometryAc GeometrySo GeometrySo NameSource NameSource AddressSou AddressSou Status Status CLDXF_PreD CLDXF_PreD CLDXF_Post CLDXF_Post CLDXF_Po_1 CLDXF_Po_1 Label Label CR_USERNAM CR_USERNAM CR_DATETIM CR_DATETIM AT_USERNAM AT_USERNAM AT_DATETIM AT_DATETIM SP_USERNAM SP_USERNAM SP_DATETIM SP_DATETIM USERNAME USERNAME LeftCountr LeftCountr RightCou_1 RightCou_1 LeftParity LeftParity RightParit RightParit LeftESN LeftESN RightESN RightESN Shape_Leng Shape_Leng Shape_STLe Shape_STLe Shape__Length Shape__Length"
   },
   {
+    "id": "arcgis-2121db62b901d7cb-0",
+    "title": "Emergency Snow Routes",
+    "topic": "City & neighborhoods",
+    "family": "emergencysnowroutes",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "See publisher description; record-level date range not verified",
+    "years": [],
+    "description": "This dataset is only for reference and planning purpose, the City of Syracuse cannot guarentee the accuracy of this information. Dataset Contact Information: Organization: City of Syracuse Position: Data Program Manager Email: opendata@syr.",
+    "fields": "OBJECTID OBJECTID DateModifi DateModifi NYSStreetI NYSStreetI LeftFromAd LeftFromAd LeftToAddr LeftToAddr RightFromA RightFromA RightToAdd RightToAdd CompleteSt CompleteSt PreModifie PreModifie PreDirecti PreDirecti PreType PreType SeparatorE SeparatorE StreetName StreetName PostType PostType PostDirect PostDirect PostModifi PostModifi SHIELD SHIELD HighwayNum HighwayNum Navigation Navigation JURISDICTI JURISDICTI FCC FCC ACC ACC SPEED SPEED OneWay OneWay FromZlev FromZlev ToZlev ToZlev FromToDire FromToDire ToFromDire ToFromDire FromToCost FromToCost ToFromCost ToFromCost LeftStateN LeftStateN RightState RightState LeftCounty LeftCounty RightCount RightCount LeftPostal LeftPostal RightPosta RightPosta LeftZipNam LeftZipNam RightZipNa RightZipNa LeftCityTo LeftCityTo RightCityT RightCityT LeftPlaceN LeftPlaceN RightPlace RightPlace LeftGNIS LeftGNIS RightGNIS RightGNIS LeftCensus LeftCensus RightCensu RightCensu GeometryAc GeometryAc GeometrySo GeometrySo NameSource NameSource AddressSou AddressSou Status Status CLDXF_PreD CLDXF_PreD CLDXF_Post CLDXF_Post CLDXF_Po_1 CLDXF_Po_1 Label Label CR_USERNAM CR_USERNAM CR_DATETIM CR_DATETIM AT_USERNAM AT_USERNAM AT_DATETIM AT_DATETIM SP_USERNAM SP_USERNAM SP_DATETIM SP_DATETIM USERNAME USERNAME LeftCountr LeftCountr RightCou_1 RightCou_1 LeftParity LeftParity RightParit RightParit LeftESN LeftESN RightESN RightESN Shape_Leng Shape_Leng Shape_STLe Shape_STLe Shape__Length Shape__Length"
+  },
+  {
     "id": "arcgis-b51fee7619e6b9d3-0",
     "title": "EventSnowRoutes dashboard 0eaac62ac5fc4865b58d5ce127f5841f",
     "topic": "City & neighborhoods",
@@ -1985,6 +2526,38 @@
     "fields": "OBJECTID OBJECTID Shoveled_10_01_2023 Shoveled_10_01_2023 AssetType Type of amenity Notes Notes GlobalID GlobalID"
   },
   {
+    "id": "arcgis-7d94b6b0bb3a8ac7-0",
+    "title": "Syracuse Common Council Boundaries (Current - Effect. 2023)",
+    "topic": "City & neighborhoods",
+    "family": "final proposed plan syracuse district boundaries",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2023 (source title; completeness unverified)",
+    "years": [
+      "2023"
+    ],
+    "description": "The Syracuse Common Council Boundaries dataset was created by the Syracuse City Redistricting Commission in 2022. This shapefile consists of polygon features representing Syracuse Common Council districts. This went into effect after being ",
+    "fields": "FID FID OBJECTID OBJECTID DIST_ID DIST_ID SHAPE_Leng SHAPE_Leng SHAPE_Area SHAPE_Area TOTAL_ADJ TOTAL_ADJ DX_DEV DX_DEV TOTAL_ADJ_ TOTAL_ADJ_ VAP VAP HISP_VAP_A HISP_VAP_A NH_DOJ_W_1 NH_DOJ_W_1 NH_DOJ_B_1 NH_DOJ_B_1 NH_DOJ_A_1 NH_DOJ_A_1 NH_DOJ_A_2 NH_DOJ_A_2 NH_DOJ_H_1 NH_DOJ_H_1 NH_DOJ_O_2 NH_DOJ_O_2 NH_DOJ_O_3 NH_DOJ_O_3 Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-9f1da93ed4b36a8a-0",
+    "title": "Assessment Final Roll (2023)",
+    "topic": "City & neighborhoods",
+    "family": "final roll 2023",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2023 (source title; completeness unverified)",
+    "years": [
+      "2023"
+    ],
+    "description": "County: Onondaga City : Syracuse Statewide Information System Code (SWIS): 311500 Valuation Date : JAN 01, 2023 Taxable Status Date: JAN 01, 2023 Uniform Percent of Value: 064.50% Data Dictionary: Label Definition Definition Source SBL Sect",
+    "fields": "SBL SBL Property_Address Property_Address Property_City Property_City Dimensions Dimensions Property_Class Property_Class Prop_Class_Description Prop_Class_Description Primary_Owner Primary_Owner Secondary_Owner Secondary_Owner Owner_Address Owner_Address PO_Box PO_Box School_Taxable School_Taxable Municipality_Taxable Municipality_Taxable County_Taxable County_Taxable Total_Assessment Total_Assessment Exemption_1_Description Exemption_1_Description Exemption_1_Amt Exemption_1_Amt Exemption_2_Description Exemption_2_Description Exemption_2_Amt Exemption_2_Amt Exemption_3_Description Exemption_3_Description Exemption_3_Amt Exemption_3_Amt Exemption_4_Description Exemption_4_Description Exemption_4_Amt Exemption_4_Amt Exemption_5_Description Exemption_5_Description Exemption_5_Amt Exemption_5_Amt Exemption_6_Description Exemption_6_Description Exemption_6_Amt Exemption_6_Amt ObjectId ObjectId"
+  },
+  {
     "id": "arcgis-86fa7febfaf4e6ca-0",
     "title": "finalized pilot sanitation rts Feb2023",
     "topic": "City & neighborhoods",
@@ -2053,6 +2626,38 @@
     "years": [],
     "description": "Public ArcGIS layer. The source provides no description; scope needs review.",
     "fields": "OBJECTID OBJECTID OBJECTID_1 OBJECTID_1 TAX_ID TAX_ID Shape_Leng Shape_Leng REZONE_1 REZONE_1 REZONE_2 REZONE_2 REZONE_3 REZONE_3 RZ_12_CH RZ_12_CH RZ_23_CH RZ_23_CH Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-9e2a41fd2e914bd2-0",
+    "title": "Actual Expenses (Fiscal Year 2017)",
+    "topic": "City & neighborhoods",
+    "family": "fy17 actual expenses",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2017 (source title; completeness unverified)",
+    "years": [
+      "2017"
+    ],
+    "description": "Data Dictionary: Label Definition Definition Source Fund.Name The type of fund where the expenses are tracked. Office of Management and Budget Dept.Name The department associated with the expense. Office of Management and Budget Account.Nam",
+    "fields": "Period Period Total_Amount Total.Amount Account_Name Account.Name Dept_Name Dept.Name Fund_Name Fund.Name DepartmentGroup DepartmentGroup FID FID"
+  },
+  {
+    "id": "arcgis-627e73ac67500736-0",
+    "title": "Spending (Fiscal Year 2017)",
+    "topic": "City & neighborhoods",
+    "family": "fy17 spending",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2017 (source title; completeness unverified)",
+    "years": [
+      "2017"
+    ],
+    "description": "Data Dictionary: Label Definition Definition Source Fund.Name The type of fund where the expenses are tracked. Office of Management and Budget Dept.Name The department associated with the expense. Office of Management and Budget Account.Nam",
+    "fields": "Account_Description Account.Description Amount Amount Account_Name Account.Name Dept_Name Dept.Name Fund_Name Fund.Name DepartmentGroup DepartmentGroup FID FID"
   },
   {
     "id": "arcgis-f41d0f884eacc685-0",
@@ -2212,6 +2817,118 @@
     ],
     "description": "A vector line file of public/private streets compiled from orthoimagery and other sources that is attributed with street names, addresses, route numbers, routing attributes, and includes a related table of alternate/alias street names. If t",
     "fields": "OBJECTID OBJECTID Join_Count Join_Count TARGET_FID TARGET_FID DateModifi DateModifi NYSStreetI NYSStreetI LeftFromPr LeftFromPr RightFromP RightFromP LeftToPref LeftToPref RightToPre RightToPre LeftFromAd LeftFromAd LeftToAddr LeftToAddr RightFromA RightFromA RightToAdd RightToAdd CompleteSt CompleteSt PreModifie PreModifie PreDirecti PreDirecti PreType PreType SeparatorE SeparatorE StreetName StreetName PostType PostType PostDirect PostDirect PostModifi PostModifi SHIELD SHIELD HighwayNum HighwayNum Navigation Navigation JURISDICTI JURISDICTI FCC FCC ACC ACC SPEED SPEED OneWay OneWay FromZlev FromZlev ToZlev ToZlev FromToDire FromToDire ToFromDire ToFromDire FromToCost FromToCost ToFromCost ToFromCost LeftStateN LeftStateN RightState RightState LeftCounty LeftCounty RightCount RightCount LeftPostal LeftPostal RightPosta RightPosta LeftZipNam LeftZipNam RightZipNa RightZipNa LeftCityTo LeftCityTo RightCityT RightCityT LeftPlaceN LeftPlaceN RightPlace RightPlace LeftFIPS LeftFIPS RightFIPS RightFIPS GeometryAc GeometryAc GeometrySo GeometrySo NameSource NameSource AddressSou AddressSou Status Status CLDXF_PreD CLDXF_PreD CLDXF_Post CLDXF_Post CLDXF_Po_1 CLDXF_Po_1 Label Label LeftCountr LeftCountr RightCou_1 RightCou_1 LeftParity LeftParity RightParit RightParit LeftESN LeftESN RightESN RightESN LeftIncorp LeftIncorp RightIncor RightIncor LeftUninco LeftUninco RightUninc RightUninc LeftNeighb LeftNeighb RightNeigh RightNeigh LeftMSAGCo LeftMSAGCo RightMSAGC RightMSAGC Discrepanc Discrepanc Maintenanc Maintenanc LeftMunici LeftMunici RightMunic RightMunic CR_USERNAM CR_USERNAM CR_DATETIM CR_DATETIM AT_USERNAM AT_USERNAM AT_DATETIM AT_DATETIM SP_USERNAM SP_USERNAM SP_DATETIM SP_DATETIM USERNAME USERNAME Shape_Leng Shape_Leng RECON Reconstruction RECON_DEP Department RECON_YEAR Recon Year RECON_TYPE Recon Type RECON_STATUS Recon Status LeftTract Left tract RightTract Right tract Join_ Join RECON_FROM Recon From RECON_TO Recon To RECON_SIDE Recon Side SQ_YD Square Yards SQ_YD_COST Cost per Square Yard CURB Curb CORNERS CORNERS TOTAL TOTAL RATING RATING PARK_ENF Parking Enforcement Street SRP SRP Street MILES Miles QUAD Quadrant SRP_YEAR Year Added to SRP SRP_PARTNER SRP Partner Route RECON_GRP Recon Group RECON_GRP_NUM Recon Group Number RECON_GRP_NAM Recon Group Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-9ca663a651f1277a-0",
+    "title": "Kindergarten Readiness by Census Block SCSD (2019)",
+    "topic": "City & neighborhoods",
+    "family": "kindergarten readiness 2019 odp",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2019 (source title; completeness unverified)",
+    "years": [
+      "2019"
+    ],
+    "description": "Data Dictionary: Label Definition Definition Source Census_Tract The Census Tract that this data is regarding Syracuse City School District (SCSD) Poverty_NotReady The percentage of total students (poverty and non-poverty) who are both 1) i",
+    "fields": "OBJECTID_1 FID Census_Tract Census Tract NonPoverty_NotReady NonPoverty_NotReady NonPoverty_Ready NonPoverty_Ready NonPovertyPercentage NonPovertyPercentage Poverty_NotReady Poverty_NotReady Poverty_Ready Poverty_Ready PovertyPercentage PovertyPercentage StudentCount StudentCount ObjectID ObjectID Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-66ddbc642ba152a2-0",
+    "title": "Kindergarten Readiness by Census Block (SCSD 2021)",
+    "topic": "City & neighborhoods",
+    "family": "kindergarten readiness by census block (scsd 2021)",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2021 (source title; completeness unverified)",
+    "years": [
+      "2021"
+    ],
+    "description": "Data Dictionary: Label Definition Definition Source Census_Tract The Census Tract that this data is regarding Syracuse City School District (SCSD) Poverty_NotReady The percentage of total students (poverty and non-poverty) who are both 1) i",
+    "fields": "CensusTract CensusTract Poverty_NotReady Poverty_NotReady Poverty_Ready Poverty_Ready PovertyPercentage PovertyPercentage NonPoverty_NotReady NonPoverty_NotReady NonPoverty_Ready NonPoverty_Ready NonPovertyPercentage NonPovertyPercentage StudentCount StudentCount FID FID"
+  },
+  {
+    "id": "arcgis-86d35ca39912d6dd-0",
+    "title": "Kindergarten Readiness by Census Block (SCSD 2025)",
+    "topic": "City & neighborhoods",
+    "family": "kindergarten readiness by census block 2025",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2025 (source title; completeness unverified)",
+    "years": [
+      "2025"
+    ],
+    "description": "Data Dictionary: Label Definition Definition Source Census_Tract The Census Tract that this data is regarding Syracuse City School District (SCSD) Poverty_NotReady The percentage of total students (poverty and non-poverty) who are both 1) i",
+    "fields": "FID FID Cnss_Tr Census_Tract NnPv_NR NonPoverty_NotReady NnPvr_R NonPoverty_Ready NnPvrtP NonPovertyPercentage Pvrt_NR Poverty_NotReady Pvrty_R Poverty_Ready PvrtyPr PovertyPercentage StdntCn StudentCount Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-d8d38107ad3c50fb-0",
+    "title": "Kindergarten Readiness by Census Block (SCSD 2018)",
+    "topic": "City & neighborhoods",
+    "family": "kindergarten readiness by census block scsd 2018",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2018 (source title; completeness unverified)",
+    "years": [
+      "2018"
+    ],
+    "description": "Data Dictionary: Label Definition Definition Source Census_Tract The Census Tract that this data is regarding Syracuse City School District (SCSD) Poverty_NotReady The percentage of total students (poverty and non-poverty) who are both 1) i",
+    "fields": "OBJECTID_1 OBJECTID_1 Census_Tract Census Tract Poverty_NotReady Poverty_NotReady Poverty_Ready Poverty_Ready PovertyPercentage PovertyPercentage NonPoverty_NotReady NonPoverty_NotReady NonPoverty_Ready NonPoverty_Ready NonPovertyPercentage NonPovertyPercentage StudentCount StudentCount ObjectID ObjectID Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-cbfce360d9ea8ccc-0",
+    "title": "Kindergarten Readiness by Census Block (SCSD 2022)",
+    "topic": "City & neighborhoods",
+    "family": "kindergarten readiness by census block scsd 2022",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2022 (source title; completeness unverified)",
+    "years": [
+      "2022"
+    ],
+    "description": "Data Dictionary: Label Definition Definition Source Census_Tract The Census Tract that this data is regarding Syracuse City School District (SCSD) Poverty_NotReady The percentage of total students (poverty and non-poverty) who are both 1) i",
+    "fields": "OBJECTID_1 OBJECTID_1 TRACTCE20 TRACTCE20 Census_Tract Census_Tract Poverty_NotReady Poverty_NotReady Poverty_Ready Poverty_Ready PovertyPercentage PovertyPercentage NonPoverty_NotReady NonPoverty_NotReady NonPoverty_Ready NonPoverty_Ready NonPovertyPercentage NonPovertyPercentage Grand_Total Grand_Total StudentCount StudentCount Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-31e03b2c2eaf6106-0",
+    "title": "Kindergarten Readiness by Census Block (SCSD 2023)",
+    "topic": "City & neighborhoods",
+    "family": "kindergarten readiness by census block scsd 2023",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2023 (source title; completeness unverified)",
+    "years": [
+      "2023"
+    ],
+    "description": "Data Dictionary: Label Definition Definition Source Census_Tract The Census Tract that this data is regarding Syracuse City School District (SCSD) Poverty_NotReady The percentage of total students (poverty and non-poverty) who are both 1) i",
+    "fields": "OBJECTID_1 OBJECTID_1 Census_Tract Census_Tract Poverty_NotReady Poverty_NotReady Poverty_Ready Poverty_Ready PovertyPercentage PovertyPercentage NonPoverty_NotReady NonPoverty_NotReady NonPoverty_Ready NonPoverty_Ready NonPovertyPercentage NonPovertyPercentage StudentCount StudentCount Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-d364f48fee445bf6-0",
+    "title": "Kindergarten Readiness by Census Tract (SCSD 2024)",
+    "topic": "City & neighborhoods",
+    "family": "kindergarten readiness by census tract 2024",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2024 (source title; completeness unverified)",
+    "years": [
+      "2024"
+    ],
+    "description": "Data Dictionary: Label Definition Definition Source Census_Tract The Census Tract that this data is regarding Syracuse City School District (SCSD) Poverty_NotReady The percentage of total students (poverty and non-poverty) who are both 1) i",
+    "fields": "FID FID Cnss_Tr Census_Tract NnPv_NR NonPoverty_NotReady NnPvr_R NonPoverty_Ready NnPvrtP NonPovertyPercentage Pvrt_NR Poverty_NotReady Pvrty_R Poverty_Ready PvrtyPr PovertyPercentage StdntCn Student_Count Shape__Area Shape__Area Shape__Length Shape__Length"
   },
   {
     "id": "arcgis-ce0b08b93be20c06-0",
@@ -2621,6 +3338,55 @@
     "years": [],
     "description": "Public ArcGIS layer. The source provides no description; scope needs review.",
     "fields": "FID FID Name Name Shape__Len Shape__Len Shape__L_1 Shape__L_1 Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-fbd814b0b6b21c7d-0",
+    "title": "Parking Violations (2007 - 2022)",
+    "topic": "City & neighborhoods",
+    "family": "parking violations 2007 2022",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2007, 2022 (source title; completeness unverified)",
+    "years": [
+      "2007",
+      "2022"
+    ],
+    "description": "This is a very large dataset, approximately 1.5 million records. It takes a long time to load. If there is a particular part of the city you are trying to look at, we recommend that you zoom into that section to allow that part of the map t",
+    "fields": "ObjectID ObjectID ticket_number ticket_number issued_date issued_date location location description description status status amount amount"
+  },
+  {
+    "id": "arcgis-01e70e4d01c76d15-0",
+    "title": "Parking Violations - 2023 - Present",
+    "topic": "City & neighborhoods",
+    "family": "parking violations 2023 present",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2023 (source title; completeness unverified)",
+    "years": [
+      "2023"
+    ],
+    "description": "Description: Dataset of Parking Violations in the City of Syracuse since 2023. If you are interested in viewing older parking violations, those can be viewed HERE . Important note: A lot of the addresses are not mapping right now. For the m",
+    "fields": "ticket_number ticket_number issued_date issued_date location location description description status status amount amount LONG LONG LAT LAT ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-b172354713fbed73-0",
+    "title": "Pavement Ratings (2020)",
+    "topic": "City & neighborhoods",
+    "family": "pavement ratings 2020",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2020 (source title; completeness unverified)",
+    "years": [
+      "2020"
+    ],
+    "description": "Description: The SMTC rates pavement using a scale developed by the New York State Department of Transportation. While traveling at posted speed limit, the rater will make an assessment from inside the vehicle of each pavement segment rangi",
+    "fields": "FID FID OBJECTID OBJECTID BPID BPID Road_Class Road_Classification FC Functional_Classification Miles Miles Rating_202 Rating_2020 Rating_Cat Rating_Category STREET_NAM STREET_NAME FROM_STREE FROM_STREET TO_STREET TO_STREET BLOCK BLOCK WARD WARD WIDTH WIDTH Feet Feet Shape__Len Shape__Len Shape__Length Shape__Length"
   },
   {
     "id": "arcgis-18981bf8b58d9e14-2",
@@ -5268,6 +6034,23 @@
     "fields": "FID FID OBJECTID_1 OBJECTID_1 Site Site Camera Camera Location Location DateInstal DateInstal"
   },
   {
+    "id": "arcgis-d3289d8a3c010a37-0",
+    "title": "SPD Personnel Complaints 2021 to 2024",
+    "topic": "City & neighborhoods",
+    "family": "spd personnel complaints 2021 to present",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2021, 2024 (source title; completeness unverified)",
+    "years": [
+      "2021",
+      "2024"
+    ],
+    "description": "DISCLAIMER: This dataset is not currently updating, it only shows data from 2021-2024. These complaints are are ported to either a police Captain or Sergeant, to the Syracuse Police Department at: https://www.syracusepolice.org/complaints.a",
+    "fields": "Complaint_Date Complaint_Date Closure_Date Closure_Date Received_By Received_By Complaints_Num Complaints_Num Officers_Inolved_Num Officers_Inolved_Num Allegations_Made_Num Allegations_Made_Num Allegations_Made Allegations_Made Allegations_Sustained Allegations_Sustained Num_Officers_Sustained Num_Officers_Sustained Allegations_Unfounded Allegations_Unfounded Allegations_Unsubstantiated Allegations_Unsubstantiated Num_Officers_DA Num_Officers_DA Disciplinary_Actions Disciplinary_Actions NonDisciplinary_Actions NonDisciplinary_Actions ObjectId ObjectId"
+  },
+  {
     "id": "arcgis-14dffaaac8870092-38",
     "title": "Speed Hump",
     "topic": "City & neighborhoods",
@@ -5789,6 +6572,20 @@
     "fields": "FID FID STREET_NAM STREET_NAM FROM_STREE FROM_STREE TO_STREET TO_STREET BLOCK BLOCK WARD WARD WIDTH WIDTH Miles Miles Shape__Length Shape__Length adopted_block adopted_block Group_Name Group_Name Date_Partipant_Confirmed Date_Partipant_Confirmed"
   },
   {
+    "id": "arcgis-ad9096bd027c8e33-0",
+    "title": "Syracuse Air Temperature",
+    "topic": "City & neighborhoods",
+    "family": "syracuse air temperature",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "See publisher description; record-level date range not verified",
+    "years": [],
+    "description": "Hourly temperature data readings from Syracuse's Air temperature sensors. These have been placed at the locations below. Data Dictionary: Label Definition Definition Source Date The date that this temperature reading was taken. These are ta",
+    "fields": "Date Date F2121_23_South_Ave__Syracuse__N 2121-23 South Ave, Syracuse, NY 13207, USA F53_25_Harborside_Dr__Syracuse_ 53-25 Harborside Dr, Syracuse, NY 13290, USA F2112_S_Geddes_St__Syracuse__NY 2112 S Geddes St, Syracuse, NY 13207, USA F616_Teall_Ave__Syracuse__NY_13 616 Teall Ave, Syracuse, NY 13206, USA F43_001263__76_136971 43.001263,-76.136971 F405_Seeley_Rd__Syracuse__NY_13 405 Seeley Rd, Syracuse, NY 13224, USA F412_S_Avery_Ave__Syracuse__NY_ 412 S Avery Ave, Syracuse, NY 13219, USA F700_Irving_Ave__Syracuse__NY_1 700 Irving Ave, Syracuse, NY 13210, USA F134_Prospect_Ave__Syracuse__NY 134 Prospect Ave, Syracuse, NY 13203, USA ObjectId ObjectId"
+  },
+  {
     "id": "arcgis-1712eebd6dfb9ef6-0",
     "title": "Syracuse Bike Infrastructure 2024",
     "topic": "City & neighborhoods",
@@ -5803,6 +6600,54 @@
     ],
     "description": "This shapefile contains an overview of bicycle infrastructure in the City of Syracuse. Included are roads with designated bike lanes, sharrows, and cycle tracks. Users should not consider this list exhaustive, as bicycle infrastructure may ",
     "fields": "FID FID Infrastruc Infrastructure Trail_Name Trail Name Length_Mi Length_Mi GlobalID GlobalID Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-4525c1a156ef2905-0",
+    "title": "Syracuse Bike Infrastructure (2025)",
+    "topic": "City & neighborhoods",
+    "family": "syracuse bike infrastructure (2025)",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2025 (source title; completeness unverified)",
+    "years": [
+      "2025"
+    ],
+    "description": "This dataset contains an overview of bicycle infrastructure in the City of Syracuse. Included are roads with designated bike lanes, sharrows, and cycle tracks. Users should not consider this list exhaustive, as bicycle infrastructure may ha",
+    "fields": "FID FID Infrastruc Infrastructure_Type Length_Mil Length_Mi TrailName TrailName Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-43d1b325e133b68b-0",
+    "title": "Syracuse Bike Infrastructure (2023)",
+    "topic": "City & neighborhoods",
+    "family": "syracuse bike infrastructure (feature layer)",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2023 (source title; completeness unverified)",
+    "years": [
+      "2023"
+    ],
+    "description": "Included in the Syracuse Bike Infrastructure dataset are roads with designated bike lanes, bikeways, trails, or sharrows. Users should not consider this list exhaustive, as bicycle infrastructure may have been installed since the most recen",
+    "fields": "OBJECTID OBJECTID Infrastructure_Type Infrastructure_Type Trail_Name Trail_Name Length_Mi Length_Mi Shape__Length Shape__Length GlobalID GlobalID"
+  },
+  {
+    "id": "arcgis-a54d357679e8b413-0",
+    "title": "Syracuse Bike Infrastructure (2024)",
+    "topic": "City & neighborhoods",
+    "family": "syracuse bike infrastructure 2024 v2",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2024 (source title; completeness unverified)",
+    "years": [
+      "2024"
+    ],
+    "description": "Included in the Syracuse Bike Infrastructure dataset are roads with designated bike lanes, bikeways, trails, or sharrows. Users should not consider this list exhaustive, as bicycle infrastructure may have been installed since the most recen",
+    "fields": "FID FID Infrastruc Infrastruc Trail_Name Trail_Name Length_Mi Length_Mi Shape__Length Shape__Length"
   },
   {
     "id": "arcgis-8e980699d36f9ea2-3",
@@ -5850,6 +6695,20 @@
     "fields": "FID FID FID_1 FID_1 FID_Syracu FID_Syracu STATEFP10 STATEFP10 COUNTYFP10 COUNTYFP10 TRACTCE10 TRACTCE10 GEOID10 GEOID10 NAME10 NAME10 NAMELSAD10 NAMELSAD10 MTFCC10 MTFCC10 FUNCSTAT10 FUNCSTAT10 ALAND10 ALAND10 AWATER10 AWATER10 INTPTLAT10 INTPTLAT10 INTPTLON10 INTPTLON10 TractID TractID Shape__Area Shape__Area Shape__Length Shape__Length"
   },
   {
+    "id": "arcgis-676a7d0dd970e611-0",
+    "title": "Syracuse City Boundary",
+    "topic": "City & neighborhoods",
+    "family": "syracuse city boundary",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "See publisher description; record-level date range not verified",
+    "years": [],
+    "description": "Description: The TIGER/Line shapefiles and related database files (.dbf) are an extract of selected geographic and cartographic information from the U.S. Census Bureau's Master Address File / Topologically Integrated Geographic Encoding and",
+    "fields": "FID FID FID_Syracu FID_Syracu STATEFP10 STATEFP10 COUNTYFP10 COUNTYFP10 TRACTCE10 TRACTCE10 GEOID10 GEOID10 NAME10 NAME10 NAMELSAD10 NAMELSAD10 MTFCC10 MTFCC10 FUNCSTAT10 FUNCSTAT10 ALAND10 ALAND10 AWATER10 AWATER10 INTPTLAT10 INTPTLAT10 INTPTLON10 INTPTLON10 TractID TractID"
+  },
+  {
     "id": "arcgis-de9b4fb4d6f919b0-0",
     "title": "Syracuse City Parks Shapefile SCG May2014",
     "topic": "City & neighborhoods",
@@ -5878,6 +6737,22 @@
     "fields": "FID FID OBJECTID OBJECTID DIST_ID DIST_ID SHAPE_Leng SHAPE_Leng SHAPE_Area SHAPE_Area Shape__Are Shape__Are Shape__Len Shape__Len Shape__Area Shape__Area Shape__Length Shape__Length Councilor_Name Councilor_Name Email Email Url_Link Url_Link"
   },
   {
+    "id": "arcgis-c8401eebd1fbb9d6-0",
+    "title": "Syracuse Common Council Districts (Historical - From 2000 Census)",
+    "topic": "City & neighborhoods",
+    "family": "syracuse common council districts (historical - from 2000 census)",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2000 (source title; completeness unverified)",
+    "years": [
+      "2000"
+    ],
+    "description": "The current Common Council Districts file is available here: Syracuse Common Council Boundaries (Current - Effect. 2023). The Onondaga County Election District geographic dataset was last updated by the Syracuse-Onondaga County Planning Age",
+    "fields": "FID FID CITY_CC CITY_CC Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
     "id": "arcgis-e34654d1040ee408-34",
     "title": "Syracuse Community Center Wifi Zone",
     "topic": "City & neighborhoods",
@@ -5904,6 +6779,34 @@
     "years": [],
     "description": "Public ArcGIS layer. The source provides no description; scope needs review.",
     "fields": "OBJECTID_1 OBJECTID_1 OBJECTID OBJECTID CENTROID_X CENTROID_X CENTROID_Y CENTROID_Y AREA AREA NAME NAME ADDRESS ADDRESS PHONE PHONE HOURS HOURS SITE SITE Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-c38cb286b1570823-0",
+    "title": "Syracuse Parks & Recreation Community Centers",
+    "topic": "City & neighborhoods",
+    "family": "syracuse community centers",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "See publisher description; record-level date range not verified",
+    "years": [],
+    "description": "List of Community Centers that are owned and operated by the City of Syracuse Parks & Recreation Department. Data Dictionary: Label Definition Definition Source PARK The name of the CIty Park. Parks and Rec. Department COMMUNITY_CENTER Whet",
+    "fields": "PARK PARK COMMUNITY_CENTER COMMUNITY_CENTER ADDRESS ADDRESS LAT LAT LONG LONG FID FID"
+  },
+  {
+    "id": "arcgis-15ded0c3f4d9f8ec-0",
+    "title": "Syracuse Historic Properties",
+    "topic": "City & neighborhoods",
+    "family": "syracuse historical properties",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "See publisher description; record-level date range not verified",
+    "years": [],
+    "description": "This list is updated and maintained by Syracuse's Landmark Preservation Board. Data Dictionary: Label Definition Definition Source SBL Section Block Lot Number (SBL). This is the unique identifier for that Parcel. Syracuse Landmark Preserva",
+    "fields": "SBL SBL Property_Address Property_Address Zip Zip LPSS LPSS NR_Eligible NR_Eligible Latitude Latitude Longitude Longitude ObjectId ObjectId"
   },
   {
     "id": "arcgis-540f4a307ab1b126-2",
@@ -5962,6 +6865,20 @@
     "fields": "OBJECTID FID RESNAME RESNAME ADDRESS ADDRESS SRDATE SRDATE CNTYFIPS CNTYFIPS COUNTY COUNTY CITY CITY CERTCD CERTCD NRDATE NRDATE MUNICIPALI MUNICIPALI TYPE TYPE NRNUMBER NRNUMBER ORIG_FID ORIG_FID IMG_URL IMG_URL"
   },
   {
+    "id": "arcgis-058a417e64f9afcf-0",
+    "title": "National Registry of Historic Sites and Districts - Syracuse",
+    "topic": "City & neighborhoods",
+    "family": "syracuse national registry of historic sites and districts",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "See publisher description; record-level date range not verified",
+    "years": [],
+    "description": "The New York State and National Register listings geographic dataset for Onondaga County was originally developed by the New York State Historic Preservation Office (NYSHPO) in May, 2004. Shortly after its production, this dataset was deliv",
+    "fields": "OBJECTID FID RESNAME RESNAME ADDRESS ADDRESS SRDATE SRDATE CNTYFIPS CNTYFIPS COUNTY COUNTY CITY CITY CERTCD CERTCD NRDATE NRDATE MUNICIPALI MUNICIPALI TYPE TYPE NRNUMBER NRNUMBER Shape__Area Shape__Area Shape__Length Shape__Length F_ #"
+  },
+  {
     "id": "arcgis-813dee2ac6811bc6-7",
     "title": "Syracuse Neighborhood",
     "topic": "City & neighborhoods",
@@ -6004,6 +6921,34 @@
     "fields": "FID FID Id Id Name Name Shape__Area Shape__Area Shape__Length Shape__Length"
   },
   {
+    "id": "arcgis-73396a3939d6a32b-0",
+    "title": "Syracuse Neighborhoods",
+    "topic": "City & neighborhoods",
+    "family": "syracuse neighborhoods 20260604 view",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "See publisher description; record-level date range not verified",
+    "years": [],
+    "description": "This dataset was updated on 2026-06-04 to reflect the new boundary of the Salt Springs neighborhood, which shifted from Salt Springs Road south to E Genesee St. (Additional minor edits were made to align versions including adjusting the bou",
+    "fields": "FID FID NAME NAME Area_SqFt Area_SqFt Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-be1841d74bc74473-0",
+    "title": "Syracuse Pool Info",
+    "topic": "City & neighborhoods",
+    "family": "syracuse parks dept pool info",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "See publisher description; record-level date range not verified",
+    "years": [],
+    "description": "Information about pools owned and maintained by the City of Syracuse. Dataset also contains information about the pools, whether they are handicap accessible, width and length of the pools, depth, and whether they have been converted to be ",
+    "fields": "Park Park Pool Pool Type Type Latitude Latitude Longitude Longitude Accessible_Pool_Ramp Accessible_Pool_Ramp Length_x_Width Length_x_Width Depth Depth Pool_Image Pool_Image Website Website FID FID"
+  },
+  {
     "id": "arcgis-087a1765ede87f0d-0",
     "title": "Syracuse Parks ExportFeature",
     "topic": "City & neighborhoods",
@@ -6016,6 +6961,84 @@
     "years": [],
     "description": "The Parcel Map Q1 2020 provides details on the jurisdiction and the ownership related details. To find Data Dictionary, please click the \"View All Metadata\" button in the lower right.",
     "fields": "OBJECTID_12 OBJECTID_12 OBJECTID OBJECTID TAX_ID TAX_ID PRINTKEY PRINTKEY EASTGRID EASTGRID NORTHGRID NORTHGRID ADDRESSNUM ADDRESSNUM ADDRESSNAM ADDRESSNAM NARRATIVE1 NARRATIVE1 NARRATIVE2 NARRATIVE2 NARRATIVE3 NARRATIVE3 FRONTFEET FRONTFEET DEPTH DEPTH ACRES ACRES NEWPROPCLA NEWPROPCLA OWNERNAME1 OWNERNAME1 OWNERNAME2 OWNERNAME2 MAIL_ST_NB MAIL_ST_NB STREET STREET CITY_STATE CITY_STATE ZIPCODE ZIPCODE ZIP_4 ZIP_4 SCHOOLCODE SCHOOLCODE DEEDBOOK DEEDBOOK DEEDPAGE DEEDPAGE CUTOTALAV CUTOTALAV CULANDAV CULANDAV CNTYTAXABL CNTYTAXABL TOWNTAXABL TOWNTAXABL SCHOOLTAXA SCHOOLTAXA VILLTAXABL VILLTAXABL YEARBLT YEARBLT BLDG_STYLE BLDG_STYLE SFLA SFLA NOFIREPL NOFIREPL NOBEDS NOBEDS FULL_BATHS FULL_BATHS BSMNT_GAR BSMNT_GAR SWIS_CODE SWIS_CODE SECTION SECTION SUB_SECTIO SUB_SECTIO BLOCK BLOCK LOT LOT SUB_LOT SUB_LOT SUFFIX SUFFIX COM_YR_BLT COM_YR_BLT COM_FLAREA COM_FLAREA ADDRESS ADDRESS MUNI_NAME MUNI_NAME PO_BOX PO_BOX MAIL_UNIT1 MAIL_UNIT1 MAIL_UNIT2 MAIL_UNIT2 MAIL_ADD1 MAIL_ADD1 MAIL_ADD2 MAIL_ADD2 MAIL_ZIP MAIL_ZIP CITY_TOWN CITY_TOWN VILLAGE VILLAGE LAND_USE LAND_USE LU_GROUP LU_GROUP SCH_DIST SCH_DIST Sec_Block Sec_Block TAX_ID_1 TAX_ID_1 SBL SBL PNUMBR PNUMBR FullAddres FullAddres StNum StNum StName StName BlockLevel BlockLevel Owner Owner Owner2 Owner2 Add1 Add1 TaxBilling TaxBilling Add2 Add2 Add3 Add3 Add4 Add4 ZIP ZIP ZIP2 ZIP2 YearBuilt YearBuilt LandUse LandUse LUCODE LUCODE Units Units TNT TNT Census Census Neighborho Neighborho NRSA NRSA CommonCoun CommonCoun Zoning Zoning Ward Ward QUAD QUAD DOCE_Area DOCE_Area CountyLeg CountyLeg n_OpenViol n_OpenViol OpenCodeVi OpenCodeVi VacantBuil VacantBuil IPSVacant IPSVacant IPSConditi IPSConditi DVDATE DVDATE WaterServi WaterServi AssessedVa AssessedVa AssessedLa AssessedLa Seizable Seizable Phase Phase Bankruptcy Bankruptcy Amount_Del Amount_Del Redemption Redemption STARS STARS STARC STARC STAR STAR OverdueWat OverdueWat TaxTrust TaxTrust SENIOR_EXE SENIOR_EXE VET_EXEMPT VET_EXEMPT FRONTFEE_1 FRONTFEE_1 DEPTH_1 DEPTH_1 ACRES_1 ACRES_1 Assessment Assessment Longitude Longitude Latitude Latitude OccupancyS OccupancyS Occupancy Occupancy NAME NAME SBL_1 SBL CLASSIFICATION CLASSIFICATION ADDRESS_1 ADDRESS CROSS_ROADS CROSS ROADS LAT LAT LONG LONG ObjectID_1 ObjectID Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-6659fe9a013c613a-0",
+    "title": "Syracuse Pavement Ratings (2024)",
+    "topic": "City & neighborhoods",
+    "family": "syracuse pavement ratings (2024)",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2024 (source title; completeness unverified)",
+    "years": [
+      "2024"
+    ],
+    "description": "The SMTC rates pavement using a scale developed by the New York State Department of Transportation. While traveling at posted speed limit, the rater will make an assessment from inside the vehicle of each pavement segment ranging from 1 (co",
+    "fields": "FID FID BPID BPID Rating2024 Rating2024 StreetName StreetName SegmentSta SegmentSta SegmentEnd SegmentEnd Block Block Ward Ward StreetWidt StreetWidt RatingCate RatingCate FC FC RatingCapt RatingCapt Miles Miles Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-c8b09ebd8c1d1e53-0",
+    "title": "Syracuse Pavement Ratings (2025)",
+    "topic": "City & neighborhoods",
+    "family": "syracuse pavement ratings (2025)",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2025 (source title; completeness unverified)",
+    "years": [
+      "2025"
+    ],
+    "description": "The SMTC rates pavement using a scale developed by the New York State Department of Transportation. While traveling at posted speed limit, the rater will make an assessment from inside the vehicle of each pavement segment ranging from 1 (co",
+    "fields": "FID FID BPID BPID Rating2025 Rating2025 StreetName StreetName SegmentSta SegmentSta SegmentEnd SegmentEnd Block Block Ward Ward StreetWidt StreetWidt RatingCate RatingCate FC FC CreationDa CreationDa Miles Miles Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-4bbdf6fe3f69865a-0",
+    "title": "Pavement Ratings (2021)",
+    "topic": "City & neighborhoods",
+    "family": "syracuse pavement ratings 2021",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2021 (source title; completeness unverified)",
+    "years": [
+      "2021"
+    ],
+    "description": "Description: The SMTC rates pavement using a scale developed by the New York State Department of Transportation. While traveling at posted speed limit, the rater will make an assessment from inside the vehicle of each pavement segment rangi",
+    "fields": "FID FID BPID BPID Miles Miles STREET_NAM STREET_NAME FROM_ROAD FROM_ROAD TO_ROAD TO_ROAD BLOCK BLOCK WARD WARD WIDTH__fee WIDTH__feet Final_Rati Final_Rating Rating_Cat Rating_Cat FC_Code FC_Code FC_Descrip FC_Descrip Date_Enter Date_Enter Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-6a74d610f1c8b83a-0",
+    "title": "Syracuse Pavement Ratings (2022)",
+    "topic": "City & neighborhoods",
+    "family": "syracuse pavement ratings 2022",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2022 (source title; completeness unverified)",
+    "years": [
+      "2022"
+    ],
+    "description": "The SMTC rates pavement using a scale developed by the New York State Department of Transportation. While traveling at posted speed limit, the rater will make an assessment from inside the vehicle of each pavement segment ranging from 1 (co",
+    "fields": "OBJECTID OBJECTID BPID BPID STREET_NAME Street Name FROM_STREET Segment Start TO_STREET Segment End BLOCK Block WARD Ward WIDTH Street Width (Feet) Rating_2022 Rating 2022 RatingCategory Rating Category FC Functional Classification CollectionDate Date Collected Miles Miles Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-788d8262041e7b26-0",
+    "title": "Syracuse Public Art NEW",
+    "topic": "City & neighborhoods",
+    "family": "syracuse public art new",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "See publisher description; record-level date range not verified",
+    "years": [],
+    "description": "A list of public art that is currently installed on City owned property or areas in the City of Syracuse. Data is maintained through the Syracuse Public Arts Commission (SPAC). Data includes the type of public art (whether it is a sculpture",
+    "fields": "Title Title Type Type Address Address Latitude Latitude Longitude Longitude Artist_Last Artist_Last Artist_First Artist_First Additional_Artists Additional_Artists Media Media Date_Created Date_Created Date_Erected Date_Erected TNT_Area TNT_Area Neighborhood Neighborhood Specific_Location Specific_Location Image_Url Image_Url ObjectId ObjectId"
   },
   {
     "id": "arcgis-e9f3afbcbc63ffa7-0",
@@ -6032,6 +7055,20 @@
     "fields": "FID FID FID_1 FID_1 FID_12 FID_12 AREA AREA PERIMETER PERIMETER QUADRANTS_ QUADRANTS_ QUADRANTS1 QUADRANTS1 NAME NAME Quad Quad Shape__Are Shape__Are Shape__Len Shape__Len Shape__Area Shape__Area Shape__Length Shape__Length"
   },
   {
+    "id": "arcgis-16c93a8262a6897c-0",
+    "title": "Syracuse Quadrants",
+    "topic": "City & neighborhoods",
+    "family": "syracuse quadrants",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "See publisher description; record-level date range not verified",
+    "years": [],
+    "description": "This file is for reference and planning purposes only. Data Dictionary: Label Definition Area Area of the Region Perimeter Perimeter of the region Name Name and Direction of the region Quad Abbreviation of the name and direction of the regi",
+    "fields": "FID FID FID_1 FID_1 AREA AREA PERIMETER PERIMETER QUADRANTS_ QUADRANTS_ QUADRANTS1 QUADRANTS1 NAME NAME Quad Quad Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
     "id": "arcgis-5352de6e8b747ea0-1",
     "title": "Syracuse Quadrants Sanitation Pickups 2024",
     "topic": "City & neighborhoods",
@@ -6046,6 +7083,64 @@
     ],
     "description": "Public ArcGIS layer. The source provides no description; scope needs review.",
     "fields": "FID FID FID_1 FID_1 FID_12 FID_12 AREA AREA PERIMETER PERIMETER QUADRANTS_ QUADRANTS_ QUADRANTS1 QUADRANTS1 NAME NAME Quad Quad Shape__Are Shape__Are Shape__Len Shape__Len XmasTree Christmas Tree Start YardWaste Yard Waste Start ConDebris Construction Debris Start LeavesOnly Leaves Only Start XmasTreeE Christmas Tree End YardWasteE Yard Waste End ConDebE Construction Debris End LeaveOnlyE Leaves Only End Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-38f5c0bb992ddd34-0",
+    "title": "Syracuse Pavement Ratings (2023)",
+    "topic": "City & neighborhoods",
+    "family": "syracuse ratings open data copy 2023",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2023 (source title; completeness unverified)",
+    "years": [
+      "2023"
+    ],
+    "description": "The SMTC rates pavement using a scale developed by the New York State Department of Transportation. While traveling at posted speed limit, the rater will make an assessment from inside the vehicle of each pavement segment ranging from 1 (co",
+    "fields": "FID FID BPID BPID STREET_NAM STREET_NAM FROM_STREE FROM_STREE TO_STREET TO_STREET BLOCK BLOCK WARD WARD WIDTH WIDTH Rating2023 Rating2023 RatingCate RatingCate FC FC CreationDa CreationDa Miles Miles Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-6f9c63aecfcaf59b-0",
+    "title": "Syracuse's Athletic Courts",
+    "topic": "City & neighborhoods",
+    "family": "syracuse s athletic courts",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "See publisher description; record-level date range not verified",
+    "years": [],
+    "description": "Data Dictionary: Label Definition Definition Source PARK The name of the CIty Park. Parks and Rec. Department COURT TYPE The type of court that is located at this park (Basketball, pickleball, etc.). Parks and Rec. Department COURT SIZE / Q",
+    "fields": "PARK PARK COURT_TYPE COURT TYPE COURT_SIZE___QUANTITY COURT SIZE / QUANTITY IMPROV__YEAR IMPROV. YEAR LAT LAT LONG LONG ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-73f4fa76a0487e42-0",
+    "title": "Syracuse's Athletic Fields",
+    "topic": "City & neighborhoods",
+    "family": "syracuse s athletic fields",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "See publisher description; record-level date range not verified",
+    "years": [],
+    "description": "Data Dictionary: Label Definition Definition Source PARK The name of the CIty Park. Parks and Rec. Department FIELD TYPE The type of sports field that is located at this park (Softball, Soccer, etc.). Parks and Rec. Department QUANTITY The ",
+    "fields": "PARK PARK FIELD_TYPE FIELD TYPE QUANTITY QUANTITY LAT LAT LONG LONG ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-e8d171db2920fc36-0",
+    "title": "Syracuse TNT Area Boundaries",
+    "topic": "City & neighborhoods",
+    "family": "syracuse tnt neighborhood boundaries",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "See publisher description; record-level date range not verified",
+    "years": [],
+    "description": "Description This data was pulled from Syracuse Community Geography's version of this layer, whichis available here: Syracuse TNT Areas - Syracuse Community Geography . The website for the TNT iniative can be found here: Tomorrow's Neighborh",
+    "fields": "FID FID AREA AREA PERIMETER PERIMETER SECTOR SECTOR TNT_NAME TNT_NAME Shape__Area Shape__Area Shape__Length Shape__Length"
   },
   {
     "id": "arcgis-ada81c7eb7cc3425-6",
@@ -6202,6 +7297,37 @@
     "fields": "FID FID FID_1 FID_1 AREA AREA PERIMETER PERIMETER TNT_ TNT_ TNT_ID TNT_ID SECTOR SECTOR NEIGH NEIGH TNT_NAME TNT_NAME ownerocc ownerocc Shape__Area Shape__Area Shape__Length Shape__Length"
   },
   {
+    "id": "arcgis-ee1298d53487bfe0-0",
+    "title": "Syracuse Tree Inventory",
+    "topic": "City & neighborhoods",
+    "family": "syracuse tree data",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "See publisher description; record-level date range not verified",
+    "years": [],
+    "description": "Inventory about trees in Syracuse. This information is entered by the City of Syracuse Parks & Recreation Forestry staff as well as Cornell Cooperative Extension's CommuniTree Stewards program . Data Dictionary: Label Definition Definition ",
+    "fields": "FID FID ID ID SPP_COM SPP_COM SPP_BOT SPP_BOT DBH DBH AREA AREA PLANTDATE PLANTDATE CENSUSTRAC CENSUSTRAC ARPA ARPA ADDRESS ADDRESS STREET STREET X X Y Y LATITUDE LATITUDE LONGITUDE LONGITUDE"
+  },
+  {
+    "id": "arcgis-f8e253954e974482-0",
+    "title": "SYRCityline Requests (2021-January 2025)",
+    "topic": "City & neighborhoods",
+    "family": "syrcityline requests 2021 present",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2021, 2025 (source title; completeness unverified)",
+    "years": [
+      "2021",
+      "2025"
+    ],
+    "description": "The SYRCityline requests is a very large dataset. It includes requests for city services which have been made by residents through SYRCityline, which utilizes SeeClickFix software. Service requests can be made at : https://seeclickfix.com/s",
+    "fields": "Id Id Summary Summary Rating Rating Address Address Description Description Agency_Name Agency Name Request_type Request type Lat Lat Lng Lng Created_at_local Created at local Acknowledged_at_local Acknowledged at local Closed_at_local Closed at local Minutes_to_Acknowledge Minutes to Acknowledge Minutes_to_Close Minutes to Close Assignee_name Assignee name Category Category Sla_in_hours Sla in hours Report_Source Report Source ObjectId ObjectId"
+  },
+  {
     "id": "arcgis-b64287d1881c9c49-0",
     "title": "SZO Use Table and Def   ArcGIS version",
     "topic": "City & neighborhoods",
@@ -6214,6 +7340,22 @@
     "years": [],
     "description": "Public ArcGIS layer. The source provides no description; scope needs review.",
     "fields": "Use_Classification Use Classification Uses_Category Uses Category USE_TYPE USE TYPE R1 R1 R2 R2 R3 R3 R4 R4 R5 R5 MX_1 MX-1 MX_2 MX-2 MX_3 MX-3 MX_4 MX-4 MX_5 MX-5 CM CM LI LI OS OS USE_SPECIFIC_Regulations USE-SPECIFIC Regulations Use_Definitions Use-Definitions ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-0a65f9484776c59a-0",
+    "title": "Assessment Tentative Roll (2020)",
+    "topic": "City & neighborhoods",
+    "family": "tentative roll syracuse 2020",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2020 (source title; completeness unverified)",
+    "years": [
+      "2020"
+    ],
+    "description": "Data Dictionary: Label Definition print_key Abbreviated tax identification number (section-block-lot) parcel_location_address The parcel address of the property. prop_class The number of property class that this property falls within. own_o",
+    "fields": "print_key print_key parcel_location_address parcel_location_address prop_class prop_class own_owner_name own_owner_name own_attention_to own_attention_to own_po_box own_po_box own_street_address own_street_address own_city_state_zip own_city_state_zip sch_taxable sch_taxable muni_taxable muni_taxable cnty_taxable cnty_taxable total_av total_av Full_Value Full Value ObjectId ObjectId"
   },
   {
     "id": "arcgis-5ff46178b1d58f70-0",
@@ -6244,6 +7386,22 @@
     "fields": "FID FID AREA AREA PERIMETER PERIMETER TNT_ TNT_ TNT_ID TNT_ID SECTOR SECTOR NEIGH NEIGH TNT_NAME TNT_NAME ownerocc ownerocc Shape__Area Shape__Area Shape__Length Shape__Length"
   },
   {
+    "id": "arcgis-1231dcbb9e5cb66e-2",
+    "title": "Trash Pickup Day Schedule (2022)",
+    "topic": "City & neighborhoods",
+    "family": "trash day schedule",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2022 (source title; completeness unverified)",
+    "years": [
+      "2022"
+    ],
+    "description": "Data Dictionary: Label Definition parcel_id The unique Parcel ID assigned to this address. StNum The street number for that address. StName The name of the Street that this address is located on. FullAddress The full address of this house, ",
+    "fields": "parcel_id parcel_id StNum StNum StName StName FullAddress FullAddress Zip Zip TrashDay TrashDay ObjectID ObjectID"
+  },
+  {
     "id": "arcgis-0b3a2feab5aded1d-0",
     "title": "Trash Pickup Day",
     "topic": "City & neighborhoods",
@@ -6256,6 +7414,36 @@
     "years": [],
     "description": "Public ArcGIS layer. The source provides no description; scope needs review.",
     "fields": "F026__05_07_0 026.-05-07.0 F112 112 Aberdeen_Terr Aberdeen Terr F13206 13206 Tuesday Tuesday ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-7961595667a568d4-0",
+    "title": "Trash Pickup Day Schedule (2025)",
+    "topic": "City & neighborhoods",
+    "family": "trash pickup day schedule 2025",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2025 (source title; completeness unverified)",
+    "years": [
+      "2025"
+    ],
+    "description": "Description: A data table listing Trash Pickup Days by individual addresses in the City of Syracuse. If you would like more detailed information regarding this property parcel, please refer to the most recent Parcel Map in the Open Data Por",
+    "fields": "OBJECTID OBJECTID SBL SBL StNum StNum StName StName FullAddres FullAddress Zip Zip Sanitation CollectionDay RecyclingW RecyclingWeek Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-a99b9e5a50bde63b-0",
+    "title": "Unfit Properties",
+    "topic": "City & neighborhoods",
+    "family": "unfit properties",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "See publisher description; record-level date range not verified",
+    "years": [],
+    "description": "A list of the houses in Syracuse that have been declared as unfit by Code Enforcement. The process begins when a member of the community makes a call or complaint to Code Enforcement. A Code Enforcement Investigator is then assigned and goe",
+    "fields": "complaint_number complaint_number address address area_involved area_involved zip zip SBL SBL parcel_id parcel_id violation violation violation_date violation_date comply_by_date comply_by_date status_type_name status_type_name department_name department_name status_date status_date complaint_type_name complaint_type_name comp_status comp_status comp_open_date comp_open_date comp_close_date comp_close_date Vacant Vacant article article corrective_action corrective_action owner_name owner_name owner_address owner_address owner_city owner_city owner_state owner_state owner_zip_code owner_zip_code Latitude Latitude Longitude Longitude ObjectId ObjectId violation_number violation_number"
   },
   {
     "id": "arcgis-5112efc8e703af73-0",
@@ -6326,6 +7514,201 @@
     "years": [],
     "description": "A vector line file of public/private streets compiled from orthoimagery and other sources that is attributed with street names, addresses, route numbers, routing attributes, and includes a related table of alternate/alias street names. If t",
     "fields": "FID FID DateModifi DateModifi NYSStreetI NYSStreetI LeftFromPr LeftFromPr RightFromP RightFromP LeftToPref LeftToPref RightToPre RightToPre LeftFromAd LeftFromAd LeftToAddr LeftToAddr RightFromA RightFromA RightToAdd RightToAdd CompleteSt CompleteSt PreModifie PreModifie PreDirecti PreDirecti PreType PreType SeparatorE SeparatorE StreetName StreetName PostType PostType PostDirect PostDirect PostModifi PostModifi SHIELD SHIELD HighwayNum HighwayNum Navigation Navigation JURISDICTI JURISDICTI FCC FCC ACC ACC SPEED SPEED OneWay OneWay FromZlev FromZlev ToZlev ToZlev FromToDire FromToDire ToFromDire ToFromDire FromToCost FromToCost ToFromCost ToFromCost LeftStateN LeftStateN RightState RightState LeftCounty LeftCounty RightCount RightCount LeftPostal LeftPostal RightPosta RightPosta LeftZipNam LeftZipNam RightZipNa RightZipNa LeftCityTo LeftCityTo RightCityT RightCityT LeftPlaceN LeftPlaceN RightPlace RightPlace LeftFIPS LeftFIPS RightFIPS RightFIPS GeometryAc GeometryAc GeometrySo GeometrySo NameSource NameSource AddressSou AddressSou Status Status CLDXF_PreD CLDXF_PreD CLDXF_Post CLDXF_Post CLDXF_Po_1 CLDXF_Po_1 Label Label LeftCountr LeftCountr RightCou_1 RightCou_1 LeftParity LeftParity RightParit RightParit LeftESN LeftESN RightESN RightESN LeftIncorp LeftIncorp RightIncor RightIncor LeftUninco LeftUninco RightUninc RightUninc LeftNeighb LeftNeighb RightNeigh RightNeigh LeftMSAGCo LeftMSAGCo RightMSAGC RightMSAGC Discrepanc Discrepanc Maintenanc Maintenanc LeftMunici LeftMunici RightMunic RightMunic CR_USERNAM CR_USERNAM CR_DATETIM CR_DATETIM AT_USERNAM AT_USERNAM AT_DATETIM AT_DATETIM SP_USERNAM SP_USERNAM SP_DATETIM SP_DATETIM USERNAME USERNAME Shape_Leng Shape_Leng SRP SRP SRP_STATUS SRP_STATUS WINTER_TR WINTER_TR Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-7db917a17bdb90fc-0",
+    "title": "Adopted Budget (Fiscal Year 2018)",
+    "topic": "City finances",
+    "family": "fiscal year 18 adopted budget",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2018 (source title; completeness unverified)",
+    "years": [
+      "2018"
+    ],
+    "description": "Data Dictionary: Label Definition Definition Source Fund The type of fund where the expenses and revenues are tracked. Office of Management and Budget Dept The code for the department, agency or category associated with the expenditure. Off",
+    "fields": "Fund Fund Dept Dept Account Account Sum_Amount Sum.Amount Account_Name Account.Name Dept_Name Dept.Name Fund_Name Fund.Name FID FID"
+  },
+  {
+    "id": "arcgis-0f4190088ee0ff51-0",
+    "title": "Proposed Budget Revenue (Fiscal Year 2022-2023)",
+    "topic": "City finances",
+    "family": "fy 2022 2023 proposed budget (revenue only reviewed by budget)",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2022, 2023 (source title; completeness unverified)",
+    "years": [
+      "2022",
+      "2023"
+    ],
+    "description": "Data Dictionary: Label Definition Definition Source Fund_Name: The type of fund where the expenses and revenues are tracked. Office of Management and Budget Dept_Name: The department, agency or category associated with the revenue. Office o",
+    "fields": "Fund_Name Fund_Name Dept_Name Dept_Name Account Account Budget Budget FID FID"
+  },
+  {
+    "id": "arcgis-14743ed08de89c88-0",
+    "title": "Actual Budget Revenue (Fiscal Year 2017)",
+    "topic": "City finances",
+    "family": "fy17 actual revenues",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2017 (source title; completeness unverified)",
+    "years": [
+      "2017"
+    ],
+    "description": "Data Dictionary: Label Definition Definition Source Fund.Name The type of fund where the expenses and revenues are tracked. Office of Management and Budget Dept.Name The department associated with the revenue. Office of Management and Budge",
+    "fields": "Period Period Total_Amount Total.Amount Account_Name Account.Name Dept_Name Dept.Name Fund_Name Fund.Name DepartmentGroup DepartmentGroup FID FID"
+  },
+  {
+    "id": "arcgis-52fc45440d9026fe-0",
+    "title": "Budgeted Expenses (Fiscal Year 2018)",
+    "topic": "City finances",
+    "family": "fy18 budgeted expenses",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2018 (source title; completeness unverified)",
+    "years": [
+      "2018"
+    ],
+    "description": "Data Dictionary: Label Definition Definition Source Fund.Name The type of fund where the expenses and revenues are tracked. Office of Management and Budget Dept.Name The department associated with the expense. Office of Management and Budge",
+    "fields": "Account_Description Account.Description Amount Amount Account_Name Account.Name Dept_Name Dept.Name Fund_Name Fund.Name DepartmentGroup DepartmentGroup FID FID"
+  },
+  {
+    "id": "arcgis-de468a9b7116f518-0",
+    "title": "Budgeted Revenue (Fiscal Year 2018)",
+    "topic": "City finances",
+    "family": "fy18 budgeted revenues",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2018 (source title; completeness unverified)",
+    "years": [
+      "2018"
+    ],
+    "description": "Data Dictionary: Label Definition Definition Source Fund.Name The type of fund where the expenses and revenues are tracked. Office of Management and Budget Dept.Name The department associated with the revenue. Office of Management and Budge",
+    "fields": "Account_Description Account.Description Amount Amount Account_Name Account.Name Dept_Name Dept.Name Fund_Name Fund.Name DepartmentGroup DepartmentGroup FID FID"
+  },
+  {
+    "id": "arcgis-b724cf5497e255ee-0",
+    "title": "Proposed Budget Expenditures (Fiscal Year 2019)",
+    "topic": "City finances",
+    "family": "fy19 proposed budget expenditures",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2019 (source title; completeness unverified)",
+    "years": [
+      "2019"
+    ],
+    "description": "Data Dictionary: Label Definition Definition Source Fund.Name: The type of fund where the expenses and revenues are tracked. Office of Management and Budget Dept.Name: The department, agency or category associated with the expenditure. Offi",
+    "fields": "Fund_Name Fund.Name Dept_Name Dept.Name Account_Name Account.Name Amount Amount FID FID"
+  },
+  {
+    "id": "arcgis-f4537ad8dc0c6f02-0",
+    "title": "FY19 Proposed Budget Revenue",
+    "topic": "City finances",
+    "family": "fy19 proposed budget revenue",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "See publisher description; record-level date range not verified",
+    "years": [],
+    "description": "Data Dictionary: Label Definition Definition Source Fund.Name: The type of fund where the expenses and revenues are tracked. Office of Management and Budget Dept.Name: The department, agency or category associated with the revenue. Office o",
+    "fields": "Fund_Name Fund.Name Dept_Name Dept.Name Account_Name Account.Name Amount Amount FID FID"
+  },
+  {
+    "id": "arcgis-1654e3289040f250-0",
+    "title": "Proposed Budget Expenditures (Fiscal Year 2022-2023)",
+    "topic": "City finances",
+    "family": "proposed budget expenditures (fiscal year 2022 2023)",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2022, 2023 (source title; completeness unverified)",
+    "years": [
+      "2022",
+      "2023"
+    ],
+    "description": "Data Dictionary: Label Definition Definition Source Fund_Name: The type of fund where the expenses and revenues are tracked. Office of Management and Budget Dept_Name: The department, agency or category associated with the expenditure. Offi",
+    "fields": "Fund_Name Fund_Name Dept_Name Dept_Name Account_Name Account_Name Budget Budget FID FID"
+  },
+  {
+    "id": "arcgis-64aa042e9d7497f6-0",
+    "title": "Proposed Budget Expenditures (Fiscal Year 2024 to 2025)",
+    "topic": "City finances",
+    "family": "proposed budget expenditures (fiscal year 2024 to 2025)",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2024, 2025 (source title; completeness unverified)",
+    "years": [
+      "2024",
+      "2025"
+    ],
+    "description": "Data Dictionary: Label Definition Definition Source Fund_Name: The type of fund where the expenses and revenues are tracked. Office of Management and Budget Dept_Name: The department, agency or category associated with the revenue. Office o",
+    "fields": "Fund_Name Fund_Name Account_Name Account_Name Dept_Name Dept_Name Budget Budget FID FID"
+  },
+  {
+    "id": "arcgis-5d963e74989617ce-0",
+    "title": "Proposed Budget Revenue (Fiscal Year 2024 to 2025)",
+    "topic": "City finances",
+    "family": "proposed budget revenue (fiscal year 2024 2025)",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2024, 2025 (source title; completeness unverified)",
+    "years": [
+      "2024",
+      "2025"
+    ],
+    "description": "Data Dictionary: Label Definition Definition Source Fund_Name: The type of fund where the expenses and revenues are tracked. Office of Management and Budget Dept_Name: The department, agency or category associated with the revenue. Office o",
+    "fields": "Fund_Name Fund_Name Account Account Dept_Name Dept_Name Budget Budget FID FID"
+  },
+  {
+    "id": "arcgis-0d7a40c995955097-0",
+    "title": "Approved Budget Expenditures (Fiscal Year 2023-2024)",
+    "topic": "City finances",
+    "family": "syrprod fy24 annual budget revenue",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2023, 2024 (source title; completeness unverified)",
+    "years": [
+      "2023",
+      "2024"
+    ],
+    "description": "Data Dictionary: Label Definition Definition Source Fund_Name: The type of fund where the expenses and revenues are tracked. Office of Management and Budget Dept_Name: The department, agency or category associated with the expenditure. Offi",
+    "fields": "Fund_name Fund_Name Dept_Name Dept_Name Account_Name Account_Name Budget Budget FID FID"
+  },
+  {
+    "id": "arcgis-fb711e0954a275e9-0",
+    "title": "Syracuse Parcel Map (2020 Q1)",
+    "topic": "Housing",
+    "family": " qpd q1 2020",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2020 (source title; completeness unverified)",
+    "years": [
+      "2020"
+    ],
+    "description": "The Parcel Map Q1 2020 provides details on the jurisdiction and the ownership related details. To find Data Dictionary, please click the \"View All Metadata\" button in the lower right.",
+    "fields": "FID FID OBJECTID OBJECTID TAX_ID TAX_ID PRINTKEY PRINTKEY EASTGRID EASTGRID NORTHGRID NORTHGRID ADDRESSNUM ADDRESSNUM ADDRESSNAM ADDRESSNAM NARRATIVE1 NARRATIVE1 NARRATIVE2 NARRATIVE2 NARRATIVE3 NARRATIVE3 FRONTFEET FRONTFEET DEPTH DEPTH ACRES ACRES NEWPROPCLA NEWPROPCLA OWNERNAME1 OWNERNAME1 OWNERNAME2 OWNERNAME2 MAIL_ST_NB MAIL_ST_NB STREET STREET CITY_STATE CITY_STATE ZIPCODE ZIPCODE ZIP_4 ZIP_4 SCHOOLCODE SCHOOLCODE DEEDBOOK DEEDBOOK DEEDPAGE DEEDPAGE CUTOTALAV CUTOTALAV CULANDAV CULANDAV CNTYTAXABL CNTYTAXABL TOWNTAXABL TOWNTAXABL SCHOOLTAXA SCHOOLTAXA VILLTAXABL VILLTAXABL YEARBLT YEARBLT BLDG_STYLE BLDG_STYLE SFLA SFLA NOFIREPL NOFIREPL NOBEDS NOBEDS FULL_BATHS FULL_BATHS BSMNT_GAR BSMNT_GAR SWIS_CODE SWIS_CODE SECTION SECTION SUB_SECTIO SUB_SECTIO BLOCK BLOCK LOT LOT SUB_LOT SUB_LOT SUFFIX SUFFIX COM_YR_BLT COM_YR_BLT COM_FLAREA COM_FLAREA ADDRESS ADDRESS MUNI_NAME MUNI_NAME PO_BOX PO_BOX MAIL_UNIT1 MAIL_UNIT1 MAIL_UNIT2 MAIL_UNIT2 MAIL_ADD1 MAIL_ADD1 MAIL_ADD2 MAIL_ADD2 MAIL_ZIP MAIL_ZIP CITY_TOWN CITY_TOWN VILLAGE VILLAGE LAND_USE LAND_USE LU_GROUP LU_GROUP SCH_DIST SCH_DIST Sec_Block Sec_Block TAX_ID_1 TAX_ID_1 SBL SBL PNUMBR PNUMBR FullAddres FullAddres StNum StNum StName StName BlockLevel BlockLevel Owner Owner Owner2 Owner2 Add1 Add1 TaxBilling TaxBilling Add2 Add2 Add3 Add3 Add4 Add4 ZIP ZIP ZIP2 ZIP2 YearBuilt YearBuilt LandUse LandUse LUCODE LUCODE Units Units TNT TNT Census Census Neighborho Neighborho NRSA NRSA CommonCoun CommonCoun Zoning Zoning Ward Ward QUAD QUAD DOCE_Area DOCE_Area CountyLeg CountyLeg n_OpenViol n_OpenViol OpenCodeVi OpenCodeVi VacantBuil VacantBuil IPSVacant IPSVacant IPSConditi IPSConditi DVDATE DVDATE WaterServi WaterServi AssessedVa AssessedVa AssessedLa AssessedLa Seizable Seizable Phase Phase Bankruptcy Bankruptcy Amount_Del Amount_Del Redemption Redemption STARS STARS STARC STARC STAR STAR OverdueWat OverdueWat TaxTrust TaxTrust SENIOR_EXE SENIOR_EXE VET_EXEMPT VET_EXEMPT FRONTFEE_1 FRONTFEE_1 DEPTH_1 DEPTH_1 ACRES_1 ACRES_1 Assessment Assessment Longitude Longitude Latitude Latitude OccupancyS OccupancyS Occupancy Occupancy Shape__Area Shape__Area Shape__Length Shape__Length"
   },
   {
     "id": "arcgis-db4269c721d56b73-0",
@@ -6404,6 +7787,23 @@
     "fields": "FID FID SBL SBL TAX_ID TAX_ID PRINTKEY PRINTKEY StName StName FullAddres FullAddres desc_1 desc_1 desc_2 desc_2 desc_3 desc_3 LU_parcel LU_parcel LUCat_Old LUCat_Old Owner Owner OwnerFullA OwnerFullA Add1_OwnPO Add1_OwnPO Add2_OwnSt Add2_OwnSt Add3_OwnUn Add3_OwnUn Add4_OwnCi Add4_OwnCi IPSVacant IPSVacant NREligible NREligible LPSS LPSS TNT_NAME TNT_NAME NHOOD NHOOD DOCE_Insp1 DOCE_Insp1 DOCE_Insp2 DOCE_Insp2 DOCE_Permi DOCE_Permi DOCE_Comm DOCE_Comm FIRE_DIST FIRE_DIST ZONE_DIST_ ZONE_DIST_ REZONE REZONE ObjectID_2 ObjectID_2 available available Shape__Area Shape__Area Shape__Length Shape__Length GlobalID GlobalID PNUMBR_dbl PNUMBR_dbl Zip_dbl Zip_dbl LUC_Parcel_dbl LUC_Parcel_dbl land_av_dbl land_av_dbl total_av_dbl total_av_dbl FRONT_dbl FRONT_dbl DEPTH_dbl DEPTH_dbl ACRES_dbl ACRES_dbl yr_built_dbl yr_built_dbl"
   },
   {
+    "id": "arcgis-fc0153d83702dc75-0",
+    "title": "Building Permits (2013-2019)",
+    "topic": "Housing",
+    "family": "building permits",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2013, 2019 (source title; completeness unverified)",
+    "years": [
+      "2013",
+      "2019"
+    ],
+    "description": "A newer permit dataset is accessible here: Permit Requests . Data Dictionary: Label Definition Number Address number for property Address Street name for property City City that the property is located in Zip Zipcode for the property permit",
+    "fields": "identifier identifier number number address address city city zip zip permit_type_description permit_type_description status_type_name status_type_name application_date application_date application_number application_number project_valuation project_valuation payment payment Longitude Longitude Latitude Latitude PRINTKEY PRINTKEY TNT_NAME TNT_NAME ObjectId ObjectId"
+  },
+  {
     "id": "arcgis-fd84d29b3c6d8a54-0",
     "title": "City Parks Parcels 2020",
     "topic": "Housing",
@@ -6418,6 +7818,36 @@
     ],
     "description": "The Parcel Map Q1 2020 provides details on the jurisdiction and the ownership related details. To find Data Dictionary, please click the \"View All Metadata\" button in the lower right.",
     "fields": "FID FID OBJECTID OBJECTID TAX_ID TAX_ID PRINTKEY PRINTKEY EASTGRID EASTGRID NORTHGRID NORTHGRID ADDRESSNUM ADDRESSNUM ADDRESSNAM ADDRESSNAM NARRATIVE1 NARRATIVE1 NARRATIVE2 NARRATIVE2 NARRATIVE3 NARRATIVE3 FRONTFEET FRONTFEET DEPTH DEPTH ACRES ACRES NEWPROPCLA NEWPROPCLA OWNERNAME1 OWNERNAME1 OWNERNAME2 OWNERNAME2 MAIL_ST_NB MAIL_ST_NB STREET STREET CITY_STATE CITY_STATE ZIPCODE ZIPCODE ZIP_4 ZIP_4 SCHOOLCODE SCHOOLCODE DEEDBOOK DEEDBOOK DEEDPAGE DEEDPAGE CUTOTALAV CUTOTALAV CULANDAV CULANDAV CNTYTAXABL CNTYTAXABL TOWNTAXABL TOWNTAXABL SCHOOLTAXA SCHOOLTAXA VILLTAXABL VILLTAXABL YEARBLT YEARBLT BLDG_STYLE BLDG_STYLE SFLA SFLA NOFIREPL NOFIREPL NOBEDS NOBEDS FULL_BATHS FULL_BATHS BSMNT_GAR BSMNT_GAR SWIS_CODE SWIS_CODE SECTION SECTION SUB_SECTIO SUB_SECTIO BLOCK BLOCK LOT LOT SUB_LOT SUB_LOT SUFFIX SUFFIX COM_YR_BLT COM_YR_BLT COM_FLAREA COM_FLAREA ADDRESS ADDRESS MUNI_NAME MUNI_NAME PO_BOX PO_BOX MAIL_UNIT1 MAIL_UNIT1 MAIL_UNIT2 MAIL_UNIT2 MAIL_ADD1 MAIL_ADD1 MAIL_ADD2 MAIL_ADD2 MAIL_ZIP MAIL_ZIP CITY_TOWN CITY_TOWN VILLAGE VILLAGE LAND_USE LAND_USE LU_GROUP LU_GROUP SCH_DIST SCH_DIST Sec_Block Sec_Block TAX_ID_1 TAX_ID_1 SBL SBL PNUMBR PNUMBR FullAddres FullAddres StNum StNum StName StName BlockLevel BlockLevel Owner Owner Owner2 Owner2 Add1 Add1 TaxBilling TaxBilling Add2 Add2 Add3 Add3 Add4 Add4 ZIP ZIP ZIP2 ZIP2 YearBuilt YearBuilt LandUse LandUse LUCODE LUCODE Units Units TNT TNT Census Census Neighborho Neighborho NRSA NRSA CommonCoun CommonCoun Zoning Zoning Ward Ward QUAD QUAD DOCE_Area DOCE_Area CountyLeg CountyLeg n_OpenViol n_OpenViol OpenCodeVi OpenCodeVi VacantBuil VacantBuil IPSVacant IPSVacant IPSConditi IPSConditi DVDATE DVDATE WaterServi WaterServi AssessedVa AssessedVa AssessedLa AssessedLa Seizable Seizable Phase Phase Bankruptcy Bankruptcy Amount_Del Amount_Del Redemption Redemption STARS STARS STARC STARC STAR STAR OverdueWat OverdueWat TaxTrust TaxTrust SENIOR_EXE SENIOR_EXE VET_EXEMPT VET_EXEMPT FRONTFEE_1 FRONTFEE_1 DEPTH_1 DEPTH_1 ACRES_1 ACRES_1 Assessment Assessment Longitude Longitude Latitude Latitude OccupancyS OccupancyS Occupancy Occupancy NAME NAME SBL_1 SBL_1 CLASSIFICA CLASSIFICA ADDRESS_1 ADDRESS_1 CROSS_ROAD CROSS_ROAD LAT LAT LONG LONG ObjectID_1 ObjectID_1 Shape__Are Shape__Are Shape__Len Shape__Len ParcelID ParcelID Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-836b24f8a4a3ddf9-0",
+    "title": "Code Violations",
+    "topic": "Housing",
+    "family": "code violations v2",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "See publisher description; record-level date range not verified",
+    "years": [],
+    "description": "The Division of Code Enforcement maintains the Housing and Property codes and enforces compliance with the Syracuse Zoning Ordinance, among other tasks. Code enforcement ensures that structures are maintained in such a way so that they are ",
+    "fields": "SBL SBL complaint_address complaint_address complaint_zip complaint_zip complaint_number complaint_number complaint_type_name complaint_type_name violation_id violation_id open_date open_date violation_number violation_number violation violation violation_date violation_date comply_by_date comply_by_date status_type_name status_type_name status_date status_date issued_to issued_to issued_to_address issued_to_address issued_to_city issued_to_city issued_to_zip issued_to_zip inspector_id inspector_id Neighborhood Neighborhood Vacant Vacant Latitude Latitude Longitude Longitude ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-6f26347153542403-0",
+    "title": "Parcel Map (2018 Q3)",
+    "topic": "Housing",
+    "family": "july2018parcels",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2018 (source title; completeness unverified)",
+    "years": [
+      "2018"
+    ],
+    "description": "Description: Parcel file reflecting all tax map parcels in the City of Syracuse joined to parcel-level data from multiple city departments including Assessment (property type, parcel dimensions, ownership information, year built), Water (wa",
+    "fields": "OBJECTID_1 OBJECTID_1 OBJECTID OBJECTID TAX_ID TAX_ID PRINTKEY PRINTKEY FRONTFEET FRONTFEET DEPTH DEPTH ACRES ACRES Sec_Block Sec_Block TAX_ID_1 TAX_ID_1 PNUMBR PNUMBR SBL SBL StNum StNum StName StName FullAdd FullAdd BlockLevel BlockLevel BlockLev_1 BlockLev_1 Owner Owner Owner2 Owner2 Add1 Add1 Add2 Add2 Add3 Add3 Add4 Add4 ZIP ZIP ZIP2 ZIP2 SURA_NRSA SURA_NRSA Nhood Nhood Quad Quad TNT_NAME TNT_NAME Special_Nh Special_Nh Assessment Assessment CensusTrac CensusTrac CC_Dist CC_Dist COUNTY_LEG COUNTY_LEG NumOpenVio NumOpenVio Condition Condition VacantBuil VacantBuil DVDATE DVDATE Occupancy Occupancy AmntDelinq AmntDelinq RedemptAmn RedemptAmn Seizable Seizable CityTaxabl CityTaxabl STARS STARS STARC STARC STAR STAR WaterServi WaterServi OverdueWat OverdueWat WARD WARD Bankruptcy Bankruptcy TaxTrust TaxTrust SENIOR_EXE SENIOR_EXE VET_EXEMPT VET_EXEMPT Redemption Redemption Phase Phase FRONTFEE_1 FRONTFEE_1 DEPTH_1 DEPTH_1 ACRES_1 ACRES_1 ZONEA ZONEA DIST DIST YearBuilt YearBuilt LUCODE LUCODE LandUse LandUse Units Units AssessedLa AssessedLa AssessedVa AssessedVa Shape__Area Shape__Area Shape__Length Shape__Length"
   },
   {
     "id": "arcgis-fa35b2a3aa362538-1",
@@ -6448,6 +7878,68 @@
     "fields": "Organization Organization Resource_ Resource Description Description Description_Cont_ DescriptionCont Address Address Location Location Phone__ Phone_ Email Email Website Website Hours Hours Transport Transport Languages_Spoken Languages Spoken Eligibility Eligibility MISC MISC FID FID"
   },
   {
+    "id": "arcgis-f72c18bdd79c1a6c-0",
+    "title": "Syracuse Parcel Map (2019 October)",
+    "topic": "Housing",
+    "family": "october 2019 parcel",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2019 (source title; completeness unverified)",
+    "years": [
+      "2019"
+    ],
+    "description": "Data Dictionary: Label Definition Sec_Block Section & Block numbers TAX_ID, TAX_ID_1 City Tax ID number (26 digit number used for parcel mapping) PRINTKEY Stands for Section, Block, Lot. This is a property tax number unique to this property",
+    "fields": "FID FID OBJECTID OBJECTID TAX_ID TAX_ID PRINTKEY PRINTKEY EASTGRID EASTGRID NORTHGRID NORTHGRID ADDRESSNUM ADDRESSNUM ADDRESSNAM ADDRESSNAM NARRATIVE1 NARRATIVE1 NARRATIVE2 NARRATIVE2 NARRATIVE3 NARRATIVE3 FRONTFEET FRONTFEET DEPTH DEPTH ACRES ACRES NEWPROPCLA NEWPROPCLA DEEDBOOK DEEDBOOK DEEDPAGE DEEDPAGE YEARBLT YEARBLT Label Label XCoord XCoord YCoord YCoord Longitude Longitude Latitude Latitude Sec_Block Sec_Block TAX_ID_1 TAX_ID_1 SBL SBL PNUMBR PNUMBR FullAddres FullAddres StNum StNum StName StName BlockLevel BlockLevel Owner Owner Owner2 Owner2 Add1 Add1 TaxBilling TaxBilling Add2 Add2 Add3 Add3 Add4 Add4 ZIP ZIP ZIP2 ZIP2 YearBuilt YearBuilt LandUse LandUse LUCODE LUCODE Units Units TNT TNT Census Census Neighborho Neighborho NRSA NRSA CommonCoun CommonCoun Zoning Zoning Ward Ward DOCE_Area DOCE_Area CountyLeg CountyLeg n_OpenViol n_OpenViol OpenCodeVi OpenCodeVi VacantBuil VacantBuil IPSVacant IPSVacant IPSConditi IPSConditi DVDATE DVDATE WaterServi WaterServi AssessedVa AssessedVa AssessedLa AssessedLa Seizable Seizable Phase Phase Bankruptcy Bankruptcy Amount_Del Amount_Del Redemption Redemption STARS STARS STARC STARC STAR STAR OverdueWat OverdueWat TaxTrust TaxTrust SENIOR_EXE SENIOR_EXE VET_EXEMPT VET_EXEMPT FRONTFEE_1 FRONTFEE_1 DEPTH_1 DEPTH_1 ACRES_1 ACRES_1 Assessment Assessment Longitud_1 Longitud_1 Latitude_1 Latitude_1 Occupancy Occupancy Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-ac96589ea314ee6d-0",
+    "title": "Syracuse Parcel Map (Q2 2018)",
+    "topic": "Housing",
+    "family": "parcel data april 2018",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2018 (source title; completeness unverified)",
+    "years": [
+      "2018"
+    ],
+    "description": "Data Dictionary: Label Definition TAX_ID City Tax ID number (26 digit number used for parcel mapping) PRINTKEY Abbreviated tax identification number (section-block-lot) Sec_Block Section and block TAX_ID_1 City Tax ID number (26 digit numbe",
+    "fields": "FID FID OBJECTID OBJECTID TAX_ID TAX_ID Shape_Leng Shape_Leng Shape_Area Shape_Area OID_ OID_ PRINTKEY PRINTKEY Sec_Block Sec_Block TAX_ID_12 TAX_ID_12 SURA SURA Nhood Nhood Quad Quad TNT_NAME TNT_NAME SpecialNh SpecialNh Assessment Assessment CensusTrac CensusTrac CC_Dist CC_Dist COUNTY_LEG COUNTY_LEG SEIZB SEIZB Owner Owner LUCODE LUCODE LandUse LandUse Units Units AmtDelinqu AmtDelinqu Totint Totint TotTaxOwed TotTaxOwed TaxYrsDeli TaxYrsDeli StNum StNum StName StName FullName FullName CodeViolat CodeViolat IPSOCV IPSOCV Condition Condition AssessedLa AssessedLa AssessedVa AssessedVa VacantBuil VacantBuil DVDATE DVDATE CityTaxabl CityTaxabl STARS STARS STARC STARC STAR STAR Owner2 Owner2 Add1 Add1 Add2 Add2 Add3 Add3 Add4 Add4 ZIP ZIP ZIP2 ZIP2 WaterServi WaterServi YearBuilt YearBuilt SALES SALES PNUMBR PNUMBR OverdueWat OverdueWat WARD WARD SBL SBL CountyTXBL CountyTXBL SchoolTXBL SchoolTXBL Bankruptcy Bankruptcy TOTSYR TOTSYR TOTONO TOTONO INTSYR INTSYR INTONO INTONO TaxTrust TaxTrust SENIOR_EXE SENIOR_EXE VET_EXE VET_EXE Redemption Redemption Phase Phase INNRSA INNRSA FRONTFEE_1 FRONTFEE_1 DEPTH_1 DEPTH_1 ACRES_1 ACRES_1 ZONEA ZONEA DIST DIST Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-f4275c00127ecdee-0",
+    "title": "Syracuse Parcel Map (Q3 2017)",
+    "topic": "Housing",
+    "family": "parcel data august 2017",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2017 (source title; completeness unverified)",
+    "years": [
+      "2017"
+    ],
+    "description": "Parcel dataset created by the Department of Neighborhood and Business Development. This dataset includes a large amount of information about each parcel (or area of land for properties) in the city. This dataset is updated quarterly. A data",
+    "fields": "OBJECTID_1 OBJECTID_1 OBJECTID OBJECTID TAX_ID TAX_ID Shape_Leng Shape_Leng PRINTKEY PRINTKEY Sec_Block Sec_Block TAX_ID_1 TAX_ID_1 SURA SURA Nhood Nhood Quad Quad TNT_NAME TNT_NAME SpecialNh SpecialNh Assessment Assessment CensusTrac CensusTrac CC_Dist CC_Dist COUNTY_LEG COUNTY_LEG SEIZB SEIZB Owner Owner LUCODE LUCODE LandUse LandUse Units Units TotTaxOwed TotTaxOwed TaxYrsDeli TaxYrsDeli StNum StNum StName StName FullAdd FullAdd Condition Condition AssessedLa AssessedLa AssessedVa AssessedVa VacantBuil VacantBuil CityTaxabl CityTaxabl STARS STARS STARC STARC STAR STAR Owner2 Owner2 Add1 Add1 Add2 Add2 Add3 Add3 Add4 Add4 ZIP ZIP ZIP2 ZIP2 WaterServi WaterServi YearBuilt YearBuilt SALES SALES PNUMBR PNUMBR OverdueWat OverdueWat WARD WARD SBL SBL CountyTXBL CountyTXBL SchoolTXBL SchoolTXBL Bankruptcy Bankruptcy TaxTrust TaxTrust SENIOR_EXE SENIOR_EXE VET_EXE VET_EXE INNRSA INNRSA Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-0f29aa774d732779-0",
+    "title": "Permit Requests",
+    "topic": "Housing",
+    "family": "permit requests",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "See publisher description; record-level date range not verified",
+    "years": [],
+    "description": "NOTICE: This dataset is not currently updating correctly and does not reflect current Permit Statistics. We hope to get this technical issue resolved shortly. In the interim, please direct all data requests to the Syracuse FOIL team. https:",
+    "fields": "Permit_Number Permit_Number Full_Address Full_Address Owner Owner Issue_Date Issue_Date Permit_Type Permit_Type Description_of_Work Description_of_Work LONG LONG LAT LAT ObjectId ObjectId"
+  },
+  {
     "id": "arcgis-5ff36b9afd8197f8-0",
     "title": "Phase 1 Parcels from SOCPA v2",
     "topic": "Housing",
@@ -6474,6 +7966,118 @@
     "years": [],
     "description": "Public ArcGIS layer. The source provides no description; scope needs review.",
     "fields": "FID FID FID_1 FID_1 OBJECTID OBJECTID TAX_ID TAX_ID PRINTKEY PRINTKEY EASTGRID EASTGRID NORTHGRID NORTHGRID ADDRESSNUM ADDRESSNUM ADDRESSNAM ADDRESSNAM NARRATIVE1 NARRATIVE1 NARRATIVE2 NARRATIVE2 NARRATIVE3 NARRATIVE3 FRONTFEET FRONTFEET DEPTH DEPTH ACRES ACRES NEWPROPCLA NEWPROPCLA OWNERNAME1 OWNERNAME1 OWNERNAME2 OWNERNAME2 MAIL_ST_NB MAIL_ST_NB STREET STREET CITY_STATE CITY_STATE ZIPCODE ZIPCODE ZIP_4 ZIP_4 SCHOOLCODE SCHOOLCODE DEEDBOOK DEEDBOOK DEEDPAGE DEEDPAGE CUTOTALAV CUTOTALAV CULANDAV CULANDAV CNTYTAXABL CNTYTAXABL TOWNTAXABL TOWNTAXABL SCHOOLTAXA SCHOOLTAXA VILLTAXABL VILLTAXABL YEARBLT YEARBLT BLDG_STYLE BLDG_STYLE SFLA SFLA NOFIREPL NOFIREPL NOBEDS NOBEDS FULL_BATHS FULL_BATHS BSMNT_GAR BSMNT_GAR SWIS_CODE SWIS_CODE SECTION SECTION SUB_SECTIO SUB_SECTIO BLOCK BLOCK LOT LOT SUB_LOT SUB_LOT SUFFIX SUFFIX COM_YR_BLT COM_YR_BLT COM_FLAREA COM_FLAREA ADDRESS ADDRESS MUNI_NAME MUNI_NAME PO_BOX PO_BOX MAIL_UNIT1 MAIL_UNIT1 MAIL_UNIT2 MAIL_UNIT2 MAIL_ADD1 MAIL_ADD1 MAIL_ADD2 MAIL_ADD2 MAIL_ZIP MAIL_ZIP CITY_TOWN CITY_TOWN VILLAGE VILLAGE LAND_USE LAND_USE LU_GROUP LU_GROUP SCH_DIST SCH_DIST Sec_Block Sec_Block TAX_ID_1 TAX_ID_1 SBL SBL PNUMBR PNUMBR FullAddres FullAddres StNum StNum StName StName Owner Owner Owner2 Owner2 Add1 Add1 TaxBilling TaxBilling Add2 Add2 Add3 Add3 Add4 Add4 ZIP ZIP ZIP2 ZIP2 YearBuilt YearBuilt LandUse LandUse LUCODE LUCODE Units Units Neighborho Neighborho VacantBuil VacantBuil DVDATE DVDATE WaterServi WaterServi AssessedVa AssessedVa AssessedLa AssessedLa Seizable Seizable Phase Phase Bankruptcy Bankruptcy Amount_Del Amount_Del Redemption Redemption STARS STARS STARC STARC STAR STAR OverdueWat OverdueWat TaxTrust TaxTrust SENIOR_EXE SENIOR_EXE VET_EXEMPT VET_EXEMPT OccupancyS OccupancyS Occupancy Occupancy FID_2 FID_2 ZONEA ZONEA DIST DIST Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-21f0773f2dbec197-0",
+    "title": "Syracuse Parcel Map (2023 Q4)",
+    "topic": "Housing",
+    "family": "qpd 2023 11 20 l1 odp ago",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2023 (source title; completeness unverified)",
+    "years": [
+      "2023"
+    ],
+    "description": "Data Dictionary: AttributeLabel Definition Source TAX_ID Unique 26 character property tax Onondaga County Planning PRINTKEY Abbreviated tax identification number (section-block-lot) Onondaga County Planning EASTGRID East grid coordinate of ",
+    "fields": "FID FID OBJECTID OBJECTID TAX_ID TAX_ID OBJECTID_1 OBJECTID_1 PRINTKEY PRINTKEY EASTGRID EASTGRID NORTHGRID NORTHGRID TAX_ID_1 TAX_ID_1 SBL SBL PNUMBR PNUMBR StNum StNum StName StName FullAddres FullAddres Zip Zip desc_1 desc_1 desc_2 desc_2 desc_3 desc_3 SHAPE_IND SHAPE_IND LUC_parcel LUC_parcel LU_parcel LU_parcel LUCat_Old LUCat_Old land_av land_av total_av total_av Owner Owner Add1_OwnPO Add1_OwnPO Add2_OwnSt Add2_OwnSt Add3_OwnUn Add3_OwnUn Add4_OwnCi Add4_OwnCi FRONT FRONT DEPTH_1 DEPTH_1 ACRES_1 ACRES_1 yr_built yr_built IPSVacant IPSVacant IPS_Condit IPS_Condit NREligible NREligible LPSS LPSS WTR_ACTIVE WTR_ACTIVE RNI RNI DPW_Quad DPW_Quad TNT_NAME TNT_NAME NHOOD NHOOD NRSA NRSA DOCE_Area DOCE_Area ZONE_DIST_ ZONE_DIST_ REZONE REZONE New_CC_DIS New_CC_DIS CTID_2020 CTID_2020 CTLAB_2020 CTLAB_2020 CT_2020 CT_2020 SpecNhood SpecNhood InPD InPD PDNAME PDNAME ELECT_DIST ELECT_DIST CITY_WARD CITY_WARD COUNTY_LEG COUNTY_LEG NYS_ASSEMB NYS_ASSEMB NYS_SENATE NYS_SENATE US_CONGR US_CONGR ObjectID_2 ObjectID_2 Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-b0a6926641791328-0",
+    "title": "Syracuse Parcel Map (2024 Q1)",
+    "topic": "Housing",
+    "family": "qpd 2024 04 05 l1 odp",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2024 (source title; completeness unverified)",
+    "years": [
+      "2024"
+    ],
+    "description": "Note: We are also including tabular version that’s slightly more comprehensive (would include anything that didn’t join to the parcel basefile due to lot alterations or resubdivisions since 2023 and/or due to parcels comprised of condos). T",
+    "fields": "FID FID OBJECTID OBJECTID TAX_ID TAX_ID OBJECTID_1 OBJECTID_1 PRINTKEY PRINTKEY ADDRESSNUM ADDRESSNUM ADDRESSNAM ADDRESSNAM TAX_ID_1 TAX_ID_1 SBL SBL PNUMBR PNUMBR StNum StNum StName StName FullAddres FullAddres Zip Zip desc_1 desc_1 desc_2 desc_2 desc_3 desc_3 SHAPE_IND SHAPE_IND LUC_parcel LUC_parcel LU_parcel LU_parcel LUCat_Old LUCat_Old land_av land_av total_av total_av Owner Owner Add1_OwnPO Add1_OwnPO Add2_OwnSt Add2_OwnSt Add3_OwnUn Add3_OwnUn Add4_OwnCi Add4_OwnCi FRONT FRONT DEPTH DEPTH ACRES ACRES yr_built yr_built n_ResUnits n_ResUnits IPSVacant IPSVacant IPS_Condit IPS_Condit NREligible NREligible LPSS LPSS WTR_ACTIVE WTR_ACTIVE RNI RNI DPW_Quad DPW_Quad TNT_NAME TNT_NAME NHOOD NHOOD NRSA NRSA DOCE_Area DOCE_Area ZONE_DIST_ ZONE_DIST_ REZONE REZONE New_CC_DIS New_CC_DIS CTID_2020 CTID_2020 CTLAB_2020 CTLAB_2020 CT_2020 CT_2020 SpecNhood SpecNhood InPD InPD PDNAME PDNAME ELECT_DIST ELECT_DIST CITY_WARD CITY_WARD COUNTY_LEG COUNTY_LEG NYS_ASSEMB NYS_ASSEMB NYS_SENATE NYS_SENATE US_CONGR US_CONGR ObjectID_2 ObjectID_2 Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-cd392195068599a4-0",
+    "title": "Syracuse Parcel Map (2024 Q3)",
+    "topic": "Housing",
+    "family": "qpd 2024 08 20 l1 odp",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2024 (source title; completeness unverified)",
+    "years": [
+      "2024"
+    ],
+    "description": "Note: We are also including a tabular version that’s slightly more comprehensive (would include anything that didn’t join to the parcel basefile due to lot alterations or resubdivisions since 2023 and/or due to parcels comprised of condos).",
+    "fields": "FID FID OBJECTID OBJECTID TAX_ID TAX_ID PRINTKEY PRINTKEY ADDRESSNUM ADDRESSNUM ADDRESSNAM ADDRESSNAM LAT LAT LONG LONG TAX_ID_1 TAX_ID_1 SBL SBL PNUMBR PNUMBR StNum StNum StName StName FullAddres FullAddres Zip Zip SpecNhood SpecNhood InPD InPD PDNAME PDNAME ELECT_DIST ELECT_DIST CITY_WARD CITY_WARD COUNTY_LEG COUNTY_LEG NYS_ASSEMB NYS_ASSEMB NYS_SENATE NYS_SENATE US_CONGR US_CONGR ObjectID_1 ObjectID_1 Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-282fcaa36cfa20d2-0",
+    "title": "Syracuse Parcel Map (2024 Q4)",
+    "topic": "Housing",
+    "family": "qpd 2025 01 02 l1 odp",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2024 (source title; completeness unverified)",
+    "years": [
+      "2024"
+    ],
+    "description": "Data Dictionary: Attribute Label Definition Source TAX_ID Unique 26 character property tax identification number Onondaga County Planning PRINTKEY Abbreviated tax identification number (section-block-lot) Onondaga County Planning ADDRESSNUM",
+    "fields": "FID FID TAX_ID TAX_ID SHAPE_Leng SHAPE_Leng SHAPE_Area SHAPE_Area PRINTKEY PRINTKEY ADDRESSNUM ADDRESSNUM ADDRESSNAM ADDRESSNAM TAX_ID_1 TAX_ID_1 SBL SBL PNUMBR PNUMBR StNum StNum StName StName FullAddres FullAddres Zip Zip desc_1 desc_1 desc_2 desc_2 desc_3 desc_3 SHAPE_IND SHAPE_IND LUC_parcel LUC_parcel LU_parcel LU_parcel LUCat_Old LUCat_Old land_av land_av total_av total_av Owner Owner Add1_OwnPO Add1_OwnPO Add2_OwnSt Add2_OwnSt Add3_OwnUn Add3_OwnUn Add4_OwnCi Add4_OwnCi FRONT FRONT DEPTH DEPTH ACRES ACRES yr_built yr_built n_ResUnits n_ResUnits IPSVacant IPSVacant IPS_Condit IPS_Condit NREligible NREligible LPSS LPSS WTR_ACTIVE WTR_ACTIVE RNI RNI DPW_Quad DPW_Quad DPW_Sani DPW_Sani DPW_Recycl DPW_Recycl TNT_NAME TNT_NAME NHOOD NHOOD NRSA NRSA DOCE_Insp1 DOCE_Insp1 DOCE_Insp2 DOCE_Insp2 DOCE_Permi DOCE_Permi DOCE_Comm DOCE_Comm FIRE_DIST FIRE_DIST ZONE_DIST_ ZONE_DIST_ REZONE REZONE CC_DIST CC_DIST CTID_2020 CTID_2020 CTLAB_2020 CTLAB_2020 CT_2020 CT_2020 SpecNhood SpecNhood InPD InPD PDNAME PDNAME ELECT_DIST ELECT_DIST CITY_WARD CITY_WARD COUNTY_LEG COUNTY_LEG NYS_ASSEMB NYS_ASSEMB NYS_SENATE NYS_SENATE US_CONGR US_CONGR LAT LAT LONG LONG Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-5f80dffa05554278-0",
+    "title": "Syracuse Parcel Map (2025 Q1)",
+    "topic": "Housing",
+    "family": "qpd 2025 05 05 l1 odp view",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2025 (source title; completeness unverified)",
+    "years": [
+      "2025"
+    ],
+    "description": "Data Dictionary: Attribute Label Definition Source TAX_ID Unique 26 character property tax identification number Onondaga County Planning PRINTKEY Abbreviated tax identification number (section-block-lot) Onondaga County Planning ADDRESSNUM",
+    "fields": "FID FID OBJECTID_1 OBJECTID_1 TAX_ID TAX_ID SHAPE_Leng SHAPE_Leng SHAPE_Area SHAPE_Area PRINTKEY PRINTKEY ADDRESSNUM ADDRESSNUM ADDRESSNAM ADDRESSNAM TAX_ID_1 TAX_ID_1 SBL SBL PNUMBR PNUMBR StNum StNum StName StName FullAddres FullAddres Zip Zip desc_1 desc_1 desc_2 desc_2 desc_3 desc_3 SHAPE_IND SHAPE_IND LUC_parcel LUC_parcel LU_parcel LU_parcel LUCat_Old LUCat_Old land_av land_av total_av total_av Owner Owner OwnerFullA OwnerFullA Add1_OwnPO Add1_OwnPO Add2_OwnSt Add2_OwnSt Add3_OwnUn Add3_OwnUn Add4_OwnCi Add4_OwnCi FRONT FRONT DEPTH DEPTH ACRES ACRES yr_built yr_built n_ResUnits n_ResUnits IPSVacant IPSVacant IPS_Condit IPS_Condit NREligible NREligible LPSS LPSS WTR_ACTIVE WTR_ACTIVE RNI RNI DPW_Quad DPW_Quad DPW_Sani DPW_Sani DPW_Recycl DPW_Recycl TNT_NAME TNT_NAME NHOOD NHOOD NRSA NRSA DOCE_Insp1 DOCE_Insp1 DOCE_Insp2 DOCE_Insp2 DOCE_Permi DOCE_Permi DOCE_Comm DOCE_Comm FIRE_DIST FIRE_DIST ZONE_DIST_ ZONE_DIST_ REZONE REZONE CC_DIST CC_DIST CTID_2020 CTID_2020 CTLAB_2020 CTLAB_2020 CT_2020 CT_2020 SpecNhood SpecNhood InPD InPD PDNAME PDNAME ELECT_DIST ELECT_DIST CITY_WARD CITY_WARD COUNTY_LEG COUNTY_LEG NYS_ASSEMB NYS_ASSEMB NYS_SENATE NYS_SENATE US_CONGR US_CONGR ObjectID_2 ObjectID_2 Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-26b72abe86a67826-0",
+    "title": "Syracuse Parcel Map (2025 Q4)",
+    "topic": "Housing",
+    "family": "qpd 2026 01 26 l1 odp view",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2025 (source title; completeness unverified)",
+    "years": [
+      "2025"
+    ],
+    "description": "Data Dictionary: Attribute Label Definition Source TAX_ID Unique 26 character property tax identification number Onondaga County Planning PRINTKEY Abbreviated tax identification number (section-block-lot) Onondaga County Planning ADDRESSNUM",
+    "fields": "FID FID OBJECTID_1 OBJECTID_1 TAX_ID TAX_ID PRINTKEY PRINTKEY ADDRESSNUM ADDRESSNUM ADDRESSNAM ADDRESSNAM LATITUDE LATITUDE LONGITUDE LONGITUDE SBL SBL PNUMBR PNUMBR StNum StNum StName StName FullAddres FullAddres Zip Zip desc_1 desc_1 desc_2 desc_2 desc_3 desc_3 SHAPE_IND SHAPE_IND LUC_parcel LUC_parcel LU_parcel LU_parcel LUCat_Old LUCat_Old land_av land_av total_av total_av Owner Owner OwnerFullA OwnerFullA Add1_OwnPO Add1_OwnPO Add2_OwnSt Add2_OwnSt Add3_OwnUn Add3_OwnUn Add4_OwnCi Add4_OwnCi FRONT FRONT DEPTH DEPTH ACRES ACRES yr_built yr_built n_ResUnits n_ResUnits IPSVacant IPSVacant IPS_Condit IPS_Condit NREligible NREligible LPSS LPSS WTR_ACTIVE WTR_ACTIVE RNI RNI DPW_Quad DPW_Quad DPW_Sani DPW_Sani DPW_Recycl DPW_Recycl TNT_NAME TNT_NAME NHOOD NHOOD NRSA NRSA DOCE_Insp1 DOCE_Insp1 DOCE_Insp2 DOCE_Insp2 DOCE_Permi DOCE_Permi DOCE_Comm DOCE_Comm FIRE_DIST FIRE_DIST ZONE_DIST_ ZONE_DIST_ REZONE REZONE CC_DIST CC_DIST CTID_2020 CTID_2020 CTLAB_2020 CTLAB_2020 CT_2020 CT_2020 SpecNhood SpecNhood InPD InPD PDNAME PDNAME ELECT_DIST ELECT_DIST CITY_WARD CITY_WARD COUNTY_LEG COUNTY_LEG NYS_ASSEMB NYS_ASSEMB NYS_SENATE NYS_SENATE US_CONGR US_CONGR Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-4d52cff58ad4cfdf-0",
+    "title": "Syracuse Parcel Map (2026 Q3)",
+    "topic": "Housing",
+    "family": "qpd 2026 10 19 l1 odp view",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2026 (source title; completeness unverified)",
+    "years": [
+      "2026"
+    ],
+    "description": "Data Dictionary: Attribute Label Definition Source TAX_ID Unique 26 character property tax identification number Onondaga County Planning PRINTKEY Abbreviated tax identification number (section-block-lot) Onondaga County Planning ADDRESSNUM",
+    "fields": "FID FID TAX_ID TAX_ID PRINTKEY PRINTKEY ADDRESSNUM ADDRESSNUM ADDRESSNAM ADDRESSNAM SBL SBL PNUMBR PNUMBR StNum StNum StName StName FullAddres FullAddres Zip Zip desc_1 desc_1 desc_2 desc_2 desc_3 desc_3 SHAPE_IND SHAPE_IND LUC_parcel LUC_parcel LU_parcel LU_parcel LUCat_Old LUCat_Old land_av land_av total_av total_av Owner Owner OwnerFullA OwnerFullA Add1_OwnPO Add1_OwnPO Add2_OwnSt Add2_OwnSt Add3_OwnUn Add3_OwnUn Add4_OwnCi Add4_OwnCi FRONT FRONT DEPTH DEPTH ACRES ACRES yr_built yr_built n_ResUnits n_ResUnits IPSVacant IPSVacant IPS_Condit IPS_Condit NREligible NREligible LPSS LPSS WTR_ACTIVE WTR_ACTIVE RNI RNI DPW_Quad DPW_Quad DPW_Sani DPW_Sani DPW_Recycl DPW_Recycl TNT_NAME TNT_NAME NHOOD NHOOD NRSA NRSA DOCE_Insp1 DOCE_Insp1 DOCE_Insp2 DOCE_Insp2 DOCE_Permi DOCE_Permi DOCE_Comm DOCE_Comm FIRE_DIST FIRE_DIST ZONE_DIST_ ZONE_DIST_ REZONE REZONE CC_DIST CC_DIST CTID_2020 CTID_2020 CTLAB_2020 CTLAB_2020 CT_2020 CT_2020 SpecNhood SpecNhood InPD InPD PDNAME PDNAME ELECT_DIST ELECT_DIST CITY_WARD CITY_WARD COUNTY_LEG COUNTY_LEG NYS_ASSEMB NYS_ASSEMB NYS_SENATE NYS_SENATE US_CONGR US_CONGR Shape__Area Shape__Area Shape__Length Shape__Length"
   },
   {
     "id": "arcgis-c3f896c640623639-0",
@@ -6594,6 +8198,52 @@
     "fields": "OBJECTID OBJECTID SBL SBL Ownername_1 Ownername_1 Property_Address Property_Address Municipality Municipality Landuse Landuse Acres Acres SEPTICKEY SEPTICKEY Shape__Area Shape__Area Shape__Length Shape__Length GlobalID GlobalID"
   },
   {
+    "id": "arcgis-68aef99222059b62-0",
+    "title": "Syracuse Parcel Map (2025 Q3)",
+    "topic": "Housing",
+    "family": "syracuse parcel map (2025 q3) view",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2025 (source title; completeness unverified)",
+    "years": [
+      "2025"
+    ],
+    "description": "Data Dictionary: Attribute Label Definition Source TAX_ID Unique 26 character property tax identification number Onondaga County Planning PRINTKEY Abbreviated tax identification number (section-block-lot) Onondaga County Planning ADDRESSNUM",
+    "fields": "FID FID OBJECTID_1 OBJECTID_1 TAX_ID TAX_ID PRINTKEY PRINTKEY ADDRESSNUM ADDRESSNUM ADDRESSNAM ADDRESSNAM LATITUDE LATITUDE LONGITUDE LONGITUDE SBL SBL PNUMBR PNUMBR StNum StNum StName StName FullAddres FullAddres Zip Zip desc_1 desc_1 desc_2 desc_2 desc_3 desc_3 SHAPE_IND SHAPE_IND LUC_parcel LUC_parcel LU_parcel LU_parcel LUCat_Old LUCat_Old land_av land_av total_av total_av Owner Owner OwnerFullA OwnerFullA Add1_OwnPO Add1_OwnPO Add2_OwnSt Add2_OwnSt Add3_OwnUn Add3_OwnUn Add4_OwnCi Add4_OwnCi FRONT FRONT DEPTH DEPTH ACRES ACRES yr_built yr_built n_ResUnits n_ResUnits IPSVacant IPSVacant IPS_Condit IPS_Condit NREligible NREligible LPSS LPSS WTR_ACTIVE WTR_ACTIVE RNI RNI DPW_Quad DPW_Quad DPW_Sani DPW_Sani DPW_Recycl DPW_Recycl TNT_NAME TNT_NAME NHOOD NHOOD NRSA NRSA DOCE_Insp1 DOCE_Insp1 DOCE_Insp2 DOCE_Insp2 DOCE_Permi DOCE_Permi DOCE_Comm DOCE_Comm FIRE_DIST FIRE_DIST ZONE_DIST_ ZONE_DIST_ REZONE REZONE CC_DIST CC_DIST CTID_2020 CTID_2020 CTLAB_2020 CTLAB_2020 CT_2020 CT_2020 SpecNhood SpecNhood InPD InPD PDNAME PDNAME ELECT_DIST ELECT_DIST CITY_WARD CITY_WARD COUNTY_LEG COUNTY_LEG NYS_ASSEMB NYS_ASSEMB NYS_SENATE NYS_SENATE US_CONGR US_CONGR Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-777bb91a2c892d3d-0",
+    "title": "Syracuse Rental Registry",
+    "topic": "Housing",
+    "family": "syracuse rental registry",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "See publisher description; record-level date range not verified",
+    "years": [],
+    "description": "The Rental Registry is a Periodic Inspection Program of the Division of Code Enforcement (DOCE). Owners of any one- or two-family non-owner occupied dwellings rented or leased within the City of Syracuse are required to apply for and obtain",
+    "fields": "SBL SBL PropertyAddress PropertyAddress zip zip NeedsRR NeedsRR inspect_period inspect_period completion_type_name completion_type_name completion_date completion_date valid_until valid_until RRisValid RRisValid RR_app_received RR_app_received RR_ext_insp_pass RR_ext_insp_pass RR_ext_insp_fail RR_ext_insp_fail RR_int_insp_fail RR_int_insp_fail RR_int_insp_pass RR_int_insp_pass RR_contact_name RR_contact_name pc_owner pc_owner Latitude Latitude Longitude Longitude SHAPE SHAPE ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-9333adcb7a8b1ccd-0",
+    "title": "Syracuse Zip Codes Map (2022)",
+    "topic": "Housing",
+    "family": "syracuse zip codes 2022 view",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2022 (source title; completeness unverified)",
+    "years": [
+      "2022"
+    ],
+    "description": "Map of Zip Code boundaries within the City of Syracuse is from Syracuse Onondaga County Planning Agency (SOCPA) and was last revised in 2017. Due to an increase in population or to the improve postal operations, the US Postal Service® will ",
+    "fields": "FID FID ZIP ZIP NAME NAME ZIP_Name ZIP_Name Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
     "id": "arcgis-b4f7c01dbe4e7039-0",
     "title": "Unduplicated Affordable Housing Units",
     "topic": "Housing",
@@ -6606,6 +8256,244 @@
     "years": [],
     "description": "Public ArcGIS layer. The source provides no description; scope needs review.",
     "fields": "FID FID OBJECTID OBJECTID TAX_ID TAX_ID Shape_Leng Shape_Leng Shape_Area Shape_Area PRINTKEY PRINTKEY Sec_Block Sec_Block TAX_ID_1 TAX_ID_1 SURA SURA Nhood Nhood Quad Quad TNT_NAME TNT_NAME SpecialNh SpecialNh Assessment Assessment CensusTrac CensusTrac CC_Dist CC_Dist COUNTY_LEG COUNTY_LEG SEIZB SEIZB Owner Owner LUCODE LUCODE LandUse LandUse Units Units AmtDelinqu AmtDelinqu Totint Totint TotTaxOw TotTaxOw TaxYrsDeli TaxYrsDeli StNum StNum StName StName FullAdd FullAdd CodeViolat CodeViolat IPSOCV IPSOCV Violat_inf Violat_inf Condition Condition AssessedLa AssessedLa AssessedVa AssessedVa VacantBuil VacantBuil DVDATE DVDATE CityTaxabl CityTaxabl STARS STARS STARC STARC STAR STAR Owner2 Owner2 Add1 Add1 Add2 Add2 Add3 Add3 Add4 Add4 ZIP ZIP ZIP2 ZIP2 WaterServi WaterServi SALES SALES PNUMBR PNUMBR OverdueWat OverdueWat WARD WARD SBL SBL CountyTXBL CountyTXBL SchoolTXBL SchoolTXBL Bankruptcy Bankruptcy TOTSYR TOTSYR TOTONO TOTONO INTSYR INTSYR INTONO INTONO TaxTrust TaxTrust SENIOR_EXE SENIOR_EXE VET_EXE VET_EXE Redemption Redemption Round Round Phase Phase ATFS ATFS OTHR_NOTIC OTHR_NOTIC INNRSA INNRSA Occupancy Occupancy BuildYear BuildYear PNUMBR_1 PNUMBR_1 UnDulicate UnDulicate Shape__Area Shape__Area Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-f3a7065320468c82-0",
+    "title": "Vacant Properties",
+    "topic": "Housing",
+    "family": "vacant properties",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "See publisher description; record-level date range not verified",
+    "years": [],
+    "description": "A list of the houses in Syracuse that have been identified as being vacant with the Department of Neighborhood & Business Development (NBD). This dataset also includes information about whether the home or business is on the Vacant Property",
+    "fields": "SBL SBL PropertyAddress PropertyAddress Zip Zip Owner Owner OwnerAddress OwnerAddress Vacant Vacant neighborhood neighborhood VPR_result VPR_result completion_date completion_date completion_type_name completion_type_name valid_until valid_until VPR_valid VPR_valid Latitude Latitude Longitude Longitude ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-9b857e72b377d3d6-0",
+    "title": "Crime Data 2022 - Part 1 Offenses (With Lat / Long Info)",
+    "topic": "Public safety",
+    "family": "2022 part 1 crimes geocoded locator",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2022 (source title; completeness unverified)",
+    "years": [
+      "2022"
+    ],
+    "description": "Description: This 2022 crime data is the list of crimes that the Syracuse Police Department responded to in 2022. These records does not include rape offenses as well as any crimes that have been sealed by the court. Crimes are reported to ",
+    "fields": "ObjectID ObjectID Loc_name Loc_name Status Status Score Score Match_type Match_type Match_addr Match_addr LongLabel LongLabel ShortLabel ShortLabel Addr_type Addr_type Type Type PlaceName PlaceName Place_addr Place_addr Phone Phone URL URL Rank Rank AddBldg BuildingName AddNum AddressNumber AddNumFrom AddNumFrom AddNumTo AddNumTo AddRange AddressRange Side Side StPreDir StPreDir StPreType StPreType StName StName StType StType StDir StDir BldgType BldgType BldgName BldgName LevelType LevelType LevelName LevelName UnitType UnitType UnitName UnitName SubAddr SubAddress StAddr StAddr Block Block Sector Sector Nbrhd Neighborhood District District City City MetroArea MetroArea Subregion Subregion Region Region RegionAbbr RegionAbbr Territory Territory Zone Zone Postal Postal PostalExt PostalExt Country Country LangCode LangCode Distance Distance X X Y Y DisplayX DisplayX DisplayY DisplayY Xmin Xmin Xmax Xmax Ymin Ymin Ymax Ymax ExInfo ExtraInfo IN_SingleLine Single Line Input USER_DATEEND DATEEND USER_TIMESTART TIMESTART USER_TIMEEND TIMEEND USER_ADDRESS ADDRESS USER_CODE_DEFINED CODE DEFINED USER_Arrest Arrest USER_LarcenyCode LarcenyCode"
+  },
+  {
+    "id": "arcgis-77d203fc67292c3e-0",
+    "title": "Crime Data 2018 - Part 1 Offenses (With Lat & Long Info)",
+    "topic": "Public safety",
+    "family": "ae11f8",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2018 (source title; completeness unverified)",
+    "years": [
+      "2018"
+    ],
+    "description": "This 2018 rime data is the list of crimes that the Syracuse Police Department responded to in 2018. These records does not include rape offenses as well as any crimes that have been sealed by the court. These records are derived from the re",
+    "fields": "OBJECTID OBJECTID DATEEND DATEEND TIMESTART TIMESTART TIMEEND TIMEEND ADDRESS ADDRESS CODE_DEFINED CODE_DEFINED ARREST ARREST"
+  },
+  {
+    "id": "arcgis-0a53dab052e7f3dc-0",
+    "title": "Crime Data 2023 - Part 1 Offenses (With Lat & Long Info)",
+    "topic": "Public safety",
+    "family": "crime data 1 auto update",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2023 (source title; completeness unverified)",
+    "years": [
+      "2023"
+    ],
+    "description": "Description: This 2023 crime data is the list of calls for service that the Syracuse Police Department responded to in 2023. These records does not include rape offenses as well as any crimes that have been sealed by the court. These record",
+    "fields": "DATEEND DATEEND TIMESTART TIMESTART TIMEEND TIMEEND ADDRESS ADDRESS Arrest Arrest LarcenyCode LarcenyCode CODE_DEFINED CODE_DEFINED LAT LAT LONG LONG ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-0896f7eea4e89229-0",
+    "title": "Crime Data 2017 (Part 1 Offenses)",
+    "topic": "Public safety",
+    "family": "crime data 2017 (part 1 offenses)",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2017 (source title; completeness unverified)",
+    "years": [
+      "2017"
+    ],
+    "description": "Description: This 2017 crime data is the list of crimes that the Syracuse Police Department responded to in 2017. These records does not include rape offenses as well as any crimes that have been sealed by the court. Crimes are reported to ",
+    "fields": "DATEEND DATEEND TIMESTART TIMESTART TIMEEND TIMEEND ADDRESS ADDRESS CODE_DEFINED CODE_DEFINED Attempt Attempt Arrest Arrest LarcenyCode LarcenyCode FID FID"
+  },
+  {
+    "id": "arcgis-afea5d5994690d1e-3",
+    "title": "Crime Data 2019 (Part 1 Offenses)",
+    "topic": "Public safety",
+    "family": "crime data 2019 part 1 offenses",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2019 (source title; completeness unverified)",
+    "years": [
+      "2019"
+    ],
+    "description": "Description: This 2019 crime data is the list of crimes that the Syracuse Police Department responded to in 2019. These records does not include rape offenses as well as any crimes that have been sealed by the court. Crimes are reported to ",
+    "fields": "DATEEND DATEEND TIMESTART TIMESTART TIMEEND TIMEEND ADDRESS ADDRESS CODE_DEFINED CODE DEFINED Arrest Arrest LarcenyCode LarcenyCode ObjectID ObjectID"
+  },
+  {
+    "id": "arcgis-6d37c77e913f1544-3",
+    "title": "Crime Data 2019 (Part 2 Offenses)",
+    "topic": "Public safety",
+    "family": "crime data 2019 part 2 offenses",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2019 (source title; completeness unverified)",
+    "years": [
+      "2019"
+    ],
+    "description": "Description: This 2019 crime data is the list of Part 2 crimes that the Syracuse Police Department responded to in 2019. Crimes are reported to the FBI in two major categories under the Uniform Crime Reports (UCR) specification: Part 1 and ",
+    "fields": "DATEEND DATEEND TIMESTART TIMESTART TIMEEND TIMEEND ADDRESS ADDRESS CODE_DEFINED CODE DEFINED QualityOfLife QualityOfLife ObjectID ObjectID"
+  },
+  {
+    "id": "arcgis-2c16542bdb40c0cf-0",
+    "title": "Crime Data 2020 (Part 2 Offenses)",
+    "topic": "Public safety",
+    "family": "crime data 2020 (part 2 offenses)",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2020 (source title; completeness unverified)",
+    "years": [
+      "2020"
+    ],
+    "description": "Description: This 2020 crime data is the list of Part 2 crimes that the Syracuse Police Department responded to in 2020. Crimes are reported to the FBI in two major categories under the Uniform Crime Reports (UCR) specification: Part 1 and ",
+    "fields": "DATEEND DATEEND TIMESTART TIMESTART TIMEEND TIMEEND ADDRESS ADDRESS CODE_DEFINED CODE_DEFINED QualityOfLife QualityOfLife FID FID"
+  },
+  {
+    "id": "arcgis-4394c73fb6596edd-0",
+    "title": "Crime Data 2020 (Part 1 Offenses)",
+    "topic": "Public safety",
+    "family": "crime data 2020 part 1 offenses",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2020 (source title; completeness unverified)",
+    "years": [
+      "2020"
+    ],
+    "description": "Description: This 2020 crime data is the list of crimes that the Syracuse Police Department responded to in 2020. These records does not include rape offenses as well as any crimes that have been sealed by the court. Crimes are reported to ",
+    "fields": "DATEEND DATEEND TIMESTART TIMESTART TIMEEND TIMEEND ADDRESS ADDRESS CODE_DEFINED CODE_DEFINED Attempt Attempt Arrest Arrest LarcenyCode LarcenyCode FID FID"
+  },
+  {
+    "id": "arcgis-10e0fdeb51ced6c0-0",
+    "title": "Crime Data 2021 (Part 2 Offenses)",
+    "topic": "Public safety",
+    "family": "crime data 2021 (part 2 offenses)",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2021 (source title; completeness unverified)",
+    "years": [
+      "2021"
+    ],
+    "description": "Description: This 2021 crime data is the list of Part 2 crimes that the Syracuse Police Department responded to in 2021. Crimes are reported to the FBI in two major categories under the Uniform Crime Reports (UCR) specification: Part 1 and ",
+    "fields": "DATEEND DATEEND TIMESTART TIMESTART TIMEEND TIMEEND ADDRESS ADDRESS CODE_DEFINED CODE_DEFINED QualityOfLife QualityOfLife FID FID"
+  },
+  {
+    "id": "arcgis-a3938466206f45dc-0",
+    "title": "Crime Data 2021 (Part 1 Offenses)",
+    "topic": "Public safety",
+    "family": "crime data 2021 part 1 offenses",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2021 (source title; completeness unverified)",
+    "years": [
+      "2021"
+    ],
+    "description": "Description: This 2021 crime data is the list of crimes that the Syracuse Police Department responded to in 2021. These records does not include rape offenses as well as any crimes that have been sealed by the court. Crimes are reported to ",
+    "fields": "DATEEND DATEEND TIMESTART TIMESTART TIMEEND TIMEEND ADDRESS ADDRESS CODE_DEFINED CODE DEFINED Arrest Arrest LarcenyCode LarcenyCode ObjectID ObjectID"
+  },
+  {
+    "id": "arcgis-d80056a8e956606a-0",
+    "title": "Crime Data 2023 Part 2 Offenses With Lat and Long",
+    "topic": "Public safety",
+    "family": "crime data 2023 part 2 offenses with lat and long",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2023 (source title; completeness unverified)",
+    "years": [
+      "2023"
+    ],
+    "description": "Description: This 2023 crime data is a list of Part 2 Offenses reported to the Syracuse Police Department (SPD), that were reported to have occurred in 2023. These records do not include rape offenses or any crimes that have been sealed by ",
+    "fields": "DATEEND DATEEND TIMESTART TIMESTART TIMEEND TIMEEND ADDRESS ADDRESS QualityOfLife QualityOfLife CODE_DEFINED CODE_DEFINED LAT LAT LONG LONG ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-ef1a82f2e99bd150-0",
+    "title": "Crime Data 2024 Part 1 Offenses With Lat and Long Info",
+    "topic": "Public safety",
+    "family": "crime data 2024 part 1 offenses with lat and long info",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2024 (source title; completeness unverified)",
+    "years": [
+      "2024"
+    ],
+    "description": "Description: This 2024 crime data is the list of calls for service that the Syracuse Police Department responded to in 2024. These records does not include rape offenses as well as any crimes that have been sealed by the court. These record",
+    "fields": "DATEEND DATEEND TIMESTART TIMESTART TIMEEND TIMEEND ADDRESS ADDRESS Arrest Arrest LarcenyCode LarcenyCode CODE_DEFINED CODE_DEFINED LAT LAT LONG LONG ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-f945aade6094604d-0",
+    "title": "Crime Data 2024 Part 2 Offenses With Lat and Long Info",
+    "topic": "Public safety",
+    "family": "crime data 2024 part 2 offenses with lat and long info",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2024 (source title; completeness unverified)",
+    "years": [
+      "2024"
+    ],
+    "description": "Description: This 2024 crime data is a list of Part 2 Offenses reported to the Syracuse Police Department (SPD), that were reported to have occurred in 2024. These records do not include rape offenses or any crimes that have been sealed by ",
+    "fields": "DATEEND DATEEND TIMESTART TIMESTART TIMEEND TIMEEND ADDRESS ADDRESS QualityOfLife QualityOfLife CODE_DEFINED CODE_DEFINED LAT LAT LONG LONG ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-f975b31e45ad1967-0",
+    "title": "Crime Data 2025 Part 1 Offenses With Lat and Long Info",
+    "topic": "Public safety",
+    "family": "crime data 2025 part 1 offenses with lat and long info",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2025 (source title; completeness unverified)",
+    "years": [
+      "2025"
+    ],
+    "description": "NOTICE : This dataset is not currently updating correctly and does not reflect current Crime Statistics. We hope to get this technical issue resolved shortly. In the interim, please direct all data requests to the Syracuse FOIL team. https:",
+    "fields": "DATEEND DATEEND TIMESTART TIMESTART TIMEEND TIMEEND ADDRESS ADDRESS CODE_DEFINED CODE_DEFINED LarcenyCode LarcenyCode Arrest Arrest LAT LAT LONG LONG ObjectId ObjectId"
   },
   {
     "id": "arcgis-f360ba32b22500d8-0",
@@ -6637,6 +8525,23 @@
     "years": [],
     "description": "Public ArcGIS layer. The source provides no description; scope needs review.",
     "fields": "OBJECTID_1 OBJECTID_1 STREET_ID STREET_ID STREET STREET L_F_ADD L_F_ADD L_T_ADD L_T_ADD R_F_ADD R_F_ADD R_T_ADD R_T_ADD L_MCDNAME L_MCDNAME R_MCDNAME R_MCDNAME PREFIX PREFIX NAME NAME TYPE TYPE SUFFIX SUFFIX CFCC CFCC ZIPL ZIPL ZIPR ZIPR ALT1_PREFI ALT1_PREFI ALT1_NAME ALT1_NAME ALT1_TYPE ALT1_TYPE ALT1_SUFFI ALT1_SUFFI ALT2_PREFI ALT2_PREFI ALT2_NAME ALT2_NAME ALT2_TYPE ALT2_TYPE ALT2_SUFFI ALT2_SUFFI ONE_WAY ONE_WAY SymbolID SymbolID R_F_ADD_Rounded_to_100_s_ R-F_ADD(Rounded to 100's) Full_Address Full_Address DATEEND DATEEND DRNUMB DRNUMB TIMESTART TIMESTART TIMEEND TIMEEND ADDRESS ADDRESS CODE_DEFINED CODE DEFINED Attempt Attempt Arrest Arrest LarcenyCode LarcenyCode ObjectID ObjectID Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-1c519b8d985fb582-0",
+    "title": "Fire Incidents (2008 - 2019)",
+    "topic": "Public safety",
+    "family": "fire incidents",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2008, 2019 (source title; completeness unverified)",
+    "years": [
+      "2008",
+      "2019"
+    ],
+    "description": "Description: The Syracuse Fire Department protects the entirety of the City of Syracuse and all of its inhabitants by providing fire protection and prevention services. It holds an ISO Class 1 rating. The data includes all fire incident res",
+    "fields": "incidentnumber incidentnumber alarmdate alarmdate arrivaldate arrivaldate lastunitcleareddate lastunitcleareddate station station shift shift incidenttype incidenttype propertyuse propertyuse compositeaddress compositeaddress postalcode postalcode X X Y Y ObjectId ObjectId"
   },
   {
     "id": "arcgis-462999c99e8182b9-0",
@@ -6697,6 +8602,20 @@
     "fields": "Station_Number Station Number Address Address Latitude Latitude Longitude Longitude Front_Line_Apparatus Front Line Apparatus ObjectId ObjectId GlobalID GlobalID"
   },
   {
+    "id": "arcgis-8d3dff427f4203ce-0",
+    "title": "Syracuse Fire Hydrants",
+    "topic": "Public safety",
+    "family": "syracuse fire hydrants (view layer)",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "See publisher description; record-level date range not verified",
+    "years": [],
+    "description": "Dataset of fire hydrants within the city of Syracuse. These only include ones that are owned by the Water Department and not any privately owned ones. Fire hydrants are primarily used by the Syracuse Fire Department, but can also be used by",
+    "fields": "OBJECTID OBJECTID Model Model Nozzle Nozzle Riser Riser Date_Set Date_Set Lock_on_Hydrant Lock_on_Hydrant GlobalID GlobalID Size_Tapped_From Size_Tapped_From Pressure_Zone Pressure_Zone Elevation Elevation Calc_PSI Calc_PSI Owner Owner Location Location Asset_ID Asset_ID"
+  },
+  {
     "id": "arcgis-7d0a49de0caa3df3-501007",
     "title": "WaterDistributionSystem b99ae583213e45bc9721a51eabe3d661 · Fire Hydrant",
     "topic": "Public safety",
@@ -6709,6 +8628,86 @@
     "years": [],
     "description": "Public ArcGIS layer. The source provides no description; scope needs review.",
     "fields": "OBJECTID Object ID assettype Asset type assetid Asset ID diameter Diameter secondarydiameter Nozzle Diameter manufacturer Manufacturer model Model installdate Install Date lifecyclestatus Lifecycle Status inservicedate In-Service Date retireddate Retired Date notes Notes lastmaint Last Maintenance ownedby Owned By maintby Maintained By spatialsource Spatial Source spatialconfidence Spatial Confidence symbolrotation Symbol Rotation globalid Global ID creationdate Creation date creator Creator lastupdate Last update updatedby Updated by ESRIGNSS_POSITIONSOURCETYPE Position source type ESRIGNSS_RECEIVER Receiver Name ESRIGNSS_LATITUDE Latitude ESRIGNSS_LONGITUDE Longitude ESRIGNSS_ALTITUDE Altitude ESRIGNSS_H_RMS Horizontal Accuracy (m) ESRIGNSS_V_RMS Vertical Accuracy (m) ESRIGNSS_FIXDATETIME Fix Time ESRIGNSS_FIXTYPE Fix Type ESRIGNSS_CORRECTIONAGE Correction Age ESRIGNSS_STATIONID Station ID ESRIGNSS_NUMSATS Number of Satellites ESRIGNSS_PDOP PDOP ESRIGNSS_HDOP HDOP ESRIGNSS_VDOP VDOP ESRIGNSS_DIRECTION Direction of travel (°) ESRIGNSS_SPEED Speed (km/h) ESRISNSR_AZIMUTH Compass reading (°) ESRIGNSS_AVG_H_RMS Average Horizontal Accuracy (m) ESRIGNSS_AVG_V_RMS Average Vertical Accuracy (m) ESRIGNSS_AVG_POSITIONS Averaged Positions ESRIGNSS_H_STDDEV Standard Deviation (m) assignmenttype Assignment Type assignmentdue Assignment Due assignedon Assigned On station Assigned Station shift Assigned Shift adoptionstatus Adoption Status nickname Nickname publicview Public View adoptedby Adopted By adoptedon Adopted On"
+  },
+  {
+    "id": "arcgis-3b8b1e2eac699f44-2",
+    "title": "Crime Data 2022 (Part 1 Offenses)",
+    "topic": "Public safety",
+    "family": "weekly part 1 crime offenses 2022",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2022 (source title; completeness unverified)",
+    "years": [
+      "2022"
+    ],
+    "description": "Description: This 2022 crime data is the list of crimes that the Syracuse Police Department responded to in 2022. These records does not include rape offenses as well as any crimes that have been sealed by the court. Crimes are reported to ",
+    "fields": "DATEEND DATEEND TIMESTART TIMESTART TIMEEND TIMEEND ADDRESS ADDRESS CODE_DEFINED CODE DEFINED Arrest Arrest LarcenyCode LarcenyCode ObjectID ObjectID"
+  },
+  {
+    "id": "arcgis-75b6f126c78987ed-0",
+    "title": "Weekly Part 1 Crime Offenses 2018",
+    "topic": "Public safety",
+    "family": "weekly part 1 offenses 2018",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2018 (source title; completeness unverified)",
+    "years": [
+      "2018"
+    ],
+    "description": "Description: This 2018 crime data is the list of crimes that the Syracuse Police Department responded to in 2018. These records does not include rape offenses as well as any crimes that have been sealed by the court. Crimes are reported to ",
+    "fields": "DATE DATE TIMESTART TIMESTART TIMEEND TIMEEND ADDRESS ADDRESS CODE_DEFINED CODE DEFINED Attempt Attempt Arrest Arrest LarcenyCode LarcenyCode FID FID"
+  },
+  {
+    "id": "arcgis-4ce651190fc82ee6-0",
+    "title": "Weekly Part 2 Crime Offenses 2017",
+    "topic": "Public safety",
+    "family": "weekly part 2 crime offenses",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2017 (source title; completeness unverified)",
+    "years": [
+      "2017"
+    ],
+    "description": "Description: This crime data is from 2017. Crimes are reported to the FBI in two major categories under the Uniform Crime Reports specification: Part 1 and Part 2 crimes. Part 1 crimes include criminal homicide, robbery, aggravated assault,",
+    "fields": "DATE DATE TIMESTART TIMESTART TIMEEND TIMEEND ADDRESS ADDRESS CODE_DEFINED CODE DEFINED QualityOfLife QualityOfLife FID FID"
+  },
+  {
+    "id": "arcgis-e906c1a71128c8a6-0",
+    "title": "Weekly Part 2 Crime Offenses 2018",
+    "topic": "Public safety",
+    "family": "weekly part offenses ii 2018",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2018 (source title; completeness unverified)",
+    "years": [
+      "2018"
+    ],
+    "description": "Description: This crime data is updated weekly. Crimes are reported to the FBI in two major categories under the Uniform Crime Reports specification: Part 1 and Part 2 crimes. Part 1 crimes include criminal homicide, robbery, aggravated ass",
+    "fields": "DATE DATE TIMESTART TIMESTART TIMEEND TIMEEND ADDRESS ADDRESS CODE_DEFINED CODE DEFINED QualityOfLife QualityOfLife FID FID"
+  },
+  {
+    "id": "arcgis-b3c9aa1c1644fce8-3",
+    "title": "Crime Data 2022 (Part 2 Offenses)",
+    "topic": "Public safety",
+    "family": "weeklyoffensesii cityhall",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2022 (source title; completeness unverified)",
+    "years": [
+      "2022"
+    ],
+    "description": "Description: This 2022 crime data is a list of Part 2 Offenses reported to the Syracuse Police Department (SPD), that were reported to have occurred in 2022. These records do not include rape offenses or any crimes that have been sealed by ",
+    "fields": "DATEEND DATEEND TIMESTART TIMESTART TIMEEND TIMEEND ADDRESS ADDRESS CODE_DEFINED CODE DEFINED QualityOfLife QualityOfLife ObjectID ObjectID"
   },
   {
     "id": "arcgis-08b125368870854e-0",
@@ -7005,6 +9004,22 @@
     "fields": "FID FID Name Name Shape__Len Shape__Len Shape__L_1 Shape__L_1 Shape__Length Shape__Length"
   },
   {
+    "id": "arcgis-ba1f764629c24ea5-0",
+    "title": "Road Ratings (2015)",
+    "topic": "Streets",
+    "family": "data",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2015 (source title; completeness unverified)",
+    "years": [
+      "2015"
+    ],
+    "description": "Data Dictionary: Label Definition block Block number of street streetName Street Name streetType Type of Street (Ave, St) streetDirection Direction of street (E, W, N, S) overall Overall rating of the road crack Amount of cracking on the ro",
+    "fields": "block block streetName streetName streetType streetType streetDirection streetDirection overall overall crack crack patch patch length length width width dateRated dateRated dateLastOverlay dateLastOverlay flushOil flushOil class class pavement pavement streetID streetID FID FID"
+  },
+  {
     "id": "arcgis-01cd9f22285be355-1",
     "title": "Food Truck · FoodTruckStreets",
     "topic": "Streets",
@@ -7201,6 +9216,22 @@
     "fields": "OBJECTID FID Name Name Priority_Type Priority_Type Priority_Group Priority_Group Shape__Length Shape__Length"
   },
   {
+    "id": "arcgis-4ac3bc96ef2b2679-0",
+    "title": "Potholes Filled (2018)",
+    "topic": "Streets",
+    "family": "potholes filled 2018",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2018 (source title; completeness unverified)",
+    "years": [
+      "2018"
+    ],
+    "description": "The Department of Public Works is responsible for filling potholes in the City, both in response to requests from constituents, as well as proactively. A row of data in this dataset is created automatically each time a pothole is filled. GP",
+    "fields": "TNT_NAME TNT_NAME activity_type activity_type address address date_fixed date_fixed latitude latitude longitude longitude repair_type repair_type truck_name truck_name FID FID"
+  },
+  {
     "id": "arcgis-699f758ef9f12f3b-5",
     "title": "Recycling Routes WFL1 · SyrStreets",
     "topic": "Streets",
@@ -7299,6 +9330,22 @@
     ],
     "description": "All Streets within NYS from clearinghouse portal. Direct link can be found below. Downloaded on 8/30/2023 and last updated on August 25, 2023 for the state and clipped to the Syracuse boundary.Original dataset: https://data.gis.ny.gov/datas",
     "fields": "OBJECTID OBJECTID DateModifi DateModifi NYSStreetI NYSStreetI LocalID LocalID LeftFromPr LeftFromPr RightFromP RightFromP LeftToPref LeftToPref RightToPre RightToPre LeftFromAd LeftFromAd LeftToAddr LeftToAddr RightFromA RightFromA RightToAdd RightToAdd CompleteSt CompleteSt PreModifie PreModifie PreDirecti PreDirecti PreType PreType SeparatorE SeparatorE StreetName StreetName PostType PostType PostDirect PostDirect PostModifi PostModifi SHIELD SHIELD HighwayNum HighwayNum Navigation Navigation JURISDICTI JURISDICTI FCC FCC ACC ACC SPEED SPEED OneWay OneWay FromZlev FromZlev ToZlev ToZlev FromToDire FromToDire ToFromDire ToFromDire FromToCost FromToCost ToFromCost ToFromCost LeftStateN LeftStateN RightState RightState LeftCounty LeftCounty RightCount RightCount LeftPostal LeftPostal RightPosta RightPosta LeftZipNam LeftZipNam RightZipNa RightZipNa LeftCityTo LeftCityTo RightCityT RightCityT LeftPlaceN LeftPlaceN RightPlace RightPlace LeftFIPS LeftFIPS RightFIPS RightFIPS GeometryAc GeometryAc GeometrySo GeometrySo NameSource NameSource AddressSou AddressSou Status Status CLDXF_PreD CLDXF_PreD CLDXF_Post CLDXF_Post CLDXF_Po_1 CLDXF_Po_1 Label Label LeftCountr LeftCountr RightCou_1 RightCou_1 LeftParity LeftParity RightParit RightParit LeftESN LeftESN RightESN RightESN LeftIncorp LeftIncorp RightIncor RightIncor LeftUninco LeftUninco RightUninc RightUninc LeftNeighb LeftNeighb RightNeigh RightNeigh LeftMSAGCo LeftMSAGCo RightMSAGC RightMSAGC Discrepanc Discrepanc Maintenanc Maintenanc LeftMunici LeftMunici RightMunic RightMunic LeftFrom_T LeftFrom_T LeftTo_Tex LeftTo_Tex RightFrom_ RightFrom_ RightTo_Te RightTo_Te CR_USERNAM CR_USERNAM CR_DATETIM CR_DATETIM AT_USERNAM AT_USERNAM AT_DATETIM AT_DATETIM SP_USERNAM SP_USERNAM SP_DATETIM SP_DATETIM USERNAME USERNAME Shape_Leng Shape_Leng Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-c58fd4973077fa4a-0",
+    "title": "Road Ratings (2017)",
+    "topic": "Streets",
+    "family": "road ratings 2017",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2017 (source title; completeness unverified)",
+    "years": [
+      "2017"
+    ],
+    "description": "Data Dictionary: Label Definition block Block number of street streetName Street Name streetType Type of Street (Ave, St) streetDirection Direction of street (E, W, N, S) overall Overall rating of the road crack Amount of cracking on the ro",
+    "fields": "block block streetName streetName streetType streetType streetDirection streetDirection overall overall crack crack patch patch length length width width dateRated dateRated dateLastOverlay dateLastOverlay flushOil flushOil class class pavement pavement streetID streetID FID FID"
   },
   {
     "id": "arcgis-d1738cefa1b26187-44",
@@ -7591,6 +9638,36 @@
     "fields": "OBJECTID OBJECTID DateModifi DateModifi NYSStreetI NYSStreetI LocalID LocalID LeftFromPr LeftFromPr RightFromP RightFromP LeftToPref LeftToPref RightToPre RightToPre LeftFromAd LeftFromAd LeftToAddr LeftToAddr RightFromA RightFromA RightToAdd RightToAdd CompleteSt CompleteSt PreModifie PreModifie PreDirecti PreDirecti PreType PreType SeparatorE SeparatorE StreetName StreetName PostType PostType PostDirect PostDirect PostModifi PostModifi SHIELD SHIELD HighwayNum HighwayNum Navigation Navigation JURISDICTI JURISDICTI FCC FCC ACC ACC SPEED SPEED OneWay OneWay FromZlev FromZlev ToZlev ToZlev FromToDire FromToDire ToFromDire ToFromDire FromToCost FromToCost ToFromCost ToFromCost LeftStateN LeftStateN RightState RightState LeftCounty LeftCounty RightCount RightCount LeftPostal LeftPostal RightPosta RightPosta LeftZipNam LeftZipNam RightZipNa RightZipNa LeftCityTo LeftCityTo RightCityT RightCityT LeftPlaceN LeftPlaceN RightPlace RightPlace LeftFIPS LeftFIPS RightFIPS RightFIPS GeometryAc GeometryAc GeometrySo GeometrySo NameSource NameSource AddressSou AddressSou Status Status CLDXF_PreD CLDXF_PreD CLDXF_Post CLDXF_Post CLDXF_Po_1 CLDXF_Po_1 Label Label LeftCountr LeftCountr RightCou_1 RightCou_1 LeftParity LeftParity RightParit RightParit LeftESN LeftESN RightESN RightESN LeftIncorp LeftIncorp RightIncor RightIncor LeftUninco LeftUninco RightUninc RightUninc LeftNeighb LeftNeighb RightNeigh RightNeigh LeftMSAGCo LeftMSAGCo RightMSAGC RightMSAGC Discrepanc Discrepanc Maintenanc Maintenanc LeftMunici LeftMunici RightMunic RightMunic LeftFrom_T LeftFrom_T LeftTo_Tex LeftTo_Tex RightFrom_ RightFrom_ RightTo_Te RightTo_Te CR_USERNAM CR_USERNAM CR_DATETIM CR_DATETIM AT_USERNAM AT_USERNAM AT_DATETIM AT_DATETIM SP_USERNAM SP_USERNAM SP_DATETIM SP_DATETIM USERNAME USERNAME Shape__Length Shape__Length"
   },
   {
+    "id": "arcgis-f7fc6cdfa31a7f24-0",
+    "title": "Syracuse Road Temperatures",
+    "topic": "Streets",
+    "family": "syracuse road temperatures",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "See publisher description; record-level date range not verified",
+    "years": [],
+    "description": "Hourly temperature data readings from Syracuse's Road temperature sensors. These have been placed at the locations below. These locations were picked because they are some of the steepest roads in Syracuse and the Department of Public Works",
+    "fields": "Date Date F43_001263__76_136971 43.001263,-76.136971 F616_Teall_Ave__Syracuse__NY_13 616 Teall Ave, Syracuse, NY 13206, USA F53_25_Harborside_Dr__Syracuse_ 53-25 Harborside Dr, Syracuse, NY 13290, USA F2121_23_South_Ave__Syracuse__N 2121-23 South Ave, Syracuse, NY 13207, USA F405_Seeley_Rd__Syracuse__NY_13 405 Seeley Rd, Syracuse, NY 13224, USA F700_Irving_Ave__Syracuse__NY_1 700 Irving Ave, Syracuse, NY 13210, USA F412_S_Avery_Ave__Syracuse__NY_ 412 S Avery Ave, Syracuse, NY 13219, USA F2112_S_Geddes_St__Syracuse__NY 2112 S Geddes St, Syracuse, NY 13207, USA F134_Prospect_Ave__Syracuse__NY 134 Prospect Ave, Syracuse, NY 13203, USA ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-5019dc018a80c5bd-0",
+    "title": "Sidewalk Inventory (2015)",
+    "topic": "Streets",
+    "family": "syracuse sidewalk ratings (2015)",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2015 (source title; completeness unverified)",
+    "years": [
+      "2015"
+    ],
+    "description": "Description: Sidewalk inventory for the City of Syracuse, largely based on aerials and supplemented by Google Street View photos. Some of the data in the inventory was field-verified. The \"SW_Score_Value\" field contains rough evaluations of",
+    "fields": "FID FID OBJECTID_1 OBJECTID_1 SW_Score_V SW_Score_Value NAME NAME Council_Di Council_District Assumed_Cl Adjacent_Park Assumed_Re Adjacent_School Mileage_20 Mileage_2018 Shape__Length Shape__Length"
+  },
+  {
     "id": "arcgis-ada81c7eb7cc3425-10",
     "title": "Syracuse Transportation Fatality Analysis WFL1 · SYR_Streets",
     "topic": "Streets",
@@ -7860,6 +9937,22 @@
     "fields": "OBJECTID_12 OBJECTID_12 FID_1 FID_1 STATEFP20 STATEFP20 COUNTYFP20 COUNTYFP20 TRACTCE20 TRACTCE20 GEOID20 GEOID20 NAME20 NAME20 NAMELSAD20 NAMELSAD20 MTFCC20 MTFCC20 FUNCSTAT20 FUNCSTAT20 ALAND20 ALAND20 AWATER20 AWATER20 INTPTLAT20 INTPTLAT20 INTPTLON20 INTPTLON20 SHAPE_Leng SHAPE_Leng More_hisch More_hisch Pct_lesshi Pct_lesshi Pct_mohi Pct_mohi pct_lanwel pct_lanwel Pct_umempl Pct_umempl Census_Tract Census Tract F201300_00_ 201300#00% F201400_00_ 201400#00% F201500_00_ 201500#00% F201600_00_ 201600#00% F201700_00_ 201700#00% F201800_00_ 201800#00% F201900_00_ 201900#00% F202000_00_ 202000#00% F202100_00_ 202100#00% ObjectID ObjectID PCT_year2022 pct_2022 Census_Tract_1 Census Tract year2013 year2013 year2014 year2014 year2015 year2015 year2016 year2016 year2017 year2017 year2018 year2018 year2019 year2019 year2020 year2020 year2021 year2021 year2022 year2022 F12 Null ObjectID_1 ObjectID Shape__Area Shape__Area Shape__Length Shape__Length"
   },
   {
+    "id": "arcgis-0e5614178704f629-0",
+    "title": "Skaneateles Lake Water Testing (2017)",
+    "topic": "Water & environment",
+    "family": "skaneateles lake water testing",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2017 (source title; completeness unverified)",
+    "years": [
+      "2017"
+    ],
+    "description": "This dataset details the results of water tests conducted in Skaneateles Lake related to blue-gree algae blooms and their potential affect of the city's water system. This dataset will continue to be updated with subsequent tests as they ar",
+    "fields": "DATE DATE SAMPLE_LOCATION SAMPLE LOCATION Test_Type Test Type Detection_Result Detection Result FID FID"
+  },
+  {
     "id": "arcgis-6f1d1fb2168c8443-10",
     "title": "Skaneateles Lake Watershed Online Map Layers WFL1 · SkaneatelesLake",
     "topic": "Water & environment",
@@ -7914,6 +10007,55 @@
     "years": [],
     "description": "Public ArcGIS layer. The source provides no description; scope needs review.",
     "fields": "OBJECTID OBJECTID FID_watershed_polygon FID_watershed_polygon AREA_ AREA PERIMETER PERIMETER WSHED_ WSHED_ WSHED_ID WSHED_ID mi2 mi2 GlobalID GlobalID Shape__Length Shape__Length"
+  },
+  {
+    "id": "arcgis-b6944f19a1bd173d-0",
+    "title": "Water Main Breaks (2004-2019)",
+    "topic": "Water & environment",
+    "family": "water main breaks",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2004, 2019 (source title; completeness unverified)",
+    "years": [
+      "2004",
+      "2019"
+    ],
+    "description": "This is a list of all confirmed water main breaks since 2006. Water mains are located underground and bring water from a source - in Syracuse's case, Skaneateles Lake - to all of the homes and buildings in the city. When a water main breaks",
+    "fields": "fullDate fullDate location location leakClass leakClass month month date date weekday weekday year year week week lon lon lat lat ObjectId ObjectId"
+  },
+  {
+    "id": "arcgis-cd3d1931186f2023-0",
+    "title": "Water Main Breaks (2021)",
+    "topic": "Water & environment",
+    "family": "water main breaks (2021)",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2021 (source title; completeness unverified)",
+    "years": [
+      "2021"
+    ],
+    "description": "This is a list of all confirmed water main breaks in 2021. Water mains are located underground and bring water from a source. In Syracuse's case, Skaneateles Lake - to all of the homes and buildings in the city. When a water main breaks, bu",
+    "fields": "FID FID Location Location Date Date Work_Order Work Order"
+  },
+  {
+    "id": "arcgis-dc1175e273307c6c-0",
+    "title": "Water Main Breaks (2022)",
+    "topic": "Water & environment",
+    "family": "water main breaks (2022)",
+    "format": "ArcGIS API",
+    "membership": "official-catalog",
+    "availability": "available",
+    "curated": false,
+    "coverage": "2022 (source title; completeness unverified)",
+    "years": [
+      "2022"
+    ],
+    "description": "Description: Water mains are located underground and bring water from a source. In Syracuse's case, Skaneateles Lake - to all of the homes and buildings in the city. When a water main breaks, buildings can lose access to water, and normally",
+    "fields": "FID FID Descriptio Descriptio Actual_Fin Actual_Fin Address Address Location Location X X Y Y"
   },
   {
     "id": "arcgis-7d0a49de0caa3df3-505003",

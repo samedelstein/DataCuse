@@ -70,7 +70,7 @@ def membership(url, item_id, feed_urls, feed_ids):
 
 def topic(name):
     name = name.lower()
-    for words, label in [('fire police crime rtk', 'Public safety'), ('pothole road street sidewalk traffic', 'Streets'), ('housing compliance parcel property code vacant', 'Housing'), ('water lead watershed sewer', 'Water & environment'), ('budget fund finance', 'City finances')]:
+    for words, label in [('fire police crime rtk', 'Public safety'), ('pothole road street sidewalk traffic', 'Streets'), ('housing compliance parcel property code vacant rental permit', 'Housing'), ('water lead watershed sewer', 'Water & environment'), ('budget fund finance', 'City finances')]:
         if any(w in name for w in words.split()):
             return label
     return 'City & neighborhoods'
@@ -147,7 +147,10 @@ def collect(output, baseline):
             index = next(i for i, r in enumerate(rows) if r['id'] == old['id'])
             failed = rows[index]
             rows[index] = dict(old, availability='unavailable', checked_at=failed['checked_at'], error=failed.get('error'), last_successful_check=old.get('last_successful_check') or old['checked_at'], membership=failed['membership'])
-    candidate = {'version': 1, 'checked_at': now(), 'official_feed': FEED, 'directory_url': DIRECTORY, 'official_entry_count': len(feed['data']['dataset']), 'services': roots, 'datasets': rows}
+    from official import augment
+    rows, official_report = augment(feed, rows, roots, raw)
+    write(output / 'official-report.json', official_report)
+    candidate = {'official_checked_at': feed['checked_at'], 'version': 1, 'checked_at': now(), 'official_feed': FEED, 'directory_url': DIRECTORY, 'official_entry_count': len(feed['data']['dataset']), 'services': roots, 'datasets': rows}
     write(output / 'catalog.json', candidate)
     write(output / 'report.json', {'status': 'candidate-only', 'checked_at': candidate['checked_at'], 'changes': differences(prior, candidate), 'service_count': len(roots), 'layer_count': len(rows), 'errors': [r['id'] for r in rows if r['availability'] != 'available']})
     print(f'Candidate saved: {len(roots)} services, {len(rows)} layers. Approved data unchanged.')

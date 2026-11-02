@@ -86,10 +86,15 @@ class ArtifactTests(unittest.TestCase):
         self.assertEqual([r['id'] for r in discovery['datasets']],[r['id'] for r in self.rows])
         self.assertEqual(gzip.decompress((ROOT/'catalog-full.json.gz').read_bytes()),(ROOT/'catalog-full.json').read_bytes())
         for summary in discovery['datasets']:
+            self.assertEqual(urlsplit(summary['metadata_url']).netloc, 'www.datacuse.com')
+            self.assertEqual(urlsplit(summary['page_url']).netloc, 'www.datacuse.com')
+            if summary['membership'] == 'official-catalog':
+                self.assertEqual(urlsplit(summary['portal_url']).netloc, 'data.syr.gov')
             relative=urlsplit(summary['metadata_url']).path.split('/projects/open-data-library/',1)[1]
             meta=json.loads((ROOT/relative).read_text(encoding='utf-8'))
             self.assertEqual(summary['description'],meta['description'][:240])
-            self.assertTrue(meta['fields'])
+            if meta['availability'] == 'available':
+                self.assertTrue(meta['fields'])
             for key in ('id','title','availability','membership','checked_at','coverage'):
                 self.assertEqual(summary[key],meta[key])
 

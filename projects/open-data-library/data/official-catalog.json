@@ -1,80 +1,14 @@
 {
   "url": "https://data.syr.gov/api/feed/dcat-us/1.1.json",
-  "checked_at": "2026-11-01T23:53:40.271185+00:00",
+  "checked_at": "2026-11-02T19:46:41.084858+00:00",
   "http_status": 200,
-  "sha256": "61f61b35631c8ec6980a06e3702cda5a3b3c6627ba5db16d472d5d363759d200",
+  "sha256": "8c18ca34846ea242550d4df089b1800fee35872db4e73600de9fbc91948b4dbe",
   "data": {
     "@context": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld",
     "@type": "dcat:Catalog",
     "conformsTo": "https://project-open-data.cio.gov/v1.1/schema",
     "describedBy": "https://project-open-data.cio.gov/v1.1/schema/catalog.json",
     "dataset": [
-      {
-        "@type": "dcat:Dataset",
-        "identifier": "https://www.arcgis.com/home/item.html?id=63d339b7e99a49f7abc603bf29ba2b1c",
-        "landingPage": "https://data.syr.gov/pages/63d339b7e99a49f7abc603bf29ba2b1c",
-        "title": "External Data Resources",
-        "description": "This page contains outside data and resources.",
-        "keyword": [
-          ""
-        ],
-        "issued": "2022-06-27T13:34:36.000Z",
-        "modified": "2026-10-30T20:18:38.000Z",
-        "publisher": {
-          "name": "{{source}}"
-        },
-        "contactPoint": {
-          "@type": "vcard:Contact",
-          "fn": "admin_syr",
-          "hasEmail": "{{orgContactEmail}}"
-        },
-        "accessLevel": "public",
-        "spatial": "",
-        "license": "",
-        "distribution": [
-          {
-            "@type": "dcat:Distribution",
-            "title": "ArcGIS Hub Dataset",
-            "format": "Web Page",
-            "mediaType": "text/html",
-            "accessURL": "https://data.syr.gov/pages/63d339b7e99a49f7abc603bf29ba2b1c"
-          }
-        ],
-        "theme": ""
-      },
-      {
-        "@type": "dcat:Dataset",
-        "identifier": "https://www.arcgis.com/home/item.html?id=afce4a265ce74079a3da892f25b7525d",
-        "landingPage": "https://data.syr.gov/pages/afce4a265ce74079a3da892f25b7525d",
-        "title": "Open Data with Python",
-        "description": "Tutorial using data from Open Data Syracuse using Python and the Folium library for mapping.",
-        "keyword": [
-          ""
-        ],
-        "issued": "2022-07-05T21:43:58.000Z",
-        "modified": "2026-10-30T17:02:34.000Z",
-        "publisher": {
-          "name": "{{source}}"
-        },
-        "contactPoint": {
-          "@type": "vcard:Contact",
-          "fn": "admin_syr",
-          "hasEmail": "{{orgContactEmail}}"
-        },
-        "accessLevel": "public",
-        "spatial": "",
-        "license": "",
-        "distribution": [
-          {
-            "@type": "dcat:Distribution",
-            "title": "ArcGIS Hub Dataset",
-            "format": "Web Page",
-            "mediaType": "text/html",
-            "accessURL": "https://data.syr.gov/pages/afce4a265ce74079a3da892f25b7525d"
-          }
-        ],
-        "theme": ""
-      },
       {
         "@type": "dcat:Dataset",
         "identifier": "https://www.arcgis.com/home/item.html?id=c23882a4f7904747ab7a4cab637d912d&sublayer=0",
@@ -86,7 +20,7 @@
           "Properties"
         ],
         "issued": "2024-05-14T15:02:29.000Z",
-        "modified": "2026-10-30T08:10:40.609Z",
+        "modified": "2026-11-02T09:11:28.637Z",
         "publisher": {
           "name": "City of Syracuse"
         },
@@ -157,7 +91,7 @@
           "Registry"
         ],
         "issued": "2024-06-17T19:56:07.000Z",
-        "modified": "2026-10-30T08:09:51.593Z",
+        "modified": "2026-11-02T09:10:09.055Z",
         "publisher": {
           "name": "City of Syracuse"
         },
@@ -337,7 +271,7 @@
           "Violation"
         ],
         "issued": "2024-11-08T15:51:28.000Z",
-        "modified": "2026-10-30T08:07:48.598Z",
+        "modified": "2026-11-02T09:08:00.457Z",
         "publisher": {
           "name": "City of Syracuse"
         },
@@ -446,7 +380,7 @@
           "code enforcment"
         ],
         "issued": "2022-10-31T14:11:22.000Z",
-        "modified": "2026-10-30T08:02:50.434Z",
+        "modified": "2026-11-02T09:02:54.122Z",
         "publisher": {
           "name": "City of Syracuse"
         },
@@ -554,7 +488,7 @@
           "Zoning"
         ],
         "issued": "2023-04-25T20:43:56.000Z",
-        "modified": "2026-10-30T08:02:37.478Z",
+        "modified": "2026-11-02T09:02:40.941Z",
         "publisher": {
           "name": "City of Syracuse"
         },
@@ -660,7 +594,7 @@
           "Violations"
         ],
         "issued": "2024-11-13T18:55:42.000Z",
-        "modified": "2026-10-30T08:02:06.794Z",
+        "modified": "2026-11-02T09:02:13.072Z",
         "publisher": {
           "name": "City of Syracuse"
         },
@@ -754,6 +688,72 @@
         "theme": [
           "geospatial"
         ]
+      },
+      {
+        "@type": "dcat:Dataset",
+        "identifier": "https://www.arcgis.com/home/item.html?id=63d339b7e99a49f7abc603bf29ba2b1c",
+        "landingPage": "https://data.syr.gov/pages/63d339b7e99a49f7abc603bf29ba2b1c",
+        "title": "External Data Resources",
+        "description": "This page contains outside data and resources.",
+        "keyword": [
+          ""
+        ],
+        "issued": "2022-06-27T13:34:36.000Z",
+        "modified": "2026-10-30T20:18:38.000Z",
+        "publisher": {
+          "name": "{{source}}"
+        },
+        "contactPoint": {
+          "@type": "vcard:Contact",
+          "fn": "admin_syr",
+          "hasEmail": "{{orgContactEmail}}"
+        },
+        "accessLevel": "public",
+        "spatial": "",
+        "license": "",
+        "distribution": [
+          {
+            "@type": "dcat:Distribution",
+            "title": "ArcGIS Hub Dataset",
+            "format": "Web Page",
+            "mediaType": "text/html",
+            "accessURL": "https://data.syr.gov/pages/63d339b7e99a49f7abc603bf29ba2b1c"
+          }
+        ],
+        "theme": ""
+      },
+      {
+        "@type": "dcat:Dataset",
+        "identifier": "https://www.arcgis.com/home/item.html?id=afce4a265ce74079a3da892f25b7525d",
+        "landingPage": "https://data.syr.gov/pages/afce4a265ce74079a3da892f25b7525d",
+        "title": "Open Data with Python",
+        "description": "Tutorial using data from Open Data Syracuse using Python and the Folium library for mapping.",
+        "keyword": [
+          ""
+        ],
+        "issued": "2022-07-05T21:43:58.000Z",
+        "modified": "2026-10-30T17:02:34.000Z",
+        "publisher": {
+          "name": "{{source}}"
+        },
+        "contactPoint": {
+          "@type": "vcard:Contact",
+          "fn": "admin_syr",
+          "hasEmail": "{{orgContactEmail}}"
+        },
+        "accessLevel": "public",
+        "spatial": "",
+        "license": "",
+        "distribution": [
+          {
+            "@type": "dcat:Distribution",
+            "title": "ArcGIS Hub Dataset",
+            "format": "Web Page",
+            "mediaType": "text/html",
+            "accessURL": "https://data.syr.gov/pages/afce4a265ce74079a3da892f25b7525d"
+          }
+        ],
+        "theme": ""
       },
       {
         "@type": "dcat:Dataset",

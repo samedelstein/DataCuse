@@ -5,7 +5,7 @@ export function matches(row, query) {
   return query.toLowerCase().trim().split(/\s+/).filter(Boolean).every((word) => [word, ...(synonyms[word] || '').split(' ').filter(Boolean)].some((term) => haystack.includes(term)));
 }
 export function filterRows(rows, state) {
-  return rows.filter((row) => (state.scope === 'all' || (row.curated && row.membership !== 'official-catalog' && row.availability === 'available')) && (!state.topic || row.topic === state.topic) && (!state.year || row.years.includes(state.year)) && (!state.format || row.format === state.format) && (!state.availability || row.availability === state.availability) && matches(row, state.q || ''));
+  return rows.filter((row) => (state.scope === 'all' || (state.scope === 'official' ? row.membership === 'official-catalog' : state.scope === 'additional' ? row.curated && row.membership !== 'official-catalog' && row.availability === 'available' : (row.curated || row.membership === 'official-catalog') && row.availability === 'available')) && (!state.topic || row.topic === state.topic) && (!state.year || row.years.includes(state.year)) && (!state.format || row.format === state.format) && (!state.availability || row.availability === state.availability) && matches(row, state.q || ''));
 }
 const form = typeof document === 'undefined' ? null : document.querySelector('#search-form');
 if (form) {
@@ -19,8 +19,8 @@ if (form) {
     const current = state();
     const filtered = filterRows(rows, current);
     page = Math.min(page, Math.max(1, Math.ceil(filtered.length / pageSize)));
-    count.textContent = `${filtered.length} ${filtered.length === 1 ? 'table or layer' : 'tables and layers'} · ${current.scope === 'all' ? 'full directory' : 'selected collection'}`;
-    results.innerHTML = filtered.slice((page - 1) * pageSize, page * pageSize).map((r) => `<article class="card"><div class="topic">${escapeHtml(r.topic)}</div><h3><a href="datasets/${r.id}/">${escapeHtml(r.title)}</a></h3><p>${escapeHtml(r.description)}</p><div class="meta">${escapeHtml(r.coverage)}</div><div class="foot"><span class="tag">${escapeHtml(r.format)}</span><span>${r.availability !== 'available' ? escapeHtml(r.availability) : r.curated ? 'Source reviewed' : 'Metadata only'} ↗</span></div></article>`).join('') || '<div class="empty"><h3>No matches yet.</h3><p>Try fewer words, clear a filter, or switch to the full directory.</p><button class="text-button" id="empty-reset">Clear filters</button></div>';
+    count.textContent = `${filtered.length} ${filtered.length === 1 ? 'table or layer' : 'tables and layers'} · ${({all:'full directory',official:'city portal',additional:'additional selected sources',curated:'city portal + selected extras'})[current.scope]}`;
+    results.innerHTML = filtered.slice((page - 1) * pageSize, page * pageSize).map((r) => `<article class="card"><div class="topic">${escapeHtml(r.topic)}</div><h3><a href="datasets/${r.id}/">${escapeHtml(r.title)}</a></h3><p>${escapeHtml(r.description)}</p><div class="meta">${escapeHtml(r.coverage)}</div><div class="foot"><span class="tag">${escapeHtml(r.format)}</span><span>${r.availability !== 'available' ? escapeHtml(r.availability) : r.membership === 'official-catalog' ? 'City portal' : r.curated ? 'Additional source' : 'Metadata only'} ↗</span></div></article>`).join('') || '<div class="empty"><h3>No matches yet.</h3><p>Try fewer words, clear a filter, or switch to the full directory.</p><button class="text-button" id="empty-reset">Clear filters</button></div>';
     document.querySelector('#page-label').textContent = `Page ${page} of ${Math.max(1, Math.ceil(filtered.length / pageSize))}`;
     document.querySelector('#previous').disabled = page === 1;
     document.querySelector('#next').disabled = page * pageSize >= filtered.length;
