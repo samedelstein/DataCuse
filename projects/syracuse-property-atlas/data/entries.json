@@ -1,5 +1,271 @@
 [
   {
+    "address": "1153 Lemoyne Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Large bare tree in the foreground partially obstructs the facade view.",
+        "Season appears to be late autumn/winter, leaving trees bare and ground covered with leaf litter."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "poor",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.12,
+            "width": 0.18,
+            "x": 0.38,
+            "y": 0.56
+          },
+          "confidence": "high",
+          "label": "Boarded-up window/door",
+          "reason": "Visible plywood sheeting covering front windows and entry area on porch"
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Boarded-up windows and entrance along the front porch"
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The property appears to be a single-family house with visible boarded openings on the front porch, partially obscured by a large foreground tree.",
+      "visible_conditions": [
+        "Plywood panels/boarded openings visible across front porch windows and entry area",
+        "Front porch with concrete steps leading to the main entrance",
+        "Large mature tree in the front yard obscuring portions of the facade",
+        "Fallen leaves and minor yard clutter present around the base of the tree"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "yes",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Code violations: 5 matching records",
+      "Image-only flag: Boarded-up windows and entrance along the front porch",
+      "Needs human review"
+    ],
+    "id": 1029,
+    "image": "images/parcel-001029.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 140145,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07989330146268,
+    "lon": -76.15457010101586,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07990449,
+          "Longitude": -76.15461275,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 144677,
+          "SBL": "003.-19-20.0",
+          "Vacant": null,
+          "complaint_address": "1153 Lemoyne Ave",
+          "complaint_number": "V2022-0161",
+          "complaint_type_name": "Vacant House",
+          "complaint_zip": 13208,
+          "comply_by_date": 1651482042000,
+          "inspector_id": 910,
+          "issued_to": "Justin Daniels",
+          "issued_to_address": "4273 Old Meadow Rd",
+          "issued_to_city": "Clay",
+          "issued_to_zip": "13041",
+          "open_date": 1649635200000,
+          "status_date": 1669680000000,
+          "status_type_name": "Closed",
+          "violation": "2020 PMCNYS - Section 304.13 - Window, skylight, and door frames",
+          "violation_date": 1649667815000,
+          "violation_id": 130487,
+          "violation_number": "2022-06085"
+        },
+        {
+          "Latitude": 43.07990449,
+          "Longitude": -76.15461275,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 144678,
+          "SBL": "003.-19-20.0",
+          "Vacant": null,
+          "complaint_address": "1153 Lemoyne Ave",
+          "complaint_number": "V2022-0161",
+          "complaint_type_name": "Vacant House",
+          "complaint_zip": 13208,
+          "comply_by_date": 1651482042000,
+          "inspector_id": 910,
+          "issued_to": "Justin Daniels",
+          "issued_to_address": "4273 Old Meadow Rd",
+          "issued_to_city": "Clay",
+          "issued_to_zip": "13041",
+          "open_date": 1649635200000,
+          "status_date": 1669680000000,
+          "status_type_name": "Closed",
+          "violation": "2020 PMCNYS - Section 304.2 - Protective Treatment",
+          "violation_date": 1649667724000,
+          "violation_id": 130486,
+          "violation_number": "2022-06084"
+        },
+        {
+          "Latitude": 43.07990449,
+          "Longitude": -76.15461275,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 144679,
+          "SBL": "003.-19-20.0",
+          "Vacant": null,
+          "complaint_address": "1153 Lemoyne Ave",
+          "complaint_number": "V2022-0161",
+          "complaint_type_name": "Vacant House",
+          "complaint_zip": 13208,
+          "comply_by_date": 1651482042000,
+          "inspector_id": 910,
+          "issued_to": "Justin Daniels",
+          "issued_to_address": "4273 Old Meadow Rd",
+          "issued_to_city": "Clay",
+          "issued_to_zip": "13041",
+          "open_date": 1649635200000,
+          "status_date": 1669680000000,
+          "status_type_name": "Closed",
+          "violation": "2020 PMCNYS - Section 304.6 - Exterior Walls",
+          "violation_date": 1649667636000,
+          "violation_id": 130485,
+          "violation_number": "2022-06083"
+        },
+        {
+          "Latitude": 43.07990449,
+          "Longitude": -76.15461275,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 144680,
+          "SBL": "003.-19-20.0",
+          "Vacant": null,
+          "complaint_address": "1153 Lemoyne Ave",
+          "complaint_number": "V2022-0161",
+          "complaint_type_name": "Vacant House",
+          "complaint_zip": 13208,
+          "comply_by_date": 1650272363000,
+          "inspector_id": 910,
+          "issued_to": "Justin Daniels",
+          "issued_to_address": "4273 Old Meadow Rd",
+          "issued_to_city": "Clay",
+          "issued_to_zip": "13041",
+          "open_date": 1649635200000,
+          "status_date": 1669680000000,
+          "status_type_name": "Closed",
+          "violation": "SPCC - Section 27-72 (e) -Trash & Debris",
+          "violation_date": 1649667563000,
+          "violation_id": 130484,
+          "violation_number": "2022-06082"
+        },
+        {
+          "Latitude": 43.07990449,
+          "Longitude": -76.15461275,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 144681,
+          "SBL": "003.-19-20.0",
+          "Vacant": null,
+          "complaint_address": "1153 Lemoyne Ave",
+          "complaint_number": "2014-20746",
+          "complaint_type_name": "Vacant House",
+          "complaint_zip": 13208,
+          "comply_by_date": 1523282709257,
+          "inspector_id": 705,
+          "issued_to": "deleted contact",
+          "issued_to_address": "Missing Contact ID : 63152",
+          "issued_to_city": null,
+          "issued_to_zip": null,
+          "open_date": 1406729238717,
+          "status_date": 1604620800000,
+          "status_type_name": "Closed",
+          "violation": "SPCC - Section 27-72 (e) -Trash & Debris",
+          "violation_date": 1523282682310,
+          "violation_id": 74257,
+          "violation_number": "77895"
+        }
+      ],
+      "rental_registry": [
+        {
+          "Latitude": 43.07990449,
+          "Longitude": -76.15461275,
+          "NeedsRR": "Yes",
+          "ObjectId": 1756,
+          "PropertyAddress": "1153 Lemoyne Ave",
+          "RR_app_received": 1713225600000,
+          "RR_contact_name": "Sinai Realty Holdings Corp",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1715644800000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-19-20.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1715644800000,
+          "pc_owner": "Gregg Frazier",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-10-27T11:46:47+00:00",
+      "rental_registry": "2026-10-27T11:46:47+00:00",
+      "unfit_properties": "2026-10-27T11:46:47+00:00",
+      "vacant_properties": "2026-10-27T11:46:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-02T09:02:52+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "003-19-200",
+    "published_at": "2026-11-02T09:04:24+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue",
+      "boarded windows or doors"
+    ],
+    "title": "1153 Lemoyne Ave"
+  },
+  {
     "address": "1404 Court St",
     "ai_analysis": {
       "available": true,
