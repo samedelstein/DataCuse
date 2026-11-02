@@ -1,5 +1,152 @@
 [
   {
+    "address": "225 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Flat roof structure is not directly visible from street level view.",
+        "Specific code violation details mentioned in public records cannot be verified solely from this exterior street-level image."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "unclear",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "mixed_use",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story red brick commercial or mixed-use building with intact upper-story windows and a ground-floor storefront appearance.",
+      "visible_conditions": [
+        "Two-story masonry exterior with brick facade and green cornice trim.",
+        "Ground-floor storefront configuration featuring multi-pane windows with interior window shades.",
+        "Upper-story double-hung windows appear intact with intact frames.",
+        "Paved sidewalk area and paved entry apron free of visible debris."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Code violations: 2 matching records"
+    ],
+    "id": 1025,
+    "image": "images/parcel-001025.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 67927,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.0703798679553,
+    "lon": -76.16517770671979,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07037858,
+          "Longitude": -76.16521217,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 50441,
+          "SBL": "002.-03-02.0",
+          "Vacant": null,
+          "complaint_address": "225 Wolf St",
+          "complaint_number": "2026-03325",
+          "complaint_type_name": "Certificate of Compliance",
+          "complaint_zip": 13208,
+          "comply_by_date": 1781189933000,
+          "inspector_id": 908,
+          "issued_to": "Paul Byrne",
+          "issued_to_address": "901 Castile Ave ",
+          "issued_to_city": "Coral Gables",
+          "issued_to_zip": "33134",
+          "open_date": 1778671871140,
+          "status_date": 1778684333897,
+          "status_type_name": "Open",
+          "violation": "SPCC 27-43 (e) (1)(2)(3)(4) Certification",
+          "violation_date": 1778684333897,
+          "violation_id": 217672,
+          "violation_number": "2026-07168"
+        },
+        {
+          "Latitude": 43.07037858,
+          "Longitude": -76.16521217,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 50442,
+          "SBL": "002.-03-02.0",
+          "Vacant": null,
+          "complaint_address": "225 Wolf St",
+          "complaint_number": "2026-03325",
+          "complaint_type_name": "Certificate of Compliance",
+          "complaint_zip": 13208,
+          "comply_by_date": 1781189884000,
+          "inspector_id": 908,
+          "issued_to": "Paul Byrne",
+          "issued_to_address": "901 Castile Ave ",
+          "issued_to_city": "Coral Gables",
+          "issued_to_zip": "33134",
+          "open_date": 1778671871140,
+          "status_date": 1778684284400,
+          "status_type_name": "Open",
+          "violation": "SPCC - Section 27-15 (b) Multiple dwelling",
+          "violation_date": 1778684284400,
+          "violation_id": 217671,
+          "violation_number": "2026-07167"
+        }
+      ],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-10-27T11:46:47+00:00",
+      "rental_registry": "2026-10-27T11:46:47+00:00",
+      "unfit_properties": "2026-10-27T11:46:47+00:00",
+      "vacant_properties": "2026-10-27T11:46:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-02T05:02:52+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "002-03-020",
+    "published_at": "2026-11-02T05:04:23+00:00",
+    "review_reasons": [],
+    "title": "225 Wolf St"
+  },
+  {
     "address": "1157 Lemoyne Ave",
     "ai_analysis": {
       "available": true,
