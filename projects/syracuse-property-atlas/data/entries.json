@@ -1,5 +1,157 @@
 [
   {
+    "address": "311-21 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Roof surface and rear/side elevations are not visible from street-level perspective."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "not_visible",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.08",
+            "width": "0.18",
+            "x": "0.38",
+            "y": "0.55"
+          },
+          "confidence": "high",
+          "label": "facade graffiti",
+          "reason": "Visible graffiti painted on exterior wall"
+        },
+        {
+          "bbox": {
+            "height": "0.08",
+            "width": "0.11",
+            "x": "0.64",
+            "y": "0.57"
+          },
+          "confidence": "high",
+          "label": "garage door graffiti",
+          "reason": "Visible graffiti tag on garage roll-up door"
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Extensive visible exterior graffiti/tagging on masonry facade and garage door"
+      ],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "Commercial property featuring widespread visible graffiti tagging across lower facade walls and the garage bay door.",
+      "visible_conditions": [
+        "Painted masonry commercial exterior with flat roofline",
+        "Multiple graffiti tags painted on lower exterior walls and overhead garage door",
+        "Roll-up garage door and adjacent pedestrian doors appear intact",
+        "Paved front parking apron is clear of major debris",
+        "Minor weed growth along pavement seams near building base"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Code violations: 1 matching record",
+      "Image-only flag: Extensive visible exterior graffiti/tagging on masonry facade and garage door",
+      "Needs human review"
+    ],
+    "id": 1065,
+    "image": "images/parcel-001065.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 56139,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07160540160706,
+    "lon": -76.1643041458446,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07157676,
+          "Longitude": -76.16431681,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 107522,
+          "SBL": "002.-04-09.0",
+          "Vacant": null,
+          "complaint_address": "311-21 Wolf St",
+          "complaint_number": "2025-02483",
+          "complaint_type_name": "Certificate of Compliance",
+          "complaint_zip": 13208,
+          "comply_by_date": 1747666264000,
+          "inspector_id": 908,
+          "issued_to": "300 Wolf St LLC",
+          "issued_to_address": "306 Wolf St",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1744814997623,
+          "status_date": 1747872000000,
+          "status_type_name": "Closed",
+          "violation": "SPCC - Section 27-15 (b) Multiple dwelling",
+          "violation_date": 1744815064883,
+          "violation_id": 194776,
+          "violation_number": "2025-06268"
+        }
+      ],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-04T02:22:15+00:00",
+      "rental_registry": "2026-11-04T02:22:15+00:00",
+      "unfit_properties": "2026-11-04T02:22:15+00:00",
+      "vacant_properties": "2026-11-04T02:22:15+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-04T21:02:59+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "002-04-090",
+    "published_at": "2026-11-04T21:04:30+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "311-21 Wolf St"
+  },
+  {
     "address": "249 Dale St",
     "ai_analysis": {
       "available": true,
