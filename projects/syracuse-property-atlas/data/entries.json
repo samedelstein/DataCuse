@@ -1,5 +1,169 @@
 [
   {
+    "address": "1111 Lemoyne Ave & Stedman St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "A large central tree significantly obscures the main building facade and roof.",
+        "Specific property boundary limits between adjacent parcels are unclear from this street view."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "unclear",
+        "roof": "unclear",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.09",
+            "width": "0.07",
+            "x": "0.69",
+            "y": "0.64"
+          },
+          "confidence": "high",
+          "label": "upholstered armchair outdoors",
+          "reason": "Indoor upholstered furniture placed outside on the lawn."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Upholstered interior furniture (armchair) placed outside on the lawn area."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story white residential building partially obscured by a large front yard tree, with an upholstered armchair positioned on the lawn.",
+      "visible_conditions": [
+        "White siding appears mostly intact but is partially obscured by foliage.",
+        "A large tree stands centrally in the front yard, partially blocking the view of the primary structure.",
+        "An upholstered armchair and small container are visible on the lawn area near the tree.",
+        "Chain-link fencing runs along part of the yard."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Code violations: 2 matching records",
+      "Image-only flag: Upholstered interior furniture (armchair) placed outside on the lawn area."
+    ],
+    "id": 1056,
+    "image": "images/parcel-001056.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 97607,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07924610435193,
+    "lon": -76.15583419330436,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07923252,
+          "Longitude": -76.15588876,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 105710,
+          "SBL": "003.-19-29.0",
+          "Vacant": null,
+          "complaint_address": "1111 Lemoyne Ave & Stedman St",
+          "complaint_number": "2025-03350",
+          "complaint_type_name": "Property Maintenance-Ext",
+          "complaint_zip": 13208,
+          "comply_by_date": 1747067285000,
+          "inspector_id": 1222,
+          "issued_to": "Ahdan Win",
+          "issued_to_address": "1111 Lemoyne Ave ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1746203208337,
+          "status_date": 1747180800000,
+          "status_type_name": "Closed",
+          "violation": "SPCC - Section 27-72 (f) - Overgrowth",
+          "violation_date": 1746203285060,
+          "violation_id": 196320,
+          "violation_number": "2025-07824"
+        },
+        {
+          "Latitude": 43.07923252,
+          "Longitude": -76.15588876,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 105714,
+          "SBL": "003.-19-29.0",
+          "Vacant": null,
+          "complaint_address": "1111 Lemoyne Ave & Stedman St",
+          "complaint_number": "2021-13314",
+          "complaint_type_name": "Property Maintenance-Ext",
+          "complaint_zip": 13208,
+          "comply_by_date": 1622019845000,
+          "inspector_id": 705,
+          "issued_to": "Ahdan Win",
+          "issued_to_address": "1111 Leymone Ave ",
+          "issued_to_city": "Syracuse ",
+          "issued_to_zip": "13208",
+          "open_date": 1621248141347,
+          "status_date": 1621987200000,
+          "status_type_name": "Closed",
+          "violation": "SPCC - Section 27-72 (f) - Overgrowth",
+          "violation_date": 1621415045580,
+          "violation_id": 110651,
+          "violation_number": "2021-07508"
+        }
+      ],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-04T02:22:15+00:00",
+      "rental_registry": "2026-11-04T02:22:15+00:00",
+      "unfit_properties": "2026-11-04T02:22:15+00:00",
+      "vacant_properties": "2026-11-04T02:22:15+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-04T12:02:56+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "003-19-290",
+    "published_at": "2026-11-04T12:04:26+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "1111 Lemoyne Ave & Stedman St"
+  },
+  {
     "address": "261 Dale St",
     "ai_analysis": {
       "available": true,
