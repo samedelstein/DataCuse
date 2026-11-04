@@ -1,5 +1,121 @@
 [
   {
+    "address": "1303 Carbon St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Street-level view angle slightly obscures side and rear portions of the house.",
+        "Resolution makes it uncertain whether window panels are temporary boards or intentional window treatments."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "poor",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.11",
+            "width": "0.22",
+            "x": "0.36",
+            "y": "0.46"
+          },
+          "confidence": "medium",
+          "label": "boarded_windows",
+          "reason": "Window openings on the front lower portion of the house appear to be boarded or covered with solid panels."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Visible window boards on the front lower level facade."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The property is a two-story single-family residential structure with light grey siding, a front entry porch with covered window openings, and a well-maintained front lawn.",
+      "visible_conditions": [
+        "Two-story main structure with light grey siding and dark asphalt roof shingles.",
+        "Front porch window openings appear to be fitted with wooden panels or boards.",
+        "Concrete steps lead to the side entry porch.",
+        "Mowed front grass lawn with established foundation shrubbery.",
+        "Paved sidewalk in front of the parcel appears intact."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "yes",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Visible window boards on the front lower level facade.",
+      "Needs human review"
+    ],
+    "id": 1051,
+    "image": "images/parcel-001051.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 81865,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.072138409514345,
+    "lon": -76.1640231591054,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-04T02:22:15+00:00",
+      "rental_registry": "2026-11-04T02:22:15+00:00",
+      "unfit_properties": "2026-11-04T02:22:15+00:00",
+      "vacant_properties": "2026-11-04T02:22:15+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-04T07:02:57+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "002-04-050",
+    "published_at": "2026-11-04T07:04:28+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue",
+      "boarded windows or doors"
+    ],
+    "title": "1303 Carbon St"
+  },
+  {
     "address": "269 Dale St",
     "ai_analysis": {
       "available": true,
