@@ -1,5 +1,98 @@
 [
   {
+    "address": "112 Arnts Pl",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Street-level view captured from a distance; side and rear elevations are not fully visible."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A one-and-a-half story single-family residential structure with light-colored siding, dark roof shingles, an asphalt driveway, and maintained front yard landscaping.",
+      "visible_conditions": [
+        "White horizontal siding appears fully intact with no obvious missing panels.",
+        "Pitched shingle roof visible with no obvious missing shingles or sagging.",
+        "Asphalt driveway exhibits minor surface cracking and wear.",
+        "Front yard lawn is mowed with small shrubs and foundation plantings present near the front elevation."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 1069,
+    "image": "images/parcel-001069.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 76400,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07613696685534,
+    "lon": -76.1553460212406,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-04T02:22:15+00:00",
+      "rental_registry": "2026-11-04T02:22:15+00:00",
+      "unfit_properties": "2026-11-04T02:22:15+00:00",
+      "vacant_properties": "2026-11-04T02:22:15+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-05T01:02:52+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "003-20-040",
+    "published_at": "2026-11-05T01:04:23+00:00",
+    "review_reasons": [],
+    "title": "112 Arnts Pl"
+  },
+  {
     "address": "301 Wolf St & Park St",
     "ai_analysis": {
       "available": true,
