@@ -1,5 +1,222 @@
 [
   {
+    "address": "301 Wolf St & Park St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Roof condition is not visible from ground level view",
+        "Exact nature of upper window coverings (boards versus painted glass) is difficult to determine from image angle"
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "not_visible",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "poor",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.12",
+            "width": "0.12",
+            "x": "0.09",
+            "y": "0.46"
+          },
+          "confidence": "high",
+          "label": "broken window panes",
+          "reason": "Multiple missing and broken glass panes in lower-left multi-pane window"
+        },
+        {
+          "bbox": {
+            "height": "0.12",
+            "width": "0.12",
+            "x": "0.25",
+            "y": "0.46"
+          },
+          "confidence": "high",
+          "label": "broken window panes",
+          "reason": "Multiple missing and broken glass panes in second lower-left window bay"
+        },
+        {
+          "bbox": {
+            "height": "0.06",
+            "width": "0.23",
+            "x": "0.44",
+            "y": "0.58"
+          },
+          "confidence": "high",
+          "label": "graffiti",
+          "reason": "Spray painted graffiti along the lower whitewashed section of facade"
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Broken window glass panes on lower window bays",
+        "Graffiti on lower building base wall"
+      ],
+      "property_type_guess": "commercial",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A large multi-story brick commercial building visible from street level showing damaged window glass and localized graffiti along the base wall.",
+      "visible_conditions": [
+        "Multi-story red brick commercial or industrial facade",
+        "Multiple missing or broken glass panes visible in lower-floor window bays",
+        "Graffiti tagging visible on white base walls and door panels",
+        "Upper floor window openings covered, painted, or infilled",
+        "Utility pole and overhead lines in front of main facade"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "yes",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Code violations: 3 matching records",
+      "Image-only flag: Broken window glass panes on lower window bays",
+      "Image-only flag: Graffiti on lower building base wall",
+      "Needs human review"
+    ],
+    "id": 1068,
+    "image": "images/parcel-001068.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 100723,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07148015366298,
+    "lon": -76.16463785657682,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07138119,
+          "Longitude": -76.16460347,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 41174,
+          "SBL": "002.-04-10.0",
+          "Vacant": null,
+          "complaint_address": "301 Wolf St & Park St",
+          "complaint_number": "2026-04559",
+          "complaint_type_name": "Property Maintenance-Ext",
+          "complaint_zip": 13208,
+          "comply_by_date": 1782486203000,
+          "inspector_id": 1222,
+          "issued_to": "Wellington Ward LLC",
+          "issued_to_address": "100 Windsor Pl ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13210",
+          "open_date": 1781017252893,
+          "status_date": 1781017402193,
+          "status_type_name": "Open",
+          "violation": "2025 PMCNYS - Section 304.1.1 - Potentially Unsafe Conditions",
+          "violation_date": 1781017402193,
+          "violation_id": 219711,
+          "violation_number": "2026-09221"
+        },
+        {
+          "Latitude": 43.07138119,
+          "Longitude": -76.16460347,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 41178,
+          "SBL": "002.-04-10.0",
+          "Vacant": null,
+          "complaint_address": "301 Wolf St & Park St",
+          "complaint_number": "2026-04559",
+          "complaint_type_name": "Property Maintenance-Ext",
+          "complaint_zip": 13208,
+          "comply_by_date": 1782486135000,
+          "inspector_id": 1222,
+          "issued_to": "Wellington Ward LLC",
+          "issued_to_address": "100 Windsor Pl ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13210",
+          "open_date": 1781017252893,
+          "status_date": 1781017335287,
+          "status_type_name": "Open",
+          "violation": "2025 PMCNYS - Section 304.6 - Exterior Walls",
+          "violation_date": 1781017335283,
+          "violation_id": 219709,
+          "violation_number": "2026-09220"
+        },
+        {
+          "Latitude": 43.07138119,
+          "Longitude": -76.16460347,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 41185,
+          "SBL": "002.-04-10.0",
+          "Vacant": null,
+          "complaint_address": "301 Wolf St & Park St",
+          "complaint_number": "2023-08418",
+          "complaint_type_name": "Property Maintenance-Ext",
+          "complaint_zip": 13208,
+          "comply_by_date": 1705070966000,
+          "inspector_id": 1109,
+          "issued_to": "Wellington Ward LLC",
+          "issued_to_address": "100 Windsor Pl ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13210",
+          "open_date": 1702651669673,
+          "status_date": 1705017600000,
+          "status_type_name": "Closed",
+          "violation": "SPCC - Section 27-72 (e) -Trash & Debris",
+          "violation_date": 1702651766640,
+          "violation_id": 168520,
+          "violation_number": "2023-20891"
+        }
+      ],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-04T02:22:15+00:00",
+      "rental_registry": "2026-11-04T02:22:15+00:00",
+      "unfit_properties": "2026-11-04T02:22:15+00:00",
+      "vacant_properties": "2026-11-04T02:22:15+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-05T00:03:02+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "002-04-100",
+    "published_at": "2026-11-05T00:04:33+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue",
+      "boarded windows or doors"
+    ],
+    "title": "301 Wolf St & Park St"
+  },
+  {
     "address": "245-47 Dale St",
     "ai_analysis": {
       "available": true,
