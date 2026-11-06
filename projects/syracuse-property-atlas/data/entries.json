@@ -1,5 +1,86 @@
 [
   {
+    "address": "221 Burdick Ave & Arnts Pl",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "{\n  \"summary\": \"The property appears to be a two-story residential structure with white siding and a visible roof, featuring two distinct entryways and maintained landscaping.\",\n  \"property_type_guess\": \"two_family\",\n  \"visible_conditions\": [\n    \"Two-story residential building with an attic gable\",\n    \"White vinyl siding appears generally intact\",\n    \"Multiple windows visible, some with curtains or blinds\",\n    \"Two distinct ground-level entryways with small awnings and steps\",\n    \"Front yard with mowed grass and established garden beds\",\n    \"White picket fence visible on the right side of the property\",\n    \"Television antenna visible on the roof\"\n   furlough],\n  \"condition_scores\": {\n    \"roof\": \"fair\",\n    \"siding_or_facade\": \"good\",\n    \"windows_doors\": \"fair\",\n    \"porch_or_entry\": \"fair\",\n    \"yard_or_lot\": \"good\",\n    \"trash_debris\": \"none_visible\",\n    \"vegetation_overgrowth\": \"none_visible\"\n  },\n  \"visible_flags\": {\n    \"boarded_windows_or_doors\": \"no\",\n    \"fire_damage_visible\": \"no\",\n    \"structural_damage_visible\": \"no\",\n    \"vacancy_signs_visible\": \"no\",\n    \"active_construction_visible\": \"no\"\n  },\n  \"possible_unrecorded_issues\": [\n    \"An upper-story window appears to have a deteriorated frame or sash\",\n    \"Visible moss or algae growth on portions of the roof shingles\"\n  ],\n  \"image_annotations\": [\n    {\n      \"label\": \"Deteriorated window\",\n      \"reason\": \"The upper right window appears to have a deteriorated frame or sash, possibly with a missing screen or broken pane.\",\n      \"bbox\": {\n        \"x\": 0.49,\n        \"y\": 0.22,\n        \"width\": 0.18,\n        \"height\": 0.12\n      },\n      \"confidence\": \"high\"\n    },\n    {\n      \"label\": \"Roof moss/algae\",\n      \"reason\": \"Visible patches of moss or algae growth are present on the roof shingles.\",\n      \"bbox\": {\n        \"x\": 0.35,\n        \"y\": 0.0,\n        \"width\": 0.45,\n        \"height\": 0.15\n      },\n      \"confidence\": \"high\"\n    }\n  ],\n  \"needs_human_review\": \"false\",\n  \"confidence\": \"high\",\n  \"caveats\": []\n}",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 1078,
+    "image": "images/parcel-001078.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 86263,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07687805783298,
+    "lon": -76.15500334837884,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-04T02:22:15+00:00",
+      "rental_registry": "2026-11-04T02:22:15+00:00",
+      "unfit_properties": "2026-11-04T02:22:15+00:00",
+      "vacant_properties": "2026-11-04T02:22:15+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-06T21:03:05+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "003-20-080",
+    "published_at": "2026-11-06T21:04:36+00:00",
+    "review_reasons": [],
+    "title": "221 Burdick Ave & Arnts Pl"
+  },
+  {
     "address": "1303 1/2 Carbon St",
     "ai_analysis": {
       "available": true,
