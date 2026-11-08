@@ -1,5 +1,107 @@
 [
   {
+    "address": "229 Dale St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: The read operation timed out",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "A single-family residence with white siding and a gabled roof is visible, featuring a maintained front yard and a small front entry.",
+      "visible_conditions": [
+        "The structure is a single-story residence with white exterior siding.",
+        "A gabled roof is visible, appearing to be in fair condition.",
+        "Multiple windows are present across the front facade, appearing intact.",
+        "A small front entry with steps and a railing is visible.",
+        "The front yard consists of a mowed lawn and a trimmed hedge along the left side.",
+        "No obvious signs of trash or debris are visible on the subject property."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 1079,
+    "image": "images/parcel-001079.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 60683,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07670553606052,
+    "lon": -76.14483809505721,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-04T02:22:15+00:00",
+      "rental_registry": "2026-11-04T02:22:15+00:00",
+      "unfit_properties": "2026-11-04T02:22:15+00:00",
+      "vacant_properties": "2026-11-04T02:22:15+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-08T11:11:52+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "005-03-190",
+    "published_at": "2026-11-08T11:13:24+00:00",
+    "review_reasons": [],
+    "title": "229 Dale St"
+  },
+  {
     "address": "221 Burdick Ave & Arnts Pl",
     "ai_analysis": {
       "available": true,
