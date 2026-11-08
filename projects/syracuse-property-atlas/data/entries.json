@@ -1,5 +1,340 @@
 [
   {
+    "address": "217-19 Burdick Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "not_visible",
+        "siding_or_facade": "fair",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: The read operation timed out",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.03,
+            "width": 0.03,
+            "x": 0.88,
+            "y": 0.8
+          },
+          "confidence": "high",
+          "label": "Minor debris",
+          "reason": "A small, possibly discarded item is visible on the grass strip near the sidewalk."
+        },
+        {
+          "bbox": {
+            "height": 0.05,
+            "width": 0.05,
+            "x": 0.8,
+            "y": 0.7
+          },
+          "confidence": "high",
+          "label": "Minor debris",
+          "reason": "Some items are visible on the ground near the utility meters on the front facade."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Minor debris accumulation near the sidewalk and around the utility meters, which may not be reflected in existing code violation records."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property features a two-story structure with gray siding, two distinct entryways, and a gravel driveway, with some minor debris visible in the yard.",
+      "visible_conditions": [
+        "Two-story structure with gray horizontal siding visible on the front facade.",
+        "Two distinct front entryways are visible, one on the ground floor and one on the second floor, each with a porch area.",
+        "Multiple windows are visible on the front facade, appearing generally intact.",
+        "A gravel driveway extends from the street towards the side of the building.",
+        "The lawn area shows some patches of grass and some bare soil, but no significant overgrowth.",
+        "A large evergreen tree is prominent in the front yard.",
+        "Two mailboxes are affixed near the ground-floor entry.",
+        "Utility meters and associated piping are visible on the lower front facade.",
+        "Minor debris is visible near the sidewalk and around the utility meters."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Code violations: 7 matching records",
+      "Image-only flag: Minor debris accumulation near the sidewalk and around the utility meters, which may not be reflected in existing code violation records."
+    ],
+    "id": 1081,
+    "image": "images/parcel-001081.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 77542,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.076808539008006,
+    "lon": -76.15482996428604,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07677889,
+          "Longitude": -76.15487155,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 30037,
+          "SBL": "003.-20-09.0",
+          "Vacant": null,
+          "complaint_address": "217-19 Burdick Ave",
+          "complaint_number": "2026-01193",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1785944917000,
+          "inspector_id": 1222,
+          "issued_to": "Dexter Green",
+          "issued_to_address": "47 Leonard St ",
+          "issued_to_city": "Haverstraw",
+          "issued_to_zip": "10927",
+          "open_date": 1771858394977,
+          "status_date": 1784764800000,
+          "status_type_name": "Closed",
+          "violation": "2025 PMCNYS - Section 604.3 - Electrical System Hazards",
+          "violation_date": 1784217629363,
+          "violation_id": 221531,
+          "violation_number": "2026-11045"
+        },
+        {
+          "Latitude": 43.07677889,
+          "Longitude": -76.15487155,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 30038,
+          "SBL": "003.-20-09.0",
+          "Vacant": null,
+          "complaint_address": "217-19 Burdick Ave",
+          "complaint_number": "2026-01193",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1785944917000,
+          "inspector_id": 1222,
+          "issued_to": "Dexter Green",
+          "issued_to_address": "47 Leonard St ",
+          "issued_to_city": "Haverstraw",
+          "issued_to_zip": "10927",
+          "open_date": 1771858394977,
+          "status_date": 1784764800000,
+          "status_type_name": "Closed",
+          "violation": "2025 PMCNYS - Section 604.3 - Electrical System Hazards",
+          "violation_date": 1784217597053,
+          "violation_id": 221530,
+          "violation_number": "2026-11044"
+        },
+        {
+          "Latitude": 43.07677889,
+          "Longitude": -76.15487155,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 30039,
+          "SBL": "003.-20-09.0",
+          "Vacant": null,
+          "complaint_address": "217-19 Burdick Ave",
+          "complaint_number": "2026-01193",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1785944917000,
+          "inspector_id": 1222,
+          "issued_to": "Dexter Green",
+          "issued_to_address": "47 Leonard St ",
+          "issued_to_city": "Haverstraw",
+          "issued_to_zip": "10927",
+          "open_date": 1771858394977,
+          "status_date": 1784764800000,
+          "status_type_name": "Closed",
+          "violation": "SPCC - Section 27-43 (a) - Mandatory smoke detectors",
+          "violation_date": 1784217485350,
+          "violation_id": 221529,
+          "violation_number": "2026-11043"
+        },
+        {
+          "Latitude": 43.07677889,
+          "Longitude": -76.15487155,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 30040,
+          "SBL": "003.-20-09.0",
+          "Vacant": null,
+          "complaint_address": "217-19 Burdick Ave",
+          "complaint_number": "2026-01193",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1785944917000,
+          "inspector_id": 1222,
+          "issued_to": "Dexter Green",
+          "issued_to_address": "47 Leonard St ",
+          "issued_to_city": "Haverstraw",
+          "issued_to_zip": "10927",
+          "open_date": 1771858394977,
+          "status_date": 1784764800000,
+          "status_type_name": "Closed",
+          "violation": "2025 PMCNYS - Section 705.1 - Carbon Monoxide Alarms and Detectors",
+          "violation_date": 1784216963377,
+          "violation_id": 221528,
+          "violation_number": "2026-11042"
+        },
+        {
+          "Latitude": 43.07677889,
+          "Longitude": -76.15487155,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 30041,
+          "SBL": "003.-20-09.0",
+          "Vacant": null,
+          "complaint_address": "217-19 Burdick Ave",
+          "complaint_number": "2026-01193",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1785944917000,
+          "inspector_id": 1222,
+          "issued_to": "Dexter Green",
+          "issued_to_address": "47 Leonard St ",
+          "issued_to_city": "Haverstraw",
+          "issued_to_zip": "10927",
+          "open_date": 1771858394977,
+          "status_date": 1784764800000,
+          "status_type_name": "Closed",
+          "violation": "2025 PMCNYS - Section 506.2 - Maintenance",
+          "violation_date": 1784216917380,
+          "violation_id": 221527,
+          "violation_number": "2026-11041"
+        },
+        {
+          "Latitude": 43.07677889,
+          "Longitude": -76.15487155,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 30042,
+          "SBL": "003.-20-09.0",
+          "Vacant": null,
+          "complaint_address": "217-19 Burdick Ave",
+          "complaint_number": "2026-01193",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1774277865000,
+          "inspector_id": 1222,
+          "issued_to": "Dexter Green",
+          "issued_to_address": "47 Leonard St ",
+          "issued_to_city": "Haverstraw",
+          "issued_to_zip": "10927",
+          "open_date": 1771858394977,
+          "status_date": 1784764800000,
+          "status_type_name": "Closed",
+          "violation": "SPCC-Sec. 27-133 Registration",
+          "violation_date": 1771858665463,
+          "violation_id": 213283,
+          "violation_number": "2026-02774"
+        },
+        {
+          "Latitude": 43.07677889,
+          "Longitude": -76.15487155,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 30043,
+          "SBL": "003.-20-09.0",
+          "Vacant": null,
+          "complaint_address": "217-19 Burdick Ave",
+          "complaint_number": "2021-13860",
+          "complaint_type_name": "Property Maintenance-Ext",
+          "complaint_zip": 13208,
+          "comply_by_date": 1622073600000,
+          "inspector_id": 705,
+          "issued_to": "Vincentina & Helen Nappa",
+          "issued_to_address": "217 Burdick Ave ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1621468800000,
+          "status_date": 1622073600000,
+          "status_type_name": "Closed",
+          "violation": "SPCC - Section 27-72 (f) - Overgrowth",
+          "violation_date": 1621517556000,
+          "violation_id": 110818,
+          "violation_number": "2021-07677"
+        }
+      ],
+      "rental_registry": [
+        {
+          "Latitude": 43.07677889,
+          "Longitude": -76.15487155,
+          "NeedsRR": "Yes",
+          "ObjectId": 263,
+          "PropertyAddress": "217-19 Burdick Ave",
+          "RR_app_received": 1775001600000,
+          "RR_contact_name": "Dexter Green & Patricia Leesang",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1784764800000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1784764800000,
+          "RRisValid": "Yes",
+          "SBL": "003.-20-09.0",
+          "SHAPE": null,
+          "completion_date": 1784764800000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1784160000000,
+          "pc_owner": "217-219 Burdick Avenue LLC",
+          "valid_until": 1879459200000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-04T02:22:15+00:00",
+      "rental_registry": "2026-11-04T02:22:15+00:00",
+      "unfit_properties": "2026-11-04T02:22:15+00:00",
+      "vacant_properties": "2026-11-04T02:22:15+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-08T23:39:55+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "003-20-090",
+    "published_at": "2026-11-08T23:41:27+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "217-19 Burdick Ave"
+  },
+  {
     "address": "300-24 Hiawatha Blvd E",
     "ai_analysis": {
       "available": true,
