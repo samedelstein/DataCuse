@@ -1,5 +1,152 @@
 [
   {
+    "address": "330 Hiawatha Blvd E",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Partial side view limits visibility of the front facade, windows, and main entry doors.",
+        "Specific details regarding known public code violations cannot be confirmed from this view alone."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "Side exterior view showing white vinyl siding, an asphalt shingle roof section, and concrete entry steps in generally fair condition.",
+      "visible_conditions": [
+        "White vinyl siding appears intact along the visible elevation.",
+        "Dark asphalt shingle roof on low addition appears intact.",
+        "Exterior concrete steps with metal handrail lead up the slope beside the structure.",
+        "Landscaping includes maintained bushes, mulched beds, and lawn areas."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Code violations: 2 matching records"
+    ],
+    "id": 1086,
+    "image": "images/parcel-001086.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 49167,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.073481259469254,
+    "lon": -76.16401287172646,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07343298,
+          "Longitude": -76.16399437,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 42432,
+          "SBL": "002.-05-03.0",
+          "Vacant": null,
+          "complaint_address": "330 Hiawatha Blvd E",
+          "complaint_number": "2026-04564",
+          "complaint_type_name": "Property Maintenance-Ext",
+          "complaint_zip": 13208,
+          "comply_by_date": 1782490081000,
+          "inspector_id": 1222,
+          "issued_to": "Joseph Iacuone",
+          "issued_to_address": "PO BOX 803253",
+          "issued_to_city": "Dallas",
+          "issued_to_zip": "75380",
+          "open_date": 1781019086490,
+          "status_date": 1782432000000,
+          "status_type_name": "Closed",
+          "violation": "1.5 H.  Illegal Nonconformities. (2) ",
+          "violation_date": 1781021281633,
+          "violation_id": 219735,
+          "violation_number": "2026-09245"
+        },
+        {
+          "Latitude": 43.07343298,
+          "Longitude": -76.16399437,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 42436,
+          "SBL": "002.-05-03.0",
+          "Vacant": null,
+          "complaint_address": "330 Hiawatha Blvd E",
+          "complaint_number": "2026-04564",
+          "complaint_type_name": "Property Maintenance-Ext",
+          "complaint_zip": 13208,
+          "comply_by_date": 1782490081000,
+          "inspector_id": 1222,
+          "issued_to": "Joseph Iacuone",
+          "issued_to_address": "PO BOX 803253",
+          "issued_to_city": "Dallas",
+          "issued_to_zip": "75380",
+          "open_date": 1781019086490,
+          "status_date": 1782432000000,
+          "status_type_name": "Closed",
+          "violation": "2025 PMCNYS - Section 302.8 - Motor Vehicles",
+          "violation_date": 1781021281633,
+          "violation_id": 219736,
+          "violation_number": "2026-09246"
+        }
+      ],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-11T03:14:33+00:00",
+      "rental_registry": "2026-11-11T03:14:33+00:00",
+      "unfit_properties": "2026-11-11T03:14:33+00:00",
+      "vacant_properties": "2026-11-11T03:14:33+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-11T04:02:56+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "002-05-030",
+    "published_at": "2026-11-11T04:04:27+00:00",
+    "review_reasons": [],
+    "title": "330 Hiawatha Blvd E"
+  },
+  {
     "address": "221 Dale St",
     "ai_analysis": {
       "available": true,
