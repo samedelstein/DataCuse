@@ -9,7 +9,10 @@ const files = new Map([
   ['/app.mjs',['app.mjs','text/javascript']], ['/lib.mjs',['lib.mjs','text/javascript']],
   ['/style.css',['style.css','text/css']], ['/sources.json',['sources.json','application/json']],
   ['/llms.txt',['llms.txt','text/plain']], ['/api/openapi.json',['openapi.json','application/json']],
-  ['/openapi.json',['openapi.json','application/json']]
+  ['/openapi.json',['openapi.json','application/json']],
+  ['/for-ai/', ['for-ai/index.html','text/html']], ['/for-ai/index.html', ['for-ai/index.html','text/html']],
+  ['/for-ai.json',['for-ai.json','application/json']], ['/upstream-openapi.json',['upstream-openapi.json','application/json']],
+  ['/ai.mjs',['ai.mjs','text/javascript']]
 ]);
 const root = new URL('./', import.meta.url);
 
@@ -24,6 +27,7 @@ export function createApp() {
     try {
       if (req.method !== 'GET') { res.setHeader('Allow','GET'); return send(405,{error:'Use GET.'}); }
       const url = new URL(req.url, 'http://localhost');
+      if (url.pathname === '/for-ai') { res.writeHead(301,{Location:'/for-ai/'}); return res.end(); }
       if (url.pathname === '/api/health') return send(200, {status:'ok', service:'datacuse-pickup'});
       if (url.pathname === '/api/search') return send(200, {candidates: await searchAddresses(url.searchParams.get('q'))});
       if (['/api/lookup','/api/calendar.ics'].includes(url.pathname)) {

@@ -44,7 +44,17 @@ On November 10, 2026 the city recycling page embedded ArcGIS app `73be90dd8f2f47
 
 Tests cover Eastern time boundaries, holiday shifts, expired and malformed dates, match ambiguity, upstream failure, geocoder filtering, calendar boundaries, HTTP validation, and static route restrictions. Live upstream and browser verification must be reported separately from these deterministic tests.
 
-The GitHub Pages workflow checks and builds this project, then publishes only the seven browser assets from `dist/` at `/projects/pickup/`. Tests, scripts, and the Node server stay out of the published directory. No deployment is performed by building locally; deploy the Node entry point separately if a hosted JSON API is wanted.
+The GitHub Pages workflow checks and builds this project, then publishes browser assets and the AI guide from `dist/` at `/projects/pickup/`. Tests, scripts, and the Node server stay out of the published directory. No deployment is performed by building locally; deploy the Node entry point separately if a hosted JSON API is wanted.
+
+## AI access
+
+- `/for-ai/`: readable instructions, a copyable starter prompt, and a public live example.
+- `/for-ai.json`: access manifest with exact upstream request parameters, field definitions, date rules, and answer requirements.
+- `/llms.txt`: plain-text agent instructions and failure/privacy handling.
+- `/upstream-openapi.json`: OpenAPI 3.1 describing the live city and Esri endpoints, with operation-level servers. This is distinct from the self-hosted Node API's `openapi.json`.
+- **Copy schedule for AI**: copies the current result's dates, source, coverage and timestamp, omitting address and coordinates. A visible text field supports browsers without clipboard access. The result remains a snapshot and includes its zone ID.
+
+These resources do not install a chatbot or MCP connector. An assistant needs HTTP access, or a user-pasted schedule. The next architectural step would be a hosted shared API for agent tools and a messaging bot. A Telegram interface can use deterministic lookup commands without an LLM; a model is only needed if richer language interpretation is wanted. No messaging service, recipient storage, or recurring reminder has been enabled.
 
 ## Verification — November 11, 2026
 

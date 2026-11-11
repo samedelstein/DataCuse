@@ -1,0 +1,366 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Syracuse Pickup — live upstream APIs",
+    "version": "1.0.0",
+    "description": "Public Esri geocoding and City of Syracuse collection queries. These upstream endpoints are live; they are not hosted by DataCuse. Read the agent guide before use. Operation-level servers select the correct host."
+  },
+  "externalDocs": {
+    "url": "https://www.datacuse.com/projects/pickup/for-ai/"
+  },
+  "paths": {
+    "/findAddressCandidates": {
+      "get": {
+        "operationId": "searchSyracuseAddresses",
+        "summary": "Find address candidates; ask user to confirm",
+        "description": "score >= 80; attributes.City = Syracuse; attributes.Addr_type in PointAddress, StreetAddress, Subaddress; finite valid location.x/y. Require address confirmation.",
+        "servers": [
+          {
+            "url": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer"
+          }
+        ],
+        "parameters": [
+          {
+            "name": "f",
+            "in": "query",
+            "required": true,
+            "description": "Use the documented fixed value.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "json"
+              ]
+            },
+            "example": "json"
+          },
+          {
+            "name": "SingleLine",
+            "in": "query",
+            "required": true,
+            "description": "Street address in Syracuse; do not duplicate city suffix.",
+            "schema": {
+              "type": "string"
+            },
+            "example": "105 Victoria Pl, Syracuse, NY"
+          },
+          {
+            "name": "outSR",
+            "in": "query",
+            "required": true,
+            "description": "Use the documented fixed value.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "4326"
+              ]
+            },
+            "example": "4326"
+          },
+          {
+            "name": "outFields",
+            "in": "query",
+            "required": true,
+            "description": "Use the documented fixed value.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "Addr_type,City"
+              ]
+            },
+            "example": "Addr_type,City"
+          },
+          {
+            "name": "maxLocations",
+            "in": "query",
+            "required": true,
+            "description": "Use the documented fixed value.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "5"
+              ]
+            },
+            "example": "5"
+          },
+          {
+            "name": "countryCode",
+            "in": "query",
+            "required": true,
+            "description": "Use the documented fixed value.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "USA"
+              ]
+            },
+            "example": "USA"
+          },
+          {
+            "name": "location",
+            "in": "query",
+            "required": true,
+            "description": "Use the documented fixed value.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "-76.1474,43.0481"
+              ]
+            },
+            "example": "-76.1474,43.0481"
+          },
+          {
+            "name": "searchExtent",
+            "in": "query",
+            "required": true,
+            "description": "Use the documented fixed value.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "-76.30,42.95,-76.02,43.16"
+              ]
+            },
+            "example": "-76.30,42.95,-76.02,43.16"
+          },
+          {
+            "name": "forStorage",
+            "in": "query",
+            "required": true,
+            "description": "Use the documented fixed value.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "false"
+              ]
+            },
+            "example": "false"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Inspect error even when HTTP status is 200.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AddressResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/query": {
+      "get": {
+        "operationId": "querySyracuseCollectionZone",
+        "summary": "Intersect a confirmed point with collection zones",
+        "description": "Exactly one feature, no error object, no exceededTransferLimit. Zero features means outside mapped coverage; multiple features means ambiguous.",
+        "servers": [
+          {
+            "url": "https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Recycling_Biweekly_and_Day/FeatureServer/22"
+          }
+        ],
+        "parameters": [
+          {
+            "name": "f",
+            "in": "query",
+            "required": true,
+            "description": "Use the documented fixed value.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "json"
+              ]
+            },
+            "example": "json"
+          },
+          {
+            "name": "geometry",
+            "in": "query",
+            "required": true,
+            "description": "WGS84 longitude,latitude of the confirmed address.",
+            "schema": {
+              "type": "string"
+            },
+            "example": "-76.1186858,43.0408654"
+          },
+          {
+            "name": "geometryType",
+            "in": "query",
+            "required": true,
+            "description": "Use the documented fixed value.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "esriGeometryPoint"
+              ]
+            },
+            "example": "esriGeometryPoint"
+          },
+          {
+            "name": "inSR",
+            "in": "query",
+            "required": true,
+            "description": "Use the documented fixed value.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "4326"
+              ]
+            },
+            "example": "4326"
+          },
+          {
+            "name": "spatialRel",
+            "in": "query",
+            "required": true,
+            "description": "Use the documented fixed value.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "esriSpatialRelIntersects"
+              ]
+            },
+            "example": "esriSpatialRelIntersects"
+          },
+          {
+            "name": "outFields",
+            "in": "query",
+            "required": true,
+            "description": "Use the documented fixed value.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "FID,Sanitation,RecyclingW,Schedule,TrSchedule"
+              ]
+            },
+            "example": "FID,Sanitation,RecyclingW,Schedule,TrSchedule"
+          },
+          {
+            "name": "returnGeometry",
+            "in": "query",
+            "required": true,
+            "description": "Use the documented fixed value.",
+            "schema": {
+              "type": "string",
+              "enum": [
+                "false"
+              ]
+            },
+            "example": "false"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Inspect error even when HTTP status is 200.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ZoneResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AddressResponse": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "object"
+          },
+          "candidates": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "address",
+                "score",
+                "location",
+                "attributes"
+              ],
+              "properties": {
+                "address": {
+                  "type": "string"
+                },
+                "score": {
+                  "type": "number"
+                },
+                "location": {
+                  "type": "object",
+                  "properties": {
+                    "x": {
+                      "type": "number"
+                    },
+                    "y": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "attributes": {
+                  "type": "object",
+                  "properties": {
+                    "Addr_type": {
+                      "type": "string"
+                    },
+                    "City": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "ZoneResponse": {
+        "type": "object",
+        "properties": {
+          "error": {
+            "type": "object"
+          },
+          "exceededTransferLimit": {
+            "type": "boolean"
+          },
+          "features": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "attributes": {
+                  "type": "object",
+                  "properties": {
+                    "FID": {
+                      "type": "integer"
+                    },
+                    "Sanitation": {
+                      "type": "string"
+                    },
+                    "RecyclingW": {
+                      "type": "string"
+                    },
+                    "TrSchedule": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "Schedule": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

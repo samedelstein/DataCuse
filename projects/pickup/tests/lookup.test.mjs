@@ -80,4 +80,10 @@ test('HTTP routes validate parameters and do not expose arbitrary local files',a
   assert.equal((await fetch(`${origin}/server.mjs`)).status,404);
   assert.equal((await fetch(`${origin}/sources.json`,{method:'POST'})).status,405);
   assert.equal((await fetch(`${origin}/`)).status,200);
+  for (const path of ['/for-ai/','/for-ai.json','/upstream-openapi.json','/llms.txt','/ai.mjs']) {
+    assert.equal((await fetch(`${origin}${path}`)).status,200,path);
+  }
+  const manifest = await (await fetch(`${origin}/for-ai.json`)).json();
+  assert.equal(manifest.hosted_convenience_api,null);
+  assert.ok(manifest.operations.lookup_point.url.endsWith('/FeatureServer/22/query'));
 });

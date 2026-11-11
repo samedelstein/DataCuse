@@ -7,6 +7,8 @@
   <meta name="theme-color" content="#163d36">
   <title>Syracuse Pickup · DataCuse</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="alternate" type="text/plain" href="llms.txt" title="AI agent instructions">
+  <link rel="alternate" type="application/json" href="for-ai.json" title="AI access manifest">
   <script type="module" src="app.mjs"></script>
 </head>
 <body>
@@ -48,7 +50,8 @@
         <article class="pickup-card recycling"><div class="card-label"><span class="dot"></span><h3>Next recycling pickup</h3><span>Every other week</span></div><p class="pickup-date" id="recycling-date"></p><p class="setout" id="recycling-setout"></p><p class="coverage" id="recycling-coverage"></p></article>
       </div>
       <p id="schedule-note" class="notice"></p>
-      <div class="actions"><button id="download" type="button">Add dates to calendar ↓</button><button class="secondary" id="remember" type="button">Remember my address</button></div>
+      <div class="actions"><button id="download" type="button">Add dates to calendar ↓</button><button class="secondary" id="remember" type="button">Remember my address</button><button class="secondary" id="copy-schedule" type="button">Copy schedule for AI</button></div>
+      <div id="ai-summary-panel" hidden><label for="ai-summary">Schedule and sources to paste into your assistant</label><textarea id="ai-summary" class="prompt" rows="10" readonly></textarea><p id="copy-status" class="small" role="status"></p></div>
       <p class="small">Calendar download is a snapshot, not a subscription. Saved addresses stay in this browser; they are looked up again each visit.</p>
       <details class="upcoming"><summary>See all upcoming dates</summary><div class="table-scroll"><table><caption>Dates currently published by the city</caption><thead><tr><th scope="col">Date</th><th scope="col">What to put out</th></tr></thead><tbody id="upcoming-rows"></tbody></table></div></details>
       <p id="retrieved" class="small"></p>
@@ -60,9 +63,10 @@
       <article><span class="eyebrow">SOMETHING OFF?</span><h2>Talk to Cityline.</h2><p>For a missed pickup, an uncertain schedule, or collection assistance, contact the city.</p><a href="tel:3154482489">315-448-CITY (2489) ↗</a></article>
     </section>
 
+    <section class="ai-callout" aria-labelledby="ai-heading"><div><p class="eyebrow">BRING YOUR OWN ASSISTANT</p><h2 id="ai-heading">Ask your AI about pickup day.</h2><p>Use a ready-to-copy prompt, or give your assistant the city’s live data instructions. No account needed here.</p></div><a class="guide-link" href="for-ai/">Use with AI →</a></section>
     <section class="sources" id="sources" aria-labelledby="source-heading">
       <div><p class="eyebrow">SAME CITY DATA. A SHORTER PATH.</p><h2 id="source-heading">The answer was inside a map.</h2><p>This independent DataCuse tool reads the same collection zones and published dates as the map embedded on Syracuse’s recycling page. Address matching comes from Esri.</p><p>It covers mapped city collection zones, not every property’s eligibility for residential service. Temporary disruptions may not yet appear in the data. If the city hasn’t published future dates, we say so.</p></div>
-      <nav aria-label="Sources and related tools"><a href="https://syr.maps.arcgis.com/apps/instant/lookup/index.html?appid=73be90dd8f2f47b1b85a1b2e01db72a7">Open the city’s interactive map ↗</a><a href="https://www.syr.gov/Living/My-Home/Trash-and-Recycling">City schedules and service notices ↗</a><a href="https://www.syr.gov/Living/My-Home/Trash-and-Recycling/Recycling">Official recycling page ↗</a><a href="sources.json">Data sources & field definitions ↗</a><a href="llms.txt">Use this data with software or AI ↗</a><a href="https://www.datacuse.com/projects/open-data-library/">Explore the Open Data Library ↗</a></nav>
+      <nav aria-label="Sources and related tools"><a href="https://syr.maps.arcgis.com/apps/instant/lookup/index.html?appid=73be90dd8f2f47b1b85a1b2e01db72a7">Open the city’s interactive map ↗</a><a href="https://www.syr.gov/Living/My-Home/Trash-and-Recycling">City schedules and service notices ↗</a><a href="https://www.syr.gov/Living/My-Home/Trash-and-Recycling/Recycling">Official recycling page ↗</a><a href="sources.json">Data sources & field definitions ↗</a><a href="for-ai/">Use this data with software or AI ↗</a><a href="https://www.datacuse.com/projects/open-data-library/">Explore the Open Data Library ↗</a></nav>
     </section>
     <noscript><p class="notice">Address lookup needs JavaScript. <a href="https://syr.maps.arcgis.com/apps/instant/lookup/index.html?appid=73be90dd8f2f47b1b85a1b2e01db72a7">Open the city’s map</a> or call Cityline at 315-448-2489.</p></noscript>
   </main>

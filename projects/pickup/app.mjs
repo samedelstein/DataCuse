@@ -12,7 +12,7 @@ function setBusy(value) {
   document.querySelectorAll('.candidate').forEach(button => { button.disabled = value; });
   $('search-form').setAttribute('aria-busy',String(value));
 }
-function resetResult() { $('result').hidden = true; currentZone = null; }
+function resetResult() { $('result').hidden = true; $('ai-summary-panel').hidden = true; $('ai-summary').value = ''; $('copy-status').textContent = ''; currentZone = null; }
 function showSaved() {
   $('saved-address').hidden = !savedAddress;
   $('use-saved').textContent = savedAddress ? `Look up saved address: ${savedAddress}` : '';
@@ -89,8 +89,25 @@ function render(result,label) {
   $('remember').hidden = !typedAddress;
   $('remember').textContent = 'Remember my address';
   $('retrieved').textContent = `Read from the city’s live map data ${new Date(result.fetchedAt).toLocaleString('en-US',{timeZone:'America/New_York'})} Eastern. Zone ${zone.id}.`;
+  $('ai-summary').value = [
+    'Syracuse Pickup — city-data snapshot (not a live lookup by your assistant)',
+    `Retrieved: ${result.fetchedAt}. Schedule as of ${result.asOf}, America/New_York.`,
+    `Zone ${zone.id}; regular collection: ${zone.day}; recycling week ${zone.week}.`,
+    ...['trash','recycling'].map(kind => `${kind}: next=${zone[kind].next ?? 'unknown'}; published through=${zone[kind].publishedThrough ?? 'unknown'}; source status=${zone[kind].status}; upcoming=${zone[kind].upcoming.join(', ') || 'none published'}`),
+    `Original city source: ${result.source}`,
+    'City notices: https://www.syr.gov/Living/My-Home/Trash-and-Recycling',
+    'Instructions: https://www.datacuse.com/projects/pickup/for-ai/',
+    'Use only the listed dates. Do not infer recurring dates or claim the truck has not arrived. Refresh the live source for current questions. Map coverage does not establish residential service eligibility.',
+    'The address and coordinates are omitted from this copy.'
+  ].join('\n');
   $('result').hidden = false;
 }
+
+$('copy-schedule').addEventListener('click',async () => {
+  $('ai-summary-panel').hidden = false;
+  try { await navigator.clipboard.writeText($('ai-summary').value); $('copy-status').textContent = 'Copied. Paste into your assistant. Address and coordinates are omitted.'; }
+  catch { $('ai-summary').focus(); $('ai-summary').select(); $('copy-status').textContent = 'Select and copy the text above, then paste it into your assistant.'; }
+});
 
 $('search-form').addEventListener('submit',event => { event.preventDefault(); search(); });
 $('use-saved').addEventListener('click',() => { $('address').value = savedAddress; search(); });
