@@ -1,5 +1,157 @@
 [
   {
+    "address": "945 Turtle St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [],
+      "known_public_records": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property": {
+        "address": "945 TURTLE ST",
+        "coordinates": {
+          "lat": 43.076482472565615,
+          "lon": -76.15469945335357
+        },
+        "parcel_key": "003-20-130"
+      },
+      "property_type_guess": "unclear",
+      "provider": "ollama:llava:latest",
+      "role": "Cautious civic data assistant",
+      "schema": {
+        "caveats": [
+          "limits such as image age, obstructed view, angle, or uncertainty"
+        ],
+        "condition_scores": {
+          "porch_or_entry": "good|fair|poor|not_visible|unclear",
+          "roof": "good|fair|poor|not_visible|unclear",
+          "siding_or_facade": "good|fair|poor|not_visible|unclear",
+          "trash_debris": "none_visible|minor|major|unclear",
+          "vegetation_overgrowth": "none_visible|minor|major|unclear",
+          "windows_doors": "good|fair|poor|not_visible|unclear",
+          "yard_or_lot": "good|fair|poor|not_visible|unclear"
+        },
+        "confidence": "high|medium|low",
+        "image_annotations": [
+          {
+            "bbox": {
+              "height": "box height as 0-1 fraction of image height",
+              "width": "box width as 0-1 fraction of image width",
+              "x": "left position as 0-1 fraction of image width",
+              "y": "top position as 0-1 fraction of image height"
+            },
+            "confidence": "high|medium|low",
+            "label": "short visible issue label",
+            "reason": "why this area was marked"
+          }
+        ],
+        "needs_human_review": "true|false",
+        "possible_unrecorded_issues": [
+          "cautious image-only flags not already reflected in known_data"
+        ],
+        "property_type_guess": "single_family|two_family|multifamily|commercial|mixed_use|vacant_lot|unclear",
+        "summary": "one cautious sentence describing the visible exterior",
+        "visible_conditions": [
+          "specific exterior observations visible in the image"
+        ],
+        "visible_flags": {
+          "active_construction_visible": "yes|no|unclear",
+          "boarded_windows_or_doors": "yes|no|unclear",
+          "fire_damage_visible": "yes|no|unclear",
+          "structural_damage_visible": "yes|no|unclear",
+          "vacancy_signs_visible": "yes|no|unclear"
+        }
+      },
+      "summary": "",
+      "task": [
+        "Describe the visible exterior conditions from the image",
+        "Compare visible conditions against known public records",
+        "Use cautious language",
+        "Do not infer ownership, occupancy, code violations, criminal activity, socioeconomic status, or protected-class information",
+        "Treat maintained lawns, garden beds, shrubs, ornamental grasses, and foundation plantings as normal landscaping, not vegetation overgrowth, even when vegetation is dense, varied in height, or near the foundation",
+        "Do not identify, describe, transcribe, or track people, faces, license plates, or private personal details",
+        "If the property is blocked, image quality is poor, or the view may show the wrong parcel, lower confidence and explain the caveat",
+        "When you flag visible issues, include approximate normalized bounding boxes in image_annotations. Use x, y, width, and height as fractions from 0 to 1 relative to the full image",
+        "Only create bounding boxes for clearly adverse visible property-condition issues, not neutral features, intentional landscaping, people, vehicles, license plates, or unrelated background objects",
+        "Return valid JSON only. Do not wrap it in Markdown"
+      ],
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 1092,
+    "image": "images/parcel-001092.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 93914,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.076482472565615,
+    "lon": -76.15469945335357,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-11T03:14:33+00:00",
+      "rental_registry": "2026-11-11T03:14:33+00:00",
+      "unfit_properties": "2026-11-11T03:14:33+00:00",
+      "vacant_properties": "2026-11-11T03:14:33+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-11T14:07:30+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "003-20-130",
+    "published_at": "2026-11-11T14:09:02+00:00",
+    "review_reasons": [],
+    "title": "945 Turtle St"
+  },
+  {
     "address": "215 Dale St",
     "ai_analysis": {
       "available": true,
