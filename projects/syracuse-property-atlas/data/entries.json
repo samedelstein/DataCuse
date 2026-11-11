@@ -1,5 +1,203 @@
 [
   {
+    "address": "1621 Spring St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Assessment is limited to the front exterior visible from the public street.",
+        "Rear, side elevations, and interior conditions are not visible in this image.",
+        "Known code violations cannot be verified or matched directly from street-level perspective without detailed record descriptions."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The property is a two-story residential structure with light-colored siding, an intact pitched roof, visible entry steps, and a standard lawn featuring outdoor seating.",
+      "visible_conditions": [
+        "Light-colored siding appears complete and intact from street view.",
+        "Gabled shingle roof shows no obvious missing shingles or large structural defects from this angle.",
+        "Standard front windows and entry door are intact with no visible board-ups.",
+        "Lawn is mowed with patio furniture (bench and plastic chair) set out in the front yard.",
+        "No severe trash accumulation or unmanaged vegetation overgrowth is visible."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Code violations: 3 matching records"
+    ],
+    "id": 1093,
+    "image": "images/parcel-001093.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 66520,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07359019334699,
+    "lon": -76.16393339179884,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07356955,
+          "Longitude": -76.16395414,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 117729,
+          "SBL": "002.-05-06.0",
+          "Vacant": null,
+          "complaint_address": "1621 Spring St",
+          "complaint_number": "2024-06947",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1733756381000,
+          "inspector_id": 1108,
+          "issued_to": "Chi Kim Nguyen",
+          "issued_to_address": "815 Danforth St",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1725619578983,
+          "status_date": 1742342400000,
+          "status_type_name": "Closed",
+          "violation": "2020 PMCNYS - Section 304.1 - General",
+          "violation_date": 1732201181257,
+          "violation_id": 186748,
+          "violation_number": "2024-17848"
+        },
+        {
+          "Latitude": 43.07356955,
+          "Longitude": -76.16395414,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 117732,
+          "SBL": "002.-05-06.0",
+          "Vacant": null,
+          "complaint_address": "1621 Spring St",
+          "complaint_number": "2024-06947",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1733756306000,
+          "inspector_id": 1108,
+          "issued_to": "Chi Kim Nguyen",
+          "issued_to_address": "815 Danforth St",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1725619578983,
+          "status_date": 1742342400000,
+          "status_type_name": "Closed",
+          "violation": "2020 PMCNYS - Section 305.1 - General",
+          "violation_date": 1732201106263,
+          "violation_id": 186746,
+          "violation_number": "2024-17847"
+        },
+        {
+          "Latitude": 43.07356955,
+          "Longitude": -76.16395414,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 117734,
+          "SBL": "002.-05-06.0",
+          "Vacant": null,
+          "complaint_address": "1621 Spring St",
+          "complaint_number": "2024-06947",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1728298132000,
+          "inspector_id": 1108,
+          "issued_to": "Chi Kim Nguyen",
+          "issued_to_address": "815 Danforth St",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1725619578983,
+          "status_date": 1744761600000,
+          "status_type_name": "Closed",
+          "violation": "SPCC-Sec. 27-133 Registration",
+          "violation_date": 1725619732473,
+          "violation_id": 182501,
+          "violation_number": "2024-13581"
+        }
+      ],
+      "rental_registry": [
+        {
+          "Latitude": 43.07356955,
+          "Longitude": -76.16395414,
+          "NeedsRR": "Yes",
+          "ObjectId": 3,
+          "PropertyAddress": "1621 Spring St",
+          "RR_app_received": 1728000000000,
+          "RR_contact_name": "Chi Kim Nguyen",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1741910400000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1741910400000,
+          "RRisValid": "Yes",
+          "SBL": "002.-05-06.0",
+          "SHAPE": null,
+          "completion_date": 1744329600000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1744243200000,
+          "pc_owner": "Stephani Nguyen",
+          "valid_until": 1839024000000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-11T03:14:33+00:00",
+      "rental_registry": "2026-11-11T03:14:33+00:00",
+      "unfit_properties": "2026-11-11T03:14:33+00:00",
+      "vacant_properties": "2026-11-11T03:14:33+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-11T15:02:54+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "002-05-060",
+    "published_at": "2026-11-11T15:04:25+00:00",
+    "review_reasons": [],
+    "title": "1621 Spring St"
+  },
+  {
     "address": "945 Turtle St",
     "ai_analysis": {
       "available": true,
