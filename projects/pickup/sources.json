@@ -1,0 +1,14 @@
+{
+  "name": "Syracuse Pickup",
+  "publisher": "DataCuse (independent)",
+  "sourceReviewed": "2026-11-10",
+  "cityPage": "https://www.syr.gov/Living/My-Home/Trash-and-Recycling/Recycling",
+  "citySchedule": "https://www.syr.gov/Living/My-Home/Trash-and-Recycling",
+  "map": "https://syr.maps.arcgis.com/apps/instant/lookup/index.html?appid=73be90dd8f2f47b1b85a1b2e01db72a7",
+  "appItem": "73be90dd8f2f47b1b85a1b2e01db72a7",
+  "webmapItem": "7477c6a3ce444b9ab9bbb7949f3081d9",
+  "layer": "https://services6.arcgis.com/bdPqSfflsdgFRVVM/arcgis/rest/services/Recycling_Biweekly_and_Day/FeatureServer/22",
+  "geocoder": "https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer",
+  "fields": {"FID":"Zone ID", "Sanitation":"Regular collection weekday", "RecyclingW":"Recycling week A or B", "Schedule":"City-published recycling dates", "TrSchedule":"City-published trash dates"},
+  "notes": ["Lookup uses the same sanitation layer as the city's embedded map.", "Live responses are fetched on demand; no old schedule is silently substituted.", "Only dates explicitly present in Schedule and TrSchedule are shown or exported. No recurrence is inferred.", "A mapped zone is not confirmation of eligibility for city residential collection.", "Service disruptions may not yet be reflected in the map. Check city notices."]
+}

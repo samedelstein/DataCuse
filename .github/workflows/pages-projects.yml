@@ -36,12 +36,24 @@ jobs:
       - name: Build stories, archive, and RSS feed
         run: npm run build:stories
 
+      - name: Check and build Syracuse Pickup
+        working-directory: projects/pickup
+        run: |
+          npm run lint
+          npm test
+          npm run build
+
       # Publish generated pages, never Markdown drafts or authoring templates.
       - name: Prepare Pages folder
         run: |
           mkdir -p _pages
-          rsync -av --exclude='.git' --exclude='node_modules' --exclude='_pages' --exclude='projects/puzzle_ap' --exclude='/content/' --exclude='/templates/' --exclude='/scripts/' --exclude='/tests/' --exclude='/docs/' --exclude='/_preview/' --exclude='/.codex/' --exclude='/.github/' --exclude='/stories/.generated.json' ./ _pages/
+          rsync -av --exclude='.git' --exclude='node_modules' --exclude='_pages' --exclude='projects/puzzle_ap' --exclude='/projects/pickup/' --exclude='/content/' --exclude='/templates/' --exclude='/scripts/' --exclude='/tests/' --exclude='/docs/' --exclude='/_preview/' --exclude='/.codex/' --exclude='/.github/' --exclude='/stories/.generated.json' ./ _pages/
           # We will overwrite the Vite project output into the right subfolder next
+
+      - name: Copy Syracuse Pickup into Pages path
+        run: |
+          mkdir -p _pages/projects/pickup
+          cp -r projects/pickup/dist/* _pages/projects/pickup/
 
       # 2) Build the Vite project
       - name: Install deps (cityline-bypass)

@@ -1,0 +1,14 @@
+{
+  "name": "datacuse-pickup",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "lint": "node scripts/check.mjs",
+    "build": "node scripts/build.mjs"
+  }
+}

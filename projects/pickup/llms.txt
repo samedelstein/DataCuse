@@ -1,0 +1,17 @@
+# Syracuse Pickup — DataCuse
+
+Independent lookup for city residential trash and recycling collection. Source metadata and field definitions: ./sources.json. Read that file before interpreting results.
+
+The browser uses lib.mjs to query live Esri address matching and the same city collection layer as the official embedded map. No static schedule fallback is used. This page does not host a chatbot.
+
+When run with Node (npm start), a read-only microservice exposes:
+- GET /api/search?q=105%20Victoria%20Pl — address candidates; confirm the address before choosing.
+- GET /api/lookup?lat=43.0408654&lon=-76.1186858 — zone and published upcoming dates.
+- GET /api/calendar.ics?lat=43.0408654&lon=-76.1186858 — calendar snapshot.
+- GET /api/openapi.json — API description.
+
+A static deployment serves the browser tool and source files, NOT those /api routes. Direct city query details are in sources.json and lib.mjs. No hosted API URL is asserted here.
+
+Never substitute the nearest zone for a missing spatial match. Ambiguous means multiple intersecting zones; ask the city to resolve it. A zone match is not proof of a property's residential collection eligibility. Dates use America/New_York. An expired/missing schedule is unknown, not an instruction to calculate recurring dates. Calendar dates are snapshots, not subscriptions. Check city notices for service disruptions.
+
+The optional saved address is the user's typed input, held only in browser localStorage. Geocoded results are not persisted. Search queries go to Esri; lookup coordinates go to the city ArcGIS service. The app does not log requests or use analytics.

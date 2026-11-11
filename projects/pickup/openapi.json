@@ -1,0 +1,11 @@
+{
+  "openapi": "3.1.0",
+  "info": {"title": "DataCuse Syracuse Pickup", "version": "1.0.0", "description": "Read-only lookup using Syracuse's published collection zones and dates. These routes require the Node service; they are not hosted by a static GitHub Pages deployment."},
+  "paths": {
+    "/api/health": {"get":{"operationId":"health","responses":{"200":{"description":"Service health; does not test upstream availability"}}}},
+    "/api/search": {"get":{"operationId":"searchAddresses","parameters":[{"name":"q","in":"query","required":true,"schema":{"type":"string","minLength":5,"maxLength":200}}],"responses":{"200":{"description":"Candidate addresses. Ask the person to confirm a candidate before lookup."},"400":{"description":"Invalid query"},"502":{"description":"Upstream unavailable"}}}},
+    "/api/lookup": {"get":{"operationId":"lookupPickup","parameters":[{"$ref":"#/components/parameters/lat"},{"$ref":"#/components/parameters/lon"}],"responses":{"200":{"description":"status: matched, ambiguous, or outside-coverage; zones with day, week, and trash/recycling next, upcoming, publishedThrough, status. Includes source, asOf and fetchedAt when fetched."},"400":{"description":"Invalid coordinates"},"502":{"description":"Unavailable or invalid upstream data"}}}},
+    "/api/calendar.ics": {"get":{"operationId":"downloadCalendar","parameters":[{"$ref":"#/components/parameters/lat"},{"$ref":"#/components/parameters/lon"}],"responses":{"200":{"description":"Calendar of explicit upcoming city dates; no recurring rule","content":{"text/calendar":{"schema":{"type":"string"}}}},"422":{"description":"No unique zone or no upcoming dates"},"400":{"description":"Invalid coordinates"},"502":{"description":"Upstream unavailable"}}}}
+  },
+  "components":{"parameters":{"lat":{"name":"lat","in":"query","required":true,"schema":{"type":"number","minimum":-90,"maximum":90}},"lon":{"name":"lon","in":"query","required":true,"schema":{"type":"number","minimum":-180,"maximum":180}}}}
+}
