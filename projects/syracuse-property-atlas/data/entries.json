@@ -1,5 +1,176 @@
 [
   {
+    "address": "201 Burdick Ave & Turtle St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Street-level view provides limited visibility of the rear elevation and rear roof slopes."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The property is a two-story residential structure featuring tan siding, intact windows, a shingled roof, and a well-maintained front yard enclosed by a white picket fence.",
+      "visible_conditions": [
+        "Horizontal tan siding appears in good condition with no visible damage.",
+        "Pitched asphalt shingle roof appears intact.",
+        "Windows and frames are intact and clear.",
+        "Enclosed front porch structure appears stable and intact.",
+        "Lawn area and perimeter white picket fence are well maintained."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Code violations: 2 matching records"
+    ],
+    "id": 1090,
+    "image": "images/parcel-001090.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 96776,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07663474145528,
+    "lon": -76.1543965062837,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07660509,
+          "Longitude": -76.15443809,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 150113,
+          "SBL": "003.-20-12.0",
+          "Vacant": null,
+          "complaint_address": "201 Burdick Ave & Turtle St",
+          "complaint_number": "2020-14690",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1597916163000,
+          "inspector_id": 497,
+          "issued_to": "Hong Nguyen",
+          "issued_to_address": "113 Murray Avenue ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1595496839207,
+          "status_date": 1596101763000,
+          "status_type_name": "Open",
+          "violation": "SPCC-Sec. 27-133 Registration",
+          "violation_date": 1595496963367,
+          "violation_id": 96829,
+          "violation_number": "2020-00381"
+        },
+        {
+          "Latitude": 43.07660509,
+          "Longitude": -76.15443809,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 150114,
+          "SBL": "003.-20-12.0",
+          "Vacant": null,
+          "complaint_address": "201 Burdick Ave & Turtle St",
+          "complaint_number": "2017-03700",
+          "complaint_type_name": "Building W/O Permit",
+          "complaint_zip": 13208,
+          "comply_by_date": 1487952975000,
+          "inspector_id": 248,
+          "issued_to": "Hung Nguyen",
+          "issued_to_address": "2911 Tenbroeck Ave ",
+          "issued_to_city": "Bronx",
+          "issued_to_zip": "10469",
+          "open_date": 1487347839413,
+          "status_date": 1560211200000,
+          "status_type_name": "Closed",
+          "violation": "2020 Property Maintenance Code of NYS Part 105.2",
+          "violation_date": 1487348172983,
+          "violation_id": 65391,
+          "violation_number": "68968"
+        }
+      ],
+      "rental_registry": [
+        {
+          "Latitude": 43.07660509,
+          "Longitude": -76.15443809,
+          "NeedsRR": "Yes",
+          "ObjectId": 266,
+          "PropertyAddress": "201 Burdick Ave & Turtle St",
+          "RR_app_received": null,
+          "RR_contact_name": "Hong Nguyen",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "003.-20-12.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1586304000000,
+          "pc_owner": "Hong Nguyen Living Trust",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-11T03:14:33+00:00",
+      "rental_registry": "2026-11-11T03:14:33+00:00",
+      "unfit_properties": "2026-11-11T03:14:33+00:00",
+      "vacant_properties": "2026-11-11T03:14:33+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-11T12:02:55+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "003-20-120",
+    "published_at": "2026-11-11T12:04:26+00:00",
+    "review_reasons": [],
+    "title": "201 Burdick Ave & Turtle St"
+  },
+  {
     "address": "1625 Spring St & Hiawatha Blvd",
     "ai_analysis": {
       "available": true,
