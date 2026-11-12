@@ -1,5 +1,111 @@
 [
   {
+    "address": "207 Dale St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Sun glare partially obscures the roof and some front-facing details of the property.",
+        "The image provides a street-level view from an angle, limiting a full view of all sides of the property."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property at 207 Dale St appears to be a two-story residential structure with white siding and a maintained lawn, viewed from the street.",
+      "visible_conditions": [
+        "Two-story residential structure with a pitched roof.",
+        "White exterior siding appears to be in good condition.",
+        "Dark-colored shutters are visible on some windows.",
+        "A front entrance with steps and a small porch is visible.",
+        "The roof appears to be covered with asphalt shingles, partially obscured by sun glare.",
+        "The front yard consists of a maintained grass lawn with some shrubbery and foundation plantings.",
+        "A paved driveway is visible on the left side of the house."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 1097,
+    "image": "images/parcel-001097.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 72022,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.076296803311415,
+    "lon": -76.14412679681668,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-11T03:14:33+00:00",
+      "rental_registry": "2026-11-11T03:14:33+00:00",
+      "unfit_properties": "2026-11-11T03:14:33+00:00",
+      "vacant_properties": "2026-11-11T03:14:33+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-12T13:02:59+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "005-03-250",
+    "published_at": "2026-11-12T13:04:31+00:00",
+    "review_reasons": [],
+    "title": "207 Dale St"
+  },
+  {
     "address": "1619 Spring St",
     "ai_analysis": {
       "available": false,
