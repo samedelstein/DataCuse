@@ -1,5 +1,124 @@
 [
   {
+    "address": "211 Dale St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Sun flare directly behind the structure obscures fine roof and upper exterior details.",
+        "Foreground vehicle and street pole partially obstruct lower facade and ground-level view."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The subject property is a two-story residential building with light-colored siding, intact windows, an enclosed front porch area, and a maintained front lawn visible from the street.",
+      "visible_conditions": [
+        "Light-colored siding appears intact without major visible damage.",
+        "Front porch enclosure and visible windows appear intact.",
+        "Front yard features maintained lawn and foundation shrubs.",
+        "Gabled roof structure appears intact from street angle."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record"
+    ],
+    "id": 1094,
+    "image": "images/parcel-001094.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 67003,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.076343299419776,
+    "lon": -76.14426784125142,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [
+        {
+          "Latitude": 43.07632301,
+          "Longitude": -76.14430148,
+          "NeedsRR": "Yes",
+          "ObjectId": 431,
+          "PropertyAddress": "211 Dale St",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "005.-03-24.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Chandra Rai",
+          "valid_until": null,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-11T03:14:33+00:00",
+      "rental_registry": "2026-11-11T03:14:33+00:00",
+      "unfit_properties": "2026-11-11T03:14:33+00:00",
+      "vacant_properties": "2026-11-11T03:14:33+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-12T01:30:20+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "005-03-240",
+    "published_at": "2026-11-12T01:31:52+00:00",
+    "review_reasons": [],
+    "title": "211 Dale St"
+  },
+  {
     "address": "1621 Spring St",
     "ai_analysis": {
       "available": true,
