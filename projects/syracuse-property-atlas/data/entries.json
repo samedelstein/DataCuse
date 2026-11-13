@@ -1,5 +1,150 @@
 [
   {
+    "address": "201 Dale St & Hillside St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Assessment is limited to visible front and side exterior elevations from street distance.",
+        "Rear elevation and roof details not visible from street view."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A two-story residential house with an enclosed front porch, gambrel roof, and well-maintained lawn appears in intact condition from the street view.",
+      "visible_conditions": [
+        "Two-story Dutch colonial structure with an enclosed porch and prominent chimney.",
+        "Maintained lawn, ornamental trees, and neat garden beds surrounding the foundation.",
+        "Vinyl siding, roofing shingles, and windows appear intact with no obvious structural damage visible from street level."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Code violations: 1 matching record"
+    ],
+    "id": 1100,
+    "image": "images/parcel-001100.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 70774,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07617830910684,
+    "lon": -76.14409350237707,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07614767,
+          "Longitude": -76.14412711,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 69401,
+          "SBL": "005.-03-26.0",
+          "Vacant": null,
+          "complaint_address": "201 Dale St & Hillside St",
+          "complaint_number": "2026-01044",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1773401352000,
+          "inspector_id": 1222,
+          "issued_to": "Andreea Merloiu",
+          "issued_to_address": "655 Tennessee Street",
+          "issued_to_city": "San Francisco",
+          "issued_to_zip": "94107",
+          "open_date": 1770980882643,
+          "status_date": 1770982152213,
+          "status_type_name": "Open",
+          "violation": "SPCC-Sec. 27-133 Registration",
+          "violation_date": 1770982152213,
+          "violation_id": 212944,
+          "violation_number": "2026-02434"
+        }
+      ],
+      "rental_registry": [
+        {
+          "Latitude": 43.07614767,
+          "Longitude": -76.14412711,
+          "NeedsRR": "Yes",
+          "ObjectId": 432,
+          "PropertyAddress": "201 Dale St & Hillside St",
+          "RR_app_received": 1771459200000,
+          "RR_contact_name": "Andreea Merloiu",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "005.-03-26.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1779840000000,
+          "pc_owner": "Andreea Merloiu",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-11T03:14:33+00:00",
+      "rental_registry": "2026-11-11T03:14:33+00:00",
+      "unfit_properties": "2026-11-11T03:14:33+00:00",
+      "vacant_properties": "2026-11-11T03:14:33+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-13T19:02:51+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "005-03-260",
+    "published_at": "2026-11-13T19:04:22+00:00",
+    "review_reasons": [],
+    "title": "201 Dale St & Hillside St"
+  },
+  {
     "address": "937 Turtle St",
     "ai_analysis": {
       "available": true,
