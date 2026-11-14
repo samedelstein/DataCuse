@@ -1,5 +1,182 @@
 [
   {
+    "address": "151 Dale St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The left side of the property is partially obscured by a vehicle and a utility pole, limiting the full view of that section."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "minor",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.25,
+            "width": 0.25,
+            "x": 0.55,
+            "y": 0.65
+          },
+          "confidence": "high",
+          "label": "Unmanaged grass/weeds",
+          "reason": "Portions of the front lawn, particularly to the right of the driveway, show visibly longer grass and weeds, suggesting a lack of recent maintenance."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Areas of the front lawn appear to have unmanaged grass or weeds, which might represent a new or ongoing condition not explicitly detailed in the known code violations."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The visible exterior of the property appears to be a single-family residence with a mix of facade materials, a small front entry, and a front yard containing both landscaping and areas of potentially unmanaged vegetation.",
+      "visible_conditions": [
+        "Single-story residence with a gable roof.",
+        "Front facade features light-colored brick or stone veneer on the lower portion and orange-colored siding on the upper gable.",
+        "Small covered front entry porch with white columns.",
+        "Asphalt shingle roof appears generally intact from the visible angle.",
+        "Visible windows appear to be in fair condition.",
+        "Front yard contains dense shrubs and grass.",
+        "Driveway is paved with asphalt, showing some minor cracking near the street.",
+        "A dark-colored trash bin is visible near the front entry.",
+        "Some areas of the front lawn appear to have longer grass or weeds."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Code violations: 2 matching records",
+      "Image-only flag: Areas of the front lawn appear to have unmanaged grass or weeds, which might represent a new or ongoing condition not explicitly detailed in the known code violations."
+    ],
+    "id": 1103,
+    "image": "images/parcel-001103.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 68831,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07599369783547,
+    "lon": -76.14418610624509,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07593166,
+          "Longitude": -76.14421791,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 12936,
+          "SBL": "005.-03-27.0",
+          "Vacant": null,
+          "complaint_address": "151 Dale St",
+          "complaint_number": "2026-06393",
+          "complaint_type_name": "Property Maintenance-Ext",
+          "complaint_zip": 13208,
+          "comply_by_date": 1791471095000,
+          "inspector_id": 1181,
+          "issued_to": "Nasro Samow",
+          "issued_to_address": "151 Dale St ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1790067455023,
+          "status_date": 1791417600000,
+          "status_type_name": "Closed",
+          "violation": "SPCC - Section 27-72 (e) -Trash & Debris",
+          "violation_date": 1790866295153,
+          "violation_id": 224786,
+          "violation_number": "2026-14314"
+        },
+        {
+          "Latitude": 43.07593166,
+          "Longitude": -76.14421791,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 12937,
+          "SBL": "005.-03-27.0",
+          "Vacant": null,
+          "complaint_address": "151 Dale St",
+          "complaint_number": "2022-02902",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1651589628000,
+          "inspector_id": 814,
+          "issued_to": "Tho Ny",
+          "issued_to_address": "151 Dale Street ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1649775141973,
+          "status_date": 1652227200000,
+          "status_type_name": "Closed",
+          "violation": "SPCC-Sec. 27-133 Registration",
+          "violation_date": 1649775228403,
+          "violation_id": 130523,
+          "violation_number": "2022-06122"
+        }
+      ],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-11T03:14:33+00:00",
+      "rental_registry": "2026-11-11T03:14:33+00:00",
+      "unfit_properties": "2026-11-11T03:14:33+00:00",
+      "vacant_properties": "2026-11-11T03:14:33+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-14T14:18:52+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "005-03-270",
+    "published_at": "2026-11-14T14:20:23+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "151 Dale St"
+  },
+  {
     "address": "933 Turtle St",
     "ai_analysis": {
       "available": true,
