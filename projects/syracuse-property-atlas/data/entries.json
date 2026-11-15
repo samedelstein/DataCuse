@@ -1,5 +1,152 @@
 [
   {
+    "address": "1607 Spring St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Assessment is made from a street-level distance, which limits inspection of detailed exterior features.",
+        "Known public code violations are noted in records, but specific visual evidence of violations cannot be definitively identified from this camera angle."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A residential building featuring light-colored siding, a pitched roof, front entry steps, and a mowed lawn with a stone walkway.",
+      "visible_conditions": [
+        "Light-colored siding appears intact from street view.",
+        "Pitched roof structure shows no obvious major sagging or structural failure.",
+        "Front lawn is mowed with a stone walkway leading to the front entry.",
+        "Adjacent mature tree and shrubbery present on the parcel side."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Code violations: 2 matching records"
+    ],
+    "id": 1109,
+    "image": "images/parcel-001109.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 71779,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07325409265258,
+    "lon": -76.16331166269025,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07322339,
+          "Longitude": -76.16334007,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 146080,
+          "SBL": "002.-05-12.0",
+          "Vacant": null,
+          "complaint_address": "1607 Spring St",
+          "complaint_number": "2022-01297",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1647964913000,
+          "inspector_id": 910,
+          "issued_to": "Sheila Leahey",
+          "issued_to_address": "1607 Spring St ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1646150088147,
+          "status_date": 1646697600000,
+          "status_type_name": "Closed",
+          "violation": "SPCC-Sec. 27-133 Registration",
+          "violation_date": 1646150513647,
+          "violation_id": 127416,
+          "violation_number": "2022-02986"
+        },
+        {
+          "Latitude": 43.07322339,
+          "Longitude": -76.16334007,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 146081,
+          "SBL": "002.-05-12.0",
+          "Vacant": null,
+          "complaint_address": "1607 Spring St",
+          "complaint_number": "2021-16837",
+          "complaint_type_name": "Property Maintenance-Ext",
+          "complaint_zip": 13208,
+          "comply_by_date": 1625670728000,
+          "inspector_id": 705,
+          "issued_to": "Sheila Leahey",
+          "issued_to_address": "1607 Spring St ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1623936795073,
+          "status_date": 1625616000000,
+          "status_type_name": "Closed",
+          "violation": "SZC- Section III- Illegal Front Yard Parking",
+          "violation_date": 1624374728797,
+          "violation_id": 112762,
+          "violation_number": "2021-09638"
+        }
+      ],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-11T03:14:33+00:00",
+      "rental_registry": "2026-11-11T03:14:33+00:00",
+      "unfit_properties": "2026-11-11T03:14:33+00:00",
+      "vacant_properties": "2026-11-11T03:14:33+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-15T18:35:51+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "002-05-120",
+    "published_at": "2026-11-15T18:37:22+00:00",
+    "review_reasons": [],
+    "title": "1607 Spring St"
+  },
+  {
     "address": "923 Turtle St",
     "ai_analysis": {
       "available": true,
