@@ -1,5 +1,176 @@
 [
   {
+    "address": "1609 Spring St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Distance from the road and a foreground utility pole partially obscure detailed views of the main facade.",
+        "Multiple structures in close proximity make precise parcel boundary verification difficult without exact map overlay."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A street-level view shows a small white residential structure with front garden beds and a mowed lawn, situated between adjacent multi-story residential buildings.",
+      "visible_conditions": [
+        "White siding and roof appear largely intact from street view.",
+        "Front lawn is mowed with intentional garden beds along the front pathway.",
+        "Patio seating visible near the front entry area.",
+        "Utility pole present in foreground near the street edge with climbing vegetation at its base."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Code violations: 2 matching records"
+    ],
+    "id": 1107,
+    "image": "images/parcel-001107.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 86399,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07330074817848,
+    "lon": -76.16340929734352,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07326053,
+          "Longitude": -76.16342061,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 106013,
+          "SBL": "002.-05-11.0",
+          "Vacant": null,
+          "complaint_address": "1609 Spring St",
+          "complaint_number": "2025-02751",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1747406427000,
+          "inspector_id": 1221,
+          "issued_to": "Sedra Abo Amer",
+          "issued_to_address": "218 Bennington Dr",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13205",
+          "open_date": 1745505573753,
+          "status_date": 1746057600000,
+          "status_type_name": "Closed",
+          "violation": "2020 PMCNYS - Section 704.6.1.2 - Groups R-2, R-3, R-4, I-1, and other dwellings",
+          "violation_date": 1745505627043,
+          "violation_id": 195391,
+          "violation_number": "2025-06886"
+        },
+        {
+          "Latitude": 43.07326053,
+          "Longitude": -76.16342061,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 106016,
+          "SBL": "002.-05-11.0",
+          "Vacant": null,
+          "complaint_address": "1609 Spring St",
+          "complaint_number": "2021-22007",
+          "complaint_type_name": "Property Maintenance-Ext",
+          "complaint_zip": 13208,
+          "comply_by_date": 1633511980000,
+          "inspector_id": 705,
+          "issued_to": "Peter Leahey and Shawna Hooper",
+          "issued_to_address": "1609 Spring St ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1631705729803,
+          "status_date": 1634256000000,
+          "status_type_name": "Closed",
+          "violation": "2020 PMCNYS  - Section 303.1 - Swimming Pools",
+          "violation_date": 1632215980700,
+          "violation_id": 118745,
+          "violation_number": "2021-15677"
+        }
+      ],
+      "rental_registry": [
+        {
+          "Latitude": 43.07326053,
+          "Longitude": -76.16342061,
+          "NeedsRR": "Yes",
+          "ObjectId": 6,
+          "PropertyAddress": "1609 Spring St",
+          "RR_app_received": 1741132800000,
+          "RR_contact_name": "Sedra Abo Amer",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": 1748995200000,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": 1748995200000,
+          "RRisValid": "Yes",
+          "SBL": "002.-05-11.0",
+          "SHAPE": null,
+          "completion_date": 1749081600000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1748995200000,
+          "pc_owner": "Sedra Abo Amer",
+          "valid_until": 1843776000000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-11T03:14:33+00:00",
+      "rental_registry": "2026-11-11T03:14:33+00:00",
+      "unfit_properties": "2026-11-11T03:14:33+00:00",
+      "vacant_properties": "2026-11-11T03:14:33+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-15T15:37:35+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "002-05-110",
+    "published_at": "2026-11-15T15:39:06+00:00",
+    "review_reasons": [],
+    "title": "1609 Spring St"
+  },
+  {
     "address": "147 Dale St",
     "ai_analysis": {
       "available": true,
