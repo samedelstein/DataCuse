@@ -1,5 +1,120 @@
 [
   {
+    "address": "143 Dale St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Dense tree foliage obstructs the view of the roof and upper building sections.",
+        "Exact parcel boundaries relative to adjacent structure and driveway are unconfirmed."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "not_visible",
+        "siding_or_facade": "good",
+        "trash_debris": "minor",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": "0.16",
+            "width": "0.44",
+            "x": "0.53",
+            "y": "0.83"
+          },
+          "confidence": "high",
+          "label": "yard debris",
+          "reason": "Discarded fixture and scrap boards/metal resting on the front lawn area."
+        }
+      ],
+      "needs_human_review": true,
+      "possible_unrecorded_issues": [
+        "Minor yard debris including a discarded plumbing fixture and scrap materials on the front lawn."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A single-family blue residential structure with a paved driveway and mature tree canopy, featuring some discarded items on the front lawn.",
+      "visible_conditions": [
+        "Blue horizontal siding appears intact and in fair to good condition.",
+        "Multi-pane windows on front facade are visible and unbroken.",
+        "Large tree canopy partially obstructs the view of the upper facade and roof.",
+        "Paved driveway running along the left side of the house.",
+        "Discarded plumbing fixture (toilet) and pile of scrap materials/boards present on the front lawn area near the tree base."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: Minor yard debris including a discarded plumbing fixture and scrap materials on the front lawn.",
+      "Needs human review"
+    ],
+    "id": 1110,
+    "image": "images/parcel-001110.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 135865,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.075787771098014,
+    "lon": -76.14399968417224,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-11T03:14:33+00:00",
+      "rental_registry": "2026-11-11T03:14:33+00:00",
+      "unfit_properties": "2026-11-11T03:14:33+00:00",
+      "vacant_properties": "2026-11-11T03:14:33+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-15T19:40:30+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: <urlopen error [Errno 11001] getaddrinfo failed>",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "005-03-290",
+    "published_at": "2026-11-15T19:42:23+00:00",
+    "review_reasons": [
+      "AI requested human review",
+      "Possible image-only issue"
+    ],
+    "title": "143 Dale St"
+  },
+  {
     "address": "1607 Spring St",
     "ai_analysis": {
       "available": true,
