@@ -1,5 +1,237 @@
 [
   {
+    "address": "2804-06 Grant Blvd & Turtle St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The view of the main building's facade and roof is partially obstructed by trees.",
+        "The primary entry point for the main building is not clearly visible from this angle."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "unclear",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "multifamily",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property features a multi-story building and a detached garage, both appearing to be in fair exterior condition, with a maintained lawn and paved driveway.",
+      "visible_conditions": [
+        "A multi-story building with light-colored siding is visible, partially obscured by trees.",
+        "A detached white-sided garage is present at the rear of the property.",
+        "The lawn appears mowed and maintained.",
+        "A paved driveway leads to the garage and provides off-street parking.",
+        "Several mature trees are on the property, partially obstructing the view of the main building.",
+        "A small blue slide and a blue mat are visible on the lawn."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Code violations: 4 matching records"
+    ],
+    "id": 1117,
+    "image": "images/parcel-001117.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 93065,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.075442942720784,
+    "lon": -76.15530610505098,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07541582,
+          "Longitude": -76.15535049,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 134846,
+          "SBL": "003.-20-21.0",
+          "Vacant": null,
+          "complaint_address": "2804-06 Grant Blvd & Turtle St",
+          "complaint_number": "2023-06085",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1695027112000,
+          "inspector_id": 910,
+          "issued_to": "Patrick & Kevin Moore",
+          "issued_to_address": "108 Windham Ave",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1692779581000,
+          "status_date": 1696204800000,
+          "status_type_name": "Closed",
+          "violation": "2020 PMCNYS - Section 505.4 - Water heating facilities",
+          "violation_date": 1693212712300,
+          "violation_id": 163079,
+          "violation_number": "2023-15425"
+        },
+        {
+          "Latitude": 43.07541582,
+          "Longitude": -76.15535049,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 134847,
+          "SBL": "003.-20-21.0",
+          "Vacant": null,
+          "complaint_address": "2804-06 Grant Blvd & Turtle St",
+          "complaint_number": "2023-06085",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1695026473000,
+          "inspector_id": 910,
+          "issued_to": "Patrick & Kevin Moore",
+          "issued_to_address": "108 Windham Ave",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1692779581000,
+          "status_date": 1705536000000,
+          "status_type_name": "Closed",
+          "violation": "SGOC - Section 54-5(A) - Lead Abatement and Control Deteriorated Paint Violation - Exterior Residential ",
+          "violation_date": 1693212073160,
+          "violation_id": 163078,
+          "violation_number": "2023-15424"
+        },
+        {
+          "Latitude": 43.07541582,
+          "Longitude": -76.15535049,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 134848,
+          "SBL": "003.-20-21.0",
+          "Vacant": null,
+          "complaint_address": "2804-06 Grant Blvd & Turtle St",
+          "complaint_number": "2022-09464",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1668682404000,
+          "inspector_id": 910,
+          "issued_to": "Patrick, Kevin & Brian Moore",
+          "issued_to_address": "PO BOX 6786",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13217",
+          "open_date": 1666867095460,
+          "status_date": 1726444800000,
+          "status_type_name": "Closed",
+          "violation": "SPCC-Sec. 27-133 Registration",
+          "violation_date": 1666868004913,
+          "violation_id": 144307,
+          "violation_number": "2022-19991"
+        },
+        {
+          "Latitude": 43.07541582,
+          "Longitude": -76.15535049,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 134849,
+          "SBL": "003.-20-21.0",
+          "Vacant": null,
+          "complaint_address": "2804-06 Grant Blvd & Turtle St",
+          "complaint_number": "08469",
+          "complaint_type_name": "Property Maintenance-Ext",
+          "complaint_zip": 13208,
+          "comply_by_date": 1560960500000,
+          "inspector_id": 241,
+          "issued_to": "Patrick, Kevin & Brian Moore",
+          "issued_to_address": "PO BOX 6786",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13217",
+          "open_date": 1534521965633,
+          "status_date": 1571616000000,
+          "status_type_name": "Closed",
+          "violation": "2015 IPMC Section 304.2 Protective Treatment",
+          "violation_date": 1534522100460,
+          "violation_id": 78326,
+          "violation_number": "81995"
+        }
+      ],
+      "rental_registry": [
+        {
+          "Latitude": 43.07541582,
+          "Longitude": -76.15535049,
+          "NeedsRR": "Yes",
+          "ObjectId": 268,
+          "PropertyAddress": "2804-06 Grant Blvd & Turtle St",
+          "RR_app_received": 1668038400000,
+          "RR_contact_name": "Patrick, Kevin & Brian Moore",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "Yes",
+          "SBL": "003.-20-21.0",
+          "SHAPE": null,
+          "completion_date": 1705536000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1705622400000,
+          "pc_owner": "Patrick Moore",
+          "valid_until": 1800230400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-18T14:27:47+00:00",
+      "rental_registry": "2026-11-18T14:27:47+00:00",
+      "unfit_properties": "2026-11-18T14:27:47+00:00",
+      "vacant_properties": "2026-11-18T14:27:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-19T12:36:16+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "003-20-210",
+    "published_at": "2026-11-19T12:37:46+00:00",
+    "review_reasons": [],
+    "title": "2804-06 Grant Blvd & Turtle St"
+  },
+  {
     "address": "417 Wolf St",
     "ai_analysis": {
       "available": true,
