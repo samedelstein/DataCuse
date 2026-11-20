@@ -1,5 +1,114 @@
 [
   {
+    "address": "407 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: The read operation timed out",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "unclear",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "{\n  \"summary\": \"The image displays a mixed-use property with a commercial-style building featuring a garage door and an attached or adjacent residential-style structure, with some minor unmanaged vegetation visible along paved areas.\",\n  \"property_type_guess\": \"mixed_use\",\n  \"visible_conditions\": [\n    \"A two-story building with light green horizontal siding on the main facade, featuring a large garage door and an arched window in the gable.\",\n    \"Commercial signage for '315 Motoring' and 'Registered Auto Repair' is visible on the front facade.\",\n    \"An attached or adjacent structure, possibly residential in style, with yellow siding and a gambrel roof, is visible to the right.\",\n    \"A paved driveway runs along the left side of the main building.\",\n    \"Some unmanaged vegetation is present along the edge of the paved areas and near the street.\",\n    \"A black pickup truck is parked in front of the main building, partially obstructing the view.\"\n   blouses],\n  \"condition_scores\": {\n    \"roof\": \"fair\",\n    \"siding_or_facade\": \"fair\",\n    \"windows_doors\": \"fair\",\n    \"porch_or_entry\": \"fair\",\n    \"yard_or_lot\": \"fair\",\n    \"trash_debris\": \"none_visible\",\n    \"vegetation_overgrowth\": \"minor\"\n  },\n  \"visible_flags\": {\n    \"boarded_windows_or_doors\": \"no\",\n    \"fire_damage_visible\": \"no\",\n    \"structural_damage_visible\": \"no\",\n    \"vacancy_signs_visible\": \"no\",\n    \"active_construction_visible\": \"no\"\n  },\n  \"possible_unrecorded_issues\": [\n    \"Minor vegetation overgrowth along the paved areas and curb.\"\n  ],\n  \"image_annotations\": [\n    {\n      \"label\": \"Minor vegetation overgrowth\",\n      \"reason\": \"Unmanaged growth along the edge of the paved driveway and curb.\",\n      \"bbox\": {\n        \"x\": 0.70,\n        \"y\": 0.65,\n        \"width\": 0.20,\n        \"height\": 0.10\n      },\n      \"confidence\": \"high\"\n    }\n  ],\n  \"needs_human_review\": \"false\",\n  \"confidence\": \"high\",\n  \"caveats\": [\n    \"A parked vehicle obstructs a portion of the main building's lower facade and driveway.\"\n  ]\n}",
+      "visible_conditions": [],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Code violations: 1 matching record"
+    ],
+    "id": 1125,
+    "image": "images/parcel-001125.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 76250,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07260685207344,
+    "lon": -76.16345717888503,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07260038,
+          "Longitude": -76.16348144,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 146913,
+          "SBL": "002.-05-18.0",
+          "Vacant": null,
+          "complaint_address": "407 Wolf St",
+          "complaint_number": "2021-24326",
+          "complaint_type_name": "Property Maintenance-Ext",
+          "complaint_zip": 13208,
+          "comply_by_date": 1640097782000,
+          "inspector_id": 705,
+          "issued_to": "Ciciarelli Irrvcbl Trust",
+          "issued_to_address": "412 Wolf St ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13208",
+          "open_date": 1638877301373,
+          "status_date": 1642032000000,
+          "status_type_name": "Closed",
+          "violation": "SZC - Section Z-B-1 - Illegal Land Use",
+          "violation_date": 1639492982207,
+          "violation_id": 123721,
+          "violation_number": "2021-20696"
+        }
+      ],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-18T14:27:47+00:00",
+      "rental_registry": "2026-11-18T14:27:47+00:00",
+      "unfit_properties": "2026-11-18T14:27:47+00:00",
+      "vacant_properties": "2026-11-18T14:27:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-20T19:03:23+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "002-05-180",
+    "published_at": "2026-11-20T19:04:54+00:00",
+    "review_reasons": [],
+    "title": "407 Wolf St"
+  },
+  {
     "address": "127 Dale St",
     "ai_analysis": {
       "available": true,
