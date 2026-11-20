@@ -1,5 +1,98 @@
 [
   {
+    "address": "2816 Grant Blvd",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Street-level view captures only the front and side exterior surfaces of the structures."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The image shows a multi-story residential building with a side yard, a mowed lawn, and a detached garage in generally intact condition.",
+      "visible_conditions": [
+        "Multi-story dwelling with light siding on the lower level and darker shingles or siding on the upper level",
+        "Detached garage visible on the left portion of the lot",
+        "Mowed lawn area between the house and garage",
+        "Standard recycling and trash bins located beside the house and garage"
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 1126,
+    "image": "images/parcel-001126.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 87853,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07562542694912,
+    "lon": -76.15576122995374,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-18T14:27:47+00:00",
+      "rental_registry": "2026-11-18T14:27:47+00:00",
+      "unfit_properties": "2026-11-18T14:27:47+00:00",
+      "vacant_properties": "2026-11-18T14:27:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-20T19:06:42+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "003-20-240",
+    "published_at": "2026-11-20T19:08:13+00:00",
+    "review_reasons": [],
+    "title": "2816 Grant Blvd"
+  },
+  {
     "address": "407 Wolf St",
     "ai_analysis": {
       "available": true,
