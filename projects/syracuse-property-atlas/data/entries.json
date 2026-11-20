@@ -1,5 +1,293 @@
 [
   {
+    "address": "413-15 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "The condition of the ancillary structure is largely obscured by tarps."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "high",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: <urlopen error EOF occurred in violation of protocol (_ssl.c:2427)>",
+          "provider": "gemini:gemini-3.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.46,
+            "width": 0.36,
+            "x": 0.59,
+            "y": 0.34
+          },
+          "confidence": "high",
+          "label": "Tarp-covered structure",
+          "reason": "Condition of the ancillary structure is obscured by extensive tarping."
+        },
+        {
+          "bbox": {
+            "height": 0.16,
+            "width": 0.26,
+            "x": 0.67,
+            "y": 0.69
+          },
+          "confidence": "high",
+          "label": "Utility trailer",
+          "reason": "Presence of a utility trailer parked in the yard area."
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Ancillary structure largely covered by tarps, obscuring its condition.",
+        "Utility trailer parked in the yard."
+      ],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-2.5-flash",
+      "summary": "The property features a multi-unit dwelling with a small front yard and an ancillary structure largely covered by tarps, with a utility trailer parked nearby.",
+      "visible_conditions": [
+        "Main dwelling has light-colored siding, appearing generally intact.",
+        "Roof of the main dwelling shows some discoloration consistent with age.",
+        "Two distinct entry doors are visible on the front facade of the main dwelling.",
+        "Windows on the main dwelling appear to be of an older style but generally intact.",
+        "A small, somewhat maintained front yard with shrubs and plantings is present.",
+        "An ancillary structure to the right is extensively covered by grey and brown tarps.",
+        "A utility trailer is parked in front of the tarp-covered ancillary structure.",
+        "A blue recycling bin is visible near the ancillary structure."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Code violations: 5 matching records",
+      "Image-only flag: Ancillary structure largely covered by tarps, obscuring its condition.",
+      "Image-only flag: Utility trailer parked in the yard."
+    ],
+    "id": 1119,
+    "image": "images/parcel-001119.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 66451,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.072805596779475,
+    "lon": -76.16342044890419,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07280562,
+          "Longitude": -76.16346773,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 37854,
+          "SBL": "002.-05-16.0",
+          "Vacant": null,
+          "complaint_address": "413-15 Wolf St",
+          "complaint_number": "2025-04676",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1784908588000,
+          "inspector_id": 1222,
+          "issued_to": "Adele & Kimberly O'Brien Trust",
+          "issued_to_address": "202 Rugby Rd ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13203",
+          "open_date": 1748425011920,
+          "status_date": 1785801600000,
+          "status_type_name": "Closed",
+          "violation": "2025 PMCNYS - Section 703.3.3 - Fire Walls, Fire Barriers, and Fire Partitions",
+          "violation_date": 1783353388553,
+          "violation_id": 220883,
+          "violation_number": "2026-10395"
+        },
+        {
+          "Latitude": 43.07280562,
+          "Longitude": -76.16346773,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 37855,
+          "SBL": "002.-05-16.0",
+          "Vacant": null,
+          "complaint_address": "413-15 Wolf St",
+          "complaint_number": "2025-04676",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1784906212000,
+          "inspector_id": 1222,
+          "issued_to": "Adele & Kimberly O'Brien Trust",
+          "issued_to_address": "202 Rugby Rd ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13203",
+          "open_date": 1748425011920,
+          "status_date": 1785801600000,
+          "status_type_name": "Closed",
+          "violation": "2025 FCNYS - Section 603.2 - Abatement of Unsafe Conditions and Electrical Hazards",
+          "violation_date": 1783351086277,
+          "violation_id": 220872,
+          "violation_number": "2026-10384"
+        },
+        {
+          "Latitude": 43.07280562,
+          "Longitude": -76.16346773,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 37857,
+          "SBL": "002.-05-16.0",
+          "Vacant": null,
+          "complaint_address": "413-15 Wolf St",
+          "complaint_number": "2025-04676",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1784906212000,
+          "inspector_id": 1222,
+          "issued_to": "Adele & Kimberly O'Brien Trust",
+          "issued_to_address": "202 Rugby Rd ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13203",
+          "open_date": 1748425011920,
+          "status_date": 1785801600000,
+          "status_type_name": "Closed",
+          "violation": "SPCC - Section 27-57 (a) (16)  - Receptacle Outlet/Switch Lacks Cover",
+          "violation_date": 1783351012143,
+          "violation_id": 220871,
+          "violation_number": "2026-10383"
+        },
+        {
+          "Latitude": 43.07280562,
+          "Longitude": -76.16346773,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 37858,
+          "SBL": "002.-05-16.0",
+          "Vacant": null,
+          "complaint_address": "413-15 Wolf St",
+          "complaint_number": "2025-04676",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1749721071000,
+          "inspector_id": 1222,
+          "issued_to": "Adele & Kimberly O'Brien Trust",
+          "issued_to_address": "202 Rugby Rd ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13203",
+          "open_date": 1748425011920,
+          "status_date": 1785801600000,
+          "status_type_name": "Closed",
+          "violation": "SPCC-Sec. 27-133 Registration",
+          "violation_date": 1748425071153,
+          "violation_id": 198446,
+          "violation_number": "2025-09959"
+        },
+        {
+          "Latitude": 43.07280562,
+          "Longitude": -76.16346773,
+          "Neighborhood": "Washington Square",
+          "ObjectId": 37860,
+          "SBL": "002.-05-16.0",
+          "Vacant": null,
+          "complaint_address": "413-15 Wolf St",
+          "complaint_number": "2021-14896",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1624374603000,
+          "inspector_id": 705,
+          "issued_to": "Adele O'Brien Trust % Kimberly",
+          "issued_to_address": "202 Rugby Rd ",
+          "issued_to_city": "Syracuse",
+          "issued_to_zip": "13203",
+          "open_date": 1622560082250,
+          "status_date": 1628812800000,
+          "status_type_name": "Closed",
+          "violation": "SPCC-Sec. 27-133 Registration",
+          "violation_date": 1622560203823,
+          "violation_id": 111496,
+          "violation_number": "2021-08362"
+        }
+      ],
+      "rental_registry": [
+        {
+          "Latitude": 43.07280562,
+          "Longitude": -76.16346773,
+          "NeedsRR": "Yes",
+          "ObjectId": 8,
+          "PropertyAddress": "413-15 Wolf St",
+          "RR_app_received": 1780963200000,
+          "RR_contact_name": "Adele & Kimberly A. O'Brien Trust",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "002.-05-16.0",
+          "SHAPE": null,
+          "completion_date": -2208902400000,
+          "completion_type_name": null,
+          "inspect_period": 1785801600000,
+          "pc_owner": "Adele O'Brien",
+          "valid_until": -2208902400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-18T14:27:47+00:00",
+      "rental_registry": "2026-11-18T14:27:47+00:00",
+      "unfit_properties": "2026-11-18T14:27:47+00:00",
+      "vacant_properties": "2026-11-18T14:27:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-20T01:52:38+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "002-05-160",
+    "published_at": "2026-11-20T01:54:10+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "413-15 Wolf St"
+  },
+  {
     "address": "135 Dale St",
     "ai_analysis": {
       "available": true,
