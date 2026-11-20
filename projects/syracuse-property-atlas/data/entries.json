@@ -1,5 +1,99 @@
 [
   {
+    "address": "411 Wolf St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Portions of the secondary structures are partially obscured by mature foliage.",
+        "Parcel boundaries and specific building identification for 411 Wolf St should be confirmed against local GIS or tax maps."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "fair",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "fair",
+        "yard_or_lot": "fair"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "mixed_use",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The property features a street-facing commercial or mixed-use building alongside adjacent residential structures in generally fair visible exterior condition.",
+      "visible_conditions": [
+        "Left structure features an overhead garage bay door, commercial signage, and a secondary entrance.",
+        "Paved area/driveway runs alongside the building.",
+        "Roofing, siding, and visible windows/doors appear intact with no severe visible structural damage.",
+        "A large tree stands in front of the central residential structure."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 1122,
+    "image": "images/parcel-001122.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 73926,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07268313834594,
+    "lon": -76.16353737337104,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-18T14:27:47+00:00",
+      "rental_registry": "2026-11-18T14:27:47+00:00",
+      "unfit_properties": "2026-11-18T14:27:47+00:00",
+      "vacant_properties": "2026-11-18T14:27:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-20T03:02:56+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "002-05-170",
+    "published_at": "2026-11-20T03:04:27+00:00",
+    "review_reasons": [],
+    "title": "411 Wolf St"
+  },
+  {
     "address": "2808 Grant Blvd",
     "ai_analysis": {
       "available": true,
