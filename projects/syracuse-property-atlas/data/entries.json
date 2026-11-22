@@ -1,5 +1,168 @@
 [
   {
+    "address": "115 Dale St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Bright sun glare at top of frame partially obscures rooflines and upper exterior sections.",
+        "Two close structures are visible along the driveway, creating ambiguity about exact parcel boundaries without a detailed map."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "fair",
+        "siding_or_facade": "fair",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.25,
+            "width": 0.28,
+            "x": 0.03,
+            "y": 0.42
+          },
+          "confidence": "medium",
+          "label": "peeling paint",
+          "reason": "Visible uneven, patchy, or peeling paint finish on yellow wall siding"
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "Exterior paint deterioration visible on the left structure siding."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "A street-level view shows residential structures along a driveway with visible exterior paint wear on yellow siding and sun glare overhead.",
+      "visible_conditions": [
+        "Yellow siding on the structure to the left exhibits patchy paint wear and discoloration.",
+        "Intact entry door and porch steps visible on the multi-story structure to the right.",
+        "Paved driveway separates the structures with normal residential landscaping and shrubs.",
+        "Standard utility/recycling bins placed near the entry of the right structure."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1534",
+        "Median gross rent": "130600",
+        "Median household income": "66250",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "27.6",
+        "Renter-occupied share": "71.7",
+        "Total population": "4042",
+        "Vacancy rate": "4.6"
+      },
+      "name": "Census Tract 4; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000400",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Code violations: 1 matching record",
+      "Image-only flag: Exterior paint deterioration visible on the left structure siding."
+    ],
+    "id": 1132,
+    "image": "images/parcel-001132.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 69354,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07525178873677,
+    "lon": -76.14322468017316,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07525478,
+          "Longitude": -76.14323917,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 71518,
+          "SBL": "005.-03-36.0",
+          "Vacant": null,
+          "complaint_address": "115 Dale St",
+          "complaint_number": "2026-01045",
+          "complaint_type_name": "Rental Registry",
+          "complaint_zip": 13208,
+          "comply_by_date": 1793793118000,
+          "inspector_id": 1222,
+          "issued_to": "Copper Lakes Capital, LLC",
+          "issued_to_address": "5764 W Pine Grove Rd ",
+          "issued_to_city": "Cicero",
+          "issued_to_zip": "13039",
+          "open_date": 1770982586940,
+          "status_date": 1792497118000,
+          "status_type_name": "Open",
+          "violation": "SPCC-Sec. 27-133 Registration",
+          "violation_date": 1770983518720,
+          "violation_id": 212949,
+          "violation_number": "2026-02439"
+        }
+      ],
+      "rental_registry": [
+        {
+          "Latitude": 43.07525478,
+          "Longitude": -76.14323917,
+          "NeedsRR": "Yes",
+          "ObjectId": 434,
+          "PropertyAddress": "115 Dale St",
+          "RR_app_received": null,
+          "RR_contact_name": null,
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "No",
+          "SBL": "005.-03-36.0",
+          "SHAPE": null,
+          "completion_date": null,
+          "completion_type_name": null,
+          "inspect_period": null,
+          "pc_owner": "Copper Lakes Capital LLC",
+          "valid_until": null,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-18T14:27:47+00:00",
+      "rental_registry": "2026-11-18T14:27:47+00:00",
+      "unfit_properties": "2026-11-18T14:27:47+00:00",
+      "vacant_properties": "2026-11-18T14:27:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-22T21:10:26+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "005-03-360",
+    "published_at": "2026-11-22T21:12:32+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "115 Dale St"
+  },
+  {
     "address": "401 Wolf St & Carbon St",
     "ai_analysis": {
       "available": true,
