@@ -1,5 +1,154 @@
 [
   {
+    "address": "104 Murray Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "Rear and side elevations are partially or fully obscured from the street-level angle.",
+        "Roof assessment is limited to visible front-facing roof sections."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "good",
+        "roof": "good",
+        "siding_or_facade": "good",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "good",
+        "yard_or_lot": "good"
+      },
+      "confidence": "high",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "two_family",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "Street-level view shows a two-story residential building with vinyl siding, intact porch with brick piers, and a maintained front lawn.",
+      "visible_conditions": [
+        "Horizontal vinyl siding appears intact across the facade.",
+        "Asphalt shingle roof appears intact from the visible front profile.",
+        "Covered front porch with brick support piers and white railings.",
+        "Two front entry doors visible side-by-side under the main porch roof.",
+        "Window-mounted air conditioning unit installed in a upper-floor window.",
+        "Maintained front lawn and decorative flowering foundation plantings.",
+        "Standard residential waste and recycling bins positioned near the side porch area."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Rental registry: 1 matching record",
+      "Code violations: 1 matching record"
+    ],
+    "id": 1139,
+    "image": "images/parcel-001139.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 103616,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07638707204014,
+    "lon": -76.15637073034405,
+    "open_data": {
+      "code_violations": [
+        {
+          "Latitude": 43.07638563,
+          "Longitude": -76.15641598,
+          "Neighborhood": "Court-Woodlawn",
+          "ObjectId": 121093,
+          "SBL": "003.-21-03.0",
+          "Vacant": null,
+          "complaint_address": "104 Murray Ave",
+          "complaint_number": "2024-07580",
+          "complaint_type_name": "Property Maintenance-Int",
+          "complaint_zip": 13208,
+          "comply_by_date": 1729247814000,
+          "inspector_id": 1182,
+          "issued_to": "Heritage Property Mgmt",
+          "issued_to_address": "6312 Hardwood Ln ",
+          "issued_to_city": "Cicero",
+          "issued_to_zip": "13039",
+          "open_date": 1727778878710,
+          "status_date": 1728432000000,
+          "status_type_name": "Closed",
+          "violation": "SPCC-Sec. 27-133 Registration",
+          "violation_date": 1727779014817,
+          "violation_id": 183880,
+          "violation_number": "2024-14965"
+        }
+      ],
+      "rental_registry": [
+        {
+          "Latitude": 43.07638563,
+          "Longitude": -76.15641598,
+          "NeedsRR": "Yes",
+          "ObjectId": 272,
+          "PropertyAddress": "104 Murray Ave",
+          "RR_app_received": 1682553600000,
+          "RR_contact_name": "Heritage Property Mgmt",
+          "RR_ext_insp_fail": null,
+          "RR_ext_insp_pass": null,
+          "RR_int_insp_fail": null,
+          "RR_int_insp_pass": null,
+          "RRisValid": "Yes",
+          "SBL": "003.-21-03.0",
+          "SHAPE": null,
+          "completion_date": 1728432000000,
+          "completion_type_name": "Rental Registry Card Issued",
+          "inspect_period": 1727827200000,
+          "pc_owner": "Heritage Property Mgmt",
+          "valid_until": 1823126400000,
+          "zip": 13208
+        }
+      ],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-18T14:27:47+00:00",
+      "rental_registry": "2026-11-18T14:27:47+00:00",
+      "unfit_properties": "2026-11-18T14:27:47+00:00",
+      "vacant_properties": "2026-11-18T14:27:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-23T22:00:49+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "003-21-030",
+    "published_at": "2026-11-23T22:02:20+00:00",
+    "review_reasons": [],
+    "title": "104 Murray Ave"
+  },
+  {
     "address": "107 Dale St",
     "ai_analysis": {
       "available": true,
