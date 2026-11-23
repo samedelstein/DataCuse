@@ -1,5 +1,98 @@
 [
   {
+    "address": "1310 Carbon St",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [
+        "No primary building is prominently visible on the central parcel area.",
+        "A vehicle parked on the street partially obstructs the foreground view of the curb and lower lot boundary."
+      ],
+      "condition_scores": {
+        "porch_or_entry": "not_visible",
+        "roof": "not_visible",
+        "siding_or_facade": "not_visible",
+        "trash_debris": "none_visible",
+        "vegetation_overgrowth": "none_visible",
+        "windows_doors": "not_visible",
+        "yard_or_lot": "good"
+      },
+      "confidence": "medium",
+      "image_annotations": [],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [],
+      "property_type_guess": "vacant_lot",
+      "provider": "gemini:gemini-3.5-flash",
+      "summary": "The view shows an open, grassy lot with mature trees and a sidewalk along the street front, with no primary structure clearly centered in view.",
+      "visible_conditions": [
+        "Open grassy lot area with a maintained, mowed lawn.",
+        "Mature trees along the perimeter and background.",
+        "Public sidewalk visible in the foreground along the street."
+      ],
+      "visible_flags": {
+        "active_construction_visible": "no",
+        "boarded_windows_or_doors": "no",
+        "fire_damage_visible": "no",
+        "structural_damage_visible": "no",
+        "vacancy_signs_visible": "no"
+      }
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [],
+    "id": 1140,
+    "image": "images/parcel-001140.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 92004,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.072740009835286,
+    "lon": -76.16419323459412,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-18T14:27:47+00:00",
+      "rental_registry": "2026-11-18T14:27:47+00:00",
+      "unfit_properties": "2026-11-18T14:27:47+00:00",
+      "vacant_properties": "2026-11-18T14:27:47+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-23T22:02:51+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "002-05-230",
+    "published_at": "2026-11-23T22:04:22+00:00",
+    "review_reasons": [],
+    "title": "1310 Carbon St"
+  },
+  {
     "address": "104 Murray Ave",
     "ai_analysis": {
       "available": true,
