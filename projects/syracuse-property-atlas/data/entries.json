@@ -1,5 +1,118 @@
 [
   {
+    "address": "108 Murray Ave",
+    "ai_analysis": {
+      "available": true,
+      "caveats": [],
+      "condition_scores": {},
+      "confidence": "unknown",
+      "fallback_failures": [
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-3.5-flash"
+        },
+        {
+          "note": "Gemini vision request failed: HTTP Error 503: Service Unavailable",
+          "provider": "gemini:gemini-2.5-flash"
+        }
+      ],
+      "fallback_from": [
+        "gemini:gemini-3.5-flash",
+        "gemini:gemini-2.5-flash"
+      ],
+      "image_annotations": [
+        {
+          "bbox": {
+            "height": 0.873,
+            "width": 0.642,
+            "x": 0.39,
+            "y": 0.497
+          },
+          "confidence": "high",
+          "label": "front yard",
+          "reason": "the property's front yard is well-maintained"
+        }
+      ],
+      "needs_human_review": false,
+      "possible_unrecorded_issues": [
+        "There may be unrecorded issues not visible in the image, such as interior condition, foundation plantings, or rear yard condition."
+      ],
+      "property_type_guess": "single_family",
+      "provider": "ollama:llava:latest",
+      "summary": "The property at 108 Murray Ave appears to be in good condition based on the visible exterior, with no major visible issues.",
+      "visible_conditions": [
+        "The property has well-maintained siding, windows, doors, and yard. There are no visible signs of boarded windows, fire damage, structural damage, or active construction. The visible portion of the front yard is clean and well-kept. No visible trash or debris accumulations are apparent.",
+        "condition_scores: ",
+        "trash_debris: ",
+        "boarded_windows_or_doors: ",
+        "fire_damage_visible: ",
+        "structural_damage_visible: ",
+        "vacancy_signs_visible: ",
+        "active_construction_visible: "
+      ],
+      "visible_flags": {}
+    },
+    "census_tract": {
+      "available": true,
+      "county": "067",
+      "metrics": {
+        "Housing units": "1686",
+        "Median gross rent": "146700",
+        "Median household income": "51848",
+        "No vehicle available": "-888888888",
+        "Poverty rate": "28.1",
+        "Renter-occupied share": "50.1",
+        "Total population": "3511",
+        "Vacancy rate": "14.7"
+      },
+      "name": "Census Tract 2; Onondaga County; New York",
+      "source": "2024 ACS 5-year profile",
+      "state": "36",
+      "tract": "000200",
+      "tract_lookup": "Census Geocoder"
+    },
+    "flags": [
+      "Image-only flag: There may be unrecorded issues not visible in the image, such as interior condition, foundation plantings, or rear yard condition."
+    ],
+    "id": 1145,
+    "image": "images/parcel-001145.jpg",
+    "image_note": null,
+    "image_quality": {
+      "available": true,
+      "bytes": 93081,
+      "needs_rerun": false,
+      "warnings": []
+    },
+    "lat": 43.07657089614586,
+    "lon": -76.1561980531843,
+    "open_data": {
+      "code_violations": [],
+      "rental_registry": [],
+      "unfit_properties": [],
+      "vacant_properties": []
+    },
+    "open_data_refreshed_at": {
+      "code_violations": "2026-11-25T18:00:19+00:00",
+      "rental_registry": "2026-11-25T18:00:19+00:00",
+      "unfit_properties": "2026-11-25T18:00:19+00:00",
+      "vacant_properties": "2026-11-25T18:00:19+00:00"
+    },
+    "osm": {
+      "available": false,
+      "checked_at": "2026-11-25T18:07:59+00:00",
+      "error": "overpass-api.de: HTTP Error 406: Not Acceptable; overpass.private.coffee: The read operation timed out",
+      "features": [],
+      "note": "Nearby map data is temporarily unavailable. This does not mean there are no mapped features.",
+      "radius_meters": 60
+    },
+    "parcel_key": "003-21-050",
+    "published_at": "2026-11-25T18:09:31+00:00",
+    "review_reasons": [
+      "Possible image-only issue"
+    ],
+    "title": "108 Murray Ave"
+  },
+  {
     "address": "1723 Butternut St & Dale St",
     "ai_analysis": {
       "available": true,
